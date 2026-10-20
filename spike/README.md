@@ -9,7 +9,7 @@ spend cap $25 (ledger `results/spend.jsonl`, checked before each GPU run); the h
 
 Needs: `.venv/bin/modal setup` done once by the builder (no token is ever typed into this repo or a chat);
 for SAM 3.1 (gated repo): accept the terms at huggingface.co/facebook/sam3.1 and create the Modal secret
-`huggingface` holding `HF_TOKEN` (`modal secret create huggingface HF_TOKEN=...`, typed by the builder).
+`huggingface-secret` holding `HF_TOKEN` (`modal secret create huggingface-secret HF_TOKEN=...`, typed by the builder).
 
     .venv/bin/python spike/prepare_dev.py
     sh spike/licences.sh                                           # step 1

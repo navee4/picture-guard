@@ -34,7 +34,8 @@ MMPROJ = "mmproj-Muse-Glimmer-30B-Q4_K_M.gguf"
 
 # ---- images -------------------------------------------------------------------------------------------
 dl_image = modal.Image.debian_slim(python_version="3.12").pip_install("huggingface_hub[hf_transfer]").env(
-    {"HF_HUB_ENABLE_HF_TRANSFER": "1", "HF_HOME": f"{MODELS}/hf"})
+    {"HF_HUB_ENABLE_HF_TRANSFER": "1", "HF_HOME": f"{MODELS}/hf"}
+).add_local_file(ROOT / "spike" / "common.py", "/root/common.py")  # modal_app imports common at load time
 
 # llama.cpp must be build b10353 or newer (Muse Glimmer arch support). Built from master with CUDA for L40S (sm_89) + H100 (sm_90).
 llama_image = (
@@ -311,7 +312,7 @@ def tesseract(all_dev: bool = False):
 
 
 # ---- step 5: SAM 3.1 -----------------------------------------------------------------------------------
-@app.function(image=dl_image, volumes={MODELS: vol}, secrets=[modal.Secret.from_name("huggingface")], timeout=1800)
+@app.function(image=dl_image, volumes={MODELS: vol}, secrets=[modal.Secret.from_name("huggingface-secret")], timeout=1800)
 def _download_sam():
     from huggingface_hub import hf_hub_download
     t0 = time.time()
@@ -327,7 +328,7 @@ def download_sam():
     common.log_spend("download_sam", r["seconds"], None, 0.125, 0.25, "CPU download to Volume")
 
 
-@app.function(image=sam_image, gpu="L40S", volumes={MODELS: vol}, secrets=[modal.Secret.from_name("huggingface")],
+@app.function(image=sam_image, gpu="L40S", volumes={MODELS: vol}, secrets=[modal.Secret.from_name("huggingface-secret")],
               timeout=3600, cpu=4, memory=32768)
 def sam_run(jobs):
     """jobs: [{file, key_boxes:[{box,pii_type,text}], glimmer_boxes:[[x0,y0,x1,y1]...]}]. Returns coverage numbers."""
