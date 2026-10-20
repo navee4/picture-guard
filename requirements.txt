@@ -1,0 +1,4 @@
+modal
+pillow
+faker
+numpy

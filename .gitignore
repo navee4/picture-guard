@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+# generated pictures (key.json is committed)
+testset/images/
+testset/.check_tmp/
+# model files and local results scratch
+*.safetensors
+*.gguf
+*.bin
+*.pt
+*.pth
+spike/out/
