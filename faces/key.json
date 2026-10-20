@@ -1,0 +1,5016 @@
+{
+ "seed": 20261021,
+ "note": "SYNTHETIC TEST DATA. AI-made faces of people who do not exist. Boxes [x0,y0,x1,y1] in pixels; face boxes come from the YuNet detector run on each portrait; skin/age words are PROMPT attributes, not measured. Text drawn on the pictures is made up and not keyed.",
+ "image_model": "stabilityai/stable-diffusion-xl-base-1.0",
+ "detector": "OpenCV YuNet 2023mar (MIT)",
+ "yunet_sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+ "portrait_sha256": {
+  "p000.png": "536980058293d880eb773e37150134e86ac87ebbac77b43f962c5436c8d0daa6",
+  "p001.png": "5b3d2f10df5e5854cbfb56495ff38bf0737bfc3376ea07ecaa3ef214ce4f18b7",
+  "p002.png": "f48a133909a1caa24df882dd61ed4415bed8a158b57e8b712f89616991268ea1",
+  "p003.png": "b53b144e14586f4790aa7b1c40399013e2dac74914df581677db630618a0e53a",
+  "p004.png": "04b5c498a21bb5dc5ed480f75ee7cda012df7829d7ecfaaa77416ae863d3ffa8",
+  "p005.png": "6a4e7668a37b0dd05fcddf06aa69effe63c2bab0da98bb7d4a2372f0c543b01f",
+  "p006.png": "c8fe1ffd484234799457595c78448dcddad45f1edb8f16aaa5afc4b4aee3a9dd",
+  "p007.png": "e017153f8ea084f57531981bc829c4018016d3133834b7a61a6223852a54b509",
+  "p008.png": "e3d63c8de3609bf54fb78a43e92d9803b114051b6bc7863702231402b3bf6ca9",
+  "p009.png": "a913c6d5ae2e55c66295dc349b1b47ce489bbed124d629147b733d8cab48a2c7",
+  "p010.png": "d602e0bd5c57c9edbc762048c567627877f47a58c28af67c7dd4c4b52cc4c841",
+  "p011.png": "24202a40ef9fa6987e0b94260eb6320217889005112adba5c349421a50ae9eb7",
+  "p012.png": "6c5ec8c7fa081f0a0fc59eeb4d4e12172642c524aeb0e3db65aa87a5b74c68b9",
+  "p013.png": "3043c90a2c2e1e009fdb3b4a51bdc821d1ea2aa07b8792931f339e5c2331a853",
+  "p014.png": "a1ac0f2be6e29c2cf795a83beced078eca4fa5dd5c4cf42cb5698818290dfede",
+  "p015.png": "7864a1a62e75e56e40c07428dcb00e3aa085e512068f845449a571c671f3b9ab",
+  "p016.png": "6fb0f4f828ea968efc6afc41c22e79c8e6a25215127d8af6dbeeefa6ad317e01",
+  "p017.png": "17c6e6b3de5b1f2b92005e917364e615391fe5a0f1c0c4dbbabf77663206d45e",
+  "p018.png": "c022bbe5a61726b7d10cd4246d0d6534a4c25d5a21628b59d9e9630851674d7a",
+  "p019.png": "27bb7e7fd8aa0d4da6942323acfe4424d53bedc87087efc360b4163be8b41771",
+  "p020.png": "48ec56dc5895675d5350c9f1f8efcf70423697f5764d9568cdffd369e72ac5f4",
+  "p021.png": "a613819e2e81e1ac1908aefb1f48b7d9b877a37bc7ca26ce06049e9be3f60678",
+  "p022.png": "5aeaf890dbbe978c4073162b98fbbc8c6b22af20d1b2eeb441615f37f181c1ee",
+  "p023.png": "a75149223f383b35aa09bdb33318f81838138dc5146c818f9c8fec04b0415481",
+  "p024.png": "02703b627bd481944a000d44896c24176ef0796664f6554f3b2df51c280228a5",
+  "p025.png": "f91611478c17b494fe1d4d66e7ffe04ee09d984e1a4319f5a0e93f3e5af35205",
+  "p026.png": "14ed663cda049755bc30949fdc31e7bbf220d8424d1b40127abe3cab7d3d363e",
+  "p027.png": "2b3b569951d652479d9862dc4f3dadb52615ef1fa8025918e9a6d11e3346d81b",
+  "p028.png": "10feec582a325704cfd28ddfee21a6792410a8d43bf497f4634f80658f77fa1b",
+  "p029.png": "9815a1f5fc40fd221f6104c3caaac77923d6a6cf39b1b373bfe1ccad22171579",
+  "p030.png": "c9b81946b28274eea4ca2e32a7f2889ebf2088632ad2a80ba2bd3954ca18c04a",
+  "p031.png": "3c6ec56ff472c8e822a5b3328b6652960de5b64505cc9b16eebf6b563fe80ad3",
+  "p032.png": "f21a23b1c5ab39b7db639782ee1735bfc94f1a5c9c79d0e792a977ee67775a84",
+  "p033.png": "175655fe57810ce19ec1c84c0b4c1b88bf7e435270a39c5a671c81f1251c6acb",
+  "p034.png": "c6f491f0461ee23da04263c279fb3c8ead1264d6d322523a861e57856c216d3c",
+  "p035.png": "55ce820ef84eed70cf6cffe70382f7e9f77b166e86b65155c31efcee300cf44a",
+  "p036.png": "7231b3dc8aa7679a25ffceccdcecbb9d4d69fcdd123ed057a52491c323bd4713",
+  "p037.png": "00b2d5f0c94b45f759c4beb7564f6a456b54bb1c75c65f1ffc0d2104e46efb82",
+  "p038.png": "a59a89b8add05691b42ecc75d73231dbc02b748799f51d722167a9e9d6649a61",
+  "p039.png": "954e45132b0ff9d773d23d735bb596d610e8b3e6bcfc66f7e3e957db26ba6d55",
+  "p040.png": "274703abbd4567b934df2d095dfe2584302f8c77515e44bd94bf50ed0c9c3489",
+  "p041.png": "d6dbd6a72a164e7ca646434d346aa13c6f8b5f04a77c0482961e3f33e570d212",
+  "p042.png": "7768bce35df8adf7f39bbec9aa82bae5136ca3078b5e32424be86862322d2268",
+  "p043.png": "72f159e802e66949f03a39cc466f32652704816f3f9727125a94337d842fffab",
+  "p044.png": "58e15f9d06759b70dbd6c35dfd7fd198f407e6996795aadfddcf9495a75141fb",
+  "p045.png": "c93aff6412ec8dd8c237f469bf615bab66030bcdf57a828e06a66ee5222abb7f",
+  "p046.png": "afa1d1dbb37e9ef1185efb765b5746b7c53ad69d9a82357ad06a7c3c52194ba4",
+  "p047.png": "2f751ba13c12a07066b686ea5bde183ab11f72d12cb749d332f31b2df0f8aa17",
+  "p048.png": "d19930e7f37af2313eef224ea0e1a89b832936fd4a51881ac75fa994828fc3c0",
+  "p049.png": "eb2084d2b0f421b684b01086f2da2a15873016e4717932cf8a69e6c728313287",
+  "p050.png": "13962f1579c0ed7aa56ab916b48676d4ac6c9d6702f9fae44c24917e115e9c56",
+  "p051.png": "c03a46e7cf9df6ee8c1314efa5d045866c7088d99d7292f2b4c9e9fc4dbb300d",
+  "p052.png": "6aa459b56e322c6b82c8575ee63cf818a8fbd2dab6beba0b0904aef4ed7a15a8",
+  "p053.png": "3f3262e6b9acc6835f478de4747e3c0eee89e56c3c71b1e58efe09786aca0ef9",
+  "p054.png": "f697005f0f6e3079a7e69bda91b52c29865b19a6b19fadf919e6f7805b4c32c6",
+  "p055.png": "ac8536ce296085bbcddc6b5871eab553637cb501c39f986d4c810476604ac787",
+  "p056.png": "dd212fd87be7c24c24a19445bc3612830c2f3b175dfdae9da81d8213b3f109f5",
+  "p057.png": "a50039672dfd6d5cf5ebca7987f749c2823f986d16930588ea9be3e053d19797",
+  "p058.png": "a38f435105a2894b7efe6daaf3222bd8c1caba25385db59d1f8efd8dd760f30f",
+  "p059.png": "1377afe8a0d6f037cf7f233337160d512394afdd01e9eca3db88728f171b24e6",
+  "p060.png": "c99bbdbbb9f8ae9106eea00d0f69475182151ecc636cdc8a707fe4381ac0419d",
+  "p061.png": "2df26808a2e034cff8d89963b050f9350150acd4591b2a7698c85f9c93b2f8ae",
+  "p062.png": "60690055992112ed0d3aa79c3ce08d8913b05f049c38728a8216011bbf1b60fe",
+  "p063.png": "3c13385eb6c979695b6fde012838cf9ccf0d74736595f6e4f0dbd784f64fff44",
+  "p064.png": "54275b5133bfc410a25b3fd170320e3f61edb3ebe8c37fad9f5cb9f2bd0c79f6",
+  "p065.png": "bad7de9d77a59c742b81947e73a5e504d42c488bb2c0569f6d9a7f60a678deb2",
+  "p066.png": "1577c642a87ff013396484966b342eae74d05fa860d7844a7b2bb50d1262eafd",
+  "p067.png": "fbafabafdca4c81effe834ec0954cce8077e0ca902dbadfa3a82220ae48b6868",
+  "p068.png": "d87439b3eda4550da86a6a8aed9d8bd57386399f92847cef083eb1e985d7a536",
+  "p069.png": "315c3a59a2b4145b14d08fdbe68b256a7abf7e61e70397753a9cb14ae44189a3",
+  "p070.png": "c7748e43c46ff770f6146a4c125efb9f8b0611a7fe3c891e7f1ac663d0334304",
+  "p071.png": "9b93202a0f919d3c410501424a56feeec7caf29bc850f6b93f1a7448bb92073b",
+  "p072.png": "13592375d7fddda454e95fe47321fb6595efb87015a9263e1624726e05b12291",
+  "p073.png": "ecd6faec5bc7bbc46b674ac103d1277f51632e850226d204970e46a1fce415f2",
+  "p074.png": "afe736770c603f82fe29428ddd4e34fc08449144891b76409d902171cac39623"
+ },
+ "images": [
+  {
+   "file": "id_card_000.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:verdana",
+    "face_px:[170, 210]",
+    "margin:1.25",
+    "light:overhead fluorescent light",
+    "angle:three-quarter view",
+    "no_glasses",
+    "jpg_q80",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 0,
+   "face_attrs": {
+    "skin": "light olive skin",
+    "age": "in their twenties",
+    "gender_word": "woman",
+    "hair": "shoulder-length brown hair",
+    "glasses": false,
+    "angle": "three-quarter view",
+    "light": "overhead fluorescent light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      94,
+      156,
+      216,
+      324
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      403,
+      595,
+      597,
+      606
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_001.png",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:trebuchet",
+    "face_px:[240, 300]",
+    "margin:1.25",
+    "light:dim warm indoor light",
+    "angle:head turned slightly to the right",
+    "no_glasses",
+    "png",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 1,
+   "face_attrs": {
+    "skin": "medium tan skin",
+    "age": "in their sixties",
+    "gender_word": "woman",
+    "hair": "long black hair",
+    "glasses": false,
+    "angle": "head turned slightly to the right",
+    "light": "dim warm indoor light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      104,
+      165,
+      276,
+      405
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      420,
+      594,
+      581,
+      605
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_002.png",
+   "type": "id_card",
+   "split": "holdout",
+   "variety": [
+    "font:trebuchet",
+    "face_px:[170, 210]",
+    "margin:1.8",
+    "light:overhead fluorescent light",
+    "angle:three-quarter view",
+    "glasses",
+    "blur:0.8",
+    "png",
+    "face_size:medium"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 2,
+   "face_attrs": {
+    "skin": "light olive skin",
+    "age": "in their sixties",
+    "gender_word": "man",
+    "hair": "short grey hair",
+    "glasses": true,
+    "angle": "three-quarter view",
+    "light": "overhead fluorescent light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      107,
+      182,
+      203,
+      298
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      420,
+      594,
+      581,
+      605
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_003.png",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:georgia",
+    "face_px:[240, 300]",
+    "margin:1.8",
+    "light:soft even light",
+    "angle:facing the camera",
+    "no_glasses",
+    "png",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 3,
+   "face_attrs": {
+    "skin": "light olive skin",
+    "age": "in their thirties",
+    "gender_word": "man",
+    "hair": "bald",
+    "glasses": false,
+    "angle": "facing the camera",
+    "light": "soft even light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      131,
+      189,
+      249,
+      355
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      404,
+      593,
+      596,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_004.png",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:georgia",
+    "face_px:[170, 210]",
+    "margin:2.6",
+    "light:dim warm indoor light",
+    "angle:head tilted slightly",
+    "no_glasses",
+    "png",
+    "face_size:small"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 4,
+   "face_attrs": {
+    "skin": "very light skin",
+    "age": "in their sixties",
+    "gender_word": "woman",
+    "hair": "shoulder-length brown hair",
+    "glasses": false,
+    "angle": "head tilted slightly",
+    "light": "dim warm indoor light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      125,
+      168,
+      185,
+      249
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      404,
+      593,
+      596,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_005.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:arial",
+    "face_px:[300, 380]",
+    "margin:1.8",
+    "light:dim warm indoor light",
+    "angle:facing the camera",
+    "no_glasses",
+    "blur:0.8",
+    "jpg_q80",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 5,
+   "face_attrs": {
+    "skin": "brown skin",
+    "age": "in their thirties",
+    "gender_word": "woman",
+    "hair": "red hair",
+    "glasses": false,
+    "angle": "facing the camera",
+    "light": "dim warm indoor light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      141,
+      219,
+      299,
+      431
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      414,
+      593,
+      587,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_006.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:arial",
+    "face_px:[300, 380]",
+    "margin:1.25",
+    "light:bright harsh daylight",
+    "angle:head turned slightly to the right",
+    "glasses",
+    "jpg_q95",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 6,
+   "face_attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their forties",
+    "gender_word": "man",
+    "hair": "blond hair",
+    "glasses": true,
+    "angle": "head turned slightly to the right",
+    "light": "bright harsh daylight"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      113,
+      173,
+      327,
+      477
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      414,
+      593,
+      587,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_007.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:verdana",
+    "face_px:[170, 210]",
+    "margin:2.6",
+    "light:overhead fluorescent light",
+    "angle:head turned slightly to the right",
+    "glasses",
+    "jpg_q80",
+    "face_size:small"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 7,
+   "face_attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their twenties",
+    "gender_word": "man",
+    "hair": "curly black hair",
+    "glasses": true,
+    "angle": "head turned slightly to the right",
+    "light": "overhead fluorescent light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      124,
+      198,
+      186,
+      279
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      403,
+      595,
+      597,
+      606
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_008.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:arial",
+    "face_px:[300, 380]",
+    "margin:2.6",
+    "light:overhead fluorescent light",
+    "angle:head turned slightly to the left",
+    "no_glasses",
+    "jpg_q40",
+    "face_size:medium"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 8,
+   "face_attrs": {
+    "skin": "very light skin",
+    "age": "in their forties",
+    "gender_word": "woman",
+    "hair": "short grey hair",
+    "glasses": false,
+    "angle": "head turned slightly to the left",
+    "light": "overhead fluorescent light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      167,
+      218,
+      273,
+      396
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      414,
+      593,
+      587,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_009.jpg",
+   "type": "id_card",
+   "split": "holdout",
+   "variety": [
+    "font:georgia",
+    "face_px:[170, 210]",
+    "margin:2.6",
+    "light:bright harsh daylight",
+    "angle:facing the camera",
+    "no_glasses",
+    "jpg_q60",
+    "face_size:medium"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 9,
+   "face_attrs": {
+    "skin": "light olive skin",
+    "age": "in their fifties",
+    "gender_word": "man",
+    "hair": "bald",
+    "glasses": false,
+    "angle": "facing the camera",
+    "light": "bright harsh daylight"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      116,
+      165,
+      191,
+      289
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      404,
+      593,
+      596,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_010.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:georgia",
+    "face_px:[170, 210]",
+    "margin:1.25",
+    "light:strong side light from a window",
+    "angle:head turned slightly to the right",
+    "no_glasses",
+    "jpg_q60",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 10,
+   "face_attrs": {
+    "skin": "light olive skin",
+    "age": "in their twenties",
+    "gender_word": "woman",
+    "hair": "blond hair tied back",
+    "glasses": false,
+    "angle": "head turned slightly to the right",
+    "light": "strong side light from a window"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      92,
+      156,
+      218,
+      324
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      404,
+      593,
+      596,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_011.png",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:trebuchet",
+    "face_px:[240, 300]",
+    "margin:2.6",
+    "light:bright harsh daylight",
+    "angle:facing the camera",
+    "no_glasses",
+    "png",
+    "face_size:medium"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 11,
+   "face_attrs": {
+    "skin": "medium tan skin",
+    "age": "in their forties",
+    "gender_word": "woman",
+    "hair": "curly dark hair",
+    "glasses": false,
+    "angle": "facing the camera",
+    "light": "bright harsh daylight"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      151,
+      200,
+      229,
+      320
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      420,
+      594,
+      581,
+      605
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_012.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:trebuchet",
+    "face_px:[240, 300]",
+    "margin:1.8",
+    "light:strong side light from a window",
+    "angle:head tilted slightly",
+    "no_glasses",
+    "jpg_q80",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 12,
+   "face_attrs": {
+    "skin": "light olive skin",
+    "age": "in their fifties",
+    "gender_word": "woman",
+    "hair": "blond hair tied back",
+    "glasses": false,
+    "angle": "head tilted slightly",
+    "light": "strong side light from a window"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      131,
+      198,
+      249,
+      364
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      420,
+      594,
+      581,
+      605
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_013.jpg",
+   "type": "id_card",
+   "split": "holdout",
+   "variety": [
+    "font:verdana",
+    "face_px:[300, 380]",
+    "margin:1.8",
+    "light:overhead fluorescent light",
+    "angle:facing the camera",
+    "glasses",
+    "jpg_q60",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 13,
+   "face_attrs": {
+    "skin": "medium tan skin",
+    "age": "in their seventies",
+    "gender_word": "woman",
+    "hair": "long black hair",
+    "glasses": true,
+    "angle": "facing the camera",
+    "light": "overhead fluorescent light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      141,
+      219,
+      299,
+      431
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      403,
+      595,
+      597,
+      606
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_014.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:arial",
+    "face_px:[300, 380]",
+    "margin:1.8",
+    "light:bright harsh daylight",
+    "angle:head tilted slightly",
+    "glasses",
+    "jpg_q60",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 14,
+   "face_attrs": {
+    "skin": "brown skin",
+    "age": "in their fifties",
+    "gender_word": "man",
+    "hair": "blond hair",
+    "glasses": true,
+    "angle": "head tilted slightly",
+    "light": "bright harsh daylight"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      144,
+      210,
+      296,
+      421
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      414,
+      593,
+      587,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_015.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:times",
+    "face_px:[300, 380]",
+    "margin:2.6",
+    "light:soft even light",
+    "angle:head tilted slightly",
+    "glasses",
+    "jpg_q60",
+    "face_size:medium"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 15,
+   "face_attrs": {
+    "skin": "brown skin",
+    "age": "in their seventies",
+    "gender_word": "man",
+    "hair": "curly black hair",
+    "glasses": true,
+    "angle": "head tilted slightly",
+    "light": "soft even light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      169,
+      206,
+      271,
+      354
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      411,
+      594,
+      589,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_016.jpg",
+   "type": "id_card",
+   "split": "holdout",
+   "variety": [
+    "font:georgia",
+    "face_px:[170, 210]",
+    "margin:1.8",
+    "light:soft even light",
+    "angle:head tilted slightly",
+    "glasses",
+    "jpg_q40",
+    "face_size:medium"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 16,
+   "face_attrs": {
+    "skin": "brown skin",
+    "age": "in their forties",
+    "gender_word": "woman",
+    "hair": "long black hair",
+    "glasses": true,
+    "angle": "head tilted slightly",
+    "light": "soft even light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      115,
+      175,
+      195,
+      292
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      404,
+      593,
+      596,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_017.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:times",
+    "face_px:[300, 380]",
+    "margin:2.6",
+    "light:bright harsh daylight",
+    "angle:head tilted slightly",
+    "no_glasses",
+    "blur:0.8",
+    "jpg_q60",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 17,
+   "face_attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their forties",
+    "gender_word": "woman",
+    "hair": "short grey hair",
+    "glasses": false,
+    "angle": "head tilted slightly",
+    "light": "bright harsh daylight"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      158,
+      247,
+      282,
+      408
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      411,
+      594,
+      589,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_018.png",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:courier",
+    "face_px:[300, 380]",
+    "margin:1.8",
+    "light:overhead fluorescent light",
+    "angle:head tilted slightly",
+    "no_glasses",
+    "png",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 18,
+   "face_attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their fifties",
+    "gender_word": "man",
+    "hair": "short brown hair with a beard",
+    "glasses": false,
+    "angle": "head tilted slightly",
+    "light": "overhead fluorescent light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      148,
+      219,
+      292,
+      431
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      414,
+      595,
+      586,
+      603
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_019.png",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:georgia",
+    "face_px:[300, 380]",
+    "margin:2.6",
+    "light:soft even light",
+    "angle:facing the camera",
+    "no_glasses",
+    "blur:1.6",
+    "png",
+    "face_size:medium"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 19,
+   "face_attrs": {
+    "skin": "medium tan skin",
+    "age": "in their thirties",
+    "gender_word": "woman",
+    "hair": "long black hair",
+    "glasses": false,
+    "angle": "facing the camera",
+    "light": "soft even light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      172,
+      200,
+      268,
+      346
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      404,
+      593,
+      596,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_020.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:arial",
+    "face_px:[240, 300]",
+    "margin:1.25",
+    "light:dim warm indoor light",
+    "angle:head turned slightly to the left",
+    "no_glasses",
+    "jpg_q95",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 20,
+   "face_attrs": {
+    "skin": "medium tan skin",
+    "age": "in their twenties",
+    "gender_word": "man",
+    "hair": "blond hair",
+    "glasses": false,
+    "angle": "head turned slightly to the left",
+    "light": "dim warm indoor light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      99,
+      165,
+      281,
+      405
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      414,
+      593,
+      587,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_021.png",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:georgia",
+    "face_px:[300, 380]",
+    "margin:1.8",
+    "light:dim warm indoor light",
+    "angle:head turned slightly to the left",
+    "no_glasses",
+    "png",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 21,
+   "face_attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their fifties",
+    "gender_word": "man",
+    "hair": "short dark hair",
+    "glasses": false,
+    "angle": "head turned slightly to the left",
+    "light": "dim warm indoor light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      134,
+      204,
+      306,
+      415
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      404,
+      593,
+      596,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_022.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:arial",
+    "face_px:[300, 380]",
+    "margin:1.25",
+    "light:dim warm indoor light",
+    "angle:three-quarter view",
+    "no_glasses",
+    "jpg_q60",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 22,
+   "face_attrs": {
+    "skin": "very light skin",
+    "age": "in their twenties",
+    "gender_word": "woman",
+    "hair": "long black hair",
+    "glasses": false,
+    "angle": "three-quarter view",
+    "light": "dim warm indoor light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      115,
+      173,
+      325,
+      477
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      414,
+      593,
+      587,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_023.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:arial",
+    "face_px:[170, 210]",
+    "margin:1.8",
+    "light:bright harsh daylight",
+    "angle:head tilted slightly",
+    "no_glasses",
+    "jpg_q95",
+    "face_size:medium"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 23,
+   "face_attrs": {
+    "skin": "brown skin",
+    "age": "in their sixties",
+    "gender_word": "man",
+    "hair": "curly black hair",
+    "glasses": false,
+    "angle": "head tilted slightly",
+    "light": "bright harsh daylight"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      116,
+      182,
+      194,
+      298
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      414,
+      593,
+      587,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_024.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:arial",
+    "face_px:[240, 300]",
+    "margin:2.6",
+    "light:bright harsh daylight",
+    "angle:facing the camera",
+    "no_glasses",
+    "jpg_q60",
+    "face_size:medium"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 24,
+   "face_attrs": {
+    "skin": "light olive skin",
+    "age": "in their forties",
+    "gender_word": "man",
+    "hair": "blond hair",
+    "glasses": false,
+    "angle": "facing the camera",
+    "light": "bright harsh daylight"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      141,
+      202,
+      233,
+      364
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      414,
+      593,
+      587,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_025.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:verdana",
+    "face_px:[170, 210]",
+    "margin:2.6",
+    "light:strong side light from a window",
+    "angle:head turned slightly to the left",
+    "glasses",
+    "jpg_q80",
+    "face_size:small"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 25,
+   "face_attrs": {
+    "skin": "very light skin",
+    "age": "in their forties",
+    "gender_word": "man",
+    "hair": "bald",
+    "glasses": true,
+    "angle": "head turned slightly to the left",
+    "light": "strong side light from a window"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      129,
+      190,
+      186,
+      298
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      403,
+      595,
+      597,
+      606
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_026.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:times",
+    "face_px:[170, 210]",
+    "margin:1.25",
+    "light:strong side light from a window",
+    "angle:head turned slightly to the right",
+    "glasses",
+    "blur:1.2",
+    "jpg_q80",
+    "face_size:medium"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 26,
+   "face_attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their forties",
+    "gender_word": "man",
+    "hair": "curly black hair",
+    "glasses": true,
+    "angle": "head turned slightly to the right",
+    "light": "strong side light from a window"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      100,
+      156,
+      210,
+      324
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      411,
+      594,
+      589,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_027.png",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:georgia",
+    "face_px:[170, 210]",
+    "margin:1.25",
+    "light:bright harsh daylight",
+    "angle:three-quarter view",
+    "no_glasses",
+    "png",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 27,
+   "face_attrs": {
+    "skin": "medium tan skin",
+    "age": "in their thirties",
+    "gender_word": "man",
+    "hair": "short grey hair",
+    "glasses": false,
+    "angle": "three-quarter view",
+    "light": "bright harsh daylight"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      93,
+      156,
+      217,
+      324
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      404,
+      593,
+      596,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_028.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:trebuchet",
+    "face_px:[300, 380]",
+    "margin:1.8",
+    "light:soft even light",
+    "angle:three-quarter view",
+    "no_glasses",
+    "jpg_q95",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 28,
+   "face_attrs": {
+    "skin": "medium tan skin",
+    "age": "in their seventies",
+    "gender_word": "man",
+    "hair": "short brown hair with a beard",
+    "glasses": false,
+    "angle": "three-quarter view",
+    "light": "soft even light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      143,
+      218,
+      297,
+      430
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      420,
+      594,
+      581,
+      605
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_029.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:courier",
+    "face_px:[300, 380]",
+    "margin:2.6",
+    "light:soft even light",
+    "angle:head turned slightly to the right",
+    "glasses",
+    "jpg_q40",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 29,
+   "face_attrs": {
+    "skin": "brown skin",
+    "age": "in their thirties",
+    "gender_word": "woman",
+    "hair": "blond hair tied back",
+    "glasses": true,
+    "angle": "head turned slightly to the right",
+    "light": "soft even light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      158,
+      227,
+      282,
+      400
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      414,
+      595,
+      586,
+      603
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_030.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:trebuchet",
+    "face_px:[170, 210]",
+    "margin:1.25",
+    "light:overhead fluorescent light",
+    "angle:head turned slightly to the right",
+    "glasses",
+    "jpg_q40",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 30,
+   "face_attrs": {
+    "skin": "very light skin",
+    "age": "in their thirties",
+    "gender_word": "woman",
+    "hair": "short grey hair",
+    "glasses": true,
+    "angle": "head turned slightly to the right",
+    "light": "overhead fluorescent light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      85,
+      156,
+      225,
+      324
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      420,
+      594,
+      581,
+      605
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_031.jpg",
+   "type": "id_card",
+   "split": "holdout",
+   "variety": [
+    "font:georgia",
+    "face_px:[170, 210]",
+    "margin:1.8",
+    "light:soft even light",
+    "angle:head turned slightly to the left",
+    "glasses",
+    "blur:0.8",
+    "jpg_q60",
+    "face_size:medium"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 31,
+   "face_attrs": {
+    "skin": "medium tan skin",
+    "age": "in their sixties",
+    "gender_word": "man",
+    "hair": "short dark hair",
+    "glasses": true,
+    "angle": "head turned slightly to the left",
+    "light": "soft even light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      114,
+      182,
+      196,
+      298
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      404,
+      593,
+      596,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_032.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:trebuchet",
+    "face_px:[170, 210]",
+    "margin:1.25",
+    "light:strong side light from a window",
+    "angle:head turned slightly to the left",
+    "glasses",
+    "blur:1.6",
+    "jpg_q80",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 32,
+   "face_attrs": {
+    "skin": "brown skin",
+    "age": "in their sixties",
+    "gender_word": "woman",
+    "hair": "long black hair",
+    "glasses": true,
+    "angle": "head turned slightly to the left",
+    "light": "strong side light from a window"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      94,
+      156,
+      216,
+      324
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      420,
+      594,
+      581,
+      605
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_033.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:times",
+    "face_px:[240, 300]",
+    "margin:2.6",
+    "light:bright harsh daylight",
+    "angle:head tilted slightly",
+    "no_glasses",
+    "jpg_q40",
+    "face_size:medium"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 33,
+   "face_attrs": {
+    "skin": "brown skin",
+    "age": "in their thirties",
+    "gender_word": "woman",
+    "hair": "red hair",
+    "glasses": false,
+    "angle": "head tilted slightly",
+    "light": "bright harsh daylight"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      147,
+      189,
+      233,
+      310
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      411,
+      594,
+      589,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_034.jpg",
+   "type": "id_card",
+   "split": "holdout",
+   "variety": [
+    "font:courier",
+    "face_px:[170, 210]",
+    "margin:1.8",
+    "light:strong side light from a window",
+    "angle:head turned slightly to the right",
+    "glasses",
+    "jpg_q60",
+    "face_size:medium"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 34,
+   "face_attrs": {
+    "skin": "light olive skin",
+    "age": "in their seventies",
+    "gender_word": "man",
+    "hair": "curly black hair",
+    "glasses": true,
+    "angle": "head turned slightly to the right",
+    "light": "strong side light from a window"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      111,
+      182,
+      199,
+      298
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      414,
+      595,
+      586,
+      603
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_035.jpg",
+   "type": "id_card",
+   "split": "holdout",
+   "variety": [
+    "font:times",
+    "face_px:[170, 210]",
+    "margin:1.8",
+    "light:overhead fluorescent light",
+    "angle:head turned slightly to the left",
+    "glasses",
+    "jpg_q95",
+    "face_size:medium"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 35,
+   "face_attrs": {
+    "skin": "medium tan skin",
+    "age": "in their fifties",
+    "gender_word": "woman",
+    "hair": "shoulder-length brown hair",
+    "glasses": true,
+    "angle": "head turned slightly to the left",
+    "light": "overhead fluorescent light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      111,
+      182,
+      199,
+      298
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      411,
+      594,
+      589,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_036.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:arial",
+    "face_px:[300, 380]",
+    "margin:1.8",
+    "light:strong side light from a window",
+    "angle:head tilted slightly",
+    "no_glasses",
+    "jpg_q80",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 36,
+   "face_attrs": {
+    "skin": "light olive skin",
+    "age": "in their sixties",
+    "gender_word": "man",
+    "hair": "curly black hair",
+    "glasses": false,
+    "angle": "head tilted slightly",
+    "light": "strong side light from a window"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      144,
+      219,
+      296,
+      431
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      414,
+      593,
+      587,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_037.jpg",
+   "type": "id_card",
+   "split": "holdout",
+   "variety": [
+    "font:courier",
+    "face_px:[170, 210]",
+    "margin:1.8",
+    "light:soft even light",
+    "angle:facing the camera",
+    "glasses",
+    "blur:0.8",
+    "jpg_q40",
+    "face_size:medium"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 37,
+   "face_attrs": {
+    "skin": "brown skin",
+    "age": "in their twenties",
+    "gender_word": "woman",
+    "hair": "short grey hair",
+    "glasses": true,
+    "angle": "facing the camera",
+    "light": "soft even light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      113,
+      180,
+      197,
+      296
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      414,
+      595,
+      586,
+      603
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_038.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:georgia",
+    "face_px:[240, 300]",
+    "margin:2.6",
+    "light:soft even light",
+    "angle:head tilted slightly",
+    "glasses",
+    "jpg_q80",
+    "face_size:medium"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 38,
+   "face_attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their fifties",
+    "gender_word": "man",
+    "hair": "blond hair",
+    "glasses": true,
+    "angle": "head tilted slightly",
+    "light": "soft even light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      153,
+      196,
+      240,
+      346
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      404,
+      593,
+      596,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_039.png",
+   "type": "id_card",
+   "split": "holdout",
+   "variety": [
+    "font:times",
+    "face_px:[170, 210]",
+    "margin:1.25",
+    "light:bright harsh daylight",
+    "angle:three-quarter view",
+    "glasses",
+    "png",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 39,
+   "face_attrs": {
+    "skin": "very light skin",
+    "age": "in their fifties",
+    "gender_word": "woman",
+    "hair": "red hair",
+    "glasses": true,
+    "angle": "three-quarter view",
+    "light": "bright harsh daylight"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      81,
+      156,
+      229,
+      324
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      411,
+      594,
+      589,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_040.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:trebuchet",
+    "face_px:[300, 380]",
+    "margin:1.25",
+    "light:dim warm indoor light",
+    "angle:facing the camera",
+    "glasses",
+    "jpg_q95",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 40,
+   "face_attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their twenties",
+    "gender_word": "woman",
+    "hair": "short grey hair",
+    "glasses": true,
+    "angle": "facing the camera",
+    "light": "dim warm indoor light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      121,
+      173,
+      319,
+      477
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      420,
+      594,
+      581,
+      605
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_041.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:verdana",
+    "face_px:[240, 300]",
+    "margin:1.8",
+    "light:strong side light from a window",
+    "angle:head turned slightly to the left",
+    "no_glasses",
+    "jpg_q40",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 41,
+   "face_attrs": {
+    "skin": "light olive skin",
+    "age": "in their seventies",
+    "gender_word": "woman",
+    "hair": "long black hair",
+    "glasses": false,
+    "angle": "head turned slightly to the left",
+    "light": "strong side light from a window"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      130,
+      182,
+      250,
+      349
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      403,
+      595,
+      597,
+      606
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_042.jpg",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:trebuchet",
+    "face_px:[240, 300]",
+    "margin:1.8",
+    "light:strong side light from a window",
+    "angle:three-quarter view",
+    "no_glasses",
+    "blur:1.2",
+    "jpg_q60",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 42,
+   "face_attrs": {
+    "skin": "very light skin",
+    "age": "in their seventies",
+    "gender_word": "woman",
+    "hair": "red hair",
+    "glasses": false,
+    "angle": "three-quarter view",
+    "light": "strong side light from a window"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      132,
+      202,
+      248,
+      368
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      420,
+      594,
+      581,
+      605
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_043.png",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:georgia",
+    "face_px:[240, 300]",
+    "margin:1.8",
+    "light:dim warm indoor light",
+    "angle:head turned slightly to the left",
+    "no_glasses",
+    "png",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 43,
+   "face_attrs": {
+    "skin": "very light skin",
+    "age": "in their thirties",
+    "gender_word": "man",
+    "hair": "curly black hair",
+    "glasses": false,
+    "angle": "head turned slightly to the left",
+    "light": "dim warm indoor light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      111,
+      216,
+      269,
+      383
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      404,
+      593,
+      596,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_044.jpg",
+   "type": "id_card",
+   "split": "holdout",
+   "variety": [
+    "font:verdana",
+    "face_px:[240, 300]",
+    "margin:2.6",
+    "light:strong side light from a window",
+    "angle:facing the camera",
+    "no_glasses",
+    "jpg_q95",
+    "face_size:medium"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 44,
+   "face_attrs": {
+    "skin": "very light skin",
+    "age": "in their sixties",
+    "gender_word": "woman",
+    "hair": "shoulder-length brown hair",
+    "glasses": false,
+    "angle": "facing the camera",
+    "light": "strong side light from a window"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      159,
+      185,
+      242,
+      328
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      403,
+      595,
+      597,
+      606
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_045.jpg",
+   "type": "id_card",
+   "split": "holdout",
+   "variety": [
+    "font:georgia",
+    "face_px:[240, 300]",
+    "margin:1.8",
+    "light:soft even light",
+    "angle:three-quarter view",
+    "no_glasses",
+    "jpg_q95",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 45,
+   "face_attrs": {
+    "skin": "brown skin",
+    "age": "in their thirties",
+    "gender_word": "man",
+    "hair": "short grey hair",
+    "glasses": false,
+    "angle": "three-quarter view",
+    "light": "soft even light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      129,
+      202,
+      251,
+      368
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      404,
+      593,
+      596,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_046.jpg",
+   "type": "id_card",
+   "split": "holdout",
+   "variety": [
+    "font:times",
+    "face_px:[300, 380]",
+    "margin:2.6",
+    "light:overhead fluorescent light",
+    "angle:head turned slightly to the right",
+    "no_glasses",
+    "jpg_q60",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 46,
+   "face_attrs": {
+    "skin": "very light skin",
+    "age": "in their twenties",
+    "gender_word": "man",
+    "hair": "short grey hair",
+    "glasses": false,
+    "angle": "head turned slightly to the right",
+    "light": "overhead fluorescent light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      164,
+      189,
+      278,
+      392
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      411,
+      594,
+      589,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_047.jpg",
+   "type": "id_card",
+   "split": "holdout",
+   "variety": [
+    "font:georgia",
+    "face_px:[170, 210]",
+    "margin:1.8",
+    "light:overhead fluorescent light",
+    "angle:facing the camera",
+    "no_glasses",
+    "jpg_q80",
+    "face_size:medium"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 47,
+   "face_attrs": {
+    "skin": "medium tan skin",
+    "age": "in their twenties",
+    "gender_word": "man",
+    "hair": "blond hair",
+    "glasses": false,
+    "angle": "facing the camera",
+    "light": "overhead fluorescent light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      116,
+      185,
+      198,
+      305
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      404,
+      593,
+      596,
+      604
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_048.png",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:trebuchet",
+    "face_px:[300, 380]",
+    "margin:1.25",
+    "light:dim warm indoor light",
+    "angle:head turned slightly to the right",
+    "no_glasses",
+    "png",
+    "face_size:large"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 48,
+   "face_attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their seventies",
+    "gender_word": "man",
+    "hair": "curly black hair",
+    "glasses": false,
+    "angle": "head turned slightly to the right",
+    "light": "dim warm indoor light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      92,
+      173,
+      348,
+      477
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      420,
+      594,
+      581,
+      605
+     ]
+    }
+   ]
+  },
+  {
+   "file": "id_card_049.png",
+   "type": "id_card",
+   "split": "dev",
+   "variety": [
+    "font:trebuchet",
+    "face_px:[300, 380]",
+    "margin:2.6",
+    "light:dim warm indoor light",
+    "angle:head tilted slightly",
+    "no_glasses",
+    "png",
+    "face_size:medium"
+   ],
+   "width": 1000,
+   "height": 640,
+   "portrait_index": 49,
+   "face_attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their seventies",
+    "gender_word": "woman",
+    "hair": "short grey hair",
+    "glasses": false,
+    "angle": "head tilted slightly",
+    "light": "dim warm indoor light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      164,
+      213,
+      276,
+      360
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      420,
+      594,
+      581,
+      605
+     ]
+    }
+   ]
+  },
+  {
+   "file": "chat_000.png",
+   "type": "chat",
+   "split": "holdout",
+   "variety": [
+    "font:georgia",
+    "avatar_px:36",
+    "margin:1.9",
+    "light:soft even light",
+    "angle:head turned slightly to the right",
+    "glasses",
+    "png",
+    "face_size:tiny"
+   ],
+   "width": 600,
+   "height": 1000,
+   "portrait_index": 50,
+   "face_attrs": {
+    "skin": "medium tan skin",
+    "age": "in their twenties",
+    "gender_word": "woman",
+    "hair": "blond hair tied back",
+    "glasses": true,
+    "angle": "head turned slightly to the right",
+    "light": "soft even light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      24,
+      125,
+      40,
+      144
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      24,
+      188,
+      40,
+      207
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      24,
+      314,
+      40,
+      333
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      24,
+      440,
+      40,
+      459
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      24,
+      566,
+      40,
+      585
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      204,
+      968,
+      396,
+      979
+     ]
+    }
+   ]
+  },
+  {
+   "file": "chat_001.jpg",
+   "type": "chat",
+   "split": "holdout",
+   "variety": [
+    "font:verdana",
+    "avatar_px:52",
+    "margin:1.3",
+    "light:dim warm indoor light",
+    "angle:facing the camera",
+    "no_glasses",
+    "jpg_q80",
+    "face_size:small"
+   ],
+   "width": 600,
+   "height": 1000,
+   "portrait_index": 51,
+   "face_attrs": {
+    "skin": "very light skin",
+    "age": "in their forties",
+    "gender_word": "man",
+    "hair": "bald",
+    "glasses": false,
+    "angle": "facing the camera",
+    "light": "dim warm indoor light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      121,
+      55,
+      161
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      195,
+      55,
+      235
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      338,
+      55,
+      378
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      481,
+      55,
+      521
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      203,
+      970,
+      397,
+      981
+     ]
+    }
+   ]
+  },
+  {
+   "file": "chat_002.jpg",
+   "type": "chat",
+   "split": "dev",
+   "variety": [
+    "font:arial",
+    "avatar_px:72",
+    "margin:1.3",
+    "light:bright harsh daylight",
+    "angle:head tilted slightly",
+    "no_glasses",
+    "jpg_q60",
+    "face_size:small"
+   ],
+   "width": 600,
+   "height": 1000,
+   "portrait_index": 52,
+   "face_attrs": {
+    "skin": "light olive skin",
+    "age": "in their seventies",
+    "gender_word": "woman",
+    "hair": "curly dark hair",
+    "glasses": false,
+    "angle": "head tilted slightly",
+    "light": "bright harsh daylight"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      27,
+      123,
+      73,
+      179
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      27,
+      217,
+      73,
+      273
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      27,
+      374,
+      73,
+      430
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      27,
+      531,
+      73,
+      587
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      214,
+      968,
+      387,
+      979
+     ]
+    }
+   ]
+  },
+  {
+   "file": "chat_003.png",
+   "type": "chat",
+   "split": "dev",
+   "variety": [
+    "font:georgia",
+    "avatar_px:36",
+    "margin:1.3",
+    "light:strong side light from a window",
+    "angle:head tilted slightly",
+    "glasses",
+    "png",
+    "face_size:tiny"
+   ],
+   "width": 600,
+   "height": 1000,
+   "portrait_index": 53,
+   "face_attrs": {
+    "skin": "very light skin",
+    "age": "in their thirties",
+    "gender_word": "man",
+    "hair": "short dark hair",
+    "glasses": true,
+    "angle": "head tilted slightly",
+    "light": "strong side light from a window"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      22,
+      121,
+      42,
+      149
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      22,
+      184,
+      42,
+      212
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      22,
+      310,
+      42,
+      338
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      22,
+      436,
+      42,
+      464
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      22,
+      562,
+      42,
+      590
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      204,
+      968,
+      396,
+      979
+     ]
+    }
+   ]
+  },
+  {
+   "file": "chat_004.jpg",
+   "type": "chat",
+   "split": "dev",
+   "variety": [
+    "font:courier",
+    "avatar_px:52",
+    "margin:1.3",
+    "light:overhead fluorescent light",
+    "angle:facing the camera",
+    "no_glasses",
+    "blur:1.2",
+    "jpg_q40",
+    "face_size:small"
+   ],
+   "width": 600,
+   "height": 1000,
+   "portrait_index": 54,
+   "face_attrs": {
+    "skin": "brown skin",
+    "age": "in their sixties",
+    "gender_word": "man",
+    "hair": "short brown hair with a beard",
+    "glasses": false,
+    "angle": "facing the camera",
+    "light": "overhead fluorescent light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      24,
+      127,
+      56,
+      167
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      24,
+      207,
+      56,
+      247
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      24,
+      344,
+      56,
+      384
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      24,
+      504,
+      56,
+      544
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      24,
+      641,
+      56,
+      681
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      214,
+      970,
+      386,
+      978
+     ]
+    }
+   ]
+  },
+  {
+   "file": "chat_005.jpg",
+   "type": "chat",
+   "split": "dev",
+   "variety": [
+    "font:arial",
+    "avatar_px:72",
+    "margin:1.3",
+    "light:bright harsh daylight",
+    "angle:head turned slightly to the right",
+    "no_glasses",
+    "blur:0.8",
+    "jpg_q95",
+    "face_size:small"
+   ],
+   "width": 600,
+   "height": 1000,
+   "portrait_index": 55,
+   "face_attrs": {
+    "skin": "very light skin",
+    "age": "in their seventies",
+    "gender_word": "man",
+    "hair": "short brown hair with a beard",
+    "glasses": false,
+    "angle": "head turned slightly to the right",
+    "light": "bright harsh daylight"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      27,
+      123,
+      73,
+      179
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      27,
+      217,
+      73,
+      273
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      27,
+      374,
+      73,
+      430
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      27,
+      531,
+      73,
+      587
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      27,
+      688,
+      73,
+      744
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      214,
+      968,
+      387,
+      979
+     ]
+    }
+   ]
+  },
+  {
+   "file": "chat_006.jpg",
+   "type": "chat",
+   "split": "holdout",
+   "variety": [
+    "font:verdana",
+    "avatar_px:36",
+    "margin:1.9",
+    "light:overhead fluorescent light",
+    "angle:facing the camera",
+    "glasses",
+    "jpg_q60",
+    "face_size:tiny"
+   ],
+   "width": 600,
+   "height": 1000,
+   "portrait_index": 56,
+   "face_attrs": {
+    "skin": "medium tan skin",
+    "age": "in their twenties",
+    "gender_word": "man",
+    "hair": "bald",
+    "glasses": true,
+    "angle": "facing the camera",
+    "light": "overhead fluorescent light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      125,
+      39,
+      144
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      188,
+      39,
+      207
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      326,
+      39,
+      345
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      463,
+      39,
+      482
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      589,
+      39,
+      608
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      203,
+      970,
+      397,
+      981
+     ]
+    }
+   ]
+  },
+  {
+   "file": "chat_007.jpg",
+   "type": "chat",
+   "split": "holdout",
+   "variety": [
+    "font:times",
+    "avatar_px:52",
+    "margin:1.3",
+    "light:overhead fluorescent light",
+    "angle:facing the camera",
+    "glasses",
+    "jpg_q60",
+    "face_size:small"
+   ],
+   "width": 600,
+   "height": 1000,
+   "portrait_index": 57,
+   "face_attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their sixties",
+    "gender_word": "woman",
+    "hair": "long black hair",
+    "glasses": true,
+    "angle": "facing the camera",
+    "light": "overhead fluorescent light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      121,
+      55,
+      161
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      195,
+      55,
+      235
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      332,
+      55,
+      372
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      469,
+      55,
+      509
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      606,
+      55,
+      646
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      211,
+      969,
+      389,
+      979
+     ]
+    }
+   ]
+  },
+  {
+   "file": "chat_008.png",
+   "type": "chat",
+   "split": "dev",
+   "variety": [
+    "font:verdana",
+    "avatar_px:72",
+    "margin:1.9",
+    "light:bright harsh daylight",
+    "angle:facing the camera",
+    "no_glasses",
+    "blur:1.6",
+    "png",
+    "face_size:tiny"
+   ],
+   "width": 600,
+   "height": 1000,
+   "portrait_index": 58,
+   "face_attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their twenties",
+    "gender_word": "man",
+    "hair": "short dark hair",
+    "glasses": false,
+    "angle": "facing the camera",
+    "light": "bright harsh daylight"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      41,
+      127,
+      66,
+      165
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      41,
+      221,
+      66,
+      259
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      41,
+      378,
+      66,
+      416
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      41,
+      535,
+      66,
+      573
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      41,
+      692,
+      66,
+      730
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      203,
+      970,
+      397,
+      981
+     ]
+    }
+   ]
+  },
+  {
+   "file": "chat_009.jpg",
+   "type": "chat",
+   "split": "dev",
+   "variety": [
+    "font:georgia",
+    "avatar_px:36",
+    "margin:1.9",
+    "light:dim warm indoor light",
+    "angle:head turned slightly to the left",
+    "glasses",
+    "jpg_q80",
+    "face_size:tiny"
+   ],
+   "width": 600,
+   "height": 1000,
+   "portrait_index": 59,
+   "face_attrs": {
+    "skin": "brown skin",
+    "age": "in their fifties",
+    "gender_word": "man",
+    "hair": "short brown hair with a beard",
+    "glasses": true,
+    "angle": "head turned slightly to the left",
+    "light": "dim warm indoor light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      24,
+      126,
+      40,
+      144
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      24,
+      189,
+      40,
+      207
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      24,
+      315,
+      40,
+      333
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      24,
+      441,
+      40,
+      459
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      204,
+      968,
+      396,
+      979
+     ]
+    }
+   ]
+  },
+  {
+   "file": "chat_010.jpg",
+   "type": "chat",
+   "split": "dev",
+   "variety": [
+    "font:georgia",
+    "avatar_px:52",
+    "margin:1.3",
+    "light:strong side light from a window",
+    "angle:three-quarter view",
+    "no_glasses",
+    "blur:1.6",
+    "jpg_q95",
+    "face_size:tiny"
+   ],
+   "width": 600,
+   "height": 1000,
+   "portrait_index": 60,
+   "face_attrs": {
+    "skin": "very light skin",
+    "age": "in their thirties",
+    "gender_word": "woman",
+    "hair": "curly dark hair",
+    "glasses": false,
+    "angle": "three-quarter view",
+    "light": "strong side light from a window"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      26,
+      121,
+      54,
+      161
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      26,
+      195,
+      54,
+      235
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      26,
+      332,
+      54,
+      372
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      26,
+      469,
+      54,
+      509
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      26,
+      606,
+      54,
+      646
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      204,
+      968,
+      396,
+      979
+     ]
+    }
+   ]
+  },
+  {
+   "file": "chat_011.png",
+   "type": "chat",
+   "split": "dev",
+   "variety": [
+    "font:trebuchet",
+    "avatar_px:72",
+    "margin:1.3",
+    "light:dim warm indoor light",
+    "angle:head turned slightly to the right",
+    "no_glasses",
+    "png",
+    "face_size:small"
+   ],
+   "width": 600,
+   "height": 1000,
+   "portrait_index": 61,
+   "face_attrs": {
+    "skin": "medium tan skin",
+    "age": "in their thirties",
+    "gender_word": "woman",
+    "hair": "shoulder-length brown hair",
+    "glasses": false,
+    "angle": "head turned slightly to the right",
+    "light": "dim warm indoor light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      31,
+      123,
+      69,
+      179
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      31,
+      217,
+      69,
+      273
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      31,
+      374,
+      69,
+      430
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      31,
+      531,
+      69,
+      587
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      220,
+      969,
+      381,
+      980
+     ]
+    }
+   ]
+  },
+  {
+   "file": "chat_012.jpg",
+   "type": "chat",
+   "split": "dev",
+   "variety": [
+    "font:times",
+    "avatar_px:36",
+    "margin:1.3",
+    "light:soft even light",
+    "angle:facing the camera",
+    "glasses",
+    "jpg_q95",
+    "face_size:tiny"
+   ],
+   "width": 600,
+   "height": 1000,
+   "portrait_index": 62,
+   "face_attrs": {
+    "skin": "brown skin",
+    "age": "in their sixties",
+    "gender_word": "woman",
+    "hair": "short grey hair",
+    "glasses": true,
+    "angle": "facing the camera",
+    "light": "soft even light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      21,
+      121,
+      43,
+      149
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      21,
+      184,
+      43,
+      212
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      21,
+      310,
+      43,
+      338
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      21,
+      436,
+      43,
+      464
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      21,
+      562,
+      43,
+      590
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      211,
+      969,
+      389,
+      979
+     ]
+    }
+   ]
+  },
+  {
+   "file": "chat_013.jpg",
+   "type": "chat",
+   "split": "dev",
+   "variety": [
+    "font:trebuchet",
+    "avatar_px:52",
+    "margin:1.3",
+    "light:strong side light from a window",
+    "angle:head tilted slightly",
+    "no_glasses",
+    "jpg_q80",
+    "face_size:small"
+   ],
+   "width": 600,
+   "height": 1000,
+   "portrait_index": 63,
+   "face_attrs": {
+    "skin": "very light skin",
+    "age": "in their sixties",
+    "gender_word": "man",
+    "hair": "bald",
+    "glasses": false,
+    "angle": "head tilted slightly",
+    "light": "strong side light from a window"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      24,
+      121,
+      56,
+      161
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      24,
+      195,
+      56,
+      235
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      24,
+      332,
+      56,
+      372
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      24,
+      469,
+      56,
+      509
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      220,
+      969,
+      381,
+      980
+     ]
+    }
+   ]
+  },
+  {
+   "file": "chat_014.jpg",
+   "type": "chat",
+   "split": "holdout",
+   "variety": [
+    "font:arial",
+    "avatar_px:72",
+    "margin:1.3",
+    "light:bright harsh daylight",
+    "angle:head turned slightly to the right",
+    "no_glasses",
+    "jpg_q40",
+    "face_size:small"
+   ],
+   "width": 600,
+   "height": 1000,
+   "portrait_index": 64,
+   "face_attrs": {
+    "skin": "light olive skin",
+    "age": "in their thirties",
+    "gender_word": "man",
+    "hair": "short brown hair with a beard",
+    "glasses": false,
+    "angle": "head turned slightly to the right",
+    "light": "bright harsh daylight"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      33,
+      123,
+      67,
+      179
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      33,
+      217,
+      67,
+      273
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      33,
+      374,
+      67,
+      430
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      33,
+      531,
+      67,
+      587
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      214,
+      968,
+      387,
+      979
+     ]
+    }
+   ]
+  },
+  {
+   "file": "chat_015.jpg",
+   "type": "chat",
+   "split": "dev",
+   "variety": [
+    "font:courier",
+    "avatar_px:36",
+    "margin:1.3",
+    "light:dim warm indoor light",
+    "angle:head turned slightly to the left",
+    "no_glasses",
+    "jpg_q95",
+    "face_size:tiny"
+   ],
+   "width": 600,
+   "height": 1000,
+   "portrait_index": 65,
+   "face_attrs": {
+    "skin": "light olive skin",
+    "age": "in their twenties",
+    "gender_word": "man",
+    "hair": "short grey hair",
+    "glasses": false,
+    "angle": "head turned slightly to the left",
+    "light": "dim warm indoor light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      22,
+      121,
+      42,
+      149
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      22,
+      184,
+      42,
+      212
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      22,
+      310,
+      42,
+      338
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      22,
+      448,
+      42,
+      476
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      22,
+      620,
+      42,
+      648
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      214,
+      970,
+      386,
+      978
+     ]
+    }
+   ]
+  },
+  {
+   "file": "chat_016.jpg",
+   "type": "chat",
+   "split": "dev",
+   "variety": [
+    "font:times",
+    "avatar_px:52",
+    "margin:1.3",
+    "light:bright harsh daylight",
+    "angle:three-quarter view",
+    "glasses",
+    "jpg_q40",
+    "face_size:small"
+   ],
+   "width": 600,
+   "height": 1000,
+   "portrait_index": 66,
+   "face_attrs": {
+    "skin": "light olive skin",
+    "age": "in their twenties",
+    "gender_word": "man",
+    "hair": "blond hair",
+    "glasses": true,
+    "angle": "three-quarter view",
+    "light": "bright harsh daylight"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      121,
+      55,
+      161
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      195,
+      55,
+      235
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      332,
+      55,
+      372
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      469,
+      55,
+      509
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      211,
+      969,
+      389,
+      979
+     ]
+    }
+   ]
+  },
+  {
+   "file": "chat_017.jpg",
+   "type": "chat",
+   "split": "dev",
+   "variety": [
+    "font:courier",
+    "avatar_px:72",
+    "margin:1.3",
+    "light:overhead fluorescent light",
+    "angle:three-quarter view",
+    "no_glasses",
+    "jpg_q95",
+    "face_size:small"
+   ],
+   "width": 600,
+   "height": 1000,
+   "portrait_index": 67,
+   "face_attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their forties",
+    "gender_word": "man",
+    "hair": "short dark hair",
+    "glasses": false,
+    "angle": "three-quarter view",
+    "light": "overhead fluorescent light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      30,
+      123,
+      70,
+      179
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      30,
+      217,
+      70,
+      273
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      30,
+      374,
+      70,
+      430
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      30,
+      531,
+      70,
+      587
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      30,
+      688,
+      70,
+      744
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      214,
+      970,
+      386,
+      978
+     ]
+    }
+   ]
+  },
+  {
+   "file": "chat_018.jpg",
+   "type": "chat",
+   "split": "holdout",
+   "variety": [
+    "font:georgia",
+    "avatar_px:36",
+    "margin:1.9",
+    "light:soft even light",
+    "angle:facing the camera",
+    "no_glasses",
+    "jpg_q60",
+    "face_size:tiny"
+   ],
+   "width": 600,
+   "height": 1000,
+   "portrait_index": 68,
+   "face_attrs": {
+    "skin": "light olive skin",
+    "age": "in their fifties",
+    "gender_word": "woman",
+    "hair": "shoulder-length brown hair",
+    "glasses": false,
+    "angle": "facing the camera",
+    "light": "soft even light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      125,
+      39,
+      144
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      188,
+      39,
+      207
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      314,
+      39,
+      333
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      440,
+      39,
+      459
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      566,
+      39,
+      585
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      204,
+      968,
+      396,
+      979
+     ]
+    }
+   ]
+  },
+  {
+   "file": "chat_019.jpg",
+   "type": "chat",
+   "split": "holdout",
+   "variety": [
+    "font:arial",
+    "avatar_px:52",
+    "margin:1.9",
+    "light:soft even light",
+    "angle:head tilted slightly",
+    "glasses",
+    "blur:0.8",
+    "jpg_q40",
+    "face_size:tiny"
+   ],
+   "width": 600,
+   "height": 1000,
+   "portrait_index": 69,
+   "face_attrs": {
+    "skin": "brown skin",
+    "age": "in their seventies",
+    "gender_word": "woman",
+    "hair": "curly dark hair",
+    "glasses": true,
+    "angle": "head tilted slightly",
+    "light": "soft even light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      28,
+      127,
+      53,
+      157
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      28,
+      201,
+      53,
+      231
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      28,
+      338,
+      53,
+      368
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      28,
+      475,
+      53,
+      505
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      214,
+      968,
+      387,
+      979
+     ]
+    }
+   ]
+  },
+  {
+   "file": "chat_020.png",
+   "type": "chat",
+   "split": "dev",
+   "variety": [
+    "font:georgia",
+    "avatar_px:72",
+    "margin:1.9",
+    "light:soft even light",
+    "angle:facing the camera",
+    "glasses",
+    "png",
+    "face_size:small"
+   ],
+   "width": 600,
+   "height": 1000,
+   "portrait_index": 70,
+   "face_attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their forties",
+    "gender_word": "woman",
+    "hair": "red hair",
+    "glasses": true,
+    "angle": "facing the camera",
+    "light": "soft even light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      41,
+      132,
+      73,
+      172
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      41,
+      226,
+      73,
+      266
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      41,
+      383,
+      73,
+      423
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      41,
+      540,
+      73,
+      580
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      41,
+      697,
+      73,
+      737
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      204,
+      968,
+      396,
+      979
+     ]
+    }
+   ]
+  },
+  {
+   "file": "chat_021.jpg",
+   "type": "chat",
+   "split": "dev",
+   "variety": [
+    "font:trebuchet",
+    "avatar_px:36",
+    "margin:1.9",
+    "light:strong side light from a window",
+    "angle:head turned slightly to the left",
+    "no_glasses",
+    "jpg_q95",
+    "face_size:tiny"
+   ],
+   "width": 600,
+   "height": 1000,
+   "portrait_index": 71,
+   "face_attrs": {
+    "skin": "medium tan skin",
+    "age": "in their forties",
+    "gender_word": "man",
+    "hair": "short brown hair with a beard",
+    "glasses": false,
+    "angle": "head turned slightly to the left",
+    "light": "strong side light from a window"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      124,
+      39,
+      143
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      187,
+      39,
+      206
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      313,
+      39,
+      332
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      439,
+      39,
+      458
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      565,
+      39,
+      584
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      220,
+      969,
+      381,
+      980
+     ]
+    }
+   ]
+  },
+  {
+   "file": "chat_022.jpg",
+   "type": "chat",
+   "split": "dev",
+   "variety": [
+    "font:courier",
+    "avatar_px:52",
+    "margin:1.3",
+    "light:overhead fluorescent light",
+    "angle:three-quarter view",
+    "no_glasses",
+    "blur:0.8",
+    "jpg_q95",
+    "face_size:small"
+   ],
+   "width": 600,
+   "height": 1000,
+   "portrait_index": 72,
+   "face_attrs": {
+    "skin": "brown skin",
+    "age": "in their seventies",
+    "gender_word": "woman",
+    "hair": "shoulder-length brown hair",
+    "glasses": false,
+    "angle": "three-quarter view",
+    "light": "overhead fluorescent light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      121,
+      55,
+      161
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      195,
+      55,
+      235
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      332,
+      55,
+      372
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      469,
+      55,
+      509
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      606,
+      55,
+      646
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      214,
+      970,
+      386,
+      978
+     ]
+    }
+   ]
+  },
+  {
+   "file": "chat_023.jpg",
+   "type": "chat",
+   "split": "dev",
+   "variety": [
+    "font:georgia",
+    "avatar_px:72",
+    "margin:1.3",
+    "light:strong side light from a window",
+    "angle:three-quarter view",
+    "no_glasses",
+    "jpg_q80",
+    "face_size:small"
+   ],
+   "width": 600,
+   "height": 1000,
+   "portrait_index": 73,
+   "face_attrs": {
+    "skin": "medium tan skin",
+    "age": "in their fifties",
+    "gender_word": "woman",
+    "hair": "shoulder-length brown hair",
+    "glasses": false,
+    "angle": "three-quarter view",
+    "light": "strong side light from a window"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      29,
+      123,
+      71,
+      179
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      29,
+      217,
+      71,
+      273
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      29,
+      374,
+      71,
+      430
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      29,
+      531,
+      71,
+      587
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      29,
+      688,
+      71,
+      744
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      204,
+      968,
+      396,
+      979
+     ]
+    }
+   ]
+  },
+  {
+   "file": "chat_024.png",
+   "type": "chat",
+   "split": "dev",
+   "variety": [
+    "font:arial",
+    "avatar_px:36",
+    "margin:1.9",
+    "light:dim warm indoor light",
+    "angle:facing the camera",
+    "glasses",
+    "blur:1.6",
+    "png",
+    "face_size:tiny"
+   ],
+   "width": 600,
+   "height": 1000,
+   "portrait_index": 74,
+   "face_attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their fifties",
+    "gender_word": "woman",
+    "hair": "long black hair",
+    "glasses": true,
+    "angle": "facing the camera",
+    "light": "dim warm indoor light"
+   },
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      124,
+      39,
+      143
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      187,
+      39,
+      206
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      313,
+      39,
+      332
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      439,
+      39,
+      458
+     ]
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      25,
+      565,
+      39,
+      584
+     ]
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      214,
+      968,
+      387,
+      979
+     ]
+    }
+   ]
+  }
+ ],
+ "sha256": {
+  "id_card_000.jpg": "6ef8bd328d8a582578654d47d5c7eeb690037cf7a7a161bd7472e20f2f91d9f6",
+  "id_card_001.png": "b7237b081421031a8f1f3c3ae9fa2a25a26342f2203b5096370733715946e916",
+  "id_card_002.png": "f715f8e450d9593d7b33aa0979928ceb27e6e26a226e70bac6dc6a9c1a4ba6db",
+  "id_card_003.png": "e37ae67dea75da77761ed5eb832a0a0e2a0ac164b5451a7e8f1e9f51e1423949",
+  "id_card_004.png": "cd485661274e8701252905f605098499bc108e42ceab34c6930bef1d8116dda0",
+  "id_card_005.jpg": "b63d640bb19f4d5914b1a64247d1398c9838d00661d939593faf86d3ddcc0968",
+  "id_card_006.jpg": "ad9c550c278d3442fad6251865e4b147980e81698000e10e0cb6876d409c6f06",
+  "id_card_007.jpg": "2b5b211753e1f248d7cb83b3aefc1d5a8c1833d361f10e5f274a9f27485cf209",
+  "id_card_008.jpg": "ec9a21373d6ae14fd86c2977d5f2bd5c12b5d54e6baafb08c1d7d2533612eeba",
+  "id_card_009.jpg": "a99b387f13fb528d717e158304629ed3e1c19c7a59dfe2d2c0e1c3e72fde2b89",
+  "id_card_010.jpg": "855e6f33d908d3204fcb754ad1e4f078a245041a3128c4313f2871b65b606712",
+  "id_card_011.png": "95bb5c84177698194903bef9012bbad9c9445426de4c8522feeaf79a95772720",
+  "id_card_012.jpg": "739902b89d39b6147ef103cbe47af933dfb82544d5bf150c3efc6d727c32372e",
+  "id_card_013.jpg": "0d357862f7531551b3a9933c35b6a93fc911e24d3858ef77ea7a18dc7f6ce910",
+  "id_card_014.jpg": "6d1f6ed711fffce0c6f72ed308cbc27f7ef1472de9e824ffb38efeb7436d7a63",
+  "id_card_015.jpg": "d63ba199b2077be61158b8a26537d7cd0f8e5d1207210c57ddddd7e967f4eb57",
+  "id_card_016.jpg": "7959b07b88dc72c2d5b9383372cd7ff02ecc2e61996fb2813ea459ee57317326",
+  "id_card_017.jpg": "00be376d68a5b08f9d74679858dae57a76d5823e59bc0098c8d81519486fabe8",
+  "id_card_018.png": "7780865637e08cc3219637e70d0a6297cc5c4c4b7aeb2a112a17f3cc87e9ae9d",
+  "id_card_019.png": "2012448d20e3664ebe797adc718721694bfbfacd75d7edd717ca9c83e9ba1c4c",
+  "id_card_020.jpg": "a721efa61a4c0810c1239993b8c98c7ce6364c03f6a1349396a2d1e8c717ff27",
+  "id_card_021.png": "4249f386805a32d1c84427d8ceacc9a3fc76bf415b4b1b5fecdf86974fe5b653",
+  "id_card_022.jpg": "ab8e350d72dab161b773ec5936d8a530576eb8d1cbecfcf7f59416cc119982d4",
+  "id_card_023.jpg": "6dcc545d30b11d11c7526612daf6ad6d74b40feeb840ef38c4332161614fb720",
+  "id_card_024.jpg": "c6d901f7181e4d0a0ca08b46fe65b9b74fb4c751ae1bbf7a64a8ea8910b20164",
+  "id_card_025.jpg": "8056b6754e53da22d77be3117e2f593f6ed9155c36393e4414c3a104966db7e6",
+  "id_card_026.jpg": "888a9f559c1faaf0f9636456d172d938f235300fb7859134e7133c547e13cf54",
+  "id_card_027.png": "db9e923207ece9b5eddea95ddae26befb2fe6b851c77254fd4b9bf49c5c716ab",
+  "id_card_028.jpg": "0f226df4c969f624942c179e666a3b6355077c24ee368ac448cd3a116ef63d6c",
+  "id_card_029.jpg": "032afadf36a82f073202d9836a385318927ecfc2f5c89b522fb0c51479992c32",
+  "id_card_030.jpg": "3c9545311098c00ef5ffeb0d4cbb5f8c429375250f38fb2bca5ccafd06a44f39",
+  "id_card_031.jpg": "feb127d0ea2e3d87718c65d039583f4f57af652ce7695288b9fc37956a8c10d1",
+  "id_card_032.jpg": "c5a9cf124b7b88dbd0414e4b4de8161d410bf4331e4f18769c4a5c3d235e0476",
+  "id_card_033.jpg": "dfc56240b32e9daf8540cf7237ba95c947ea992c43ef83cdb3f211e7955c9996",
+  "id_card_034.jpg": "b2be6da7b88107c39182e625aff183971549df4ac335e2a4f83c2e74b205a938",
+  "id_card_035.jpg": "9794be971c967b68365d66c5d3190562ccd302949046bfb873cfbd60b91075f5",
+  "id_card_036.jpg": "980cd831ce81b91fc2aea41fc6c5c786fe35c6b47ec51e50f7790d771e876a25",
+  "id_card_037.jpg": "e29157d66a8a2acd6e9e43769b9701ca8e62d900113c5af47be3d72bb975603e",
+  "id_card_038.jpg": "6427e2e4266c868a6c3fc601fa64a747ccd045bd031c1157b1905395423271d4",
+  "id_card_039.png": "86db19cbfb0f9a3f2b344de761e9c905e9db66f72b096a06add3c044a74b81d8",
+  "id_card_040.jpg": "f905b1375590bb286fcd01bb26677103d6bd00baf270218ff4f892726cf09a2f",
+  "id_card_041.jpg": "faa37da3964273e3c4055bff848685df197c7da4e549873fd10f689e1a7152ba",
+  "id_card_042.jpg": "2138062091b871bed64833aac344872ecce9ded456bbfb3732044bee336acb1e",
+  "id_card_043.png": "e0fdad0e4fe3992b05d3cf93ddd9c503da5cff9643095e9da7e3c97af09410e3",
+  "id_card_044.jpg": "33170febf8bf785e5fdae3e4011816d9ced39686a0d559a5286d042fd6d3a953",
+  "id_card_045.jpg": "9cdcf80593829cfb118555af43ffd06a61486cd9f1ebc282c963d0b598cd713b",
+  "id_card_046.jpg": "8bdbf6184aed5260e171b5b4d823ee7b37a761e15572264096715686ee2f0025",
+  "id_card_047.jpg": "6bf273f9069bddd796df78cbd85163da3cfa20a96dc96548ba8761f715f060bc",
+  "id_card_048.png": "4f1f3690250fe2ce71d1b55c9497651f0ab3e663e85f0e7dab9093a1bad1548f",
+  "id_card_049.png": "75809e8943973c34e4a141aad356ce6da87d99f7d9d54cacf3a99bc9f8d227a8",
+  "chat_000.png": "570b194d3eb14e77da4520443e5bd70c688f7da54f60e4dab78685827877d8b0",
+  "chat_001.jpg": "8c6f0839b04cc3a1331cb412ac68ac2153f1aaffc6d120618bd6ff772971688e",
+  "chat_002.jpg": "f29eca664ad39cdcd5c7c9e2614338dc27eaad37edf1f48fe9d4499c57391cf3",
+  "chat_003.png": "64e85c65cf7607e6b256e2aab087a901dfac1e515c1ff03be2de2961f7a9bb95",
+  "chat_004.jpg": "36a94952e7c3af67be6ab2bf782c49c7e4590018f4712a29f699970704a37a24",
+  "chat_005.jpg": "b2154ca87d5709a057eea682d825a843ecb85a74b8145929c39ce40caa573ed7",
+  "chat_006.jpg": "694373802e00bb2772b30b2a3526e3bc5d8c9ac816073af9cb38d2500e472914",
+  "chat_007.jpg": "adcbac7c0fef092042637bb8d9badbc2dabecc7a29bf1a8fef6d241b274f9092",
+  "chat_008.png": "626afab73e264535be9b185fa383c6e62752a8065dc97a3d3e6041e04660878f",
+  "chat_009.jpg": "e9a30b46ba28c832c01ef1e0f5074b9f46bf1a543bea2bdd924eee3f40ec8931",
+  "chat_010.jpg": "05790123fce6bd548432f74516738fe44d4d67def8d066de0ae429f6bb992d30",
+  "chat_011.png": "bc4b74c7a7b3aefc5b9f8f098328066ca516c5db6be954f23209a62522f0ba9d",
+  "chat_012.jpg": "8f1f0be95f20218a1a09ddd5f2b0cc9ec76d2387a1a227428fc4b9acd082b915",
+  "chat_013.jpg": "27f917a99f63ba9b22de714ea1a4609df2cfe53a83e3f5a75bc069a5e4896a9d",
+  "chat_014.jpg": "0cc25c88d4720323f0ad87b52c5c7676809fa393ab83d44b2f90e53aec3802e3",
+  "chat_015.jpg": "947cd439148ade30fd43fea495e8f9fd020005ca74a4950b43ce6058d5436844",
+  "chat_016.jpg": "11c4e8e0a15553839bf90e44b66b0b6ca49e64d75fdd241e5b1318a6b29f7636",
+  "chat_017.jpg": "debcc4b2e8b603033c1cbb6dae03f7b999d8d3450cd6f4ef832a7bbc73f266bf",
+  "chat_018.jpg": "499ddf127463736216012d0388a42199cccaf79c55d1a0d8f95bdd4b90c9560d",
+  "chat_019.jpg": "cc6e488c75b7cd0d0b058a45060869266788e2f40af2fbc12befbe6eaef0509e",
+  "chat_020.png": "32c7564ca36d71b08b0a812e4df4b10a945c70e71d144c71457409adfd255ca6",
+  "chat_021.jpg": "ec47c97744fed8e300702b14a07d68fb8a77812c4f8141c03057123c57282ff0",
+  "chat_022.jpg": "9df300b8715258d352eae60b22ca11f233bb122d679f85fd6d8f84c523860b82",
+  "chat_023.jpg": "1f52a8d0fcba10c9eab461e27d96cade05bfb52789cbc0841926e920cef2e379",
+  "chat_024.png": "4321904b0754e0a1b733962ca6067714b5b4beb40397ec5d8e21a0be9b8de462"
+ }
+}

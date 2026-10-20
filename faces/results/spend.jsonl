@@ -1,0 +1,2 @@
+{"run": "sdxl_portraits_attempt1_failed_ModuleNotFoundError_common", "gpu": "L40S", "gpu_seconds": 0, "wall_seconds": 0, "cpu_cores": 4, "mem_gib": 32, "usd": 0.05, "note": "ESTIMATE; containers died at import (No module named common) before any model load; image build plus a few seconds of container time; exact figure from modal billing report later"}
+{"run": "sdxl_portraits_75", "gpu": "L40S", "gpu_seconds": 391.8, "wall_seconds": 391.8, "cpu_cores": 4, "mem_gib": 32, "usd": 0.302, "note": "peak 10738 MiB"}

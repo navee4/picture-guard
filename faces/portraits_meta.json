@@ -1,0 +1,2264 @@
+{
+ "model": "stabilityai/stable-diffusion-xl-base-1.0",
+ "diffusers": "0.41.0",
+ "torch": "2.14.1+cu130",
+ "detector": "OpenCV YuNet 2023mar (MIT)",
+ "yunet_sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+ "steps": 30,
+ "guidance": 6.0,
+ "size": 1024,
+ "specs": [
+  {
+   "index": 0,
+   "kind": "card",
+   "seed": 20261021000,
+   "prompt": "photograph of a woman in their twenties, light olive skin, shoulder-length brown hair, three-quarter view, overhead fluorescent light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "light olive skin",
+    "age": "in their twenties",
+    "gender_word": "woman",
+    "hair": "shoulder-length brown hair",
+    "glasses": false,
+    "angle": "three-quarter view",
+    "light": "overhead fluorescent light"
+   }
+  },
+  {
+   "index": 1,
+   "kind": "card",
+   "seed": 20261021001,
+   "prompt": "photograph of a woman in their sixties, medium tan skin, long black hair, head turned slightly to the right, dim warm indoor light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "medium tan skin",
+    "age": "in their sixties",
+    "gender_word": "woman",
+    "hair": "long black hair",
+    "glasses": false,
+    "angle": "head turned slightly to the right",
+    "light": "dim warm indoor light"
+   }
+  },
+  {
+   "index": 2,
+   "kind": "card",
+   "seed": 20261021002,
+   "prompt": "photograph of a man in their sixties, light olive skin, short grey hair, wearing glasses, three-quarter view, overhead fluorescent light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "light olive skin",
+    "age": "in their sixties",
+    "gender_word": "man",
+    "hair": "short grey hair",
+    "glasses": true,
+    "angle": "three-quarter view",
+    "light": "overhead fluorescent light"
+   }
+  },
+  {
+   "index": 3,
+   "kind": "card",
+   "seed": 20261021003,
+   "prompt": "photograph of a man in their thirties, light olive skin, bald, facing the camera, soft even light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "light olive skin",
+    "age": "in their thirties",
+    "gender_word": "man",
+    "hair": "bald",
+    "glasses": false,
+    "angle": "facing the camera",
+    "light": "soft even light"
+   }
+  },
+  {
+   "index": 4,
+   "kind": "card",
+   "seed": 20261021004,
+   "prompt": "photograph of a woman in their sixties, very light skin, shoulder-length brown hair, head tilted slightly, dim warm indoor light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "very light skin",
+    "age": "in their sixties",
+    "gender_word": "woman",
+    "hair": "shoulder-length brown hair",
+    "glasses": false,
+    "angle": "head tilted slightly",
+    "light": "dim warm indoor light"
+   }
+  },
+  {
+   "index": 5,
+   "kind": "card",
+   "seed": 20261021005,
+   "prompt": "photograph of a woman in their thirties, brown skin, red hair, facing the camera, dim warm indoor light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "brown skin",
+    "age": "in their thirties",
+    "gender_word": "woman",
+    "hair": "red hair",
+    "glasses": false,
+    "angle": "facing the camera",
+    "light": "dim warm indoor light"
+   }
+  },
+  {
+   "index": 6,
+   "kind": "card",
+   "seed": 20261021006,
+   "prompt": "photograph of a man in their forties, deep dark brown skin, blond hair, wearing glasses, head turned slightly to the right, bright harsh daylight, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their forties",
+    "gender_word": "man",
+    "hair": "blond hair",
+    "glasses": true,
+    "angle": "head turned slightly to the right",
+    "light": "bright harsh daylight"
+   }
+  },
+  {
+   "index": 7,
+   "kind": "card",
+   "seed": 20261021007,
+   "prompt": "photograph of a man in their twenties, deep dark brown skin, curly black hair, wearing glasses, head turned slightly to the right, overhead fluorescent light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their twenties",
+    "gender_word": "man",
+    "hair": "curly black hair",
+    "glasses": true,
+    "angle": "head turned slightly to the right",
+    "light": "overhead fluorescent light"
+   }
+  },
+  {
+   "index": 8,
+   "kind": "card",
+   "seed": 20261021008,
+   "prompt": "photograph of a woman in their forties, very light skin, short grey hair, head turned slightly to the left, overhead fluorescent light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "very light skin",
+    "age": "in their forties",
+    "gender_word": "woman",
+    "hair": "short grey hair",
+    "glasses": false,
+    "angle": "head turned slightly to the left",
+    "light": "overhead fluorescent light"
+   }
+  },
+  {
+   "index": 9,
+   "kind": "card",
+   "seed": 20261021009,
+   "prompt": "photograph of a man in their fifties, light olive skin, bald, facing the camera, bright harsh daylight, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "light olive skin",
+    "age": "in their fifties",
+    "gender_word": "man",
+    "hair": "bald",
+    "glasses": false,
+    "angle": "facing the camera",
+    "light": "bright harsh daylight"
+   }
+  },
+  {
+   "index": 10,
+   "kind": "card",
+   "seed": 20261021010,
+   "prompt": "photograph of a woman in their twenties, light olive skin, blond hair tied back, head turned slightly to the right, strong side light from a window, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "light olive skin",
+    "age": "in their twenties",
+    "gender_word": "woman",
+    "hair": "blond hair tied back",
+    "glasses": false,
+    "angle": "head turned slightly to the right",
+    "light": "strong side light from a window"
+   }
+  },
+  {
+   "index": 11,
+   "kind": "card",
+   "seed": 20261021011,
+   "prompt": "photograph of a woman in their forties, medium tan skin, curly dark hair, facing the camera, bright harsh daylight, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "medium tan skin",
+    "age": "in their forties",
+    "gender_word": "woman",
+    "hair": "curly dark hair",
+    "glasses": false,
+    "angle": "facing the camera",
+    "light": "bright harsh daylight"
+   }
+  },
+  {
+   "index": 12,
+   "kind": "card",
+   "seed": 20261021012,
+   "prompt": "photograph of a woman in their fifties, light olive skin, blond hair tied back, head tilted slightly, strong side light from a window, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "light olive skin",
+    "age": "in their fifties",
+    "gender_word": "woman",
+    "hair": "blond hair tied back",
+    "glasses": false,
+    "angle": "head tilted slightly",
+    "light": "strong side light from a window"
+   }
+  },
+  {
+   "index": 13,
+   "kind": "card",
+   "seed": 20261021013,
+   "prompt": "photograph of a woman in their seventies, medium tan skin, long black hair, wearing glasses, facing the camera, overhead fluorescent light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "medium tan skin",
+    "age": "in their seventies",
+    "gender_word": "woman",
+    "hair": "long black hair",
+    "glasses": true,
+    "angle": "facing the camera",
+    "light": "overhead fluorescent light"
+   }
+  },
+  {
+   "index": 14,
+   "kind": "card",
+   "seed": 20261021014,
+   "prompt": "photograph of a man in their fifties, brown skin, blond hair, wearing glasses, head tilted slightly, bright harsh daylight, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "brown skin",
+    "age": "in their fifties",
+    "gender_word": "man",
+    "hair": "blond hair",
+    "glasses": true,
+    "angle": "head tilted slightly",
+    "light": "bright harsh daylight"
+   }
+  },
+  {
+   "index": 15,
+   "kind": "card",
+   "seed": 20261021015,
+   "prompt": "photograph of a man in their seventies, brown skin, curly black hair, wearing glasses, head tilted slightly, soft even light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "brown skin",
+    "age": "in their seventies",
+    "gender_word": "man",
+    "hair": "curly black hair",
+    "glasses": true,
+    "angle": "head tilted slightly",
+    "light": "soft even light"
+   }
+  },
+  {
+   "index": 16,
+   "kind": "card",
+   "seed": 20261021016,
+   "prompt": "photograph of a woman in their forties, brown skin, long black hair, wearing glasses, head tilted slightly, soft even light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "brown skin",
+    "age": "in their forties",
+    "gender_word": "woman",
+    "hair": "long black hair",
+    "glasses": true,
+    "angle": "head tilted slightly",
+    "light": "soft even light"
+   }
+  },
+  {
+   "index": 17,
+   "kind": "card",
+   "seed": 20261021017,
+   "prompt": "photograph of a woman in their forties, deep dark brown skin, short grey hair, head tilted slightly, bright harsh daylight, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their forties",
+    "gender_word": "woman",
+    "hair": "short grey hair",
+    "glasses": false,
+    "angle": "head tilted slightly",
+    "light": "bright harsh daylight"
+   }
+  },
+  {
+   "index": 18,
+   "kind": "card",
+   "seed": 20261021018,
+   "prompt": "photograph of a man in their fifties, deep dark brown skin, short brown hair with a beard, head tilted slightly, overhead fluorescent light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their fifties",
+    "gender_word": "man",
+    "hair": "short brown hair with a beard",
+    "glasses": false,
+    "angle": "head tilted slightly",
+    "light": "overhead fluorescent light"
+   }
+  },
+  {
+   "index": 19,
+   "kind": "card",
+   "seed": 20261021019,
+   "prompt": "photograph of a woman in their thirties, medium tan skin, long black hair, facing the camera, soft even light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "medium tan skin",
+    "age": "in their thirties",
+    "gender_word": "woman",
+    "hair": "long black hair",
+    "glasses": false,
+    "angle": "facing the camera",
+    "light": "soft even light"
+   }
+  },
+  {
+   "index": 20,
+   "kind": "card",
+   "seed": 20261021020,
+   "prompt": "photograph of a man in their twenties, medium tan skin, blond hair, head turned slightly to the left, dim warm indoor light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "medium tan skin",
+    "age": "in their twenties",
+    "gender_word": "man",
+    "hair": "blond hair",
+    "glasses": false,
+    "angle": "head turned slightly to the left",
+    "light": "dim warm indoor light"
+   }
+  },
+  {
+   "index": 21,
+   "kind": "card",
+   "seed": 20261021021,
+   "prompt": "photograph of a man in their fifties, deep dark brown skin, short dark hair, head turned slightly to the left, dim warm indoor light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their fifties",
+    "gender_word": "man",
+    "hair": "short dark hair",
+    "glasses": false,
+    "angle": "head turned slightly to the left",
+    "light": "dim warm indoor light"
+   }
+  },
+  {
+   "index": 22,
+   "kind": "card",
+   "seed": 20261021022,
+   "prompt": "photograph of a woman in their twenties, very light skin, long black hair, three-quarter view, dim warm indoor light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "very light skin",
+    "age": "in their twenties",
+    "gender_word": "woman",
+    "hair": "long black hair",
+    "glasses": false,
+    "angle": "three-quarter view",
+    "light": "dim warm indoor light"
+   }
+  },
+  {
+   "index": 23,
+   "kind": "card",
+   "seed": 20261021023,
+   "prompt": "photograph of a man in their sixties, brown skin, curly black hair, head tilted slightly, bright harsh daylight, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "brown skin",
+    "age": "in their sixties",
+    "gender_word": "man",
+    "hair": "curly black hair",
+    "glasses": false,
+    "angle": "head tilted slightly",
+    "light": "bright harsh daylight"
+   }
+  },
+  {
+   "index": 24,
+   "kind": "card",
+   "seed": 20261021024,
+   "prompt": "photograph of a man in their forties, light olive skin, blond hair, facing the camera, bright harsh daylight, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "light olive skin",
+    "age": "in their forties",
+    "gender_word": "man",
+    "hair": "blond hair",
+    "glasses": false,
+    "angle": "facing the camera",
+    "light": "bright harsh daylight"
+   }
+  },
+  {
+   "index": 25,
+   "kind": "card",
+   "seed": 20261021025,
+   "prompt": "photograph of a man in their forties, very light skin, bald, wearing glasses, head turned slightly to the left, strong side light from a window, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "very light skin",
+    "age": "in their forties",
+    "gender_word": "man",
+    "hair": "bald",
+    "glasses": true,
+    "angle": "head turned slightly to the left",
+    "light": "strong side light from a window"
+   }
+  },
+  {
+   "index": 26,
+   "kind": "card",
+   "seed": 20261021026,
+   "prompt": "photograph of a man in their forties, deep dark brown skin, curly black hair, wearing glasses, head turned slightly to the right, strong side light from a window, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their forties",
+    "gender_word": "man",
+    "hair": "curly black hair",
+    "glasses": true,
+    "angle": "head turned slightly to the right",
+    "light": "strong side light from a window"
+   }
+  },
+  {
+   "index": 27,
+   "kind": "card",
+   "seed": 20261021027,
+   "prompt": "photograph of a man in their thirties, medium tan skin, short grey hair, three-quarter view, bright harsh daylight, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "medium tan skin",
+    "age": "in their thirties",
+    "gender_word": "man",
+    "hair": "short grey hair",
+    "glasses": false,
+    "angle": "three-quarter view",
+    "light": "bright harsh daylight"
+   }
+  },
+  {
+   "index": 28,
+   "kind": "card",
+   "seed": 20261021028,
+   "prompt": "photograph of a man in their seventies, medium tan skin, short brown hair with a beard, three-quarter view, soft even light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "medium tan skin",
+    "age": "in their seventies",
+    "gender_word": "man",
+    "hair": "short brown hair with a beard",
+    "glasses": false,
+    "angle": "three-quarter view",
+    "light": "soft even light"
+   }
+  },
+  {
+   "index": 29,
+   "kind": "card",
+   "seed": 20261021029,
+   "prompt": "photograph of a woman in their thirties, brown skin, blond hair tied back, wearing glasses, head turned slightly to the right, soft even light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "brown skin",
+    "age": "in their thirties",
+    "gender_word": "woman",
+    "hair": "blond hair tied back",
+    "glasses": true,
+    "angle": "head turned slightly to the right",
+    "light": "soft even light"
+   }
+  },
+  {
+   "index": 30,
+   "kind": "card",
+   "seed": 20261021030,
+   "prompt": "photograph of a woman in their thirties, very light skin, short grey hair, wearing glasses, head turned slightly to the right, overhead fluorescent light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "very light skin",
+    "age": "in their thirties",
+    "gender_word": "woman",
+    "hair": "short grey hair",
+    "glasses": true,
+    "angle": "head turned slightly to the right",
+    "light": "overhead fluorescent light"
+   }
+  },
+  {
+   "index": 31,
+   "kind": "card",
+   "seed": 20261021031,
+   "prompt": "photograph of a man in their sixties, medium tan skin, short dark hair, wearing glasses, head turned slightly to the left, soft even light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "medium tan skin",
+    "age": "in their sixties",
+    "gender_word": "man",
+    "hair": "short dark hair",
+    "glasses": true,
+    "angle": "head turned slightly to the left",
+    "light": "soft even light"
+   }
+  },
+  {
+   "index": 32,
+   "kind": "card",
+   "seed": 20261021032,
+   "prompt": "photograph of a woman in their sixties, brown skin, long black hair, wearing glasses, head turned slightly to the left, strong side light from a window, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "brown skin",
+    "age": "in their sixties",
+    "gender_word": "woman",
+    "hair": "long black hair",
+    "glasses": true,
+    "angle": "head turned slightly to the left",
+    "light": "strong side light from a window"
+   }
+  },
+  {
+   "index": 33,
+   "kind": "card",
+   "seed": 20261021033,
+   "prompt": "photograph of a woman in their thirties, brown skin, red hair, head tilted slightly, bright harsh daylight, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "brown skin",
+    "age": "in their thirties",
+    "gender_word": "woman",
+    "hair": "red hair",
+    "glasses": false,
+    "angle": "head tilted slightly",
+    "light": "bright harsh daylight"
+   }
+  },
+  {
+   "index": 34,
+   "kind": "card",
+   "seed": 20261021034,
+   "prompt": "photograph of a man in their seventies, light olive skin, curly black hair, wearing glasses, head turned slightly to the right, strong side light from a window, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "light olive skin",
+    "age": "in their seventies",
+    "gender_word": "man",
+    "hair": "curly black hair",
+    "glasses": true,
+    "angle": "head turned slightly to the right",
+    "light": "strong side light from a window"
+   }
+  },
+  {
+   "index": 35,
+   "kind": "card",
+   "seed": 20261021035,
+   "prompt": "photograph of a woman in their fifties, medium tan skin, shoulder-length brown hair, wearing glasses, head turned slightly to the left, overhead fluorescent light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "medium tan skin",
+    "age": "in their fifties",
+    "gender_word": "woman",
+    "hair": "shoulder-length brown hair",
+    "glasses": true,
+    "angle": "head turned slightly to the left",
+    "light": "overhead fluorescent light"
+   }
+  },
+  {
+   "index": 36,
+   "kind": "card",
+   "seed": 20261021036,
+   "prompt": "photograph of a man in their sixties, light olive skin, curly black hair, head tilted slightly, strong side light from a window, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "light olive skin",
+    "age": "in their sixties",
+    "gender_word": "man",
+    "hair": "curly black hair",
+    "glasses": false,
+    "angle": "head tilted slightly",
+    "light": "strong side light from a window"
+   }
+  },
+  {
+   "index": 37,
+   "kind": "card",
+   "seed": 20261021037,
+   "prompt": "photograph of a woman in their twenties, brown skin, short grey hair, wearing glasses, facing the camera, soft even light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "brown skin",
+    "age": "in their twenties",
+    "gender_word": "woman",
+    "hair": "short grey hair",
+    "glasses": true,
+    "angle": "facing the camera",
+    "light": "soft even light"
+   }
+  },
+  {
+   "index": 38,
+   "kind": "card",
+   "seed": 20261021038,
+   "prompt": "photograph of a man in their fifties, deep dark brown skin, blond hair, wearing glasses, head tilted slightly, soft even light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their fifties",
+    "gender_word": "man",
+    "hair": "blond hair",
+    "glasses": true,
+    "angle": "head tilted slightly",
+    "light": "soft even light"
+   }
+  },
+  {
+   "index": 39,
+   "kind": "card",
+   "seed": 20261021039,
+   "prompt": "photograph of a woman in their fifties, very light skin, red hair, wearing glasses, three-quarter view, bright harsh daylight, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "very light skin",
+    "age": "in their fifties",
+    "gender_word": "woman",
+    "hair": "red hair",
+    "glasses": true,
+    "angle": "three-quarter view",
+    "light": "bright harsh daylight"
+   }
+  },
+  {
+   "index": 40,
+   "kind": "card",
+   "seed": 20261021040,
+   "prompt": "photograph of a woman in their twenties, deep dark brown skin, short grey hair, wearing glasses, facing the camera, dim warm indoor light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their twenties",
+    "gender_word": "woman",
+    "hair": "short grey hair",
+    "glasses": true,
+    "angle": "facing the camera",
+    "light": "dim warm indoor light"
+   }
+  },
+  {
+   "index": 41,
+   "kind": "card",
+   "seed": 20261021041,
+   "prompt": "photograph of a woman in their seventies, light olive skin, long black hair, head turned slightly to the left, strong side light from a window, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "light olive skin",
+    "age": "in their seventies",
+    "gender_word": "woman",
+    "hair": "long black hair",
+    "glasses": false,
+    "angle": "head turned slightly to the left",
+    "light": "strong side light from a window"
+   }
+  },
+  {
+   "index": 42,
+   "kind": "card",
+   "seed": 20261021042,
+   "prompt": "photograph of a woman in their seventies, very light skin, red hair, three-quarter view, strong side light from a window, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "very light skin",
+    "age": "in their seventies",
+    "gender_word": "woman",
+    "hair": "red hair",
+    "glasses": false,
+    "angle": "three-quarter view",
+    "light": "strong side light from a window"
+   }
+  },
+  {
+   "index": 43,
+   "kind": "card",
+   "seed": 20261021043,
+   "prompt": "photograph of a man in their thirties, very light skin, curly black hair, head turned slightly to the left, dim warm indoor light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "very light skin",
+    "age": "in their thirties",
+    "gender_word": "man",
+    "hair": "curly black hair",
+    "glasses": false,
+    "angle": "head turned slightly to the left",
+    "light": "dim warm indoor light"
+   }
+  },
+  {
+   "index": 44,
+   "kind": "card",
+   "seed": 20261021044,
+   "prompt": "photograph of a woman in their sixties, very light skin, shoulder-length brown hair, facing the camera, strong side light from a window, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "very light skin",
+    "age": "in their sixties",
+    "gender_word": "woman",
+    "hair": "shoulder-length brown hair",
+    "glasses": false,
+    "angle": "facing the camera",
+    "light": "strong side light from a window"
+   }
+  },
+  {
+   "index": 45,
+   "kind": "card",
+   "seed": 20261021045,
+   "prompt": "photograph of a man in their thirties, brown skin, short grey hair, three-quarter view, soft even light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "brown skin",
+    "age": "in their thirties",
+    "gender_word": "man",
+    "hair": "short grey hair",
+    "glasses": false,
+    "angle": "three-quarter view",
+    "light": "soft even light"
+   }
+  },
+  {
+   "index": 46,
+   "kind": "card",
+   "seed": 20261021046,
+   "prompt": "photograph of a man in their twenties, very light skin, short grey hair, head turned slightly to the right, overhead fluorescent light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "very light skin",
+    "age": "in their twenties",
+    "gender_word": "man",
+    "hair": "short grey hair",
+    "glasses": false,
+    "angle": "head turned slightly to the right",
+    "light": "overhead fluorescent light"
+   }
+  },
+  {
+   "index": 47,
+   "kind": "card",
+   "seed": 20261021047,
+   "prompt": "photograph of a man in their twenties, medium tan skin, blond hair, facing the camera, overhead fluorescent light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "medium tan skin",
+    "age": "in their twenties",
+    "gender_word": "man",
+    "hair": "blond hair",
+    "glasses": false,
+    "angle": "facing the camera",
+    "light": "overhead fluorescent light"
+   }
+  },
+  {
+   "index": 48,
+   "kind": "card",
+   "seed": 20261021048,
+   "prompt": "photograph of a man in their seventies, deep dark brown skin, curly black hair, head turned slightly to the right, dim warm indoor light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their seventies",
+    "gender_word": "man",
+    "hair": "curly black hair",
+    "glasses": false,
+    "angle": "head turned slightly to the right",
+    "light": "dim warm indoor light"
+   }
+  },
+  {
+   "index": 49,
+   "kind": "card",
+   "seed": 20261021049,
+   "prompt": "photograph of a woman in their seventies, deep dark brown skin, short grey hair, head tilted slightly, dim warm indoor light, passport style photo, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their seventies",
+    "gender_word": "woman",
+    "hair": "short grey hair",
+    "glasses": false,
+    "angle": "head tilted slightly",
+    "light": "dim warm indoor light"
+   }
+  },
+  {
+   "index": 50,
+   "kind": "chat",
+   "seed": 20261021050,
+   "prompt": "photograph of a woman in their twenties, medium tan skin, blond hair tied back, wearing glasses, head turned slightly to the right, soft even light, casual selfie portrait, natural everyday background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "medium tan skin",
+    "age": "in their twenties",
+    "gender_word": "woman",
+    "hair": "blond hair tied back",
+    "glasses": true,
+    "angle": "head turned slightly to the right",
+    "light": "soft even light"
+   }
+  },
+  {
+   "index": 51,
+   "kind": "chat",
+   "seed": 20261021051,
+   "prompt": "photograph of a man in their forties, very light skin, bald, facing the camera, dim warm indoor light, casual selfie portrait, natural everyday background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "very light skin",
+    "age": "in their forties",
+    "gender_word": "man",
+    "hair": "bald",
+    "glasses": false,
+    "angle": "facing the camera",
+    "light": "dim warm indoor light"
+   }
+  },
+  {
+   "index": 52,
+   "kind": "chat",
+   "seed": 20261021052,
+   "prompt": "photograph of a woman in their seventies, light olive skin, curly dark hair, head tilted slightly, bright harsh daylight, casual selfie portrait, natural everyday background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "light olive skin",
+    "age": "in their seventies",
+    "gender_word": "woman",
+    "hair": "curly dark hair",
+    "glasses": false,
+    "angle": "head tilted slightly",
+    "light": "bright harsh daylight"
+   }
+  },
+  {
+   "index": 53,
+   "kind": "chat",
+   "seed": 20261021053,
+   "prompt": "photograph of a man in their thirties, very light skin, short dark hair, wearing glasses, head tilted slightly, strong side light from a window, casual selfie portrait, natural everyday background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "very light skin",
+    "age": "in their thirties",
+    "gender_word": "man",
+    "hair": "short dark hair",
+    "glasses": true,
+    "angle": "head tilted slightly",
+    "light": "strong side light from a window"
+   }
+  },
+  {
+   "index": 54,
+   "kind": "chat",
+   "seed": 20261021054,
+   "prompt": "photograph of a man in their sixties, brown skin, short brown hair with a beard, facing the camera, overhead fluorescent light, casual selfie portrait, natural everyday background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "brown skin",
+    "age": "in their sixties",
+    "gender_word": "man",
+    "hair": "short brown hair with a beard",
+    "glasses": false,
+    "angle": "facing the camera",
+    "light": "overhead fluorescent light"
+   }
+  },
+  {
+   "index": 55,
+   "kind": "chat",
+   "seed": 20261021055,
+   "prompt": "photograph of a man in their seventies, very light skin, short brown hair with a beard, head turned slightly to the right, bright harsh daylight, casual selfie portrait, natural everyday background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "very light skin",
+    "age": "in their seventies",
+    "gender_word": "man",
+    "hair": "short brown hair with a beard",
+    "glasses": false,
+    "angle": "head turned slightly to the right",
+    "light": "bright harsh daylight"
+   }
+  },
+  {
+   "index": 56,
+   "kind": "chat",
+   "seed": 20261021056,
+   "prompt": "photograph of a man in their twenties, medium tan skin, bald, wearing glasses, facing the camera, overhead fluorescent light, casual selfie portrait, natural everyday background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "medium tan skin",
+    "age": "in their twenties",
+    "gender_word": "man",
+    "hair": "bald",
+    "glasses": true,
+    "angle": "facing the camera",
+    "light": "overhead fluorescent light"
+   }
+  },
+  {
+   "index": 57,
+   "kind": "chat",
+   "seed": 20261021057,
+   "prompt": "photograph of a woman in their sixties, deep dark brown skin, long black hair, wearing glasses, facing the camera, overhead fluorescent light, casual selfie portrait, natural everyday background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their sixties",
+    "gender_word": "woman",
+    "hair": "long black hair",
+    "glasses": true,
+    "angle": "facing the camera",
+    "light": "overhead fluorescent light"
+   }
+  },
+  {
+   "index": 58,
+   "kind": "chat",
+   "seed": 20261021058,
+   "prompt": "photograph of a man in their twenties, deep dark brown skin, short dark hair, facing the camera, bright harsh daylight, casual selfie portrait, natural everyday background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their twenties",
+    "gender_word": "man",
+    "hair": "short dark hair",
+    "glasses": false,
+    "angle": "facing the camera",
+    "light": "bright harsh daylight"
+   }
+  },
+  {
+   "index": 59,
+   "kind": "chat",
+   "seed": 20261021059,
+   "prompt": "photograph of a man in their fifties, brown skin, short brown hair with a beard, wearing glasses, head turned slightly to the left, dim warm indoor light, casual selfie portrait, natural everyday background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "brown skin",
+    "age": "in their fifties",
+    "gender_word": "man",
+    "hair": "short brown hair with a beard",
+    "glasses": true,
+    "angle": "head turned slightly to the left",
+    "light": "dim warm indoor light"
+   }
+  },
+  {
+   "index": 60,
+   "kind": "chat",
+   "seed": 20261021060,
+   "prompt": "photograph of a woman in their thirties, very light skin, curly dark hair, three-quarter view, strong side light from a window, casual selfie portrait, natural everyday background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "very light skin",
+    "age": "in their thirties",
+    "gender_word": "woman",
+    "hair": "curly dark hair",
+    "glasses": false,
+    "angle": "three-quarter view",
+    "light": "strong side light from a window"
+   }
+  },
+  {
+   "index": 61,
+   "kind": "chat",
+   "seed": 20261021061,
+   "prompt": "photograph of a woman in their thirties, medium tan skin, shoulder-length brown hair, head turned slightly to the right, dim warm indoor light, casual selfie portrait, natural everyday background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "medium tan skin",
+    "age": "in their thirties",
+    "gender_word": "woman",
+    "hair": "shoulder-length brown hair",
+    "glasses": false,
+    "angle": "head turned slightly to the right",
+    "light": "dim warm indoor light"
+   }
+  },
+  {
+   "index": 62,
+   "kind": "chat",
+   "seed": 20261021062,
+   "prompt": "photograph of a woman in their sixties, brown skin, short grey hair, wearing glasses, facing the camera, soft even light, casual selfie portrait, natural everyday background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "brown skin",
+    "age": "in their sixties",
+    "gender_word": "woman",
+    "hair": "short grey hair",
+    "glasses": true,
+    "angle": "facing the camera",
+    "light": "soft even light"
+   }
+  },
+  {
+   "index": 63,
+   "kind": "chat",
+   "seed": 20261021063,
+   "prompt": "photograph of a man in their sixties, very light skin, bald, head tilted slightly, strong side light from a window, casual selfie portrait, natural everyday background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "very light skin",
+    "age": "in their sixties",
+    "gender_word": "man",
+    "hair": "bald",
+    "glasses": false,
+    "angle": "head tilted slightly",
+    "light": "strong side light from a window"
+   }
+  },
+  {
+   "index": 64,
+   "kind": "chat",
+   "seed": 20261021064,
+   "prompt": "photograph of a man in their thirties, light olive skin, short brown hair with a beard, head turned slightly to the right, bright harsh daylight, casual selfie portrait, natural everyday background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "light olive skin",
+    "age": "in their thirties",
+    "gender_word": "man",
+    "hair": "short brown hair with a beard",
+    "glasses": false,
+    "angle": "head turned slightly to the right",
+    "light": "bright harsh daylight"
+   }
+  },
+  {
+   "index": 65,
+   "kind": "chat",
+   "seed": 20261021065,
+   "prompt": "photograph of a man in their twenties, light olive skin, short grey hair, head turned slightly to the left, dim warm indoor light, casual selfie portrait, natural everyday background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "light olive skin",
+    "age": "in their twenties",
+    "gender_word": "man",
+    "hair": "short grey hair",
+    "glasses": false,
+    "angle": "head turned slightly to the left",
+    "light": "dim warm indoor light"
+   }
+  },
+  {
+   "index": 66,
+   "kind": "chat",
+   "seed": 20261021066,
+   "prompt": "photograph of a man in their twenties, light olive skin, blond hair, wearing glasses, three-quarter view, bright harsh daylight, casual selfie portrait, natural everyday background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "light olive skin",
+    "age": "in their twenties",
+    "gender_word": "man",
+    "hair": "blond hair",
+    "glasses": true,
+    "angle": "three-quarter view",
+    "light": "bright harsh daylight"
+   }
+  },
+  {
+   "index": 67,
+   "kind": "chat",
+   "seed": 20261021067,
+   "prompt": "photograph of a man in their forties, deep dark brown skin, short dark hair, three-quarter view, overhead fluorescent light, casual selfie portrait, natural everyday background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their forties",
+    "gender_word": "man",
+    "hair": "short dark hair",
+    "glasses": false,
+    "angle": "three-quarter view",
+    "light": "overhead fluorescent light"
+   }
+  },
+  {
+   "index": 68,
+   "kind": "chat",
+   "seed": 20261021068,
+   "prompt": "photograph of a woman in their fifties, light olive skin, shoulder-length brown hair, facing the camera, soft even light, casual selfie portrait, natural everyday background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "light olive skin",
+    "age": "in their fifties",
+    "gender_word": "woman",
+    "hair": "shoulder-length brown hair",
+    "glasses": false,
+    "angle": "facing the camera",
+    "light": "soft even light"
+   }
+  },
+  {
+   "index": 69,
+   "kind": "chat",
+   "seed": 20261021069,
+   "prompt": "photograph of a woman in their seventies, brown skin, curly dark hair, wearing glasses, head tilted slightly, soft even light, casual selfie portrait, natural everyday background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "brown skin",
+    "age": "in their seventies",
+    "gender_word": "woman",
+    "hair": "curly dark hair",
+    "glasses": true,
+    "angle": "head tilted slightly",
+    "light": "soft even light"
+   }
+  },
+  {
+   "index": 70,
+   "kind": "chat",
+   "seed": 20261021070,
+   "prompt": "photograph of a woman in their forties, deep dark brown skin, red hair, wearing glasses, facing the camera, soft even light, casual selfie portrait, natural everyday background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their forties",
+    "gender_word": "woman",
+    "hair": "red hair",
+    "glasses": true,
+    "angle": "facing the camera",
+    "light": "soft even light"
+   }
+  },
+  {
+   "index": 71,
+   "kind": "chat",
+   "seed": 20261021071,
+   "prompt": "photograph of a man in their forties, medium tan skin, short brown hair with a beard, head turned slightly to the left, strong side light from a window, casual selfie portrait, natural everyday background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "medium tan skin",
+    "age": "in their forties",
+    "gender_word": "man",
+    "hair": "short brown hair with a beard",
+    "glasses": false,
+    "angle": "head turned slightly to the left",
+    "light": "strong side light from a window"
+   }
+  },
+  {
+   "index": 72,
+   "kind": "chat",
+   "seed": 20261021072,
+   "prompt": "photograph of a woman in their seventies, brown skin, shoulder-length brown hair, three-quarter view, overhead fluorescent light, casual selfie portrait, natural everyday background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "brown skin",
+    "age": "in their seventies",
+    "gender_word": "woman",
+    "hair": "shoulder-length brown hair",
+    "glasses": false,
+    "angle": "three-quarter view",
+    "light": "overhead fluorescent light"
+   }
+  },
+  {
+   "index": 73,
+   "kind": "chat",
+   "seed": 20261021073,
+   "prompt": "photograph of a woman in their fifties, medium tan skin, shoulder-length brown hair, three-quarter view, strong side light from a window, casual selfie portrait, natural everyday background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "medium tan skin",
+    "age": "in their fifties",
+    "gender_word": "woman",
+    "hair": "shoulder-length brown hair",
+    "glasses": false,
+    "angle": "three-quarter view",
+    "light": "strong side light from a window"
+   }
+  },
+  {
+   "index": 74,
+   "kind": "chat",
+   "seed": 20261021074,
+   "prompt": "photograph of a woman in their fifties, deep dark brown skin, long black hair, wearing glasses, facing the camera, dim warm indoor light, casual selfie portrait, natural everyday background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "attrs": {
+    "skin": "deep dark brown skin",
+    "age": "in their fifties",
+    "gender_word": "woman",
+    "hair": "long black hair",
+    "glasses": true,
+    "angle": "facing the camera",
+    "light": "dim warm indoor light"
+   }
+  }
+ ],
+ "portraits": [
+  {
+   "index": 0,
+   "seed_used": 20261021000,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "536980058293d880eb773e37150134e86ac87ebbac77b43f962c5436c8d0daa6",
+   "face_box": [
+    371.68792724609375,
+    153.77069091796875,
+    705.9249877929688,
+    611.3491821289062
+   ],
+   "det_score": 0.9202
+  },
+  {
+   "index": 1,
+   "seed_used": 20261021001,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "5b3d2f10df5e5854cbfb56495ff38bf0737bfc3376ea07ecaa3ef214ce4f18b7",
+   "face_box": [
+    348.6007080078125,
+    159.47280883789062,
+    610.1416320800781,
+    523.6432800292969
+   ],
+   "det_score": 0.9398
+  },
+  {
+   "index": 2,
+   "seed_used": 20261121002,
+   "attempts": 2,
+   "n_faces_detected": 1,
+   "sha256": "f48a133909a1caa24df882dd61ed4415bed8a158b57e8b712f89616991268ea1",
+   "face_box": [
+    334.0093078613281,
+    278.9317626953125,
+    724.6751403808594,
+    755.6725158691406
+   ],
+   "det_score": 0.8925
+  },
+  {
+   "index": 3,
+   "seed_used": 20261221003,
+   "attempts": 3,
+   "n_faces_detected": 1,
+   "sha256": "b53b144e14586f4790aa7b1c40399013e2dac74914df581677db630618a0e53a",
+   "face_box": [
+    428.1082458496094,
+    151.34719848632812,
+    762.0130920410156,
+    621.3711242675781
+   ],
+   "det_score": 0.9183
+  },
+  {
+   "index": 4,
+   "seed_used": 20261021004,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "04b5c498a21bb5dc5ed480f75ee7cda012df7829d7ecfaaa77416ae863d3ffa8",
+   "face_box": [
+    360.70123291015625,
+    155.84808349609375,
+    644.9360656738281,
+    533.757568359375
+   ],
+   "det_score": 0.9304
+  },
+  {
+   "index": 5,
+   "seed_used": 20261021005,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "6a4e7668a37b0dd05fcddf06aa69effe63c2bab0da98bb7d4a2372f0c543b01f",
+   "face_box": [
+    458.0064392089844,
+    178.21771240234375,
+    601.7627410888672,
+    370.03253173828125
+   ],
+   "det_score": 0.9504
+  },
+  {
+   "index": 6,
+   "seed_used": 20261021006,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "c8fe1ffd484234799457595c78448dcddad45f1edb8f16aaa5afc4b4aee3a9dd",
+   "face_box": [
+    308.17279052734375,
+    254.39065551757812,
+    646.7040405273438,
+    735.5047912597656
+   ],
+   "det_score": 0.9102
+  },
+  {
+   "index": 7,
+   "seed_used": 20261121007,
+   "attempts": 2,
+   "n_faces_detected": 1,
+   "sha256": "e017153f8ea084f57531981bc829c4018016d3133834b7a61a6223852a54b509",
+   "face_box": [
+    424.4359130859375,
+    257.3589172363281,
+    674.8613433837891,
+    588.6653747558594
+   ],
+   "det_score": 0.9432
+  },
+  {
+   "index": 8,
+   "seed_used": 20261021008,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "e3d63c8de3609bf54fb78a43e92d9803b114051b6bc7863702231402b3bf6ca9",
+   "face_box": [
+    328.6990966796875,
+    224.13214111328125,
+    673.777587890625,
+    704.18115234375
+   ],
+   "det_score": 0.9134
+  },
+  {
+   "index": 9,
+   "seed_used": 20261021009,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "a913c6d5ae2e55c66295dc349b1b47ce489bbed124d629147b733d8cab48a2c7",
+   "face_box": [
+    275.0022277832031,
+    144.75936889648438,
+    725.8611755371094,
+    753.3571472167969
+   ],
+   "det_score": 0.8422
+  },
+  {
+   "index": 10,
+   "seed_used": 20261021010,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "d602e0bd5c57c9edbc762048c567627877f47a58c28af67c7dd4c4b52cc4c841",
+   "face_box": [
+    338.84063720703125,
+    271.63775634765625,
+    682.7081604003906,
+    729.2129821777344
+   ],
+   "det_score": 0.8999
+  },
+  {
+   "index": 11,
+   "seed_used": 20261021011,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "24202a40ef9fa6987e0b94260eb6320217889005112adba5c349421a50ae9eb7",
+   "face_box": [
+    308.53887939453125,
+    222.1982421875,
+    582.8638916015625,
+    630.591796875
+   ],
+   "det_score": 0.9313
+  },
+  {
+   "index": 12,
+   "seed_used": 20261021012,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "6c5ec8c7fa081f0a0fc59eeb4d4e12172642c524aeb0e3db65aa87a5b74c68b9",
+   "face_box": [
+    291.70550537109375,
+    187.48855590820312,
+    646.6529235839844,
+    686.7510070800781
+   ],
+   "det_score": 0.9092
+  },
+  {
+   "index": 13,
+   "seed_used": 20261021013,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "3043c90a2c2e1e009fdb3b4a51bdc821d1ea2aa07b8792931f339e5c2331a853",
+   "face_box": [
+    375.61285400390625,
+    249.41476440429688,
+    682.1552429199219,
+    656.5825500488281
+   ],
+   "det_score": 0.9312
+  },
+  {
+   "index": 14,
+   "seed_used": 20261121014,
+   "attempts": 2,
+   "n_faces_detected": 1,
+   "sha256": "a1ac0f2be6e29c2cf795a83beced078eca4fa5dd5c4cf42cb5698818290dfede",
+   "face_box": [
+    334.2278747558594,
+    197.58956909179688,
+    736.7951965332031,
+    754.0757751464844
+   ],
+   "det_score": 0.8555
+  },
+  {
+   "index": 15,
+   "seed_used": 20261021015,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "7864a1a62e75e56e40c07428dcb00e3aa085e512068f845449a571c671f3b9ab",
+   "face_box": [
+    348.0509948730469,
+    190.8564910888672,
+    627.6595764160156,
+    589.0338287353516
+   ],
+   "det_score": 0.9186
+  },
+  {
+   "index": 16,
+   "seed_used": 20261021016,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "6fb0f4f828ea968efc6afc41c22e79c8e6a25215127d8af6dbeeefa6ad317e01",
+   "face_box": [
+    292.17926025390625,
+    159.2931671142578,
+    612.92431640625,
+    621.5004730224609
+   ],
+   "det_score": 0.9217
+  },
+  {
+   "index": 17,
+   "seed_used": 20261021017,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "17c6e6b3de5b1f2b92005e917364e615391fe5a0f1c0c4dbbabf77663206d45e",
+   "face_box": [
+    323.0927734375,
+    301.3775634765625,
+    691.8139038085938,
+    735.9377136230469
+   ],
+   "det_score": 0.9109
+  },
+  {
+   "index": 18,
+   "seed_used": 20261021018,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "c022bbe5a61726b7d10cd4246d0d6534a4c25d5a21628b59d9e9630851674d7a",
+   "face_box": [
+    366.0714416503906,
+    254.0653839111328,
+    634.5856628417969,
+    648.3793792724609
+   ],
+   "det_score": 0.9299
+  },
+  {
+   "index": 19,
+   "seed_used": 20261021019,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "27bb7e7fd8aa0d4da6942323acfe4424d53bedc87087efc360b4163be8b41771",
+   "face_box": [
+    321.2582702636719,
+    113.93244934082031,
+    488.32057189941406,
+    369.09690856933594
+   ],
+   "det_score": 0.9311
+  },
+  {
+   "index": 20,
+   "seed_used": 20261021020,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "48ec56dc5895675d5350c9f1f8efcf70423697f5764d9568cdffd369e72ac5f4",
+   "face_box": [
+    342.9365539550781,
+    229.6259765625,
+    732.2461853027344,
+    741.121337890625
+   ],
+   "det_score": 0.9011
+  },
+  {
+   "index": 21,
+   "seed_used": 20261021021,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "a613819e2e81e1ac1908aefb1f48b7d9b877a37bc7ca26ce06049e9be3f60678",
+   "face_box": [
+    275.5535583496094,
+    177.48638916015625,
+    719.7484436035156,
+    723.3374633789062
+   ],
+   "det_score": 0.8809
+  },
+  {
+   "index": 22,
+   "seed_used": 20261021022,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "5aeaf890dbbe978c4073162b98fbbc8c6b22af20d1b2eeb441615f37f181c1ee",
+   "face_box": [
+    447.9090576171875,
+    130.02491760253906,
+    707.7121276855469,
+    507.23081970214844
+   ],
+   "det_score": 0.9389
+  },
+  {
+   "index": 23,
+   "seed_used": 20261021023,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "a75149223f383b35aa09bdb33318f81838138dc5146c818f9c8fec04b0415481",
+   "face_box": [
+    375.5116882324219,
+    166.8366241455078,
+    633.6678161621094,
+    557.6916961669922
+   ],
+   "det_score": 0.9277
+  },
+  {
+   "index": 24,
+   "seed_used": 20261021024,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "02703b627bd481944a000d44896c24176ef0796664f6554f3b2df51c280228a5",
+   "face_box": [
+    304.3958740234375,
+    230.03826904296875,
+    695.3551330566406,
+    780.8873901367188
+   ],
+   "det_score": 0.8963
+  },
+  {
+   "index": 25,
+   "seed_used": 20261021025,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "f91611478c17b494fe1d4d66e7ffe04ee09d984e1a4319f5a0e93f3e5af35205",
+   "face_box": [
+    355.02972412109375,
+    269.7200927734375,
+    696.3058471679688,
+    794.357421875
+   ],
+   "det_score": 0.8941
+  },
+  {
+   "index": 26,
+   "seed_used": 20261021026,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "14ed663cda049755bc30949fdc31e7bbf220d8424d1b40127abe3cab7d3d363e",
+   "face_box": [
+    468.52252197265625,
+    293.4261169433594,
+    705.7944946289062,
+    653.8796081542969
+   ],
+   "det_score": 0.9068
+  },
+  {
+   "index": 27,
+   "seed_used": 20261021027,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "2b3b569951d652479d9862dc4f3dadb52615ef1fa8025918e9a6d11e3346d81b",
+   "face_box": [
+    246.5323944091797,
+    202.10345458984375,
+    701.8488311767578,
+    817.6865844726562
+   ],
+   "det_score": 0.8473
+  },
+  {
+   "index": 28,
+   "seed_used": 20261021028,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "10feec582a325704cfd28ddfee21a6792410a8d43bf497f4634f80658f77fa1b",
+   "face_box": [
+    311.9798278808594,
+    191.92385864257812,
+    665.0409851074219,
+    677.7471008300781
+   ],
+   "det_score": 0.91
+  },
+  {
+   "index": 29,
+   "seed_used": 20261021029,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "9815a1f5fc40fd221f6104c3caaac77923d6a6cf39b1b373bfe1ccad22171579",
+   "face_box": [
+    322.009033203125,
+    249.11959838867188,
+    715.8912048339844,
+    713.5852966308594
+   ],
+   "det_score": 0.8979
+  },
+  {
+   "index": 30,
+   "seed_used": 20261021030,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "c9b81946b28274eea4ca2e32a7f2889ebf2088632ad2a80ba2bd3954ca18c04a",
+   "face_box": [
+    273.32733154296875,
+    256.5030517578125,
+    712.8978881835938,
+    780.6558837890625
+   ],
+   "det_score": 0.8739
+  },
+  {
+   "index": 31,
+   "seed_used": 20261021031,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "3c6ec56ff472c8e822a5b3328b6652960de5b64505cc9b16eebf6b563fe80ad3",
+   "face_box": [
+    373.3800048828125,
+    164.8516082763672,
+    640.2486877441406,
+    541.2140045166016
+   ],
+   "det_score": 0.9303
+  },
+  {
+   "index": 32,
+   "seed_used": 20261021032,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "f21a23b1c5ab39b7db639782ee1735bfc94f1a5c9c79d0e792a977ee67775a84",
+   "face_box": [
+    317.00909423828125,
+    123.81346130371094,
+    553.1829528808594,
+    449.60523986816406
+   ],
+   "det_score": 0.9276
+  },
+  {
+   "index": 33,
+   "seed_used": 20261021033,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "175655fe57810ce19ec1c84c0b4c1b88bf7e435270a39c5a671c81f1251c6acb",
+   "face_box": [
+    335.5768127441406,
+    184.75540161132812,
+    640.8669738769531,
+    597.6191101074219
+   ],
+   "det_score": 0.9301
+  },
+  {
+   "index": 34,
+   "seed_used": 20261021034,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "c6f491f0461ee23da04263c279fb3c8ead1264d6d322523a861e57856c216d3c",
+   "face_box": [
+    332.06951904296875,
+    242.54757690429688,
+    714.5795593261719,
+    755.2032775878906
+   ],
+   "det_score": 0.8812
+  },
+  {
+   "index": 35,
+   "seed_used": 20261021035,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "55ce820ef84eed70cf6cffe70382f7e9f77b166e86b65155c31efcee300cf44a",
+   "face_box": [
+    317.9253234863281,
+    212.833251953125,
+    586.5245666503906,
+    568.6467895507812
+   ],
+   "det_score": 0.9421
+  },
+  {
+   "index": 36,
+   "seed_used": 20261021036,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "7231b3dc8aa7679a25ffceccdcecbb9d4d69fcdd123ed057a52491c323bd4713",
+   "face_box": [
+    321.61236572265625,
+    229.15005493164062,
+    650.1183776855469,
+    682.6191711425781
+   ],
+   "det_score": 0.9131
+  },
+  {
+   "index": 37,
+   "seed_used": 20261021037,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "00b2d5f0c94b45f759c4beb7564f6a456b54bb1c75c65f1ffc0d2104e46efb82",
+   "face_box": [
+    313.30535888671875,
+    186.43894958496094,
+    662.1060791015625,
+    671.7986602783203
+   ],
+   "det_score": 0.9158
+  },
+  {
+   "index": 38,
+   "seed_used": 20261021038,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "a59a89b8add05691b42ecc75d73231dbc02b748799f51d722167a9e9d6649a61",
+   "face_box": [
+    352.3299560546875,
+    207.79782104492188,
+    724.0162658691406,
+    719.5323791503906
+   ],
+   "det_score": 0.8927
+  },
+  {
+   "index": 39,
+   "seed_used": 20261021039,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "954e45132b0ff9d773d23d735bb596d610e8b3e6bcfc66f7e3e957db26ba6d55",
+   "face_box": [
+    345.32861328125,
+    271.77801513671875,
+    790.9938659667969,
+    780.2467956542969
+   ],
+   "det_score": 0.8539
+  },
+  {
+   "index": 40,
+   "seed_used": 20261021040,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "274703abbd4567b934df2d095dfe2584302f8c77515e44bd94bf50ed0c9c3489",
+   "face_box": [
+    321.7884521484375,
+    176.7076873779297,
+    609.2284240722656,
+    616.6437530517578
+   ],
+   "det_score": 0.9253
+  },
+  {
+   "index": 41,
+   "seed_used": 20261021041,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "d6dbd6a72a164e7ca646434d346aa13c6f8b5f04a77c0482961e3f33e570d212",
+   "face_box": [
+    391.06231689453125,
+    121.67105102539062,
+    700.1560974121094,
+    553.6797180175781
+   ],
+   "det_score": 0.917
+  },
+  {
+   "index": 42,
+   "seed_used": 20261021042,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "7768bce35df8adf7f39bbec9aa82bae5136ca3078b5e32424be86862322d2268",
+   "face_box": [
+    405.52081298828125,
+    168.60475158691406,
+    678.8681335449219,
+    561.9801483154297
+   ],
+   "det_score": 0.9211
+  },
+  {
+   "index": 43,
+   "seed_used": 20261121043,
+   "attempts": 2,
+   "n_faces_detected": 1,
+   "sha256": "72f159e802e66949f03a39cc466f32652704816f3f9727125a94337d842fffab",
+   "face_box": [
+    259.681640625,
+    377.7544250488281,
+    725.407470703125,
+    870.5188903808594
+   ],
+   "det_score": 0.8124
+  },
+  {
+   "index": 44,
+   "seed_used": 20261021044,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "58e15f9d06759b70dbd6c35dfd7fd198f407e6996795aadfddcf9495a75141fb",
+   "face_box": [
+    381.4629211425781,
+    169.73500061035156,
+    734.4637145996094,
+    659.9659881591797
+   ],
+   "det_score": 0.9077
+  },
+  {
+   "index": 45,
+   "seed_used": 20261221045,
+   "attempts": 3,
+   "n_faces_detected": 1,
+   "sha256": "c93aff6412ec8dd8c237f469bf615bab66030bcdf57a828e06a66ee5222abb7f",
+   "face_box": [
+    272.91107177734375,
+    194.0648651123047,
+    631.5515441894531,
+    680.4159088134766
+   ],
+   "det_score": 0.915
+  },
+  {
+   "index": 46,
+   "seed_used": 20261021046,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "afa1d1dbb37e9ef1185efb765b5746b7c53ad69d9a82357ad06a7c3c52194ba4",
+   "face_box": [
+    321.514892578125,
+    145.13922119140625,
+    708.9494934082031,
+    692.2288208007812
+   ],
+   "det_score": 0.9036
+  },
+  {
+   "index": 47,
+   "seed_used": 20261021047,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "2f751ba13c12a07066b686ea5bde183ab11f72d12cb749d332f31b2df0f8aa17",
+   "face_box": [
+    397.6640319824219,
+    242.25003051757812,
+    812.2976379394531,
+    831.1230163574219
+   ],
+   "det_score": 0.8852
+  },
+  {
+   "index": 48,
+   "seed_used": 20261021048,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "d19930e7f37af2313eef224ea0e1a89b832936fd4a51881ac75fa994828fc3c0",
+   "face_box": [
+    324.5281982421875,
+    217.2637176513672,
+    736.0267028808594,
+    707.6271514892578
+   ],
+   "det_score": 0.828
+  },
+  {
+   "index": 49,
+   "seed_used": 20261021049,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "eb2084d2b0f421b684b01086f2da2a15873016e4717932cf8a69e6c728313287",
+   "face_box": [
+    346.45928955078125,
+    210.74746704101562,
+    652.8486938476562,
+    607.3802185058594
+   ],
+   "det_score": 0.9264
+  },
+  {
+   "index": 50,
+   "seed_used": 20261021050,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "13962f1579c0ed7aa56ab916b48676d4ac6c9d6702f9fae44c24917e115e9c56",
+   "face_box": [
+    279.95379638671875,
+    186.85084533691406,
+    678.7758483886719,
+    652.8137054443359
+   ],
+   "det_score": 0.8958
+  },
+  {
+   "index": 51,
+   "seed_used": 20261021051,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "c03a46e7cf9df6ee8c1314efa5d045866c7088d99d7292f2b4c9e9fc4dbb300d",
+   "face_box": [
+    279.58837890625,
+    126.87248229980469,
+    646.4457092285156,
+    616.3538970947266
+   ],
+   "det_score": 0.8999
+  },
+  {
+   "index": 52,
+   "seed_used": 20261021052,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "6aa459b56e322c6b82c8575ee63cf818a8fbd2dab6beba0b0904aef4ed7a15a8",
+   "face_box": [
+    342.23309326171875,
+    307.8309326171875,
+    750.6393127441406,
+    801.5626525878906
+   ],
+   "det_score": 0.897
+  },
+  {
+   "index": 53,
+   "seed_used": 20261021053,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "3f3262e6b9acc6835f478de4747e3c0eee89e56c3c71b1e58efe09786aca0ef9",
+   "face_box": [
+    335.0308837890625,
+    157.80636596679688,
+    712.4169616699219,
+    668.2433166503906
+   ],
+   "det_score": 0.9028
+  },
+  {
+   "index": 54,
+   "seed_used": 20261021054,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "f697005f0f6e3079a7e69bda91b52c29865b19a6b19fadf919e6f7805b4c32c6",
+   "face_box": [
+    243.5819854736328,
+    268.0281677246094,
+    673.8304901123047,
+    808.9078674316406
+   ],
+   "det_score": 0.8497
+  },
+  {
+   "index": 55,
+   "seed_used": 20261021055,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "ac8536ce296085bbcddc6b5871eab553637cb501c39f986d4c810476604ac787",
+   "face_box": [
+    297.7112731933594,
+    233.38580322265625,
+    741.4275207519531,
+    770.6571655273438
+   ],
+   "det_score": 0.8156
+  },
+  {
+   "index": 56,
+   "seed_used": 20261021056,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "dd212fd87be7c24c24a19445bc3612830c2f3b175dfdae9da81d8213b3f109f5",
+   "face_box": [
+    369.43426513671875,
+    165.4502716064453,
+    670.5789489746094,
+    563.1064910888672
+   ],
+   "det_score": 0.9317
+  },
+  {
+   "index": 57,
+   "seed_used": 20261021057,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "a50039672dfd6d5cf5ebca7987f749c2823f986d16930588ea9be3e053d19797",
+   "face_box": [
+    361.49420166015625,
+    120.17208862304688,
+    700.1914367675781,
+    562.2005920410156
+   ],
+   "det_score": 0.8819
+  },
+  {
+   "index": 58,
+   "seed_used": 20261021058,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "a38f435105a2894b7efe6daaf3222bd8c1caba25385db59d1f8efd8dd760f30f",
+   "face_box": [
+    452.1816101074219,
+    157.0969696044922,
+    769.4538879394531,
+    635.4451446533203
+   ],
+   "det_score": 0.9056
+  },
+  {
+   "index": 59,
+   "seed_used": 20261021059,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "1377afe8a0d6f037cf7f233337160d512394afdd01e9eca3db88728f171b24e6",
+   "face_box": [
+    318.07696533203125,
+    251.78932189941406,
+    705.7340393066406,
+    697.0629730224609
+   ],
+   "det_score": 0.8812
+  },
+  {
+   "index": 60,
+   "seed_used": 20261021060,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "c99bbdbbb9f8ae9106eea00d0f69475182151ecc636cdc8a707fe4381ac0419d",
+   "face_box": [
+    398.46905517578125,
+    254.8419647216797,
+    663.2412414550781,
+    624.1159210205078
+   ],
+   "det_score": 0.9293
+  },
+  {
+   "index": 61,
+   "seed_used": 20261021061,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "2df26808a2e034cff8d89963b050f9350150acd4591b2a7698c85f9c93b2f8ae",
+   "face_box": [
+    365.7483825683594,
+    235.64723205566406,
+    700.7090148925781,
+    718.2339324951172
+   ],
+   "det_score": 0.9151
+  },
+  {
+   "index": 62,
+   "seed_used": 20261021062,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "60690055992112ed0d3aa79c3ce08d8913b05f049c38728a8216011bbf1b60fe",
+   "face_box": [
+    429.623779296875,
+    286.58660888671875,
+    774.3203430175781,
+    736.5702209472656
+   ],
+   "det_score": 0.9092
+  },
+  {
+   "index": 63,
+   "seed_used": 20261021063,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "3c13385eb6c979695b6fde012838cf9ccf0d74736595f6e4f0dbd784f64fff44",
+   "face_box": [
+    278.76220703125,
+    155.27362060546875,
+    772.7278747558594,
+    784.0415649414062
+   ],
+   "det_score": 0.8212
+  },
+  {
+   "index": 64,
+   "seed_used": 20261021064,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "54275b5133bfc410a25b3fd170320e3f61edb3ebe8c37fad9f5cb9f2bd0c79f6",
+   "face_box": [
+    484.34100341796875,
+    160.60702514648438,
+    817.1394653320312,
+    717.9176330566406
+   ],
+   "det_score": 0.8847
+  },
+  {
+   "index": 65,
+   "seed_used": 20261021065,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "bad7de9d77a59c742b81947e73a5e504d42c488bb2c0569f6d9a7f60a678deb2",
+   "face_box": [
+    442.7751770019531,
+    129.50277709960938,
+    671.4687042236328,
+    449.5472717285156
+   ],
+   "det_score": 0.9458
+  },
+  {
+   "index": 66,
+   "seed_used": 20261021066,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "1577c642a87ff013396484966b342eae74d05fa860d7844a7b2bb50d1262eafd",
+   "face_box": [
+    332.388427734375,
+    142.75564575195312,
+    611.6896362304688,
+    503.3144226074219
+   ],
+   "det_score": 0.93
+  },
+  {
+   "index": 67,
+   "seed_used": 20261021067,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "fbafabafdca4c81effe834ec0954cce8077e0ca902dbadfa3a82220ae48b6868",
+   "face_box": [
+    272.86322021484375,
+    219.97430419921875,
+    641.1768493652344,
+    735.0469970703125
+   ],
+   "det_score": 0.9051
+  },
+  {
+   "index": 68,
+   "seed_used": 20261021068,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "d87439b3eda4550da86a6a8aed9d8bd57386399f92847cef083eb1e985d7a536",
+   "face_box": [
+    359.5906982421875,
+    209.13845825195312,
+    709.6413879394531,
+    680.5325622558594
+   ],
+   "det_score": 0.9113
+  },
+  {
+   "index": 69,
+   "seed_used": 20261021069,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "315c3a59a2b4145b14d08fdbe68b256a7abf7e61e70397753a9cb14ae44189a3",
+   "face_box": [
+    283.7269287109375,
+    239.62301635742188,
+    762.579345703125,
+    817.4372863769531
+   ],
+   "det_score": 0.8222
+  },
+  {
+   "index": 70,
+   "seed_used": 20261021070,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "c7748e43c46ff770f6146a4c125efb9f8b0611a7fe3c891e7f1ac663d0334304",
+   "face_box": [
+    384.27655029296875,
+    246.47897338867188,
+    834.5365295410156,
+    810.5411682128906
+   ],
+   "det_score": 0.8529
+  },
+  {
+   "index": 71,
+   "seed_used": 20261021071,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "9b93202a0f919d3c410501424a56feeec7caf29bc850f6b93f1a7448bb92073b",
+   "face_box": [
+    361.5654602050781,
+    175.77194213867188,
+    706.3719177246094,
+    677.2734069824219
+   ],
+   "det_score": 0.9018
+  },
+  {
+   "index": 72,
+   "seed_used": 20261021072,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "13592375d7fddda454e95fe47321fb6595efb87015a9263e1624726e05b12291",
+   "face_box": [
+    382.345947265625,
+    212.83985900878906,
+    694.59521484375,
+    627.9308319091797
+   ],
+   "det_score": 0.9272
+  },
+  {
+   "index": 73,
+   "seed_used": 20261021073,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "ecd6faec5bc7bbc46b674ac103d1277f51632e850226d204970e46a1fce415f2",
+   "face_box": [
+    390.89459228515625,
+    160.8334503173828,
+    746.7006530761719,
+    638.8742523193359
+   ],
+   "det_score": 0.9126
+  },
+  {
+   "index": 74,
+   "seed_used": 20261021074,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "afe736770c603f82fe29428ddd4e34fc08449144891b76409d902171cac39623",
+   "face_box": [
+    351.2504577636719,
+    188.19020080566406,
+    728.5227355957031,
+    685.6724700927734
+   ],
+   "det_score": 0.8938
+  }
+ ]
+}

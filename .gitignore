@@ -11,3 +11,6 @@ testset/.check_tmp/
 *.pt
 *.pth
 spike/out/   # scratch: staged dev pictures, licence copies, logs
+faces/images/
+faces/portraits/
+faces/.check_tmp/
