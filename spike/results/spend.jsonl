@@ -7,3 +7,11 @@
 {"run": "glimmer_bf16_dev20_attempt1_lost", "gpu": "H100", "gpu_seconds": 542, "wall_seconds": 542, "cpu_cores": 8, "mem_gib": 64, "usd": 0.7288, "note": "result could not be unpickled locally (torch.__version__); cost from `modal billing report --for today --show-resources`: H100 0.5947 + CPU 0.0570 + memory 0.0771"}
 {"run": "image_builds_and_other_unlogged", "gpu": null, "gpu_seconds": 0, "wall_seconds": 0, "cpu_cores": 0, "mem_gib": 0, "usd": 0.5676, "note": "reconciliation to Modal metered total $2.24 at 20 Oct afternoon (CUDA image builds on CPU, egress); `modal billing summary`"}
 {"run": "glimmer_bf16_dev20", "gpu": "H100", "gpu_seconds": 1021.7, "wall_seconds": 1021.7, "cpu_cores": 8, "mem_gib": 64, "usd": 1.5882, "note": "load=39.9s"}
+{"run": "download_sam", "gpu": null, "gpu_seconds": 0, "wall_seconds": 20.4, "cpu_cores": 0.125, "mem_gib": 0.25, "usd": 0.0001, "note": "CPU download to Volume"}
+{"run": "sam31_attempt1_failed_init_state", "gpu": "L40S", "gpu_seconds": 0, "wall_seconds": 0, "cpu_cores": 4, "mem_gib": 32, "usd": 0.25, "note": "ESTIMATE, upper bound for a run that built the model then hit TypeError in init_state; Modal meter lags, exact figure not yet in billing report"}
+{"run": "sam31_dev20", "gpu": "L40S", "gpu_seconds": 53.7, "wall_seconds": 53.7, "cpu_cores": 4, "mem_gib": 32, "usd": 0.0414, "note": "load=12.8s"}
+{"run": "sam_probe", "gpu": "L40S", "gpu_seconds": 158.5, "wall_seconds": 158.5, "cpu_cores": 4, "mem_gib": 32, "usd": 0.1222, "note": "one-picture output-format probe"}
+{"run": "sam_probe", "gpu": "L40S", "gpu_seconds": 179.0, "wall_seconds": 179.0, "cpu_cores": 4, "mem_gib": 32, "usd": 0.138, "note": "one-picture output-format probe"}
+{"run": "sam31_dev20", "gpu": "L40S", "gpu_seconds": 72.6, "wall_seconds": 72.6, "cpu_cores": 4, "mem_gib": 32, "usd": 0.056, "note": "load=23.0s"}
+{"run": "sam31_dev20", "gpu": "L40S", "gpu_seconds": 58.1, "wall_seconds": 58.1, "cpu_cores": 4, "mem_gib": 32, "usd": 0.0448, "note": "load=12.6s"}
+{"run": "sam31_attempt2_failed_IsADirectoryError", "gpu": "L40S", "gpu_seconds": 0, "wall_seconds": 0, "cpu_cores": 4, "mem_gib": 32, "usd": 0.1, "note": "ESTIMATE (model load about 25 s plus startup); run threw before the cost could be logged"}

@@ -364,6 +364,12 @@ def sam_run(jobs):
     t0 = time.time()
     predictor = build_sam3_predictor(version="sam3.1", use_fa3=False, async_loading_frames=False)
     load_s = time.time() - t0
+    # The repo's base predictor passes offload_state_to_cpu / video_loader_type to init_state, but the SAM 3.1
+    # multiplex model's init_state does not accept them (TypeError seen on 20 Oct). Drop what it does not take.
+    import inspect
+    _orig = predictor.model.init_state
+    _ok = set(inspect.signature(_orig).parameters)
+    predictor.model.init_state = lambda *a, **k: _orig(*a, **{x: y for x, y in k.items() if x in _ok})
     out = {"load_seconds": round(load_s, 1), "pictures": []}
 
     def prompt(sid, **kw):
@@ -378,51 +384,80 @@ def sam_run(jobs):
             m = np.stack([np.asarray(Image.fromarray(x.astype(np.uint8) * 255).resize((w, h))) > 127 for x in m])
         return dict(zip(ids, m.astype(bool))), m.astype(bool)
 
-    for job in jobs:
+    def do_job(job):
         name = job["file"]
         img = Image.open(f"/data/images/{name}").convert("RGB")
         w, h = img.size
-        d = f"/tmp/frames/{name}"
-        shutil.rmtree(d, ignore_errors=True); os.makedirs(d)
-        img.save(f"{d}/00000.jpg", quality=95)  # the video loader reads a folder of JPEG frames
+        # the loader treats a path ending in .jpg/.png as a one-frame video, so pass the picture itself
+        d = f"/data/images/{name}"
         t1 = time.time()
         sid = predictor.handle_request(dict(type="start_session", resource_path=d))["session_id"]
         rec = {"file": name, "w": w, "h": h, "key_cov": [], "glimmer_cov": [], "text_cov": []}
 
         def rel(b):
-            return [[b[0] / w, b[1] / h, (b[2] - b[0]) / w, (b[3] - b[1]) / h]]  # relative xywh
-        # (a) the key's own boxes as box prompts (best case)
-        for k, s in enumerate(job["key_boxes"]):
-            o = prompt(sid, bounding_boxes=rel(s["box"]), bounding_box_labels=[1], obj_id=k + 1)
-            ms, _ = masks_of(o, w, h)
-            m = ms.get(k + 1)
-            rec["key_cov"].append({"pii_type": s["pii_type"], "cov": common.coverage(m, s["box"]) if m is not None else 0.0, "got_mask": m is not None})
-        predictor.handle_request(dict(type="reset_session", session_id=sid))
-        # (b) Glimmer's boxes as box prompts (real case): per planted box, the best returned box that hits it
-        for k, s in enumerate(job["key_boxes"]):
-            cands = [(common.iou(s["box"], g), g) for g in job["glimmer_boxes"] if common.hits(s["box"], g)]
-            if not cands:
-                rec["glimmer_cov"].append({"pii_type": s["pii_type"], "cov": 0.0, "got_mask": False, "had_box": False})
-                continue
-            g = max(cands)[1]
-            o = prompt(sid, bounding_boxes=rel(g), bounding_box_labels=[1], obj_id=1000 + k)
-            ms, _ = masks_of(o, w, h)
-            m = ms.get(1000 + k)
-            rec["glimmer_cov"].append({"pii_type": s["pii_type"], "cov": common.coverage(m, s["box"]) if m is not None else 0.0,
-                                       "got_mask": m is not None, "had_box": True})
-        predictor.handle_request(dict(type="reset_session", session_id=sid))
-        # (c) text prompts: "text" for text spans, "face" for faces; union of all returned masks
-        for phrase in ("text", "face"):
-            o = prompt(sid, text=phrase)
-            _, allm = masks_of(o, w, h)
-            union = allm.any(axis=0) if allm.size else np.zeros((h, w), bool)
-            for s in job["key_boxes"]:
-                if (phrase == "face") == (s["pii_type"] == "face"):
-                    rec["text_cov"].append({"pii_type": s["pii_type"], "prompt": phrase, "cov": common.coverage(union, s["box"]), "n_masks": int(len(allm))})
+            x0, y0 = max(0.0, b[0]), max(0.0, b[1])
+            x1, y1 = min(float(w), b[2]), min(float(h), b[3])  # SAM asserts boxes lie inside the picture
+            return [[x0 / w, y0 / h, (x1 - x0) / w, (y1 - y0) / h]]  # relative xywh
+
+        def box_mask(b):
+            """One fresh prompt per box; the returned masks (normally exactly one) are merged. The model picks its own object ids."""
             predictor.handle_request(dict(type="reset_session", session_id=sid))
+            if b[2] - b[0] < 2 or b[3] - b[1] < 2:
+                return None
+            o = prompt(sid, bounding_boxes=rel(b), bounding_box_labels=[1], obj_id=1)
+            m = np.asarray(o["out_binary_masks"])
+            if m.size == 0:
+                return None
+            if m.shape[-2:] != (h, w):
+                m = np.stack([np.asarray(Image.fromarray(x.astype(np.uint8) * 255).resize((w, h))) > 127 for x in m])
+            return m.astype(bool).any(axis=0)
+        def extra(m, box):
+            """bbox_cov: share of the planted box inside the mask's outer bounding box (what you get by blacking out the
+            mask's bounding rectangle). spill: share of mask pixels that fall outside the planted box."""
+            if m is None or not m.any():
+                return {"bbox_cov": 0.0, "spill": None}
+            ys, xs = np.nonzero(m)
+            bb = [xs.min(), ys.min(), xs.max() + 1, ys.max() + 1]
+            ix = max(0, min(bb[2], box[2]) - max(bb[0], box[0])) * max(0, min(bb[3], box[3]) - max(bb[1], box[1]))
+            inside = common.coverage(m, box) * max(1, (int(round(box[2])) - int(round(box[0]))) * (int(round(box[3])) - int(round(box[1]))))
+            return {"bbox_cov": round(ix / max(1.0, (box[2] - box[0]) * (box[3] - box[1])), 3), "spill": round(1 - inside / m.sum(), 3)}
+        # (a) the key's own boxes as box prompts (best case)
+        for s_ in job["key_boxes"]:
+            m = box_mask(s_["box"])
+            rec["key_cov"].append({"pii_type": s_["pii_type"], "cov": common.coverage(m, s_["box"]) if m is not None else 0.0,
+                                   "got_mask": m is not None, "mask_px": int(m.sum()) if m is not None else 0, **extra(m, s_["box"])})
+        # (b) Glimmer's boxes as box prompts (real case): per planted box, the best returned box that hits it
+        for s_ in job["key_boxes"]:
+            cands = [(common.iou(s_["box"], g), g) for g in job["glimmer_boxes"] if common.hits(s_["box"], g)]
+            if not cands:
+                rec["glimmer_cov"].append({"pii_type": s_["pii_type"], "cov": 0.0, "got_mask": False, "had_box": False})
+                continue
+            m = box_mask(max(cands)[1])
+            rec["glimmer_cov"].append({"pii_type": s_["pii_type"], "cov": common.coverage(m, s_["box"]) if m is not None else 0.0,
+                                       "got_mask": m is not None, "had_box": True, **extra(m, s_["box"])})
+        # (c) text prompts: "text" for text spans, "face" for faces; union of all returned masks.
+        # Extra phrasings are tried because "text" returned nothing in the one-picture probe.
+        for phrase in ("text", "face", "printed text", "words"):
+            predictor.handle_request(dict(type="reset_session", session_id=sid))
+            o = prompt(sid, text=phrase)
+            allm = np.asarray(o["out_binary_masks"])
+            union = allm.any(axis=0) if allm.size else np.zeros((h, w), bool)
+            for s_ in job["key_boxes"]:
+                if (phrase == "face") == (s_["pii_type"] == "face"):
+                    rec["text_cov"].append({"pii_type": s_["pii_type"], "prompt": phrase, "cov": common.coverage(union, s_["box"]), "n_masks": int(len(allm))})
         predictor.handle_request(dict(type="close_session", session_id=sid))
         rec["seconds"] = round(time.time() - t1, 2)
         out["pictures"].append(rec)
+
+    import traceback
+    out["errors"] = []
+    for job in jobs:
+        try:
+            do_job(job)
+        except Exception:  # noqa: BLE001
+            out["errors"].append({"file": job["file"], "traceback": traceback.format_exc()[-2500:]})
+            if len(out["errors"]) >= 2 and not out["pictures"]:
+                break  # fail fast: two errors and nothing has worked yet
     stop.set()
     out["peak_mib_nvidia_smi"] = peak["mib"]
     out["peak_mib_torch_allocated"] = round(torch.cuda.max_memory_allocated() / 2**20)
@@ -447,16 +482,21 @@ def sam(glimmer_run: str = "glimmer_q4_dev20", frame: str = "px", all_dev: bool 
     out = sam_run.remote(jobs)
     common.log_spend("sam31_dev20", out["wall_seconds"], "L40S", 4, 32, f"load={out['load_seconds']}s")
     summ = {}
-    for kind in ("key_cov", "glimmer_cov", "text_cov"):
-        vals = [c["cov"] for p in out["pictures"] for c in p[kind]]
-        summ[kind] = {"n": len(vals), "mean_coverage": round(sum(vals) / max(1, len(vals)), 3),
+    kinds = [("key_cov", None), ("glimmer_cov", None)] + [("text_cov", ph) for ph in ("text", "face", "printed text", "words")]
+    for kind, ph in kinds:
+        vals = [c["cov"] for p in out["pictures"] for c in p[kind] if ph is None or c["prompt"] == ph]
+        got = [c.get("got_mask") for p in out["pictures"] for c in p[kind] if ph is None]
+        had = [c.get("had_box") for p in out["pictures"] for c in p[kind] if ph is None and "had_box" in c]
+        kind = kind if ph is None else f"text_prompt:{ph}"
+        summ[kind] = {"n": len(vals), "got_mask_share": round(sum(got) / len(got), 3) if got else None,
+                      "had_glimmer_box_share": round(sum(had) / len(had), 3) if had else None, "mean_coverage": round(sum(vals) / max(1, len(vals)), 3),
                       "share_ge_0.5": round(sum(v >= 0.5 for v in vals) / max(1, len(vals)), 3),
                       "share_ge_0.9": round(sum(v >= 0.9 for v in vals) / max(1, len(vals)), 3)}
     out["summary"] = summ
-    out["seconds_per_picture_mean"] = round(sum(p["seconds"] for p in out["pictures"]) / len(out["pictures"]), 2)
+    out["seconds_per_picture_mean"] = round(sum(p["seconds"] for p in out["pictures"]) / max(1, len(out["pictures"])), 2)
     RESULTS.mkdir(exist_ok=True)
     (RESULTS / "sam31_dev20.json").write_text(json.dumps(out, indent=1))
-    print(json.dumps({k: v for k, v in out.items() if k != "pictures"}, indent=1))
+    print(json.dumps({k: v for k, v in out.items() if k != "pictures"}, indent=1)[:6000])
 
 
 # ---- step 4: Muse Glimmer BF16 on an H100 (transformers), only because box quality at 4-bit was poor ----
@@ -557,3 +597,58 @@ def glimmer_bf16(reasoning: str = "low", tag: str = ""):
     for fr, agg in out["score_by_frame"].items():
         print(fr, json.dumps(agg["all"]))
     print([r["parse_error"] for r in out["results"] if r["parse_error"]][:3])
+
+
+# ---- SAM debug probe: what does the multiplex predictor actually return for one picture? ----------------
+@app.function(image=sam_image, gpu="L40S", volumes={MODELS: vol}, secrets=[modal.Secret.from_name("huggingface-secret")],
+              timeout=900, cpu=4, memory=32768)
+def sam_probe(name, boxes):
+    import numpy as np
+    vol.reload()
+    from sam3.model_builder import build_sam3_predictor
+    import inspect
+    predictor = build_sam3_predictor(version="sam3.1", use_fa3=False, async_loading_frames=False)
+    _orig = predictor.model.init_state
+    _ok = set(inspect.signature(_orig).parameters)
+    predictor.model.init_state = lambda *a, **k: _orig(*a, **{x: y for x, y in k.items() if x in _ok})
+    from PIL import Image
+    w, h = Image.open(f"/data/images/{name}").size
+    sid = predictor.handle_request(dict(type="start_session", resource_path=f"/data/images/{name}"))["session_id"]
+    res = {"w": w, "h": h}
+
+    def summ(o):
+        d = {}
+        for k, v in o.items():
+            a = np.asarray(v) if hasattr(v, "__len__") else v
+            d[k] = {"shape": list(a.shape), "dtype": str(a.dtype)} if hasattr(a, "shape") else str(v)[:80]
+        return d
+    for thr in (0.5, 0.1, 0.0):
+        r = predictor.handle_request(dict(type="add_prompt", session_id=sid, frame_index=0, text="text", output_prob_thresh=thr))
+        res[f"text_thr{thr}"] = {"frame_index": r["frame_index"], "outputs": summ(r["outputs"])}
+        o = r["outputs"]
+        if "out_probs" in o:
+            res[f"text_thr{thr}"]["probs_top"] = [round(float(x), 3) for x in np.asarray(o["out_probs"]).ravel()[:8]]
+        predictor.handle_request(dict(type="reset_session", session_id=sid))
+    b = boxes[0]
+    rel = [[b[0] / w, b[1] / h, (b[2] - b[0]) / w, (b[3] - b[1]) / h]]
+    for thr in (0.5, 0.0):
+        r = predictor.handle_request(dict(type="add_prompt", session_id=sid, frame_index=0, bounding_boxes=rel,
+                                          bounding_box_labels=[1], obj_id=1, output_prob_thresh=thr))
+        res[f"box_thr{thr}"] = {"outputs": summ(r["outputs"])}
+        m = np.asarray(r["outputs"].get("out_binary_masks", []))
+        if m.size:
+            res[f"box_thr{thr}"]["mask_area_px"] = [int(x.sum()) for x in m]
+        predictor.handle_request(dict(type="reset_session", session_id=sid))
+    return res
+
+
+@app.local_entrypoint()
+def sam_debug():
+    key = common.load_key(DEV_DIR / "dev_key.json")
+    e = common.select_eval(key)[0]
+    boxes = [s["box"] for s in e["spans"] if s["kind"] == "personal"]
+    common.guard_budget(1.0)
+    t0 = time.time()
+    r = sam_probe.remote(e["file"], boxes)
+    common.log_spend("sam_probe", time.time() - t0, "L40S", 4, 32, "one-picture output-format probe")
+    print(json.dumps(r, indent=1)[:5000])

@@ -1,0 +1,5459 @@
+{
+ "load_seconds": 12.6,
+ "pictures": [
+  {
+   "file": "payslip_000.jpg",
+   "w": 900,
+   "h": 1200,
+   "key_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.6580357142857143,
+     "got_mask": true,
+     "mask_px": 1474,
+     "bbox_cov": 0.868,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.6217821782178218,
+     "got_mask": true,
+     "mask_px": 1256,
+     "bbox_cov": 0.76,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.5594135802469136,
+     "got_mask": true,
+     "mask_px": 1450,
+     "bbox_cov": 0.787,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.622664255575648,
+     "got_mask": true,
+     "mask_px": 1033,
+     "bbox_cov": 0.803,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "ni_number",
+     "cov": 0.6888888888888889,
+     "got_mask": true,
+     "mask_px": 1612,
+     "bbox_cov": 0.901,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "dob",
+     "cov": 0.6747422680412372,
+     "got_mask": true,
+     "mask_px": 1309,
+     "bbox_cov": 0.854,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "sort_code",
+     "cov": 0.7116382505559674,
+     "got_mask": true,
+     "mask_px": 960,
+     "bbox_cov": 0.783,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.6774628879892037,
+     "got_mask": true,
+     "mask_px": 1004,
+     "bbox_cov": 0.767,
+     "spill": 0.0
+    }
+   ],
+   "glimmer_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.7071428571428572,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.876,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.6554455445544555,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.808,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.5875771604938271,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.834,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.6666666666666666,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.814,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "ni_number",
+     "cov": 0.773931623931624,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.974,
+     "spill": 0.006
+    },
+    {
+     "pii_type": "dob",
+     "cov": 0.7587628865979381,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.921,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "sort_code",
+     "cov": 0.8057820607857672,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.857,
+     "spill": 0.248
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.8394062078272605,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.911,
+     "spill": 0.076
+    }
+   ],
+   "text_cov": [
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "ni_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "ni_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "ni_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    }
+   ],
+   "seconds": 3.78
+  },
+  {
+   "file": "payslip_001.png",
+   "w": 900,
+   "h": 1200,
+   "key_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.6684057971014493,
+     "got_mask": true,
+     "mask_px": 1153,
+     "bbox_cov": 0.893,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.6554588607594937,
+     "got_mask": true,
+     "mask_px": 1657,
+     "bbox_cov": 0.908,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.5671321160042965,
+     "got_mask": true,
+     "mask_px": 1584,
+     "bbox_cov": 0.757,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.6,
+     "got_mask": true,
+     "mask_px": 729,
+     "bbox_cov": 0.813,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "ni_number",
+     "cov": 0.6513605442176871,
+     "got_mask": true,
+     "mask_px": 1532,
+     "bbox_cov": 0.857,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "dob",
+     "cov": 0.596,
+     "got_mask": true,
+     "mask_px": 1341,
+     "bbox_cov": 0.899,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "sort_code",
+     "cov": 0.7214673913043478,
+     "got_mask": true,
+     "mask_px": 1062,
+     "bbox_cov": 0.876,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.7880434782608695,
+     "got_mask": true,
+     "mask_px": 1160,
+     "bbox_cov": 0.818,
+     "spill": 0.0
+    }
+   ],
+   "glimmer_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.39675632911392406,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.57,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.5216612960973863,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.702,
+     "spill": 0.053
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.5983539094650205,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.642,
+     "spill": 0.636
+    },
+    {
+     "pii_type": "ni_number",
+     "cov": 0.48894557823129253,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.702,
+     "spill": 0.003
+    },
+    {
+     "pii_type": "dob",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "sort_code",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    }
+   ],
+   "text_cov": [
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "ni_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "ni_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "ni_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    }
+   ],
+   "seconds": 2.1
+  },
+  {
+   "file": "payslip_002.png",
+   "w": 900,
+   "h": 1200,
+   "key_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.7848837209302325,
+     "got_mask": true,
+     "mask_px": 2295,
+     "bbox_cov": 0.965,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.6412448700410397,
+     "got_mask": true,
+     "mask_px": 1875,
+     "bbox_cov": 0.959,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.6505190311418685,
+     "got_mask": true,
+     "mask_px": 1504,
+     "bbox_cov": 0.843,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.6894117647058824,
+     "got_mask": true,
+     "mask_px": 1172,
+     "bbox_cov": 0.894,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "ni_number",
+     "cov": 0.5716911764705882,
+     "got_mask": true,
+     "mask_px": 1555,
+     "bbox_cov": 0.86,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "dob",
+     "cov": 0.6531329923273658,
+     "got_mask": true,
+     "mask_px": 2043,
+     "bbox_cov": 0.91,
+     "spill": -0.0
+    },
+    {
+     "pii_type": "sort_code",
+     "cov": 0.7476470588235294,
+     "got_mask": true,
+     "mask_px": 1271,
+     "bbox_cov": 0.95,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.7923529411764706,
+     "got_mask": true,
+     "mask_px": 1347,
+     "bbox_cov": 0.829,
+     "spill": 0.0
+    }
+   ],
+   "glimmer_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.7636798905608755,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.908,
+     "spill": 0.042
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.5745554035567716,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.733,
+     "spill": 0.02
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.5268166089965398,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.734,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.9352941176470588,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.98,
+     "spill": 0.472
+    },
+    {
+     "pii_type": "ni_number",
+     "cov": 0.7136029411764706,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.981,
+     "spill": 0.009
+    },
+    {
+     "pii_type": "dob",
+     "cov": 0.47762148337595906,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.685,
+     "spill": 0.055
+    },
+    {
+     "pii_type": "sort_code",
+     "cov": 0.5529411764705883,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.791,
+     "spill": 0.179
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    }
+   ],
+   "text_cov": [
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "ni_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "ni_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "ni_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    }
+   ],
+   "seconds": 2.47
+  },
+  {
+   "file": "payslip_003.jpg",
+   "w": 900,
+   "h": 1200,
+   "key_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.5833333333333334,
+     "got_mask": true,
+     "mask_px": 1638,
+     "bbox_cov": 0.835,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.6022182254196643,
+     "got_mask": true,
+     "mask_px": 2009,
+     "bbox_cov": 0.877,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.6159346271705822,
+     "got_mask": true,
+     "mask_px": 1206,
+     "bbox_cov": 0.772,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.62998712998713,
+     "got_mask": true,
+     "mask_px": 979,
+     "bbox_cov": 0.799,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "ni_number",
+     "cov": 0.6857546836337929,
+     "got_mask": true,
+     "mask_px": 1940,
+     "bbox_cov": 0.883,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "dob",
+     "cov": 0.6567725752508361,
+     "got_mask": true,
+     "mask_px": 1571,
+     "bbox_cov": 0.786,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "sort_code",
+     "cov": 0.6483516483516484,
+     "got_mask": true,
+     "mask_px": 2271,
+     "bbox_cov": 0.882,
+     "spill": 0.532
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.6882613510520488,
+     "got_mask": true,
+     "mask_px": 1243,
+     "bbox_cov": 0.817,
+     "spill": 0.0
+    }
+   ],
+   "glimmer_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.18233618233618235,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.257,
+     "spill": 0.805
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.717326139088729,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.917,
+     "spill": 0.089
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.7477017364657814,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.878,
+     "spill": 0.135
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.722007722007722,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.914,
+     "spill": 0.624
+    },
+    {
+     "pii_type": "ni_number",
+     "cov": 0.8144220572640509,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.933,
+     "spill": 0.273
+    },
+    {
+     "pii_type": "dob",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "sort_code",
+     "cov": 0.2045177045177045,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.278,
+     "spill": 0.776
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.8355481727574751,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.919,
+     "spill": 0.156
+    }
+   ],
+   "text_cov": [
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "ni_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "ni_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "ni_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    }
+   ],
+   "seconds": 2.49
+  },
+  {
+   "file": "payslip_004.png",
+   "w": 900,
+   "h": 1200,
+   "key_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.7368421052631579,
+     "got_mask": true,
+     "mask_px": 1638,
+     "bbox_cov": 0.915,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.7107438016528925,
+     "got_mask": true,
+     "mask_px": 1634,
+     "bbox_cov": 0.865,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.7483672685363043,
+     "got_mask": true,
+     "mask_px": 1948,
+     "bbox_cov": 0.913,
+     "spill": -0.0
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.6792682926829269,
+     "got_mask": true,
+     "mask_px": 1114,
+     "bbox_cov": 0.856,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "ni_number",
+     "cov": 0.7567251461988304,
+     "got_mask": true,
+     "mask_px": 1941,
+     "bbox_cov": 0.919,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "dob",
+     "cov": 0.6519388954171563,
+     "got_mask": true,
+     "mask_px": 2774,
+     "bbox_cov": 0.851,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "sort_code",
+     "cov": 0.7593984962406015,
+     "got_mask": true,
+     "mask_px": 1212,
+     "bbox_cov": 0.891,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.835812356979405,
+     "got_mask": true,
+     "mask_px": 1461,
+     "bbox_cov": 0.906,
+     "spill": 0.0
+    }
+   ],
+   "glimmer_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.6720313179643324,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.821,
+     "spill": 0.422
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.9081828659239339,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.985,
+     "spill": 0.227
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.6908536585365853,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.809,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "ni_number",
+     "cov": 0.8210526315789474,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.993,
+     "spill": 0.131
+    },
+    {
+     "pii_type": "dob",
+     "cov": 0.5370152761457109,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.865,
+     "spill": 0.388
+    },
+    {
+     "pii_type": "sort_code",
+     "cov": 0.03696741854636591,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.364,
+     "spill": 0.984
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    }
+   ],
+   "text_cov": [
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "ni_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "ni_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "ni_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    }
+   ],
+   "seconds": 2.33
+  },
+  {
+   "file": "letter_000.png",
+   "w": 900,
+   "h": 1200,
+   "key_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.5622448979591836,
+     "got_mask": true,
+     "mask_px": 1102,
+     "bbox_cov": 0.798,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.5653735632183908,
+     "got_mask": true,
+     "mask_px": 1574,
+     "bbox_cov": 0.797,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.5539184952978057,
+     "got_mask": true,
+     "mask_px": 1767,
+     "bbox_cov": 0.79,
+     "spill": -0.0
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.550982800982801,
+     "got_mask": true,
+     "mask_px": 897,
+     "bbox_cov": 0.741,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.6108247422680413,
+     "got_mask": true,
+     "mask_px": 1187,
+     "bbox_cov": 0.85,
+     "spill": 0.002
+    },
+    {
+     "pii_type": "email",
+     "cov": 0.5323043790380474,
+     "got_mask": true,
+     "mask_px": 2966,
+     "bbox_cov": 0.866,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "sort_code",
+     "cov": 0.5006402048655569,
+     "got_mask": true,
+     "mask_px": 782,
+     "bbox_cov": 0.707,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.5909090909090909,
+     "got_mask": true,
+     "mask_px": 1066,
+     "bbox_cov": 0.716,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "phone",
+     "cov": 0.5343738387216648,
+     "got_mask": true,
+     "mask_px": 1438,
+     "bbox_cov": 0.701,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.5845004668534081,
+     "got_mask": true,
+     "mask_px": 1252,
+     "bbox_cov": 0.815,
+     "spill": 0.0
+    }
+   ],
+   "glimmer_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.5087774294670846,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.741,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.42076167076167076,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.528,
+     "spill": 0.65
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.3819587628865979,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.52,
+     "spill": 0.356
+    },
+    {
+     "pii_type": "email",
+     "cov": 0.3307609475951184,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.672,
+     "spill": 0.518
+    },
+    {
+     "pii_type": "sort_code",
+     "cov": 0.3508322663252241,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.423,
+     "spill": 0.548
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": true,
+     "bbox_cov": 0.0,
+     "spill": null
+    },
+    {
+     "pii_type": "phone",
+     "cov": 0.6176142697881828,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.784,
+     "spill": 0.078
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    }
+   ],
+   "text_cov": [
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "email",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "phone",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "email",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "phone",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "email",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "phone",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    }
+   ],
+   "seconds": 2.72
+  },
+  {
+   "file": "letter_001.png",
+   "w": 900,
+   "h": 1200,
+   "key_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.48148148148148145,
+     "got_mask": true,
+     "mask_px": 1625,
+     "bbox_cov": 0.687,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.44126597687157637,
+     "got_mask": true,
+     "mask_px": 1450,
+     "bbox_cov": 0.584,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.4105747126436782,
+     "got_mask": true,
+     "mask_px": 893,
+     "bbox_cov": 0.608,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.5580246913580247,
+     "got_mask": true,
+     "mask_px": 1130,
+     "bbox_cov": 0.691,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.4623015873015873,
+     "got_mask": true,
+     "mask_px": 1631,
+     "bbox_cov": 0.714,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "iban",
+     "cov": 0.510766806722689,
+     "got_mask": true,
+     "mask_px": 3890,
+     "bbox_cov": 0.782,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.5233734939759036,
+     "got_mask": true,
+     "mask_px": 1086,
+     "bbox_cov": 0.582,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "email",
+     "cov": 0.4198232323232323,
+     "got_mask": true,
+     "mask_px": 3325,
+     "bbox_cov": 0.633,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "phone",
+     "cov": 0.5981156595191683,
+     "got_mask": true,
+     "mask_px": 1841,
+     "bbox_cov": 0.723,
+     "spill": -0.0
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.44266528925619836,
+     "got_mask": true,
+     "mask_px": 1714,
+     "bbox_cov": 0.631,
+     "spill": 0.0
+    }
+   ],
+   "glimmer_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.6924444444444444,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.782,
+     "spill": 0.234
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.42422398052343274,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.531,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.4091954022988506,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.598,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.5037037037037037,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.649,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "iban",
+     "cov": 0.36672794117647056,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.515,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.19759036144578312,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.53,
+     "spill": 0.722
+    },
+    {
+     "pii_type": "email",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "phone",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    }
+   ],
+   "text_cov": [
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "iban",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "email",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "phone",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "iban",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "email",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "phone",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "iban",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "email",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "phone",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    }
+   ],
+   "seconds": 2.61
+  },
+  {
+   "file": "letter_002.png",
+   "w": 900,
+   "h": 1200,
+   "key_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.6721938775510204,
+     "got_mask": true,
+     "mask_px": 2129,
+     "bbox_cov": 0.853,
+     "spill": 0.01
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.5546746856205577,
+     "got_mask": true,
+     "mask_px": 2029,
+     "bbox_cov": 0.65,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.4917027417027417,
+     "got_mask": true,
+     "mask_px": 2726,
+     "bbox_cov": 0.615,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.517948717948718,
+     "got_mask": true,
+     "mask_px": 1414,
+     "bbox_cov": 0.615,
+     "spill": -0.0
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.6696428571428571,
+     "got_mask": true,
+     "mask_px": 2526,
+     "bbox_cov": 0.786,
+     "spill": 0.169
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.5529131985731273,
+     "got_mask": true,
+     "mask_px": 1395,
+     "bbox_cov": 0.711,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "phone",
+     "cov": 0.46395663956639566,
+     "got_mask": true,
+     "mask_px": 1712,
+     "bbox_cov": 0.577,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "iban",
+     "cov": 0.5304878048780488,
+     "got_mask": true,
+     "mask_px": 4176,
+     "bbox_cov": 0.687,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "email",
+     "cov": 0.6135971110064374,
+     "got_mask": true,
+     "mask_px": 3908,
+     "bbox_cov": 0.78,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.5699728260869565,
+     "got_mask": true,
+     "mask_px": 1678,
+     "bbox_cov": 0.677,
+     "spill": 0.0
+    }
+   ],
+   "glimmer_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.6084183673469388,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.73,
+     "spill": 0.224
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.36167304537998907,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.443,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.39087301587301587,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.602,
+     "spill": 0.026
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.184981684981685,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.367,
+     "spill": 0.103
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "phone",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "iban",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "email",
+     "cov": 0.23394567436018213,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.41,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    }
+   ],
+   "text_cov": [
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "phone",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "iban",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "email",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "phone",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "iban",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "email",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "phone",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "iban",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "email",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    }
+   ],
+   "seconds": 2.49
+  },
+  {
+   "file": "letter_003.png",
+   "w": 900,
+   "h": 1200,
+   "key_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.49984742142203237,
+     "got_mask": true,
+     "mask_px": 1638,
+     "bbox_cov": 0.793,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.46236559139784944,
+     "got_mask": true,
+     "mask_px": 2150,
+     "bbox_cov": 0.588,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.46201289599102885,
+     "got_mask": true,
+     "mask_px": 1648,
+     "bbox_cov": 0.602,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.5439814814814815,
+     "got_mask": true,
+     "mask_px": 940,
+     "bbox_cov": 0.62,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.5733902960024413,
+     "got_mask": true,
+     "mask_px": 1879,
+     "bbox_cov": 0.806,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "email",
+     "cov": 0.5275142314990512,
+     "got_mask": true,
+     "mask_px": 3614,
+     "bbox_cov": 0.732,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "phone",
+     "cov": 0.5248275862068965,
+     "got_mask": true,
+     "mask_px": 1522,
+     "bbox_cov": 0.658,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "iban",
+     "cov": 0.5776234567901235,
+     "got_mask": true,
+     "mask_px": 3743,
+     "bbox_cov": 0.781,
+     "spill": -0.0
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.6089357429718876,
+     "got_mask": true,
+     "mask_px": 1213,
+     "bbox_cov": 0.696,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.5122532334921716,
+     "got_mask": true,
+     "mask_px": 1505,
+     "bbox_cov": 0.679,
+     "spill": 0.0
+    }
+   ],
+   "glimmer_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.4610924626182484,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.66,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.4,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.554,
+     "spill": 0.014
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.44266890944771514,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.742,
+     "spill": 0.053
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.2945601851851852,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.573,
+     "spill": 0.613
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "email",
+     "cov": 0.42198219238067436,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.58,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "phone",
+     "cov": 0.32,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.486,
+     "spill": 0.506
+    },
+    {
+     "pii_type": "iban",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    }
+   ],
+   "text_cov": [
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "email",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "phone",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "iban",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "email",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "phone",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "iban",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "email",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "phone",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "iban",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    }
+   ],
+   "seconds": 2.58
+  },
+  {
+   "file": "letter_004.png",
+   "w": 900,
+   "h": 1200,
+   "key_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.5244663382594417,
+     "got_mask": true,
+     "mask_px": 1597,
+     "bbox_cov": 0.776,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.5228937728937729,
+     "got_mask": true,
+     "mask_px": 1713,
+     "bbox_cov": 0.773,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.5600725952813067,
+     "got_mask": true,
+     "mask_px": 1543,
+     "bbox_cov": 0.807,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.6601307189542484,
+     "got_mask": true,
+     "mask_px": 1010,
+     "bbox_cov": 0.847,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.5622331691297209,
+     "got_mask": true,
+     "mask_px": 1724,
+     "bbox_cov": 0.839,
+     "spill": 0.007
+    },
+    {
+     "pii_type": "card_number",
+     "cov": 0.5764568764568765,
+     "got_mask": true,
+     "mask_px": 2473,
+     "bbox_cov": 0.828,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "email",
+     "cov": 0.510875402792696,
+     "got_mask": true,
+     "mask_px": 3805,
+     "bbox_cov": 0.869,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "phone",
+     "cov": 0.6032,
+     "got_mask": true,
+     "mask_px": 1508,
+     "bbox_cov": 0.904,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.6594427244582043,
+     "got_mask": true,
+     "mask_px": 1065,
+     "bbox_cov": 0.734,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.5812693498452013,
+     "got_mask": true,
+     "mask_px": 1502,
+     "bbox_cov": 0.805,
+     "spill": -0.0
+    }
+   ],
+   "glimmer_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.7155993431855501,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.839,
+     "spill": 0.093
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.5891330891330891,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.83,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.5219600725952813,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.889,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "card_number",
+     "cov": 0.5944055944055944,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.751,
+     "spill": 0.108
+    },
+    {
+     "pii_type": "email",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "phone",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    }
+   ],
+   "text_cov": [
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "card_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "email",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "phone",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "card_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "email",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "phone",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "card_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "email",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "phone",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    }
+   ],
+   "seconds": 2.33
+  },
+  {
+   "file": "id_card_000.jpg",
+   "w": 1000,
+   "h": 640,
+   "key_cov": [
+    {
+     "pii_type": "face",
+     "cov": 0.7340491559086395,
+     "got_mask": true,
+     "mask_px": 23654,
+     "bbox_cov": 0.989,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.8269230769230769,
+     "got_mask": true,
+     "mask_px": 1505,
+     "bbox_cov": 0.851,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.7211703958691911,
+     "got_mask": true,
+     "mask_px": 1257,
+     "bbox_cov": 0.861,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "dob",
+     "cov": 0.6311274509803921,
+     "got_mask": true,
+     "mask_px": 2060,
+     "bbox_cov": 0.856,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "id_number",
+     "cov": 0.6551724137931034,
+     "got_mask": true,
+     "mask_px": 2280,
+     "bbox_cov": 0.857,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.6270015698587127,
+     "got_mask": true,
+     "mask_px": 3994,
+     "bbox_cov": 0.912,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.5879807692307693,
+     "got_mask": true,
+     "mask_px": 3691,
+     "bbox_cov": 0.874,
+     "spill": 0.006
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.8081730769230769,
+     "got_mask": true,
+     "mask_px": 1681,
+     "bbox_cov": 0.865,
+     "spill": 0.0
+    }
+   ],
+   "glimmer_cov": [
+    {
+     "pii_type": "face",
+     "cov": 0.013126861966236346,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.708,
+     "spill": 0.967
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "dob",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "id_number",
+     "cov": 0.6474137931034483,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.839,
+     "spill": 0.011
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.29293563579277865,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.452,
+     "spill": 0.552
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    }
+   ],
+   "text_cov": [
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "id_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "face",
+     "prompt": "face",
+     "cov": 0.4897591857000993,
+     "n_masks": 1
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "id_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "id_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    }
+   ],
+   "seconds": 1.99
+  },
+  {
+   "file": "id_card_001.png",
+   "w": 1000,
+   "h": 640,
+   "key_cov": [
+    {
+     "pii_type": "face",
+     "cov": 0.7358180238331679,
+     "got_mask": true,
+     "mask_px": 23711,
+     "bbox_cov": 0.989,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.7756813417190775,
+     "got_mask": true,
+     "mask_px": 1480,
+     "bbox_cov": 0.847,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.6546052631578947,
+     "got_mask": true,
+     "mask_px": 995,
+     "bbox_cov": 0.789,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "dob",
+     "cov": 0.5961791831357048,
+     "got_mask": true,
+     "mask_px": 1810,
+     "bbox_cov": 0.878,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "id_number",
+     "cov": 0.6553030303030303,
+     "got_mask": true,
+     "mask_px": 1730,
+     "bbox_cov": 0.879,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.5995676195051646,
+     "got_mask": true,
+     "mask_px": 2496,
+     "bbox_cov": 0.85,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.6619433198380567,
+     "got_mask": true,
+     "mask_px": 1644,
+     "bbox_cov": 0.933,
+     "spill": 0.005
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.621900826446281,
+     "got_mask": true,
+     "mask_px": 1505,
+     "bbox_cov": 0.876,
+     "spill": 0.0
+    }
+   ],
+   "glimmer_cov": [
+    {
+     "pii_type": "face",
+     "cov": 0.07786122144985104,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.382,
+     "spill": 0.79
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "dob",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "id_number",
+     "cov": 0.5390151515151516,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.692,
+     "spill": 0.006
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.3687244775402354,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.967,
+     "spill": 0.797
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    }
+   ],
+   "text_cov": [
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "id_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "face",
+     "prompt": "face",
+     "cov": 0.49289349553128103,
+     "n_masks": 1
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "id_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "id_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    }
+   ],
+   "seconds": 1.95
+  },
+  {
+   "file": "id_card_002.jpg",
+   "w": 1000,
+   "h": 640,
+   "key_cov": [
+    {
+     "pii_type": "face",
+     "cov": 0.692747648356753,
+     "got_mask": true,
+     "mask_px": 23861,
+     "bbox_cov": 0.929,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.7762460233297985,
+     "got_mask": true,
+     "mask_px": 1464,
+     "bbox_cov": 0.88,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.7115968427443837,
+     "got_mask": true,
+     "mask_px": 1172,
+     "bbox_cov": 0.816,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "dob",
+     "cov": 0.6991459627329193,
+     "got_mask": true,
+     "mask_px": 1801,
+     "bbox_cov": 0.782,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "id_number",
+     "cov": 0.7855072463768116,
+     "got_mask": true,
+     "mask_px": 1897,
+     "bbox_cov": 0.87,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.7149146945514584,
+     "got_mask": true,
+     "mask_px": 2598,
+     "bbox_cov": 0.831,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.7427536231884058,
+     "got_mask": true,
+     "mask_px": 2460,
+     "bbox_cov": 0.857,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.7693236714975845,
+     "got_mask": true,
+     "mask_px": 1277,
+     "bbox_cov": 0.888,
+     "spill": 0.002
+    }
+   ],
+   "glimmer_cov": [
+    {
+     "pii_type": "face",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "dob",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "id_number",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    }
+   ],
+   "text_cov": [
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "id_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "face",
+     "prompt": "face",
+     "cov": 0.4578446173499013,
+     "n_masks": 1
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "id_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "id_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    }
+   ],
+   "seconds": 1.58
+  },
+  {
+   "file": "id_card_003.jpg",
+   "w": 1000,
+   "h": 640,
+   "key_cov": [
+    {
+     "pii_type": "face",
+     "cov": 0.6636363636363637,
+     "got_mask": true,
+     "mask_px": 23798,
+     "bbox_cov": 0.888,
+     "spill": -0.0
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.6752173913043479,
+     "got_mask": true,
+     "mask_px": 1553,
+     "bbox_cov": 0.826,
+     "spill": -0.0
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.6260869565217392,
+     "got_mask": true,
+     "mask_px": 576,
+     "bbox_cov": 0.73,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "dob",
+     "cov": 0.5588407494145199,
+     "got_mask": true,
+     "mask_px": 1909,
+     "bbox_cov": 0.788,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "id_number",
+     "cov": 0.6597528684907326,
+     "got_mask": true,
+     "mask_px": 1495,
+     "bbox_cov": 0.874,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.5752380952380952,
+     "got_mask": true,
+     "mask_px": 2416,
+     "bbox_cov": 0.869,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.5534971644612476,
+     "got_mask": true,
+     "mask_px": 1471,
+     "bbox_cov": 0.854,
+     "spill": 0.005
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.6721144024514811,
+     "got_mask": true,
+     "mask_px": 1316,
+     "bbox_cov": 0.835,
+     "spill": 0.0
+    }
+   ],
+   "glimmer_cov": [
+    {
+     "pii_type": "face",
+     "cov": 0.020496374790853318,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.591,
+     "spill": 0.962
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "dob",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "id_number",
+     "cov": 0.13062665489849956,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.528,
+     "spill": 0.647
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.7154761904761905,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.98,
+     "spill": 0.044
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    }
+   ],
+   "text_cov": [
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "id_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "face",
+     "prompt": "face",
+     "cov": 0.443446737311768,
+     "n_masks": 1
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "id_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "id_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    }
+   ],
+   "seconds": 1.95
+  },
+  {
+   "file": "id_card_004.jpg",
+   "w": 1000,
+   "h": 640,
+   "key_cov": [
+    {
+     "pii_type": "face",
+     "cov": 0.7367490069513406,
+     "got_mask": true,
+     "mask_px": 23741,
+     "bbox_cov": 0.989,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.8084033613445378,
+     "got_mask": true,
+     "mask_px": 962,
+     "bbox_cov": 0.832,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.7227366255144033,
+     "got_mask": true,
+     "mask_px": 1405,
+     "bbox_cov": 0.927,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "dob",
+     "cov": 0.626904887020494,
+     "got_mask": true,
+     "mask_px": 2386,
+     "bbox_cov": 0.883,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "id_number",
+     "cov": 0.8250688705234159,
+     "got_mask": true,
+     "mask_px": 1797,
+     "bbox_cov": 0.852,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.6676928649040202,
+     "got_mask": true,
+     "mask_px": 3687,
+     "bbox_cov": 0.891,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.7316066066066066,
+     "got_mask": true,
+     "mask_px": 1949,
+     "bbox_cov": 0.865,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.6793981481481481,
+     "got_mask": true,
+     "mask_px": 1174,
+     "bbox_cov": 0.852,
+     "spill": 0.0
+    }
+   ],
+   "glimmer_cov": [
+    {
+     "pii_type": "face",
+     "cov": 0.10436320754716981,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.712,
+     "spill": 0.757
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "dob",
+     "cov": 0.4634787178139779,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.679,
+     "spill": 0.336
+    },
+    {
+     "pii_type": "id_number",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.42864904020282507,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.498,
+     "spill": 0.288
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "postcode",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    }
+   ],
+   "text_cov": [
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "id_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "face",
+     "prompt": "face",
+     "cov": 0.4913728897715988,
+     "n_masks": 1
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "id_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "id_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "postcode",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    }
+   ],
+   "seconds": 1.95
+  },
+  {
+   "file": "chat_000.png",
+   "w": 600,
+   "h": 1000,
+   "key_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.5186915887850467,
+     "got_mask": true,
+     "mask_px": 1665,
+     "bbox_cov": 0.74,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.48627450980392156,
+     "got_mask": true,
+     "mask_px": 4340,
+     "bbox_cov": 0.738,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.48894783377542,
+     "got_mask": true,
+     "mask_px": 5407,
+     "bbox_cov": 0.844,
+     "spill": 0.795
+    },
+    {
+     "pii_type": "ni_number",
+     "cov": 0.5591947115384616,
+     "got_mask": true,
+     "mask_px": 1861,
+     "bbox_cov": 0.727,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "card_number",
+     "cov": 0.47157006603081436,
+     "got_mask": true,
+     "mask_px": 2571,
+     "bbox_cov": 0.718,
+     "spill": 0.0
+    }
+   ],
+   "glimmer_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.6236760124610592,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.858,
+     "spill": 0.198
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.6389915966386555,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 1.0,
+     "spill": 0.406
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "ni_number",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "card_number",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    }
+   ],
+   "text_cov": [
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "ni_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "card_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "ni_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "card_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "ni_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "card_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    }
+   ],
+   "seconds": 1.48
+  },
+  {
+   "file": "chat_001.png",
+   "w": 600,
+   "h": 1000,
+   "key_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.5516877637130801,
+     "got_mask": true,
+     "mask_px": 1569,
+     "bbox_cov": 0.866,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "id_number",
+     "cov": 0.714027149321267,
+     "got_mask": true,
+     "mask_px": 789,
+     "bbox_cov": 0.796,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "phone",
+     "cov": 0.6572802197802198,
+     "got_mask": true,
+     "mask_px": 1645,
+     "bbox_cov": 0.898,
+     "spill": 0.418
+    },
+    {
+     "pii_type": "sort_code",
+     "cov": 0.5890688259109311,
+     "got_mask": true,
+     "mask_px": 582,
+     "bbox_cov": 0.768,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.6477732793522267,
+     "got_mask": true,
+     "mask_px": 1197,
+     "bbox_cov": 0.887,
+     "spill": 0.465
+    },
+    {
+     "pii_type": "ni_number",
+     "cov": 0.5003178639542276,
+     "got_mask": true,
+     "mask_px": 787,
+     "bbox_cov": 0.818,
+     "spill": 0.0
+    }
+   ],
+   "glimmer_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.8435302390998594,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.987,
+     "spill": 0.047
+    },
+    {
+     "pii_type": "id_number",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "phone",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "sort_code",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "ni_number",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    }
+   ],
+   "text_cov": [
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "id_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "phone",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "ni_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "id_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "phone",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "ni_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "id_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "phone",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "ni_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    }
+   ],
+   "seconds": 1.47
+  },
+  {
+   "file": "chat_002.png",
+   "w": 600,
+   "h": 1000,
+   "key_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.5642898889538281,
+     "got_mask": true,
+     "mask_px": 1931,
+     "bbox_cov": 0.78,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.46958304853041694,
+     "got_mask": true,
+     "mask_px": 2749,
+     "bbox_cov": 0.849,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "card_number",
+     "cov": 0.4898989898989899,
+     "got_mask": true,
+     "mask_px": 1940,
+     "bbox_cov": 0.803,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "sort_code",
+     "cov": 0.5515196441808747,
+     "got_mask": true,
+     "mask_px": 744,
+     "bbox_cov": 0.734,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.6262820512820513,
+     "got_mask": true,
+     "mask_px": 10968,
+     "bbox_cov": 0.865,
+     "spill": 0.911
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.4765625,
+     "got_mask": true,
+     "mask_px": 1098,
+     "bbox_cov": 0.742,
+     "spill": 0.0
+    }
+   ],
+   "glimmer_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.6899473991817651,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.897,
+     "spill": 0.038
+    },
+    {
+     "pii_type": "address",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "card_number",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "sort_code",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "name",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    }
+   ],
+   "text_cov": [
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "card_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "card_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "address",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "card_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    }
+   ],
+   "seconds": 1.46
+  },
+  {
+   "file": "chat_003.jpg",
+   "w": 600,
+   "h": 1000,
+   "key_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.6314418066010423,
+     "got_mask": true,
+     "mask_px": 2181,
+     "bbox_cov": 0.892,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "card_number",
+     "cov": 0.776536312849162,
+     "got_mask": true,
+     "mask_px": 2085,
+     "bbox_cov": 0.907,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "email",
+     "cov": 0.6272381985892567,
+     "got_mask": true,
+     "mask_px": 2312,
+     "bbox_cov": 0.867,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "iban",
+     "cov": 0.7919678714859437,
+     "got_mask": true,
+     "mask_px": 2958,
+     "bbox_cov": 0.984,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "dob",
+     "cov": 0.7341269841269841,
+     "got_mask": true,
+     "mask_px": 7137,
+     "bbox_cov": 0.935,
+     "spill": 0.819
+    }
+   ],
+   "glimmer_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.7052692530399537,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.803,
+     "spill": 0.137
+    },
+    {
+     "pii_type": "card_number",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "email",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": true,
+     "bbox_cov": 0.0,
+     "spill": null
+    },
+    {
+     "pii_type": "iban",
+     "cov": 0.7823293172690763,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.933,
+     "spill": 0.344
+    },
+    {
+     "pii_type": "dob",
+     "cov": 0.4642857142857143,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.722,
+     "spill": 0.272
+    }
+   ],
+   "text_cov": [
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "card_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "email",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "iban",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "card_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "email",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "iban",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "card_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "email",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "iban",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "dob",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    }
+   ],
+   "seconds": 1.7
+  },
+  {
+   "file": "chat_004.png",
+   "w": 600,
+   "h": 1000,
+   "key_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.6556437389770723,
+     "got_mask": true,
+     "mask_px": 1487,
+     "bbox_cov": 0.854,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "sort_code",
+     "cov": 0.50625,
+     "got_mask": true,
+     "mask_px": 486,
+     "bbox_cov": 0.785,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.5804311774461028,
+     "got_mask": true,
+     "mask_px": 700,
+     "bbox_cov": 0.784,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "iban",
+     "cov": 0.5924145299145299,
+     "got_mask": true,
+     "mask_px": 2218,
+     "bbox_cov": 0.872,
+     "spill": 0.0
+    },
+    {
+     "pii_type": "phone",
+     "cov": 0.5201525054466231,
+     "got_mask": true,
+     "mask_px": 12563,
+     "bbox_cov": 0.926,
+     "spill": 0.924
+    },
+    {
+     "pii_type": "email",
+     "cov": 0.4906528616623526,
+     "got_mask": true,
+     "mask_px": 1713,
+     "bbox_cov": 0.88,
+     "spill": 0.004
+    }
+   ],
+   "glimmer_cov": [
+    {
+     "pii_type": "name",
+     "cov": 0.7821869488536155,
+     "got_mask": true,
+     "had_box": true,
+     "bbox_cov": 0.952,
+     "spill": 0.43
+    },
+    {
+     "pii_type": "sort_code",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "account_number",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "iban",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "phone",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    },
+    {
+     "pii_type": "email",
+     "cov": 0.0,
+     "got_mask": false,
+     "had_box": false
+    }
+   ],
+   "text_cov": [
+    {
+     "pii_type": "name",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "iban",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "phone",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "email",
+     "prompt": "text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "iban",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "phone",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "email",
+     "prompt": "printed text",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "name",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "sort_code",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "account_number",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "iban",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "phone",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    },
+    {
+     "pii_type": "email",
+     "prompt": "words",
+     "cov": 0.0,
+     "n_masks": 0
+    }
+   ],
+   "seconds": 1.48
+  }
+ ],
+ "errors": [],
+ "peak_mib_nvidia_smi": 6763,
+ "peak_mib_torch_allocated": 5786,
+ "gpu_name": "NVIDIA L40S",
+ "wall_seconds": 58.11713004112244,
+ "summary": {
+  "key_cov": {
+   "n": 158,
+   "got_mask_share": 1.0,
+   "had_glimmer_box_share": null,
+   "mean_coverage": 0.62,
+   "share_ge_0.5": 0.886,
+   "share_ge_0.9": 0.0
+  },
+  "glimmer_cov": {
+   "n": 158,
+   "got_mask_share": 0.5,
+   "had_glimmer_box_share": 0.513,
+   "mean_coverage": 0.261,
+   "share_ge_0.5": 0.285,
+   "share_ge_0.9": 0.013
+  },
+  "text_prompt:text": {
+   "n": 153,
+   "got_mask_share": null,
+   "had_glimmer_box_share": null,
+   "mean_coverage": 0.0,
+   "share_ge_0.5": 0.0,
+   "share_ge_0.9": 0.0
+  },
+  "text_prompt:face": {
+   "n": 5,
+   "got_mask_share": null,
+   "had_glimmer_box_share": null,
+   "mean_coverage": 0.475,
+   "share_ge_0.5": 0.0,
+   "share_ge_0.9": 0.0
+  },
+  "text_prompt:printed text": {
+   "n": 153,
+   "got_mask_share": null,
+   "had_glimmer_box_share": null,
+   "mean_coverage": 0.0,
+   "share_ge_0.5": 0.0,
+   "share_ge_0.9": 0.0
+  },
+  "text_prompt:words": {
+   "n": 153,
+   "got_mask_share": null,
+   "had_glimmer_box_share": null,
+   "mean_coverage": 0.0,
+   "share_ge_0.5": 0.0,
+   "share_ge_0.9": 0.0
+  }
+ },
+ "seconds_per_picture_mean": 2.15
+}
