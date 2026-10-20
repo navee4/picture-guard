@@ -1,0 +1,3883 @@
+{
+ "llama_version": "version: 0.7.0-dev (build 1, commit a01ce9f)\nbuilt with GNU 11.4.0 for Linux x86_64",
+ "cmd": "/opt/llama.cpp/build/bin/llama-server -m /models/meta-models__Muse-Glimmer-30B-GGUF/Muse-Glimmer-30B-KQuant-17GB-Q4_K_M.gguf --mmproj /models/meta-models__Muse-Glimmer-30B-GGUF/mmproj-Muse-Glimmer-30B-Q4_K_M.gguf -a glimmer -ngl 99 -c 32768 -np 1 --host 127.0.0.1 --port 8080 --jinja --temp 1.0 --top-p 0.95 --top-k 64 --chat-template-kwargs {\"reasoning_strength\": \"low\"} --image-max-tokens 4096",
+ "load_seconds": 14.1,
+ "ready": true,
+ "results": [
+  {
+   "file": "id_card_000.jpg",
+   "seconds": 12.11,
+   "items": [
+    {
+     "text": "WATTS",
+     "type": "name",
+     "box": [
+      280,
+      242,
+      363,
+      275
+     ]
+    },
+    {
+     "text": "Alexandra",
+     "type": "name",
+     "box": [
+      280,
+      331,
+      393,
+      366
+     ]
+    },
+    {
+     "text": "08 August 1985",
+     "type": "dob",
+     "box": [
+      280,
+      421,
+      457,
+      458
+     ]
+    },
+    {
+     "text": "KN1160854",
+     "type": "id_number",
+     "box": [
+      280,
+      511,
+      410,
+      547
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      67,
+      207,
+      241,
+      542
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"WATTS\", \"type\": \"name\", \"box\": [280, 242, 363, 275]}, {\"text\": \"Alexandra\", \"type\": \"name\", \"box\": [280, 331, 393, 366]}, {\"text\": \"08 August 1985\", \"type\": \"dob\", \"box\": [280, 421, 457, 458]}, {\"text\": \"KN1160854\", \"type\": \"id_number\", \"box\": [280, 511, 410, 547]}, {\"text\": \"\", \"type\": \"face\", \"box\": [67, 207, 241, 542]}]",
+   "reasoning_chars": 1079,
+   "usage": {
+    "completion_tokens": 442,
+    "prompt_tokens": 1088,
+    "total_tokens": 1530,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_001.png",
+   "seconds": 12.47,
+   "items": [
+    {
+     "text": "WOOD",
+     "type": "name",
+     "box": [
+      350,
+      240,
+      410,
+      280
+     ]
+    },
+    {
+     "text": "Frank",
+     "type": "name",
+     "box": [
+      350,
+      325,
+      405,
+      355
+     ]
+    },
+    {
+     "text": "11 January 1984",
+     "type": "dob",
+     "box": [
+      350,
+      410,
+      530,
+      445
+     ]
+    },
+    {
+     "text": "GK0178927",
+     "type": "id_number",
+     "box": [
+      350,
+      500,
+      490,
+      530
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      60,
+      230,
+      310,
+      700
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"WOOD\", \"type\": \"name\", \"box\": [350, 240, 410, 280]},\n  {\"text\": \"Frank\", \"type\": \"name\", \"box\": [350, 325, 405, 355]},\n  {\"text\": \"11 January 1984\", \"type\": \"dob\", \"box\": [350, 410, 530, 445]},\n  {\"text\": \"GK0178927\", \"type\": \"id_number\", \"box\": [350, 500, 490, 530]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [60, 230, 310, 700]}\n]",
+   "reasoning_chars": 989,
+   "usage": {
+    "completion_tokens": 465,
+    "prompt_tokens": 1088,
+    "total_tokens": 1553,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_003.png",
+   "seconds": 13.7,
+   "items": [
+    {
+     "text": "KELLY",
+     "type": "name",
+     "box": [
+      350,
+      260,
+      455,
+      295
+     ]
+    },
+    {
+     "text": "Nicola",
+     "type": "name",
+     "box": [
+      350,
+      335,
+      470,
+      365
+     ]
+    },
+    {
+     "text": "25 August 1972",
+     "type": "dob",
+     "box": [
+      350,
+      420,
+      535,
+      455
+     ]
+    },
+    {
+     "text": "JW5180063",
+     "type": "id_number",
+     "box": [
+      350,
+      500,
+      530,
+      535
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      60,
+      220,
+      310,
+      690
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"KELLY\", \"type\": \"name\", \"box\": [350, 260, 455, 295]},\n  {\"text\": \"Nicola\", \"type\": \"name\", \"box\": [350, 335, 470, 365]},\n  {\"text\": \"25 August 1972\", \"type\": \"dob\", \"box\": [350, 420, 535, 455]},\n  {\"text\": \"JW5180063\", \"type\": \"id_number\", \"box\": [350, 500, 530, 535]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [60, 220, 310, 690]}\n]",
+   "reasoning_chars": 1190,
+   "usage": {
+    "completion_tokens": 514,
+    "prompt_tokens": 1088,
+    "total_tokens": 1602,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_004.png",
+   "seconds": 13.9,
+   "items": [
+    {
+     "text": "MOORE",
+     "type": "name",
+     "box": [
+      282,
+      224,
+      366,
+      256
+     ]
+    },
+    {
+     "text": "Allan",
+     "type": "name",
+     "box": [
+      282,
+      322,
+      342,
+      353
+     ]
+    },
+    {
+     "text": "01/11/1977",
+     "type": "dob",
+     "box": [
+      282,
+      414,
+      413,
+      444
+     ]
+    },
+    {
+     "text": "AR7466455",
+     "type": "id_number",
+     "box": [
+      282,
+      507,
+      430,
+      538
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      108,
+      225,
+      230,
+      435
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"MOORE\", \"type\": \"name\", \"box\": [282, 224, 366, 256]}, {\"text\": \"Allan\", \"type\": \"name\", \"box\": [282, 322, 342, 353]}, {\"text\": \"01/11/1977\", \"type\": \"dob\", \"box\": [282, 414, 413, 444]}, {\"text\": \"AR7466455\", \"type\": \"id_number\", \"box\": [282, 507, 430, 538]}, {\"text\": \"\", \"type\": \"face\", \"box\": [108, 225, 230, 435]}]",
+   "reasoning_chars": 1299,
+   "usage": {
+    "completion_tokens": 524,
+    "prompt_tokens": 1088,
+    "total_tokens": 1612,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_005.jpg",
+   "seconds": 13.0,
+   "items": [
+    {
+     "text": "WILSON",
+     "type": "name",
+     "box": [
+      410,
+      220,
+      525,
+      260
+     ]
+    },
+    {
+     "text": "Mary",
+     "type": "name",
+     "box": [
+      410,
+      320,
+      490,
+      355
+     ]
+    },
+    {
+     "text": "05/12/1988",
+     "type": "dob",
+     "box": [
+      410,
+      400,
+      545,
+      435
+     ]
+    },
+    {
+     "text": "CR9533431",
+     "type": "id_number",
+     "box": [
+      410,
+      480,
+      570,
+      515
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      120,
+      300,
+      350,
+      700
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"WILSON\", \"type\": \"name\", \"box\": [410, 220, 525, 260]}, {\"text\": \"Mary\", \"type\": \"name\", \"box\": [410, 320, 490, 355]}, {\"text\": \"05/12/1988\", \"type\": \"dob\", \"box\": [410, 400, 545, 435]}, {\"text\": \"CR9533431\", \"type\": \"id_number\", \"box\": [410, 480, 570, 515]}, {\"text\": \"\", \"type\": \"face\", \"box\": [120, 300, 350, 700]}]",
+   "reasoning_chars": 1167,
+   "usage": {
+    "completion_tokens": 489,
+    "prompt_tokens": 1088,
+    "total_tokens": 1577,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_006.jpg",
+   "seconds": 18.58,
+   "items": [
+    {
+     "text": "GIBSON",
+     "type": "name",
+     "box": [
+      410,
+      265,
+      515,
+      305
+     ]
+    },
+    {
+     "text": "Scott",
+     "type": "name",
+     "box": [
+      410,
+      355,
+      485,
+      395
+     ]
+    },
+    {
+     "text": "09/03/1998",
+     "type": "dob",
+     "box": [
+      410,
+      455,
+      555,
+      490
+     ]
+    },
+    {
+     "text": "JN4997773",
+     "type": "id_number",
+     "box": [
+      410,
+      545,
+      585,
+      585
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      60,
+      225,
+      375,
+      620
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"GIBSON\", \"type\": \"name\", \"box\": [410, 265, 515, 305]},\n  {\"text\": \"Scott\", \"type\": \"name\", \"box\": [410, 355, 485, 395]},\n  {\"text\": \"09/03/1998\", \"type\": \"dob\", \"box\": [410, 455, 555, 490]},\n  {\"text\": \"JN4997773\", \"type\": \"id_number\", \"box\": [410, 545, 585, 585]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [60, 225, 375, 620]}\n]",
+   "reasoning_chars": 1794,
+   "usage": {
+    "completion_tokens": 709,
+    "prompt_tokens": 1088,
+    "total_tokens": 1797,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_007.jpg",
+   "seconds": 19.92,
+   "items": [
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      68,
+      210,
+      242,
+      543
+     ]
+    },
+    {
+     "text": "SHAW",
+     "type": "name",
+     "box": [
+      279,
+      242,
+      350,
+      274
+     ]
+    },
+    {
+     "text": "Trevor",
+     "type": "name",
+     "box": [
+      279,
+      330,
+      354,
+      363
+     ]
+    },
+    {
+     "text": "03/04/1963",
+     "type": "dob",
+     "box": [
+      279,
+      420,
+      420,
+      455
+     ]
+    },
+    {
+     "text": "WF5625503",
+     "type": "id_number",
+     "box": [
+      279,
+      510,
+      415,
+      545
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"\", \"type\": \"face\", \"box\": [68, 210, 242, 543]}, {\"text\": \"SHAW\", \"type\": \"name\", \"box\": [279, 242, 350, 274]}, {\"text\": \"Trevor\", \"type\": \"name\", \"box\": [279, 330, 354, 363]}, {\"text\": \"03/04/1963\", \"type\": \"dob\", \"box\": [279, 420, 420, 455]}, {\"text\": \"WF5625503\", \"type\": \"id_number\", \"box\": [279, 510, 415, 545]}]",
+   "reasoning_chars": 2018,
+   "usage": {
+    "completion_tokens": 761,
+    "prompt_tokens": 1088,
+    "total_tokens": 1849,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_008.jpg",
+   "seconds": 11.51,
+   "items": [
+    {
+     "text": "HOWELL",
+     "type": "name",
+     "box": [
+      410,
+      220,
+      560,
+      260
+     ]
+    },
+    {
+     "text": "Frank",
+     "type": "name",
+     "box": [
+      410,
+      320,
+      485,
+      360
+     ]
+    },
+    {
+     "text": "17 Nov 1969",
+     "type": "dob",
+     "box": [
+      410,
+      410,
+      570,
+      450
+     ]
+    },
+    {
+     "text": "AA9124323",
+     "type": "id_number",
+     "box": [
+      410,
+      515,
+      575,
+      555
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      60,
+      210,
+      375,
+      760
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"HOWELL\", \"type\": \"name\", \"box\": [410, 220, 560, 260]},\n  {\"text\": \"Frank\", \"type\": \"name\", \"box\": [410, 320, 485, 360]},\n  {\"text\": \"17 Nov 1969\", \"type\": \"dob\", \"box\": [410, 410, 570, 450]},\n  {\"text\": \"AA9124323\", \"type\": \"id_number\", \"box\": [410, 515, 575, 555]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [60, 210, 375, 760]}\n]",
+   "reasoning_chars": 940,
+   "usage": {
+    "completion_tokens": 429,
+    "prompt_tokens": 1088,
+    "total_tokens": 1517,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_010.jpg",
+   "seconds": 11.84,
+   "items": [
+    {
+     "text": "SHORT",
+     "type": "name",
+     "box": [
+      280,
+      210,
+      370,
+      250
+     ]
+    },
+    {
+     "text": "Katie",
+     "type": "name",
+     "box": [
+      280,
+      300,
+      345,
+      335
+     ]
+    },
+    {
+     "text": "04/09/1994",
+     "type": "dob",
+     "box": [
+      280,
+      385,
+      435,
+      425
+     ]
+    },
+    {
+     "text": "MZ3818467",
+     "type": "id_number",
+     "box": [
+      280,
+      480,
+      465,
+      520
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      60,
+      200,
+      245,
+      500
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"SHORT\", \"type\": \"name\", \"box\": [280, 210, 370, 250]}, {\"text\": \"Katie\", \"type\": \"name\", \"box\": [280, 300, 345, 335]}, {\"text\": \"04/09/1994\", \"type\": \"dob\", \"box\": [280, 385, 435, 425]}, {\"text\": \"MZ3818467\", \"type\": \"id_number\", \"box\": [280, 480, 465, 520]}, {\"text\": \"\", \"type\": \"face\", \"box\": [60, 200, 245, 500]}]",
+   "reasoning_chars": 1007,
+   "usage": {
+    "completion_tokens": 442,
+    "prompt_tokens": 1088,
+    "total_tokens": 1530,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_011.png",
+   "seconds": 12.5,
+   "items": [
+    {
+     "text": "ATKINSON",
+     "type": "name",
+     "box": [
+      350,
+      270,
+      475,
+      300
+     ]
+    },
+    {
+     "text": "Kim",
+     "type": "name",
+     "box": [
+      350,
+      360,
+      395,
+      390
+     ]
+    },
+    {
+     "text": "30 Apr 1978",
+     "type": "dob",
+     "box": [
+      350,
+      450,
+      475,
+      480
+     ]
+    },
+    {
+     "text": "FR4261547",
+     "type": "id_number",
+     "box": [
+      350,
+      540,
+      485,
+      570
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      65,
+      230,
+      310,
+      610
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"ATKINSON\", \"type\": \"name\", \"box\": [350, 270, 475, 300]},\n  {\"text\": \"Kim\", \"type\": \"name\", \"box\": [350, 360, 395, 390]},\n  {\"text\": \"30 Apr 1978\", \"type\": \"dob\", \"box\": [350, 450, 475, 480]},\n  {\"text\": \"FR4261547\", \"type\": \"id_number\", \"box\": [350, 540, 485, 570]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [65, 230, 310, 610]}\n]",
+   "reasoning_chars": 1214,
+   "usage": {
+    "completion_tokens": 468,
+    "prompt_tokens": 1088,
+    "total_tokens": 1556,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_012.jpg",
+   "seconds": 13.73,
+   "items": [
+    {
+     "text": "SIMPSON",
+     "type": "name",
+     "box": [
+      350,
+      240,
+      430,
+      270
+     ]
+    },
+    {
+     "text": "Alex",
+     "type": "name",
+     "box": [
+      350,
+      330,
+      395,
+      360
+     ]
+    },
+    {
+     "text": "23/03/1965",
+     "type": "dob",
+     "box": [
+      350,
+      420,
+      462,
+      450
+     ]
+    },
+    {
+     "text": "XC8104904",
+     "type": "id_number",
+     "box": [
+      350,
+      510,
+      458,
+      540
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      68,
+      210,
+      312,
+      680
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"SIMPSON\", \"type\": \"name\", \"box\": [350, 240, 430, 270]}, {\"text\": \"Alex\", \"type\": \"name\", \"box\": [350, 330, 395, 360]}, {\"text\": \"23/03/1965\", \"type\": \"dob\", \"box\": [350, 420, 462, 450]}, {\"text\": \"XC8104904\", \"type\": \"id_number\", \"box\": [350, 510, 458, 540]}, {\"text\": \"\", \"type\": \"face\", \"box\": [68, 210, 312, 680]}]",
+   "reasoning_chars": 1182,
+   "usage": {
+    "completion_tokens": 518,
+    "prompt_tokens": 1088,
+    "total_tokens": 1606,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_014.jpg",
+   "seconds": 13.43,
+   "items": [
+    {
+     "text": "WATKINS",
+     "type": "name",
+     "box": [
+      410,
+      225,
+      535,
+      265
+     ]
+    },
+    {
+     "text": "Alexandra",
+     "type": "name",
+     "box": [
+      410,
+      320,
+      540,
+      360
+     ]
+    },
+    {
+     "text": "02 January 1980",
+     "type": "dob",
+     "box": [
+      410,
+      410,
+      595,
+      450
+     ]
+    },
+    {
+     "text": "BL9059153",
+     "type": "id_number",
+     "box": [
+      410,
+      505,
+      575,
+      545
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      65,
+      220,
+      375,
+      820
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"WATKINS\", \"type\": \"name\", \"box\": [410, 225, 535, 265]},\n  {\"text\": \"Alexandra\", \"type\": \"name\", \"box\": [410, 320, 540, 360]},\n  {\"text\": \"02 January 1980\", \"type\": \"dob\", \"box\": [410, 410, 595, 450]},\n  {\"text\": \"BL9059153\", \"type\": \"id_number\", \"box\": [410, 505, 575, 545]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [65, 220, 375, 820]}\n]",
+   "reasoning_chars": 1242,
+   "usage": {
+    "completion_tokens": 505,
+    "prompt_tokens": 1088,
+    "total_tokens": 1593,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_015.jpg",
+   "seconds": 13.41,
+   "items": [
+    {
+     "text": "GREGORY",
+     "type": "name",
+     "box": [
+      410,
+      220,
+      565,
+      265
+     ]
+    },
+    {
+     "text": "Allan",
+     "type": "name",
+     "box": [
+      410,
+      335,
+      475,
+      375
+     ]
+    },
+    {
+     "text": "17 February 1996",
+     "type": "dob",
+     "box": [
+      410,
+      445,
+      595,
+      485
+     ]
+    },
+    {
+     "text": "FR2457294",
+     "type": "id_number",
+     "box": [
+      410,
+      555,
+      545,
+      595
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      65,
+      220,
+      375,
+      745
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"GREGORY\", \"type\": \"name\", \"box\": [410, 220, 565, 265]},\n  {\"text\": \"Allan\", \"type\": \"name\", \"box\": [410, 335, 475, 375]},\n  {\"text\": \"17 February 1996\", \"type\": \"dob\", \"box\": [410, 445, 595, 485]},\n  {\"text\": \"FR2457294\", \"type\": \"id_number\", \"box\": [410, 555, 545, 595]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [65, 220, 375, 745]}\n]",
+   "reasoning_chars": 1195,
+   "usage": {
+    "completion_tokens": 504,
+    "prompt_tokens": 1088,
+    "total_tokens": 1592,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_017.jpg",
+   "seconds": 11.19,
+   "items": [
+    {
+     "text": "HOWARD",
+     "type": "name",
+     "box": [
+      410,
+      220,
+      575,
+      265
+     ]
+    },
+    {
+     "text": "Andrew",
+     "type": "name",
+     "box": [
+      410,
+      340,
+      515,
+      375
+     ]
+    },
+    {
+     "text": "14 May 1959",
+     "type": "dob",
+     "box": [
+      410,
+      430,
+      585,
+      475
+     ]
+    },
+    {
+     "text": "FR7782034",
+     "type": "id_number",
+     "box": [
+      410,
+      570,
+      570,
+      610
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      70,
+      220,
+      375,
+      810
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"HOWARD\", \"type\": \"name\", \"box\": [410, 220, 575, 265]},\n  {\"text\": \"Andrew\", \"type\": \"name\", \"box\": [410, 340, 515, 375]},\n  {\"text\": \"14 May 1959\", \"type\": \"dob\", \"box\": [410, 430, 585, 475]},\n  {\"text\": \"FR7782034\", \"type\": \"id_number\", \"box\": [410, 570, 570, 610]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [70, 220, 375, 810]}\n]",
+   "reasoning_chars": 858,
+   "usage": {
+    "completion_tokens": 417,
+    "prompt_tokens": 1088,
+    "total_tokens": 1505,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_018.png",
+   "seconds": 13.22,
+   "items": [
+    {
+     "text": "PATEL",
+     "type": "name",
+     "box": [
+      417,
+      228,
+      498,
+      260
+     ]
+    },
+    {
+     "text": "Norman",
+     "type": "name",
+     "box": [
+      417,
+      318,
+      512,
+      349
+     ]
+    },
+    {
+     "text": "14 Mar 1991",
+     "type": "dob",
+     "box": [
+      416,
+      406,
+      572,
+      437
+     ]
+    },
+    {
+     "text": "SJ6117068",
+     "type": "id_number",
+     "box": [
+      416,
+      497,
+      560,
+      528
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      64,
+      157,
+      376,
+      604
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"PATEL\", \"type\": \"name\", \"box\": [417, 228, 498, 260]},\n  {\"text\": \"Norman\", \"type\": \"name\", \"box\": [417, 318, 512, 349]},\n  {\"text\": \"14 Mar 1991\", \"type\": \"dob\", \"box\": [416, 406, 572, 437]},\n  {\"text\": \"SJ6117068\", \"type\": \"id_number\", \"box\": [416, 497, 560, 528]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [64, 157, 376, 604]}\n]",
+   "reasoning_chars": 1222,
+   "usage": {
+    "completion_tokens": 497,
+    "prompt_tokens": 1088,
+    "total_tokens": 1585,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_019.png",
+   "seconds": 16.74,
+   "items": [
+    {
+     "text": "HUDSON",
+     "type": "name",
+     "box": [
+      410,
+      220,
+      540,
+      260
+     ]
+    },
+    {
+     "text": "Amelia",
+     "type": "name",
+     "box": [
+      410,
+      320,
+      500,
+      350
+     ]
+    },
+    {
+     "text": "21 November 2003",
+     "type": "dob",
+     "box": [
+      410,
+      430,
+      590,
+      470
+     ]
+    },
+    {
+     "text": "RZ9866186",
+     "type": "id_number",
+     "box": [
+      410,
+      525,
+      560,
+      560
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      140,
+      270,
+      340,
+      560
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"HUDSON\", \"type\": \"name\", \"box\": [410, 220, 540, 260]},\n  {\"text\": \"Amelia\", \"type\": \"name\", \"box\": [410, 320, 500, 350]},\n  {\"text\": \"21 November 2003\", \"type\": \"dob\", \"box\": [410, 430, 590, 470]},\n  {\"text\": \"RZ9866186\", \"type\": \"id_number\", \"box\": [410, 525, 560, 560]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [140, 270, 340, 560]}\n]",
+   "reasoning_chars": 1750,
+   "usage": {
+    "completion_tokens": 637,
+    "prompt_tokens": 1088,
+    "total_tokens": 1725,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_020.jpg",
+   "seconds": 14.53,
+   "items": [
+    {
+     "text": "WILKINSON",
+     "type": "name",
+     "box": [
+      350,
+      260,
+      490,
+      300
+     ]
+    },
+    {
+     "text": "Trevor",
+     "type": "name",
+     "box": [
+      350,
+      360,
+      440,
+      395
+     ]
+    },
+    {
+     "text": "22 May 1982",
+     "type": "dob",
+     "box": [
+      350,
+      415,
+      490,
+      450
+     ]
+    },
+    {
+     "text": "MN7325451",
+     "type": "id_number",
+     "box": [
+      350,
+      505,
+      490,
+      540
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      60,
+      200,
+      315,
+      600
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"WILKINSON\", \"type\": \"name\", \"box\": [350, 260, 490, 300]}, {\"text\": \"Trevor\", \"type\": \"name\", \"box\": [350, 360, 440, 395]}, {\"text\": \"22 May 1982\", \"type\": \"dob\", \"box\": [350, 415, 490, 450]}, {\"text\": \"MN7325451\", \"type\": \"id_number\", \"box\": [350, 505, 490, 540]}, {\"text\": \"\", \"type\": \"face\", \"box\": [60, 200, 315, 600]}]",
+   "reasoning_chars": 1356,
+   "usage": {
+    "completion_tokens": 548,
+    "prompt_tokens": 1088,
+    "total_tokens": 1636,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_021.png",
+   "seconds": 16.24,
+   "items": [
+    {
+     "text": "WARD",
+     "type": "name",
+     "box": [
+      410,
+      200,
+      500,
+      250
+     ]
+    },
+    {
+     "text": "Sean",
+     "type": "name",
+     "box": [
+      410,
+      300,
+      485,
+      340
+     ]
+    },
+    {
+     "text": "19 Sep 1959",
+     "type": "dob",
+     "box": [
+      410,
+      400,
+      560,
+      440
+     ]
+    },
+    {
+     "text": "KC0691986",
+     "type": "id_number",
+     "box": [
+      410,
+      500,
+      560,
+      540
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      70,
+      200,
+      375,
+      600
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"WARD\", \"type\": \"name\", \"box\": [410, 200, 500, 250]}, {\"text\": \"Sean\", \"type\": \"name\", \"box\": [410, 300, 485, 340]}, {\"text\": \"19 Sep 1959\", \"type\": \"dob\", \"box\": [410, 400, 560, 440]}, {\"text\": \"KC0691986\", \"type\": \"id_number\", \"box\": [410, 500, 560, 540]}, {\"text\": \"\", \"type\": \"face\", \"box\": [70, 200, 375, 600]}]",
+   "reasoning_chars": 1720,
+   "usage": {
+    "completion_tokens": 617,
+    "prompt_tokens": 1088,
+    "total_tokens": 1705,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_022.jpg",
+   "seconds": 20.04,
+   "items": [
+    {
+     "text": "SIMPSON",
+     "type": "name",
+     "box": [
+      420,
+      255,
+      595,
+      295
+     ]
+    },
+    {
+     "text": "Alan",
+     "type": "name",
+     "box": [
+      420,
+      350,
+      505,
+      390
+     ]
+    },
+    {
+     "text": "02/11/1977",
+     "type": "dob",
+     "box": [
+      420,
+      430,
+      600,
+      470
+     ]
+    },
+    {
+     "text": "EL8232029",
+     "type": "id_number",
+     "box": [
+      420,
+      555,
+      620,
+      595
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      60,
+      220,
+      375,
+      640
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"SIMPSON\", \"type\": \"name\", \"box\": [420, 255, 595, 295]},\n  {\"text\": \"Alan\", \"type\": \"name\", \"box\": [420, 350, 505, 390]},\n  {\"text\": \"02/11/1977\", \"type\": \"dob\", \"box\": [420, 430, 600, 470]},\n  {\"text\": \"EL8232029\", \"type\": \"id_number\", \"box\": [420, 555, 620, 595]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [60, 220, 375, 640]}\n]",
+   "reasoning_chars": 1874,
+   "usage": {
+    "completion_tokens": 767,
+    "prompt_tokens": 1088,
+    "total_tokens": 1855,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_023.jpg",
+   "seconds": 14.75,
+   "items": [
+    {
+     "text": "HUSSAIN",
+     "type": "name",
+     "box": [
+      290,
+      240,
+      400,
+      290
+     ]
+    },
+    {
+     "text": "Terry",
+     "type": "name",
+     "box": [
+      290,
+      355,
+      360,
+      395
+     ]
+    },
+    {
+     "text": "27 August 1996",
+     "type": "dob",
+     "box": [
+      290,
+      470,
+      475,
+      510
+     ]
+    },
+    {
+     "text": "NX9341138",
+     "type": "id_number",
+     "box": [
+      290,
+      590,
+      405,
+      625
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      65,
+      205,
+      240,
+      565
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"HUSSAIN\", \"type\": \"name\", \"box\": [290, 240, 400, 290]}, {\"text\": \"Terry\", \"type\": \"name\", \"box\": [290, 355, 360, 395]}, {\"text\": \"27 August 1996\", \"type\": \"dob\", \"box\": [290, 470, 475, 510]}, {\"text\": \"NX9341138\", \"type\": \"id_number\", \"box\": [290, 590, 405, 625]}, {\"text\": \"\", \"type\": \"face\", \"box\": [65, 205, 240, 565]}]",
+   "reasoning_chars": 1425,
+   "usage": {
+    "completion_tokens": 558,
+    "prompt_tokens": 1088,
+    "total_tokens": 1646,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_024.jpg",
+   "seconds": 18.17,
+   "items": [
+    {
+     "text": "ATKINS",
+     "type": "name",
+     "box": [
+      350,
+      215,
+      480,
+      260
+     ]
+    },
+    {
+     "text": "Jane",
+     "type": "name",
+     "box": [
+      350,
+      310,
+      425,
+      345
+     ]
+    },
+    {
+     "text": "15/12/1951",
+     "type": "dob",
+     "box": [
+      350,
+      380,
+      505,
+      415
+     ]
+    },
+    {
+     "text": "ER7346768",
+     "type": "id_number",
+     "box": [
+      350,
+      470,
+      540,
+      505
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      60,
+      190,
+      310,
+      610
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"ATKINS\", \"type\": \"name\", \"box\": [350, 215, 480, 260]}, {\"text\": \"Jane\", \"type\": \"name\", \"box\": [350, 310, 425, 345]}, {\"text\": \"15/12/1951\", \"type\": \"dob\", \"box\": [350, 380, 505, 415]}, {\"text\": \"ER7346768\", \"type\": \"id_number\", \"box\": [350, 470, 540, 505]}, {\"text\": \"\", \"type\": \"face\", \"box\": [60, 190, 310, 610]}]",
+   "reasoning_chars": 1871,
+   "usage": {
+    "completion_tokens": 691,
+    "prompt_tokens": 1088,
+    "total_tokens": 1779,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_025.jpg",
+   "seconds": 12.73,
+   "items": [
+    {
+     "text": "LEE",
+     "type": "name",
+     "box": [
+      280,
+      240,
+      322,
+      273
+     ]
+    },
+    {
+     "text": "Andrew",
+     "type": "name",
+     "box": [
+      280,
+      330,
+      368,
+      366
+     ]
+    },
+    {
+     "text": "25 August 1984",
+     "type": "dob",
+     "box": [
+      280,
+      420,
+      458,
+      457
+     ]
+    },
+    {
+     "text": "YE7504537",
+     "type": "id_number",
+     "box": [
+      280,
+      512,
+      408,
+      546
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      67,
+      207,
+      243,
+      542
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"LEE\", \"type\": \"name\", \"box\": [280, 240, 322, 273]},\n  {\"text\": \"Andrew\", \"type\": \"name\", \"box\": [280, 330, 368, 366]},\n  {\"text\": \"25 August 1984\", \"type\": \"dob\", \"box\": [280, 420, 458, 457]},\n  {\"text\": \"YE7504537\", \"type\": \"id_number\", \"box\": [280, 512, 408, 546]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [67, 207, 243, 542]}\n]",
+   "reasoning_chars": 1216,
+   "usage": {
+    "completion_tokens": 478,
+    "prompt_tokens": 1088,
+    "total_tokens": 1566,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_026.jpg",
+   "seconds": 10.89,
+   "items": [
+    {
+     "text": "CARROLL",
+     "type": "name",
+     "box": [
+      280,
+      220,
+      380,
+      250
+     ]
+    },
+    {
+     "text": "Kimberley",
+     "type": "name",
+     "box": [
+      280,
+      305,
+      375,
+      335
+     ]
+    },
+    {
+     "text": "25/02/1967",
+     "type": "dob",
+     "box": [
+      280,
+      390,
+      375,
+      425
+     ]
+    },
+    {
+     "text": "YZ3204763",
+     "type": "id_number",
+     "box": [
+      280,
+      490,
+      380,
+      520
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      65,
+      225,
+      245,
+      595
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"CARROLL\", \"type\": \"name\", \"box\": [280, 220, 380, 250]}, {\"text\": \"Kimberley\", \"type\": \"name\", \"box\": [280, 305, 375, 335]}, {\"text\": \"25/02/1967\", \"type\": \"dob\", \"box\": [280, 390, 375, 425]}, {\"text\": \"YZ3204763\", \"type\": \"id_number\", \"box\": [280, 490, 380, 520]}, {\"text\": \"\", \"type\": \"face\", \"box\": [65, 225, 245, 595]}]",
+   "reasoning_chars": 848,
+   "usage": {
+    "completion_tokens": 405,
+    "prompt_tokens": 1088,
+    "total_tokens": 1493,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_027.png",
+   "seconds": 13.15,
+   "items": [
+    {
+     "text": "MOSS",
+     "type": "name",
+     "box": [
+      282,
+      240,
+      344,
+      280
+     ]
+    },
+    {
+     "text": "Lynda",
+     "type": "name",
+     "box": [
+      282,
+      330,
+      345,
+      370
+     ]
+    },
+    {
+     "text": "03 Nov 1984",
+     "type": "dob",
+     "box": [
+      282,
+      430,
+      410,
+      470
+     ]
+    },
+    {
+     "text": "KW7416583",
+     "type": "id_number",
+     "box": [
+      282,
+      540,
+      405,
+      580
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      70,
+      230,
+      225,
+      560
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"MOSS\", \"type\": \"name\", \"box\": [282, 240, 344, 280]},\n  {\"text\": \"Lynda\", \"type\": \"name\", \"box\": [282, 330, 345, 370]},\n  {\"text\": \"03 Nov 1984\", \"type\": \"dob\", \"box\": [282, 430, 410, 470]},\n  {\"text\": \"KW7416583\", \"type\": \"id_number\", \"box\": [282, 540, 405, 580]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [70, 230, 225, 560]}\n]",
+   "reasoning_chars": 1222,
+   "usage": {
+    "completion_tokens": 493,
+    "prompt_tokens": 1088,
+    "total_tokens": 1581,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_028.jpg",
+   "seconds": 15.09,
+   "items": [
+    {
+     "text": "GRAHAM",
+     "type": "name",
+     "box": [
+      411,
+      220,
+      522,
+      260
+     ]
+    },
+    {
+     "text": "Joshua",
+     "type": "name",
+     "box": [
+      411,
+      330,
+      507,
+      370
+     ]
+    },
+    {
+     "text": "13 May 1972",
+     "type": "dob",
+     "box": [
+      411,
+      410,
+      582,
+      450
+     ]
+    },
+    {
+     "text": "TX6103535",
+     "type": "id_number",
+     "box": [
+      411,
+      510,
+      577,
+      550
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      62,
+      200,
+      374,
+      720
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"GRAHAM\", \"type\": \"name\", \"box\": [411, 220, 522, 260]},\n  {\"text\": \"Joshua\", \"type\": \"name\", \"box\": [411, 330, 507, 370]},\n  {\"text\": \"13 May 1972\", \"type\": \"dob\", \"box\": [411, 410, 582, 450]},\n  {\"text\": \"TX6103535\", \"type\": \"id_number\", \"box\": [411, 510, 577, 550]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [62, 200, 374, 720]}\n]",
+   "reasoning_chars": 1562,
+   "usage": {
+    "completion_tokens": 570,
+    "prompt_tokens": 1088,
+    "total_tokens": 1658,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_029.jpg",
+   "seconds": 13.35,
+   "items": [
+    {
+     "text": "LEE",
+     "type": "name",
+     "box": [
+      418,
+      220,
+      479,
+      245
+     ]
+    },
+    {
+     "text": "Jason",
+     "type": "name",
+     "box": [
+      416,
+      310,
+      497,
+      335
+     ]
+    },
+    {
+     "text": "13 May 1953",
+     "type": "dob",
+     "box": [
+      414,
+      400,
+      542,
+      428
+     ]
+    },
+    {
+     "text": "ZN828159",
+     "type": "id_number",
+     "box": [
+      414,
+      490,
+      515,
+      515
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      64,
+      205,
+      375,
+      685
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"LEE\", \"type\": \"name\", \"box\": [418, 220, 479, 245]}, {\"text\": \"Jason\", \"type\": \"name\", \"box\": [416, 310, 497, 335]}, {\"text\": \"13 May 1953\", \"type\": \"dob\", \"box\": [414, 400, 542, 428]}, {\"text\": \"ZN828159\", \"type\": \"id_number\", \"box\": [414, 490, 515, 515]}, {\"text\": \"\", \"type\": \"face\", \"box\": [64, 205, 375, 685]}]",
+   "reasoning_chars": 1404,
+   "usage": {
+    "completion_tokens": 503,
+    "prompt_tokens": 1088,
+    "total_tokens": 1591,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_030.jpg",
+   "seconds": 12.12,
+   "items": [
+    {
+     "text": "RICHARDSON",
+     "type": "name",
+     "box": [
+      310,
+      270,
+      430,
+      295
+     ]
+    },
+    {
+     "text": "Frances",
+     "type": "name",
+     "box": [
+      310,
+      350,
+      385,
+      370
+     ]
+    },
+    {
+     "text": "01/06/1999",
+     "type": "dob",
+     "box": [
+      310,
+      430,
+      430,
+      455
+     ]
+    },
+    {
+     "text": "JF6033570",
+     "type": "id_number",
+     "box": [
+      310,
+      510,
+      420,
+      535
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      65,
+      230,
+      245,
+      500
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"RICHARDSON\", \"type\": \"name\", \"box\": [310, 270, 430, 295]},\n  {\"text\": \"Frances\", \"type\": \"name\", \"box\": [310, 350, 385, 370]},\n  {\"text\": \"01/06/1999\", \"type\": \"dob\", \"box\": [310, 430, 430, 455]},\n  {\"text\": \"JF6033570\", \"type\": \"id_number\", \"box\": [310, 510, 420, 535]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [65, 230, 245, 500]}\n]",
+   "reasoning_chars": 1037,
+   "usage": {
+    "completion_tokens": 454,
+    "prompt_tokens": 1088,
+    "total_tokens": 1542,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_032.jpg",
+   "seconds": 10.89,
+   "items": [
+    {
+     "text": "CONWAY",
+     "type": "name",
+     "box": [
+      285,
+      235,
+      395,
+      285
+     ]
+    },
+    {
+     "text": "Jordan",
+     "type": "name",
+     "box": [
+      285,
+      315,
+      370,
+      350
+     ]
+    },
+    {
+     "text": "12/09/1960",
+     "type": "dob",
+     "box": [
+      285,
+      405,
+      430,
+      440
+     ]
+    },
+    {
+     "text": "TF5932712",
+     "type": "id_number",
+     "box": [
+      285,
+      495,
+      430,
+      530
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      65,
+      205,
+      225,
+      560
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"CONWAY\", \"type\": \"name\", \"box\": [285, 235, 395, 285]}, {\"text\": \"Jordan\", \"type\": \"name\", \"box\": [285, 315, 370, 350]}, {\"text\": \"12/09/1960\", \"type\": \"dob\", \"box\": [285, 405, 430, 440]}, {\"text\": \"TF5932712\", \"type\": \"id_number\", \"box\": [285, 495, 430, 530]}, {\"text\": \"\", \"type\": \"face\", \"box\": [65, 205, 225, 560]}]",
+   "reasoning_chars": 937,
+   "usage": {
+    "completion_tokens": 404,
+    "prompt_tokens": 1088,
+    "total_tokens": 1492,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_033.jpg",
+   "seconds": 15.82,
+   "items": [
+    {
+     "text": "KEMP",
+     "type": "name",
+     "box": [
+      350,
+      240,
+      440,
+      285
+     ]
+    },
+    {
+     "text": "Lesley",
+     "type": "name",
+     "box": [
+      350,
+      350,
+      430,
+      390
+     ]
+    },
+    {
+     "text": "14 February 1999",
+     "type": "dob",
+     "box": [
+      350,
+      470,
+      560,
+      510
+     ]
+    },
+    {
+     "text": "EY3201554",
+     "type": "id_number",
+     "box": [
+      350,
+      580,
+      520,
+      620
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      70,
+      240,
+      300,
+      640
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\":\"KEMP\",\"type\":\"name\",\"box\":[350,240,440,285]},{\"text\":\"Lesley\",\"type\":\"name\",\"box\":[350,350,430,390]},{\"text\":\"14 February 1999\",\"type\":\"dob\",\"box\":[350,470,560,510]},{\"text\":\"EY3201554\",\"type\":\"id_number\",\"box\":[350,580,520,620]},{\"text\":\"\",\"type\":\"face\",\"box\":[70,240,300,640]}]",
+   "reasoning_chars": 1567,
+   "usage": {
+    "completion_tokens": 600,
+    "prompt_tokens": 1088,
+    "total_tokens": 1688,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_036.jpg",
+   "seconds": 19.66,
+   "items": [
+    {
+     "text": "REEVES",
+     "type": "name",
+     "box": [
+      409,
+      238,
+      489,
+      273
+     ]
+    },
+    {
+     "text": "Elliot",
+     "type": "name",
+     "box": [
+      409,
+      328,
+      461,
+      362
+     ]
+    },
+    {
+     "text": "28/08/1967",
+     "type": "dob",
+     "box": [
+      408,
+      418,
+      511,
+      452
+     ]
+    },
+    {
+     "text": "XR8087845",
+     "type": "id_number",
+     "box": [
+      409,
+      508,
+      515,
+      543
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      68,
+      210,
+      372,
+      605
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"REEVES\", \"type\": \"name\", \"box\": [409, 238, 489, 273]},\n  {\"text\": \"Elliot\", \"type\": \"name\", \"box\": [409, 328, 461, 362]},\n  {\"text\": \"28/08/1967\", \"type\": \"dob\", \"box\": [408, 418, 511, 452]},\n  {\"text\": \"XR8087845\", \"type\": \"id_number\", \"box\": [409, 508, 515, 543]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [68, 210, 372, 605]}\n]",
+   "reasoning_chars": 1964,
+   "usage": {
+    "completion_tokens": 750,
+    "prompt_tokens": 1088,
+    "total_tokens": 1838,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_038.jpg",
+   "seconds": 14.85,
+   "items": [
+    {
+     "text": "THOMAS",
+     "type": "name",
+     "box": [
+      349,
+      240,
+      447,
+      273
+     ]
+    },
+    {
+     "text": "Terry",
+     "type": "name",
+     "box": [
+      349,
+      330,
+      407,
+      365
+     ]
+    },
+    {
+     "text": "27 July 1971",
+     "type": "dob",
+     "box": [
+      349,
+      420,
+      472,
+      458
+     ]
+    },
+    {
+     "text": "XX7794922",
+     "type": "id_number",
+     "box": [
+      349,
+      510,
+      469,
+      545
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      68,
+      210,
+      312,
+      680
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"THOMAS\", \"type\": \"name\", \"box\": [349, 240, 447, 273]}, {\"text\": \"Terry\", \"type\": \"name\", \"box\": [349, 330, 407, 365]}, {\"text\": \"27 July 1971\", \"type\": \"dob\", \"box\": [349, 420, 472, 458]}, {\"text\": \"XX7794922\", \"type\": \"id_number\", \"box\": [349, 510, 469, 545]}, {\"text\": \"\", \"type\": \"face\", \"box\": [68, 210, 312, 680]}]",
+   "reasoning_chars": 1475,
+   "usage": {
+    "completion_tokens": 561,
+    "prompt_tokens": 1088,
+    "total_tokens": 1649,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_040.jpg",
+   "seconds": 13.12,
+   "items": [
+    {
+     "text": "MIAH",
+     "type": "name",
+     "box": [
+      410,
+      240,
+      485,
+      280
+     ]
+    },
+    {
+     "text": "Gillian",
+     "type": "name",
+     "box": [
+      410,
+      340,
+      485,
+      375
+     ]
+    },
+    {
+     "text": "JH4171633",
+     "type": "id_number",
+     "box": [
+      410,
+      520,
+      520,
+      555
+     ]
+    },
+    {
+     "text": "26 Aug 1978",
+     "type": "dob",
+     "box": [
+      410,
+      430,
+      560,
+      465
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      65,
+      210,
+      375,
+      580
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"MIAH\", \"type\": \"name\", \"box\": [410, 240, 485, 280]}, {\"text\": \"Gillian\", \"type\": \"name\", \"box\": [410, 340, 485, 375]}, {\"text\": \"JH4171633\", \"type\": \"id_number\", \"box\": [410, 520, 520, 555]}, {\"text\": \"26 Aug 1978\", \"type\": \"dob\", \"box\": [410, 430, 560, 465]}, {\"text\": \"\", \"type\": \"face\", \"box\": [65, 210, 375, 580]}]",
+   "reasoning_chars": 1202,
+   "usage": {
+    "completion_tokens": 493,
+    "prompt_tokens": 1088,
+    "total_tokens": 1581,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_041.jpg",
+   "seconds": 13.18,
+   "items": [
+    {
+     "text": "MORRIS",
+     "type": "name",
+     "box": [
+      353,
+      247,
+      472,
+      285
+     ]
+    },
+    {
+     "text": "Georgia",
+     "type": "name",
+     "box": [
+      352,
+      345,
+      465,
+      383
+     ]
+    },
+    {
+     "text": "ER3794500",
+     "type": "id_number",
+     "box": [
+      352,
+      545,
+      577,
+      582
+     ]
+    },
+    {
+     "text": "06 Jun 1985",
+     "type": "dob",
+     "box": [
+      352,
+      445,
+      570,
+      482
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      65,
+      225,
+      295,
+      700
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"MORRIS\", \"type\": \"name\", \"box\": [353, 247, 472, 285]},\n  {\"text\": \"Georgia\", \"type\": \"name\", \"box\": [352, 345, 465, 383]},\n  {\"text\": \"ER3794500\", \"type\": \"id_number\", \"box\": [352, 545, 577, 582]},\n  {\"text\": \"06 Jun 1985\", \"type\": \"dob\", \"box\": [352, 445, 570, 482]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [65, 225, 295, 700]}\n]",
+   "reasoning_chars": 1296,
+   "usage": {
+    "completion_tokens": 495,
+    "prompt_tokens": 1088,
+    "total_tokens": 1583,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_042.jpg",
+   "seconds": 14.19,
+   "items": [
+    {
+     "text": "SHAW",
+     "type": "name",
+     "box": [
+      360,
+      240,
+      435,
+      280
+     ]
+    },
+    {
+     "text": "Martyn",
+     "type": "name",
+     "box": [
+      360,
+      325,
+      455,
+      365
+     ]
+    },
+    {
+     "text": "23 Jan 1956",
+     "type": "dob",
+     "box": [
+      360,
+      410,
+      525,
+      450
+     ]
+    },
+    {
+     "text": "AL144009",
+     "type": "id_number",
+     "box": [
+      360,
+      495,
+      545,
+      535
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      60,
+      225,
+      325,
+      660
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"SHAW\", \"type\": \"name\", \"box\": [360, 240, 435, 280]},\n  {\"text\": \"Martyn\", \"type\": \"name\", \"box\": [360, 325, 455, 365]},\n  {\"text\": \"23 Jan 1956\", \"type\": \"dob\", \"box\": [360, 410, 525, 450]},\n  {\"text\": \"AL144009\", \"type\": \"id_number\", \"box\": [360, 495, 545, 535]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [60, 225, 325, 660]}\n]",
+   "reasoning_chars": 1308,
+   "usage": {
+    "completion_tokens": 536,
+    "prompt_tokens": 1088,
+    "total_tokens": 1624,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_043.png",
+   "seconds": 16.31,
+   "items": [
+    {
+     "text": "CUNNINGHAM",
+     "type": "name",
+     "box": [
+      351,
+      260,
+      515,
+      295
+     ]
+    },
+    {
+     "text": "Jason",
+     "type": "name",
+     "box": [
+      351,
+      350,
+      425,
+      385
+     ]
+    },
+    {
+     "text": "24/06/1987",
+     "type": "dob",
+     "box": [
+      351,
+      430,
+      495,
+      465
+     ]
+    },
+    {
+     "text": "TH6713989",
+     "type": "id_number",
+     "box": [
+      351,
+      520,
+      495,
+      555
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      55,
+      205,
+      320,
+      640
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"CUNNINGHAM\", \"type\": \"name\", \"box\": [351, 260, 515, 295]},\n  {\"text\": \"Jason\", \"type\": \"name\", \"box\": [351, 350, 425, 385]},\n  {\"text\": \"24/06/1987\", \"type\": \"dob\", \"box\": [351, 430, 495, 465]},\n  {\"text\": \"TH6713989\", \"type\": \"id_number\", \"box\": [351, 520, 495, 555]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [55, 205, 320, 640]}\n]",
+   "reasoning_chars": 1575,
+   "usage": {
+    "completion_tokens": 618,
+    "prompt_tokens": 1088,
+    "total_tokens": 1706,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_048.png",
+   "seconds": 16.08,
+   "items": [
+    {
+     "text": "KING",
+     "type": "name",
+     "box": [
+      413,
+      260,
+      488,
+      300
+     ]
+    },
+    {
+     "text": "Alex",
+     "type": "name",
+     "box": [
+      413,
+      355,
+      485,
+      395
+     ]
+    },
+    {
+     "text": "20/11/1967",
+     "type": "dob",
+     "box": [
+      413,
+      445,
+      560,
+      485
+     ]
+    },
+    {
+     "text": "YK8484841",
+     "type": "id_number",
+     "box": [
+      413,
+      535,
+      570,
+      575
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      55,
+      220,
+      375,
+      625
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"KING\", \"type\": \"name\", \"box\": [413, 260, 488, 300]},\n  {\"text\": \"Alex\", \"type\": \"name\", \"box\": [413, 355, 485, 395]},\n  {\"text\": \"20/11/1967\", \"type\": \"dob\", \"box\": [413, 445, 560, 485]},\n  {\"text\": \"YK8484841\", \"type\": \"id_number\", \"box\": [413, 535, 570, 575]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [55, 220, 375, 625]}\n]",
+   "reasoning_chars": 1486,
+   "usage": {
+    "completion_tokens": 608,
+    "prompt_tokens": 1088,
+    "total_tokens": 1696,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_049.png",
+   "seconds": 17.01,
+   "items": [
+    {
+     "text": "CARTWRIGHT",
+     "type": "name",
+     "box": [
+      410,
+      255,
+      595,
+      295
+     ]
+    },
+    {
+     "text": "Jeffrey",
+     "type": "name",
+     "box": [
+      410,
+      360,
+      505,
+      395
+     ]
+    },
+    {
+     "text": "22/08/1983",
+     "type": "dob",
+     "box": [
+      410,
+      465,
+      555,
+      500
+     ]
+    },
+    {
+     "text": "PY2973414",
+     "type": "id_number",
+     "box": [
+      410,
+      570,
+      565,
+      605
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      55,
+      210,
+      375,
+      775
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"CARTWRIGHT\", \"type\": \"name\", \"box\": [410, 255, 595, 295]},\n  {\"text\": \"Jeffrey\", \"type\": \"name\", \"box\": [410, 360, 505, 395]},\n  {\"text\": \"22/08/1983\", \"type\": \"dob\", \"box\": [410, 465, 555, 500]},\n  {\"text\": \"PY2973414\", \"type\": \"id_number\", \"box\": [410, 570, 565, 605]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [55, 210, 375, 775]}\n]",
+   "reasoning_chars": 1622,
+   "usage": {
+    "completion_tokens": 643,
+    "prompt_tokens": 1088,
+    "total_tokens": 1731,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "chat_002.jpg",
+   "seconds": 10.75,
+   "items": [
+    {
+     "text": "Lorraine Jones",
+     "type": "name",
+     "box": [
+      31,
+      35,
+      248,
+      60
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      111,
+      141,
+      225
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      248,
+      141,
+      362
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      401,
+      141,
+      515
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      610,
+      141,
+      724
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"Lorraine Jones\", \"type\": \"name\", \"box\": [31, 35, 248, 60]}, {\"text\": \"\", \"type\": \"face\", \"box\": [22, 111, 141, 225]}, {\"text\": \"\", \"type\": \"face\", \"box\": [22, 248, 141, 362]}, {\"text\": \"\", \"type\": \"face\", \"box\": [22, 401, 141, 515]}, {\"text\": \"\", \"type\": \"face\", \"box\": [22, 610, 141, 724]}]",
+   "reasoning_chars": 1003,
+   "usage": {
+    "completion_tokens": 402,
+    "prompt_tokens": 995,
+    "total_tokens": 1397,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "chat_003.png",
+   "seconds": 14.99,
+   "items": [
+    {
+     "text": "Mohammad Davis",
+     "type": "name",
+     "box": [
+      28,
+      33,
+      250,
+      72
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      138,
+      82,
+      200
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      222,
+      82,
+      285
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      360,
+      82,
+      423
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      498,
+      82,
+      561
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      638,
+      82,
+      701
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"Mohammad Davis\", \"type\": \"name\", \"box\": [28, 33, 250, 72]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [22, 138, 82, 200]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [22, 222, 82, 285]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [22, 360, 82, 423]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [22, 498, 82, 561]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [22, 638, 82, 701]}\n]",
+   "reasoning_chars": 1513,
+   "usage": {
+    "completion_tokens": 569,
+    "prompt_tokens": 995,
+    "total_tokens": 1564,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "chat_004.jpg",
+   "seconds": 14.27,
+   "items": [
+    {
+     "text": "Lewis Hurst",
+     "type": "name",
+     "box": [
+      18,
+      28,
+      225,
+      65
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      132,
+      108,
+      208
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      220,
+      108,
+      296
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      368,
+      108,
+      444
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      540,
+      108,
+      616
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      710,
+      108,
+      786
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"Lewis Hurst\", \"type\": \"name\", \"box\": [18, 28, 225, 65]}, {\"text\": \"\", \"type\": \"face\", \"box\": [20, 132, 108, 208]}, {\"text\": \"\", \"type\": \"face\", \"box\": [20, 220, 108, 296]}, {\"text\": \"\", \"type\": \"face\", \"box\": [20, 368, 108, 444]}, {\"text\": \"\", \"type\": \"face\", \"box\": [20, 540, 108, 616]}, {\"text\": \"\", \"type\": \"face\", \"box\": [20, 710, 108, 786]}]",
+   "reasoning_chars": 1370,
+   "usage": {
+    "completion_tokens": 542,
+    "prompt_tokens": 995,
+    "total_tokens": 1537,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "chat_005.jpg",
+   "seconds": 15.35,
+   "items": [
+    {
+     "text": "Eleanor Booth",
+     "type": "name",
+     "box": [
+      30,
+      20,
+      220,
+      55
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      75,
+      120,
+      185
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      200,
+      120,
+      310
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      365,
+      120,
+      475
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      570,
+      120,
+      680
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      780,
+      120,
+      890
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"Eleanor Booth\", \"type\": \"name\", \"box\": [30, 20, 220, 55]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [20, 75, 120, 185]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [20, 200, 120, 310]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [20, 365, 120, 475]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [20, 570, 120, 680]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [20, 780, 120, 890]}\n]",
+   "reasoning_chars": 1449,
+   "usage": {
+    "completion_tokens": 584,
+    "prompt_tokens": 995,
+    "total_tokens": 1579,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "chat_008.png",
+   "seconds": 12.82,
+   "items": [
+    {
+     "text": "Dawn Brown",
+     "type": "name",
+     "box": [
+      33,
+      28,
+      230,
+      64
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      18,
+      106,
+      118,
+      212
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      18,
+      219,
+      118,
+      325
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      18,
+      388,
+      118,
+      494
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      18,
+      586,
+      118,
+      692
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      18,
+      767,
+      118,
+      873
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"Dawn Brown\", \"type\": \"name\", \"box\": [33, 28, 230, 64]}, {\"text\": \"\", \"type\": \"face\", \"box\": [18, 106, 118, 212]}, {\"text\": \"\", \"type\": \"face\", \"box\": [18, 219, 118, 325]}, {\"text\": \"\", \"type\": \"face\", \"box\": [18, 388, 118, 494]}, {\"text\": \"\", \"type\": \"face\", \"box\": [18, 586, 118, 692]}, {\"text\": \"\", \"type\": \"face\", \"box\": [18, 767, 118, 873]}]",
+   "reasoning_chars": 1130,
+   "usage": {
+    "completion_tokens": 483,
+    "prompt_tokens": 995,
+    "total_tokens": 1478,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "chat_009.jpg",
+   "seconds": 10.68,
+   "items": [
+    {
+     "text": "Damien Ellis",
+     "type": "name",
+     "box": [
+      33,
+      34,
+      255,
+      60
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      120,
+      84,
+      157
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      182,
+      84,
+      220
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      307,
+      84,
+      344
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      434,
+      84,
+      471
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"Damien Ellis\", \"type\": \"name\", \"box\": [33, 34, 255, 60]}, {\"text\": \"\", \"type\": \"face\", \"box\": [22, 120, 84, 157]}, {\"text\": \"\", \"type\": \"face\", \"box\": [22, 182, 84, 220]}, {\"text\": \"\", \"type\": \"face\", \"box\": [22, 307, 84, 344]}, {\"text\": \"\", \"type\": \"face\", \"box\": [22, 434, 84, 471]}]",
+   "reasoning_chars": 1041,
+   "usage": {
+    "completion_tokens": 399,
+    "prompt_tokens": 995,
+    "total_tokens": 1394,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "chat_010.jpg",
+   "seconds": 13.37,
+   "items": [
+    {
+     "text": "Justin Sinclair",
+     "type": "name",
+     "box": [
+      30,
+      30,
+      260,
+      70
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      25,
+      115,
+      110,
+      185
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      25,
+      210,
+      110,
+      280
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      25,
+      365,
+      110,
+      435
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      25,
+      520,
+      110,
+      590
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      25,
+      675,
+      110,
+      745
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"Justin Sinclair\", \"type\": \"name\", \"box\": [30, 30, 260, 70]}, {\"text\": \"\", \"type\": \"face\", \"box\": [25, 115, 110, 185]}, {\"text\": \"\", \"type\": \"face\", \"box\": [25, 210, 110, 280]}, {\"text\": \"\", \"type\": \"face\", \"box\": [25, 365, 110, 435]}, {\"text\": \"\", \"type\": \"face\", \"box\": [25, 520, 110, 590]}, {\"text\": \"\", \"type\": \"face\", \"box\": [25, 675, 110, 745]}]",
+   "reasoning_chars": 1265,
+   "usage": {
+    "completion_tokens": 507,
+    "prompt_tokens": 995,
+    "total_tokens": 1502,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "chat_011.png",
+   "seconds": 12.64,
+   "items": [
+    {
+     "text": "Rachael Tucker",
+     "type": "name",
+     "box": [
+      35,
+      30,
+      270,
+      65
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      115,
+      115,
+      210
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      210,
+      115,
+      305
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      395,
+      115,
+      490
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      570,
+      115,
+      665
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"Rachael Tucker\", \"type\": \"name\", \"box\": [35, 30, 270, 65]}, {\"text\": \"\", \"type\": \"face\", \"box\": [20, 115, 115, 210]}, {\"text\": \"\", \"type\": \"face\", \"box\": [20, 210, 115, 305]}, {\"text\": \"\", \"type\": \"face\", \"box\": [20, 395, 115, 490]}, {\"text\": \"\", \"type\": \"face\", \"box\": [20, 570, 115, 665]}]",
+   "reasoning_chars": 1329,
+   "usage": {
+    "completion_tokens": 477,
+    "prompt_tokens": 995,
+    "total_tokens": 1472,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "chat_012.jpg",
+   "seconds": 14.48,
+   "items": [
+    {
+     "text": "Joan O'Sullivan",
+     "type": "name",
+     "box": [
+      28,
+      34,
+      250,
+      62
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      145,
+      85,
+      205
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      240,
+      85,
+      300
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      390,
+      85,
+      450
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      600,
+      85,
+      660
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      770,
+      85,
+      830
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"Joan O'Sullivan\", \"type\": \"name\", \"box\": [28, 34, 250, 62]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [22, 145, 85, 205]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [22, 240, 85, 300]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [22, 390, 85, 450]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [22, 600, 85, 660]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [22, 770, 85, 830]}\n]",
+   "reasoning_chars": 1288,
+   "usage": {
+    "completion_tokens": 548,
+    "prompt_tokens": 995,
+    "total_tokens": 1543,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "chat_013.jpg",
+   "seconds": 14.51,
+   "items": [
+    {
+     "text": "Carly Wells",
+     "type": "name",
+     "box": [
+      33,
+      37,
+      210,
+      63
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      116,
+      110,
+      170
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      192,
+      110,
+      247
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      326,
+      110,
+      382
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      466,
+      110,
+      520
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"Carly Wells\", \"type\": \"name\", \"box\": [33, 37, 210, 63]}, {\"text\": \"\", \"type\": \"face\", \"box\": [22, 116, 110, 170]}, {\"text\": \"\", \"type\": \"face\", \"box\": [22, 192, 110, 247]}, {\"text\": \"\", \"type\": \"face\", \"box\": [22, 326, 110, 382]}, {\"text\": \"\", \"type\": \"face\", \"box\": [22, 466, 110, 520]}]",
+   "reasoning_chars": 1419,
+   "usage": {
+    "completion_tokens": 547,
+    "prompt_tokens": 995,
+    "total_tokens": 1542,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "chat_015.jpg",
+   "seconds": 15.61,
+   "items": [
+    {
+     "text": "Marc Harris",
+     "type": "name",
+     "box": [
+      28,
+      37,
+      235,
+      65
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      135,
+      80,
+      190
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      200,
+      80,
+      255
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      335,
+      80,
+      390
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      485,
+      80,
+      540
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      675,
+      80,
+      730
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"Marc Harris\", \"type\": \"name\", \"box\": [28, 37, 235, 65]}, {\"text\": \"\", \"type\": \"face\", \"box\": [20, 135, 80, 190]}, {\"text\": \"\", \"type\": \"face\", \"box\": [20, 200, 80, 255]}, {\"text\": \"\", \"type\": \"face\", \"box\": [20, 335, 80, 390]}, {\"text\": \"\", \"type\": \"face\", \"box\": [20, 485, 80, 540]}, {\"text\": \"\", \"type\": \"face\", \"box\": [20, 675, 80, 730]}]",
+   "reasoning_chars": 1545,
+   "usage": {
+    "completion_tokens": 592,
+    "prompt_tokens": 995,
+    "total_tokens": 1587,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "chat_016.jpg",
+   "seconds": 13.92,
+   "items": [
+    {
+     "text": "Louis Wilkinson",
+     "type": "name",
+     "box": [
+      28,
+      28,
+      220,
+      60
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      18,
+      115,
+      93,
+      185
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      18,
+      210,
+      93,
+      280
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      18,
+      360,
+      93,
+      430
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      18,
+      510,
+      93,
+      580
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"Louis Wilkinson\", \"type\": \"name\", \"box\": [28, 28, 220, 60]}, {\"text\": \"\", \"type\": \"face\", \"box\": [18, 115, 93, 185]}, {\"text\": \"\", \"type\": \"face\", \"box\": [18, 210, 93, 280]}, {\"text\": \"\", \"type\": \"face\", \"box\": [18, 360, 93, 430]}, {\"text\": \"\", \"type\": \"face\", \"box\": [18, 510, 93, 580]}]",
+   "reasoning_chars": 1446,
+   "usage": {
+    "completion_tokens": 525,
+    "prompt_tokens": 995,
+    "total_tokens": 1520,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "chat_017.jpg",
+   "seconds": 15.11,
+   "items": [
+    {
+     "text": "Terry Kaur",
+     "type": "name",
+     "box": [
+      30,
+      20,
+      210,
+      60
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      65,
+      130,
+      150
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      165,
+      130,
+      250
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      330,
+      130,
+      415
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      520,
+      130,
+      605
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      710,
+      130,
+      795
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"Terry Kaur\", \"type\": \"name\", \"box\": [30, 20, 210, 60]}, {\"text\": \"\", \"type\": \"face\", \"box\": [20, 65, 130, 150]}, {\"text\": \"\", \"type\": \"face\", \"box\": [20, 165, 130, 250]}, {\"text\": \"\", \"type\": \"face\", \"box\": [20, 330, 130, 415]}, {\"text\": \"\", \"type\": \"face\", \"box\": [20, 520, 130, 605]}, {\"text\": \"\", \"type\": \"face\", \"box\": [20, 710, 130, 795]}]",
+   "reasoning_chars": 1404,
+   "usage": {
+    "completion_tokens": 574,
+    "prompt_tokens": 995,
+    "total_tokens": 1569,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "chat_020.png",
+   "seconds": 12.5,
+   "items": [
+    {
+     "text": "Reece Wright",
+     "type": "name",
+     "box": [
+      35,
+      35,
+      210,
+      65
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      115,
+      115,
+      215
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      250,
+      115,
+      350
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      430,
+      115,
+      530
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      590,
+      115,
+      690
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      20,
+      730,
+      115,
+      830
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"Reece Wright\", \"type\": \"name\", \"box\": [35, 35, 210, 65]}, {\"text\": \"\", \"type\": \"face\", \"box\": [20, 115, 115, 215]}, {\"text\": \"\", \"type\": \"face\", \"box\": [20, 250, 115, 350]}, {\"text\": \"\", \"type\": \"face\", \"box\": [20, 430, 115, 530]}, {\"text\": \"\", \"type\": \"face\", \"box\": [20, 590, 115, 690]}, {\"text\": \"\", \"type\": \"face\", \"box\": [20, 730, 115, 830]}]",
+   "reasoning_chars": 1115,
+   "usage": {
+    "completion_tokens": 465,
+    "prompt_tokens": 995,
+    "total_tokens": 1460,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "chat_021.jpg",
+   "seconds": 15.38,
+   "items": [
+    {
+     "text": "Joyce Riley",
+     "type": "name",
+     "box": [
+      35,
+      25,
+      220,
+      55
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      25,
+      110,
+      80,
+      170
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      25,
+      165,
+      80,
+      225
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      25,
+      280,
+      80,
+      340
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      25,
+      435,
+      80,
+      495
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      25,
+      580,
+      80,
+      640
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"Joyce Riley\", \"type\": \"name\", \"box\": [35, 25, 220, 55]}, {\"text\": \"\", \"type\": \"face\", \"box\": [25, 110, 80, 170]}, {\"text\": \"\", \"type\": \"face\", \"box\": [25, 165, 80, 225]}, {\"text\": \"\", \"type\": \"face\", \"box\": [25, 280, 80, 340]}, {\"text\": \"\", \"type\": \"face\", \"box\": [25, 435, 80, 495]}, {\"text\": \"\", \"type\": \"face\", \"box\": [25, 580, 80, 640]}]",
+   "reasoning_chars": 1433,
+   "usage": {
+    "completion_tokens": 576,
+    "prompt_tokens": 995,
+    "total_tokens": 1571,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "chat_022.jpg",
+   "seconds": 12.25,
+   "items": [
+    {
+     "text": "Arthur Whitehead",
+     "type": "name",
+     "box": [
+      28,
+      28,
+      260,
+      60
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      110,
+      107,
+      195
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      210,
+      107,
+      295
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      415,
+      107,
+      500
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      565,
+      107,
+      650
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      715,
+      107,
+      800
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"Arthur Whitehead\", \"type\": \"name\", \"box\": [28, 28, 260, 60]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [22, 110, 107, 195]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [22, 210, 107, 295]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [22, 415, 107, 500]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [22, 565, 107, 650]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [22, 715, 107, 800]}\n]",
+   "reasoning_chars": 1151,
+   "usage": {
+    "completion_tokens": 462,
+    "prompt_tokens": 995,
+    "total_tokens": 1457,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "chat_023.jpg",
+   "seconds": 14.23,
+   "items": [
+    {
+     "text": "Marie Jones",
+     "type": "name",
+     "box": [
+      33,
+      34,
+      245,
+      62
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      115,
+      145,
+      190
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      211,
+      145,
+      283
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      363,
+      145,
+      440
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      523,
+      145,
+      596
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      22,
+      678,
+      145,
+      753
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"Marie Jones\", \"type\": \"name\", \"box\": [33, 34, 245, 62]}, {\"text\": \"\", \"type\": \"face\", \"box\": [22, 115, 145, 190]}, {\"text\": \"\", \"type\": \"face\", \"box\": [22, 211, 145, 283]}, {\"text\": \"\", \"type\": \"face\", \"box\": [22, 363, 145, 440]}, {\"text\": \"\", \"type\": \"face\", \"box\": [22, 523, 145, 596]}, {\"text\": \"\", \"type\": \"face\", \"box\": [22, 678, 145, 753]}]",
+   "reasoning_chars": 1376,
+   "usage": {
+    "completion_tokens": 537,
+    "prompt_tokens": 995,
+    "total_tokens": 1532,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "chat_024.png",
+   "seconds": 12.24,
+   "items": [
+    {
+     "text": "Carolyn Abbott",
+     "type": "name",
+     "box": [
+      32,
+      25,
+      220,
+      55
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      24,
+      135,
+      82,
+      190
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      24,
+      210,
+      82,
+      265
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      24,
+      385,
+      82,
+      440
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      24,
+      560,
+      82,
+      615
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      24,
+      735,
+      82,
+      790
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"Carolyn Abbott\", \"type\": \"name\", \"box\": [32, 25, 220, 55]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [24, 135, 82, 190]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [24, 210, 82, 265]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [24, 385, 82, 440]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [24, 560, 82, 615]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [24, 735, 82, 790]}\n]",
+   "reasoning_chars": 1101,
+   "usage": {
+    "completion_tokens": 459,
+    "prompt_tokens": 995,
+    "total_tokens": 1454,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  }
+ ],
+ "peak_mib_after_load": 18025,
+ "peak_mib": 18105,
+ "gpu_name": "NVIDIA L40S",
+ "server_log_tail": "lot launch_slot_: id  0 | task 28577 | processing task, is_child = 0\n12.49.796.466 I slot print_timing: id  0 | task 28577 | n_gen =    120, tg =  39.54 t/s, tg_3s =  39.87 t/s\n12.52.819.179 I slot print_timing: id  0 | task 28577 | n_gen =    240, tg =  39.62 t/s, tg_3s =  39.70 t/s\n12.55.837.160 I slot print_timing: id  0 | task 28577 | n_gen =    359, tg =  39.56 t/s, tg_3s =  39.43 t/s\n12.58.858.883 I slot print_timing: id  0 | task 28577 | n_gen =    478, tg =  39.51 t/s, tg_3s =  39.38 t/s\n13.00.361.148 I slot print_timing: id  0 | task 28577 | prompt eval time =     581.48 ms /   946 tokens (    0.61 ms per token,  1626.87 tokens per second)\n13.00.361.166 I slot print_timing: id  0 | task 28577 |        eval time =   13574.30 ms /   537 tokens (   25.33 ms per token,    39.49 tokens per second)\n13.00.361.167 I slot print_timing: id  0 | task 28577 |       total time =   14155.79 ms /  1483 tokens\n13.00.361.168 I slot print_timing: id  0 | task 28577 |    graphs reused =      28682\n13.00.361.168 I slot print_timing: id  0 | task 28577 |   graph reallocs =          0    /     0        (same size) / (changed size)\n13.00.361.208 I slot      release: id  0 | task 28577 | stop processing: n_tokens = 1531, truncated = 0\n13.00.398.248 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 1531, t_last = 781932085\n13.00.433.548 I slot launch_slot_: id  0 | task 29118 | processing task, is_child = 0\n13.04.020.245 I slot print_timing: id  0 | task 29118 | n_gen =    119, tg =  39.31 t/s, tg_3s =  39.64 t/s\n13.07.027.665 I slot print_timing: id  0 | task 29118 | n_gen =    238, tg =  39.44 t/s, tg_3s =  39.57 t/s\n13.10.043.093 I slot print_timing: id  0 | task 29118 | n_gen =    358, tg =  39.56 t/s, tg_3s =  39.80 t/s\n13.12.606.274 I slot print_timing: id  0 | task 29118 | prompt eval time =     584.95 ms /   946 tokens (    0.62 ms per token,  1617.24 tokens per second)\n13.12.606.289 I slot print_timing: id  0 | task 29118 |        eval time =   11587.73 ms /   459 tokens (   25.30 ms per token,    39.52 tokens per second)\n13.12.606.290 I slot print_timing: id  0 | task 29118 |       total time =   12172.68 ms /  1405 tokens\n13.12.606.291 I slot print_timing: id  0 | task 29118 |    graphs reused =      29137\n13.12.606.291 I slot print_timing: id  0 | task 29118 |   graph reallocs =          0    /     0        (same size) / (changed size)\n13.12.606.321 I slot      release: id  0 | task 29118 | stop processing: n_tokens = 1453, truncated = 0\n",
+ "wall_seconds": 792.9423425197601
+}

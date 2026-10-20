@@ -1,0 +1,395 @@
+{
+ "glimmer": {
+  "frames": {
+   "px": {
+    "false_face_boxes": 38,
+    "pictures_with_a_face_reported": {
+     "all": "55/55 (100.0%)",
+     "id_card": "37/37 (100.0%)",
+     "chat": "18/18 (100.0%)"
+    },
+    "groups": {
+     "all": {
+      "n_faces": 122,
+      "box_hit_rate_pct": 68.9,
+      "hit": 84,
+      "strict_iou_ge_0.5_pct": 0.0,
+      "median_best_iou": 0.111,
+      "median_pred_to_true_area_ratio_of_hits": 5.246
+     },
+     "id_card": {
+      "n_faces": 37,
+      "box_hit_rate_pct": 97.3,
+      "hit": 36,
+      "strict_iou_ge_0.5_pct": 0.0,
+      "median_best_iou": 0.157,
+      "median_pred_to_true_area_ratio_of_hits": 4.769
+     },
+     "large_ge60px": {
+      "n_faces": 36,
+      "box_hit_rate_pct": 97.2,
+      "hit": 35,
+      "strict_iou_ge_0.5_pct": 0.0,
+      "median_best_iou": 0.16,
+      "median_pred_to_true_area_ratio_of_hits": 4.568
+     },
+     "skin_prompt:light olive skin": {
+      "n_faces": 20,
+      "box_hit_rate_pct": 60.0,
+      "hit": 12,
+      "strict_iou_ge_0.5_pct": 0.0,
+      "median_best_iou": 0.11,
+      "median_pred_to_true_area_ratio_of_hits": 5.266
+     },
+     "skin_prompt:medium tan skin": {
+      "n_faces": 20,
+      "box_hit_rate_pct": 90.0,
+      "hit": 18,
+      "strict_iou_ge_0.5_pct": 0.0,
+      "median_best_iou": 0.197,
+      "median_pred_to_true_area_ratio_of_hits": 4.19
+     },
+     "skin_prompt:very light skin": {
+      "n_faces": 26,
+      "box_hit_rate_pct": 61.5,
+      "hit": 16,
+      "strict_iou_ge_0.5_pct": 0.0,
+      "median_best_iou": 0.109,
+      "median_pred_to_true_area_ratio_of_hits": 4.27
+     },
+     "skin_prompt:brown skin": {
+      "n_faces": 26,
+      "box_hit_rate_pct": 73.1,
+      "hit": 19,
+      "strict_iou_ge_0.5_pct": 0.0,
+      "median_best_iou": 0.117,
+      "median_pred_to_true_area_ratio_of_hits": 6.136
+     },
+     "skin_prompt:deep dark brown skin": {
+      "n_faces": 30,
+      "box_hit_rate_pct": 63.3,
+      "hit": 19,
+      "strict_iou_ge_0.5_pct": 0.0,
+      "median_best_iou": 0.09,
+      "median_pred_to_true_area_ratio_of_hits": 4.568
+     },
+     "small_lt60px": {
+      "n_faces": 86,
+      "box_hit_rate_pct": 57.0,
+      "hit": 49,
+      "strict_iou_ge_0.5_pct": 0.0,
+      "median_best_iou": 0.081,
+      "median_pred_to_true_area_ratio_of_hits": 5.266
+     },
+     "chat": {
+      "n_faces": 85,
+      "box_hit_rate_pct": 56.5,
+      "hit": 48,
+      "strict_iou_ge_0.5_pct": 0.0,
+      "median_best_iou": 0.081,
+      "median_pred_to_true_area_ratio_of_hits": 5.266
+     }
+    }
+   },
+   "norm1000": {
+    "false_face_boxes": 37,
+    "pictures_with_a_face_reported": {
+     "all": "55/55 (100.0%)",
+     "id_card": "37/37 (100.0%)",
+     "chat": "18/18 (100.0%)"
+    },
+    "groups": {
+     "all": {
+      "n_faces": 122,
+      "box_hit_rate_pct": 69.7,
+      "hit": 85,
+      "strict_iou_ge_0.5_pct": 8.2,
+      "median_best_iou": 0.191,
+      "median_pred_to_true_area_ratio_of_hits": 3.16
+     },
+     "id_card": {
+      "n_faces": 37,
+      "box_hit_rate_pct": 100.0,
+      "hit": 37,
+      "strict_iou_ge_0.5_pct": 27.0,
+      "median_best_iou": 0.296,
+      "median_pred_to_true_area_ratio_of_hits": 3.18
+     },
+     "large_ge60px": {
+      "n_faces": 36,
+      "box_hit_rate_pct": 100.0,
+      "hit": 36,
+      "strict_iou_ge_0.5_pct": 27.8,
+      "median_best_iou": 0.301,
+      "median_pred_to_true_area_ratio_of_hits": 3.052
+     },
+     "skin_prompt:light olive skin": {
+      "n_faces": 20,
+      "box_hit_rate_pct": 60.0,
+      "hit": 12,
+      "strict_iou_ge_0.5_pct": 10.0,
+      "median_best_iou": 0.175,
+      "median_pred_to_true_area_ratio_of_hits": 3.16
+     },
+     "skin_prompt:medium tan skin": {
+      "n_faces": 20,
+      "box_hit_rate_pct": 90.0,
+      "hit": 18,
+      "strict_iou_ge_0.5_pct": 15.0,
+      "median_best_iou": 0.385,
+      "median_pred_to_true_area_ratio_of_hits": 2.545
+     },
+     "skin_prompt:very light skin": {
+      "n_faces": 26,
+      "box_hit_rate_pct": 65.4,
+      "hit": 17,
+      "strict_iou_ge_0.5_pct": 7.7,
+      "median_best_iou": 0.218,
+      "median_pred_to_true_area_ratio_of_hits": 2.562
+     },
+     "skin_prompt:brown skin": {
+      "n_faces": 26,
+      "box_hit_rate_pct": 73.1,
+      "hit": 19,
+      "strict_iou_ge_0.5_pct": 7.7,
+      "median_best_iou": 0.199,
+      "median_pred_to_true_area_ratio_of_hits": 3.682
+     },
+     "skin_prompt:deep dark brown skin": {
+      "n_faces": 30,
+      "box_hit_rate_pct": 63.3,
+      "hit": 19,
+      "strict_iou_ge_0.5_pct": 3.3,
+      "median_best_iou": 0.149,
+      "median_pred_to_true_area_ratio_of_hits": 2.924
+     },
+     "small_lt60px": {
+      "n_faces": 86,
+      "box_hit_rate_pct": 57.0,
+      "hit": 49,
+      "strict_iou_ge_0.5_pct": 0.0,
+      "median_best_iou": 0.134,
+      "median_pred_to_true_area_ratio_of_hits": 3.16
+     },
+     "chat": {
+      "n_faces": 85,
+      "box_hit_rate_pct": 56.5,
+      "hit": 48,
+      "strict_iou_ge_0.5_pct": 0.0,
+      "median_best_iou": 0.134,
+      "median_pred_to_true_area_ratio_of_hits": 3.16
+     }
+    }
+   },
+   "norm1": {
+    "false_face_boxes": 122,
+    "pictures_with_a_face_reported": {
+     "all": "55/55 (100.0%)",
+     "id_card": "37/37 (100.0%)",
+     "chat": "18/18 (100.0%)"
+    },
+    "groups": {
+     "all": {
+      "n_faces": 122,
+      "box_hit_rate_pct": 0.0,
+      "hit": 0,
+      "strict_iou_ge_0.5_pct": 0.0,
+      "median_best_iou": 0.0,
+      "median_pred_to_true_area_ratio_of_hits": null
+     },
+     "id_card": {
+      "n_faces": 37,
+      "box_hit_rate_pct": 0.0,
+      "hit": 0,
+      "strict_iou_ge_0.5_pct": 0.0,
+      "median_best_iou": 0.0,
+      "median_pred_to_true_area_ratio_of_hits": null
+     },
+     "large_ge60px": {
+      "n_faces": 36,
+      "box_hit_rate_pct": 0.0,
+      "hit": 0,
+      "strict_iou_ge_0.5_pct": 0.0,
+      "median_best_iou": 0.0,
+      "median_pred_to_true_area_ratio_of_hits": null
+     },
+     "skin_prompt:light olive skin": {
+      "n_faces": 20,
+      "box_hit_rate_pct": 0.0,
+      "hit": 0,
+      "strict_iou_ge_0.5_pct": 0.0,
+      "median_best_iou": 0.0,
+      "median_pred_to_true_area_ratio_of_hits": null
+     },
+     "skin_prompt:medium tan skin": {
+      "n_faces": 20,
+      "box_hit_rate_pct": 0.0,
+      "hit": 0,
+      "strict_iou_ge_0.5_pct": 0.0,
+      "median_best_iou": 0.0,
+      "median_pred_to_true_area_ratio_of_hits": null
+     },
+     "skin_prompt:very light skin": {
+      "n_faces": 26,
+      "box_hit_rate_pct": 0.0,
+      "hit": 0,
+      "strict_iou_ge_0.5_pct": 0.0,
+      "median_best_iou": 0.0,
+      "median_pred_to_true_area_ratio_of_hits": null
+     },
+     "skin_prompt:brown skin": {
+      "n_faces": 26,
+      "box_hit_rate_pct": 0.0,
+      "hit": 0,
+      "strict_iou_ge_0.5_pct": 0.0,
+      "median_best_iou": 0.0,
+      "median_pred_to_true_area_ratio_of_hits": null
+     },
+     "skin_prompt:deep dark brown skin": {
+      "n_faces": 30,
+      "box_hit_rate_pct": 0.0,
+      "hit": 0,
+      "strict_iou_ge_0.5_pct": 0.0,
+      "median_best_iou": 0.0,
+      "median_pred_to_true_area_ratio_of_hits": null
+     },
+     "small_lt60px": {
+      "n_faces": 86,
+      "box_hit_rate_pct": 0.0,
+      "hit": 0,
+      "strict_iou_ge_0.5_pct": 0.0,
+      "median_best_iou": 0.0,
+      "median_pred_to_true_area_ratio_of_hits": null
+     },
+     "chat": {
+      "n_faces": 85,
+      "box_hit_rate_pct": 0.0,
+      "hit": 0,
+      "strict_iou_ge_0.5_pct": 0.0,
+      "median_best_iou": 0.0,
+      "median_pred_to_true_area_ratio_of_hits": null
+     }
+    }
+   }
+  },
+  "seconds_per_picture_mean": 14.15,
+  "parse_errors": 0,
+  "seconds_per_picture_median": 13.73,
+  "peak_mib": 18105,
+  "gpu_name": "NVIDIA L40S",
+  "load_seconds": 14.1
+ },
+ "sam": {
+  "errors": 0,
+  "pictures_scored": 55,
+  "pictures_with_a_mask": {
+   "all": "55/55 (100.0%)",
+   "id_card": "37/37 (100.0%)",
+   "chat": "18/18 (100.0%)"
+  },
+  "masks_touching_no_face": 0,
+  "seconds_per_picture_mean": 0.15,
+  "seconds_per_picture_median": 0.12,
+  "peak_mib_nvidia_smi": 6766,
+  "peak_mib_torch_allocated": 5817,
+  "load_seconds": 13.4,
+  "groups": {
+   "all": {
+    "n_faces": 122,
+    "found_any_overlap_pct": 100.0,
+    "found_cov_ge50_pct": 100.0,
+    "found_cov_ge90_pct": 45.1,
+    "mean_mask_coverage_pct": 87.6,
+    "mean_outer_rectangle_coverage_pct": 99.4,
+    "mean_union_of_all_masks_coverage_pct": 87.6
+   },
+   "id_card": {
+    "n_faces": 37,
+    "found_any_overlap_pct": 100.0,
+    "found_cov_ge50_pct": 100.0,
+    "found_cov_ge90_pct": 5.4,
+    "mean_mask_coverage_pct": 80.3,
+    "mean_outer_rectangle_coverage_pct": 98.6,
+    "mean_union_of_all_masks_coverage_pct": 80.3
+   },
+   "large_ge60px": {
+    "n_faces": 36,
+    "found_any_overlap_pct": 100.0,
+    "found_cov_ge50_pct": 100.0,
+    "found_cov_ge90_pct": 5.6,
+    "mean_mask_coverage_pct": 80.4,
+    "mean_outer_rectangle_coverage_pct": 98.7,
+    "mean_union_of_all_masks_coverage_pct": 80.4
+   },
+   "skin_prompt:light olive skin": {
+    "n_faces": 20,
+    "found_any_overlap_pct": 100.0,
+    "found_cov_ge50_pct": 100.0,
+    "found_cov_ge90_pct": 35.0,
+    "mean_mask_coverage_pct": 87.8,
+    "mean_outer_rectangle_coverage_pct": 99.2,
+    "mean_union_of_all_masks_coverage_pct": 87.8
+   },
+   "skin_prompt:medium tan skin": {
+    "n_faces": 20,
+    "found_any_overlap_pct": 100.0,
+    "found_cov_ge50_pct": 100.0,
+    "found_cov_ge90_pct": 25.0,
+    "mean_mask_coverage_pct": 85.2,
+    "mean_outer_rectangle_coverage_pct": 99.6,
+    "mean_union_of_all_masks_coverage_pct": 85.2
+   },
+   "skin_prompt:very light skin": {
+    "n_faces": 26,
+    "found_any_overlap_pct": 100.0,
+    "found_cov_ge50_pct": 100.0,
+    "found_cov_ge90_pct": 61.5,
+    "mean_mask_coverage_pct": 89.6,
+    "mean_outer_rectangle_coverage_pct": 99.5,
+    "mean_union_of_all_masks_coverage_pct": 89.6
+   },
+   "skin_prompt:brown skin": {
+    "n_faces": 26,
+    "found_any_overlap_pct": 100.0,
+    "found_cov_ge50_pct": 100.0,
+    "found_cov_ge90_pct": 53.8,
+    "mean_mask_coverage_pct": 87.7,
+    "mean_outer_rectangle_coverage_pct": 99.6,
+    "mean_union_of_all_masks_coverage_pct": 87.7
+   },
+   "skin_prompt:deep dark brown skin": {
+    "n_faces": 30,
+    "found_any_overlap_pct": 100.0,
+    "found_cov_ge50_pct": 100.0,
+    "found_cov_ge90_pct": 43.3,
+    "mean_mask_coverage_pct": 87.3,
+    "mean_outer_rectangle_coverage_pct": 99.3,
+    "mean_union_of_all_masks_coverage_pct": 87.3
+   },
+   "small_lt60px": {
+    "n_faces": 86,
+    "found_any_overlap_pct": 100.0,
+    "found_cov_ge50_pct": 100.0,
+    "found_cov_ge90_pct": 61.6,
+    "mean_mask_coverage_pct": 90.6,
+    "mean_outer_rectangle_coverage_pct": 99.7,
+    "mean_union_of_all_masks_coverage_pct": 90.6
+   },
+   "chat": {
+    "n_faces": 85,
+    "found_any_overlap_pct": 100.0,
+    "found_cov_ge50_pct": 100.0,
+    "found_cov_ge90_pct": 62.4,
+    "mean_mask_coverage_pct": 90.8,
+    "mean_outer_rectangle_coverage_pct": 99.8,
+    "mean_union_of_all_masks_coverage_pct": 90.8
+   }
+  }
+ },
+ "dev_faces": {
+  "pictures": 55,
+  "faces": 122,
+  "id_card_faces": 37,
+  "chat_faces": 85
+ }
+}

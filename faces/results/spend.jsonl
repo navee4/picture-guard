@@ -1,2 +1,5 @@
 {"run": "sdxl_portraits_attempt1_failed_ModuleNotFoundError_common", "gpu": "L40S", "gpu_seconds": 0, "wall_seconds": 0, "cpu_cores": 4, "mem_gib": 32, "usd": 0.05, "note": "ESTIMATE; containers died at import (No module named common) before any model load; image build plus a few seconds of container time; exact figure from modal billing report later"}
 {"run": "sdxl_portraits_75", "gpu": "L40S", "gpu_seconds": 391.8, "wall_seconds": 391.8, "cpu_cores": 4, "mem_gib": 32, "usd": 0.302, "note": "peak 10738 MiB"}
+{"run": "sam31_faces_dev55", "gpu": "L40S", "gpu_seconds": 29.7, "wall_seconds": 29.7, "cpu_cores": 4, "mem_gib": 32, "usd": 0.0229, "note": "load=13.4s"}
+{"run": "glimmer_q4_faces_dev55", "gpu": "L40S", "gpu_seconds": 792.9, "wall_seconds": 792.9, "cpu_cores": 4, "mem_gib": 32, "usd": 0.6111, "note": "ready=True load=14.1s"}
+{"run": "sdxl_regen_check", "gpu": "L40S", "gpu_seconds": 38.9, "wall_seconds": 38.9, "cpu_cores": 4, "mem_gib": 32, "usd": 0.03, "note": "5 portraits"}
