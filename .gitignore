@@ -10,4 +10,4 @@ testset/.check_tmp/
 *.bin
 *.pt
 *.pth
-spike/out/
+spike/out/   # scratch: staged dev pictures, licence copies, logs
