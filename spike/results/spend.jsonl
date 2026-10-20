@@ -1,1 +1,9 @@
 {"run": "download_glimmer_q4", "gpu": null, "gpu_seconds": 0, "wall_seconds": 67.6, "cpu_cores": 4, "mem_gib": 8, "usd": 0.0119, "note": "CPU download to Volume"}
+{"run": "glimmer_q4_dev20", "gpu": "L40S", "gpu_seconds": 383.0, "wall_seconds": 383.0, "cpu_cores": 4, "mem_gib": 32, "usd": 0.2952, "note": "ready=True load=24.1s"}
+{"run": "tesseract_psm3", "gpu": null, "gpu_seconds": 0, "wall_seconds": 11.8, "cpu_cores": 2, "mem_gib": 4, "usd": 0.001, "note": "CPU"}
+{"run": "tesseract_psm11", "gpu": null, "gpu_seconds": 0, "wall_seconds": 12.7, "cpu_cores": 2, "mem_gib": 4, "usd": 0.0011, "note": "CPU"}
+{"run": "glimmer_q4_dev20_medium", "gpu": "L40S", "gpu_seconds": 711.3, "wall_seconds": 711.3, "cpu_cores": 4, "mem_gib": 32, "usd": 0.5482, "note": "ready=True load=16.0s"}
+{"run": "download_glimmer_bf16", "gpu": null, "gpu_seconds": 0, "wall_seconds": 473.8, "cpu_cores": 4, "mem_gib": 8, "usd": 0.0831, "note": "CPU download to Volume"}
+{"run": "glimmer_bf16_dev20_attempt1_lost", "gpu": "H100", "gpu_seconds": 542, "wall_seconds": 542, "cpu_cores": 8, "mem_gib": 64, "usd": 0.7288, "note": "result could not be unpickled locally (torch.__version__); cost from `modal billing report --for today --show-resources`: H100 0.5947 + CPU 0.0570 + memory 0.0771"}
+{"run": "image_builds_and_other_unlogged", "gpu": null, "gpu_seconds": 0, "wall_seconds": 0, "cpu_cores": 0, "mem_gib": 0, "usd": 0.5676, "note": "reconciliation to Modal metered total $2.24 at 20 Oct afternoon (CUDA image builds on CPU, egress); `modal billing summary`"}
+{"run": "glimmer_bf16_dev20", "gpu": "H100", "gpu_seconds": 1021.7, "wall_seconds": 1021.7, "cpu_cores": 8, "mem_gib": 64, "usd": 1.5882, "note": "load=39.9s"}

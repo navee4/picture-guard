@@ -1,0 +1,76 @@
+{
+ "replaced": 95,
+ "items": 159,
+ "score": {
+  "all": {
+   "pictures": 20,
+   "value_recall": 0.915,
+   "box_hit_rate": 0.747,
+   "value_and_box": 0.654,
+   "type_accuracy_of_found": 1.0,
+   "false_alarms_per_picture": 0.15,
+   "unmatched_items_per_picture": 0.3,
+   "readable_share": 0.936,
+   "median_box_area_ratio": 0.74,
+   "planted_text_values": 153,
+   "planted_personal_spans": 158,
+   "returned_items": 159
+  },
+  "payslip": {
+   "pictures": 5,
+   "value_recall": 1.0,
+   "box_hit_rate": 0.925,
+   "value_and_box": 0.85,
+   "type_accuracy_of_found": 1.0,
+   "false_alarms_per_picture": 0.0,
+   "unmatched_items_per_picture": 0.0,
+   "readable_share": 1.0,
+   "median_box_area_ratio": 0.72,
+   "planted_text_values": 40,
+   "planted_personal_spans": 40,
+   "returned_items": 40
+  },
+  "letter": {
+   "pictures": 5,
+   "value_recall": 0.88,
+   "box_hit_rate": 0.7,
+   "value_and_box": 0.54,
+   "type_accuracy_of_found": 1.0,
+   "false_alarms_per_picture": 0.2,
+   "unmatched_items_per_picture": 0.4,
+   "readable_share": 0.941,
+   "median_box_area_ratio": 0.7,
+   "planted_text_values": 50,
+   "planted_personal_spans": 50,
+   "returned_items": 50
+  },
+  "id_card": {
+   "pictures": 5,
+   "value_recall": 0.886,
+   "box_hit_rate": 0.775,
+   "value_and_box": 0.743,
+   "type_accuracy_of_found": 1.0,
+   "false_alarms_per_picture": 0.4,
+   "unmatched_items_per_picture": 0.4,
+   "readable_share": 0.683,
+   "median_box_area_ratio": 0.78,
+   "planted_text_values": 35,
+   "planted_personal_spans": 40,
+   "returned_items": 40
+  },
+  "chat": {
+   "pictures": 5,
+   "value_recall": 0.893,
+   "box_hit_rate": 0.536,
+   "value_and_box": 0.464,
+   "type_accuracy_of_found": 1.0,
+   "false_alarms_per_picture": 0.0,
+   "unmatched_items_per_picture": 0.4,
+   "readable_share": 0.981,
+   "median_box_area_ratio": 0.75,
+   "planted_text_values": 28,
+   "planted_personal_spans": 28,
+   "returned_items": 29
+  }
+ }
+}

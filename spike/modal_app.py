@@ -53,6 +53,15 @@ llama_image = (
     .add_local_file(DEV_DIR / "dev_key.json", "/data/dev_key.json")
 )
 
+hf_image = (
+    modal.Image.debian_slim(python_version="3.12")
+    .pip_install("torch", "torchvision", "transformers>=5.15", "accelerate", "pillow", "numpy", "requests")
+    .env({"HF_HOME": f"{MODELS}/hf"})
+    .add_local_file(ROOT / "spike" / "common.py", "/root/common.py", copy=True)
+    .add_local_dir(DEV_DIR / "images", "/data/images")
+    .add_local_file(DEV_DIR / "dev_key.json", "/data/dev_key.json")
+)
+
 tess_image = (
     modal.Image.debian_slim(python_version="3.12").apt_install("tesseract-ocr").pip_install("pytesseract", "pillow", "numpy")
     .add_local_file(ROOT / "spike" / "common.py", "/root/common.py", copy=True)
@@ -448,3 +457,103 @@ def sam(glimmer_run: str = "glimmer_q4_dev20", frame: str = "px", all_dev: bool 
     RESULTS.mkdir(exist_ok=True)
     (RESULTS / "sam31_dev20.json").write_text(json.dumps(out, indent=1))
     print(json.dumps({k: v for k, v in out.items() if k != "pictures"}, indent=1))
+
+
+# ---- step 4: Muse Glimmer BF16 on an H100 (transformers), only because box quality at 4-bit was poor ----
+BF16_REPO = "meta-models/Muse-Glimmer-30B"
+
+
+@app.local_entrypoint()
+def download_bf16():
+    r = _download.remote(BF16_REPO, ["*.safetensors", "*.json", "*.jinja"])
+    common.log_spend("download_glimmer_bf16", r["seconds"], None, 4, 8, "CPU download to Volume")
+    print(r)
+
+
+def _parse_last_list(text):
+    import re
+    t = text or ""
+    starts = [m.start() for m in re.finditer(r"\[\s*\{", t)]  # the model writes "[" then a newline
+    start = starts[-1] if starts else -1
+    end = t.rfind("]")
+    if start < 0 or end < start:
+        return [], "no JSON list found"
+    try:
+        return [x for x in json.loads(t[start:end + 1]) if isinstance(x, dict)], None
+    except Exception as e:  # noqa: BLE001
+        return [], f"parse error: {e}"
+
+
+@app.function(image=hf_image, gpu="H100", volumes={MODELS: vol}, timeout=3600, cpu=8, memory=65536)
+def glimmer_bf16_h100(names, reasoning):
+    import threading
+    import torch
+    from PIL import Image
+    from transformers import AutoModelForImageTextToText, AutoProcessor
+    import transformers
+    vol.reload()
+    t_start = time.time()
+    path = f"{MODELS}/{BF16_REPO.replace('/', '__')}"
+    peak = {"mib": 0}
+    stop = threading.Event()
+
+    def poll():
+        while not stop.is_set():
+            try:
+                peak["mib"] = max(peak["mib"], _gpu_mem_mib()[0])
+            except Exception:  # noqa: BLE001
+                pass
+            time.sleep(0.5)
+    threading.Thread(target=poll, daemon=True).start()
+    t0 = time.time()
+    proc = AutoProcessor.from_pretrained(path)
+    model = AutoModelForImageTextToText.from_pretrained(path, dtype=torch.bfloat16, device_map="cuda")
+    load_s = time.time() - t0
+    out = {"transformers": str(transformers.__version__), "torch": str(torch.__version__), "load_seconds": round(load_s, 1),
+           "peak_mib_after_load": peak["mib"], "results": []}
+    key = {e["file"]: e for e in json.load(open("/data/dev_key.json"))["images"]}
+    for name in names:
+        e = key[name]
+        assert e["split"] == "dev"
+        img = Image.open(f"/data/images/{name}").convert("RGB")
+        msgs = [{"role": "user", "content": [{"type": "image", "image": img},
+                {"type": "text", "text": PROMPT.format(w=e["width"], h=e["height"], types=", ".join(PII_TYPES))}]}]
+        t1 = time.time()
+        try:
+            inp = proc.apply_chat_template(msgs, add_generation_prompt=True, tokenize=True, return_dict=True,
+                                           return_tensors="pt", reasoning_strength=reasoning).to(model.device)
+            with torch.no_grad():
+                gen = model.generate(**inp, max_new_tokens=6000, do_sample=True, temperature=1.0, top_p=0.95, top_k=64)
+            new = gen[0][inp["input_ids"].shape[1]:]
+            text = proc.decode(new, skip_special_tokens=False)
+            items, err = _parse_last_list(text)
+            rec = {"file": name, "seconds": round(time.time() - t1, 2), "items": items, "parse_error": err,
+                   "content": text[-3000:], "prompt_tokens": int(inp["input_ids"].shape[1]), "completion_tokens": int(len(new))}
+        except Exception as ex:  # noqa: BLE001
+            rec = {"file": name, "seconds": round(time.time() - t1, 2), "items": [], "parse_error": f"{type(ex).__name__}: {str(ex)[:500]}"}
+        out["results"].append(rec)
+    stop.set()
+    out["peak_mib"] = peak["mib"]
+    out["peak_mib_torch_allocated"] = round(torch.cuda.max_memory_allocated() / 2**20)
+    out["gpu_name"] = torch.cuda.get_device_name(0)
+    out["wall_seconds"] = time.time() - t_start
+    return out
+
+
+@app.local_entrypoint()
+def glimmer_bf16(reasoning: str = "low", tag: str = ""):
+    key = common.load_key(DEV_DIR / "dev_key.json")
+    entries = common.select_eval(key)
+    common.guard_budget(5.0)
+    out = glimmer_bf16_h100.remote([e["file"] for e in entries], reasoning)
+    run = f"glimmer_bf16_dev20{tag}"
+    common.log_spend(run, out["wall_seconds"], "H100", 8, 64, f"load={out['load_seconds']}s")
+    out["score_by_frame"] = _score_glimmer(out, entries, run)
+    secs = [r["seconds"] for r in out["results"]]
+    out["seconds_per_picture_mean"] = round(sum(secs) / len(secs), 2)
+    RESULTS.mkdir(exist_ok=True)
+    (RESULTS / f"{run}.json").write_text(json.dumps(out, indent=1))
+    print(json.dumps({k: v for k, v in out.items() if k not in ("results", "score_by_frame")}, indent=1))
+    for fr, agg in out["score_by_frame"].items():
+        print(fr, json.dumps(agg["all"]))
+    print([r["parse_error"] for r in out["results"] if r["parse_error"]][:3])

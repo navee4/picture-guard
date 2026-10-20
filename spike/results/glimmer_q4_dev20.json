@@ -1,0 +1,2183 @@
+{
+ "llama_version": "version: 0.7.0-dev (build 1, commit a01ce9f)\nbuilt with GNU 11.4.0 for Linux x86_64",
+ "cmd": "/opt/llama.cpp/build/bin/llama-server -m /models/meta-models__Muse-Glimmer-30B-GGUF/Muse-Glimmer-30B-KQuant-17GB-Q4_K_M.gguf --mmproj /models/meta-models__Muse-Glimmer-30B-GGUF/mmproj-Muse-Glimmer-30B-Q4_K_M.gguf -a glimmer -ngl 99 -c 32768 -np 1 --host 127.0.0.1 --port 8080 --jinja --temp 1.0 --top-p 0.95 --top-k 64 --chat-template-kwargs {\"reasoning_strength\": \"low\"} --image-max-tokens 4096",
+ "load_seconds": 24.1,
+ "ready": true,
+ "results": [
+  {
+   "file": "payslip_000.jpg",
+   "seconds": 12.27,
+   "items": [
+    {
+     "text": "Katie Edwards",
+     "type": "name",
+     "box": [
+      340,
+      188,
+      495,
+      209
+     ]
+    },
+    {
+     "text": "4 Heath Inlet",
+     "type": "address",
+     "box": [
+      340,
+      210,
+      475,
+      230
+     ]
+    },
+    {
+     "text": "Schofieldbury",
+     "type": "address",
+     "box": [
+      340,
+      232,
+      470,
+      252
+     ]
+    },
+    {
+     "text": "M9E 0TQ",
+     "type": "postcode",
+     "box": [
+      340,
+      255,
+      440,
+      277
+     ]
+    },
+    {
+     "text": "LZ 46 07 51 D",
+     "type": "ni_number",
+     "box": [
+      340,
+      278,
+      490,
+      299
+     ]
+    },
+    {
+     "text": "12 Jan 1976",
+     "type": "dob",
+     "box": [
+      340,
+      301,
+      455,
+      323
+     ]
+    },
+    {
+     "text": "57-91-20",
+     "type": "sort_code",
+     "box": [
+      340,
+      324,
+      435,
+      345
+     ]
+    },
+    {
+     "text": "47804613",
+     "type": "account_number",
+     "box": [
+      340,
+      348,
+      445,
+      369
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"Katie Edwards\", \"type\": \"name\", \"box\": [340, 188, 495, 209]}, {\"text\": \"4 Heath Inlet\", \"type\": \"address\", \"box\": [340, 210, 475, 230]}, {\"text\": \"Schofieldbury\", \"type\": \"address\", \"box\": [340, 232, 470, 252]}, {\"text\": \"M9E 0TQ\", \"type\": \"postcode\", \"box\": [340, 255, 440, 277]}, {\"text\": \"LZ 46 07 51 D\", \"type\": \"ni_number\", \"box\": [340, 278, 490, 299]}, {\"text\": \"12 Jan 1976\", \"type\": \"dob\", \"box\": [340, 301, 455, 323]}, {\"text\": \"57-91-20\", \"type\": \"sort_code\", \"box\": [340, 324, 435, 345]}, {\"text\": \"47804613\", \"type\": \"account_number\", \"box\": [340, 348, 445, 369]}]",
+   "reasoning_chars": 646,
+   "usage": {
+    "completion_tokens": 428,
+    "prompt_tokens": 1636,
+    "total_tokens": 2064,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "payslip_001.png",
+   "seconds": 17.94,
+   "items": [
+    {
+     "text": "Adam Smith",
+     "type": "name",
+     "box": [
+      365,
+      157,
+      488,
+      173
+     ]
+    },
+    {
+     "text": "58 Maurice Rue",
+     "type": "address",
+     "box": [
+      365,
+      177,
+      540,
+      193
+     ]
+    },
+    {
+     "text": "South Abigail",
+     "type": "address",
+     "box": [
+      365,
+      196,
+      525,
+      212
+     ]
+    },
+    {
+     "text": "W4U 7DL",
+     "type": "postcode",
+     "box": [
+      365,
+      218,
+      472,
+      234
+     ]
+    },
+    {
+     "text": "XZ 74 37 14 B",
+     "type": "ni_number",
+     "box": [
+      365,
+      237,
+      527,
+      253
+     ]
+    },
+    {
+     "text": "09 May 1975",
+     "type": "dob",
+     "box": [
+      365,
+      258,
+      500,
+      274
+     ]
+    },
+    {
+     "text": "06-33-48",
+     "type": "sort_code",
+     "box": [
+      365,
+      276,
+      468,
+      293
+     ]
+    },
+    {
+     "text": "75805277",
+     "type": "account_number",
+     "box": [
+      365,
+      296,
+      468,
+      311
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"Adam Smith\", \"type\": \"name\", \"box\": [365, 157, 488, 173]},\n  {\"text\": \"58 Maurice Rue\", \"type\": \"address\", \"box\": [365, 177, 540, 193]},\n  {\"text\": \"South Abigail\", \"type\": \"address\", \"box\": [365, 196, 525, 212]},\n  {\"text\": \"W4U 7DL\", \"type\": \"postcode\", \"box\": [365, 218, 472, 234]},\n  {\"text\": \"XZ 74 37 14 B\", \"type\": \"ni_number\", \"box\": [365, 237, 527, 253]},\n  {\"text\": \"09 May 1975\", \"type\": \"dob\", \"box\": [365, 258, 500, 274]},\n  {\"text\": \"06-33-48\", \"type\": \"sort_code\", \"box\": [365, 276, 468, 293]},\n  {\"text\": \"75805277\", \"type\": \"account_number\", \"box\": [365, 296, 468, 311]}\n]",
+   "reasoning_chars": 1216,
+   "usage": {
+    "completion_tokens": 660,
+    "prompt_tokens": 1636,
+    "total_tokens": 2296,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "payslip_002.png",
+   "seconds": 15.76,
+   "items": [
+    {
+     "text": "Sian Griffiths",
+     "type": "name",
+     "box": [
+      350,
+      160,
+      560,
+      180
+     ]
+    },
+    {
+     "text": "99 Leanne Lane",
+     "type": "address",
+     "box": [
+      350,
+      190,
+      580,
+      210
+     ]
+    },
+    {
+     "text": "North Simon",
+     "type": "address",
+     "box": [
+      350,
+      215,
+      520,
+      235
+     ]
+    },
+    {
+     "text": "WC3R 5AL",
+     "type": "postcode",
+     "box": [
+      350,
+      240,
+      480,
+      260
+     ]
+    },
+    {
+     "text": "BJ 70 50 40 D",
+     "type": "ni_number",
+     "box": [
+      350,
+      265,
+      570,
+      285
+     ]
+    },
+    {
+     "text": "03 October 1968",
+     "type": "dob",
+     "box": [
+      350,
+      290,
+      580,
+      310
+     ]
+    },
+    {
+     "text": "86-14-13",
+     "type": "sort_code",
+     "box": [
+      350,
+      315,
+      470,
+      335
+     ]
+    },
+    {
+     "text": "49908630",
+     "type": "account_number",
+     "box": [
+      350,
+      340,
+      480,
+      360
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"Sian Griffiths\", \"type\": \"name\", \"box\": [350, 160, 560, 180]}, {\"text\": \"99 Leanne Lane\", \"type\": \"address\", \"box\": [350, 190, 580, 210]}, {\"text\": \"North Simon\", \"type\": \"address\", \"box\": [350, 215, 520, 235]}, {\"text\": \"WC3R 5AL\", \"type\": \"postcode\", \"box\": [350, 240, 480, 260]}, {\"text\": \"BJ 70 50 40 D\", \"type\": \"ni_number\", \"box\": [350, 265, 570, 285]}, {\"text\": \"03 October 1968\", \"type\": \"dob\", \"box\": [350, 290, 580, 310]}, {\"text\": \"86-14-13\", \"type\": \"sort_code\", \"box\": [350, 315, 470, 335]}, {\"text\": \"49908630\", \"type\": \"account_number\", \"box\": [350, 340, 480, 360]}]",
+   "reasoning_chars": 953,
+   "usage": {
+    "completion_tokens": 577,
+    "prompt_tokens": 1636,
+    "total_tokens": 2213,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "payslip_003.jpg",
+   "seconds": 15.14,
+   "items": [
+    {
+     "text": "Bruce Taylor",
+     "type": "name",
+     "box": [
+      350,
+      165,
+      550,
+      190
+     ]
+    },
+    {
+     "text": "6 Matthew Track",
+     "type": "address",
+     "box": [
+      350,
+      195,
+      575,
+      220
+     ]
+    },
+    {
+     "text": "Cliffordfurt",
+     "type": "address",
+     "box": [
+      350,
+      225,
+      505,
+      250
+     ]
+    },
+    {
+     "text": "W8 1JW",
+     "type": "postcode",
+     "box": [
+      350,
+      255,
+      445,
+      280
+     ]
+    },
+    {
+     "text": "YB 13 81 78 A",
+     "type": "ni_number",
+     "box": [
+      350,
+      285,
+      520,
+      310
+     ]
+    },
+    {
+     "text": "21 Oct 1975",
+     "type": "dob",
+     "box": [
+      350,
+      315,
+      505,
+      340
+     ]
+    },
+    {
+     "text": "44-49-30",
+     "type": "sort_code",
+     "box": [
+      350,
+      345,
+      480,
+      370
+     ]
+    },
+    {
+     "text": "61054617",
+     "type": "account_number",
+     "box": [
+      350,
+      375,
+      475,
+      400
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"Bruce Taylor\", \"type\": \"name\", \"box\": [350, 165, 550, 190]}, {\"text\": \"6 Matthew Track\", \"type\": \"address\", \"box\": [350, 195, 575, 220]}, {\"text\": \"Cliffordfurt\", \"type\": \"address\", \"box\": [350, 225, 505, 250]}, {\"text\": \"W8 1JW\", \"type\": \"postcode\", \"box\": [350, 255, 445, 280]}, {\"text\": \"YB 13 81 78 A\", \"type\": \"ni_number\", \"box\": [350, 285, 520, 310]}, {\"text\": \"21 Oct 1975\", \"type\": \"dob\", \"box\": [350, 315, 505, 340]}, {\"text\": \"44-49-30\", \"type\": \"sort_code\", \"box\": [350, 345, 480, 370]}, {\"text\": \"61054617\", \"type\": \"account_number\", \"box\": [350, 375, 475, 400]}]",
+   "reasoning_chars": 937,
+   "usage": {
+    "completion_tokens": 552,
+    "prompt_tokens": 1636,
+    "total_tokens": 2188,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "payslip_004.png",
+   "seconds": 14.33,
+   "items": [
+    {
+     "text": "Joe Marshall",
+     "type": "name",
+     "box": [
+      330,
+      160,
+      540,
+      190
+     ]
+    },
+    {
+     "text": "34 Gibbs Isle",
+     "type": "address",
+     "box": [
+      330,
+      200,
+      500,
+      225
+     ]
+    },
+    {
+     "text": "North Christine",
+     "type": "address",
+     "box": [
+      330,
+      230,
+      520,
+      255
+     ]
+    },
+    {
+     "text": "W6 9QA",
+     "type": "postcode",
+     "box": [
+      330,
+      270,
+      420,
+      295
+     ]
+    },
+    {
+     "text": "CP 17 63 95 A",
+     "type": "ni_number",
+     "box": [
+      330,
+      300,
+      520,
+      325
+     ]
+    },
+    {
+     "text": "25 September 1996",
+     "type": "dob",
+     "box": [
+      330,
+      330,
+      565,
+      360
+     ]
+    },
+    {
+     "text": "25-88-67",
+     "type": "sort_code",
+     "box": [
+      330,
+      360,
+      440,
+      385
+     ]
+    },
+    {
+     "text": "63479653",
+     "type": "account_number",
+     "box": [
+      330,
+      390,
+      450,
+      415
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"Joe Marshall\", \"type\": \"name\", \"box\": [330, 160, 540, 190]}, {\"text\": \"34 Gibbs Isle\", \"type\": \"address\", \"box\": [330, 200, 500, 225]}, {\"text\": \"North Christine\", \"type\": \"address\", \"box\": [330, 230, 520, 255]}, {\"text\": \"W6 9QA\", \"type\": \"postcode\", \"box\": [330, 270, 420, 295]}, {\"text\": \"CP 17 63 95 A\", \"type\": \"ni_number\", \"box\": [330, 300, 520, 325]}, {\"text\": \"25 September 1996\", \"type\": \"dob\", \"box\": [330, 330, 565, 360]}, {\"text\": \"25-88-67\", \"type\": \"sort_code\", \"box\": [330, 360, 440, 385]}, {\"text\": \"63479653\", \"type\": \"account_number\", \"box\": [330, 390, 450, 415]}]",
+   "reasoning_chars": 806,
+   "usage": {
+    "completion_tokens": 511,
+    "prompt_tokens": 1636,
+    "total_tokens": 2147,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "letter_000.png",
+   "seconds": 20.76,
+   "items": [
+    {
+     "text": "Laura Jones",
+     "type": "name",
+     "box": [
+      70,
+      225,
+      190,
+      245
+     ]
+    },
+    {
+     "text": "Laura Jones",
+     "type": "name",
+     "box": [
+      70,
+      335,
+      210,
+      355
+     ]
+    },
+    {
+     "text": "54 Hill Islands",
+     "type": "address",
+     "box": [
+      70,
+      250,
+      210,
+      270
+     ]
+    },
+    {
+     "text": "South Williamside",
+     "type": "address",
+     "box": [
+      70,
+      275,
+      230,
+      295
+     ]
+    },
+    {
+     "text": "B31 2HD",
+     "type": "postcode",
+     "box": [
+      70,
+      300,
+      160,
+      320
+     ]
+    },
+    {
+     "text": "Ellen Okafor",
+     "type": "name",
+     "box": [
+      70,
+      650,
+      210,
+      670
+     ]
+    },
+    {
+     "text": "laura.jones@example.net",
+     "type": "email",
+     "box": [
+      310,
+      450,
+      580,
+      470
+     ]
+    },
+    {
+     "text": "47-61-61",
+     "type": "sort_code",
+     "box": [
+      310,
+      475,
+      410,
+      495
+     ]
+    },
+    {
+     "text": "65485805",
+     "type": "account_number",
+     "box": [
+      310,
+      500,
+      420,
+      520
+     ]
+    },
+    {
+     "text": "07700 900674",
+     "type": "phone",
+     "box": [
+      310,
+      525,
+      470,
+      545
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n{\"text\": \"Laura Jones\", \"type\": \"name\", \"box\": [70, 225, 190, 245]},\n{\"text\": \"Laura Jones\", \"type\": \"name\", \"box\": [70, 335, 210, 355]},\n{\"text\": \"54 Hill Islands\", \"type\": \"address\", \"box\": [70, 250, 210, 270]},\n{\"text\": \"South Williamside\", \"type\": \"address\", \"box\": [70, 275, 230, 295]},\n{\"text\": \"B31 2HD\", \"type\": \"postcode\", \"box\": [70, 300, 160, 320]},\n{\"text\": \"Ellen Okafor\", \"type\": \"name\", \"box\": [70, 650, 210, 670]},\n{\"text\": \"laura.jones@example.net\", \"type\": \"email\", \"box\": [310, 450, 580, 470]},\n{\"text\": \"47-61-61\", \"type\": \"sort_code\", \"box\": [310, 475, 410, 495]},\n{\"text\": \"65485805\", \"type\": \"account_number\", \"box\": [310, 500, 420, 520]},\n{\"text\": \"07700 900674\", \"type\": \"phone\", \"box\": [310, 525, 470, 545]}\n]",
+   "reasoning_chars": 1472,
+   "usage": {
+    "completion_tokens": 764,
+    "prompt_tokens": 1636,
+    "total_tokens": 2400,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "letter_001.png",
+   "seconds": 16.17,
+   "items": [
+    {
+     "text": "Alan Tomlinson",
+     "type": "name",
+     "box": [
+      75,
+      150,
+      220,
+      170
+     ]
+    },
+    {
+     "text": "6 Harry Lock",
+     "type": "address",
+     "box": [
+      75,
+      180,
+      210,
+      200
+     ]
+    },
+    {
+     "text": "Sambury",
+     "type": "address",
+     "box": [
+      75,
+      205,
+      170,
+      225
+     ]
+    },
+    {
+     "text": "N90 7NG",
+     "type": "postcode",
+     "box": [
+      75,
+      230,
+      170,
+      250
+     ]
+    },
+    {
+     "text": "Alan Tomlinson",
+     "type": "name",
+     "box": [
+      75,
+      295,
+      230,
+      315
+     ]
+    },
+    {
+     "text": "Priya Lindqvist",
+     "type": "name",
+     "box": [
+      75,
+      635,
+      240,
+      655
+     ]
+    },
+    {
+     "text": "GB28 TSTB 3499 8458 2390 33",
+     "type": "iban",
+     "box": [
+      340,
+      405,
+      650,
+      425
+     ]
+    },
+    {
+     "text": "16116994",
+     "type": "account_number",
+     "box": [
+      340,
+      430,
+      450,
+      450
+     ]
+    },
+    {
+     "text": "alan tomlinson@example.org",
+     "type": "email",
+     "box": [
+      340,
+      455,
+      620,
+      475
+     ]
+    },
+    {
+     "text": "07700 900525",
+     "type": "phone",
+     "box": [
+      340,
+      480,
+      470,
+      500
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"Alan Tomlinson\", \"type\": \"name\", \"box\": [75, 150, 220, 170]},{\"text\": \"6 Harry Lock\", \"type\": \"address\", \"box\": [75, 180, 210, 200]},{\"text\": \"Sambury\", \"type\": \"address\", \"box\": [75, 205, 170, 225]},{\"text\": \"N90 7NG\", \"type\": \"postcode\", \"box\": [75, 230, 170, 250]},{\"text\": \"Alan Tomlinson\", \"type\": \"name\", \"box\": [75, 295, 230, 315]},{\"text\": \"Priya Lindqvist\", \"type\": \"name\", \"box\": [75, 635, 240, 655]},{\"text\": \"GB28 TSTB 3499 8458 2390 33\", \"type\": \"iban\", \"box\": [340, 405, 650, 425]},{\"text\": \"16116994\", \"type\": \"account_number\", \"box\": [340, 430, 450, 450]},{\"text\": \"alan tomlinson@example.org\", \"type\": \"email\", \"box\": [340, 455, 620, 475]},{\"text\": \"07700 900525\", \"type\": \"phone\", \"box\": [340, 480, 470, 500]}]",
+   "reasoning_chars": 985,
+   "usage": {
+    "completion_tokens": 596,
+    "prompt_tokens": 1636,
+    "total_tokens": 2232,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "letter_002.png",
+   "seconds": 25.01,
+   "items": [
+    {
+     "text": "Dale Pearson",
+     "type": "name",
+     "box": [
+      80,
+      170,
+      220,
+      195
+     ]
+    },
+    {
+     "text": "13 Hart Track",
+     "type": "address",
+     "box": [
+      80,
+      195,
+      230,
+      215
+     ]
+    },
+    {
+     "text": "North Benjaminstad",
+     "type": "address",
+     "box": [
+      80,
+      220,
+      260,
+      240
+     ]
+    },
+    {
+     "text": "DM4 6ZP",
+     "type": "postcode",
+     "box": [
+      80,
+      245,
+      170,
+      265
+     ]
+    },
+    {
+     "text": "Priya Hale",
+     "type": "name",
+     "box": [
+      80,
+      700,
+      200,
+      720
+     ]
+    },
+    {
+     "text": "19881500",
+     "type": "account_number",
+     "box": [
+      300,
+      520,
+      420,
+      540
+     ]
+    },
+    {
+     "text": "07700 900913",
+     "type": "phone",
+     "box": [
+      300,
+      545,
+      470,
+      565
+     ]
+    },
+    {
+     "text": "GB67 TXTB 5883 5276 6413 30",
+     "type": "iban",
+     "box": [
+      300,
+      570,
+      680,
+      590
+     ]
+    },
+    {
+     "text": "dale.pearson@mail.test",
+     "type": "email",
+     "box": [
+      300,
+      595,
+      520,
+      615
+     ]
+    },
+    {
+     "text": "789956",
+     "type": "id_number",
+     "box": [
+      750,
+      175,
+      880,
+      195
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"Dale Pearson\", \"type\": \"name\", \"box\": [80, 170, 220, 195]},\n  {\"text\": \"13 Hart Track\", \"type\": \"address\", \"box\": [80, 195, 230, 215]},\n  {\"text\": \"North Benjaminstad\", \"type\": \"address\", \"box\": [80, 220, 260, 240]},\n  {\"text\": \"DM4 6ZP\", \"type\": \"postcode\", \"box\": [80, 245, 170, 265]},\n  {\"text\": \"Priya Hale\", \"type\": \"name\", \"box\": [80, 700, 200, 720]},\n  {\"text\": \"19881500\", \"type\": \"account_number\", \"box\": [300, 520, 420, 540]},\n  {\"text\": \"07700 900913\", \"type\": \"phone\", \"box\": [300, 545, 470, 565]},\n  {\"text\": \"GB67 TXTB 5883 5276 6413 30\", \"type\": \"iban\", \"box\": [300, 570, 680, 590]},\n  {\"text\": \"dale.pearson@mail.test\", \"type\": \"email\", \"box\": [300, 595, 520, 615]},\n  {\"text\": \"789956\", \"type\": \"id_number\", \"box\": [750, 175, 880, 195]}\n]",
+   "reasoning_chars": 2023,
+   "usage": {
+    "completion_tokens": 938,
+    "prompt_tokens": 1636,
+    "total_tokens": 2574,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "letter_003.png",
+   "seconds": 21.28,
+   "items": [
+    {
+     "text": "Jason Murphy",
+     "type": "name",
+     "box": [
+      65,
+      175,
+      200,
+      200
+     ]
+    },
+    {
+     "text": "3 Davison Turnpike",
+     "type": "address",
+     "box": [
+      65,
+      205,
+      260,
+      225
+     ]
+    },
+    {
+     "text": "Gibsonborough",
+     "type": "address",
+     "box": [
+      65,
+      230,
+      230,
+      250
+     ]
+    },
+    {
+     "text": "528 9ZG",
+     "type": "postcode",
+     "box": [
+      65,
+      255,
+      170,
+      275
+     ]
+    },
+    {
+     "text": "Jason Murphy",
+     "type": "name",
+     "box": [
+      65,
+      315,
+      220,
+      335
+     ]
+    },
+    {
+     "text": "jason.murphy@example.org",
+     "type": "email",
+     "box": [
+      340,
+      410,
+      580,
+      430
+     ]
+    },
+    {
+     "text": "07700 900424",
+     "type": "phone",
+     "box": [
+      340,
+      435,
+      520,
+      455
+     ]
+    },
+    {
+     "text": "GB85 TSTB 8374 0338 2919 95",
+     "type": "iban",
+     "box": [
+      340,
+      460,
+      740,
+      480
+     ]
+    },
+    {
+     "text": "13567193",
+     "type": "account_number",
+     "box": [
+      340,
+      485,
+      470,
+      505
+     ]
+    },
+    {
+     "text": "Gareth Marsh",
+     "type": "name",
+     "box": [
+      65,
+      585,
+      220,
+      605
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"Jason Murphy\", \"type\": \"name\", \"box\": [65, 175, 200, 200]},\n  {\"text\": \"3 Davison Turnpike\", \"type\": \"address\", \"box\": [65, 205, 260, 225]},\n  {\"text\": \"Gibsonborough\", \"type\": \"address\", \"box\": [65, 230, 230, 250]},\n  {\"text\": \"528 9ZG\", \"type\": \"postcode\", \"box\": [65, 255, 170, 275]},\n  {\"text\": \"Jason Murphy\", \"type\": \"name\", \"box\": [65, 315, 220, 335]},\n  {\"text\": \"jason.murphy@example.org\", \"type\": \"email\", \"box\": [340, 410, 580, 430]},\n  {\"text\": \"07700 900424\", \"type\": \"phone\", \"box\": [340, 435, 520, 455]},\n  {\"text\": \"GB85 TSTB 8374 0338 2919 95\", \"type\": \"iban\", \"box\": [340, 460, 740, 480]},\n  {\"text\": \"13567193\", \"type\": \"account_number\", \"box\": [340, 485, 470, 505]},\n  {\"text\": \"Gareth Marsh\", \"type\": \"name\", \"box\": [65, 585, 220, 605]}\n]",
+   "reasoning_chars": 1574,
+   "usage": {
+    "completion_tokens": 795,
+    "prompt_tokens": 1636,
+    "total_tokens": 2431,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "letter_004.png",
+   "seconds": 19.68,
+   "items": [
+    {
+     "text": "Jennifer Lewis",
+     "type": "name",
+     "box": [
+      50,
+      150,
+      210,
+      170
+     ]
+    },
+    {
+     "text": "9 Conor Station",
+     "type": "address",
+     "box": [
+      50,
+      175,
+      230,
+      195
+     ]
+    },
+    {
+     "text": "New Carolmouth",
+     "type": "address",
+     "box": [
+      50,
+      200,
+      240,
+      220
+     ]
+    },
+    {
+     "text": "JE12 3BX",
+     "type": "postcode",
+     "box": [
+      50,
+      225,
+      170,
+      245
+     ]
+    },
+    {
+     "text": "Jennifer Lewis",
+     "type": "name",
+     "box": [
+      140,
+      260,
+      280,
+      280
+     ]
+    },
+    {
+     "text": "4012 8888 8888 1881",
+     "type": "card_number",
+     "box": [
+      300,
+      400,
+      520,
+      420
+     ]
+    },
+    {
+     "text": "jennifer.lewis@example.org",
+     "type": "email",
+     "box": [
+      300,
+      425,
+      620,
+      445
+     ]
+    },
+    {
+     "text": "07700 900867",
+     "type": "phone",
+     "box": [
+      300,
+      450,
+      470,
+      470
+     ]
+    },
+    {
+     "text": "19934186",
+     "type": "account_number",
+     "box": [
+      300,
+      475,
+      420,
+      495
+     ]
+    },
+    {
+     "text": "Tomasz Okafor",
+     "type": "name",
+     "box": [
+      60,
+      520,
+      220,
+      540
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"Jennifer Lewis\", \"type\": \"name\", \"box\": [50, 150, 210, 170]}, {\"text\": \"9 Conor Station\", \"type\": \"address\", \"box\": [50, 175, 230, 195]}, {\"text\": \"New Carolmouth\", \"type\": \"address\", \"box\": [50, 200, 240, 220]}, {\"text\": \"JE12 3BX\", \"type\": \"postcode\", \"box\": [50, 225, 170, 245]}, {\"text\": \"Jennifer Lewis\", \"type\": \"name\", \"box\": [140, 260, 280, 280]}, {\"text\": \"4012 8888 8888 1881\", \"type\": \"card_number\", \"box\": [300, 400, 520, 420]}, {\"text\": \"jennifer.lewis@example.org\", \"type\": \"email\", \"box\": [300, 425, 620, 445]}, {\"text\": \"07700 900867\", \"type\": \"phone\", \"box\": [300, 450, 470, 470]}, {\"text\": \"19934186\", \"type\": \"account_number\", \"box\": [300, 475, 420, 495]}, {\"text\": \"Tomasz Okafor\", \"type\": \"name\", \"box\": [60, 520, 220, 540]}]",
+   "reasoning_chars": 1400,
+   "usage": {
+    "completion_tokens": 732,
+    "prompt_tokens": 1636,
+    "total_tokens": 2368,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_000.jpg",
+   "seconds": 16.74,
+   "items": [
+    {
+     "text": "GREEN",
+     "type": "name",
+     "box": [
+      350,
+      215,
+      465,
+      255
+     ]
+    },
+    {
+     "text": "Rachel",
+     "type": "name",
+     "box": [
+      350,
+      295,
+      460,
+      335
+     ]
+    },
+    {
+     "text": "29 Oct 1987",
+     "type": "dob",
+     "box": [
+      350,
+      365,
+      490,
+      410
+     ]
+    },
+    {
+     "text": "GH8o48004",
+     "type": "id_number",
+     "box": [
+      350,
+      425,
+      495,
+      470
+     ]
+    },
+    {
+     "text": "660 Benjamin Shoals",
+     "type": "address",
+     "box": [
+      350,
+      490,
+      605,
+      535
+     ]
+    },
+    {
+     "text": "West Stephaniestown, TR8 6DS",
+     "type": "address",
+     "box": [
+      350,
+      555,
+      795,
+      605
+     ]
+    },
+    {
+     "text": "TR8 6DS",
+     "type": "postcode",
+     "box": [
+      640,
+      560,
+      790,
+      600
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      65,
+      205,
+      305,
+      605
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[{\"text\": \"GREEN\", \"type\": \"name\", \"box\": [350, 215, 465, 255]}, {\"text\": \"Rachel\", \"type\": \"name\", \"box\": [350, 295, 460, 335]}, {\"text\": \"29 Oct 1987\", \"type\": \"dob\", \"box\": [350, 365, 490, 410]}, {\"text\": \"GH8o48004\", \"type\": \"id_number\", \"box\": [350, 425, 495, 470]}, {\"text\": \"660 Benjamin Shoals\", \"type\": \"address\", \"box\": [350, 490, 605, 535]}, {\"text\": \"West Stephaniestown, TR8 6DS\", \"type\": \"address\", \"box\": [350, 555, 795, 605]}, {\"text\": \"TR8 6DS\", \"type\": \"postcode\", \"box\": [640, 560, 790, 600]}, {\"text\": \"\", \"type\": \"face\", \"box\": [65, 205, 305, 605]}]",
+   "reasoning_chars": 1330,
+   "usage": {
+    "completion_tokens": 635,
+    "prompt_tokens": 1088,
+    "total_tokens": 1723,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_001.png",
+   "seconds": 22.48,
+   "items": [
+    {
+     "text": "HUSSAIN",
+     "type": "name",
+     "box": [
+      375,
+      215,
+      490,
+      250
+     ]
+    },
+    {
+     "text": "Harriet",
+     "type": "name",
+     "box": [
+      375,
+      280,
+      460,
+      315
+     ]
+    },
+    {
+     "text": "03 July 1963",
+     "type": "dob",
+     "box": [
+      375,
+      345,
+      520,
+      380
+     ]
+    },
+    {
+     "text": "ZK7814925",
+     "type": "id_number",
+     "box": [
+      375,
+      410,
+      495,
+      445
+     ]
+    },
+    {
+     "text": "885 Lyons Union",
+     "type": "address",
+     "box": [
+      375,
+      475,
+      530,
+      510
+     ]
+    },
+    {
+     "text": "Mathewville, PR3Y 4DZ",
+     "type": "address",
+     "box": [
+      375,
+      545,
+      660,
+      585
+     ]
+    },
+    {
+     "text": "PR3Y 4DZ",
+     "type": "postcode",
+     "box": [
+      545,
+      550,
+      660,
+      585
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      135,
+      260,
+      280,
+      600
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"HUSSAIN\", \"type\": \"name\", \"box\": [375, 215, 490, 250]},\n  {\"text\": \"Harriet\", \"type\": \"name\", \"box\": [375, 280, 460, 315]},\n  {\"text\": \"03 July 1963\", \"type\": \"dob\", \"box\": [375, 345, 520, 380]},\n  {\"text\": \"ZK7814925\", \"type\": \"id_number\", \"box\": [375, 410, 495, 445]},\n  {\"text\": \"885 Lyons Union\", \"type\": \"address\", \"box\": [375, 475, 530, 510]},\n  {\"text\": \"Mathewville, PR3Y 4DZ\", \"type\": \"address\", \"box\": [375, 545, 660, 585]},\n  {\"text\": \"PR3Y 4DZ\", \"type\": \"postcode\", \"box\": [545, 550, 660, 585]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [135, 260, 280, 600]}\n]",
+   "reasoning_chars": 2042,
+   "usage": {
+    "completion_tokens": 862,
+    "prompt_tokens": 1088,
+    "total_tokens": 1950,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_002.jpg",
+   "seconds": 15.81,
+   "items": [
+    {
+     "text": "ADAMS",
+     "type": "name",
+     "box": [
+      345,
+      257,
+      430,
+      284
+     ]
+    },
+    {
+     "text": "Molly",
+     "type": "name",
+     "box": [
+      345,
+      330,
+      410,
+      360
+     ]
+    },
+    {
+     "text": "24 Jun 2000",
+     "type": "dob",
+     "box": [
+      345,
+      404,
+      470,
+      434
+     ]
+    },
+    {
+     "text": "TP3747147",
+     "type": "id_number",
+     "box": [
+      345,
+      477,
+      480,
+      507
+     ]
+    },
+    {
+     "text": "1 Edwards Street",
+     "type": "address",
+     "box": [
+      345,
+      549,
+      510,
+      579
+     ]
+    },
+    {
+     "text": "East Carolefort, B5 8FF",
+     "type": "address",
+     "box": [
+      345,
+      612,
+      585,
+      642
+     ]
+    },
+    {
+     "text": "B5 8FF",
+     "type": "postcode",
+     "box": [
+      510,
+      612,
+      585,
+      642
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      100,
+      305,
+      285,
+      630
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"ADAMS\", \"type\": \"name\", \"box\": [345, 257, 430, 284]},\n  {\"text\": \"Molly\", \"type\": \"name\", \"box\": [345, 330, 410, 360]},\n  {\"text\": \"24 Jun 2000\", \"type\": \"dob\", \"box\": [345, 404, 470, 434]},\n  {\"text\": \"TP3747147\", \"type\": \"id_number\", \"box\": [345, 477, 480, 507]},\n  {\"text\": \"1 Edwards Street\", \"type\": \"address\", \"box\": [345, 549, 510, 579]},\n  {\"text\": \"East Carolefort, B5 8FF\", \"type\": \"address\", \"box\": [345, 612, 585, 642]},\n  {\"text\": \"B5 8FF\", \"type\": \"postcode\", \"box\": [510, 612, 585, 642]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [100, 305, 285, 630]}\n]",
+   "reasoning_chars": 1125,
+   "usage": {
+    "completion_tokens": 599,
+    "prompt_tokens": 1088,
+    "total_tokens": 1687,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_003.jpg",
+   "seconds": 22.5,
+   "items": [
+    {
+     "text": "NEWMAN",
+     "type": "name",
+     "box": [
+      350,
+      220,
+      505,
+      260
+     ]
+    },
+    {
+     "text": "Tom",
+     "type": "name",
+     "box": [
+      350,
+      280,
+      405,
+      315
+     ]
+    },
+    {
+     "text": "01 April 1957",
+     "type": "dob",
+     "box": [
+      350,
+      340,
+      505,
+      375
+     ]
+    },
+    {
+     "text": "XT6249609",
+     "type": "id_number",
+     "box": [
+      350,
+      405,
+      505,
+      440
+     ]
+    },
+    {
+     "text": "778 Young Knoll",
+     "type": "address",
+     "box": [
+      350,
+      470,
+      525,
+      505
+     ]
+    },
+    {
+     "text": "Cookemouth",
+     "type": "address",
+     "box": [
+      350,
+      540,
+      500,
+      575
+     ]
+    },
+    {
+     "text": "LL17 9FS",
+     "type": "postcode",
+     "box": [
+      545,
+      540,
+      675,
+      575
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      65,
+      260,
+      295,
+      645
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"NEWMAN\", \"type\": \"name\", \"box\": [350, 220, 505, 260]},\n  {\"text\": \"Tom\", \"type\": \"name\", \"box\": [350, 280, 405, 315]},\n  {\"text\": \"01 April 1957\", \"type\": \"dob\", \"box\": [350, 340, 505, 375]},\n  {\"text\": \"XT6249609\", \"type\": \"id_number\", \"box\": [350, 405, 505, 440]},\n  {\"text\": \"778 Young Knoll\", \"type\": \"address\", \"box\": [350, 470, 525, 505]},\n  {\"text\": \"Cookemouth\", \"type\": \"address\", \"box\": [350, 540, 500, 575]},\n  {\"text\": \"LL17 9FS\", \"type\": \"postcode\", \"box\": [545, 540, 675, 575]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [65, 260, 295, 645]}\n]",
+   "reasoning_chars": 2176,
+   "usage": {
+    "completion_tokens": 860,
+    "prompt_tokens": 1088,
+    "total_tokens": 1948,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "id_card_004.jpg",
+   "seconds": 19.86,
+   "items": [
+    {
+     "text": "WATTS",
+     "type": "name",
+     "box": [
+      350,
+      260,
+      485,
+      300
+     ]
+    },
+    {
+     "text": "Jennifer",
+     "type": "name",
+     "box": [
+      350,
+      340,
+      485,
+      380
+     ]
+    },
+    {
+     "text": "11 April 1959",
+     "type": "dob",
+     "box": [
+      350,
+      420,
+      600,
+      460
+     ]
+    },
+    {
+     "text": "RT2087064",
+     "type": "id_number",
+     "box": [
+      350,
+      500,
+      570,
+      540
+     ]
+    },
+    {
+     "text": "165 Cheryl Turnpike",
+     "type": "address",
+     "box": [
+      350,
+      580,
+      620,
+      620
+     ]
+    },
+    {
+     "text": "Newtonhaven,",
+     "type": "address",
+     "box": [
+      350,
+      650,
+      500,
+      690
+     ]
+    },
+    {
+     "text": "YO6 5AX",
+     "type": "postcode",
+     "box": [
+      555,
+      650,
+      710,
+      690
+     ]
+    },
+    {
+     "text": "",
+     "type": "face",
+     "box": [
+      65,
+      220,
+      315,
+      655
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"WATTS\", \"type\": \"name\", \"box\": [350, 260, 485, 300]},\n  {\"text\": \"Jennifer\", \"type\": \"name\", \"box\": [350, 340, 485, 380]},\n  {\"text\": \"11 April 1959\", \"type\": \"dob\", \"box\": [350, 420, 600, 460]},\n  {\"text\": \"RT2087064\", \"type\": \"id_number\", \"box\": [350, 500, 570, 540]},\n  {\"text\": \"165 Cheryl Turnpike\", \"type\": \"address\", \"box\": [350, 580, 620, 620]},\n  {\"text\": \"Newtonhaven,\", \"type\": \"address\", \"box\": [350, 650, 500, 690]},\n  {\"text\": \"YO6 5AX\", \"type\": \"postcode\", \"box\": [555, 650, 710, 690]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [65, 220, 315, 655]}\n]",
+   "reasoning_chars": 1704,
+   "usage": {
+    "completion_tokens": 759,
+    "prompt_tokens": 1088,
+    "total_tokens": 1847,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "chat_000.png",
+   "seconds": 17.42,
+   "items": [
+    {
+     "text": "Justin Ali",
+     "type": "name",
+     "box": [
+      8,
+      28,
+      182,
+      70
+     ]
+    },
+    {
+     "text": "464 Heath Village",
+     "type": "address",
+     "box": [
+      28,
+      202,
+      525,
+      255
+     ]
+    },
+    {
+     "text": "ST2Y 0DG",
+     "type": "postcode",
+     "box": [
+      405,
+      208,
+      575,
+      245
+     ]
+    },
+    {
+     "text": "LM 20 01 25 C",
+     "type": "ni_number",
+     "box": [
+      55,
+      518,
+      455,
+      575
+     ]
+    },
+    {
+     "text": "4000 0566 5566 5556",
+     "type": "card_number",
+     "box": [
+      635,
+      770,
+      970,
+      825
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"Justin Ali\", \"type\": \"name\", \"box\": [8, 28, 182, 70]},\n  {\"text\": \"464 Heath Village\", \"type\": \"address\", \"box\": [28, 202, 525, 255]},\n  {\"text\": \"ST2Y 0DG\", \"type\": \"postcode\", \"box\": [405, 208, 575, 245]},\n  {\"text\": \"LM 20 01 25 C\", \"type\": \"ni_number\", \"box\": [55, 518, 455, 575]},\n  {\"text\": \"4000 0566 5566 5556\", \"type\": \"card_number\", \"box\": [635, 770, 970, 825]}\n]",
+   "reasoning_chars": 1706,
+   "usage": {
+    "completion_tokens": 664,
+    "prompt_tokens": 995,
+    "total_tokens": 1659,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "chat_001.png",
+   "seconds": 17.5,
+   "items": [
+    {
+     "text": "Georgia Talbot",
+     "type": "name",
+     "box": [
+      25,
+      30,
+      250,
+      60
+     ]
+    },
+    {
+     "text": "07700 900382",
+     "type": "phone",
+     "box": [
+      150,
+      525,
+      430,
+      560
+     ]
+    },
+    {
+     "text": "66-78-11",
+     "type": "sort_code",
+     "box": [
+      180,
+      690,
+      320,
+      720
+     ]
+    },
+    {
+     "text": "97010478",
+     "type": "account_number",
+     "box": [
+      420,
+      690,
+      600,
+      720
+     ]
+    },
+    {
+     "text": "RG9603170",
+     "type": "id_number",
+     "box": [
+      700,
+      410,
+      920,
+      450
+     ]
+    },
+    {
+     "text": "GL 01 56 89 C",
+     "type": "ni_number",
+     "box": [
+      620,
+      760,
+      900,
+      800
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"Georgia Talbot\", \"type\": \"name\", \"box\": [25, 30, 250, 60]},\n  {\"text\": \"07700 900382\", \"type\": \"phone\", \"box\": [150, 525, 430, 560]},\n  {\"text\": \"66-78-11\", \"type\": \"sort_code\", \"box\": [180, 690, 320, 720]},\n  {\"text\": \"97010478\", \"type\": \"account_number\", \"box\": [420, 690, 600, 720]},\n  {\"text\": \"RG9603170\", \"type\": \"id_number\", \"box\": [700, 410, 920, 450]},\n  {\"text\": \"GL 01 56 89 C\", \"type\": \"ni_number\", \"box\": [620, 760, 900, 800]}\n]",
+   "reasoning_chars": 1377,
+   "usage": {
+    "completion_tokens": 664,
+    "prompt_tokens": 995,
+    "total_tokens": 1659,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "chat_002.png",
+   "seconds": 16.57,
+   "items": [
+    {
+     "text": "Danny Kelly",
+     "type": "name",
+     "box": [
+      2,
+      35,
+      205,
+      75
+     ]
+    },
+    {
+     "text": "39 Sophie Walk",
+     "type": "address",
+     "box": [
+      35,
+      370,
+      425,
+      410
+     ]
+    },
+    {
+     "text": "BS30 5BN",
+     "type": "postcode",
+     "box": [
+      470,
+      370,
+      580,
+      410
+     ]
+    },
+    {
+     "text": "41-27-65",
+     "type": "sort_code",
+     "box": [
+      60,
+      635,
+      260,
+      670
+     ]
+    },
+    {
+     "text": "63936353",
+     "type": "account_number",
+     "box": [
+      380,
+      635,
+      520,
+      670
+     ]
+    },
+    {
+     "text": "4000 0566 5566 5556",
+     "type": "card_number",
+     "box": [
+      615,
+      570,
+      965,
+      615
+     ]
+    },
+    {
+     "text": "Danny Kelly",
+     "type": "name",
+     "box": [
+      760,
+      700,
+      955,
+      735
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"Danny Kelly\", \"type\": \"name\", \"box\": [2, 35, 205, 75]},\n  {\"text\": \"39 Sophie Walk\", \"type\": \"address\", \"box\": [35, 370, 425, 410]},\n  {\"text\": \"BS30 5BN\", \"type\": \"postcode\", \"box\": [470, 370, 580, 410]},\n  {\"text\": \"41-27-65\", \"type\": \"sort_code\", \"box\": [60, 635, 260, 670]},\n  {\"text\": \"63936353\", \"type\": \"account_number\", \"box\": [380, 635, 520, 670]},\n  {\"text\": \"4000 0566 5566 5556\", \"type\": \"card_number\", \"box\": [615, 570, 965, 615]},\n  {\"text\": \"Danny Kelly\", \"type\": \"name\", \"box\": [760, 700, 955, 735]}\n]",
+   "reasoning_chars": 1367,
+   "usage": {
+    "completion_tokens": 629,
+    "prompt_tokens": 995,
+    "total_tokens": 1624,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "chat_003.jpg",
+   "seconds": 14.99,
+   "items": [
+    {
+     "text": "Jeffrey Dobson",
+     "type": "name",
+     "box": [
+      33,
+      39,
+      280,
+      62
+     ]
+    },
+    {
+     "text": "6011 0009 9013 9424",
+     "type": "card_number",
+     "box": [
+      560,
+      129,
+      940,
+      145
+     ]
+    },
+    {
+     "text": "jeffrey.dobson@mail.test",
+     "type": "email",
+     "box": [
+      470,
+      260,
+      942,
+      278
+     ]
+    },
+    {
+     "text": "GB63 TSTB 9007 6648 1448 39",
+     "type": "iban",
+     "box": [
+      58,
+      327,
+      605,
+      345
+     ]
+    },
+    {
+     "text": "02/11/1989",
+     "type": "dob",
+     "box": [
+      58,
+      462,
+      320,
+      478
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"Jeffrey Dobson\", \"type\": \"name\", \"box\": [33, 39, 280, 62]},\n  {\"text\": \"6011 0009 9013 9424\", \"type\": \"card_number\", \"box\": [560, 129, 940, 145]},\n  {\"text\": \"jeffrey.dobson@mail.test\", \"type\": \"email\", \"box\": [470, 260, 942, 278]},\n  {\"text\": \"GB63 TSTB 9007 6648 1448 39\", \"type\": \"iban\", \"box\": [58, 327, 605, 345]},\n  {\"text\": \"02/11/1989\", \"type\": \"dob\", \"box\": [58, 462, 320, 478]}\n]",
+   "reasoning_chars": 1112,
+   "usage": {
+    "completion_tokens": 566,
+    "prompt_tokens": 995,
+    "total_tokens": 1561,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  },
+  {
+   "file": "chat_004.png",
+   "seconds": 15.44,
+   "items": [
+    {
+     "text": "Vincent Mills",
+     "type": "name",
+     "box": [
+      32,
+      31,
+      235,
+      61
+     ]
+    },
+    {
+     "text": "07700 900836",
+     "type": "phone",
+     "box": [
+      55,
+      688,
+      370,
+      724
+     ]
+    },
+    {
+     "text": "vincent.mills@example.net",
+     "type": "email",
+     "box": [
+      510,
+      760,
+      950,
+      800
+     ]
+    },
+    {
+     "text": "GB93 TSTB 9656 3510 0066 19",
+     "type": "iban",
+     "box": [
+      470,
+      595,
+      960,
+      635
+     ]
+    },
+    {
+     "text": "34-42-74",
+     "type": "sort_code",
+     "box": [
+      150,
+      375,
+      330,
+      405
+     ]
+    },
+    {
+     "text": "12479248",
+     "type": "account_number",
+     "box": [
+      380,
+      375,
+      470,
+      405
+     ]
+    }
+   ],
+   "parse_error": null,
+   "content": "[\n  {\"text\": \"Vincent Mills\", \"type\": \"name\", \"box\": [32, 31, 235, 61]},\n  {\"text\": \"07700 900836\", \"type\": \"phone\", \"box\": [55, 688, 370, 724]},\n  {\"text\": \"vincent.mills@example.net\", \"type\": \"email\", \"box\": [510, 760, 950, 800]},\n  {\"text\": \"GB93 TSTB 9656 3510 0066 19\", \"type\": \"iban\", \"box\": [470, 595, 960, 635]},\n  {\"text\": \"34-42-74\", \"type\": \"sort_code\", \"box\": [150, 375, 330, 405]},\n  {\"text\": \"12479248\", \"type\": \"account_number\", \"box\": [380, 375, 470, 405]}\n]",
+   "reasoning_chars": 1251,
+   "usage": {
+    "completion_tokens": 585,
+    "prompt_tokens": 995,
+    "total_tokens": 1580,
+    "prompt_tokens_details": {
+     "cached_tokens": 49
+    }
+   },
+   "finish": "stop"
+  }
+ ],
+ "peak_mib_after_load": 18025,
+ "peak_mib": 18213,
+ "gpu_name": "NVIDIA L40S",
+ "server_log_tail": "ot print_timing: id  0 | task 12297 | n_gen =    120, tg =  39.35 t/s, tg_3s =  39.68 t/s\n5.58.037.325 I slot print_timing: id  0 | task 12297 | n_gen =    240, tg =  39.56 t/s, tg_3s =  39.77 t/s\n6.01.047.225 I slot print_timing: id  0 | task 12297 | n_gen =    359, tg =  39.55 t/s, tg_3s =  39.54 t/s\n6.04.070.747 I slot print_timing: id  0 | task 12297 | n_gen =    479, tg =  39.59 t/s, tg_3s =  39.69 t/s\n6.06.285.957 I slot print_timing: id  0 | task 12297 | prompt eval time =     626.64 ms /   946 tokens (    0.66 ms per token,  1509.63 tokens per second)\n6.06.285.974 I slot print_timing: id  0 | task 12297 |        eval time =   14289.93 ms /   566 tokens (   25.29 ms per token,    39.54 tokens per second)\n6.06.285.974 I slot print_timing: id  0 | task 12297 |       total time =   14916.58 ms /  1512 tokens\n6.06.285.975 I slot print_timing: id  0 | task 12297 |    graphs reused =      12704\n6.06.285.976 I slot print_timing: id  0 | task 12297 |   graph reallocs =          0    /     0        (same size) / (changed size)\n6.06.286.012 I slot      release: id  0 | task 12297 | stop processing: n_tokens = 1560, truncated = 0\n6.06.316.881 I slot get_availabl: id  0 | task -1 | selected slot by LRU, n_tokens = 1560, t_last = 368775447\n6.06.345.768 I slot launch_slot_: id  0 | task 12867 | processing task, is_child = 0\n6.09.985.330 I slot print_timing: id  0 | task 12867 | n_gen =    120, tg =  39.50 t/s, tg_3s =  39.83 t/s\n6.13.002.589 I slot print_timing: id  0 | task 12867 | n_gen =    240, tg =  39.64 t/s, tg_3s =  39.77 t/s\n6.16.003.491 I slot print_timing: id  0 | task 12867 | n_gen =    359, tg =  39.64 t/s, tg_3s =  39.65 t/s\n6.19.011.599 I slot print_timing: id  0 | task 12867 | n_gen =    478, tg =  39.62 t/s, tg_3s =  39.56 t/s\n6.21.724.962 I slot print_timing: id  0 | task 12867 | prompt eval time =     627.02 ms /   946 tokens (    0.66 ms per token,  1508.73 tokens per second)\n6.21.724.973 I slot print_timing: id  0 | task 12867 |        eval time =   14752.13 ms /   585 tokens (   25.26 ms per token,    39.59 tokens per second)\n6.21.724.973 I slot print_timing: id  0 | task 12867 |       total time =   15379.15 ms /  1531 tokens\n6.21.724.974 I slot print_timing: id  0 | task 12867 |    graphs reused =      13284\n6.21.724.974 I slot print_timing: id  0 | task 12867 |   graph reallocs =          0    /     0        (same size) / (changed size)\n6.21.725.007 I slot      release: id  0 | task 12867 | stop processing: n_tokens = 1579, truncated = 0\n",
+ "wall_seconds": 382.9552536010742,
+ "score_by_frame": {
+  "px": {
+   "all": {
+    "pictures": 20,
+    "value_recall": 0.915,
+    "box_hit_rate": 0.513,
+    "value_and_box": 0.255,
+    "type_accuracy_of_found": 1.0,
+    "false_alarms_per_picture": 0.15,
+    "unmatched_items_per_picture": 0.4,
+    "readable_share": 0.899,
+    "median_box_area_ratio": 1.29,
+    "planted_text_values": 153,
+    "planted_personal_spans": 158,
+    "returned_items": 159
+   },
+   "payslip": {
+    "pictures": 5,
+    "value_recall": 1.0,
+    "box_hit_rate": 0.8,
+    "value_and_box": 0.425,
+    "type_accuracy_of_found": 1.0,
+    "false_alarms_per_picture": 0.0,
+    "unmatched_items_per_picture": 0.0,
+    "readable_share": 1.0,
+    "median_box_area_ratio": 1.52,
+    "planted_text_values": 40,
+    "planted_personal_spans": 40,
+    "returned_items": 40
+   },
+   "letter": {
+    "pictures": 5,
+    "value_recall": 0.88,
+    "box_hit_rate": 0.56,
+    "value_and_box": 0.28,
+    "type_accuracy_of_found": 1.0,
+    "false_alarms_per_picture": 0.2,
+    "unmatched_items_per_picture": 0.4,
+    "readable_share": 0.906,
+    "median_box_area_ratio": 0.93,
+    "planted_text_values": 50,
+    "planted_personal_spans": 50,
+    "returned_items": 50
+   },
+   "id_card": {
+    "pictures": 5,
+    "value_recall": 0.886,
+    "box_hit_rate": 0.3,
+    "value_and_box": 0.0,
+    "type_accuracy_of_found": 1.0,
+    "false_alarms_per_picture": 0.4,
+    "unmatched_items_per_picture": 0.6,
+    "readable_share": 0.567,
+    "median_box_area_ratio": 1.28,
+    "planted_text_values": 35,
+    "planted_personal_spans": 40,
+    "returned_items": 40
+   },
+   "chat": {
+    "pictures": 5,
+    "value_recall": 0.893,
+    "box_hit_rate": 0.321,
+    "value_and_box": 0.286,
+    "type_accuracy_of_found": 1.0,
+    "false_alarms_per_picture": 0.0,
+    "unmatched_items_per_picture": 0.6,
+    "readable_share": 0.933,
+    "median_box_area_ratio": 2.37,
+    "planted_text_values": 28,
+    "planted_personal_spans": 28,
+    "returned_items": 29
+   }
+  },
+  "norm1000": {
+   "all": {
+    "pictures": 20,
+    "value_recall": 0.915,
+    "box_hit_rate": 0.456,
+    "value_and_box": 0.157,
+    "type_accuracy_of_found": 1.0,
+    "false_alarms_per_picture": 0.1,
+    "unmatched_items_per_picture": 0.45,
+    "readable_share": 0.911,
+    "median_box_area_ratio": 1.43,
+    "planted_text_values": 153,
+    "planted_personal_spans": 158,
+    "returned_items": 159
+   },
+   "payslip": {
+    "pictures": 5,
+    "value_recall": 1.0,
+    "box_hit_rate": 0.8,
+    "value_and_box": 0.25,
+    "type_accuracy_of_found": 1.0,
+    "false_alarms_per_picture": 0.0,
+    "unmatched_items_per_picture": 0.0,
+    "readable_share": 0.961,
+    "median_box_area_ratio": 1.54,
+    "planted_text_values": 40,
+    "planted_personal_spans": 40,
+    "returned_items": 40
+   },
+   "letter": {
+    "pictures": 5,
+    "value_recall": 0.88,
+    "box_hit_rate": 0.34,
+    "value_and_box": 0.06,
+    "type_accuracy_of_found": 1.0,
+    "false_alarms_per_picture": 0.0,
+    "unmatched_items_per_picture": 1.2,
+    "readable_share": 0.953,
+    "median_box_area_ratio": 1.19,
+    "planted_text_values": 50,
+    "planted_personal_spans": 50,
+    "returned_items": 50
+   },
+   "id_card": {
+    "pictures": 5,
+    "value_recall": 0.886,
+    "box_hit_rate": 0.3,
+    "value_and_box": 0.029,
+    "type_accuracy_of_found": 1.0,
+    "false_alarms_per_picture": 0.2,
+    "unmatched_items_per_picture": 0.2,
+    "readable_share": 0.767,
+    "median_box_area_ratio": 1.49,
+    "planted_text_values": 35,
+    "planted_personal_spans": 40,
+    "returned_items": 40
+   },
+   "chat": {
+    "pictures": 5,
+    "value_recall": 0.893,
+    "box_hit_rate": 0.393,
+    "value_and_box": 0.357,
+    "type_accuracy_of_found": 1.0,
+    "false_alarms_per_picture": 0.2,
+    "unmatched_items_per_picture": 0.4,
+    "readable_share": 0.885,
+    "median_box_area_ratio": 1.42,
+    "planted_text_values": 28,
+    "planted_personal_spans": 28,
+    "returned_items": 29
+   }
+  },
+  "norm1": {
+   "all": {
+    "pictures": 20,
+    "value_recall": 0.915,
+    "box_hit_rate": 0.0,
+    "value_and_box": 0.0,
+    "type_accuracy_of_found": 1.0,
+    "false_alarms_per_picture": 0.0,
+    "unmatched_items_per_picture": 0.95,
+    "readable_share": 1.0,
+    "median_box_area_ratio": null,
+    "planted_text_values": 153,
+    "planted_personal_spans": 158,
+    "returned_items": 159
+   },
+   "payslip": {
+    "pictures": 5,
+    "value_recall": 1.0,
+    "box_hit_rate": 0.0,
+    "value_and_box": 0.0,
+    "type_accuracy_of_found": 1.0,
+    "false_alarms_per_picture": 0.0,
+    "unmatched_items_per_picture": 0.0,
+    "readable_share": 1.0,
+    "median_box_area_ratio": null,
+    "planted_text_values": 40,
+    "planted_personal_spans": 40,
+    "returned_items": 40
+   },
+   "letter": {
+    "pictures": 5,
+    "value_recall": 0.88,
+    "box_hit_rate": 0.0,
+    "value_and_box": 0.0,
+    "type_accuracy_of_found": 1.0,
+    "false_alarms_per_picture": 0.0,
+    "unmatched_items_per_picture": 1.2,
+    "readable_share": 1.0,
+    "median_box_area_ratio": null,
+    "planted_text_values": 50,
+    "planted_personal_spans": 50,
+    "returned_items": 50
+   },
+   "id_card": {
+    "pictures": 5,
+    "value_recall": 0.886,
+    "box_hit_rate": 0.0,
+    "value_and_box": 0.0,
+    "type_accuracy_of_found": 1.0,
+    "false_alarms_per_picture": 0.0,
+    "unmatched_items_per_picture": 1.8,
+    "readable_share": 1.0,
+    "median_box_area_ratio": null,
+    "planted_text_values": 35,
+    "planted_personal_spans": 40,
+    "returned_items": 40
+   },
+   "chat": {
+    "pictures": 5,
+    "value_recall": 0.893,
+    "box_hit_rate": 0.0,
+    "value_and_box": 0.0,
+    "type_accuracy_of_found": 1.0,
+    "false_alarms_per_picture": 0.0,
+    "unmatched_items_per_picture": 0.8,
+    "readable_share": 1.0,
+    "median_box_area_ratio": null,
+    "planted_text_values": 28,
+    "planted_personal_spans": 28,
+    "returned_items": 29
+   }
+  }
+ },
+ "seconds_per_picture_mean": 17.88,
+ "seconds_per_picture_median": 17.42
+}

@@ -1,0 +1,152 @@
+{
+ "px": {
+  "unparsed": 0,
+  "score": {
+   "all": {
+    "pictures": 20,
+    "value_recall": 0.922,
+    "box_hit_rate": 0.462,
+    "value_and_box": 0.118,
+    "type_accuracy_of_found": 1.0,
+    "false_alarms_per_picture": 0.15,
+    "unmatched_items_per_picture": 0.5,
+    "readable_share": 0.891,
+    "median_box_area_ratio": 1.53,
+    "planted_text_values": 153,
+    "planted_personal_spans": 158,
+    "returned_items": 163
+   },
+   "payslip": {
+    "pictures": 5,
+    "value_recall": 1.0,
+    "box_hit_rate": 0.5,
+    "value_and_box": 0.1,
+    "type_accuracy_of_found": 1.0,
+    "false_alarms_per_picture": 0.0,
+    "unmatched_items_per_picture": 0.0,
+    "readable_share": 1.0,
+    "median_box_area_ratio": 1.44,
+    "planted_text_values": 40,
+    "planted_personal_spans": 40,
+    "returned_items": 40
+   },
+   "letter": {
+    "pictures": 5,
+    "value_recall": 0.9,
+    "box_hit_rate": 0.44,
+    "value_and_box": 0.06,
+    "type_accuracy_of_found": 1.0,
+    "false_alarms_per_picture": 0.0,
+    "unmatched_items_per_picture": 0.8,
+    "readable_share": 0.941,
+    "median_box_area_ratio": 0.88,
+    "planted_text_values": 50,
+    "planted_personal_spans": 50,
+    "returned_items": 51
+   },
+   "id_card": {
+    "pictures": 5,
+    "value_recall": 0.857,
+    "box_hit_rate": 0.4,
+    "value_and_box": 0.0,
+    "type_accuracy_of_found": 1.0,
+    "false_alarms_per_picture": 0.4,
+    "unmatched_items_per_picture": 0.8,
+    "readable_share": 0.517,
+    "median_box_area_ratio": 2.79,
+    "planted_text_values": 35,
+    "planted_personal_spans": 40,
+    "returned_items": 41
+   },
+   "chat": {
+    "pictures": 5,
+    "value_recall": 0.929,
+    "box_hit_rate": 0.536,
+    "value_and_box": 0.393,
+    "type_accuracy_of_found": 1.0,
+    "false_alarms_per_picture": 0.2,
+    "unmatched_items_per_picture": 0.4,
+    "readable_share": 0.904,
+    "median_box_area_ratio": 2.35,
+    "planted_text_values": 28,
+    "planted_personal_spans": 28,
+    "returned_items": 31
+   }
+  }
+ },
+ "norm1000": {
+  "unparsed": 0,
+  "score": {
+   "all": {
+    "pictures": 20,
+    "value_recall": 0.922,
+    "box_hit_rate": 0.538,
+    "value_and_box": 0.281,
+    "type_accuracy_of_found": 1.0,
+    "false_alarms_per_picture": 0.15,
+    "unmatched_items_per_picture": 0.45,
+    "readable_share": 0.921,
+    "median_box_area_ratio": 1.46,
+    "planted_text_values": 153,
+    "planted_personal_spans": 158,
+    "returned_items": 163
+   },
+   "payslip": {
+    "pictures": 5,
+    "value_recall": 1.0,
+    "box_hit_rate": 0.775,
+    "value_and_box": 0.35,
+    "type_accuracy_of_found": 1.0,
+    "false_alarms_per_picture": 0.0,
+    "unmatched_items_per_picture": 0.0,
+    "readable_share": 0.974,
+    "median_box_area_ratio": 1.37,
+    "planted_text_values": 40,
+    "planted_personal_spans": 40,
+    "returned_items": 40
+   },
+   "letter": {
+    "pictures": 5,
+    "value_recall": 0.9,
+    "box_hit_rate": 0.28,
+    "value_and_box": 0.0,
+    "type_accuracy_of_found": 1.0,
+    "false_alarms_per_picture": 0.2,
+    "unmatched_items_per_picture": 1.0,
+    "readable_share": 0.929,
+    "median_box_area_ratio": 1.45,
+    "planted_text_values": 50,
+    "planted_personal_spans": 50,
+    "returned_items": 51
+   },
+   "id_card": {
+    "pictures": 5,
+    "value_recall": 0.857,
+    "box_hit_rate": 0.625,
+    "value_and_box": 0.486,
+    "type_accuracy_of_found": 1.0,
+    "false_alarms_per_picture": 0.2,
+    "unmatched_items_per_picture": 0.4,
+    "readable_share": 0.867,
+    "median_box_area_ratio": 1.48,
+    "planted_text_values": 35,
+    "planted_personal_spans": 40,
+    "returned_items": 41
+   },
+   "chat": {
+    "pictures": 5,
+    "value_recall": 0.929,
+    "box_hit_rate": 0.536,
+    "value_and_box": 0.429,
+    "type_accuracy_of_found": 1.0,
+    "false_alarms_per_picture": 0.2,
+    "unmatched_items_per_picture": 0.4,
+    "readable_share": 0.865,
+    "median_box_area_ratio": 1.59,
+    "planted_text_values": 28,
+    "planted_personal_spans": 28,
+    "returned_items": 31
+   }
+  }
+ }
+}
