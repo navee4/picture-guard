@@ -1,0 +1,885 @@
+{
+ "dev_set": {
+  "pictures": 60,
+  "faces": 118,
+  "faces_by_type": {
+   "side_view": 15,
+   "accessory": 15,
+   "group": 57,
+   "scene": 31
+  },
+  "faces_by_measured_skin_bucket": {
+   "medium": 43,
+   "dark": 41,
+   "light": 34
+  },
+  "faces_by_size": {
+   "60-149px": 57,
+   "ge150px": 30,
+   "20-59px": 28,
+   "lt20px": 3
+  }
+ },
+ "whole_set": {
+  "pictures": 80,
+  "faces": 153,
+  "faces_by_measured_skin_bucket": {
+   "medium": 52,
+   "dark": 52,
+   "light": 49
+  },
+  "faces_by_chardon_band": {
+   "tan": 28,
+   "dark": 17,
+   "intermediate": 24,
+   "light": 36,
+   "brown": 35,
+   "very light": 13
+  }
+ },
+ "sam": {
+  "errors": 0,
+  "pictures_scored": 60,
+  "load_seconds": 12.8,
+  "seconds_per_picture_mean": 0.15,
+  "seconds_per_picture_median": 0.12,
+  "peak_mib_nvidia_smi": 6769,
+  "peak_mib_torch_allocated": 5825,
+  "masks_by_type": {
+   "side_view": {
+    "pictures": 15,
+    "masks_touching_no_face": 0,
+    "pictures_with_such_a_mask": 0,
+    "masks_total": 15,
+    "true_faces": 15
+   },
+   "accessory": {
+    "pictures": 15,
+    "masks_touching_no_face": 0,
+    "pictures_with_such_a_mask": 0,
+    "masks_total": 15,
+    "true_faces": 15
+   },
+   "group": {
+    "pictures": 15,
+    "masks_touching_no_face": 0,
+    "pictures_with_such_a_mask": 0,
+    "masks_total": 57,
+    "true_faces": 57
+   },
+   "scene": {
+    "pictures": 15,
+    "masks_touching_no_face": 0,
+    "pictures_with_such_a_mask": 0,
+    "masks_total": 31,
+    "true_faces": 31
+   }
+  },
+  "groups": {
+   "all": {
+    "n_faces": 118,
+    "found_any_overlap_pct": 100.0,
+    "mask_covers_50pct_plus": 97.5,
+    "mean_mask_coverage_pct": 78.7,
+    "mean_rectangles_coverage_pct": 97.4,
+    "rectangles_cover_90pct_plus": 93.2,
+    "rectangles_cover_all": 48.3,
+    "with_15pct_margin_cover_90pct_plus": 100.0,
+    "with_15pct_margin_cover_all": 99.2,
+    "mean_best_single_mask_rectangle_coverage_pct": 97.4
+   },
+   "size:20-59px": {
+    "n_faces": 28,
+    "found_any_overlap_pct": 100.0,
+    "mask_covers_50pct_plus": 100.0,
+    "mean_mask_coverage_pct": 81.1,
+    "mean_rectangles_coverage_pct": 99.1,
+    "rectangles_cover_90pct_plus": 100.0,
+    "rectangles_cover_all": 78.6,
+    "with_15pct_margin_cover_90pct_plus": 100.0,
+    "with_15pct_margin_cover_all": 100.0,
+    "mean_best_single_mask_rectangle_coverage_pct": 99.1
+   },
+   "size:60-149px": {
+    "n_faces": 57,
+    "found_any_overlap_pct": 100.0,
+    "mask_covers_50pct_plus": 96.5,
+    "mean_mask_coverage_pct": 77.9,
+    "mean_rectangles_coverage_pct": 97.4,
+    "rectangles_cover_90pct_plus": 94.7,
+    "rectangles_cover_all": 42.1,
+    "with_15pct_margin_cover_90pct_plus": 100.0,
+    "with_15pct_margin_cover_all": 98.2,
+    "mean_best_single_mask_rectangle_coverage_pct": 97.4
+   },
+   "size:ge150px": {
+    "n_faces": 30,
+    "found_any_overlap_pct": 100.0,
+    "mask_covers_50pct_plus": 96.7,
+    "mean_mask_coverage_pct": 76.9,
+    "mean_rectangles_coverage_pct": 95.7,
+    "rectangles_cover_90pct_plus": 83.3,
+    "rectangles_cover_all": 26.7,
+    "with_15pct_margin_cover_90pct_plus": 100.0,
+    "with_15pct_margin_cover_all": 100.0,
+    "mean_best_single_mask_rectangle_coverage_pct": 95.7
+   },
+   "size:lt20px": {
+    "n_faces": 3,
+    "found_any_overlap_pct": 100.0,
+    "mask_covers_50pct_plus": 100.0,
+    "mean_mask_coverage_pct": 91.9,
+    "mean_rectangles_coverage_pct": 100.0,
+    "rectangles_cover_90pct_plus": 100.0,
+    "rectangles_cover_all": 100.0,
+    "with_15pct_margin_cover_90pct_plus": 100.0,
+    "with_15pct_margin_cover_all": 100.0,
+    "mean_best_single_mask_rectangle_coverage_pct": 100.0
+   },
+   "skin:dark": {
+    "n_faces": 41,
+    "found_any_overlap_pct": 100.0,
+    "mask_covers_50pct_plus": 100.0,
+    "mean_mask_coverage_pct": 81.2,
+    "mean_rectangles_coverage_pct": 97.0,
+    "rectangles_cover_90pct_plus": 92.7,
+    "rectangles_cover_all": 43.9,
+    "with_15pct_margin_cover_90pct_plus": 100.0,
+    "with_15pct_margin_cover_all": 97.6,
+    "mean_best_single_mask_rectangle_coverage_pct": 97.0
+   },
+   "skin:light": {
+    "n_faces": 34,
+    "found_any_overlap_pct": 100.0,
+    "mask_covers_50pct_plus": 97.1,
+    "mean_mask_coverage_pct": 77.2,
+    "mean_rectangles_coverage_pct": 97.9,
+    "rectangles_cover_90pct_plus": 97.1,
+    "rectangles_cover_all": 50.0,
+    "with_15pct_margin_cover_90pct_plus": 100.0,
+    "with_15pct_margin_cover_all": 100.0,
+    "mean_best_single_mask_rectangle_coverage_pct": 97.9
+   },
+   "skin:medium": {
+    "n_faces": 43,
+    "found_any_overlap_pct": 100.0,
+    "mask_covers_50pct_plus": 95.3,
+    "mean_mask_coverage_pct": 77.7,
+    "mean_rectangles_coverage_pct": 97.5,
+    "rectangles_cover_90pct_plus": 90.7,
+    "rectangles_cover_all": 51.2,
+    "with_15pct_margin_cover_90pct_plus": 100.0,
+    "with_15pct_margin_cover_all": 100.0,
+    "mean_best_single_mask_rectangle_coverage_pct": 97.5
+   },
+   "type:accessory": {
+    "n_faces": 15,
+    "found_any_overlap_pct": 100.0,
+    "mask_covers_50pct_plus": 80.0,
+    "mean_mask_coverage_pct": 65.1,
+    "mean_rectangles_coverage_pct": 91.0,
+    "rectangles_cover_90pct_plus": 46.7,
+    "rectangles_cover_all": 6.7,
+    "with_15pct_margin_cover_90pct_plus": 100.0,
+    "with_15pct_margin_cover_all": 93.3,
+    "mean_best_single_mask_rectangle_coverage_pct": 91.0
+   },
+   "type:accessory|skin:dark": {
+    "n_faces": 6,
+    "found_any_overlap_pct": 100.0,
+    "mask_covers_50pct_plus": 100.0,
+    "mean_mask_coverage_pct": 67.0,
+    "mean_rectangles_coverage_pct": 89.6,
+    "rectangles_cover_90pct_plus": 50.0,
+    "rectangles_cover_all": 0.0,
+    "with_15pct_margin_cover_90pct_plus": 100.0,
+    "with_15pct_margin_cover_all": 83.3,
+    "mean_best_single_mask_rectangle_coverage_pct": 89.6
+   },
+   "type:accessory|skin:light": {
+    "n_faces": 3,
+    "found_any_overlap_pct": 100.0,
+    "mask_covers_50pct_plus": 66.7,
+    "mean_mask_coverage_pct": 61.8,
+    "mean_rectangles_coverage_pct": 92.5,
+    "rectangles_cover_90pct_plus": 66.7,
+    "rectangles_cover_all": 0.0,
+    "with_15pct_margin_cover_90pct_plus": 100.0,
+    "with_15pct_margin_cover_all": 100.0,
+    "mean_best_single_mask_rectangle_coverage_pct": 92.5
+   },
+   "type:accessory|skin:medium": {
+    "n_faces": 6,
+    "found_any_overlap_pct": 100.0,
+    "mask_covers_50pct_plus": 66.7,
+    "mean_mask_coverage_pct": 64.9,
+    "mean_rectangles_coverage_pct": 91.5,
+    "rectangles_cover_90pct_plus": 33.3,
+    "rectangles_cover_all": 16.7,
+    "with_15pct_margin_cover_90pct_plus": 100.0,
+    "with_15pct_margin_cover_all": 100.0,
+    "mean_best_single_mask_rectangle_coverage_pct": 91.5
+   },
+   "type:group": {
+    "n_faces": 57,
+    "found_any_overlap_pct": 100.0,
+    "mask_covers_50pct_plus": 100.0,
+    "mean_mask_coverage_pct": 80.0,
+    "mean_rectangles_coverage_pct": 98.3,
+    "rectangles_cover_90pct_plus": 100.0,
+    "rectangles_cover_all": 47.4,
+    "with_15pct_margin_cover_90pct_plus": 100.0,
+    "with_15pct_margin_cover_all": 100.0,
+    "mean_best_single_mask_rectangle_coverage_pct": 98.3
+   },
+   "type:group|skin:dark": {
+    "n_faces": 20,
+    "found_any_overlap_pct": 100.0,
+    "mask_covers_50pct_plus": 100.0,
+    "mean_mask_coverage_pct": 83.5,
+    "mean_rectangles_coverage_pct": 98.1,
+    "rectangles_cover_90pct_plus": 100.0,
+    "rectangles_cover_all": 45.0,
+    "with_15pct_margin_cover_90pct_plus": 100.0,
+    "with_15pct_margin_cover_all": 100.0,
+    "mean_best_single_mask_rectangle_coverage_pct": 98.1
+   },
+   "type:group|skin:light": {
+    "n_faces": 21,
+    "found_any_overlap_pct": 100.0,
+    "mask_covers_50pct_plus": 100.0,
+    "mean_mask_coverage_pct": 77.8,
+    "mean_rectangles_coverage_pct": 98.5,
+    "rectangles_cover_90pct_plus": 100.0,
+    "rectangles_cover_all": 47.6,
+    "with_15pct_margin_cover_90pct_plus": 100.0,
+    "with_15pct_margin_cover_all": 100.0,
+    "mean_best_single_mask_rectangle_coverage_pct": 98.5
+   },
+   "type:group|skin:medium": {
+    "n_faces": 16,
+    "found_any_overlap_pct": 100.0,
+    "mask_covers_50pct_plus": 100.0,
+    "mean_mask_coverage_pct": 78.6,
+    "mean_rectangles_coverage_pct": 98.0,
+    "rectangles_cover_90pct_plus": 100.0,
+    "rectangles_cover_all": 50.0,
+    "with_15pct_margin_cover_90pct_plus": 100.0,
+    "with_15pct_margin_cover_all": 100.0,
+    "mean_best_single_mask_rectangle_coverage_pct": 98.0
+   },
+   "type:scene": {
+    "n_faces": 31,
+    "found_any_overlap_pct": 100.0,
+    "mask_covers_50pct_plus": 100.0,
+    "mean_mask_coverage_pct": 82.1,
+    "mean_rectangles_coverage_pct": 99.1,
+    "rectangles_cover_90pct_plus": 100.0,
+    "rectangles_cover_all": 80.6,
+    "with_15pct_margin_cover_90pct_plus": 100.0,
+    "with_15pct_margin_cover_all": 100.0,
+    "mean_best_single_mask_rectangle_coverage_pct": 99.1
+   },
+   "type:scene|skin:dark": {
+    "n_faces": 11,
+    "found_any_overlap_pct": 100.0,
+    "mask_covers_50pct_plus": 100.0,
+    "mean_mask_coverage_pct": 84.3,
+    "mean_rectangles_coverage_pct": 98.7,
+    "rectangles_cover_90pct_plus": 100.0,
+    "rectangles_cover_all": 72.7,
+    "with_15pct_margin_cover_90pct_plus": 100.0,
+    "with_15pct_margin_cover_all": 100.0,
+    "mean_best_single_mask_rectangle_coverage_pct": 98.7
+   },
+   "type:scene|skin:light": {
+    "n_faces": 6,
+    "found_any_overlap_pct": 100.0,
+    "mask_covers_50pct_plus": 100.0,
+    "mean_mask_coverage_pct": 77.6,
+    "mean_rectangles_coverage_pct": 99.1,
+    "rectangles_cover_90pct_plus": 100.0,
+    "rectangles_cover_all": 83.3,
+    "with_15pct_margin_cover_90pct_plus": 100.0,
+    "with_15pct_margin_cover_all": 100.0,
+    "mean_best_single_mask_rectangle_coverage_pct": 99.1
+   },
+   "type:scene|skin:medium": {
+    "n_faces": 14,
+    "found_any_overlap_pct": 100.0,
+    "mask_covers_50pct_plus": 100.0,
+    "mean_mask_coverage_pct": 82.4,
+    "mean_rectangles_coverage_pct": 99.5,
+    "rectangles_cover_90pct_plus": 100.0,
+    "rectangles_cover_all": 85.7,
+    "with_15pct_margin_cover_90pct_plus": 100.0,
+    "with_15pct_margin_cover_all": 100.0,
+    "mean_best_single_mask_rectangle_coverage_pct": 99.5
+   },
+   "type:side_view": {
+    "n_faces": 15,
+    "found_any_overlap_pct": 100.0,
+    "mask_covers_50pct_plus": 100.0,
+    "mean_mask_coverage_pct": 80.5,
+    "mean_rectangles_coverage_pct": 97.2,
+    "rectangles_cover_90pct_plus": 100.0,
+    "rectangles_cover_all": 26.7,
+    "with_15pct_margin_cover_90pct_plus": 100.0,
+    "with_15pct_margin_cover_all": 100.0,
+    "mean_best_single_mask_rectangle_coverage_pct": 97.2
+   },
+   "type:side_view|skin:dark": {
+    "n_faces": 4,
+    "found_any_overlap_pct": 100.0,
+    "mask_covers_50pct_plus": 100.0,
+    "mean_mask_coverage_pct": 82.6,
+    "mean_rectangles_coverage_pct": 97.4,
+    "rectangles_cover_90pct_plus": 100.0,
+    "rectangles_cover_all": 25.0,
+    "with_15pct_margin_cover_90pct_plus": 100.0,
+    "with_15pct_margin_cover_all": 100.0,
+    "mean_best_single_mask_rectangle_coverage_pct": 97.4
+   },
+   "type:side_view|skin:light": {
+    "n_faces": 4,
+    "found_any_overlap_pct": 100.0,
+    "mask_covers_50pct_plus": 100.0,
+    "mean_mask_coverage_pct": 84.6,
+    "mean_rectangles_coverage_pct": 97.1,
+    "rectangles_cover_90pct_plus": 100.0,
+    "rectangles_cover_all": 50.0,
+    "with_15pct_margin_cover_90pct_plus": 100.0,
+    "with_15pct_margin_cover_all": 100.0,
+    "mean_best_single_mask_rectangle_coverage_pct": 97.1
+   },
+   "type:side_view|skin:medium": {
+    "n_faces": 7,
+    "found_any_overlap_pct": 100.0,
+    "mask_covers_50pct_plus": 100.0,
+    "mean_mask_coverage_pct": 77.0,
+    "mean_rectangles_coverage_pct": 97.3,
+    "rectangles_cover_90pct_plus": 100.0,
+    "rectangles_cover_all": 14.3,
+    "with_15pct_margin_cover_90pct_plus": 100.0,
+    "with_15pct_margin_cover_all": 100.0,
+    "mean_best_single_mask_rectangle_coverage_pct": 97.3
+   }
+  },
+  "leak_list": [
+   {
+    "file": "accessory_003.png",
+    "type": "accessory",
+    "face_px": 203,
+    "skin_bucket": "light",
+    "ita": 69.6,
+    "view_or_accessory": "wearing a baseball cap and dark sunglasses",
+    "mask_covers_pct": 48.4,
+    "rect_covers_pct": 78.3,
+    "rect_with_margin_covers_pct": 100.0,
+    "kind": "partly covered (rectangles cover under 90%)"
+   },
+   {
+    "file": "accessory_008.jpg",
+    "type": "accessory",
+    "face_px": 380,
+    "skin_bucket": "medium",
+    "ita": 22.0,
+    "view_or_accessory": "wearing a wool beanie",
+    "mask_covers_pct": 76.9,
+    "rect_covers_pct": 90.0,
+    "rect_with_margin_covers_pct": 100.0,
+    "kind": "partly covered (rectangles cover under 90%)"
+   },
+   {
+    "file": "accessory_009.jpg",
+    "type": "accessory",
+    "face_px": 303,
+    "skin_bucket": "dark",
+    "ita": 3.0,
+    "view_or_accessory": "wearing a wide-brimmed hat",
+    "mask_covers_pct": 68.2,
+    "rect_covers_pct": 87.5,
+    "rect_with_margin_covers_pct": 100.0,
+    "kind": "partly covered (rectangles cover under 90%)"
+   },
+   {
+    "file": "accessory_010.png",
+    "type": "accessory",
+    "face_px": 116,
+    "skin_bucket": "medium",
+    "ita": 38.1,
+    "view_or_accessory": "wearing a face mask and glasses",
+    "mask_covers_pct": 38.2,
+    "rect_covers_pct": 87.5,
+    "rect_with_margin_covers_pct": 100.0,
+    "kind": "partly covered (rectangles cover under 90%)"
+   },
+   {
+    "file": "accessory_013.jpg",
+    "type": "accessory",
+    "face_px": 106,
+    "skin_bucket": "dark",
+    "ita": -41.1,
+    "view_or_accessory": "wearing a baseball cap",
+    "mask_covers_pct": 63.9,
+    "rect_covers_pct": 80.1,
+    "rect_with_margin_covers_pct": 94.8,
+    "kind": "partly covered (rectangles cover under 90%)"
+   },
+   {
+    "file": "accessory_014.jpg",
+    "type": "accessory",
+    "face_px": 264,
+    "skin_bucket": "medium",
+    "ita": 11.9,
+    "view_or_accessory": "wearing a baseball cap",
+    "mask_covers_pct": 67.9,
+    "rect_covers_pct": 89.7,
+    "rect_with_margin_covers_pct": 100.0,
+    "kind": "partly covered (rectangles cover under 90%)"
+   },
+   {
+    "file": "accessory_017.jpg",
+    "type": "accessory",
+    "face_px": 383,
+    "skin_bucket": "dark",
+    "ita": -8.9,
+    "view_or_accessory": "wearing a wool beanie",
+    "mask_covers_pct": 67.7,
+    "rect_covers_pct": 89.7,
+    "rect_with_margin_covers_pct": 100.0,
+    "kind": "partly covered (rectangles cover under 90%)"
+   },
+   {
+    "file": "accessory_018.jpg",
+    "type": "accessory",
+    "face_px": 149,
+    "skin_bucket": "medium",
+    "ita": 17.9,
+    "view_or_accessory": "wearing a blue surgical face mask covering nose and mouth",
+    "mask_covers_pct": 42.7,
+    "rect_covers_pct": 84.8,
+    "rect_with_margin_covers_pct": 100.0,
+    "kind": "partly covered (rectangles cover under 90%)"
+   }
+  ]
+ },
+ "glimmer": {
+  "seconds_per_picture_mean": 9.77,
+  "seconds_per_picture_median": 9.19,
+  "peak_mib": 18223,
+  "load_seconds": 16.3,
+  "parse_errors": 0,
+  "frames": {
+   "px": {
+    "false_face_boxes": 30,
+    "count_vs_truth_by_type": {
+     "side_view": {
+      "pictures": 15,
+      "count_equal": 15,
+      "count_over": 0,
+      "count_under": 0,
+      "true_faces": 15,
+      "reported_faces": 15
+     },
+     "accessory": {
+      "pictures": 15,
+      "count_equal": 15,
+      "count_over": 0,
+      "count_under": 0,
+      "true_faces": 15,
+      "reported_faces": 15
+     },
+     "group": {
+      "pictures": 15,
+      "count_equal": 15,
+      "count_over": 0,
+      "count_under": 0,
+      "true_faces": 57,
+      "reported_faces": 57
+     },
+     "scene": {
+      "pictures": 15,
+      "count_equal": 14,
+      "count_over": 0,
+      "count_under": 1,
+      "true_faces": 31,
+      "reported_faces": 30
+     }
+    },
+    "box_hit": {
+     "all": {
+      "n_faces": 118,
+      "hit": 87,
+      "hit_pct": 73.7
+     },
+     "size:20-59px": {
+      "n_faces": 28,
+      "hit": 6,
+      "hit_pct": 21.4
+     },
+     "size:60-149px": {
+      "n_faces": 57,
+      "hit": 51,
+      "hit_pct": 89.5
+     },
+     "size:ge150px": {
+      "n_faces": 30,
+      "hit": 30,
+      "hit_pct": 100.0
+     },
+     "size:lt20px": {
+      "n_faces": 3,
+      "hit": 0,
+      "hit_pct": 0.0
+     },
+     "skin:dark": {
+      "n_faces": 41,
+      "hit": 29,
+      "hit_pct": 70.7
+     },
+     "skin:light": {
+      "n_faces": 34,
+      "hit": 28,
+      "hit_pct": 82.4
+     },
+     "skin:medium": {
+      "n_faces": 43,
+      "hit": 30,
+      "hit_pct": 69.8
+     },
+     "type:accessory": {
+      "n_faces": 15,
+      "hit": 15,
+      "hit_pct": 100.0
+     },
+     "type:accessory|skin:dark": {
+      "n_faces": 6,
+      "hit": 6,
+      "hit_pct": 100.0
+     },
+     "type:accessory|skin:light": {
+      "n_faces": 3,
+      "hit": 3,
+      "hit_pct": 100.0
+     },
+     "type:accessory|skin:medium": {
+      "n_faces": 6,
+      "hit": 6,
+      "hit_pct": 100.0
+     },
+     "type:group": {
+      "n_faces": 57,
+      "hit": 51,
+      "hit_pct": 89.5
+     },
+     "type:group|skin:dark": {
+      "n_faces": 20,
+      "hit": 18,
+      "hit_pct": 90.0
+     },
+     "type:group|skin:light": {
+      "n_faces": 21,
+      "hit": 19,
+      "hit_pct": 90.5
+     },
+     "type:group|skin:medium": {
+      "n_faces": 16,
+      "hit": 14,
+      "hit_pct": 87.5
+     },
+     "type:scene": {
+      "n_faces": 31,
+      "hit": 6,
+      "hit_pct": 19.4
+     },
+     "type:scene|skin:dark": {
+      "n_faces": 11,
+      "hit": 1,
+      "hit_pct": 9.1
+     },
+     "type:scene|skin:light": {
+      "n_faces": 6,
+      "hit": 2,
+      "hit_pct": 33.3
+     },
+     "type:scene|skin:medium": {
+      "n_faces": 14,
+      "hit": 3,
+      "hit_pct": 21.4
+     },
+     "type:side_view": {
+      "n_faces": 15,
+      "hit": 15,
+      "hit_pct": 100.0
+     },
+     "type:side_view|skin:dark": {
+      "n_faces": 4,
+      "hit": 4,
+      "hit_pct": 100.0
+     },
+     "type:side_view|skin:light": {
+      "n_faces": 4,
+      "hit": 4,
+      "hit_pct": 100.0
+     },
+     "type:side_view|skin:medium": {
+      "n_faces": 7,
+      "hit": 7,
+      "hit_pct": 100.0
+     }
+    }
+   },
+   "norm1000": {
+    "false_face_boxes": 34,
+    "count_vs_truth_by_type": {
+     "side_view": {
+      "pictures": 15,
+      "count_equal": 15,
+      "count_over": 0,
+      "count_under": 0,
+      "true_faces": 15,
+      "reported_faces": 15
+     },
+     "accessory": {
+      "pictures": 15,
+      "count_equal": 15,
+      "count_over": 0,
+      "count_under": 0,
+      "true_faces": 15,
+      "reported_faces": 15
+     },
+     "group": {
+      "pictures": 15,
+      "count_equal": 15,
+      "count_over": 0,
+      "count_under": 0,
+      "true_faces": 57,
+      "reported_faces": 57
+     },
+     "scene": {
+      "pictures": 15,
+      "count_equal": 14,
+      "count_over": 0,
+      "count_under": 1,
+      "true_faces": 31,
+      "reported_faces": 30
+     }
+    },
+    "box_hit": {
+     "all": {
+      "n_faces": 118,
+      "hit": 83,
+      "hit_pct": 70.3
+     },
+     "size:20-59px": {
+      "n_faces": 28,
+      "hit": 20,
+      "hit_pct": 71.4
+     },
+     "size:60-149px": {
+      "n_faces": 57,
+      "hit": 33,
+      "hit_pct": 57.9
+     },
+     "size:ge150px": {
+      "n_faces": 30,
+      "hit": 29,
+      "hit_pct": 96.7
+     },
+     "size:lt20px": {
+      "n_faces": 3,
+      "hit": 1,
+      "hit_pct": 33.3
+     },
+     "skin:dark": {
+      "n_faces": 41,
+      "hit": 30,
+      "hit_pct": 73.2
+     },
+     "skin:light": {
+      "n_faces": 34,
+      "hit": 21,
+      "hit_pct": 61.8
+     },
+     "skin:medium": {
+      "n_faces": 43,
+      "hit": 32,
+      "hit_pct": 74.4
+     },
+     "type:accessory": {
+      "n_faces": 15,
+      "hit": 15,
+      "hit_pct": 100.0
+     },
+     "type:accessory|skin:dark": {
+      "n_faces": 6,
+      "hit": 6,
+      "hit_pct": 100.0
+     },
+     "type:accessory|skin:light": {
+      "n_faces": 3,
+      "hit": 3,
+      "hit_pct": 100.0
+     },
+     "type:accessory|skin:medium": {
+      "n_faces": 6,
+      "hit": 6,
+      "hit_pct": 100.0
+     },
+     "type:group": {
+      "n_faces": 57,
+      "hit": 32,
+      "hit_pct": 56.1
+     },
+     "type:group|skin:dark": {
+      "n_faces": 20,
+      "hit": 14,
+      "hit_pct": 70.0
+     },
+     "type:group|skin:light": {
+      "n_faces": 21,
+      "hit": 9,
+      "hit_pct": 42.9
+     },
+     "type:group|skin:medium": {
+      "n_faces": 16,
+      "hit": 9,
+      "hit_pct": 56.2
+     },
+     "type:scene": {
+      "n_faces": 31,
+      "hit": 21,
+      "hit_pct": 67.7
+     },
+     "type:scene|skin:dark": {
+      "n_faces": 11,
+      "hit": 6,
+      "hit_pct": 54.5
+     },
+     "type:scene|skin:light": {
+      "n_faces": 6,
+      "hit": 5,
+      "hit_pct": 83.3
+     },
+     "type:scene|skin:medium": {
+      "n_faces": 14,
+      "hit": 10,
+      "hit_pct": 71.4
+     },
+     "type:side_view": {
+      "n_faces": 15,
+      "hit": 15,
+      "hit_pct": 100.0
+     },
+     "type:side_view|skin:dark": {
+      "n_faces": 4,
+      "hit": 4,
+      "hit_pct": 100.0
+     },
+     "type:side_view|skin:light": {
+      "n_faces": 4,
+      "hit": 4,
+      "hit_pct": 100.0
+     },
+     "type:side_view|skin:medium": {
+      "n_faces": 7,
+      "hit": 7,
+      "hit_pct": 100.0
+     }
+    }
+   }
+  },
+  "hit_in_either_frame": {
+   "note": "upper bound: picks the better frame per face using the truth, so it cannot be done in use",
+   "n_faces": 118,
+   "hit": 112,
+   "hit_pct": 94.9
+  }
+ },
+ "count_rule": {
+  "pictures": 60,
+  "blacked_out_by_rule": 0,
+  "rule_fires_on_leaky_picture": 0,
+  "rule_fires_on_clean_picture": 0,
+  "leaky_pictures": 8,
+  "leaky_pictures_caught": 0,
+  "leaky_pictures_not_caught": [
+   {
+    "file": "accessory_003.png",
+    "true_faces": 1,
+    "sam_masks": 1,
+    "glimmer_count": 1,
+    "faces_leaking": 1
+   },
+   {
+    "file": "accessory_008.jpg",
+    "true_faces": 1,
+    "sam_masks": 1,
+    "glimmer_count": 1,
+    "faces_leaking": 1
+   },
+   {
+    "file": "accessory_009.jpg",
+    "true_faces": 1,
+    "sam_masks": 1,
+    "glimmer_count": 1,
+    "faces_leaking": 1
+   },
+   {
+    "file": "accessory_010.png",
+    "true_faces": 1,
+    "sam_masks": 1,
+    "glimmer_count": 1,
+    "faces_leaking": 1
+   },
+   {
+    "file": "accessory_013.jpg",
+    "true_faces": 1,
+    "sam_masks": 1,
+    "glimmer_count": 1,
+    "faces_leaking": 1
+   },
+   {
+    "file": "accessory_014.jpg",
+    "true_faces": 1,
+    "sam_masks": 1,
+    "glimmer_count": 1,
+    "faces_leaking": 1
+   },
+   {
+    "file": "accessory_017.jpg",
+    "true_faces": 1,
+    "sam_masks": 1,
+    "glimmer_count": 1,
+    "faces_leaking": 1
+   },
+   {
+    "file": "accessory_018.jpg",
+    "true_faces": 1,
+    "sam_masks": 1,
+    "glimmer_count": 1,
+    "faces_leaking": 1
+   }
+  ],
+  "by_type": {
+   "side_view": {
+    "pictures": 15,
+    "fires": 0
+   },
+   "accessory": {
+    "pictures": 15,
+    "fires": 0
+   },
+   "group": {
+    "pictures": 15,
+    "fires": 0
+   },
+   "scene": {
+    "pictures": 15,
+    "fires": 0
+   }
+  },
+  "share_pictures_blacked_out_pct": 0.0
+ }
+}

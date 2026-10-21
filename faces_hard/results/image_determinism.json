@@ -1,0 +1,16 @@
+{
+ "checked": [
+  0,
+  55,
+  111,
+  166,
+  220
+ ],
+ "identical": [
+  true,
+  false,
+  false,
+  true,
+  true
+ ]
+}

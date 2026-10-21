@@ -6,3 +6,6 @@
 {"run": "sdxl_images_chunk1", "gpu": "L40S", "gpu_seconds": 52.3, "wall_seconds": 52.3, "cpu_cores": 4, "mem_gib": 32, "usd": 0.0403, "note": "peak 10738 MiB; 10 images"}
 {"run": "sdxl_images_chunk2", "gpu": "L40S", "gpu_seconds": 51.8, "wall_seconds": 51.8, "cpu_cores": 4, "mem_gib": 32, "usd": 0.0399, "note": "peak 10738 MiB; 10 images"}
 {"run": "sdxl_images_chunk3", "gpu": "L40S", "gpu_seconds": 60.1, "wall_seconds": 60.1, "cpu_cores": 4, "mem_gib": 32, "usd": 0.0463, "note": "peak 10738 MiB; 10 images"}
+{"run": "sam31_faces_dev60", "gpu": "L40S", "gpu_seconds": 30.2, "wall_seconds": 30.2, "cpu_cores": 4, "mem_gib": 32, "usd": 0.0233, "note": "load=12.8s"}
+{"run": "glimmer_q4_faces_dev60", "gpu": "L40S", "gpu_seconds": 602.9, "wall_seconds": 602.9, "cpu_cores": 4, "mem_gib": 32, "usd": 0.4647, "note": "ready=True load=16.3s"}
+{"run": "sdxl_regen_check", "gpu": "L40S", "gpu_seconds": 33.6, "wall_seconds": 33.6, "cpu_cores": 4, "mem_gib": 32, "usd": 0.0259, "note": "5 images"}
