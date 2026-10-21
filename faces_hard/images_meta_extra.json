@@ -1,0 +1,2616 @@
+{
+ "model": "stabilityai/stable-diffusion-xl-base-1.0",
+ "diffusers": "0.41.0",
+ "torch": "2.14.1+cu130",
+ "detector": "OpenCV YuNet 2023mar (MIT)",
+ "yunet_sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+ "steps": 30,
+ "guidance": 6.0,
+ "portrait_score_threshold": 0.8,
+ "bg_score_threshold": 0.5,
+ "tries": 3,
+ "specs": [
+  {
+   "index": 234,
+   "kind": "pool",
+   "seed": 20261022234,
+   "prompt": "portrait photograph of a man with very light skin, in their thirties, short blond hair, head tilted slightly, soft even light, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "very light skin",
+    "age": "in their thirties",
+    "gender_word": "man",
+    "hair": "short blond hair",
+    "glasses": false,
+    "view_or_accessory": "head tilted slightly",
+    "light": "soft even light"
+   }
+  },
+  {
+   "index": 235,
+   "kind": "pool",
+   "seed": 20261022235,
+   "prompt": "portrait photograph of a man with light olive skin, in their sixties, short brown hair with a beard, head tilted slightly, overhead fluorescent light, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "light olive skin",
+    "age": "in their sixties",
+    "gender_word": "man",
+    "hair": "short brown hair with a beard",
+    "glasses": false,
+    "view_or_accessory": "head tilted slightly",
+    "light": "overhead fluorescent light"
+   }
+  },
+  {
+   "index": 236,
+   "kind": "pool",
+   "seed": 20261022236,
+   "prompt": "portrait photograph of a man with light olive skin, in their fifties, short brown hair with a beard, head turned slightly to the right, overhead fluorescent light, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "light olive skin",
+    "age": "in their fifties",
+    "gender_word": "man",
+    "hair": "short brown hair with a beard",
+    "glasses": false,
+    "view_or_accessory": "head turned slightly to the right",
+    "light": "overhead fluorescent light"
+   }
+  },
+  {
+   "index": 237,
+   "kind": "pool",
+   "seed": 20261022237,
+   "prompt": "portrait photograph of a man with medium tan skin, in their thirties, short blond hair, head turned slightly to the left, bright harsh daylight, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "medium tan skin",
+    "age": "in their thirties",
+    "gender_word": "man",
+    "hair": "short blond hair",
+    "glasses": false,
+    "view_or_accessory": "head turned slightly to the left",
+    "light": "bright harsh daylight"
+   }
+  },
+  {
+   "index": 238,
+   "kind": "pool",
+   "seed": 20261022238,
+   "prompt": "portrait photograph of a woman with medium tan skin, in their forties, long black hair, head turned slightly to the left, dim warm indoor light, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "medium tan skin",
+    "age": "in their forties",
+    "gender_word": "woman",
+    "hair": "long black hair",
+    "glasses": false,
+    "view_or_accessory": "head turned slightly to the left",
+    "light": "dim warm indoor light"
+   }
+  },
+  {
+   "index": 239,
+   "kind": "pool",
+   "seed": 20261022239,
+   "prompt": "portrait photograph of a woman with light olive skin, in their seventies, long black hair, facing the camera, bright harsh daylight, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "light olive skin",
+    "age": "in their seventies",
+    "gender_word": "woman",
+    "hair": "long black hair",
+    "glasses": false,
+    "view_or_accessory": "facing the camera",
+    "light": "bright harsh daylight"
+   }
+  },
+  {
+   "index": 240,
+   "kind": "pool",
+   "seed": 20261022240,
+   "prompt": "portrait photograph of a woman with medium tan skin, in their forties, blond hair tied back, wearing glasses, facing the camera, strong side light from a window, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "medium tan skin",
+    "age": "in their forties",
+    "gender_word": "woman",
+    "hair": "blond hair tied back",
+    "glasses": true,
+    "view_or_accessory": "facing the camera",
+    "light": "strong side light from a window"
+   }
+  },
+  {
+   "index": 241,
+   "kind": "pool",
+   "seed": 20261022241,
+   "prompt": "portrait photograph of a man with medium tan skin, in their sixties, short grey hair, wearing glasses, head tilted slightly, bright harsh daylight, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "medium tan skin",
+    "age": "in their sixties",
+    "gender_word": "man",
+    "hair": "short grey hair",
+    "glasses": true,
+    "view_or_accessory": "head tilted slightly",
+    "light": "bright harsh daylight"
+   }
+  },
+  {
+   "index": 242,
+   "kind": "pool",
+   "seed": 20261022242,
+   "prompt": "portrait photograph of a woman with very light skin, in their sixties, short grey hair, wearing glasses, head turned slightly to the right, dim warm indoor light, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "very light skin",
+    "age": "in their sixties",
+    "gender_word": "woman",
+    "hair": "short grey hair",
+    "glasses": true,
+    "view_or_accessory": "head turned slightly to the right",
+    "light": "dim warm indoor light"
+   }
+  },
+  {
+   "index": 243,
+   "kind": "pool",
+   "seed": 20261022243,
+   "prompt": "portrait photograph of a man with medium tan skin, in their twenties, short brown hair with a beard, head tilted slightly, strong side light from a window, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "medium tan skin",
+    "age": "in their twenties",
+    "gender_word": "man",
+    "hair": "short brown hair with a beard",
+    "glasses": false,
+    "view_or_accessory": "head tilted slightly",
+    "light": "strong side light from a window"
+   }
+  },
+  {
+   "index": 244,
+   "kind": "pool",
+   "seed": 20261022244,
+   "prompt": "portrait photograph of a man with light olive skin, in their thirties, curly black hair, wearing glasses, head turned slightly to the left, dim warm indoor light, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "light olive skin",
+    "age": "in their thirties",
+    "gender_word": "man",
+    "hair": "curly black hair",
+    "glasses": true,
+    "view_or_accessory": "head turned slightly to the left",
+    "light": "dim warm indoor light"
+   }
+  },
+  {
+   "index": 245,
+   "kind": "pool",
+   "seed": 20261022245,
+   "prompt": "portrait photograph of a man with medium tan skin, in their twenties, short dark hair, head tilted slightly, soft even light, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "medium tan skin",
+    "age": "in their twenties",
+    "gender_word": "man",
+    "hair": "short dark hair",
+    "glasses": false,
+    "view_or_accessory": "head tilted slightly",
+    "light": "soft even light"
+   }
+  },
+  {
+   "index": 246,
+   "kind": "pool",
+   "seed": 20261022246,
+   "prompt": "portrait photograph of a man with very light skin, in their seventies, short brown hair with a beard, head tilted slightly, strong side light from a window, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "very light skin",
+    "age": "in their seventies",
+    "gender_word": "man",
+    "hair": "short brown hair with a beard",
+    "glasses": false,
+    "view_or_accessory": "head tilted slightly",
+    "light": "strong side light from a window"
+   }
+  },
+  {
+   "index": 247,
+   "kind": "pool",
+   "seed": 20261022247,
+   "prompt": "portrait photograph of a man with light olive skin, in their forties, curly black hair, wearing glasses, head turned slightly to the left, dim warm indoor light, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "light olive skin",
+    "age": "in their forties",
+    "gender_word": "man",
+    "hair": "curly black hair",
+    "glasses": true,
+    "view_or_accessory": "head turned slightly to the left",
+    "light": "dim warm indoor light"
+   }
+  },
+  {
+   "index": 248,
+   "kind": "pool",
+   "seed": 20261022248,
+   "prompt": "portrait photograph of a woman with light olive skin, in their fifties, short grey hair, head tilted slightly, dim warm indoor light, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "light olive skin",
+    "age": "in their fifties",
+    "gender_word": "woman",
+    "hair": "short grey hair",
+    "glasses": false,
+    "view_or_accessory": "head tilted slightly",
+    "light": "dim warm indoor light"
+   }
+  },
+  {
+   "index": 249,
+   "kind": "pool",
+   "seed": 20261022249,
+   "prompt": "portrait photograph of a woman with medium tan skin, in their twenties, shoulder-length brown hair, head turned slightly to the left, dim warm indoor light, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "medium tan skin",
+    "age": "in their twenties",
+    "gender_word": "woman",
+    "hair": "shoulder-length brown hair",
+    "glasses": false,
+    "view_or_accessory": "head turned slightly to the left",
+    "light": "dim warm indoor light"
+   }
+  },
+  {
+   "index": 250,
+   "kind": "pool",
+   "seed": 20261022250,
+   "prompt": "portrait photograph of a man with very light skin, in their fifties, short grey hair, wearing glasses, head tilted slightly, overhead fluorescent light, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "very light skin",
+    "age": "in their fifties",
+    "gender_word": "man",
+    "hair": "short grey hair",
+    "glasses": true,
+    "view_or_accessory": "head tilted slightly",
+    "light": "overhead fluorescent light"
+   }
+  },
+  {
+   "index": 251,
+   "kind": "pool",
+   "seed": 20261022251,
+   "prompt": "portrait photograph of a woman with very light skin, in their fifties, curly dark hair, wearing glasses, facing the camera, soft even light, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "very light skin",
+    "age": "in their fifties",
+    "gender_word": "woman",
+    "hair": "curly dark hair",
+    "glasses": true,
+    "view_or_accessory": "facing the camera",
+    "light": "soft even light"
+   }
+  },
+  {
+   "index": 252,
+   "kind": "pool",
+   "seed": 20261022252,
+   "prompt": "portrait photograph of a woman with light olive skin, in their forties, short grey hair, head turned slightly to the left, bright harsh daylight, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "light olive skin",
+    "age": "in their forties",
+    "gender_word": "woman",
+    "hair": "short grey hair",
+    "glasses": false,
+    "view_or_accessory": "head turned slightly to the left",
+    "light": "bright harsh daylight"
+   }
+  },
+  {
+   "index": 253,
+   "kind": "pool",
+   "seed": 20261022253,
+   "prompt": "portrait photograph of a woman with light olive skin, in their twenties, long black hair, head turned slightly to the left, overhead fluorescent light, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "light olive skin",
+    "age": "in their twenties",
+    "gender_word": "woman",
+    "hair": "long black hair",
+    "glasses": false,
+    "view_or_accessory": "head turned slightly to the left",
+    "light": "overhead fluorescent light"
+   }
+  },
+  {
+   "index": 254,
+   "kind": "pool",
+   "seed": 20261022254,
+   "prompt": "portrait photograph of a woman with very light skin, in their fifties, short grey hair, head tilted slightly, strong side light from a window, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "very light skin",
+    "age": "in their fifties",
+    "gender_word": "woman",
+    "hair": "short grey hair",
+    "glasses": false,
+    "view_or_accessory": "head tilted slightly",
+    "light": "strong side light from a window"
+   }
+  },
+  {
+   "index": 255,
+   "kind": "pool",
+   "seed": 20261022255,
+   "prompt": "portrait photograph of a man with light olive skin, in their sixties, curly black hair, head tilted slightly, dim warm indoor light, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "light olive skin",
+    "age": "in their sixties",
+    "gender_word": "man",
+    "hair": "curly black hair",
+    "glasses": false,
+    "view_or_accessory": "head tilted slightly",
+    "light": "dim warm indoor light"
+   }
+  },
+  {
+   "index": 256,
+   "kind": "pool",
+   "seed": 20261022256,
+   "prompt": "portrait photograph of a man with medium tan skin, in their forties, bald, head turned slightly to the left, bright harsh daylight, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "medium tan skin",
+    "age": "in their forties",
+    "gender_word": "man",
+    "hair": "bald",
+    "glasses": false,
+    "view_or_accessory": "head turned slightly to the left",
+    "light": "bright harsh daylight"
+   }
+  },
+  {
+   "index": 257,
+   "kind": "pool",
+   "seed": 20261022257,
+   "prompt": "portrait photograph of a man with medium tan skin, in their forties, short grey hair, head turned slightly to the left, bright harsh daylight, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "medium tan skin",
+    "age": "in their forties",
+    "gender_word": "man",
+    "hair": "short grey hair",
+    "glasses": false,
+    "view_or_accessory": "head turned slightly to the left",
+    "light": "bright harsh daylight"
+   }
+  },
+  {
+   "index": 258,
+   "kind": "pool",
+   "seed": 20261022258,
+   "prompt": "portrait photograph of a man with medium tan skin, in their sixties, curly black hair, wearing glasses, head turned slightly to the left, overhead fluorescent light, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "medium tan skin",
+    "age": "in their sixties",
+    "gender_word": "man",
+    "hair": "curly black hair",
+    "glasses": true,
+    "view_or_accessory": "head turned slightly to the left",
+    "light": "overhead fluorescent light"
+   }
+  },
+  {
+   "index": 259,
+   "kind": "pool",
+   "seed": 20261022259,
+   "prompt": "portrait photograph of a woman with medium tan skin, in their thirties, red hair, facing the camera, bright harsh daylight, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "medium tan skin",
+    "age": "in their thirties",
+    "gender_word": "woman",
+    "hair": "red hair",
+    "glasses": false,
+    "view_or_accessory": "facing the camera",
+    "light": "bright harsh daylight"
+   }
+  },
+  {
+   "index": 260,
+   "kind": "pool",
+   "seed": 20261022260,
+   "prompt": "portrait photograph of a woman with medium tan skin, in their thirties, long black hair, wearing glasses, head turned slightly to the right, overhead fluorescent light, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "medium tan skin",
+    "age": "in their thirties",
+    "gender_word": "woman",
+    "hair": "long black hair",
+    "glasses": true,
+    "view_or_accessory": "head turned slightly to the right",
+    "light": "overhead fluorescent light"
+   }
+  },
+  {
+   "index": 261,
+   "kind": "pool",
+   "seed": 20261022261,
+   "prompt": "portrait photograph of a man with medium tan skin, in their twenties, bald, head turned slightly to the left, dim warm indoor light, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "medium tan skin",
+    "age": "in their twenties",
+    "gender_word": "man",
+    "hair": "bald",
+    "glasses": false,
+    "view_or_accessory": "head turned slightly to the left",
+    "light": "dim warm indoor light"
+   }
+  },
+  {
+   "index": 262,
+   "kind": "pool",
+   "seed": 20261022262,
+   "prompt": "portrait photograph of a woman with very light skin, in their twenties, short grey hair, wearing glasses, head turned slightly to the left, strong side light from a window, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "very light skin",
+    "age": "in their twenties",
+    "gender_word": "woman",
+    "hair": "short grey hair",
+    "glasses": true,
+    "view_or_accessory": "head turned slightly to the left",
+    "light": "strong side light from a window"
+   }
+  },
+  {
+   "index": 263,
+   "kind": "pool",
+   "seed": 20261022263,
+   "prompt": "portrait photograph of a woman with medium tan skin, in their thirties, short grey hair, head turned slightly to the right, overhead fluorescent light, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "medium tan skin",
+    "age": "in their thirties",
+    "gender_word": "woman",
+    "hair": "short grey hair",
+    "glasses": false,
+    "view_or_accessory": "head turned slightly to the right",
+    "light": "overhead fluorescent light"
+   }
+  },
+  {
+   "index": 264,
+   "kind": "pool",
+   "seed": 20261022264,
+   "prompt": "portrait photograph of a woman with very light skin, in their thirties, curly dark hair, head turned slightly to the right, soft even light, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "very light skin",
+    "age": "in their thirties",
+    "gender_word": "woman",
+    "hair": "curly dark hair",
+    "glasses": false,
+    "view_or_accessory": "head turned slightly to the right",
+    "light": "soft even light"
+   }
+  },
+  {
+   "index": 265,
+   "kind": "pool",
+   "seed": 20261022265,
+   "prompt": "portrait photograph of a man with medium tan skin, in their seventies, short brown hair with a beard, wearing glasses, head tilted slightly, strong side light from a window, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "medium tan skin",
+    "age": "in their seventies",
+    "gender_word": "man",
+    "hair": "short brown hair with a beard",
+    "glasses": true,
+    "view_or_accessory": "head tilted slightly",
+    "light": "strong side light from a window"
+   }
+  },
+  {
+   "index": 266,
+   "kind": "pool",
+   "seed": 20261022266,
+   "prompt": "portrait photograph of a man with medium tan skin, in their fifties, curly black hair, wearing glasses, head turned slightly to the right, soft even light, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "medium tan skin",
+    "age": "in their fifties",
+    "gender_word": "man",
+    "hair": "curly black hair",
+    "glasses": true,
+    "view_or_accessory": "head turned slightly to the right",
+    "light": "soft even light"
+   }
+  },
+  {
+   "index": 267,
+   "kind": "pool",
+   "seed": 20261022267,
+   "prompt": "portrait photograph of a man with light olive skin, in their twenties, short blond hair, facing the camera, overhead fluorescent light, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "light olive skin",
+    "age": "in their twenties",
+    "gender_word": "man",
+    "hair": "short blond hair",
+    "glasses": false,
+    "view_or_accessory": "facing the camera",
+    "light": "overhead fluorescent light"
+   }
+  },
+  {
+   "index": 268,
+   "kind": "pool",
+   "seed": 20261022268,
+   "prompt": "portrait photograph of a woman with medium tan skin, in their seventies, curly dark hair, facing the camera, soft even light, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "medium tan skin",
+    "age": "in their seventies",
+    "gender_word": "woman",
+    "hair": "curly dark hair",
+    "glasses": false,
+    "view_or_accessory": "facing the camera",
+    "light": "soft even light"
+   }
+  },
+  {
+   "index": 269,
+   "kind": "pool",
+   "seed": 20261022269,
+   "prompt": "portrait photograph of a woman with light olive skin, in their seventies, shoulder-length brown hair, wearing glasses, head turned slightly to the left, bright harsh daylight, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "light olive skin",
+    "age": "in their seventies",
+    "gender_word": "woman",
+    "hair": "shoulder-length brown hair",
+    "glasses": true,
+    "view_or_accessory": "head turned slightly to the left",
+    "light": "bright harsh daylight"
+   }
+  },
+  {
+   "index": 270,
+   "kind": "pool",
+   "seed": 20261022270,
+   "prompt": "portrait photograph of a man with light olive skin, in their sixties, short brown hair with a beard, facing the camera, soft even light, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "light olive skin",
+    "age": "in their sixties",
+    "gender_word": "man",
+    "hair": "short brown hair with a beard",
+    "glasses": false,
+    "view_or_accessory": "facing the camera",
+    "light": "soft even light"
+   }
+  },
+  {
+   "index": 271,
+   "kind": "pool",
+   "seed": 20261022271,
+   "prompt": "portrait photograph of a woman with light olive skin, in their forties, red hair, head turned slightly to the right, strong side light from a window, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "light olive skin",
+    "age": "in their forties",
+    "gender_word": "woman",
+    "hair": "red hair",
+    "glasses": false,
+    "view_or_accessory": "head turned slightly to the right",
+    "light": "strong side light from a window"
+   }
+  },
+  {
+   "index": 272,
+   "kind": "pool",
+   "seed": 20261022272,
+   "prompt": "portrait photograph of a woman with light olive skin, in their seventies, shoulder-length brown hair, wearing glasses, head turned slightly to the left, soft even light, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "light olive skin",
+    "age": "in their seventies",
+    "gender_word": "woman",
+    "hair": "shoulder-length brown hair",
+    "glasses": true,
+    "view_or_accessory": "head turned slightly to the left",
+    "light": "soft even light"
+   }
+  },
+  {
+   "index": 273,
+   "kind": "pool",
+   "seed": 20261022273,
+   "prompt": "portrait photograph of a woman with very light skin, in their fifties, blond hair tied back, head turned slightly to the left, strong side light from a window, plain light background, head and shoulders, sharp focus, natural skin texture",
+   "negative": "cartoon, illustration, painting, drawing, text, watermark, logo, deformed, multiple people, child, blurry",
+   "width": 1024,
+   "height": 1024,
+   "attrs": {
+    "skin_word": "very light skin",
+    "age": "in their fifties",
+    "gender_word": "woman",
+    "hair": "blond hair tied back",
+    "glasses": false,
+    "view_or_accessory": "head turned slightly to the left",
+    "light": "strong side light from a window"
+   }
+  }
+ ],
+ "items": [
+  {
+   "index": 234,
+   "kind": "pool",
+   "seed_used": 20261022234,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "1b79f8c3452f800d7be72d7932b896000de9f6ce5bdf25f026acc1e757315fc9",
+   "detections": [
+    [
+     292.81,
+     179.29,
+     389.74,
+     546.47,
+     386.72,
+     384.62,
+     575.42,
+     373.47,
+     478.61,
+     494.17,
+     411.3,
+     592.47,
+     573.67,
+     584.16,
+     0.88
+    ]
+   ],
+   "face_box": [
+    292.81024169921875,
+    179.28634643554688,
+    682.5487365722656,
+    725.7513732910156
+   ],
+   "det_score": 0.8795,
+   "landmarks": [
+    386.7,
+    384.6,
+    575.4,
+    373.5,
+    478.6,
+    494.2,
+    411.3,
+    592.5,
+    573.7,
+    584.2
+   ],
+   "ok": true
+  },
+  {
+   "index": 235,
+   "kind": "pool",
+   "seed_used": 20261022235,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "20bb1f87cbdc3bd7ab177a5a6a2399b3ad9c6a4258eb161e93fdf782356f3229",
+   "detections": [
+    [
+     281.7,
+     173.64,
+     443.65,
+     538.14,
+     386.2,
+     383.5,
+     596.34,
+     371.78,
+     488.82,
+     501.57,
+     414.32,
+     597.68,
+     591.29,
+     588.42,
+     0.85
+    ]
+   ],
+   "face_box": [
+    281.6990966796875,
+    173.64202880859375,
+    725.3448791503906,
+    711.7861938476562
+   ],
+   "det_score": 0.8532,
+   "landmarks": [
+    386.2,
+    383.5,
+    596.3,
+    371.8,
+    488.8,
+    501.6,
+    414.3,
+    597.7,
+    591.3,
+    588.4
+   ],
+   "ok": true
+  },
+  {
+   "index": 236,
+   "kind": "pool",
+   "seed_used": 20261022236,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "3782da809ca780098019ef28079cbd46692adf42415e542a51f95dc6241a46db",
+   "detections": [
+    [
+     284.79,
+     254.5,
+     421.26,
+     583.45,
+     401.89,
+     450.23,
+     599.99,
+     454.11,
+     500.83,
+     578.44,
+     408.93,
+     675.92,
+     577.97,
+     681.33,
+     0.89
+    ]
+   ],
+   "face_box": [
+    284.79150390625,
+    254.50076293945312,
+    706.0498352050781,
+    837.9530944824219
+   ],
+   "det_score": 0.8869,
+   "landmarks": [
+    401.9,
+    450.2,
+    600.0,
+    454.1,
+    500.8,
+    578.4,
+    408.9,
+    675.9,
+    578.0,
+    681.3
+   ],
+   "ok": true
+  },
+  {
+   "index": 237,
+   "kind": "pool",
+   "seed_used": 20261022237,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "e1645568dab5e6a39a6f10407986d3c0e132235419e19a408448279f7d736d2a",
+   "detections": [
+    [
+     341.3,
+     205.48,
+     398.16,
+     540.06,
+     478.64,
+     423.34,
+     658.78,
+     416.2,
+     595.19,
+     532.18,
+     500.9,
+     627.1,
+     651.32,
+     619.91,
+     0.9
+    ]
+   ],
+   "face_box": [
+    341.2962341308594,
+    205.48001098632812,
+    739.4535217285156,
+    745.5444030761719
+   ],
+   "det_score": 0.9038,
+   "landmarks": [
+    478.6,
+    423.3,
+    658.8,
+    416.2,
+    595.2,
+    532.2,
+    500.9,
+    627.1,
+    651.3,
+    619.9
+   ],
+   "ok": true
+  },
+  {
+   "index": 238,
+   "kind": "pool",
+   "seed_used": 20261022238,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "c04e355ce763df5c97f9c745340bdf8c396c794a4f7e05d13371d19a150b794c",
+   "detections": [
+    [
+     229.13,
+     140.63,
+     468.82,
+     597.25,
+     345.97,
+     350.13,
+     567.13,
+     353.24,
+     448.4,
+     493.8,
+     357.88,
+     583.98,
+     549.96,
+     587.21,
+     0.85
+    ]
+   ],
+   "face_box": [
+    229.13401794433594,
+    140.62982177734375,
+    697.9558258056641,
+    737.8784790039062
+   ],
+   "det_score": 0.8497,
+   "landmarks": [
+    346.0,
+    350.1,
+    567.1,
+    353.2,
+    448.4,
+    493.8,
+    357.9,
+    584.0,
+    550.0,
+    587.2
+   ],
+   "ok": true
+  },
+  {
+   "index": 239,
+   "kind": "pool",
+   "seed_used": 20261022239,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "338cff69b03499228fd18a6aad39d95327fbb77133fbd3947287d04c1ce37531",
+   "detections": [
+    [
+     282.67,
+     195.73,
+     452.16,
+     563.59,
+     417.96,
+     409.15,
+     620.87,
+     420.36,
+     517.01,
+     535.4,
+     417.77,
+     616.41,
+     591.65,
+     627.06,
+     0.85
+    ]
+   ],
+   "face_box": [
+    282.6697692871094,
+    195.72735595703125,
+    734.8288879394531,
+    759.3148803710938
+   ],
+   "det_score": 0.8456,
+   "landmarks": [
+    418.0,
+    409.2,
+    620.9,
+    420.4,
+    517.0,
+    535.4,
+    417.8,
+    616.4,
+    591.7,
+    627.1
+   ],
+   "ok": true
+  },
+  {
+   "index": 240,
+   "kind": "pool",
+   "seed_used": 20261022240,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "5616460cdabdbddff08ba194478b10149f4ca8d04ed56109dd9829cd830213d1",
+   "detections": [
+    [
+     288.07,
+     237.39,
+     373.93,
+     489.41,
+     376.89,
+     413.17,
+     556.39,
+     400.03,
+     468.82,
+     518.98,
+     398.22,
+     592.9,
+     557.64,
+     583.08,
+     0.9
+    ]
+   ],
+   "face_box": [
+    288.0675048828125,
+    237.39390563964844,
+    661.999755859375,
+    726.8053131103516
+   ],
+   "det_score": 0.9018,
+   "landmarks": [
+    376.9,
+    413.2,
+    556.4,
+    400.0,
+    468.8,
+    519.0,
+    398.2,
+    592.9,
+    557.6,
+    583.1
+   ],
+   "ok": true
+  },
+  {
+   "index": 241,
+   "kind": "pool",
+   "seed_used": 20261022241,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "fe3c2346f21a536b1ea579c6fc2ba0517cfbf4a28c20509b96f864849fb26874",
+   "detections": [
+    [
+     411.39,
+     156.76,
+     250.91,
+     371.17,
+     471.03,
+     304.34,
+     587.6,
+     309.98,
+     518.74,
+     377.63,
+     472.45,
+     429.41,
+     573.69,
+     434.61,
+     0.93
+    ]
+   ],
+   "face_box": [
+    411.39105224609375,
+    156.76431274414062,
+    662.3020629882812,
+    527.9324035644531
+   ],
+   "det_score": 0.9306,
+   "landmarks": [
+    471.0,
+    304.3,
+    587.6,
+    310.0,
+    518.7,
+    377.6,
+    472.4,
+    429.4,
+    573.7,
+    434.6
+   ],
+   "ok": true
+  },
+  {
+   "index": 242,
+   "kind": "pool",
+   "seed_used": 20261022242,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "4e178ae2b09e71fccb822393234bbe9ee7f9c2b79d421bd75ce3a561bfb985e5",
+   "detections": [
+    [
+     338.21,
+     185.28,
+     378.55,
+     491.15,
+     451.47,
+     388.87,
+     618.29,
+     362.48,
+     561.23,
+     480.32,
+     490.39,
+     567.88,
+     626.69,
+     548.07,
+     0.91
+    ]
+   ],
+   "face_box": [
+    338.212890625,
+    185.28492736816406,
+    716.759033203125,
+    676.4349822998047
+   ],
+   "det_score": 0.9071,
+   "landmarks": [
+    451.5,
+    388.9,
+    618.3,
+    362.5,
+    561.2,
+    480.3,
+    490.4,
+    567.9,
+    626.7,
+    548.1
+   ],
+   "ok": true
+  },
+  {
+   "index": 243,
+   "kind": "pool",
+   "seed_used": 20261022243,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "4b4b010c202538a244229213a3ef3eafa4a0f99116df705f410fed0021763130",
+   "detections": [
+    [
+     391.43,
+     208.16,
+     320.39,
+     460.39,
+     472.5,
+     380.12,
+     621.21,
+     378.64,
+     544.52,
+     472.22,
+     482.79,
+     545.29,
+     608.18,
+     546.05,
+     0.92
+    ]
+   ],
+   "face_box": [
+    391.42681884765625,
+    208.16294860839844,
+    711.8135681152344,
+    668.5515899658203
+   ],
+   "det_score": 0.9206,
+   "landmarks": [
+    472.5,
+    380.1,
+    621.2,
+    378.6,
+    544.5,
+    472.2,
+    482.8,
+    545.3,
+    608.2,
+    546.0
+   ],
+   "ok": true
+  },
+  {
+   "index": 244,
+   "kind": "pool",
+   "seed_used": 20261022244,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "59ac78896f2532d1a89c9b7cbffb229604de9ed8bdd7dab7eaf102c00f648355",
+   "detections": [
+    [
+     298.42,
+     178.42,
+     328.6,
+     456.93,
+     381.71,
+     354.06,
+     533.97,
+     343.93,
+     460.04,
+     439.55,
+     401.49,
+     517.12,
+     531.92,
+     510.43,
+     0.92
+    ]
+   ],
+   "face_box": [
+    298.4232177734375,
+    178.41571044921875,
+    627.0201110839844,
+    635.3457641601562
+   ],
+   "det_score": 0.9223,
+   "landmarks": [
+    381.7,
+    354.1,
+    534.0,
+    343.9,
+    460.0,
+    439.6,
+    401.5,
+    517.1,
+    531.9,
+    510.4
+   ],
+   "ok": true
+  },
+  {
+   "index": 245,
+   "kind": "pool",
+   "seed_used": 20261022245,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "943547400cd496f4cb1fb7e0b15fafc2c2c6b78bd7cd34c38c29750c784d388a",
+   "detections": [
+    [
+     283.97,
+     268.35,
+     441.44,
+     600.09,
+     393.37,
+     470.05,
+     595.4,
+     474.7,
+     482.71,
+     602.9,
+     399.75,
+     694.52,
+     574.69,
+     700.39,
+     0.89
+    ]
+   ],
+   "face_box": [
+    283.965576171875,
+    268.3464660644531,
+    725.4020080566406,
+    868.4356384277344
+   ],
+   "det_score": 0.8923,
+   "landmarks": [
+    393.4,
+    470.0,
+    595.4,
+    474.7,
+    482.7,
+    602.9,
+    399.7,
+    694.5,
+    574.7,
+    700.4
+   ],
+   "ok": true
+  },
+  {
+   "index": 246,
+   "kind": "pool",
+   "seed_used": 20261022246,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "3090bedcebc3cd60afa3b25a80e7d602db108084b0b6da9fb08cf67fbde1f9ff",
+   "detections": [
+    [
+     297.99,
+     143.92,
+     404.47,
+     541.92,
+     417.51,
+     342.6,
+     608.1,
+     343.36,
+     516.26,
+     461.31,
+     424.68,
+     550.43,
+     591.78,
+     552.94,
+     0.89
+    ]
+   ],
+   "face_box": [
+    297.99267578125,
+    143.91824340820312,
+    702.4600524902344,
+    685.8426208496094
+   ],
+   "det_score": 0.8935,
+   "landmarks": [
+    417.5,
+    342.6,
+    608.1,
+    343.4,
+    516.3,
+    461.3,
+    424.7,
+    550.4,
+    591.8,
+    552.9
+   ],
+   "ok": true
+  },
+  {
+   "index": 247,
+   "kind": "pool",
+   "seed_used": 20261022247,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "57dbeea1fc8a5feff8b82bd76e7e49df424a7e9407632cf3cec975ed312f2d19",
+   "detections": [
+    [
+     245.49,
+     201.99,
+     383.41,
+     556.17,
+     299.19,
+     359.27,
+     500.45,
+     355.31,
+     376.95,
+     491.13,
+     317.38,
+     590.22,
+     492.41,
+     588.97,
+     0.81
+    ]
+   ],
+   "face_box": [
+    245.4915008544922,
+    201.99368286132812,
+    628.8999786376953,
+    758.1673889160156
+   ],
+   "det_score": 0.8071,
+   "landmarks": [
+    299.2,
+    359.3,
+    500.4,
+    355.3,
+    377.0,
+    491.1,
+    317.4,
+    590.2,
+    492.4,
+    589.0
+   ],
+   "ok": true
+  },
+  {
+   "index": 248,
+   "kind": "pool",
+   "seed_used": 20261022248,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "352c7ca89cddc288721c78bb79e98c7a6b68f9503fc0ef4e9783453428b58c5d",
+   "detections": [
+    [
+     409.2,
+     204.42,
+     269.99,
+     378.51,
+     491.0,
+     338.68,
+     616.76,
+     350.71,
+     549.35,
+     421.46,
+     484.64,
+     472.62,
+     595.8,
+     483.08,
+     0.93
+    ]
+   ],
+   "face_box": [
+    409.1978759765625,
+    204.42152404785156,
+    679.1850891113281,
+    582.9287567138672
+   ],
+   "det_score": 0.9328,
+   "landmarks": [
+    491.0,
+    338.7,
+    616.8,
+    350.7,
+    549.3,
+    421.5,
+    484.6,
+    472.6,
+    595.8,
+    483.1
+   ],
+   "ok": true
+  },
+  {
+   "index": 249,
+   "kind": "pool",
+   "seed_used": 20261022249,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "91e30a0260b11392f48998e329618563444c6b53d881bf7afd99858a34d7e04f",
+   "detections": [
+    [
+     370.16,
+     150.11,
+     273.21,
+     372.39,
+     439.64,
+     297.57,
+     562.44,
+     285.2,
+     505.18,
+     367.64,
+     461.41,
+     431.46,
+     562.78,
+     421.12,
+     0.94
+    ]
+   ],
+   "face_box": [
+    370.1562805175781,
+    150.1063232421875,
+    643.3637390136719,
+    522.4932861328125
+   ],
+   "det_score": 0.9427,
+   "landmarks": [
+    439.6,
+    297.6,
+    562.4,
+    285.2,
+    505.2,
+    367.6,
+    461.4,
+    431.5,
+    562.8,
+    421.1
+   ],
+   "ok": true
+  },
+  {
+   "index": 250,
+   "kind": "pool",
+   "seed_used": 20261022250,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "baf1211df95ca0e3d58de33ca646fd615c492d84d6dc612130655df2454a245f",
+   "detections": [
+    [
+     342.75,
+     176.29,
+     352.27,
+     532.0,
+     434.29,
+     370.46,
+     601.21,
+     372.54,
+     513.89,
+     478.67,
+     442.81,
+     566.58,
+     581.85,
+     570.55,
+     0.9
+    ]
+   ],
+   "face_box": [
+    342.7530517578125,
+    176.29165649414062,
+    695.024169921875,
+    708.2956237792969
+   ],
+   "det_score": 0.8968,
+   "landmarks": [
+    434.3,
+    370.5,
+    601.2,
+    372.5,
+    513.9,
+    478.7,
+    442.8,
+    566.6,
+    581.8,
+    570.5
+   ],
+   "ok": true
+  },
+  {
+   "index": 251,
+   "kind": "pool",
+   "seed_used": 20261022251,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "daea19391843981e3820e91329cc97b2a2853db578733394bbf68f0a370dffa1",
+   "detections": [
+    [
+     358.14,
+     267.51,
+     339.01,
+     457.01,
+     458.43,
+     438.12,
+     619.77,
+     432.99,
+     547.8,
+     533.35,
+     476.95,
+     605.6,
+     616.51,
+     602.96,
+     0.91
+    ]
+   ],
+   "face_box": [
+    358.14410400390625,
+    267.50897216796875,
+    697.1575622558594,
+    724.5161437988281
+   ],
+   "det_score": 0.9125,
+   "landmarks": [
+    458.4,
+    438.1,
+    619.8,
+    433.0,
+    547.8,
+    533.3,
+    476.9,
+    605.6,
+    616.5,
+    603.0
+   ],
+   "ok": true
+  },
+  {
+   "index": 252,
+   "kind": "pool",
+   "seed_used": 20261022252,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "4f5a1c8f901c099b47309de2ae7fc8cf1114e7b4bf8dd6d1859f7eceb2392313",
+   "detections": [
+    [
+     266.47,
+     192.96,
+     454.41,
+     565.42,
+     405.67,
+     382.42,
+     615.62,
+     388.94,
+     516.94,
+     515.62,
+     414.02,
+     610.13,
+     590.3,
+     615.66,
+     0.86
+    ]
+   ],
+   "face_box": [
+    266.4732971191406,
+    192.96417236328125,
+    720.8799743652344,
+    758.3843994140625
+   ],
+   "det_score": 0.8612,
+   "landmarks": [
+    405.7,
+    382.4,
+    615.6,
+    388.9,
+    516.9,
+    515.6,
+    414.0,
+    610.1,
+    590.3,
+    615.7
+   ],
+   "ok": true
+  },
+  {
+   "index": 253,
+   "kind": "pool",
+   "seed_used": 20261022253,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "992f28409326a3ae63f21d730202d857dc2a5841a4e1377e0667ac94afcb1092",
+   "detections": [
+    [
+     461.34,
+     89.18,
+     219.4,
+     298.87,
+     494.4,
+     203.79,
+     588.93,
+     207.5,
+     519.22,
+     264.85,
+     501.33,
+     310.8,
+     575.54,
+     314.21,
+     0.94
+    ]
+   ],
+   "face_box": [
+    461.33721923828125,
+    89.18287658691406,
+    680.7415161132812,
+    388.05271911621094
+   ],
+   "det_score": 0.9418,
+   "landmarks": [
+    494.4,
+    203.8,
+    588.9,
+    207.5,
+    519.2,
+    264.9,
+    501.3,
+    310.8,
+    575.5,
+    314.2
+   ],
+   "ok": true
+  },
+  {
+   "index": 254,
+   "kind": "pool",
+   "seed_used": 20261022254,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "e7899c1ba0f83d70ae1d50b3b5f54929991860e6e0c661ee6ee940ad5af12992",
+   "detections": [
+    [
+     316.09,
+     196.63,
+     331.01,
+     469.43,
+     372.7,
+     369.55,
+     523.08,
+     369.86,
+     424.47,
+     466.45,
+     383.71,
+     538.44,
+     513.78,
+     538.83,
+     0.92
+    ]
+   ],
+   "face_box": [
+    316.0932922363281,
+    196.6255340576172,
+    647.1006774902344,
+    666.0524444580078
+   ],
+   "det_score": 0.9197,
+   "landmarks": [
+    372.7,
+    369.6,
+    523.1,
+    369.9,
+    424.5,
+    466.4,
+    383.7,
+    538.4,
+    513.8,
+    538.8
+   ],
+   "ok": true
+  },
+  {
+   "index": 255,
+   "kind": "pool",
+   "seed_used": 20261022255,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "201dad4b1eb536ad625779c05fdbfca7062813f39cda8153578536670a58fb1d",
+   "detections": [
+    [
+     301.16,
+     331.52,
+     371.92,
+     510.81,
+     392.6,
+     499.78,
+     570.49,
+     494.27,
+     479.73,
+     613.64,
+     411.31,
+     697.37,
+     562.74,
+     692.91,
+     0.88
+    ]
+   ],
+   "face_box": [
+    301.16119384765625,
+    331.5176696777344,
+    673.0789794921875,
+    842.3271789550781
+   ],
+   "det_score": 0.8849,
+   "landmarks": [
+    392.6,
+    499.8,
+    570.5,
+    494.3,
+    479.7,
+    613.6,
+    411.3,
+    697.4,
+    562.7,
+    692.9
+   ],
+   "ok": true
+  },
+  {
+   "index": 256,
+   "kind": "pool",
+   "seed_used": 20261022256,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "4b6c81fdbe92f1ce9b656748fd66f5efb94c3b3eeb0a789960b2b5f9c66c7a39",
+   "detections": [
+    [
+     234.02,
+     164.12,
+     348.11,
+     565.62,
+     247.61,
+     355.95,
+     388.39,
+     362.11,
+     249.77,
+     471.82,
+     257.04,
+     575.0,
+     377.91,
+     579.76,
+     0.89
+    ]
+   ],
+   "face_box": [
+    234.02256774902344,
+    164.12075805664062,
+    582.1365509033203,
+    729.7440490722656
+   ],
+   "det_score": 0.8888,
+   "landmarks": [
+    247.6,
+    355.9,
+    388.4,
+    362.1,
+    249.8,
+    471.8,
+    257.0,
+    575.0,
+    377.9,
+    579.8
+   ],
+   "ok": true
+  },
+  {
+   "index": 257,
+   "kind": "pool",
+   "seed_used": 20261022257,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "d52a9eadc46c649fad54bb302b6341752ec91a367865c546b387752283f392c4",
+   "detections": [
+    [
+     360.0,
+     162.23,
+     364.26,
+     518.34,
+     433.87,
+     360.99,
+     603.0,
+     362.25,
+     501.93,
+     465.54,
+     444.91,
+     551.47,
+     591.56,
+     553.06,
+     0.88
+    ]
+   ],
+   "face_box": [
+    359.99847412109375,
+    162.23220825195312,
+    724.2633361816406,
+    680.5716857910156
+   ],
+   "det_score": 0.883,
+   "landmarks": [
+    433.9,
+    361.0,
+    603.0,
+    362.3,
+    501.9,
+    465.5,
+    444.9,
+    551.5,
+    591.6,
+    553.1
+   ],
+   "ok": true
+  },
+  {
+   "index": 258,
+   "kind": "pool",
+   "seed_used": 20261022258,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "03c2a10efaba9873167a8234ad8f2231c5af1707eea14ce9ba8a3b9ef1c84482",
+   "detections": [
+    [
+     375.45,
+     301.92,
+     290.08,
+     414.5,
+     448.76,
+     450.4,
+     585.4,
+     441.23,
+     519.73,
+     532.3,
+     472.28,
+     605.44,
+     586.93,
+     597.5,
+     0.92
+    ]
+   ],
+   "face_box": [
+    375.45135498046875,
+    301.9184265136719,
+    665.5354919433594,
+    716.4211730957031
+   ],
+   "det_score": 0.9152,
+   "landmarks": [
+    448.8,
+    450.4,
+    585.4,
+    441.2,
+    519.7,
+    532.3,
+    472.3,
+    605.4,
+    586.9,
+    597.5
+   ],
+   "ok": true
+  },
+  {
+   "index": 259,
+   "kind": "pool",
+   "seed_used": 20261022259,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "d30f5bc02577cf712186c27ec971e1813f578c30ba568d118e9d78d104cda785",
+   "detections": [
+    [
+     305.45,
+     239.89,
+     355.57,
+     484.69,
+     394.29,
+     403.42,
+     558.84,
+     416.12,
+     461.31,
+     518.23,
+     387.09,
+     582.09,
+     531.47,
+     595.81,
+     0.91
+    ]
+   ],
+   "face_box": [
+    305.4478454589844,
+    239.89476013183594,
+    661.0174865722656,
+    724.5837554931641
+   ],
+   "det_score": 0.9101,
+   "landmarks": [
+    394.3,
+    403.4,
+    558.8,
+    416.1,
+    461.3,
+    518.2,
+    387.1,
+    582.1,
+    531.5,
+    595.8
+   ],
+   "ok": true
+  },
+  {
+   "index": 260,
+   "kind": "pool",
+   "seed_used": 20261022260,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "71156e2ba4dfa1abd7843d54bf3da1f9939dd6279d4d5c3a73ede7f6c18d53c0",
+   "detections": [
+    [
+     288.07,
+     125.86,
+     434.68,
+     566.85,
+     387.04,
+     320.14,
+     585.99,
+     314.38,
+     473.39,
+     443.02,
+     406.61,
+     539.54,
+     575.23,
+     536.03,
+     0.88
+    ]
+   ],
+   "face_box": [
+    288.0730285644531,
+    125.85848999023438,
+    722.7505798339844,
+    692.7095031738281
+   ],
+   "det_score": 0.8773,
+   "landmarks": [
+    387.0,
+    320.1,
+    586.0,
+    314.4,
+    473.4,
+    443.0,
+    406.6,
+    539.5,
+    575.2,
+    536.0
+   ],
+   "ok": true
+  },
+  {
+   "index": 261,
+   "kind": "pool",
+   "seed_used": 20261022261,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "6900aba22a5c92f4922da43d9160d50b38f34b3442b56e08f1a87cd35916f643",
+   "detections": [
+    [
+     326.16,
+     173.27,
+     366.73,
+     527.86,
+     428.37,
+     366.65,
+     595.86,
+     362.24,
+     514.93,
+     470.73,
+     440.64,
+     556.33,
+     582.97,
+     555.38,
+     0.91
+    ]
+   ],
+   "face_box": [
+    326.15576171875,
+    173.26824951171875,
+    692.8861083984375,
+    701.132080078125
+   ],
+   "det_score": 0.9061,
+   "landmarks": [
+    428.4,
+    366.6,
+    595.9,
+    362.2,
+    514.9,
+    470.7,
+    440.6,
+    556.3,
+    583.0,
+    555.4
+   ],
+   "ok": true
+  },
+  {
+   "index": 262,
+   "kind": "pool",
+   "seed_used": 20261022262,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "ed11a31d70cf3f7057698ae5d87e73cc944efb56b91b1c0d144259fed507959e",
+   "detections": [
+    [
+     278.73,
+     165.83,
+     320.8,
+     444.17,
+     347.04,
+     332.87,
+     503.07,
+     323.92,
+     417.07,
+     429.53,
+     368.21,
+     497.42,
+     500.7,
+     490.34,
+     0.92
+    ]
+   ],
+   "face_box": [
+    278.7313232421875,
+    165.82577514648438,
+    599.5335693359375,
+    609.9931335449219
+   ],
+   "det_score": 0.9162,
+   "landmarks": [
+    347.0,
+    332.9,
+    503.1,
+    323.9,
+    417.1,
+    429.5,
+    368.2,
+    497.4,
+    500.7,
+    490.3
+   ],
+   "ok": true
+  },
+  {
+   "index": 263,
+   "kind": "pool",
+   "seed_used": 20261022263,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "63a4ebbddf971edc1773cb997bea9c93681b637d6ff3674270eee9169988caf8",
+   "detections": [
+    [
+     369.13,
+     203.53,
+     325.61,
+     442.66,
+     450.75,
+     372.83,
+     600.73,
+     376.28,
+     517.78,
+     465.86,
+     454.45,
+     525.74,
+     587.28,
+     529.72,
+     0.93
+    ]
+   ],
+   "face_box": [
+    369.13446044921875,
+    203.52919006347656,
+    694.7397766113281,
+    646.1866912841797
+   ],
+   "det_score": 0.9253,
+   "landmarks": [
+    450.7,
+    372.8,
+    600.7,
+    376.3,
+    517.8,
+    465.9,
+    454.5,
+    525.7,
+    587.3,
+    529.7
+   ],
+   "ok": true
+  },
+  {
+   "index": 264,
+   "kind": "pool",
+   "seed_used": 20261022264,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "bf884884b271c662276ac726ec8f0659c5c7a7dcee5c1d8794abdaafa0db3fc6",
+   "detections": [
+    [
+     429.15,
+     130.71,
+     202.63,
+     272.14,
+     493.27,
+     245.78,
+     582.31,
+     229.17,
+     554.86,
+     292.79,
+     519.19,
+     339.08,
+     592.53,
+     324.68,
+     0.93
+    ]
+   ],
+   "face_box": [
+    429.15020751953125,
+    130.70684814453125,
+    631.7842712402344,
+    402.84832763671875
+   ],
+   "det_score": 0.935,
+   "landmarks": [
+    493.3,
+    245.8,
+    582.3,
+    229.2,
+    554.9,
+    292.8,
+    519.2,
+    339.1,
+    592.5,
+    324.7
+   ],
+   "ok": true
+  },
+  {
+   "index": 265,
+   "kind": "pool",
+   "seed_used": 20261122265,
+   "attempts": 2,
+   "n_faces_detected": 1,
+   "sha256": "528f4be2a0f1dce95fcb62929c62cae5abb6989d1d8a3c36d4c835ec0e9ab2ce",
+   "detections": [
+    [
+     362.98,
+     172.19,
+     346.7,
+     491.97,
+     464.95,
+     352.06,
+     632.19,
+     353.27,
+     553.71,
+     455.83,
+     473.99,
+     534.15,
+     616.24,
+     537.29,
+     0.89
+    ]
+   ],
+   "face_box": [
+    362.9836730957031,
+    172.1898956298828,
+    709.6871032714844,
+    664.1570281982422
+   ],
+   "det_score": 0.8891,
+   "landmarks": [
+    465.0,
+    352.1,
+    632.2,
+    353.3,
+    553.7,
+    455.8,
+    474.0,
+    534.1,
+    616.2,
+    537.3
+   ],
+   "ok": true
+  },
+  {
+   "index": 266,
+   "kind": "pool",
+   "seed_used": 20261122266,
+   "attempts": 2,
+   "n_faces_detected": 1,
+   "sha256": "016440621f61cfc45a84904ec25874f6dbe8ed86d7a9983b9ff5e6886a12e919",
+   "detections": [
+    [
+     393.13,
+     205.1,
+     226.8,
+     337.5,
+     455.27,
+     332.7,
+     563.95,
+     339.46,
+     505.84,
+     401.35,
+     455.42,
+     447.78,
+     549.36,
+     453.4,
+     0.95
+    ]
+   ],
+   "face_box": [
+    393.1261901855469,
+    205.10208129882812,
+    619.9278411865234,
+    542.6009826660156
+   ],
+   "det_score": 0.9451,
+   "landmarks": [
+    455.3,
+    332.7,
+    564.0,
+    339.5,
+    505.8,
+    401.3,
+    455.4,
+    447.8,
+    549.4,
+    453.4
+   ],
+   "ok": true
+  },
+  {
+   "index": 267,
+   "kind": "pool",
+   "seed_used": 20261022267,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "65fee6694c577c2f0ded3655e42c2233a78310fa2c3d9f0d5bf221b89eefa27e",
+   "detections": [
+    [
+     459.69,
+     97.21,
+     353.57,
+     501.41,
+     617.03,
+     280.55,
+     771.44,
+     298.85,
+     722.71,
+     391.54,
+     606.75,
+     460.89,
+     737.11,
+     477.34,
+     0.91
+    ]
+   ],
+   "face_box": [
+    459.69207763671875,
+    97.21231079101562,
+    813.2632751464844,
+    598.6268615722656
+   ],
+   "det_score": 0.9108,
+   "landmarks": [
+    617.0,
+    280.5,
+    771.4,
+    298.8,
+    722.7,
+    391.5,
+    606.8,
+    460.9,
+    737.1,
+    477.3
+   ],
+   "ok": true
+  },
+  {
+   "index": 268,
+   "kind": "pool",
+   "seed_used": 20261022268,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "f5d8e3fa2f1776f601baf5f9d5cedcf2f41025ee9d9215121bd80252fbcdda5d",
+   "detections": [
+    [
+     256.13,
+     227.4,
+     380.08,
+     495.56,
+     351.39,
+     428.03,
+     531.08,
+     409.11,
+     449.0,
+     525.11,
+     383.14,
+     610.54,
+     537.32,
+     596.1,
+     0.9
+    ]
+   ],
+   "face_box": [
+    256.1300964355469,
+    227.40045166015625,
+    636.2125549316406,
+    722.9642333984375
+   ],
+   "det_score": 0.9029,
+   "landmarks": [
+    351.4,
+    428.0,
+    531.1,
+    409.1,
+    449.0,
+    525.1,
+    383.1,
+    610.5,
+    537.3,
+    596.1
+   ],
+   "ok": true
+  },
+  {
+   "index": 269,
+   "kind": "pool",
+   "seed_used": 20261122269,
+   "attempts": 2,
+   "n_faces_detected": 1,
+   "sha256": "5f2311769153bbfbd248f43623299fc12c2f60c21a5413b53129cbf4fe3f36e8",
+   "detections": [
+    [
+     416.66,
+     137.35,
+     203.93,
+     286.76,
+     471.11,
+     245.35,
+     567.68,
+     248.3,
+     515.15,
+     302.67,
+     472.57,
+     340.69,
+     559.81,
+     343.95,
+     0.94
+    ]
+   ],
+   "face_box": [
+    416.66400146484375,
+    137.35353088378906,
+    620.5950622558594,
+    424.11680603027344
+   ],
+   "det_score": 0.9444,
+   "landmarks": [
+    471.1,
+    245.3,
+    567.7,
+    248.3,
+    515.1,
+    302.7,
+    472.6,
+    340.7,
+    559.8,
+    344.0
+   ],
+   "ok": true
+  },
+  {
+   "index": 270,
+   "kind": "pool",
+   "seed_used": 20261022270,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "72365fc2f19c690d80533094c8559b285a0b03c4116d154f2f0e37ffea074f3c",
+   "detections": [
+    [
+     314.46,
+     266.83,
+     440.36,
+     532.64,
+     454.77,
+     466.14,
+     663.68,
+     459.04,
+     580.15,
+     589.59,
+     478.16,
+     681.12,
+     657.12,
+     676.07,
+     0.89
+    ]
+   ],
+   "face_box": [
+    314.4569091796875,
+    266.83404541015625,
+    754.81787109375,
+    799.4695434570312
+   ],
+   "det_score": 0.8853,
+   "landmarks": [
+    454.8,
+    466.1,
+    663.7,
+    459.0,
+    580.1,
+    589.6,
+    478.2,
+    681.1,
+    657.1,
+    676.1
+   ],
+   "ok": true
+  },
+  {
+   "index": 271,
+   "kind": "pool",
+   "seed_used": 20261022271,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "5d5ed8964de74ffe34fb76731304d0092d1a59e2ce5a2dd77b2bfa09f47c4145",
+   "detections": [
+    [
+     350.35,
+     247.76,
+     328.9,
+     476.58,
+     453.04,
+     417.31,
+     609.43,
+     418.84,
+     536.96,
+     520.62,
+     459.88,
+     590.2,
+     592.18,
+     593.54,
+     0.92
+    ]
+   ],
+   "face_box": [
+    350.3463134765625,
+    247.76052856445312,
+    679.2449645996094,
+    724.3363952636719
+   ],
+   "det_score": 0.9165,
+   "landmarks": [
+    453.0,
+    417.3,
+    609.4,
+    418.8,
+    537.0,
+    520.6,
+    459.9,
+    590.2,
+    592.2,
+    593.5
+   ],
+   "ok": true
+  },
+  {
+   "index": 272,
+   "kind": "pool",
+   "seed_used": 20261022272,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "a72c7b1441a08fc121118aaf55cc2548accf0394cf882c80950881f03b635eee",
+   "detections": [
+    [
+     341.54,
+     275.06,
+     361.46,
+     473.88,
+     454.39,
+     438.9,
+     623.57,
+     440.94,
+     548.61,
+     549.08,
+     460.44,
+     612.36,
+     608.72,
+     615.9,
+     0.91
+    ]
+   ],
+   "face_box": [
+    341.53607177734375,
+    275.0625,
+    702.9976501464844,
+    748.9455871582031
+   ],
+   "det_score": 0.9055,
+   "landmarks": [
+    454.4,
+    438.9,
+    623.6,
+    440.9,
+    548.6,
+    549.1,
+    460.4,
+    612.4,
+    608.7,
+    615.9
+   ],
+   "ok": true
+  },
+  {
+   "index": 273,
+   "kind": "pool",
+   "seed_used": 20261022273,
+   "attempts": 1,
+   "n_faces_detected": 1,
+   "sha256": "e121882259f15f2591302bc0f8dfd1c1e9fdf8658dcb4003475ac985132bba59",
+   "detections": [
+    [
+     399.77,
+     138.75,
+     318.57,
+     428.47,
+     589.03,
+     287.29,
+     691.15,
+     289.28,
+     698.25,
+     366.78,
+     592.03,
+     448.18,
+     675.08,
+     451.52,
+     0.9
+    ]
+   ],
+   "face_box": [
+    399.7671203613281,
+    138.74612426757812,
+    718.3351745605469,
+    567.2186584472656
+   ],
+   "det_score": 0.9015,
+   "landmarks": [
+    589.0,
+    287.3,
+    691.1,
+    289.3,
+    698.2,
+    366.8,
+    592.0,
+    448.2,
+    675.1,
+    451.5
+   ],
+   "ok": true
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+{"run": "sdxl_images_chunk0", "gpu": "L40S", "gpu_seconds": 324.7, "wall_seconds": 324.7, "cpu_cores": 4, "mem_gib": 32, "usd": 0.2502, "note": "peak 10738 MiB; 59 images"}
+{"run": "sdxl_images_chunk1", "gpu": "L40S", "gpu_seconds": 316.2, "wall_seconds": 316.2, "cpu_cores": 4, "mem_gib": 32, "usd": 0.2437, "note": "peak 10738 MiB; 59 images"}
+{"run": "sdxl_images_chunk2", "gpu": "L40S", "gpu_seconds": 301.7, "wall_seconds": 301.7, "cpu_cores": 4, "mem_gib": 32, "usd": 0.2326, "note": "peak 10738 MiB; 58 images"}
+{"run": "sdxl_images_chunk3", "gpu": "L40S", "gpu_seconds": 312.2, "wall_seconds": 312.2, "cpu_cores": 4, "mem_gib": 32, "usd": 0.2406, "note": "peak 10738 MiB; 58 images"}
+{"run": "sdxl_images_chunk0", "gpu": "L40S", "gpu_seconds": 56.5, "wall_seconds": 56.5, "cpu_cores": 4, "mem_gib": 32, "usd": 0.0436, "note": "peak 10738 MiB; 10 images"}
+{"run": "sdxl_images_chunk1", "gpu": "L40S", "gpu_seconds": 52.3, "wall_seconds": 52.3, "cpu_cores": 4, "mem_gib": 32, "usd": 0.0403, "note": "peak 10738 MiB; 10 images"}
+{"run": "sdxl_images_chunk2", "gpu": "L40S", "gpu_seconds": 51.8, "wall_seconds": 51.8, "cpu_cores": 4, "mem_gib": 32, "usd": 0.0399, "note": "peak 10738 MiB; 10 images"}
+{"run": "sdxl_images_chunk3", "gpu": "L40S", "gpu_seconds": 60.1, "wall_seconds": 60.1, "cpu_cores": 4, "mem_gib": 32, "usd": 0.0463, "note": "peak 10738 MiB; 10 images"}

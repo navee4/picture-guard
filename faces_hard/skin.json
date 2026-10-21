@@ -1,0 +1,2240 @@
+{
+ "0": {
+  "ita": -41.8,
+  "n_skin_px": 41217,
+  "L": 40.3,
+  "b": 10.8,
+  "ita_all_skin_median": -70.6,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "1": {
+  "ita": 18.7,
+  "n_skin_px": 31084,
+  "L": 55.4,
+  "b": 16.1,
+  "ita_all_skin_median": -18.5,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "2": {
+  "ita": -40.9,
+  "n_skin_px": 66910,
+  "L": 37.1,
+  "b": 14.9,
+  "ita_all_skin_median": -63.3,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "3": {
+  "ita": 32.2,
+  "n_skin_px": 41670,
+  "L": 59.8,
+  "b": 15.6,
+  "ita_all_skin_median": -46.3,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "4": {
+  "ita": -48.8,
+  "n_skin_px": 51693,
+  "L": 32.9,
+  "b": 14.9,
+  "ita_all_skin_median": -64.8,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "5": {
+  "ita": 52.8,
+  "n_skin_px": 73038,
+  "L": 71.7,
+  "b": 16.5,
+  "ita_all_skin_median": 44.4,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "6": {
+  "ita": 40.6,
+  "n_skin_px": 50372,
+  "L": 64.0,
+  "b": 16.3,
+  "ita_all_skin_median": 2.0,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "7": {
+  "ita": 28.7,
+  "n_skin_px": 93463,
+  "L": 61.0,
+  "b": 20.1,
+  "ita_all_skin_median": -9.6,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "8": {
+  "ita": 39.9,
+  "n_skin_px": 64497,
+  "L": 66.7,
+  "b": 19.9,
+  "ita_all_skin_median": 4.7,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "9": {
+  "ita": 7.2,
+  "n_skin_px": 37722,
+  "L": 52.2,
+  "b": 17.8,
+  "ita_all_skin_median": -45.5,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "10": {
+  "ita": -19.9,
+  "n_skin_px": 29724,
+  "L": 44.2,
+  "b": 16.0,
+  "ita_all_skin_median": -45.1,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "11": {
+  "ita": 64.7,
+  "n_skin_px": 63653,
+  "L": 76.0,
+  "b": 12.3,
+  "ita_all_skin_median": 49.5,
+  "bucket": "light",
+  "chardon": "very light"
+ },
+ "12": {
+  "ita": -3.4,
+  "n_skin_px": 22770,
+  "L": 49.0,
+  "b": 16.4,
+  "ita_all_skin_median": -40.8,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "13": {
+  "ita": 19.9,
+  "n_skin_px": 69772,
+  "L": 55.4,
+  "b": 14.9,
+  "ita_all_skin_median": -29.7,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "14": {
+  "ita": 41.8,
+  "n_skin_px": 72596,
+  "L": 64.4,
+  "b": 16.2,
+  "ita_all_skin_median": 18.4,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "15": {
+  "ita": -2.4,
+  "n_skin_px": 32758,
+  "L": 49.3,
+  "b": 16.9,
+  "ita_all_skin_median": -36.7,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "16": {
+  "ita": -40.7,
+  "n_skin_px": 44801,
+  "L": 34.7,
+  "b": 17.8,
+  "ita_all_skin_median": -63.7,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "17": {
+  "ita": -25.8,
+  "n_skin_px": 41131,
+  "L": 45.2,
+  "b": 9.9,
+  "ita_all_skin_median": -56.1,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "18": {
+  "ita": -49.3,
+  "n_skin_px": 36690,
+  "L": 31.8,
+  "b": 15.6,
+  "ita_all_skin_median": -64.0,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "19": {
+  "ita": 81.5,
+  "n_skin_px": 1054,
+  "L": 69.7,
+  "b": 2.9,
+  "ita_all_skin_median": 79.8,
+  "bucket": "light",
+  "chardon": "very light"
+ },
+ "20": {
+  "ita": 28.6,
+  "n_skin_px": 88193,
+  "L": 58.6,
+  "b": 15.9,
+  "ita_all_skin_median": -39.3,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "21": {
+  "ita": null,
+  "n_skin_px": 14,
+  "bucket": null,
+  "chardon": null
+ },
+ "22": {
+  "ita": 10.2,
+  "n_skin_px": 24220,
+  "L": 51.8,
+  "b": 9.9,
+  "ita_all_skin_median": -61.6,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "23": {
+  "ita": -61.5,
+  "n_skin_px": 56145,
+  "L": 32.6,
+  "b": 9.4,
+  "ita_all_skin_median": -76.6,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "24": {
+  "ita": -5.3,
+  "n_skin_px": 40751,
+  "L": 48.5,
+  "b": 16.2,
+  "ita_all_skin_median": -57.3,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "25": {
+  "ita": -49.9,
+  "n_skin_px": 35271,
+  "L": 37.1,
+  "b": 10.9,
+  "ita_all_skin_median": -75.4,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "26": {
+  "ita": -50.2,
+  "n_skin_px": 51930,
+  "L": 40.8,
+  "b": 7.7,
+  "ita_all_skin_median": -74.5,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "27": {
+  "ita": 17.9,
+  "n_skin_px": 39124,
+  "L": 57.2,
+  "b": 22.2,
+  "ita_all_skin_median": -4.9,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "28": {
+  "ita": null,
+  "n_skin_px": 7,
+  "bucket": null,
+  "chardon": null
+ },
+ "29": {
+  "ita": -12.5,
+  "n_skin_px": 59356,
+  "L": 46.3,
+  "b": 16.8,
+  "ita_all_skin_median": -64.1,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "30": {
+  "ita": -42.2,
+  "n_skin_px": 74033,
+  "L": 38.7,
+  "b": 12.5,
+  "ita_all_skin_median": -72.8,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "31": {
+  "ita": -18.5,
+  "n_skin_px": 64254,
+  "L": 44.8,
+  "b": 15.6,
+  "ita_all_skin_median": -45.9,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "32": {
+  "ita": -40.9,
+  "n_skin_px": 83309,
+  "L": 38.8,
+  "b": 12.9,
+  "ita_all_skin_median": -66.4,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "33": {
+  "ita": -13.7,
+  "n_skin_px": 59411,
+  "L": 45.7,
+  "b": 17.8,
+  "ita_all_skin_median": -53.7,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "34": {
+  "ita": 31.3,
+  "n_skin_px": 49671,
+  "L": 59.0,
+  "b": 14.8,
+  "ita_all_skin_median": -4.2,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "35": {
+  "ita": 22.4,
+  "n_skin_px": 52578,
+  "L": 59.6,
+  "b": 23.3,
+  "ita_all_skin_median": -3.1,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "36": {
+  "ita": 58.4,
+  "n_skin_px": 61002,
+  "L": 68.3,
+  "b": 11.3,
+  "ita_all_skin_median": 31.4,
+  "bucket": "light",
+  "chardon": "very light"
+ },
+ "37": {
+  "ita": -26.8,
+  "n_skin_px": 52264,
+  "L": 43.1,
+  "b": 13.6,
+  "ita_all_skin_median": -61.5,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "38": {
+  "ita": 48.8,
+  "n_skin_px": 52627,
+  "L": 72.8,
+  "b": 19.9,
+  "ita_all_skin_median": 37.6,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "39": {
+  "ita": null,
+  "n_skin_px": 7,
+  "bucket": null,
+  "chardon": null
+ },
+ "40": {
+  "ita": 27.0,
+  "n_skin_px": 51865,
+  "L": 57.0,
+  "b": 13.8,
+  "ita_all_skin_median": -21.5,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "41": {
+  "ita": 19.3,
+  "n_skin_px": 54202,
+  "L": 55.1,
+  "b": 14.5,
+  "ita_all_skin_median": -48.2,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "42": {
+  "ita": null,
+  "n_skin_px": 115,
+  "bucket": null,
+  "chardon": null
+ },
+ "43": {
+  "ita": 13.7,
+  "n_skin_px": 50165,
+  "L": 54.5,
+  "b": 18.6,
+  "ita_all_skin_median": -28.8,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "44": {
+  "ita": -17.4,
+  "n_skin_px": 44059,
+  "L": 45.1,
+  "b": 15.5,
+  "ita_all_skin_median": -50.2,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "45": {
+  "ita": -29.1,
+  "n_skin_px": 27462,
+  "L": 41.1,
+  "b": 16.0,
+  "ita_all_skin_median": -64.4,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "46": {
+  "ita": -41.4,
+  "n_skin_px": 47953,
+  "L": 42.1,
+  "b": 8.9,
+  "ita_all_skin_median": -72.8,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "47": {
+  "ita": -19.2,
+  "n_skin_px": 28863,
+  "L": 47.4,
+  "b": 7.6,
+  "ita_all_skin_median": -68.8,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "48": {
+  "ita": -21.8,
+  "n_skin_px": 22533,
+  "L": 42.5,
+  "b": 18.8,
+  "ita_all_skin_median": -51.5,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "49": {
+  "ita": 45.2,
+  "n_skin_px": 29020,
+  "L": 67.9,
+  "b": 17.8,
+  "ita_all_skin_median": 16.6,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "50": {
+  "ita": 9.6,
+  "n_skin_px": 20962,
+  "L": 53.5,
+  "b": 20.8,
+  "ita_all_skin_median": -38.3,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "52": {
+  "ita": -16.7,
+  "n_skin_px": 36404,
+  "L": 44.3,
+  "b": 19.1,
+  "ita_all_skin_median": -67.7,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "53": {
+  "ita": -20.1,
+  "n_skin_px": 49129,
+  "L": 46.3,
+  "b": 10.1,
+  "ita_all_skin_median": -72.3,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "54": {
+  "ita": 71.0,
+  "n_skin_px": 16972,
+  "L": 62.4,
+  "b": 4.3,
+  "ita_all_skin_median": 5.9,
+  "bucket": "light",
+  "chardon": "very light"
+ },
+ "55": {
+  "ita": -50.0,
+  "n_skin_px": 36134,
+  "L": 33.1,
+  "b": 14.2,
+  "ita_all_skin_median": -71.7,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "56": {
+  "ita": 69.6,
+  "n_skin_px": 1046,
+  "L": 56.6,
+  "b": 2.5,
+  "ita_all_skin_median": -57.9,
+  "bucket": "light",
+  "chardon": "very light"
+ },
+ "57": {
+  "ita": 38.3,
+  "n_skin_px": 57900,
+  "L": 68.2,
+  "b": 23.1,
+  "ita_all_skin_median": 10.5,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "58": {
+  "ita": -19.2,
+  "n_skin_px": 46038,
+  "L": 44.9,
+  "b": 14.6,
+  "ita_all_skin_median": -57.8,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "59": {
+  "ita": 6.4,
+  "n_skin_px": 80724,
+  "L": 52.6,
+  "b": 22.7,
+  "ita_all_skin_median": -53.4,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "60": {
+  "ita": 17.6,
+  "n_skin_px": 59305,
+  "L": 56.9,
+  "b": 21.6,
+  "ita_all_skin_median": -17.4,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "61": {
+  "ita": -18.8,
+  "n_skin_px": 45125,
+  "L": 44.1,
+  "b": 17.5,
+  "ita_all_skin_median": -58.8,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "62": {
+  "ita": 69.3,
+  "n_skin_px": 1417,
+  "L": 57.8,
+  "b": 3.0,
+  "ita_all_skin_median": -28.2,
+  "bucket": "light",
+  "chardon": "very light"
+ },
+ "63": {
+  "ita": 22.0,
+  "n_skin_px": 63540,
+  "L": 59.0,
+  "b": 22.1,
+  "ita_all_skin_median": -18.2,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "64": {
+  "ita": 3.0,
+  "n_skin_px": 46985,
+  "L": 51.2,
+  "b": 23.4,
+  "ita_all_skin_median": -18.4,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "65": {
+  "ita": -15.1,
+  "n_skin_px": 63558,
+  "L": 46.3,
+  "b": 13.6,
+  "ita_all_skin_median": -61.7,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "66": {
+  "ita": 38.1,
+  "n_skin_px": 44183,
+  "L": 65.4,
+  "b": 19.7,
+  "ita_all_skin_median": 0.4,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "68": {
+  "ita": -18.2,
+  "n_skin_px": 52970,
+  "L": 45.4,
+  "b": 14.0,
+  "ita_all_skin_median": -54.4,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "69": {
+  "ita": 41.5,
+  "n_skin_px": 41069,
+  "L": 68.8,
+  "b": 21.2,
+  "ita_all_skin_median": 25.9,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "70": {
+  "ita": 10.7,
+  "n_skin_px": 12863,
+  "L": 50.8,
+  "b": 4.5,
+  "ita_all_skin_median": -72.9,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "71": {
+  "ita": -43.9,
+  "n_skin_px": 170,
+  "L": 47.9,
+  "b": 2.2,
+  "ita_all_skin_median": -79.0,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "73": {
+  "ita": -24.8,
+  "n_skin_px": 68126,
+  "L": 42.1,
+  "b": 17.1,
+  "ita_all_skin_median": -63.5,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "74": {
+  "ita": -41.1,
+  "n_skin_px": 60917,
+  "L": 36.1,
+  "b": 15.9,
+  "ita_all_skin_median": -70.3,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "75": {
+  "ita": -6.3,
+  "n_skin_px": 18991,
+  "L": 47.9,
+  "b": 18.9,
+  "ita_all_skin_median": -38.8,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "76": {
+  "ita": 11.9,
+  "n_skin_px": 29770,
+  "L": 55.4,
+  "b": 25.7,
+  "ita_all_skin_median": -29.4,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "77": {
+  "ita": 42.2,
+  "n_skin_px": 30287,
+  "L": 60.0,
+  "b": 11.0,
+  "ita_all_skin_median": -22.3,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "78": {
+  "ita": 52.0,
+  "n_skin_px": 63706,
+  "L": 65.7,
+  "b": 12.3,
+  "ita_all_skin_median": -5.0,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "79": {
+  "ita": 48.9,
+  "n_skin_px": 95679,
+  "L": 65.4,
+  "b": 13.4,
+  "ita_all_skin_median": 15.0,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "80": {
+  "ita": 1.1,
+  "n_skin_px": 37618,
+  "L": 50.2,
+  "b": 11.0,
+  "ita_all_skin_median": -67.5,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "81": {
+  "ita": 4.3,
+  "n_skin_px": 25620,
+  "L": 51.1,
+  "b": 14.9,
+  "ita_all_skin_median": -32.5,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "82": {
+  "ita": -32.0,
+  "n_skin_px": 30222,
+  "L": 43.1,
+  "b": 11.1,
+  "ita_all_skin_median": -73.4,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "83": {
+  "ita": -8.9,
+  "n_skin_px": 67318,
+  "L": 46.8,
+  "b": 20.6,
+  "ita_all_skin_median": -47.9,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "84": {
+  "ita": 17.9,
+  "n_skin_px": 18393,
+  "L": 55.0,
+  "b": 15.4,
+  "ita_all_skin_median": -44.6,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "85": {
+  "ita": 75.7,
+  "n_skin_px": 168,
+  "L": 57.5,
+  "b": 1.9,
+  "ita_all_skin_median": -50.0,
+  "bucket": "light",
+  "chardon": "very light"
+ },
+ "86": {
+  "ita": -73.5,
+  "n_skin_px": 28353,
+  "L": 22.6,
+  "b": 8.1,
+  "ita_all_skin_median": -78.4,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "87": {
+  "ita": 69.3,
+  "n_skin_px": 59430,
+  "L": 76.9,
+  "b": 10.2,
+  "ita_all_skin_median": 36.8,
+  "bucket": "light",
+  "chardon": "very light"
+ },
+ "88": {
+  "ita": -34.6,
+  "n_skin_px": 41889,
+  "L": 42.3,
+  "b": 11.2,
+  "ita_all_skin_median": -70.1,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "89": {
+  "ita": 54.9,
+  "n_skin_px": 75084,
+  "L": 67.4,
+  "b": 12.2,
+  "ita_all_skin_median": 24.2,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "90": {
+  "ita": 41.7,
+  "n_skin_px": 33808,
+  "L": 67.4,
+  "b": 19.5,
+  "ita_all_skin_median": 8.5,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "91": {
+  "ita": -35.0,
+  "n_skin_px": 91539,
+  "L": 40.5,
+  "b": 13.5,
+  "ita_all_skin_median": -66.0,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "92": {
+  "ita": 4.2,
+  "n_skin_px": 72245,
+  "L": 51.3,
+  "b": 18.2,
+  "ita_all_skin_median": -28.9,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "93": {
+  "ita": 12.5,
+  "n_skin_px": 66398,
+  "L": 54.1,
+  "b": 18.6,
+  "ita_all_skin_median": -26.3,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "94": {
+  "ita": null,
+  "n_skin_px": 0,
+  "bucket": null,
+  "chardon": null
+ },
+ "95": {
+  "ita": 42.7,
+  "n_skin_px": 51750,
+  "L": 70.0,
+  "b": 21.6,
+  "ita_all_skin_median": 25.7,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "96": {
+  "ita": 17.6,
+  "n_skin_px": 59342,
+  "L": 55.9,
+  "b": 18.5,
+  "ita_all_skin_median": -32.3,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "97": {
+  "ita": -12.7,
+  "n_skin_px": 21995,
+  "L": 46.1,
+  "b": 17.2,
+  "ita_all_skin_median": -48.7,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "98": {
+  "ita": 29.4,
+  "n_skin_px": 69166,
+  "L": 59.1,
+  "b": 16.1,
+  "ita_all_skin_median": -32.2,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "99": {
+  "ita": -57.0,
+  "n_skin_px": 44997,
+  "L": 29.5,
+  "b": 13.3,
+  "ita_all_skin_median": -75.1,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "100": {
+  "ita": 41.1,
+  "n_skin_px": 72171,
+  "L": 63.7,
+  "b": 15.7,
+  "ita_all_skin_median": -34.5,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "101": {
+  "ita": -24.4,
+  "n_skin_px": 54523,
+  "L": 43.1,
+  "b": 15.1,
+  "ita_all_skin_median": -58.8,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "102": {
+  "ita": -55.7,
+  "n_skin_px": 31354,
+  "L": 33.5,
+  "b": 11.3,
+  "ita_all_skin_median": -77.3,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "103": {
+  "ita": -17.1,
+  "n_skin_px": 49589,
+  "L": 45.9,
+  "b": 13.5,
+  "ita_all_skin_median": -58.0,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "104": {
+  "ita": 5.9,
+  "n_skin_px": 32745,
+  "L": 51.5,
+  "b": 14.6,
+  "ita_all_skin_median": -57.6,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "105": {
+  "ita": 30.7,
+  "n_skin_px": 73425,
+  "L": 59.3,
+  "b": 15.6,
+  "ita_all_skin_median": -52.7,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "106": {
+  "ita": 59.5,
+  "n_skin_px": 53455,
+  "L": 72.7,
+  "b": 13.4,
+  "ita_all_skin_median": -12.6,
+  "bucket": "light",
+  "chardon": "very light"
+ },
+ "107": {
+  "ita": 17.8,
+  "n_skin_px": 44901,
+  "L": 54.5,
+  "b": 14.0,
+  "ita_all_skin_median": -53.2,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "108": {
+  "ita": -4.5,
+  "n_skin_px": 44202,
+  "L": 48.5,
+  "b": 18.5,
+  "ita_all_skin_median": -62.4,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "109": {
+  "ita": 40.3,
+  "n_skin_px": 67711,
+  "L": 67.3,
+  "b": 20.4,
+  "ita_all_skin_median": 17.7,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "110": {
+  "ita": -4.6,
+  "n_skin_px": 72558,
+  "L": 48.8,
+  "b": 15.1,
+  "ita_all_skin_median": -59.0,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "111": {
+  "ita": 27.7,
+  "n_skin_px": 73585,
+  "L": 60.8,
+  "b": 20.5,
+  "ita_all_skin_median": -12.3,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "112": {
+  "ita": 29.9,
+  "n_skin_px": 101901,
+  "L": 59.1,
+  "b": 15.9,
+  "ita_all_skin_median": -4.0,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "113": {
+  "ita": 61.6,
+  "n_skin_px": 73385,
+  "L": 75.3,
+  "b": 13.7,
+  "ita_all_skin_median": 50.7,
+  "bucket": "light",
+  "chardon": "very light"
+ },
+ "114": {
+  "ita": -40.9,
+  "n_skin_px": 60205,
+  "L": 39.4,
+  "b": 12.3,
+  "ita_all_skin_median": -70.9,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "115": {
+  "ita": -26.3,
+  "n_skin_px": 52012,
+  "L": 43.1,
+  "b": 14.0,
+  "ita_all_skin_median": -64.9,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "116": {
+  "ita": -64.9,
+  "n_skin_px": 27241,
+  "L": 30.6,
+  "b": 9.1,
+  "ita_all_skin_median": -75.9,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "117": {
+  "ita": -33.8,
+  "n_skin_px": 67965,
+  "L": 44.8,
+  "b": 7.7,
+  "ita_all_skin_median": -66.4,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "118": {
+  "ita": 54.0,
+  "n_skin_px": 102325,
+  "L": 68.2,
+  "b": 13.2,
+  "ita_all_skin_median": 34.7,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "119": {
+  "ita": 32.1,
+  "n_skin_px": 79278,
+  "L": 60.9,
+  "b": 17.5,
+  "ita_all_skin_median": -22.9,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "120": {
+  "ita": 9.0,
+  "n_skin_px": 45175,
+  "L": 52.7,
+  "b": 17.2,
+  "ita_all_skin_median": -28.2,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "121": {
+  "ita": -51.8,
+  "n_skin_px": 56988,
+  "L": 37.3,
+  "b": 10.0,
+  "ita_all_skin_median": -69.8,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "122": {
+  "ita": 49.8,
+  "n_skin_px": 82527,
+  "L": 63.5,
+  "b": 11.4,
+  "ita_all_skin_median": 11.6,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "123": {
+  "ita": null,
+  "n_skin_px": 2,
+  "bucket": null,
+  "chardon": null
+ },
+ "124": {
+  "ita": 1.3,
+  "n_skin_px": 47508,
+  "L": 50.4,
+  "b": 19.2,
+  "ita_all_skin_median": -35.6,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "125": {
+  "ita": -40.1,
+  "n_skin_px": 18292,
+  "L": 43.9,
+  "b": 7.3,
+  "ita_all_skin_median": -77.0,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "126": {
+  "ita": -70.2,
+  "n_skin_px": 46714,
+  "L": 27.5,
+  "b": 8.1,
+  "ita_all_skin_median": -80.7,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "127": {
+  "ita": -12.6,
+  "n_skin_px": 62344,
+  "L": 46.8,
+  "b": 14.2,
+  "ita_all_skin_median": -40.6,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "128": {
+  "ita": -79.0,
+  "n_skin_px": 529,
+  "L": 20.1,
+  "b": 5.8,
+  "ita_all_skin_median": -80.4,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "129": {
+  "ita": -28.9,
+  "n_skin_px": 70937,
+  "L": 41.9,
+  "b": 14.6,
+  "ita_all_skin_median": -69.2,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "130": {
+  "ita": 61.8,
+  "n_skin_px": 29024,
+  "L": 76.8,
+  "b": 14.3,
+  "ita_all_skin_median": 50.7,
+  "bucket": "light",
+  "chardon": "very light"
+ },
+ "131": {
+  "ita": 38.3,
+  "n_skin_px": 56390,
+  "L": 64.8,
+  "b": 18.7,
+  "ita_all_skin_median": -21.4,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "132": {
+  "ita": 39.2,
+  "n_skin_px": 75143,
+  "L": 66.4,
+  "b": 20.0,
+  "ita_all_skin_median": 5.7,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "133": {
+  "ita": -42.1,
+  "n_skin_px": 20275,
+  "L": 38.3,
+  "b": 12.9,
+  "ita_all_skin_median": -68.9,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "134": {
+  "ita": 23.7,
+  "n_skin_px": 35709,
+  "L": 59.4,
+  "b": 21.4,
+  "ita_all_skin_median": -35.6,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "135": {
+  "ita": -51.8,
+  "n_skin_px": 44635,
+  "L": 28.0,
+  "b": 17.3,
+  "ita_all_skin_median": -69.5,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "136": {
+  "ita": 56.1,
+  "n_skin_px": 82938,
+  "L": 69.8,
+  "b": 13.3,
+  "ita_all_skin_median": 36.2,
+  "bucket": "light",
+  "chardon": "very light"
+ },
+ "137": {
+  "ita": -44.8,
+  "n_skin_px": 76148,
+  "L": 37.9,
+  "b": 12.1,
+  "ita_all_skin_median": -72.1,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "138": {
+  "ita": 23.7,
+  "n_skin_px": 81836,
+  "L": 56.4,
+  "b": 14.6,
+  "ita_all_skin_median": -33.4,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "140": {
+  "ita": 27.7,
+  "n_skin_px": 64501,
+  "L": 59.3,
+  "b": 17.8,
+  "ita_all_skin_median": -14.6,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "141": {
+  "ita": -9.8,
+  "n_skin_px": 76699,
+  "L": 47.2,
+  "b": 16.3,
+  "ita_all_skin_median": -53.4,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "142": {
+  "ita": 44.3,
+  "n_skin_px": 62209,
+  "L": 68.9,
+  "b": 19.4,
+  "ita_all_skin_median": 22.3,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "143": {
+  "ita": 15.0,
+  "n_skin_px": 40271,
+  "L": 54.9,
+  "b": 18.4,
+  "ita_all_skin_median": -14.0,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "144": {
+  "ita": 44.3,
+  "n_skin_px": 63935,
+  "L": 67.1,
+  "b": 17.5,
+  "ita_all_skin_median": 9.0,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "145": {
+  "ita": 34.5,
+  "n_skin_px": 40615,
+  "L": 65.2,
+  "b": 22.1,
+  "ita_all_skin_median": 0.5,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "146": {
+  "ita": 29.8,
+  "n_skin_px": 40564,
+  "L": 63.9,
+  "b": 24.3,
+  "ita_all_skin_median": 1.4,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "147": {
+  "ita": 38.9,
+  "n_skin_px": 107058,
+  "L": 65.9,
+  "b": 19.7,
+  "ita_all_skin_median": 16.6,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "148": {
+  "ita": 62.5,
+  "n_skin_px": 40233,
+  "L": 75.0,
+  "b": 13.0,
+  "ita_all_skin_median": 50.4,
+  "bucket": "light",
+  "chardon": "very light"
+ },
+ "149": {
+  "ita": -50.6,
+  "n_skin_px": 32848,
+  "L": 37.1,
+  "b": 10.6,
+  "ita_all_skin_median": -72.4,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "150": {
+  "ita": 39.1,
+  "n_skin_px": 21069,
+  "L": 62.7,
+  "b": 15.6,
+  "ita_all_skin_median": -44.0,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "151": {
+  "ita": -2.1,
+  "n_skin_px": 21147,
+  "L": 49.2,
+  "b": 21.7,
+  "ita_all_skin_median": -33.6,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "152": {
+  "ita": 25.7,
+  "n_skin_px": 73888,
+  "L": 60.2,
+  "b": 21.1,
+  "ita_all_skin_median": -8.5,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "153": {
+  "ita": 0.7,
+  "n_skin_px": 74678,
+  "L": 50.2,
+  "b": 18.8,
+  "ita_all_skin_median": -43.1,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "154": {
+  "ita": -35.8,
+  "n_skin_px": 35659,
+  "L": 41.9,
+  "b": 11.3,
+  "ita_all_skin_median": -69.3,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "155": {
+  "ita": 34.0,
+  "n_skin_px": 46986,
+  "L": 65.4,
+  "b": 22.9,
+  "ita_all_skin_median": 7.8,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "156": {
+  "ita": -33.4,
+  "n_skin_px": 83190,
+  "L": 42.0,
+  "b": 12.2,
+  "ita_all_skin_median": -58.9,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "157": {
+  "ita": 21.7,
+  "n_skin_px": 25600,
+  "L": 52.8,
+  "b": 7.2,
+  "ita_all_skin_median": -72.1,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "158": {
+  "ita": 20.7,
+  "n_skin_px": 54638,
+  "L": 58.1,
+  "b": 21.5,
+  "ita_all_skin_median": -18.3,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "159": {
+  "ita": 0.7,
+  "n_skin_px": 33461,
+  "L": 50.2,
+  "b": 16.6,
+  "ita_all_skin_median": -59.3,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "160": {
+  "ita": 19.3,
+  "n_skin_px": 81377,
+  "L": 54.8,
+  "b": 13.7,
+  "ita_all_skin_median": -54.5,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "161": {
+  "ita": 47.8,
+  "n_skin_px": 79941,
+  "L": 65.7,
+  "b": 14.3,
+  "ita_all_skin_median": -13.0,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "162": {
+  "ita": 44.4,
+  "n_skin_px": 104249,
+  "L": 69.8,
+  "b": 20.2,
+  "ita_all_skin_median": 26.1,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "163": {
+  "ita": 3.3,
+  "n_skin_px": 90738,
+  "L": 50.7,
+  "b": 11.9,
+  "ita_all_skin_median": -35.4,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "164": {
+  "ita": -39.4,
+  "n_skin_px": 65568,
+  "L": 38.9,
+  "b": 13.5,
+  "ita_all_skin_median": -68.6,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "165": {
+  "ita": 14.8,
+  "n_skin_px": 38878,
+  "L": 54.3,
+  "b": 16.2,
+  "ita_all_skin_median": -46.7,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "166": {
+  "ita": 9.5,
+  "n_skin_px": 52970,
+  "L": 53.0,
+  "b": 17.9,
+  "ita_all_skin_median": -59.2,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "167": {
+  "ita": -1.0,
+  "n_skin_px": 83213,
+  "L": 49.8,
+  "b": 12.1,
+  "ita_all_skin_median": -42.8,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "168": {
+  "ita": -46.0,
+  "n_skin_px": 46235,
+  "L": 40.9,
+  "b": 8.8,
+  "ita_all_skin_median": -73.0,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "169": {
+  "ita": -24.6,
+  "n_skin_px": 23309,
+  "L": 42.4,
+  "b": 16.6,
+  "ita_all_skin_median": -54.6,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "170": {
+  "ita": 29.4,
+  "n_skin_px": 81493,
+  "L": 62.1,
+  "b": 21.4,
+  "ita_all_skin_median": -1.1,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "171": {
+  "ita": -26.7,
+  "n_skin_px": 44995,
+  "L": 43.9,
+  "b": 12.0,
+  "ita_all_skin_median": -71.1,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "172": {
+  "ita": -49.5,
+  "n_skin_px": 78426,
+  "L": 39.8,
+  "b": 8.7,
+  "ita_all_skin_median": -71.5,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "173": {
+  "ita": -14.0,
+  "n_skin_px": 55938,
+  "L": 46.6,
+  "b": 13.5,
+  "ita_all_skin_median": -59.4,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "174": {
+  "ita": 53.2,
+  "n_skin_px": 52996,
+  "L": 74.1,
+  "b": 18.0,
+  "ita_all_skin_median": 34.6,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "175": {
+  "ita": 18.2,
+  "n_skin_px": 36414,
+  "L": 55.2,
+  "b": 15.6,
+  "ita_all_skin_median": -56.3,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "176": {
+  "ita": 53.7,
+  "n_skin_px": 59888,
+  "L": 70.6,
+  "b": 15.2,
+  "ita_all_skin_median": 31.5,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "177": {
+  "ita": -27.5,
+  "n_skin_px": 35345,
+  "L": 39.7,
+  "b": 19.8,
+  "ita_all_skin_median": -63.3,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "178": {
+  "ita": -12.4,
+  "n_skin_px": 87899,
+  "L": 46.7,
+  "b": 15.1,
+  "ita_all_skin_median": -57.7,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "179": {
+  "ita": null,
+  "n_skin_px": 34,
+  "bucket": null,
+  "chardon": null
+ },
+ "180": {
+  "ita": -34.4,
+  "n_skin_px": 67357,
+  "L": 39.7,
+  "b": 15.1,
+  "ita_all_skin_median": -65.1,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "181": {
+  "ita": 46.6,
+  "n_skin_px": 89434,
+  "L": 65.3,
+  "b": 14.5,
+  "ita_all_skin_median": 17.7,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "182": {
+  "ita": 27.9,
+  "n_skin_px": 34801,
+  "L": 59.4,
+  "b": 17.8,
+  "ita_all_skin_median": -46.4,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "183": {
+  "ita": -26.9,
+  "n_skin_px": 18360,
+  "L": 45.2,
+  "b": 9.4,
+  "ita_all_skin_median": -62.0,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "184": {
+  "ita": 1.1,
+  "n_skin_px": 38596,
+  "L": 50.3,
+  "b": 17.7,
+  "ita_all_skin_median": -51.8,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "185": {
+  "ita": 75.8,
+  "n_skin_px": 6292,
+  "L": 63.6,
+  "b": 3.4,
+  "ita_all_skin_median": 63.4,
+  "bucket": "light",
+  "chardon": "very light"
+ },
+ "186": {
+  "ita": 36.6,
+  "n_skin_px": 72732,
+  "L": 63.5,
+  "b": 18.2,
+  "ita_all_skin_median": -5.3,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "187": {
+  "ita": null,
+  "n_skin_px": 23,
+  "bucket": null,
+  "chardon": null
+ },
+ "188": {
+  "ita": 49.9,
+  "n_skin_px": 56299,
+  "L": 65.9,
+  "b": 13.4,
+  "ita_all_skin_median": 27.1,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "189": {
+  "ita": 41.8,
+  "n_skin_px": 60477,
+  "L": 67.1,
+  "b": 19.1,
+  "ita_all_skin_median": 3.0,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "190": {
+  "ita": -54.4,
+  "n_skin_px": 58112,
+  "L": 40.1,
+  "b": 7.1,
+  "ita_all_skin_median": -79.4,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "191": {
+  "ita": -73.4,
+  "n_skin_px": 39459,
+  "L": 20.2,
+  "b": 8.9,
+  "ita_all_skin_median": -83.3,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "192": {
+  "ita": 35.5,
+  "n_skin_px": 72585,
+  "L": 65.6,
+  "b": 21.8,
+  "ita_all_skin_median": 3.4,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "193": {
+  "ita": -4.9,
+  "n_skin_px": 66106,
+  "L": 49.3,
+  "b": 8.2,
+  "ita_all_skin_median": -65.1,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "194": {
+  "ita": -13.5,
+  "n_skin_px": 47734,
+  "L": 47.7,
+  "b": 9.4,
+  "ita_all_skin_median": -69.3,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "195": {
+  "ita": -21.4,
+  "n_skin_px": 92959,
+  "L": 45.4,
+  "b": 11.8,
+  "ita_all_skin_median": -64.1,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "196": {
+  "ita": null,
+  "n_skin_px": 59,
+  "bucket": null,
+  "chardon": null
+ },
+ "197": {
+  "ita": 14.4,
+  "n_skin_px": 37733,
+  "L": 54.7,
+  "b": 18.5,
+  "ita_all_skin_median": -44.3,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "198": {
+  "ita": 25.4,
+  "n_skin_px": 44311,
+  "L": 57.4,
+  "b": 15.7,
+  "ita_all_skin_median": -22.8,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "199": {
+  "ita": null,
+  "n_skin_px": 7,
+  "bucket": null,
+  "chardon": null
+ },
+ "200": {
+  "ita": -5.1,
+  "n_skin_px": 57386,
+  "L": 48.6,
+  "b": 15.9,
+  "ita_all_skin_median": -53.8,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "201": {
+  "ita": -38.5,
+  "n_skin_px": 53452,
+  "L": 42.7,
+  "b": 9.2,
+  "ita_all_skin_median": -71.9,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "202": {
+  "ita": 63.4,
+  "n_skin_px": 72655,
+  "L": 70.8,
+  "b": 10.4,
+  "ita_all_skin_median": 39.9,
+  "bucket": "light",
+  "chardon": "very light"
+ },
+ "203": {
+  "ita": -2.9,
+  "n_skin_px": 89005,
+  "L": 49.3,
+  "b": 14.3,
+  "ita_all_skin_median": -54.6,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "204": {
+  "ita": 7.5,
+  "n_skin_px": 36530,
+  "L": 52.6,
+  "b": 19.3,
+  "ita_all_skin_median": -42.6,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "205": {
+  "ita": 42.0,
+  "n_skin_px": 111484,
+  "L": 64.7,
+  "b": 16.3,
+  "ita_all_skin_median": 23.2,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "206": {
+  "ita": 4.0,
+  "n_skin_px": 75008,
+  "L": 51.1,
+  "b": 16.1,
+  "ita_all_skin_median": -55.2,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "207": {
+  "ita": 41.7,
+  "n_skin_px": 45515,
+  "L": 68.0,
+  "b": 20.2,
+  "ita_all_skin_median": 22.3,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "208": {
+  "ita": 25.7,
+  "n_skin_px": 45938,
+  "L": 58.5,
+  "b": 17.7,
+  "ita_all_skin_median": -42.3,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "209": {
+  "ita": null,
+  "n_skin_px": 121,
+  "bucket": null,
+  "chardon": null
+ },
+ "210": {
+  "ita": 1.5,
+  "n_skin_px": 42568,
+  "L": 50.5,
+  "b": 19.7,
+  "ita_all_skin_median": -31.8,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "211": {
+  "ita": -29.3,
+  "n_skin_px": 93718,
+  "L": 42.5,
+  "b": 13.3,
+  "ita_all_skin_median": -63.6,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "212": {
+  "ita": 32.2,
+  "n_skin_px": 43033,
+  "L": 64.3,
+  "b": 22.7,
+  "ita_all_skin_median": -1.7,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "213": {
+  "ita": 22.7,
+  "n_skin_px": 54646,
+  "L": 59.6,
+  "b": 23.0,
+  "ita_all_skin_median": -34.8,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "214": {
+  "ita": -17.6,
+  "n_skin_px": 76717,
+  "L": 46.0,
+  "b": 12.7,
+  "ita_all_skin_median": -62.2,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "215": {
+  "ita": 19.5,
+  "n_skin_px": 42620,
+  "L": 57.0,
+  "b": 19.8,
+  "ita_all_skin_median": -36.6,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "216": {
+  "ita": -20.8,
+  "n_skin_px": 46530,
+  "L": 46.4,
+  "b": 9.6,
+  "ita_all_skin_median": -64.2,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "217": {
+  "ita": null,
+  "n_skin_px": 3,
+  "bucket": null,
+  "chardon": null
+ },
+ "234": {
+  "ita": null,
+  "n_skin_px": 87,
+  "bucket": null,
+  "chardon": null
+ },
+ "235": {
+  "ita": 41.8,
+  "n_skin_px": 85668,
+  "L": 64.3,
+  "b": 15.9,
+  "ita_all_skin_median": -27.2,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "236": {
+  "ita": 33.6,
+  "n_skin_px": 83258,
+  "L": 61.4,
+  "b": 17.2,
+  "ita_all_skin_median": -37.2,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "237": {
+  "ita": 43.0,
+  "n_skin_px": 76686,
+  "L": 65.1,
+  "b": 16.2,
+  "ita_all_skin_median": -15.0,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "238": {
+  "ita": 27.2,
+  "n_skin_px": 100522,
+  "L": 61.3,
+  "b": 21.9,
+  "ita_all_skin_median": 3.8,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "239": {
+  "ita": 53.4,
+  "n_skin_px": 91443,
+  "L": 72.3,
+  "b": 16.6,
+  "ita_all_skin_median": 33.1,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "240": {
+  "ita": 42.7,
+  "n_skin_px": 65958,
+  "L": 68.6,
+  "b": 20.2,
+  "ita_all_skin_median": 21.7,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "241": {
+  "ita": 30.8,
+  "n_skin_px": 31840,
+  "L": 60.0,
+  "b": 16.7,
+  "ita_all_skin_median": 5.5,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "242": {
+  "ita": 63.1,
+  "n_skin_px": 64368,
+  "L": 77.0,
+  "b": 13.7,
+  "ita_all_skin_median": 45.4,
+  "bucket": "light",
+  "chardon": "very light"
+ },
+ "243": {
+  "ita": -12.1,
+  "n_skin_px": 49289,
+  "L": 46.4,
+  "b": 16.9,
+  "ita_all_skin_median": -61.4,
+  "bucket": "dark",
+  "chardon": "brown"
+ },
+ "244": {
+  "ita": 42.5,
+  "n_skin_px": 48869,
+  "L": 67.1,
+  "b": 18.7,
+  "ita_all_skin_median": -40.4,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "245": {
+  "ita": 38.5,
+  "n_skin_px": 93338,
+  "L": 66.8,
+  "b": 21.2,
+  "ita_all_skin_median": 12.3,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "246": {
+  "ita": 33.8,
+  "n_skin_px": 78772,
+  "L": 58.3,
+  "b": 12.4,
+  "ita_all_skin_median": 5.2,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "247": {
+  "ita": null,
+  "n_skin_px": 39,
+  "bucket": null,
+  "chardon": null
+ },
+ "248": {
+  "ita": 50.8,
+  "n_skin_px": 36593,
+  "L": 73.8,
+  "b": 19.4,
+  "ita_all_skin_median": 31.7,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "249": {
+  "ita": 22.3,
+  "n_skin_px": 36086,
+  "L": 60.9,
+  "b": 26.5,
+  "ita_all_skin_median": -6.0,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "250": {
+  "ita": 47.1,
+  "n_skin_px": 65547,
+  "L": 65.1,
+  "b": 14.1,
+  "ita_all_skin_median": -33.8,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "251": {
+  "ita": -85.8,
+  "n_skin_px": 631,
+  "L": 11.4,
+  "b": 2.8,
+  "ita_all_skin_median": -86.3,
+  "bucket": "dark",
+  "chardon": "dark"
+ },
+ "252": {
+  "ita": 54.7,
+  "n_skin_px": 91078,
+  "L": 71.4,
+  "b": 15.2,
+  "ita_all_skin_median": 20.6,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "253": {
+  "ita": 24.0,
+  "n_skin_px": 23115,
+  "L": 57.5,
+  "b": 16.8,
+  "ita_all_skin_median": -19.4,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "254": {
+  "ita": 55.7,
+  "n_skin_px": 55491,
+  "L": 69.4,
+  "b": 13.2,
+  "ita_all_skin_median": 5.8,
+  "bucket": "light",
+  "chardon": "very light"
+ },
+ "255": {
+  "ita": 35.5,
+  "n_skin_px": 67323,
+  "L": 62.8,
+  "b": 18.0,
+  "ita_all_skin_median": -22.4,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "256": {
+  "ita": 12.3,
+  "n_skin_px": 70475,
+  "L": 53.7,
+  "b": 16.9,
+  "ita_all_skin_median": -31.9,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "257": {
+  "ita": 42.3,
+  "n_skin_px": 67004,
+  "L": 64.5,
+  "b": 16.0,
+  "ita_all_skin_median": 17.2,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "258": {
+  "ita": null,
+  "n_skin_px": 33,
+  "bucket": null,
+  "chardon": null
+ },
+ "259": {
+  "ita": 12.5,
+  "n_skin_px": 61760,
+  "L": 54.0,
+  "b": 18.3,
+  "ita_all_skin_median": -4.2,
+  "bucket": "medium",
+  "chardon": "tan"
+ },
+ "260": {
+  "ita": 40.7,
+  "n_skin_px": 83011,
+  "L": 67.6,
+  "b": 20.4,
+  "ita_all_skin_median": 20.4,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "261": {
+  "ita": 31.2,
+  "n_skin_px": 66047,
+  "L": 64.2,
+  "b": 23.4,
+  "ita_all_skin_median": -24.5,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "262": {
+  "ita": 53.3,
+  "n_skin_px": 49978,
+  "L": 70.5,
+  "b": 15.3,
+  "ita_all_skin_median": 3.8,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "263": {
+  "ita": 43.8,
+  "n_skin_px": 51406,
+  "L": 70.2,
+  "b": 21.1,
+  "ita_all_skin_median": 28.8,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "264": {
+  "ita": null,
+  "n_skin_px": 10,
+  "bucket": null,
+  "chardon": null
+ },
+ "265": {
+  "ita": 31.6,
+  "n_skin_px": 60126,
+  "L": 59.5,
+  "b": 15.5,
+  "ita_all_skin_median": -8.2,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "266": {
+  "ita": 38.6,
+  "n_skin_px": 25995,
+  "L": 63.3,
+  "b": 16.6,
+  "ita_all_skin_median": -11.4,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "267": {
+  "ita": 38.0,
+  "n_skin_px": 61867,
+  "L": 64.5,
+  "b": 18.5,
+  "ita_all_skin_median": 19.0,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "268": {
+  "ita": 45.7,
+  "n_skin_px": 67341,
+  "L": 70.0,
+  "b": 19.5,
+  "ita_all_skin_median": 23.8,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "269": {
+  "ita": 51.8,
+  "n_skin_px": 20598,
+  "L": 72.9,
+  "b": 18.0,
+  "ita_all_skin_median": 34.7,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "270": {
+  "ita": 39.9,
+  "n_skin_px": 84403,
+  "L": 63.8,
+  "b": 16.5,
+  "ita_all_skin_median": 7.5,
+  "bucket": "medium",
+  "chardon": "intermediate"
+ },
+ "271": {
+  "ita": 44.2,
+  "n_skin_px": 56035,
+  "L": 67.7,
+  "b": 18.1,
+  "ita_all_skin_median": -3.2,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "272": {
+  "ita": 54.5,
+  "n_skin_px": 61229,
+  "L": 72.4,
+  "b": 16.0,
+  "ita_all_skin_median": 31.3,
+  "bucket": "light",
+  "chardon": "light"
+ },
+ "273": {
+  "ita": 46.3,
+  "n_skin_px": 48952,
+  "L": 63.2,
+  "b": 12.6,
+  "ita_all_skin_median": 9.3,
+  "bucket": "light",
+  "chardon": "light"
+ }
+}

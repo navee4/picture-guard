@@ -1,0 +1,8728 @@
+{
+ "seed": 20261022,
+ "note": "SYNTHETIC TEST DATA. AI-made faces of people who do not exist. Boxes [x0,y0,x1,y1] in pixels. Face boxes come from the YuNet detector run on each source portrait, moved by our own placement (box_method says how). skin_bucket is MEASURED (ITA angle on the face pixels of the source portrait; light >41, medium 10..41, dark <=10); prompt_skin_word is what the prompt said. Text drawn on the pictures is only the label.",
+ "image_model": "stabilityai/stable-diffusion-xl-base-1.0",
+ "detector": "OpenCV YuNet 2023mar (MIT)",
+ "yunet_sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+ "portrait_score_threshold": 0.8,
+ "tries": 3,
+ "dropped_images_failed_face_check": [
+  {
+   "index": 51,
+   "kind": "acc",
+   "attempts": 3,
+   "n_faces_detected": 0
+  },
+  {
+   "index": 67,
+   "kind": "acc",
+   "attempts": 3,
+   "n_faces_detected": 0
+  },
+  {
+   "index": 72,
+   "kind": "acc",
+   "attempts": 3,
+   "n_faces_detected": 0
+  },
+  {
+   "index": 139,
+   "kind": "pool",
+   "attempts": 3,
+   "n_faces_detected": 0
+  }
+ ],
+ "source_sha256": {
+  "i001.png": "98b1f4876cb456ae826affdf00d671131dfc58e35a2e66d1dd86bfb4f4a754b2",
+  "i002.png": "2b7fecd5ed07c501233a9545614e4afbde980d45a8dece22e9c6814153e8a7b6",
+  "i003.png": "82be3200415d3052af98657017e412f04c64e502d5304bcc4b5a568721b74bb7",
+  "i005.png": "a6e1b0d3246598160475f2b3db14272ee9959cde1848a7af09bce2c10a04a7be",
+  "i010.png": "058863f3afdab386442c7c919ab07cfdfdb69badc3aac42d3cc2de7a578e18f0",
+  "i011.png": "b9b0ee4025ac6f1e91809714287222540dd28c24efe261b878359a356d1df25c",
+  "i013.png": "790ca299b5d1fcd74d1f3cca7423024dc4448f9905c35ccd4abe751f902253a7",
+  "i014.png": "ee11804b74e1de91fdb4e8a7cbb5f8fa6c4a39557ee3f0bc50cc9b67cf9b770a",
+  "i017.png": "7fe21a6ffc3f5bce52867c0b1d79af87ed8faec0fef4bb67f2b354d4e9225b9a",
+  "i019.png": "adea4d010759ab2f3e33217ab5f8fc0768bb2596b8ea7d8760bcade2f94aced5",
+  "i023.png": "028f7bc767510f1a3f0b5af7cff240c6c6dd1bed3b7eb3c26a3a6c58b6a82ecd",
+  "i027.png": "2bf658a3bd26504841e07ac357347dadb7f5887ac3c2511d5b6f1f265be74d0b",
+  "i029.png": "32c01c6f904ced07938c81c1386f841ec40fa18c05a561b0a156873fbe44b571",
+  "i033.png": "41dd26a10d1aa8714bf997848a657ee8edc2578e68b4f3637374f96ab486159b",
+  "i034.png": "ab23780d42ad5581facc0bd6d999150f6b4c13f0ffc530a5fd584aedccc05ae2",
+  "i035.png": "5417c9e859563e8478e9555e3049e1f5633348d0ed1dd3e59996a13351da9dfe",
+  "i036.png": "8f9a5308b6b7b13f26ff8cad1cff0e8e3ad27d4bcefb5d08f53d2ba753a8fd28",
+  "i037.png": "bd562758cb6818457c6ae6323ad784e5fedbcafeba390bcec14ea4856ff45639",
+  "i038.png": "c4be6f2e7f8400ece0bd58e7744200d76819a8921b0ea4fca307f597f16dc146",
+  "i041.png": "97cb89afc42781d72c5171330ae3e0473793994ad89ad999fda56015b496099a",
+  "i045.png": "58dedca8395207dc072e1acdf83d69496fdf8a3e257ddad779d109066f4fc05a",
+  "i049.png": "2d5e0e7224ddcb829a4ebf2f237c7ed41629e8327ab7e7ff23cd1983da7032b2",
+  "i050.png": "01d2d377812ef2437aa9aa1983ea62539dfbe3a7749bd7c19cfc87e118e6e0fb",
+  "i056.png": "15e65aec7169baf0b296e41271e1c157f810619a695716ff91b825dc16f7a322",
+  "i057.png": "bcf7481bbc17e092fd84f202873debb2abca8a71db431275e99c4432d3d0d754",
+  "i059.png": "a5317b0cf127308dff23bf63eed017fbc9901366c57b0c7da2a382d92d72da66",
+  "i060.png": "9b2c21053e3be5c8ff44f5e7a2fba30a4d5f605af0683ba5ad6a36ef3733a729",
+  "i061.png": "7aa5af978e9a9afafbbbbb66108fe0fd8771067303aec62feecebfa36794e2ef",
+  "i063.png": "4b551ac2895ecb898c2b890742023254eb4ebaf246807cb063e2f5140fc945d0",
+  "i064.png": "d5e16c102e15778590fdd89e1e9f976e206048c4b000e602f0921507a96804cd",
+  "i066.png": "0dc5fb3e035e855e60ffb5519f542cb44fa4e33f5adef1a2bf81169c857ebaa3",
+  "i069.png": "b5ff58d7fc8e5068629958b414009ba8659499705706523a849e219c950adf31",
+  "i070.png": "7a94f0aafe758cd35a01d5773468efbe331d7a4e38ab70269145ffb408c3377a",
+  "i074.png": "13e97ea312236433e140f9111a4de08f59faf5b68466f8f9a3afbd2d4ffd2924",
+  "i076.png": "0c497fe5c0e77da21a47528371c0594d4c37599a5a2dee27999613e3db646d53",
+  "i078.png": "952bb5a11da5284c42d5c4918bff79c74e14d6cf763ad6869b8cbcd72fcfa48b",
+  "i079.png": "45cfc2c84dd9b574579b95b1687c692f517fed4ed7014a07fc3d219b19deaf01",
+  "i083.png": "4768b6717c575f20f230bd0ac99728c3854585c1da66573716ebdfe2c24e1d43",
+  "i084.png": "cc39c8036fa45cf0dd09bcf9c1ac7a967fabb7e1a1a99d0c0937a3fd7e2ae9ab",
+  "i085.png": "5347d3f170e46b042cd280addc4db48a624da8d0df6bbfd411ae7f5e699f8d7a",
+  "i088.png": "d548fc7a9150ec63080b1796ffdb91d852bdc04429447441ece7807ccf38bbee",
+  "i089.png": "794ed334311ea97e5a7b5e30ab3122a47bc4c28c5f3f8242c0d113d98a5a2d40",
+  "i090.png": "2672884da58ced28394a31d5ed4687ad9893cde3a05cc701967cb7f4ff9174c3",
+  "i091.png": "46412241608f3c744c7eed6c3ad87bb2a0478ae0c81d73b3531593d75fac7d05",
+  "i095.png": "057d5a62b0d17fda1a40777e4a5dc7f6514d44e0ff36b09c6493cb920d3d8cb6",
+  "i098.png": "16bf10a6bc3461fad92b6055d1e88f03e82c5be73190ea9e02acd4e592181392",
+  "i100.png": "2df6c05f638fc1a3a19e685e6b32efce458ddd5551fec9b6584a5f30cc685de6",
+  "i103.png": "88ed959eef3aa97d4723537d1cee3a76c75ce22e7ecb33c3fb9b2eebbe4e0c11",
+  "i105.png": "877264a53ae780b495ec07abd11e9918ff4b2ff6af969f5ba157f70f0a500bef",
+  "i106.png": "d882d464a64bac97dcde88328f2ccc0a0f43e92f80a2ca626c92f7f2085efd86",
+  "i107.png": "0a0bcf86a4b7a19e1909cf24b2adde471ff7868612d7f378462249ac797480bf",
+  "i108.png": "7a99ac4715a906f2c045ae14eb11a8cb23694ba235744aed4dfef6ecdcab60f1",
+  "i110.png": "0a45fa5e215d0bb24a11d5fa79cb980e4e1ec90c9674c9da305c0319ab49ccde",
+  "i112.png": "20171bf645312b6b2a5c8a5e051e0f5e6acbe494031f4b32fa69a839b3c64543",
+  "i113.png": "409b775f9e540d2f1b57cc7a05b4dd4d8eaed9f612074f44298eb5cc55b6888a",
+  "i114.png": "97d6dedd292937237c4e434950694b964f940e9a3e21fd81a2054a89704ef3cb",
+  "i116.png": "d5ddc4af1d41af2226961c7c0aeb99a22d19fd784f2f318031f3fba23052dbfd",
+  "i118.png": "c88c77a50c9dae111b9aec075a33b502aba936297104305c8ff3020b6bb3fef9",
+  "i119.png": "99463866e20915dad18f0d570d6c4db4f6a9064604241cf29b7141e81cc3b22e",
+  "i121.png": "d5e8db287a28cce11038e8bec14efd069799944b37277825196c1ec11d8978f9",
+  "i122.png": "4bede454549ce5394cdc858338b813ff2d2fe4b69a902113746e10689edd376c",
+  "i124.png": "d822dd4cb4aaae6d16ed226fc6f3866348246e9b3c294639c100612764c56471",
+  "i125.png": "96083e785755f1c9baf36c9b469b8fb6cafce1b2d4d8fc03d1680d96d8a8313f",
+  "i127.png": "6a3bb2d6c21b57a145307207978ff3a7428dbad76f6b2acd7043345a7b76678b",
+  "i128.png": "3c420f439b5a30ad7d4b1a38d10f79417b3f9255442199d4a7275de9ef6dd687",
+  "i129.png": "8749379ad839f12f52b800704de9cd06ee550c37c3c850e48324fc20a085c48a",
+  "i130.png": "df9da2f736475170953edbf0f50b9b73d5ad082c1333e619df04c058b6828458",
+  "i131.png": "bec83ac9f3c8966088932f9aaa9edb194c833a370a462431d25192eb1f588e69",
+  "i132.png": "4db605d313bce00adebac62a3c2fc8a62a174f1eb22ba20d041d93976d3e840a",
+  "i133.png": "b6031d62500d3a9c3715754d36ea6a9d7ba98f6dd0457e728cd2ee0f3bb5c235",
+  "i134.png": "30294c3248bbe3e20fb9d126c076078bc90154382c8918524e90eee3409cec25",
+  "i135.png": "1d2a7828120e5c5470b3e373d43563511784d51f39339c59faba258c69808645",
+  "i137.png": "e6241a7c09b3a269e29c8834b594d5c44c72bcf336b1298f739eee027eb84548",
+  "i138.png": "a0bb94ed0d7be8964fab64db5a8bb9af7ef4d93881574a4b3c8f3be3f4a602fb",
+  "i140.png": "6958b63d9e8f88bc143a0ad215e9b35847d41a458e89b33198617482c432fe97",
+  "i142.png": "16ef394db7f43b9e15a416f7d7b9f13fc8a30b506bc136cfe7f99fef8ee07e30",
+  "i143.png": "786d1efb1c2ba01c9af8ad684fbfce3e2c3d847006cc048213f0738438aedfa3",
+  "i144.png": "2ed58ca812a1a74879a9afae6d23e65b453dd812487e485b8c7975053617f073",
+  "i145.png": "86e7540c6bf11d48cd069a1f095fa74f6eaa619dc3dea1c84dde2270a9f5c66c",
+  "i146.png": "bbed1f2788a8a47d7b9ec6cd0278575fa34b7065fb63317ac023a71a18652750",
+  "i148.png": "e1de0989f731abfd1d0ab5fec15dd57828dc2c9fd1c702fb74054756dbb811e4",
+  "i151.png": "5f171c22aff8098135d323ef625fa56cd5a28fa41e4950054303f674d1fde180",
+  "i152.png": "96e99b015d090129116a69c7fc27ef312b8cdc4bc09517cdcd4db29cdff7fef0",
+  "i154.png": "02685de0806162fff8c9986a7a32a99cae01e24979f4edf3267fe5f03d247f84",
+  "i155.png": "fccfe6801c9cb24f00393e93fa0dd660bf81e9babca19dd0fe532d4cb2016d1a",
+  "i157.png": "6b8e3a1700ca4c77c8046dd839cc5b06e034e9857adbb5f10eba3579c223b9b0",
+  "i158.png": "46c79c93a42d3b874a616f231f2628bce00a7987a806706569e9614a8affa604",
+  "i160.png": "181d70fcffee8b05ca36cd68fbe2ee8c9127be6a316cc98e011fd9fa5b2cdd05",
+  "i161.png": "7ba1d5d9dda6f457129479dfcefe88bb6b03df5482c394b5ef1061d50a59fb27",
+  "i162.png": "9aa769661b8e80798ea3e2e2aee5ade377a7a9460dd9900e9598cf714a11df7c",
+  "i166.png": "12621bd2eda90ce17295e83f75785b16e5fe7ef4cd75eaf8766b18e69a2c94e5",
+  "i167.png": "f8ff3ada76e9950845407917598006606f3b27dda5c90651e08112705200abbb",
+  "i168.png": "678e49787322a5d7f072b68b71b7fe900d148714fcca4b31e061a89124f30b02",
+  "i169.png": "6785876d6fe26dfb30b13cde5a8809877e6cf3979e435574cd53e0dd887552c1",
+  "i170.png": "11911c318d12ccf75006006f8cab1a942020fb599a2fea99079bdecdfc46cfcf",
+  "i171.png": "33cad1b1e468519a92bf418d4ad30b379e4762a8a693bdda3d4ca02a3954e8e3",
+  "i173.png": "5548043c78dd5293ad4a259a20a4be3781802157f0b197a3d914a08cbcdff64d",
+  "i174.png": "a153afe0a98f21f77cc3843d79501113eb0ce03ef1e499d7f768aafbc150a20a",
+  "i175.png": "976abfe78a8fd04d81ce4e72c7e2a2048defeca41aa9a68822c0f8feb7b75553",
+  "i176.png": "70ffa7f516cb5f839f4fa583fd738f1e8cefe19704969df5198a96a821ce2b1a",
+  "i177.png": "03e7d5b3c85f3123f24982502b0b51e28f0ac77aa87505143e82cc91c266c5eb",
+  "i178.png": "1ca7d83b5318627caa4b9b9c0b2ed6e98163548269d626810524347279cbc5a9",
+  "i181.png": "53131bbd26d9d7883ef537c37d4c14076f556a20dd2d0565cebbe92124aa6dd0",
+  "i182.png": "405d69e7cdaad59ac49cd21c6516069e77d23d9debf1598c514fbfbb1475911c",
+  "i184.png": "2c3e6ca81013a003c80512dc90859099cd1d56060937ea37207a338f20dbb6f0",
+  "i185.png": "34cf706d18a20851bcee60811f3fe4036f9f6c04d6668b8204e453ba680fec60",
+  "i186.png": "25e4d08848ee034ebf18d504631bd50c518068fb0d3856115db93dc483fd93d0",
+  "i188.png": "116c4ec34526add845f7ee3658096fe16bb53f5dbe7a8a96a614827d8edb5707",
+  "i189.png": "21064f70ce958e11ec0dc51d1211e007ec6756b567028a2c653910dc6304f591",
+  "i190.png": "bb501111bb7521838059bac5a5a24716215682a7bf3be568dfc465a8d1d8262c",
+  "i191.png": "8ab1df57368c8300f7d5de7ab8b0cb3a7ba54f995909e8767a22b12585666922",
+  "i193.png": "b73812d8924e6f56942686981e56108e02dbfa08fca4dc07ef9c1df743719f4e",
+  "i194.png": "c64e26aa0c2ab9360bc7606259f8a77ae86bc954c4b0adb2035064a49d3e2284",
+  "i195.png": "3fd23d2e21168e7bc7aa6b88b6af9a1ae810edf0c5744b26c2c5ae81ef162394",
+  "i197.png": "38e75d6e92f3500b05ffc52bf7ee8839bcbe6f918bbe4dc2b6ac8d9734ddb40f",
+  "i198.png": "375b741274338e01890d29b06f09f7abf97452dd14ea840d5e5126dce32e86da",
+  "i200.png": "3bdd815c96e2f0ee3b8255dc7d3b942be2eef55c1d3a98ce1171f38b699a556d",
+  "i202.png": "f0a1738744d1e6f55b2304e1a2a71d1e0820b67e351c3af3777f8edabb7d432b",
+  "i203.png": "755fe58a5419f68e11796442ffce5d2af49b97cf563071e570637b506969a654",
+  "i204.png": "673f9438028ee361cd41c3e2cd8bb8af87d15717a8f00ab3ce30399f8e35bf7d",
+  "i205.png": "cb89427e06e4017391242261006c2454c37ffdc06a816c6aff53c5e87d8eebe4",
+  "i206.png": "0e4166dcd83b2a877b6f03a4391c268abdc3130a811d23bb8a7126b7ca6121cf",
+  "i207.png": "8d25f589f7813faeb6e00ed773b50a32060510b29284cd19d98c16ee1986bd49",
+  "i208.png": "6409d9712d54d1fc51f1c032dcd8858106b50880e1eaf4c513390c9950803cec",
+  "i210.png": "8d2853b423d24c2bb2036cb3e4478b6e0d9236d280703e43f0428d2cb5207d9e",
+  "i213.png": "3cbb1d45fd4298b6f4fcb5e79613645f40bb37ece328a3baf7da06a3cef3991c",
+  "i214.png": "ea06b6ca2b58ef53f8653fbe230219c91ce58cb3568d5b712d9289c223615794",
+  "i215.png": "f53376a3bef915ca32cf55cd5f4a4f3e6864379c7c001fa55ae37c6eb6c9055f",
+  "i218.png": "12b34ebd23939505fa224ec1497fce466f7edf741a7c1729f4a19305364c5b1a",
+  "i219.png": "78668306fbb3a542daab998f199fae8f7152190bcee980e491630f69a5dc1747",
+  "i220.png": "641ca3ffe0b5e7212247429a81da9a1cd6c0301c77515fad5578242edc406a61",
+  "i221.png": "64342bced87efd00dd12643ed0aaf8f18793326640c573c4d5a62a73a6950601",
+  "i222.png": "1f518aa98040f1471c0095e0797e49af41eb3a5a96468f2a1011347c5d060fb5",
+  "i223.png": "396450ea271650c2fc27a4266a26c4d00b8c40c8e02c52ebfd0db0919bd3a7a5",
+  "i224.png": "ff4e77f70eecd1fd603d20989b31e12be7ef1a29959b4fdc25bdfb27e95b5c03",
+  "i225.png": "5bf7bfaae7a6e283e79d49cce0f07fd4983627f3764b9bca66adb6ac9f80acc2",
+  "i226.png": "101a06fdf5fe4b2c88bb599beac8c9ef4b73c351863ed1e3c76d7e08261c984f",
+  "i227.png": "28ea15f1dae25f9c1f155a9934202138433fda2530440cab6fffdb3be1ce4cdb",
+  "i228.png": "1afa0e7fab258f70cc10b8bf50e1d79da1628f84f2738c48725c1830d5b4e5ae",
+  "i229.png": "2a33bd478c59486cb7ae1724effb675f5d70fc56bfa61efbb3b50880d81595d4",
+  "i230.png": "f8dd6fc3fd2bf861df76c49e2bacdcdbfbf27ee2f2363f5cc3d27ac309b62263",
+  "i231.png": "4f312bd19ceb6dc2593916db8a42cdc6b345d40d1528ebcd27e42cd4f1d961cf",
+  "i232.png": "ce73bd2f925a5fe989d3ce2bd12aeeea7b434b70b70094938bab92a929a655ac",
+  "i233.png": "666ef8de72590596c12da888ad34b8c52d19a8d3641b12d162876eb530e3aa4a",
+  "i235.png": "20bb1f87cbdc3bd7ab177a5a6a2399b3ad9c6a4258eb161e93fdf782356f3229",
+  "i238.png": "c04e355ce763df5c97f9c745340bdf8c396c794a4f7e05d13371d19a150b794c",
+  "i239.png": "338cff69b03499228fd18a6aad39d95327fbb77133fbd3947287d04c1ce37531",
+  "i240.png": "5616460cdabdbddff08ba194478b10149f4ca8d04ed56109dd9829cd830213d1",
+  "i241.png": "fe3c2346f21a536b1ea579c6fc2ba0517cfbf4a28c20509b96f864849fb26874",
+  "i242.png": "4e178ae2b09e71fccb822393234bbe9ee7f9c2b79d421bd75ce3a561bfb985e5",
+  "i244.png": "59ac78896f2532d1a89c9b7cbffb229604de9ed8bdd7dab7eaf102c00f648355",
+  "i245.png": "943547400cd496f4cb1fb7e0b15fafc2c2c6b78bd7cd34c38c29750c784d388a",
+  "i246.png": "3090bedcebc3cd60afa3b25a80e7d602db108084b0b6da9fb08cf67fbde1f9ff",
+  "i250.png": "baf1211df95ca0e3d58de33ca646fd615c492d84d6dc612130655df2454a245f",
+  "i253.png": "992f28409326a3ae63f21d730202d857dc2a5841a4e1377e0667ac94afcb1092",
+  "i254.png": "e7899c1ba0f83d70ae1d50b3b5f54929991860e6e0c661ee6ee940ad5af12992",
+  "i255.png": "201dad4b1eb536ad625779c05fdbfca7062813f39cda8153578536670a58fb1d",
+  "i257.png": "d52a9eadc46c649fad54bb302b6341752ec91a367865c546b387752283f392c4",
+  "i261.png": "6900aba22a5c92f4922da43d9160d50b38f34b3442b56e08f1a87cd35916f643",
+  "i263.png": "63a4ebbddf971edc1773cb997bea9c93681b637d6ff3674270eee9169988caf8",
+  "i265.png": "528f4be2a0f1dce95fcb62929c62cae5abb6989d1d8a3c36d4c835ec0e9ab2ce",
+  "i266.png": "016440621f61cfc45a84904ec25874f6dbe8ed86d7a9983b9ff5e6886a12e919",
+  "i267.png": "65fee6694c577c2f0ded3655e42c2233a78310fa2c3d9f0d5bf221b89eefa27e",
+  "i268.png": "f5d8e3fa2f1776f601baf5f9d5cedcf2f41025ee9d9215121bd80252fbcdda5d",
+  "i269.png": "5f2311769153bbfbd248f43623299fc12c2f60c21a5413b53129cbf4fe3f36e8",
+  "i270.png": "72365fc2f19c690d80533094c8559b285a0b03c4116d154f2f0e37ffea074f3c",
+  "i271.png": "5d5ed8964de74ffe34fb76731304d0092d1a59e2ce5a2dd77b2bfa09f47c4145",
+  "i272.png": "a72c7b1441a08fc121118aaf55cc2548accf0394cf882c80950881f03b635eee",
+  "i273.png": "e121882259f15f2591302bc0f8dfd1c1e9fdf8658dcb4003475ac985132bba59"
+ },
+ "images": [
+  {
+   "file": "side_view_000.png",
+   "type": "side_view",
+   "split": "dev",
+   "variety": [
+    "zoom:0.55",
+    "png",
+    "smallest_face:medium_60_149px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    1
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      235,
+      162,
+      369,
+      360
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 1,
+     "ita": 18.7,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "woman",
+      "view_or_accessory": "side profile view, head turned fully to the side, seen from the side",
+      "light": "soft even light",
+      "glasses": false,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.9226,
+     "yunet_landmarks": [
+      336.0,
+      380.4,
+      403.4,
+      387.3,
+      312.9,
+      451.3,
+      343.8,
+      511.2,
+      400.7,
+      513.6
+     ],
+     "face_short_side_px": 134
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "side_view_001.jpg",
+   "type": "side_view",
+   "split": "dev",
+   "variety": [
+    "zoom:0.55",
+    "blur:0.8",
+    "jpg_q80",
+    "smallest_face:large_ge150px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    2
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      388,
+      451,
+      596,
+      729
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 2,
+     "ita": -40.9,
+     "skin_bucket": "dark",
+     "skin_chardon": "dark",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "man",
+      "view_or_accessory": "face in profile, looking away from the camera, ear visible",
+      "light": "dim warm indoor light",
+      "glasses": false,
+      "hair": "short brown hair with a beard"
+     },
+     "yunet_score": 0.8798,
+     "yunet_landmarks": [
+      318.0,
+      401.8,
+      498.6,
+      407.9,
+      373.8,
+      518.9,
+      326.3,
+      609.4,
+      477.6,
+      614.2
+     ],
+     "face_short_side_px": 208
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "side_view_002.png",
+   "type": "side_view",
+   "split": "dev",
+   "variety": [
+    "zoom:1.0",
+    "blur:1.2",
+    "png",
+    "smallest_face:large_ge150px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    3
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      447,
+      213,
+      735,
+      628
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 3,
+     "ita": 32.2,
+     "skin_bucket": "medium",
+     "skin_chardon": "intermediate",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "woman",
+      "view_or_accessory": "face in profile, looking away from the camera, ear visible",
+      "light": "overhead fluorescent light",
+      "glasses": false,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.9072,
+     "yunet_landmarks": [
+      615.1,
+      369.4,
+      720.1,
+      352.1,
+      736.0,
+      438.4,
+      642.7,
+      529.2,
+      728.2,
+      516.2
+     ],
+     "face_short_side_px": 288
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "side_view_003.png",
+   "type": "side_view",
+   "split": "dev",
+   "variety": [
+    "zoom:0.3",
+    "png",
+    "smallest_face:medium_60_149px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    5
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      712,
+      307,
+      827,
+      469
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 5,
+     "ita": 52.8,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "woman",
+      "view_or_accessory": "face in profile, looking away from the camera, ear visible",
+      "light": "soft even light",
+      "glasses": false,
+      "hair": "blond hair tied back"
+     },
+     "yunet_score": 0.8308,
+     "yunet_landmarks": [
+      631.9,
+      340.7,
+      750.1,
+      351.8,
+      751.9,
+      446.2,
+      623.5,
+      536.8,
+      722.5,
+      547.4
+     ],
+     "face_short_side_px": 115
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "side_view_004.jpg",
+   "type": "side_view",
+   "split": "dev",
+   "variety": [
+    "zoom:0.3",
+    "blur:1.2",
+    "jpg_q40",
+    "smallest_face:medium_60_149px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    10
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      766,
+      606,
+      837,
+      712
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 10,
+     "ita": -19.9,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their thirties",
+      "gender_word": "woman",
+      "view_or_accessory": "side profile view, head turned fully to the side, seen from the side",
+      "light": "dim warm indoor light",
+      "glasses": false,
+      "hair": "shoulder-length brown hair"
+     },
+     "yunet_score": 0.9074,
+     "yunet_landmarks": [
+      664.6,
+      432.8,
+      719.2,
+      434.1,
+      743.2,
+      499.3,
+      665.6,
+      568.2,
+      702.0,
+      569.6
+     ],
+     "face_short_side_px": 71
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "side_view_005.jpg",
+   "type": "side_view",
+   "split": "dev",
+   "variety": [
+    "zoom:0.55",
+    "blur:0.8",
+    "jpg_q95",
+    "smallest_face:large_ge150px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    11
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      479,
+      292,
+      675,
+      568
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 11,
+     "ita": 64.7,
+     "skin_bucket": "light",
+     "skin_chardon": "very light",
+     "prompt_skin_word": "very light skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "woman",
+      "view_or_accessory": "face in profile, looking away from the camera, ear visible",
+      "light": "dim warm indoor light",
+      "glasses": false,
+      "hair": "long black hair"
+     },
+     "yunet_score": 0.8765,
+     "yunet_landmarks": [
+      657.0,
+      328.3,
+      796.3,
+      324.4,
+      784.9,
+      430.1,
+      669.1,
+      520.4,
+      785.6,
+      519.3
+     ],
+     "face_short_side_px": 196
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "side_view_006.png",
+   "type": "side_view",
+   "split": "dev",
+   "variety": [
+    "zoom:0.55",
+    "png",
+    "smallest_face:large_ge150px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    13
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      525,
+      530,
+      720,
+      843
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 13,
+     "ita": 19.9,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "man",
+      "view_or_accessory": "strong three-quarter view, head turned about 60 degrees away from the camera",
+      "light": "soft even light",
+      "glasses": false,
+      "hair": "short brown hair with a beard"
+     },
+     "yunet_score": 0.8527,
+     "yunet_landmarks": [
+      587.8,
+      384.0,
+      747.0,
+      387.7,
+      716.2,
+      508.0,
+      594.2,
+      610.9,
+      728.8,
+      614.9
+     ],
+     "face_short_side_px": 195
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "side_view_007.jpg",
+   "type": "side_view",
+   "split": "dev",
+   "variety": [
+    "zoom:0.55",
+    "jpg_q95",
+    "smallest_face:large_ge150px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    14
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      260,
+      309,
+      469,
+      608
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 14,
+     "ita": 41.8,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "woman",
+      "view_or_accessory": "face in profile, looking away from the camera, ear visible",
+      "light": "strong side light from a window",
+      "glasses": false,
+      "hair": "blond hair tied back"
+     },
+     "yunet_score": 0.8152,
+     "yunet_landmarks": [
+      292.5,
+      426.4,
+      463.2,
+      414.6,
+      332.9,
+      546.1,
+      320.1,
+      643.0,
+      465.1,
+      632.9
+     ],
+     "face_short_side_px": 209
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "side_view_008.jpg",
+   "type": "side_view",
+   "split": "holdout",
+   "variety": [
+    "zoom:0.3",
+    "jpg_q95",
+    "smallest_face:medium_60_149px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    17
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      215,
+      700,
+      301,
+      825
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 17,
+     "ita": -25.8,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their thirties",
+      "gender_word": "man",
+      "view_or_accessory": "side profile view, head turned fully to the side, seen from the side",
+      "light": "bright harsh daylight",
+      "glasses": false,
+      "hair": "short dark hair"
+     },
+     "yunet_score": 0.8656,
+     "yunet_landmarks": [
+      668.6,
+      333.8,
+      753.7,
+      315.1,
+      772.9,
+      400.8,
+      696.9,
+      497.2,
+      763.1,
+      484.0
+     ],
+     "face_short_side_px": 86
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "side_view_009.jpg",
+   "type": "side_view",
+   "split": "dev",
+   "variety": [
+    "zoom:1.0",
+    "jpg_q40",
+    "smallest_face:large_ge150px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    19
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      324,
+      223,
+      681,
+      697
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 19,
+     "ita": 81.5,
+     "skin_bucket": "light",
+     "skin_chardon": "very light",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their twenties",
+      "gender_word": "woman",
+      "view_or_accessory": "strong three-quarter view, head turned about 60 degrees away from the camera",
+      "light": "dim warm indoor light",
+      "glasses": false,
+      "hair": "long black hair"
+     },
+     "yunet_score": 0.9082,
+     "yunet_landmarks": [
+      408.2,
+      390.5,
+      567.6,
+      397.6,
+      473.1,
+      492.7,
+      411.6,
+      563.5,
+      544.7,
+      570.4
+     ],
+     "face_short_side_px": 357
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "side_view_010.png",
+   "type": "side_view",
+   "split": "dev",
+   "variety": [
+    "zoom:1.0",
+    "png",
+    "smallest_face:large_ge150px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    23
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      261,
+      144,
+      578,
+      643
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 23,
+     "ita": -61.5,
+     "skin_bucket": "dark",
+     "skin_chardon": "dark",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "man",
+      "view_or_accessory": "face in profile, looking away from the camera, ear visible",
+      "light": "overhead fluorescent light",
+      "glasses": false,
+      "hair": "bald"
+     },
+     "yunet_score": 0.8562,
+     "yunet_landmarks": [
+      286.4,
+      322.2,
+      401.7,
+      340.7,
+      273.5,
+      424.7,
+      276.1,
+      508.4,
+      377.1,
+      523.4
+     ],
+     "face_short_side_px": 317
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "side_view_011.jpg",
+   "type": "side_view",
+   "split": "dev",
+   "variety": [
+    "zoom:1.0",
+    "jpg_q80",
+    "smallest_face:large_ge150px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    27
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      471,
+      213,
+      748,
+      615
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 27,
+     "ita": 17.9,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "light olive skin",
+     "prompt_words": {
+      "age": "in their thirties",
+      "gender_word": "man",
+      "view_or_accessory": "side profile view, head turned fully to the side, seen from the side",
+      "light": "overhead fluorescent light",
+      "glasses": false,
+      "hair": "short brown hair with a beard"
+     },
+     "yunet_score": 0.9021,
+     "yunet_landmarks": [
+      629.8,
+      357.7,
+      715.6,
+      355.7,
+      718.5,
+      435.8,
+      636.9,
+      516.1,
+      699.3,
+      517.2
+     ],
+     "face_short_side_px": 277
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "side_view_012.png",
+   "type": "side_view",
+   "split": "holdout",
+   "variety": [
+    "zoom:1.0",
+    "png",
+    "smallest_face:large_ge150px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    29
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      416,
+      106,
+      774,
+      589
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 29,
+     "ita": -12.5,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "woman",
+      "view_or_accessory": "strong three-quarter view, head turned about 60 degrees away from the camera",
+      "light": "bright harsh daylight",
+      "glasses": false,
+      "hair": "red hair"
+     },
+     "yunet_score": 0.8882,
+     "yunet_landmarks": [
+      581.2,
+      291.8,
+      718.9,
+      308.7,
+      672.7,
+      396.0,
+      566.3,
+      462.0,
+      684.5,
+      477.5
+     ],
+     "face_short_side_px": 358
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "side_view_013.png",
+   "type": "side_view",
+   "split": "dev",
+   "variety": [
+    "zoom:0.55",
+    "png",
+    "smallest_face:large_ge150px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    33
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      457,
+      452,
+      651,
+      764
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 33,
+     "ita": -13.7,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "man",
+      "view_or_accessory": "side profile view, head turned fully to the side, seen from the side",
+      "light": "overhead fluorescent light",
+      "glasses": false,
+      "hair": "short brown hair with a beard"
+     },
+     "yunet_score": 0.8842,
+     "yunet_landmarks": [
+      271.9,
+      375.9,
+      415.2,
+      357.2,
+      299.2,
+      488.2,
+      308.1,
+      592.0,
+      430.3,
+      576.7
+     ],
+     "face_short_side_px": 194
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "side_view_014.jpg",
+   "type": "side_view",
+   "split": "dev",
+   "variety": [
+    "zoom:0.3",
+    "jpg_q80",
+    "smallest_face:medium_60_149px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    34
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      696,
+      548,
+      788,
+      687
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 34,
+     "ita": 31.3,
+     "skin_bucket": "medium",
+     "skin_chardon": "intermediate",
+     "prompt_skin_word": "light olive skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "man",
+      "view_or_accessory": "strong three-quarter view, head turned about 60 degrees away from the camera",
+      "light": "bright harsh daylight",
+      "glasses": false,
+      "hair": "curly black hair"
+     },
+     "yunet_score": 0.9224,
+     "yunet_landmarks": [
+      498.1,
+      357.0,
+      646.7,
+      363.8,
+      581.7,
+      454.0,
+      495.9,
+      518.1,
+      630.7,
+      525.5
+     ],
+     "face_short_side_px": 92
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "side_view_015.jpg",
+   "type": "side_view",
+   "split": "dev",
+   "variety": [
+    "zoom:1.0",
+    "blur:0.8",
+    "jpg_q60",
+    "smallest_face:large_ge150px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    35
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      209,
+      232,
+      554,
+      660
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 35,
+     "ita": 22.4,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "woman",
+      "view_or_accessory": "side profile view, head turned fully to the side, seen from the side",
+      "light": "bright harsh daylight",
+      "glasses": false,
+      "hair": "curly dark hair"
+     },
+     "yunet_score": 0.8912,
+     "yunet_landmarks": [
+      239.6,
+      392.8,
+      325.3,
+      392.0,
+      211.8,
+      476.4,
+      257.0,
+      555.7,
+      331.7,
+      552.0
+     ],
+     "face_short_side_px": 345
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "side_view_016.jpg",
+   "type": "side_view",
+   "split": "holdout",
+   "variety": [
+    "zoom:0.3",
+    "blur:0.8",
+    "jpg_q95",
+    "smallest_face:medium_60_149px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    36
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      694,
+      150,
+      793,
+      308
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 36,
+     "ita": 58.4,
+     "skin_bucket": "light",
+     "skin_chardon": "very light",
+     "prompt_skin_word": "very light skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "man",
+      "view_or_accessory": "strong three-quarter view, head turned about 60 degrees away from the camera",
+      "light": "bright harsh daylight",
+      "glasses": false,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.8311,
+     "yunet_landmarks": [
+      295.3,
+      429.3,
+      448.4,
+      429.8,
+      333.9,
+      543.0,
+      307.6,
+      628.3,
+      439.8,
+      629.3
+     ],
+     "face_short_side_px": 99
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "side_view_017.jpg",
+   "type": "side_view",
+   "split": "holdout",
+   "variety": [
+    "zoom:0.55",
+    "jpg_q95",
+    "smallest_face:large_ge150px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    37
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      320,
+      124,
+      505,
+      368
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 37,
+     "ita": -26.8,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "woman",
+      "view_or_accessory": "face in profile, looking away from the camera, ear visible",
+      "light": "dim warm indoor light",
+      "glasses": false,
+      "hair": "red hair"
+     },
+     "yunet_score": 0.8734,
+     "yunet_landmarks": [
+      334.2,
+      287.4,
+      408.8,
+      287.0,
+      306.2,
+      369.5,
+      350.1,
+      450.5,
+      410.2,
+      447.1
+     ],
+     "face_short_side_px": 185
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "side_view_018.jpg",
+   "type": "side_view",
+   "split": "holdout",
+   "variety": [
+    "zoom:1.0",
+    "jpg_q60",
+    "smallest_face:large_ge150px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    38
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      290,
+      231,
+      635,
+      660
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 38,
+     "ita": 48.8,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "light olive skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "woman",
+      "view_or_accessory": "side profile view, head turned fully to the side, seen from the side",
+      "light": "bright harsh daylight",
+      "glasses": false,
+      "hair": "curly dark hair"
+     },
+     "yunet_score": 0.9143,
+     "yunet_landmarks": [
+      334.3,
+      379.2,
+      438.9,
+      379.1,
+      330.1,
+      466.7,
+      350.5,
+      552.3,
+      433.8,
+      550.0
+     ],
+     "face_short_side_px": 345
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "side_view_019.jpg",
+   "type": "side_view",
+   "split": "dev",
+   "variety": [
+    "zoom:0.55",
+    "jpg_q95",
+    "smallest_face:large_ge150px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    41
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      409,
+      348,
+      582,
+      616
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 41,
+     "ita": 19.3,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "medium tan skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "woman",
+      "view_or_accessory": "side profile view, head turned fully to the side, seen from the side",
+      "light": "strong side light from a window",
+      "glasses": false,
+      "hair": "curly dark hair"
+     },
+     "yunet_score": 0.8926,
+     "yunet_landmarks": [
+      666.0,
+      352.7,
+      784.5,
+      335.6,
+      795.2,
+      434.6,
+      694.1,
+      538.8,
+      792.9,
+      525.4
+     ],
+     "face_short_side_px": 173
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "accessory_000.jpg",
+   "type": "accessory",
+   "split": "dev",
+   "variety": [
+    "zoom:1.0",
+    "jpg_q95",
+    "smallest_face:large_ge150px",
+    "faces:1",
+    "accessory:wearing a wool beanie"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    45
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      490,
+      183,
+      724,
+      521
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 45,
+     "ita": -29.1,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "woman",
+      "view_or_accessory": "wearing a wool beanie",
+      "light": "strong side light from a window",
+      "glasses": false,
+      "hair": null
+     },
+     "yunet_score": 0.9315,
+     "yunet_landmarks": [
+      518.8,
+      310.7,
+      601.2,
+      305.5,
+      526.4,
+      373.8,
+      537.6,
+      435.2,
+      605.9,
+      430.5
+     ],
+     "face_short_side_px": 234
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "accessory_001.png",
+   "type": "accessory",
+   "split": "holdout",
+   "variety": [
+    "zoom:0.55",
+    "png",
+    "smallest_face:medium_60_149px",
+    "faces:1",
+    "accessory:wearing a wide-brimmed hat"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    49
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      583,
+      248,
+      718,
+      431
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 49,
+     "ita": 45.2,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "very light skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "man",
+      "view_or_accessory": "wearing a wide-brimmed hat",
+      "light": "dim warm indoor light",
+      "glasses": false,
+      "hair": null
+     },
+     "yunet_score": 0.9333,
+     "yunet_landmarks": [
+      448.9,
+      313.6,
+      565.6,
+      309.8,
+      503.0,
+      376.5,
+      462.8,
+      442.9,
+      560.8,
+      440.5
+     ],
+     "face_short_side_px": 135
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "accessory_002.jpg",
+   "type": "accessory",
+   "split": "dev",
+   "variety": [
+    "zoom:1.0",
+    "jpg_q80",
+    "smallest_face:large_ge150px",
+    "faces:1",
+    "accessory:wearing a baseball cap"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    50
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      419,
+      148,
+      635,
+      433
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 50,
+     "ita": 9.6,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "woman",
+      "view_or_accessory": "wearing a baseball cap",
+      "light": "overhead fluorescent light",
+      "glasses": false,
+      "hair": null
+     },
+     "yunet_score": 0.9472,
+     "yunet_landmarks": [
+      461.4,
+      247.5,
+      559.6,
+      240.9,
+      502.3,
+      302.6,
+      476.3,
+      354.4,
+      560.2,
+      349.1
+     ],
+     "face_short_side_px": 216
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "accessory_003.png",
+   "type": "accessory",
+   "split": "dev",
+   "variety": [
+    "zoom:0.55",
+    "png",
+    "smallest_face:large_ge150px",
+    "faces:1",
+    "accessory:wearing a baseball cap and dar"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    56
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      330,
+      199,
+      533,
+      473
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 56,
+     "ita": 69.6,
+     "skin_bucket": "light",
+     "skin_chardon": "very light",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "woman",
+      "view_or_accessory": "wearing a baseball cap and dark sunglasses",
+      "light": "bright harsh daylight",
+      "glasses": false,
+      "hair": null
+     },
+     "yunet_score": 0.8254,
+     "yunet_landmarks": [
+      423.3,
+      268.9,
+      592.3,
+      267.0,
+      526.3,
+      382.9,
+      436.6,
+      469.0,
+      580.4,
+      468.4
+     ],
+     "face_short_side_px": 203
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "accessory_004.jpg",
+   "type": "accessory",
+   "split": "dev",
+   "variety": [
+    "zoom:0.3",
+    "jpg_q40",
+    "smallest_face:medium_60_149px",
+    "faces:1",
+    "accessory:wearing a wool beanie"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    57
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      265,
+      776,
+      371,
+      915
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 57,
+     "ita": 38.3,
+     "skin_bucket": "medium",
+     "skin_chardon": "intermediate",
+     "prompt_skin_word": "medium tan skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "woman",
+      "view_or_accessory": "wearing a wool beanie",
+      "light": "dim warm indoor light",
+      "glasses": false,
+      "hair": null
+     },
+     "yunet_score": 0.9136,
+     "yunet_landmarks": [
+      517.2,
+      375.8,
+      684.8,
+      407.6,
+      600.1,
+      499.5,
+      490.0,
+      545.8,
+      636.2,
+      574.6
+     ],
+     "face_short_side_px": 106
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "accessory_005.jpg",
+   "type": "accessory",
+   "split": "dev",
+   "variety": [
+    "zoom:1.0",
+    "jpg_q80",
+    "smallest_face:large_ge150px",
+    "faces:1",
+    "accessory:wearing a baseball cap and dar"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    59
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      304,
+      127,
+      746,
+      700
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 59,
+     "ita": 6.4,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their twenties",
+      "gender_word": "woman",
+      "view_or_accessory": "wearing a baseball cap and dark sunglasses",
+      "light": "strong side light from a window",
+      "glasses": false,
+      "hair": null
+     },
+     "yunet_score": 0.8414,
+     "yunet_landmarks": [
+      427.4,
+      336.5,
+      627.2,
+      341.2,
+      522.5,
+      471.9,
+      439.2,
+      567.9,
+      603.3,
+      572.9
+     ],
+     "face_short_side_px": 442
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "accessory_006.jpg",
+   "type": "accessory",
+   "split": "dev",
+   "variety": [
+    "zoom:1.0",
+    "jpg_q40",
+    "smallest_face:large_ge150px",
+    "faces:1",
+    "accessory:wearing a wool beanie"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    60
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      450,
+      277,
+      794,
+      763
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 60,
+     "ita": 17.6,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "woman",
+      "view_or_accessory": "wearing a wool beanie",
+      "light": "soft even light",
+      "glasses": false,
+      "hair": null
+     },
+     "yunet_score": 0.9027,
+     "yunet_landmarks": [
+      598.4,
+      454.6,
+      753.6,
+      450.2,
+      715.4,
+      556.4,
+      613.6,
+      637.1,
+      743.0,
+      636.7
+     ],
+     "face_short_side_px": 344
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "accessory_007.png",
+   "type": "accessory",
+   "split": "holdout",
+   "variety": [
+    "zoom:0.3",
+    "png",
+    "smallest_face:medium_60_149px",
+    "faces:1",
+    "accessory:wearing a face mask and glasse"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    61
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      501,
+      555,
+      602,
+      697
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 61,
+     "ita": -18.8,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their thirties",
+      "gender_word": "woman",
+      "view_or_accessory": "wearing a face mask and glasses",
+      "light": "overhead fluorescent light",
+      "glasses": false,
+      "hair": "red hair"
+     },
+     "yunet_score": 0.9071,
+     "yunet_landmarks": [
+      411.6,
+      503.5,
+      562.8,
+      493.7,
+      491.3,
+      595.3,
+      432.6,
+      675.9,
+      556.4,
+      670.0
+     ],
+     "face_short_side_px": 101
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "accessory_008.jpg",
+   "type": "accessory",
+   "split": "dev",
+   "variety": [
+    "zoom:1.0",
+    "jpg_q40",
+    "smallest_face:large_ge150px",
+    "faces:1",
+    "accessory:wearing a wool beanie"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    63
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      316,
+      204,
+      696,
+      679
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 63,
+     "ita": 22.0,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "woman",
+      "view_or_accessory": "wearing a wool beanie",
+      "light": "bright harsh daylight",
+      "glasses": false,
+      "hair": null
+     },
+     "yunet_score": 0.9054,
+     "yunet_landmarks": [
+      452.6,
+      390.5,
+      610.3,
+      388.4,
+      551.3,
+      486.1,
+      463.9,
+      559.3,
+      597.0,
+      559.7
+     ],
+     "face_short_side_px": 380
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "accessory_009.jpg",
+   "type": "accessory",
+   "split": "dev",
+   "variety": [
+    "zoom:1.0",
+    "jpg_q40",
+    "smallest_face:large_ge150px",
+    "faces:1",
+    "accessory:wearing a wide-brimmed hat"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    64
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      318,
+      181,
+      621,
+      630
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 64,
+     "ita": 3.0,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "medium tan skin",
+     "prompt_words": {
+      "age": "in their twenties",
+      "gender_word": "man",
+      "view_or_accessory": "wearing a wide-brimmed hat",
+      "light": "overhead fluorescent light",
+      "glasses": false,
+      "hair": null
+     },
+     "yunet_score": 0.9292,
+     "yunet_landmarks": [
+      448.3,
+      357.7,
+      575.3,
+      347.7,
+      550.9,
+      443.1,
+      467.0,
+      521.5,
+      573.1,
+      513.3
+     ],
+     "face_short_side_px": 303
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "accessory_010.png",
+   "type": "accessory",
+   "split": "dev",
+   "variety": [
+    "zoom:0.3",
+    "blur:1.6",
+    "png",
+    "smallest_face:medium_60_149px",
+    "faces:1",
+    "accessory:wearing a face mask and glasse"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    66
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      155,
+      596,
+      271,
+      724
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 66,
+     "ita": 38.1,
+     "skin_bucket": "medium",
+     "skin_chardon": "intermediate",
+     "prompt_skin_word": "medium tan skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "man",
+      "view_or_accessory": "wearing a face mask and glasses",
+      "light": "dim warm indoor light",
+      "glasses": false,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.8153,
+     "yunet_landmarks": [
+      432.5,
+      390.1,
+      604.9,
+      379.1,
+      523.2,
+      485.9,
+      459.0,
+      554.2,
+      602.2,
+      542.7
+     ],
+     "face_short_side_px": 116
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "accessory_011.jpg",
+   "type": "accessory",
+   "split": "holdout",
+   "variety": [
+    "zoom:0.3",
+    "jpg_q80",
+    "smallest_face:medium_60_149px",
+    "faces:1",
+    "accessory:wearing a black cloth face mas"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    69
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      781,
+      209,
+      915,
+      356
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 69,
+     "ita": 41.5,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "light olive skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "woman",
+      "view_or_accessory": "wearing a black cloth face mask covering nose and mouth",
+      "light": "bright harsh daylight",
+      "glasses": false,
+      "hair": "blond hair tied back"
+     },
+     "yunet_score": 0.8237,
+     "yunet_landmarks": [
+      416.2,
+      520.2,
+      612.0,
+      509.1,
+      515.2,
+      626.6,
+      441.6,
+      717.9,
+      600.7,
+      708.1
+     ],
+     "face_short_side_px": 134
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "accessory_012.jpg",
+   "type": "accessory",
+   "split": "holdout",
+   "variety": [
+    "zoom:0.55",
+    "jpg_q60",
+    "smallest_face:large_ge150px",
+    "faces:1",
+    "accessory:wearing dark sunglasses"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    70
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      268,
+      375,
+      422,
+      578
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 70,
+     "ita": 10.7,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "woman",
+      "view_or_accessory": "wearing dark sunglasses",
+      "light": "dim warm indoor light",
+      "glasses": false,
+      "hair": "shoulder-length brown hair"
+     },
+     "yunet_score": 0.9211,
+     "yunet_landmarks": [
+      452.8,
+      267.1,
+      577.2,
+      280.3,
+      505.6,
+      351.6,
+      449.4,
+      408.7,
+      551.5,
+      421.1
+     ],
+     "face_short_side_px": 154
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "accessory_013.jpg",
+   "type": "accessory",
+   "split": "dev",
+   "variety": [
+    "zoom:0.3",
+    "jpg_q80",
+    "smallest_face:medium_60_149px",
+    "faces:1",
+    "accessory:wearing a baseball cap"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    74
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      572,
+      793,
+      678,
+      947
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 74,
+     "ita": -41.1,
+     "skin_bucket": "dark",
+     "skin_chardon": "dark",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "woman",
+      "view_or_accessory": "wearing a baseball cap",
+      "light": "strong side light from a window",
+      "glasses": false,
+      "hair": null
+     },
+     "yunet_score": 0.9039,
+     "yunet_landmarks": [
+      492.0,
+      457.5,
+      650.8,
+      451.6,
+      604.9,
+      561.8,
+      509.3,
+      651.7,
+      640.2,
+      648.2
+     ],
+     "face_short_side_px": 106
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "accessory_014.jpg",
+   "type": "accessory",
+   "split": "dev",
+   "variety": [
+    "zoom:1.0",
+    "blur:1.6",
+    "jpg_q60",
+    "smallest_face:large_ge150px",
+    "faces:1",
+    "accessory:wearing a baseball cap"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    76
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      431,
+      198,
+      695,
+      520
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 76,
+     "ita": 11.9,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "medium tan skin",
+     "prompt_words": {
+      "age": "in their twenties",
+      "gender_word": "woman",
+      "view_or_accessory": "wearing a baseball cap",
+      "light": "strong side light from a window",
+      "glasses": false,
+      "hair": null
+     },
+     "yunet_score": 0.942,
+     "yunet_landmarks": [
+      509.6,
+      298.5,
+      624.3,
+      308.2,
+      564.4,
+      369.5,
+      507.4,
+      423.0,
+      606.4,
+      430.5
+     ],
+     "face_short_side_px": 264
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "accessory_015.jpg",
+   "type": "accessory",
+   "split": "dev",
+   "variety": [
+    "zoom:0.55",
+    "jpg_q60",
+    "smallest_face:large_ge150px",
+    "faces:1",
+    "accessory:wearing a face mask and glasse"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    78
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      371,
+      236,
+      574,
+      513
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 78,
+     "ita": 52.0,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "very light skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "man",
+      "view_or_accessory": "wearing a face mask and glasses",
+      "light": "bright harsh daylight",
+      "glasses": false,
+      "hair": "curly black hair"
+     },
+     "yunet_score": 0.8948,
+     "yunet_landmarks": [
+      436.1,
+      399.6,
+      606.3,
+      393.4,
+      518.7,
+      503.6,
+      454.4,
+      584.5,
+      599.6,
+      580.6
+     ],
+     "face_short_side_px": 203
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "accessory_016.jpg",
+   "type": "accessory",
+   "split": "dev",
+   "variety": [
+    "zoom:0.3",
+    "jpg_q40",
+    "smallest_face:medium_60_149px",
+    "faces:1",
+    "accessory:wearing a face mask and glasse"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    79
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      372,
+      499,
+      509,
+      683
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 79,
+     "ita": 48.9,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "very light skin",
+     "prompt_words": {
+      "age": "in their twenties",
+      "gender_word": "man",
+      "view_or_accessory": "wearing a face mask and glasses",
+      "light": "overhead fluorescent light",
+      "glasses": false,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.863,
+     "yunet_landmarks": [
+      401.8,
+      427.5,
+      614.1,
+      429.5,
+      505.7,
+      567.0,
+      411.3,
+      666.9,
+      594.8,
+      671.9
+     ],
+     "face_short_side_px": 137
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "accessory_017.jpg",
+   "type": "accessory",
+   "split": "dev",
+   "variety": [
+    "zoom:1.0",
+    "jpg_q80",
+    "smallest_face:large_ge150px",
+    "faces:1",
+    "accessory:wearing a wool beanie"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    83
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      298,
+      232,
+      681,
+      734
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 83,
+     "ita": -8.9,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their thirties",
+      "gender_word": "woman",
+      "view_or_accessory": "wearing a wool beanie",
+      "light": "soft even light",
+      "glasses": false,
+      "hair": null
+     },
+     "yunet_score": 0.9023,
+     "yunet_landmarks": [
+      357.4,
+      403.9,
+      522.8,
+      400.8,
+      405.6,
+      512.8,
+      376.4,
+      605.9,
+      510.5,
+      604.6
+     ],
+     "face_short_side_px": 383
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "accessory_018.jpg",
+   "type": "accessory",
+   "split": "dev",
+   "variety": [
+    "zoom:0.55",
+    "jpg_q60",
+    "smallest_face:medium_60_149px",
+    "faces:1",
+    "accessory:wearing a blue surgical face m"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    84
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      444,
+      291,
+      593,
+      490
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 84,
+     "ita": 17.9,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "medium tan skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "woman",
+      "view_or_accessory": "wearing a blue surgical face mask covering nose and mouth",
+      "light": "overhead fluorescent light",
+      "glasses": false,
+      "hair": "shoulder-length brown hair"
+     },
+     "yunet_score": 0.853,
+     "yunet_landmarks": [
+      579.6,
+      363.7,
+      677.7,
+      348.5,
+      665.0,
+      425.9,
+      601.2,
+      480.7,
+      682.6,
+      467.9
+     ],
+     "face_short_side_px": 149
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "accessory_019.png",
+   "type": "accessory",
+   "split": "holdout",
+   "variety": [
+    "zoom:1.0",
+    "blur:0.8",
+    "png",
+    "smallest_face:large_ge150px",
+    "faces:1",
+    "accessory:wearing a baseball cap"
+   ],
+   "width": 1024,
+   "height": 1024,
+   "portrait_indices": [
+    85
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      275,
+      213,
+      731,
+      780
+     ],
+     "box_method": "YuNet on the source portrait, moved by the zoom-out placement",
+     "portrait_index": 85,
+     "ita": 75.7,
+     "skin_bucket": "light",
+     "skin_chardon": "very light",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their twenties",
+      "gender_word": "woman",
+      "view_or_accessory": "wearing a baseball cap",
+      "light": "overhead fluorescent light",
+      "glasses": false,
+      "hair": null
+     },
+     "yunet_score": 0.8088,
+     "yunet_landmarks": [
+      403.6,
+      420.4,
+      628.0,
+      427.1,
+      514.6,
+      559.5,
+      412.8,
+      642.6,
+      602.0,
+      648.5
+     ],
+     "face_short_side_px": 456
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "group_000.png",
+   "type": "group",
+   "split": "holdout",
+   "variety": [
+    "background:i219",
+    "bg_zoom:1.0",
+    "png",
+    "smallest_face:large_ge150px",
+    "faces:2"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    95,
+    88
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      147,
+      471,
+      309,
+      677
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 95,
+     "ita": 42.7,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "medium tan skin",
+     "prompt_words": {
+      "age": "in their twenties",
+      "gender_word": "woman",
+      "view_or_accessory": "head turned slightly to the right",
+      "light": "bright harsh daylight",
+      "glasses": true,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.9227,
+     "yunet_landmarks": [
+      455.7,
+      397.1,
+      611.5,
+      398.9,
+      529.5,
+      500.8,
+      457.9,
+      557.3,
+      598.9,
+      559.8
+     ],
+     "face_short_side_px": 162
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      646,
+      440,
+      836,
+      698
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 88,
+     "ita": -34.6,
+     "skin_bucket": "dark",
+     "skin_chardon": "dark",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "man",
+      "view_or_accessory": "head turned slightly to the right",
+      "light": "soft even light",
+      "glasses": false,
+      "hair": "bald"
+     },
+     "yunet_score": 0.9262,
+     "yunet_landmarks": [
+      659.8,
+      512.0,
+      794.6,
+      513.1,
+      744.2,
+      598.2,
+      669.7,
+      671.8,
+      782.7,
+      674.6
+     ],
+     "face_short_side_px": 190
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "group_001.jpg",
+   "type": "group",
+   "split": "dev",
+   "variety": [
+    "background:i221",
+    "bg_zoom:0.85",
+    "jpg_q60",
+    "smallest_face:medium_60_149px",
+    "faces:3"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    244,
+    119,
+    122
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      94,
+      506,
+      226,
+      689
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 244,
+     "ita": 42.5,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "light olive skin",
+     "prompt_words": {
+      "age": "in their thirties",
+      "gender_word": "man",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "dim warm indoor light",
+      "glasses": true,
+      "hair": "curly black hair"
+     },
+     "yunet_score": 0.9223,
+     "yunet_landmarks": [
+      381.7,
+      354.1,
+      534.0,
+      343.9,
+      460.0,
+      439.6,
+      401.5,
+      517.1,
+      531.9,
+      510.4
+     ],
+     "face_short_side_px": 132
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      448,
+      518,
+      607,
+      742
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 119,
+     "ita": 32.1,
+     "skin_bucket": "medium",
+     "skin_chardon": "intermediate",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "man",
+      "view_or_accessory": "facing the camera",
+      "light": "overhead fluorescent light",
+      "glasses": false,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.8805,
+     "yunet_landmarks": [
+      402.3,
+      412.7,
+      593.0,
+      413.6,
+      481.9,
+      535.8,
+      415.3,
+      632.7,
+      574.9,
+      634.4
+     ],
+     "face_short_side_px": 159
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      817,
+      481,
+      967,
+      696
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 122,
+     "ita": 49.8,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "very light skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "man",
+      "view_or_accessory": "head tilted slightly",
+      "light": "bright harsh daylight",
+      "glasses": false,
+      "hair": "curly black hair"
+     },
+     "yunet_score": 0.8813,
+     "yunet_landmarks": [
+      446.3,
+      434.2,
+      642.4,
+      437.8,
+      542.5,
+      565.7,
+      451.9,
+      655.4,
+      620.3,
+      661.9
+     ],
+     "face_short_side_px": 150
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "group_002.jpg",
+   "type": "group",
+   "split": "dev",
+   "variety": [
+    "background:i221",
+    "bg_zoom:0.85",
+    "blur:1.6",
+    "jpg_q95",
+    "smallest_face:medium_60_149px",
+    "faces:5"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    140,
+    261,
+    257,
+    127,
+    103
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      26,
+      570,
+      134,
+      714
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 140,
+     "ita": 27.7,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "medium tan skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "man",
+      "view_or_accessory": "facing the camera",
+      "light": "dim warm indoor light",
+      "glasses": false,
+      "hair": "short brown hair with a beard"
+     },
+     "yunet_score": 0.8922,
+     "yunet_landmarks": [
+      538.2,
+      317.8,
+      716.6,
+      329.0,
+      632.3,
+      436.2,
+      539.1,
+      504.4,
+      687.2,
+      514.0
+     ],
+     "face_short_side_px": 108
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      261,
+      586,
+      354,
+      720
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 261,
+     "ita": 31.2,
+     "skin_bucket": "medium",
+     "skin_chardon": "intermediate",
+     "prompt_skin_word": "medium tan skin",
+     "prompt_words": {
+      "age": "in their twenties",
+      "gender_word": "man",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "dim warm indoor light",
+      "glasses": false,
+      "hair": "bald"
+     },
+     "yunet_score": 0.9061,
+     "yunet_landmarks": [
+      428.4,
+      366.6,
+      595.9,
+      362.2,
+      514.9,
+      470.7,
+      440.6,
+      556.3,
+      583.0,
+      555.4
+     ],
+     "face_short_side_px": 93
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      472,
+      519,
+      595,
+      695
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 257,
+     "ita": 42.3,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "medium tan skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "man",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "bright harsh daylight",
+      "glasses": false,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.883,
+     "yunet_landmarks": [
+      433.9,
+      361.0,
+      603.0,
+      362.3,
+      501.9,
+      465.5,
+      444.9,
+      551.5,
+      591.6,
+      553.1
+     ],
+     "face_short_side_px": 123
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      674,
+      556,
+      797,
+      713
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 127,
+     "ita": -12.6,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their thirties",
+      "gender_word": "woman",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "bright harsh daylight",
+      "glasses": false,
+      "hair": "long black hair"
+     },
+     "yunet_score": 0.9045,
+     "yunet_landmarks": [
+      320.6,
+      386.1,
+      448.4,
+      377.9,
+      329.8,
+      480.3,
+      346.1,
+      571.7,
+      454.6,
+      563.7
+     ],
+     "face_short_side_px": 123
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      840,
+      499,
+      960,
+      684
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 103,
+     "ita": -17.1,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "man",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "overhead fluorescent light",
+      "glasses": true,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.9114,
+     "yunet_landmarks": [
+      546.4,
+      348.0,
+      697.4,
+      352.3,
+      639.0,
+      450.4,
+      549.6,
+      521.3,
+      683.2,
+      525.7
+     ],
+     "face_short_side_px": 120
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "group_003.png",
+   "type": "group",
+   "split": "dev",
+   "variety": [
+    "background:i220",
+    "bg_zoom:1.0",
+    "png",
+    "smallest_face:medium_60_149px",
+    "faces:5"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    242,
+    210,
+    239,
+    197,
+    171
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      46,
+      575,
+      169,
+      735
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 242,
+     "ita": 63.1,
+     "skin_bucket": "light",
+     "skin_chardon": "very light",
+     "prompt_skin_word": "very light skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "woman",
+      "view_or_accessory": "head turned slightly to the right",
+      "light": "dim warm indoor light",
+      "glasses": true,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.9071,
+     "yunet_landmarks": [
+      451.5,
+      388.9,
+      618.3,
+      362.5,
+      561.2,
+      480.3,
+      490.4,
+      567.9,
+      626.7,
+      548.1
+     ],
+     "face_short_side_px": 123
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      245,
+      541,
+      340,
+      672
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 210,
+     "ita": 1.5,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "man",
+      "view_or_accessory": "facing the camera",
+      "light": "overhead fluorescent light",
+      "glasses": true,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.9328,
+     "yunet_landmarks": [
+      420.3,
+      328.7,
+      572.8,
+      314.0,
+      501.2,
+      406.5,
+      445.2,
+      476.6,
+      582.2,
+      465.0
+     ],
+     "face_short_side_px": 95
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      478,
+      585,
+      584,
+      717
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 239,
+     "ita": 53.4,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "light olive skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "woman",
+      "view_or_accessory": "facing the camera",
+      "light": "bright harsh daylight",
+      "glasses": false,
+      "hair": "long black hair"
+     },
+     "yunet_score": 0.8456,
+     "yunet_landmarks": [
+      418.0,
+      409.2,
+      620.9,
+      420.4,
+      517.0,
+      535.4,
+      417.8,
+      616.4,
+      591.7,
+      627.1
+     ],
+     "face_short_side_px": 106
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      661,
+      564,
+      752,
+      691
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 197,
+     "ita": 14.4,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "woman",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "bright harsh daylight",
+      "glasses": true,
+      "hair": "red hair"
+     },
+     "yunet_score": 0.9319,
+     "yunet_landmarks": [
+      442.2,
+      372.0,
+      565.8,
+      374.9,
+      511.5,
+      447.1,
+      445.0,
+      507.9,
+      551.3,
+      511.0
+     ],
+     "face_short_side_px": 91
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      870,
+      466,
+      983,
+      632
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 171,
+     "ita": -26.7,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "man",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "soft even light",
+      "glasses": false,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.9245,
+     "yunet_landmarks": [
+      398.7,
+      316.1,
+      552.2,
+      295.5,
+      472.5,
+      403.8,
+      431.7,
+      480.0,
+      564.3,
+      462.8
+     ],
+     "face_short_side_px": 113
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "group_004.png",
+   "type": "group",
+   "split": "dev",
+   "variety": [
+    "background:i223",
+    "bg_zoom:0.85",
+    "png",
+    "smallest_face:medium_60_149px",
+    "faces:3"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    173,
+    203,
+    142
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      108,
+      455,
+      269,
+      688
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 173,
+     "ita": -14.0,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their thirties",
+      "gender_word": "man",
+      "view_or_accessory": "facing the camera",
+      "light": "overhead fluorescent light",
+      "glasses": false,
+      "hair": "short brown hair with a beard"
+     },
+     "yunet_score": 0.9047,
+     "yunet_landmarks": [
+      533.2,
+      295.3,
+      697.3,
+      287.1,
+      644.8,
+      396.5,
+      552.9,
+      481.9,
+      694.5,
+      474.5
+     ],
+     "face_short_side_px": 161
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      438,
+      557,
+      575,
+      724
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 203,
+     "ita": -2.9,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "man",
+      "view_or_accessory": "facing the camera",
+      "light": "soft even light",
+      "glasses": false,
+      "hair": "bald"
+     },
+     "yunet_score": 0.8331,
+     "yunet_landmarks": [
+      387.2,
+      448.0,
+      600.9,
+      437.1,
+      494.9,
+      569.3,
+      415.1,
+      663.9,
+      596.2,
+      655.7
+     ],
+     "face_short_side_px": 137
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      778,
+      541,
+      905,
+      718
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 142,
+     "ita": 44.3,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "medium tan skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "woman",
+      "view_or_accessory": "facing the camera",
+      "light": "bright harsh daylight",
+      "glasses": false,
+      "hair": "shoulder-length brown hair"
+     },
+     "yunet_score": 0.91,
+     "yunet_landmarks": [
+      422.5,
+      428.9,
+      591.5,
+      429.0,
+      507.4,
+      534.0,
+      427.8,
+      604.1,
+      578.5,
+      606.3
+     ],
+     "face_short_side_px": 127
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "group_005.jpg",
+   "type": "group",
+   "split": "holdout",
+   "variety": [
+    "background:i221",
+    "bg_zoom:1.0",
+    "jpg_q40",
+    "smallest_face:large_ge150px",
+    "faces:2"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    107,
+    100
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      217,
+      386,
+      402,
+      631
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 107,
+     "ita": 17.8,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their thirties",
+      "gender_word": "man",
+      "view_or_accessory": "head turned slightly to the right",
+      "light": "soft even light",
+      "glasses": false,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.922,
+     "yunet_landmarks": [
+      434.1,
+      363.5,
+      573.0,
+      365.0,
+      496.7,
+      449.0,
+      440.7,
+      518.0,
+      557.4,
+      520.9
+     ],
+     "face_short_side_px": 185
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      685,
+      492,
+      867,
+      750
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 100,
+     "ita": 41.1,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "light olive skin",
+     "prompt_words": {
+      "age": "in their twenties",
+      "gender_word": "man",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "overhead fluorescent light",
+      "glasses": false,
+      "hair": "short blond hair"
+     },
+     "yunet_score": 0.9051,
+     "yunet_landmarks": [
+      422.2,
+      414.4,
+      595.9,
+      404.6,
+      511.6,
+      516.8,
+      441.3,
+      610.3,
+      589.0,
+      604.0
+     ],
+     "face_short_side_px": 182
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "group_006.jpg",
+   "type": "group",
+   "split": "dev",
+   "variety": [
+    "background:i225",
+    "bg_zoom:0.85",
+    "jpg_q80",
+    "smallest_face:medium_60_149px",
+    "faces:3"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    151,
+    181,
+    98
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      92,
+      178,
+      259,
+      421
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 151,
+     "ita": -2.1,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "woman",
+      "view_or_accessory": "facing the camera",
+      "light": "overhead fluorescent light",
+      "glasses": false,
+      "hair": "red hair"
+     },
+     "yunet_score": 0.9358,
+     "yunet_landmarks": [
+      546.4,
+      348.8,
+      633.4,
+      352.8,
+      601.9,
+      405.5,
+      546.1,
+      444.4,
+      623.4,
+      447.5
+     ],
+     "face_short_side_px": 167
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      403,
+      577,
+      552,
+      758
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 181,
+     "ita": 46.6,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "man",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "soft even light",
+      "glasses": false,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.8288,
+     "yunet_landmarks": [
+      416.9,
+      433.6,
+      638.7,
+      447.8,
+      512.8,
+      578.5,
+      416.1,
+      656.4,
+      606.4,
+      669.3
+     ],
+     "face_short_side_px": 149
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      800,
+      462,
+      947,
+      669
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 98,
+     "ita": 29.4,
+     "skin_bucket": "medium",
+     "skin_chardon": "intermediate",
+     "prompt_skin_word": "light olive skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "man",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "dim warm indoor light",
+      "glasses": false,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.887,
+     "yunet_landmarks": [
+      387.9,
+      397.2,
+      570.3,
+      383.7,
+      475.6,
+      500.1,
+      415.3,
+      591.9,
+      570.1,
+      580.8
+     ],
+     "face_short_side_px": 147
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "group_007.png",
+   "type": "group",
+   "split": "holdout",
+   "variety": [
+    "background:i225",
+    "bg_zoom:0.7",
+    "png",
+    "smallest_face:large_ge150px",
+    "faces:2"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    177,
+    205
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      101,
+      317,
+      289,
+      573
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 177,
+     "ita": -27.5,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their twenties",
+      "gender_word": "woman",
+      "view_or_accessory": "head turned slightly to the right",
+      "light": "strong side light from a window",
+      "glasses": false,
+      "hair": "red hair"
+     },
+     "yunet_score": 0.9263,
+     "yunet_landmarks": [
+      303.3,
+      373.0,
+      415.8,
+      371.6,
+      334.6,
+      447.0,
+      319.8,
+      504.3,
+      408.0,
+      502.6
+     ],
+     "face_short_side_px": 188
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      663,
+      477,
+      863,
+      737
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 205,
+     "ita": 42.0,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their twenties",
+      "gender_word": "man",
+      "view_or_accessory": "facing the camera",
+      "light": "soft even light",
+      "glasses": false,
+      "hair": "short blond hair"
+     },
+     "yunet_score": 0.8155,
+     "yunet_landmarks": [
+      398.1,
+      483.8,
+      631.5,
+      486.8,
+      519.5,
+      631.4,
+      410.0,
+      737.2,
+      609.4,
+      740.7
+     ],
+     "face_short_side_px": 200
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "group_008.jpg",
+   "type": "group",
+   "split": "holdout",
+   "variety": [
+    "background:i220",
+    "bg_zoom:0.7",
+    "jpg_q80",
+    "smallest_face:medium_60_149px",
+    "faces:4"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    189,
+    188,
+    121,
+    267
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      39,
+      527,
+      181,
+      715
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 189,
+     "ita": 41.8,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "woman",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "bright harsh daylight",
+      "glasses": false,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.9167,
+     "yunet_landmarks": [
+      434.1,
+      440.3,
+      596.1,
+      445.8,
+      509.2,
+      542.5,
+      434.2,
+      605.3,
+      579.0,
+      612.6
+     ],
+     "face_short_side_px": 142
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      349,
+      521,
+      466,
+      682
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 188,
+     "ita": 49.9,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their thirties",
+      "gender_word": "woman",
+      "view_or_accessory": "head tilted slightly",
+      "light": "bright harsh daylight",
+      "glasses": false,
+      "hair": "long black hair"
+     },
+     "yunet_score": 0.9165,
+     "yunet_landmarks": [
+      460.4,
+      348.8,
+      620.3,
+      347.3,
+      538.7,
+      448.1,
+      473.5,
+      513.8,
+      609.4,
+      512.7
+     ],
+     "face_short_side_px": 117
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      552,
+      555,
+      693,
+      750
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 121,
+     "ita": -51.8,
+     "skin_bucket": "dark",
+     "skin_chardon": "dark",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their thirties",
+      "gender_word": "man",
+      "view_or_accessory": "head turned slightly to the right",
+      "light": "strong side light from a window",
+      "glasses": false,
+      "hair": "short blond hair"
+     },
+     "yunet_score": 0.8769,
+     "yunet_landmarks": [
+      448.2,
+      428.4,
+      603.8,
+      409.8,
+      564.2,
+      519.3,
+      481.5,
+      618.7,
+      609.6,
+      604.4
+     ],
+     "face_short_side_px": 141
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      814,
+      457,
+      934,
+      626
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 267,
+     "ita": 38.0,
+     "skin_bucket": "medium",
+     "skin_chardon": "intermediate",
+     "prompt_skin_word": "light olive skin",
+     "prompt_words": {
+      "age": "in their twenties",
+      "gender_word": "man",
+      "view_or_accessory": "facing the camera",
+      "light": "overhead fluorescent light",
+      "glasses": false,
+      "hair": "short blond hair"
+     },
+     "yunet_score": 0.9108,
+     "yunet_landmarks": [
+      617.0,
+      280.5,
+      771.4,
+      298.8,
+      722.7,
+      391.5,
+      606.8,
+      460.9,
+      737.1,
+      477.3
+     ],
+     "face_short_side_px": 120
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "group_009.png",
+   "type": "group",
+   "split": "holdout",
+   "variety": [
+    "background:i219",
+    "bg_zoom:0.85",
+    "png",
+    "smallest_face:medium_60_149px",
+    "faces:3"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    254,
+    185,
+    253
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      76,
+      425,
+      246,
+      665
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 254,
+     "ita": 55.7,
+     "skin_bucket": "light",
+     "skin_chardon": "very light",
+     "prompt_skin_word": "very light skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "woman",
+      "view_or_accessory": "head tilted slightly",
+      "light": "strong side light from a window",
+      "glasses": false,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.9197,
+     "yunet_landmarks": [
+      372.7,
+      369.6,
+      523.1,
+      369.9,
+      424.5,
+      466.4,
+      383.7,
+      538.4,
+      513.8,
+      538.8
+     ],
+     "face_short_side_px": 170
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      405,
+      438,
+      572,
+      671
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 185,
+     "ita": 75.8,
+     "skin_bucket": "light",
+     "skin_chardon": "very light",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their twenties",
+      "gender_word": "man",
+      "view_or_accessory": "head turned slightly to the right",
+      "light": "dim warm indoor light",
+      "glasses": false,
+      "hair": "short brown hair with a beard"
+     },
+     "yunet_score": 0.8988,
+     "yunet_landmarks": [
+      596.7,
+      364.0,
+      750.3,
+      382.6,
+      694.5,
+      474.4,
+      584.2,
+      539.2,
+      713.4,
+      556.4
+     ],
+     "face_short_side_px": 167
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      756,
+      212,
+      897,
+      403
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 253,
+     "ita": 24.0,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "light olive skin",
+     "prompt_words": {
+      "age": "in their twenties",
+      "gender_word": "woman",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "overhead fluorescent light",
+      "glasses": false,
+      "hair": "long black hair"
+     },
+     "yunet_score": 0.9418,
+     "yunet_landmarks": [
+      494.4,
+      203.8,
+      588.9,
+      207.5,
+      519.2,
+      264.9,
+      501.3,
+      310.8,
+      575.5,
+      314.2
+     ],
+     "face_short_side_px": 141
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "group_010.jpg",
+   "type": "group",
+   "split": "dev",
+   "variety": [
+    "background:i218",
+    "bg_zoom:0.85",
+    "jpg_q80",
+    "smallest_face:medium_60_149px",
+    "faces:4"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    167,
+    213,
+    207,
+    206
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      61,
+      577,
+      173,
+      730
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 167,
+     "ita": -1.0,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "very light skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "man",
+      "view_or_accessory": "facing the camera",
+      "light": "bright harsh daylight",
+      "glasses": true,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.8516,
+     "yunet_landmarks": [
+      418.2,
+      386.6,
+      607.3,
+      379.6,
+      500.8,
+      505.3,
+      442.0,
+      602.1,
+      603.0,
+      597.6
+     ],
+     "face_short_side_px": 112
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      354,
+      518,
+      461,
+      657
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 213,
+     "ita": 22.7,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their twenties",
+      "gender_word": "woman",
+      "view_or_accessory": "facing the camera",
+      "light": "overhead fluorescent light",
+      "glasses": true,
+      "hair": "curly dark hair"
+     },
+     "yunet_score": 0.9152,
+     "yunet_landmarks": [
+      426.9,
+      372.3,
+      581.0,
+      350.2,
+      518.9,
+      460.6,
+      462.0,
+      542.9,
+      586.7,
+      525.8
+     ],
+     "face_short_side_px": 107
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      588,
+      460,
+      717,
+      634
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 207,
+     "ita": 41.7,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their thirties",
+      "gender_word": "woman",
+      "view_or_accessory": "head tilted slightly",
+      "light": "soft even light",
+      "glasses": false,
+      "hair": "shoulder-length brown hair"
+     },
+     "yunet_score": 0.9252,
+     "yunet_landmarks": [
+      425.0,
+      369.6,
+      566.8,
+      369.2,
+      497.2,
+      460.9,
+      431.1,
+      516.1,
+      556.0,
+      517.1
+     ],
+     "face_short_side_px": 129
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      854,
+      504,
+      984,
+      683
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 206,
+     "ita": 4.0,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their thirties",
+      "gender_word": "man",
+      "view_or_accessory": "facing the camera",
+      "light": "soft even light",
+      "glasses": false,
+      "hair": "bald"
+     },
+     "yunet_score": 0.8965,
+     "yunet_landmarks": [
+      377.8,
+      359.2,
+      561.5,
+      360.2,
+      453.0,
+      473.0,
+      384.4,
+      556.4,
+      547.5,
+      559.8
+     ],
+     "face_short_side_px": 130
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "group_011.jpg",
+   "type": "group",
+   "split": "dev",
+   "variety": [
+    "background:i220",
+    "bg_zoom:1.0",
+    "jpg_q60",
+    "smallest_face:medium_60_149px",
+    "faces:5"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    161,
+    198,
+    114,
+    168,
+    191
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      31,
+      607,
+      143,
+      758
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 161,
+     "ita": 47.8,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "light olive skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "woman",
+      "view_or_accessory": "facing the camera",
+      "light": "bright harsh daylight",
+      "glasses": false,
+      "hair": "blond hair tied back"
+     },
+     "yunet_score": 0.9003,
+     "yunet_landmarks": [
+      478.8,
+      432.4,
+      666.3,
+      451.9,
+      581.4,
+      560.5,
+      469.2,
+      637.0,
+      625.8,
+      654.7
+     ],
+     "face_short_side_px": 112
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      279,
+      546,
+      373,
+      675
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 198,
+     "ita": 25.4,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "very light skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "woman",
+      "view_or_accessory": "facing the camera",
+      "light": "bright harsh daylight",
+      "glasses": true,
+      "hair": "curly dark hair"
+     },
+     "yunet_score": 0.9146,
+     "yunet_landmarks": [
+      452.8,
+      445.0,
+      596.2,
+      443.4,
+      517.5,
+      539.0,
+      462.8,
+      597.4,
+      589.1,
+      597.3
+     ],
+     "face_short_side_px": 94
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      471,
+      515,
+      583,
+      687
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 114,
+     "ita": -40.9,
+     "skin_bucket": "dark",
+     "skin_chardon": "dark",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "man",
+      "view_or_accessory": "facing the camera",
+      "light": "strong side light from a window",
+      "glasses": false,
+      "hair": "short blond hair"
+     },
+     "yunet_score": 0.8311,
+     "yunet_landmarks": [
+      581.6,
+      358.8,
+      691.8,
+      357.3,
+      682.1,
+      451.2,
+      587.4,
+      542.3,
+      684.3,
+      543.3
+     ],
+     "face_short_side_px": 112
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      682,
+      584,
+      785,
+      727
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 168,
+     "ita": -46.0,
+     "skin_bucket": "dark",
+     "skin_chardon": "dark",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "man",
+      "view_or_accessory": "facing the camera",
+      "light": "strong side light from a window",
+      "glasses": false,
+      "hair": "short dark hair"
+     },
+     "yunet_score": 0.8416,
+     "yunet_landmarks": [
+      369.6,
+      417.1,
+      507.1,
+      446.9,
+      378.5,
+      538.0,
+      346.5,
+      618.5,
+      463.3,
+      643.1
+     ],
+     "face_short_side_px": 103
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      859,
+      472,
+      983,
+      648
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 191,
+     "ita": -73.4,
+     "skin_bucket": "dark",
+     "skin_chardon": "dark",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "man",
+      "view_or_accessory": "head turned slightly to the right",
+      "light": "strong side light from a window",
+      "glasses": false,
+      "hair": "bald"
+     },
+     "yunet_score": 0.8943,
+     "yunet_landmarks": [
+      616.3,
+      316.6,
+      734.0,
+      318.6,
+      729.5,
+      408.8,
+      622.0,
+      488.1,
+      725.0,
+      489.9
+     ],
+     "face_short_side_px": 124
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "group_012.jpg",
+   "type": "group",
+   "split": "dev",
+   "variety": [
+    "background:i218",
+    "bg_zoom:0.7",
+    "jpg_q80",
+    "smallest_face:medium_60_149px",
+    "faces:3"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    214,
+    166,
+    174
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      123,
+      555,
+      271,
+      764
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 214,
+     "ita": -17.6,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "man",
+      "view_or_accessory": "head turned slightly to the right",
+      "light": "overhead fluorescent light",
+      "glasses": false,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.8662,
+     "yunet_landmarks": [
+      325.4,
+      395.2,
+      501.2,
+      396.7,
+      377.7,
+      514.0,
+      340.0,
+      616.6,
+      481.9,
+      619.9
+     ],
+     "face_short_side_px": 148
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      424,
+      528,
+      555,
+      713
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 166,
+     "ita": 9.5,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their twenties",
+      "gender_word": "man",
+      "view_or_accessory": "facing the camera",
+      "light": "dim warm indoor light",
+      "glasses": false,
+      "hair": "short brown hair with a beard"
+     },
+     "yunet_score": 0.8875,
+     "yunet_landmarks": [
+      469.0,
+      419.8,
+      643.9,
+      415.6,
+      561.2,
+      527.4,
+      485.4,
+      612.6,
+      633.4,
+      610.1
+     ],
+     "face_short_side_px": 131
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      792,
+      379,
+      952,
+      597
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 174,
+     "ita": 53.2,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "woman",
+      "view_or_accessory": "head turned slightly to the right",
+      "light": "soft even light",
+      "glasses": false,
+      "hair": "shoulder-length brown hair"
+     },
+     "yunet_score": 0.9244,
+     "yunet_landmarks": [
+      528.7,
+      350.9,
+      683.4,
+      354.6,
+      610.7,
+      455.4,
+      534.0,
+      519.1,
+      665.2,
+      523.2
+     ],
+     "face_short_side_px": 160
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "group_013.png",
+   "type": "group",
+   "split": "dev",
+   "variety": [
+    "background:i225",
+    "bg_zoom:0.85",
+    "png",
+    "smallest_face:medium_60_149px",
+    "faces:4"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    263,
+    169,
+    178,
+    182
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      41,
+      508,
+      161,
+      671
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 263,
+     "ita": 43.8,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "medium tan skin",
+     "prompt_words": {
+      "age": "in their thirties",
+      "gender_word": "woman",
+      "view_or_accessory": "head turned slightly to the right",
+      "light": "overhead fluorescent light",
+      "glasses": false,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.9253,
+     "yunet_landmarks": [
+      450.7,
+      372.8,
+      600.7,
+      376.3,
+      517.8,
+      465.9,
+      454.5,
+      525.7,
+      587.3,
+      529.7
+     ],
+     "face_short_side_px": 120
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      314,
+      341,
+      432,
+      504
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 169,
+     "ita": -24.6,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their thirties",
+      "gender_word": "man",
+      "view_or_accessory": "head tilted slightly",
+      "light": "dim warm indoor light",
+      "glasses": false,
+      "hair": "bald"
+     },
+     "yunet_score": 0.9526,
+     "yunet_landmarks": [
+      431.1,
+      206.7,
+      534.3,
+      203.4,
+      483.1,
+      264.3,
+      445.3,
+      319.2,
+      531.2,
+      315.1
+     ],
+     "face_short_side_px": 118
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      567,
+      606,
+      679,
+      758
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 178,
+     "ita": -12.4,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "man",
+      "view_or_accessory": "head tilted slightly",
+      "light": "overhead fluorescent light",
+      "glasses": false,
+      "hair": "short dark hair"
+     },
+     "yunet_score": 0.8763,
+     "yunet_landmarks": [
+      383.3,
+      452.1,
+      586.3,
+      455.7,
+      483.5,
+      579.7,
+      387.6,
+      668.3,
+      567.1,
+      674.1
+     ],
+     "face_short_side_px": 112
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      811,
+      421,
+      940,
+      600
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 182,
+     "ita": 27.9,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "medium tan skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "man",
+      "view_or_accessory": "facing the camera",
+      "light": "overhead fluorescent light",
+      "glasses": true,
+      "hair": "short dark hair"
+     },
+     "yunet_score": 0.9299,
+     "yunet_landmarks": [
+      451.2,
+      284.5,
+      577.6,
+      281.1,
+      518.2,
+      356.8,
+      463.3,
+      415.0,
+      573.3,
+      413.2
+     ],
+     "face_short_side_px": 129
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "group_014.jpg",
+   "type": "group",
+   "split": "dev",
+   "variety": [
+    "background:i221",
+    "bg_zoom:0.85",
+    "blur:1.6",
+    "jpg_q95",
+    "smallest_face:medium_60_149px",
+    "faces:4"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    246,
+    160,
+    113,
+    116
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      82,
+      518,
+      217,
+      700
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 246,
+     "ita": 33.8,
+     "skin_bucket": "medium",
+     "skin_chardon": "intermediate",
+     "prompt_skin_word": "very light skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "man",
+      "view_or_accessory": "head tilted slightly",
+      "light": "strong side light from a window",
+      "glasses": false,
+      "hair": "short brown hair with a beard"
+     },
+     "yunet_score": 0.8935,
+     "yunet_landmarks": [
+      417.5,
+      342.6,
+      608.1,
+      343.4,
+      516.3,
+      461.3,
+      424.7,
+      550.4,
+      591.8,
+      552.9
+     ],
+     "face_short_side_px": 135
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      290,
+      535,
+      422,
+      702
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 160,
+     "ita": 19.3,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "man",
+      "view_or_accessory": "facing the camera",
+      "light": "soft even light",
+      "glasses": false,
+      "hair": "bald"
+     },
+     "yunet_score": 0.8402,
+     "yunet_landmarks": [
+      396.5,
+      350.5,
+      599.5,
+      337.5,
+      502.4,
+      466.7,
+      426.9,
+      568.7,
+      596.4,
+      558.8
+     ],
+     "face_short_side_px": 132
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      599,
+      534,
+      736,
+      716
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 113,
+     "ita": 61.6,
+     "skin_bucket": "light",
+     "skin_chardon": "very light",
+     "prompt_skin_word": "very light skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "woman",
+      "view_or_accessory": "facing the camera",
+      "light": "overhead fluorescent light",
+      "glasses": false,
+      "hair": "shoulder-length brown hair"
+     },
+     "yunet_score": 0.8956,
+     "yunet_landmarks": [
+      427.5,
+      403.1,
+      609.8,
+      412.3,
+      508.1,
+      516.1,
+      425.4,
+      584.0,
+      587.7,
+      593.9
+     ],
+     "face_short_side_px": 137
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      798,
+      271,
+      942,
+      485
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 116,
+     "ita": -64.9,
+     "skin_bucket": "dark",
+     "skin_chardon": "dark",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their twenties",
+      "gender_word": "man",
+      "view_or_accessory": "head tilted slightly",
+      "light": "bright harsh daylight",
+      "glasses": false,
+      "hair": "curly black hair"
+     },
+     "yunet_score": 0.9486,
+     "yunet_landmarks": [
+      448.9,
+      313.5,
+      563.0,
+      319.3,
+      503.9,
+      383.5,
+      449.3,
+      437.2,
+      549.2,
+      442.6
+     ],
+     "face_short_side_px": 144
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "group_015.jpg",
+   "type": "group",
+   "split": "dev",
+   "variety": [
+    "background:i221",
+    "bg_zoom:0.85",
+    "blur:1.6",
+    "jpg_q40",
+    "smallest_face:medium_60_149px",
+    "faces:5"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    272,
+    157,
+    268,
+    200,
+    186
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      68,
+      633,
+      164,
+      758
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 272,
+     "ita": 54.5,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "light olive skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "woman",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "soft even light",
+      "glasses": true,
+      "hair": "shoulder-length brown hair"
+     },
+     "yunet_score": 0.9055,
+     "yunet_landmarks": [
+      454.4,
+      438.9,
+      623.6,
+      440.9,
+      548.6,
+      549.1,
+      460.4,
+      612.4,
+      608.7,
+      615.9
+     ],
+     "face_short_side_px": 96
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      267,
+      469,
+      372,
+      617
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 157,
+     "ita": 21.7,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "man",
+      "view_or_accessory": "head tilted slightly",
+      "light": "strong side light from a window",
+      "glasses": true,
+      "hair": "curly black hair"
+     },
+     "yunet_score": 0.914,
+     "yunet_landmarks": [
+      486.0,
+      256.4,
+      625.1,
+      271.3,
+      539.4,
+      357.1,
+      480.8,
+      424.1,
+      593.8,
+      437.4
+     ],
+     "face_short_side_px": 105
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      483,
+      569,
+      587,
+      705
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 268,
+     "ita": 45.7,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "medium tan skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "woman",
+      "view_or_accessory": "facing the camera",
+      "light": "soft even light",
+      "glasses": false,
+      "hair": "curly dark hair"
+     },
+     "yunet_score": 0.9029,
+     "yunet_landmarks": [
+      351.4,
+      428.0,
+      531.1,
+      409.1,
+      449.0,
+      525.1,
+      383.1,
+      610.5,
+      537.3,
+      596.1
+     ],
+     "face_short_side_px": 104
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      679,
+      556,
+      781,
+      708
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 200,
+     "ita": -5.1,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "woman",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "dim warm indoor light",
+      "glasses": true,
+      "hair": "blond hair tied back"
+     },
+     "yunet_score": 0.9026,
+     "yunet_landmarks": [
+      493.7,
+      398.2,
+      661.9,
+      388.0,
+      595.9,
+      500.9,
+      517.3,
+      583.5,
+      660.4,
+      576.9
+     ],
+     "face_short_side_px": 102
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      878,
+      593,
+      996,
+      760
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 186,
+     "ita": 36.6,
+     "skin_bucket": "medium",
+     "skin_chardon": "intermediate",
+     "prompt_skin_word": "medium tan skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "man",
+      "view_or_accessory": "facing the camera",
+      "light": "strong side light from a window",
+      "glasses": false,
+      "hair": "curly black hair"
+     },
+     "yunet_score": 0.8897,
+     "yunet_landmarks": [
+      438.6,
+      396.4,
+      625.1,
+      390.4,
+      533.3,
+      511.5,
+      454.8,
+      607.7,
+      614.1,
+      604.1
+     ],
+     "face_short_side_px": 118
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "group_016.png",
+   "type": "group",
+   "split": "dev",
+   "variety": [
+    "background:i222",
+    "bg_zoom:0.7",
+    "png",
+    "smallest_face:medium_60_149px",
+    "faces:5"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    238,
+    162,
+    193,
+    271,
+    145
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      47,
+      632,
+      143,
+      754
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 238,
+     "ita": 27.2,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "medium tan skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "woman",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "dim warm indoor light",
+      "glasses": false,
+      "hair": "long black hair"
+     },
+     "yunet_score": 0.8497,
+     "yunet_landmarks": [
+      346.0,
+      350.1,
+      567.1,
+      353.2,
+      448.4,
+      493.8,
+      357.9,
+      584.0,
+      550.0,
+      587.2
+     ],
+     "face_short_side_px": 96
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      265,
+      596,
+      390,
+      751
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 162,
+     "ita": 44.4,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "woman",
+      "view_or_accessory": "facing the camera",
+      "light": "dim warm indoor light",
+      "glasses": true,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.8377,
+     "yunet_landmarks": [
+      408.9,
+      456.6,
+      638.8,
+      462.1,
+      517.0,
+      597.6,
+      412.1,
+      683.4,
+      619.9,
+      690.5
+     ],
+     "face_short_side_px": 125
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      458,
+      630,
+      552,
+      755
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 193,
+     "ita": -4.9,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their thirties",
+      "gender_word": "man",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "strong side light from a window",
+      "glasses": false,
+      "hair": "bald"
+     },
+     "yunet_score": 0.819,
+     "yunet_landmarks": [
+      496.3,
+      379.8,
+      694.2,
+      380.3,
+      609.9,
+      503.8,
+      511.4,
+      605.1,
+      672.9,
+      604.0
+     ],
+     "face_short_side_px": 94
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      661,
+      586,
+      764,
+      735
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 271,
+     "ita": 44.2,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "light olive skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "woman",
+      "view_or_accessory": "head turned slightly to the right",
+      "light": "strong side light from a window",
+      "glasses": false,
+      "hair": "red hair"
+     },
+     "yunet_score": 0.9165,
+     "yunet_landmarks": [
+      453.0,
+      417.3,
+      609.4,
+      418.8,
+      537.0,
+      520.6,
+      459.9,
+      590.2,
+      592.2,
+      593.5
+     ],
+     "face_short_side_px": 103
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      885,
+      511,
+      991,
+      653
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 145,
+     "ita": 34.5,
+     "skin_bucket": "medium",
+     "skin_chardon": "intermediate",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "woman",
+      "view_or_accessory": "head tilted slightly",
+      "light": "soft even light",
+      "glasses": false,
+      "hair": "shoulder-length brown hair"
+     },
+     "yunet_score": 0.9356,
+     "yunet_landmarks": [
+      430.5,
+      368.2,
+      567.3,
+      379.1,
+      491.4,
+      456.9,
+      428.1,
+      505.9,
+      550.0,
+      516.0
+     ],
+     "face_short_side_px": 106
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "group_017.jpg",
+   "type": "group",
+   "split": "dev",
+   "variety": [
+    "background:i225",
+    "bg_zoom:0.85",
+    "jpg_q95",
+    "smallest_face:large_ge150px",
+    "faces:2"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    130,
+    250
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      212,
+      67,
+      407,
+      328
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 130,
+     "ita": 61.8,
+     "skin_bucket": "light",
+     "skin_chardon": "very light",
+     "prompt_skin_word": "very light skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "woman",
+      "view_or_accessory": "head tilted slightly",
+      "light": "overhead fluorescent light",
+      "glasses": false,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.947,
+     "yunet_landmarks": [
+      417.9,
+      263.2,
+      527.7,
+      257.1,
+      481.4,
+      319.3,
+      434.3,
+      381.5,
+      523.8,
+      376.1
+     ],
+     "face_short_side_px": 195
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      626,
+      468,
+      792,
+      717
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 250,
+     "ita": 47.1,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "very light skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "man",
+      "view_or_accessory": "head tilted slightly",
+      "light": "overhead fluorescent light",
+      "glasses": true,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.8968,
+     "yunet_landmarks": [
+      434.3,
+      370.5,
+      601.2,
+      372.5,
+      513.9,
+      478.7,
+      442.8,
+      566.6,
+      581.8,
+      570.5
+     ],
+     "face_short_side_px": 166
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "group_018.jpg",
+   "type": "group",
+   "split": "dev",
+   "variety": [
+    "background:i225",
+    "bg_zoom:0.85",
+    "jpg_q80",
+    "smallest_face:large_ge150px",
+    "faces:2"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    105,
+    125
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      234,
+      440,
+      397,
+      659
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 105,
+     "ita": 30.7,
+     "skin_bucket": "medium",
+     "skin_chardon": "intermediate",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "man",
+      "view_or_accessory": "facing the camera",
+      "light": "dim warm indoor light",
+      "glasses": false,
+      "hair": "short blond hair"
+     },
+     "yunet_score": 0.8876,
+     "yunet_landmarks": [
+      511.0,
+      360.3,
+      697.1,
+      353.1,
+      601.8,
+      468.7,
+      530.5,
+      565.4,
+      690.9,
+      561.6
+     ],
+     "face_short_side_px": 163
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      633,
+      83,
+      823,
+      341
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 125,
+     "ita": -40.1,
+     "skin_bucket": "dark",
+     "skin_chardon": "dark",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "man",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "bright harsh daylight",
+      "glasses": false,
+      "hair": "bald"
+     },
+     "yunet_score": 0.9394,
+     "yunet_landmarks": [
+      438.3,
+      247.5,
+      544.5,
+      255.2,
+      489.5,
+      316.6,
+      437.5,
+      360.8,
+      529.0,
+      368.1
+     ],
+     "face_short_side_px": 190
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "group_019.jpg",
+   "type": "group",
+   "split": "dev",
+   "variety": [
+    "background:i222",
+    "bg_zoom:0.7",
+    "jpg_q60",
+    "smallest_face:medium_60_149px",
+    "faces:4"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    235,
+    158,
+    90,
+    202
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      87,
+      580,
+      195,
+      711
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 235,
+     "ita": 41.8,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "light olive skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "man",
+      "view_or_accessory": "head tilted slightly",
+      "light": "overhead fluorescent light",
+      "glasses": false,
+      "hair": "short brown hair with a beard"
+     },
+     "yunet_score": 0.8532,
+     "yunet_landmarks": [
+      386.2,
+      383.5,
+      596.3,
+      371.8,
+      488.8,
+      501.6,
+      414.3,
+      597.7,
+      591.3,
+      588.4
+     ],
+     "face_short_side_px": 108
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      328,
+      573,
+      446,
+      729
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 158,
+     "ita": 20.7,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "woman",
+      "view_or_accessory": "head turned slightly to the right",
+      "light": "strong side light from a window",
+      "glasses": true,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.9104,
+     "yunet_landmarks": [
+      471.8,
+      396.6,
+      622.7,
+      401.5,
+      565.2,
+      494.8,
+      474.6,
+      564.2,
+      602.5,
+      570.3
+     ],
+     "face_short_side_px": 118
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      581,
+      422,
+      701,
+      578
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 90,
+     "ita": 41.7,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "woman",
+      "view_or_accessory": "facing the camera",
+      "light": "bright harsh daylight",
+      "glasses": false,
+      "hair": "blond hair tied back"
+     },
+     "yunet_score": 0.9451,
+     "yunet_landmarks": [
+      468.3,
+      337.3,
+      589.3,
+      336.8,
+      529.8,
+      407.0,
+      474.2,
+      457.1,
+      582.9,
+      457.2
+     ],
+     "face_short_side_px": 120
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      839,
+      558,
+      973,
+      741
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 202,
+     "ita": 63.4,
+     "skin_bucket": "light",
+     "skin_chardon": "very light",
+     "prompt_skin_word": "very light skin",
+     "prompt_words": {
+      "age": "in their thirties",
+      "gender_word": "woman",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "soft even light",
+      "glasses": true,
+      "hair": "red hair"
+     },
+     "yunet_score": 0.888,
+     "yunet_landmarks": [
+      488.2,
+      540.2,
+      680.2,
+      531.5,
+      611.2,
+      661.8,
+      506.4,
+      732.9,
+      675.0,
+      727.2
+     ],
+     "face_short_side_px": 134
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene_000.jpg",
+   "type": "scene",
+   "split": "dev",
+   "variety": [
+    "background:i227",
+    "bg_zoom:0.85",
+    "jpg_q60",
+    "smallest_face:small_20_59px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    133
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      103,
+      298,
+      130,
+      336
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 133,
+     "ita": -42.1,
+     "skin_bucket": "dark",
+     "skin_chardon": "dark",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "woman",
+      "view_or_accessory": "facing the camera",
+      "light": "strong side light from a window",
+      "glasses": false,
+      "hair": "curly dark hair"
+     },
+     "yunet_score": 0.9295,
+     "yunet_landmarks": [
+      354.0,
+      307.2,
+      443.3,
+      319.2,
+      370.0,
+      368.1,
+      350.0,
+      417.4,
+      420.3,
+      426.5
+     ],
+     "face_short_side_px": 27
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene_001.jpg",
+   "type": "scene",
+   "split": "dev",
+   "variety": [
+    "background:i232",
+    "bg_zoom:1.0",
+    "jpg_q95",
+    "smallest_face:small_20_59px",
+    "faces:4"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    194,
+    266,
+    240,
+    190
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      644,
+      493,
+      690,
+      561
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 194,
+     "ita": -13.5,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "man",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "bright harsh daylight",
+      "glasses": true,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.8973,
+     "yunet_landmarks": [
+      472.1,
+      324.8,
+      636.6,
+      323.4,
+      546.2,
+      429.5,
+      487.4,
+      521.6,
+      621.9,
+      521.3
+     ],
+     "face_short_side_px": 46
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      295,
+      343,
+      326,
+      390
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 266,
+     "ita": 38.6,
+     "skin_bucket": "medium",
+     "skin_chardon": "intermediate",
+     "prompt_skin_word": "medium tan skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "man",
+      "view_or_accessory": "head turned slightly to the right",
+      "light": "soft even light",
+      "glasses": true,
+      "hair": "curly black hair"
+     },
+     "yunet_score": 0.9451,
+     "yunet_landmarks": [
+      455.3,
+      332.7,
+      564.0,
+      339.5,
+      505.8,
+      401.3,
+      455.4,
+      447.8,
+      549.4,
+      453.4
+     ],
+     "face_short_side_px": 31
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      918,
+      623,
+      967,
+      686
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 240,
+     "ita": 42.7,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "medium tan skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "woman",
+      "view_or_accessory": "facing the camera",
+      "light": "strong side light from a window",
+      "glasses": true,
+      "hair": "blond hair tied back"
+     },
+     "yunet_score": 0.9018,
+     "yunet_landmarks": [
+      376.9,
+      413.2,
+      556.4,
+      400.0,
+      468.8,
+      519.0,
+      398.2,
+      592.9,
+      557.6,
+      583.1
+     ],
+     "face_short_side_px": 49
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      529,
+      635,
+      570,
+      690
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 190,
+     "ita": -54.4,
+     "skin_bucket": "dark",
+     "skin_chardon": "dark",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "man",
+      "view_or_accessory": "facing the camera",
+      "light": "soft even light",
+      "glasses": true,
+      "hair": "short dark hair"
+     },
+     "yunet_score": 0.8743,
+     "yunet_landmarks": [
+      383.6,
+      338.4,
+      558.6,
+      332.0,
+      455.8,
+      447.5,
+      399.6,
+      523.7,
+      553.6,
+      520.3
+     ],
+     "face_short_side_px": 41
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene_002.png",
+   "type": "scene",
+   "split": "holdout",
+   "variety": [
+    "background:i226",
+    "bg_zoom:1.0",
+    "png",
+    "smallest_face:small_20_59px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    118
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      616,
+      580,
+      655,
+      629
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 118,
+     "ita": 54.0,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "woman",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "strong side light from a window",
+      "glasses": false,
+      "hair": "blond hair tied back"
+     },
+     "yunet_score": 0.8399,
+     "yunet_landmarks": [
+      467.6,
+      397.4,
+      695.6,
+      435.6,
+      571.9,
+      554.6,
+      438.6,
+      627.0,
+      638.0,
+      658.8
+     ],
+     "face_short_side_px": 39
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene_003.jpg",
+   "type": "scene",
+   "split": "dev",
+   "variety": [
+    "background:i229",
+    "bg_zoom:0.7",
+    "jpg_q40",
+    "smallest_face:tiny_lt20px",
+    "faces:2"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    269,
+    128
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      606,
+      465,
+      651,
+      529
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 269,
+     "ita": 51.8,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "light olive skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "woman",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "bright harsh daylight",
+      "glasses": true,
+      "hair": "shoulder-length brown hair"
+     },
+     "yunet_score": 0.9444,
+     "yunet_landmarks": [
+      471.1,
+      245.3,
+      567.7,
+      248.3,
+      515.1,
+      302.7,
+      472.6,
+      340.7,
+      559.8,
+      344.0
+     ],
+     "face_short_side_px": 45
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      744,
+      336,
+      763,
+      359
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 128,
+     "ita": -79.0,
+     "skin_bucket": "dark",
+     "skin_chardon": "dark",
+     "prompt_skin_word": "light olive skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "man",
+      "view_or_accessory": "head turned slightly to the right",
+      "light": "strong side light from a window",
+      "glasses": false,
+      "hair": "bald"
+     },
+     "yunet_score": 0.8348,
+     "yunet_landmarks": [
+      416.8,
+      366.4,
+      661.0,
+      380.0,
+      535.2,
+      517.6,
+      420.0,
+      612.3,
+      628.4,
+      622.5
+     ],
+     "face_short_side_px": 19
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene_004.jpg",
+   "type": "scene",
+   "split": "dev",
+   "variety": [
+    "background:i226",
+    "bg_zoom:0.85",
+    "jpg_q40",
+    "smallest_face:small_20_59px",
+    "faces:2"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    91,
+    241
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      262,
+      391,
+      282,
+      417
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 91,
+     "ita": -35.0,
+     "skin_bucket": "dark",
+     "skin_chardon": "dark",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "man",
+      "view_or_accessory": "head tilted slightly",
+      "light": "soft even light",
+      "glasses": false,
+      "hair": "short dark hair"
+     },
+     "yunet_score": 0.8542,
+     "yunet_landmarks": [
+      410.7,
+      400.2,
+      613.7,
+      410.8,
+      513.2,
+      527.1,
+      410.6,
+      616.8,
+      586.0,
+      626.2
+     ],
+     "face_short_side_px": 20
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      105,
+      493,
+      146,
+      554
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 241,
+     "ita": 30.8,
+     "skin_bucket": "medium",
+     "skin_chardon": "intermediate",
+     "prompt_skin_word": "medium tan skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "man",
+      "view_or_accessory": "head tilted slightly",
+      "light": "bright harsh daylight",
+      "glasses": true,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.9306,
+     "yunet_landmarks": [
+      471.0,
+      304.3,
+      587.6,
+      310.0,
+      518.7,
+      377.6,
+      472.4,
+      429.4,
+      573.7,
+      434.6
+     ],
+     "face_short_side_px": 41
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene_005.png",
+   "type": "scene",
+   "split": "dev",
+   "variety": [
+    "background:i228",
+    "bg_zoom:0.7",
+    "blur:1.6",
+    "png",
+    "smallest_face:tiny_lt20px",
+    "faces:2"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    176,
+    112
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      541,
+      565,
+      583,
+      619
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 176,
+     "ita": 53.7,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "very light skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "woman",
+      "view_or_accessory": "facing the camera",
+      "light": "dim warm indoor light",
+      "glasses": false,
+      "hair": "curly dark hair"
+     },
+     "yunet_score": 0.9167,
+     "yunet_landmarks": [
+      413.2,
+      395.5,
+      575.5,
+      391.2,
+      479.8,
+      497.0,
+      433.2,
+      575.2,
+      567.2,
+      572.5
+     ],
+     "face_short_side_px": 42
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      360,
+      370,
+      379,
+      394
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 112,
+     "ita": 29.9,
+     "skin_bucket": "medium",
+     "skin_chardon": "intermediate",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their twenties",
+      "gender_word": "woman",
+      "view_or_accessory": "facing the camera",
+      "light": "soft even light",
+      "glasses": false,
+      "hair": "long black hair"
+     },
+     "yunet_score": 0.8578,
+     "yunet_landmarks": [
+      438.4,
+      323.2,
+      654.8,
+      347.0,
+      549.5,
+      467.0,
+      427.4,
+      548.1,
+      612.2,
+      567.8
+     ],
+     "face_short_side_px": 19
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene_006.png",
+   "type": "scene",
+   "split": "dev",
+   "variety": [
+    "background:i226",
+    "bg_zoom:1.0",
+    "blur:1.2",
+    "png",
+    "smallest_face:small_20_59px",
+    "faces:2"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    152,
+    134
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      401,
+      490,
+      439,
+      537
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 152,
+     "ita": 25.7,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "woman",
+      "view_or_accessory": "head tilted slightly",
+      "light": "soft even light",
+      "glasses": false,
+      "hair": "shoulder-length brown hair"
+     },
+     "yunet_score": 0.8995,
+     "yunet_landmarks": [
+      477.0,
+      419.4,
+      661.7,
+      427.5,
+      571.8,
+      535.6,
+      473.7,
+      605.7,
+      638.9,
+      614.8
+     ],
+     "face_short_side_px": 38
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      480,
+      360,
+      500,
+      388
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 134,
+     "ita": 23.7,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "woman",
+      "view_or_accessory": "head tilted slightly",
+      "light": "dim warm indoor light",
+      "glasses": true,
+      "hair": "shoulder-length brown hair"
+     },
+     "yunet_score": 0.9403,
+     "yunet_landmarks": [
+      468.9,
+      314.2,
+      594.1,
+      313.8,
+      538.7,
+      388.2,
+      479.4,
+      442.3,
+      591.4,
+      441.5
+     ],
+     "face_short_side_px": 20
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene_007.jpg",
+   "type": "scene",
+   "split": "dev",
+   "variety": [
+    "background:i228",
+    "bg_zoom:0.7",
+    "jpg_q40",
+    "smallest_face:small_20_59px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    270
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      452,
+      497,
+      484,
+      536
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 270,
+     "ita": 39.9,
+     "skin_bucket": "medium",
+     "skin_chardon": "intermediate",
+     "prompt_skin_word": "light olive skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "man",
+      "view_or_accessory": "facing the camera",
+      "light": "soft even light",
+      "glasses": false,
+      "hair": "short brown hair with a beard"
+     },
+     "yunet_score": 0.8853,
+     "yunet_landmarks": [
+      454.8,
+      466.1,
+      663.7,
+      459.0,
+      580.1,
+      589.6,
+      478.2,
+      681.1,
+      657.1,
+      676.1
+     ],
+     "face_short_side_px": 32
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene_008.jpg",
+   "type": "scene",
+   "split": "holdout",
+   "variety": [
+    "background:i226",
+    "bg_zoom:0.7",
+    "jpg_q80",
+    "smallest_face:small_20_59px",
+    "faces:2"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    138,
+    208
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      744,
+      344,
+      769,
+      375
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 138,
+     "ita": 23.7,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "man",
+      "view_or_accessory": "facing the camera",
+      "light": "bright harsh daylight",
+      "glasses": true,
+      "hair": "curly black hair"
+     },
+     "yunet_score": 0.8596,
+     "yunet_landmarks": [
+      377.5,
+      469.6,
+      584.4,
+      465.7,
+      478.3,
+      596.9,
+      393.9,
+      679.2,
+      574.4,
+      677.7
+     ],
+     "face_short_side_px": 25
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      502,
+      594,
+      552,
+      660
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 208,
+     "ita": 25.7,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "woman",
+      "view_or_accessory": "facing the camera",
+      "light": "dim warm indoor light",
+      "glasses": false,
+      "hair": "red hair"
+     },
+     "yunet_score": 0.9227,
+     "yunet_landmarks": [
+      414.2,
+      339.2,
+      554.3,
+      325.9,
+      502.9,
+      417.7,
+      439.4,
+      494.3,
+      553.5,
+      483.9
+     ],
+     "face_short_side_px": 50
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene_009.png",
+   "type": "scene",
+   "split": "holdout",
+   "variety": [
+    "background:i233",
+    "bg_zoom:0.85",
+    "png",
+    "smallest_face:small_20_59px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    175
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      74,
+      391,
+      111,
+      439
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 175,
+     "ita": 18.2,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "medium tan skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "woman",
+      "view_or_accessory": "facing the camera",
+      "light": "strong side light from a window",
+      "glasses": true,
+      "hair": "long black hair"
+     },
+     "yunet_score": 0.9351,
+     "yunet_landmarks": [
+      469.3,
+      315.3,
+      597.4,
+      322.2,
+      542.9,
+      397.8,
+      470.9,
+      449.7,
+      581.5,
+      456.8
+     ],
+     "face_short_side_px": 37
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene_010.jpg",
+   "type": "scene",
+   "split": "holdout",
+   "variety": [
+    "background:i226",
+    "bg_zoom:0.85",
+    "jpg_q60",
+    "smallest_face:small_20_59px",
+    "faces:4"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    132,
+    89,
+    273,
+    204
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      478,
+      464,
+      510,
+      505
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 132,
+     "ita": 39.2,
+     "skin_bucket": "medium",
+     "skin_chardon": "intermediate",
+     "prompt_skin_word": "light olive skin",
+     "prompt_words": {
+      "age": "in their twenties",
+      "gender_word": "woman",
+      "view_or_accessory": "facing the camera",
+      "light": "overhead fluorescent light",
+      "glasses": false,
+      "hair": "curly dark hair"
+     },
+     "yunet_score": 0.8971,
+     "yunet_landmarks": [
+      442.0,
+      397.1,
+      626.4,
+      392.2,
+      534.7,
+      515.2,
+      456.2,
+      599.9,
+      614.2,
+      597.6
+     ],
+     "face_short_side_px": 32
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      499,
+      565,
+      545,
+      632
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 89,
+     "ita": 54.9,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "very light skin",
+     "prompt_words": {
+      "age": "in their twenties",
+      "gender_word": "woman",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "bright harsh daylight",
+      "glasses": false,
+      "hair": "blond hair tied back"
+     },
+     "yunet_score": 0.8818,
+     "yunet_landmarks": [
+      324.2,
+      423.8,
+      489.5,
+      411.9,
+      368.3,
+      539.9,
+      352.6,
+      637.0,
+      488.8,
+      628.4
+     ],
+     "face_short_side_px": 46
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      728,
+      455,
+      768,
+      508
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 273,
+     "ita": 46.3,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "very light skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "woman",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "strong side light from a window",
+      "glasses": false,
+      "hair": "blond hair tied back"
+     },
+     "yunet_score": 0.9015,
+     "yunet_landmarks": [
+      589.0,
+      287.3,
+      691.1,
+      289.3,
+      698.2,
+      366.8,
+      592.0,
+      448.2,
+      675.1,
+      451.5
+     ],
+     "face_short_side_px": 40
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      932,
+      379,
+      956,
+      411
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 204,
+     "ita": 7.5,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "woman",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "bright harsh daylight",
+      "glasses": true,
+      "hair": "red hair"
+     },
+     "yunet_score": 0.9307,
+     "yunet_landmarks": [
+      408.8,
+      439.3,
+      526.7,
+      418.9,
+      466.0,
+      501.4,
+      443.2,
+      580.3,
+      539.1,
+      562.9
+     ],
+     "face_short_side_px": 24
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene_011.jpg",
+   "type": "scene",
+   "split": "dev",
+   "variety": [
+    "background:i227",
+    "bg_zoom:0.7",
+    "blur:1.6",
+    "jpg_q80",
+    "smallest_face:small_20_59px",
+    "faces:3"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    131,
+    245,
+    215
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      657,
+      633,
+      701,
+      693
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 131,
+     "ita": 38.3,
+     "skin_bucket": "medium",
+     "skin_chardon": "intermediate",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "woman",
+      "view_or_accessory": "facing the camera",
+      "light": "overhead fluorescent light",
+      "glasses": true,
+      "hair": "curly dark hair"
+     },
+     "yunet_score": 0.9051,
+     "yunet_landmarks": [
+      436.1,
+      422.1,
+      596.7,
+      424.1,
+      514.2,
+      526.0,
+      442.5,
+      596.4,
+      580.1,
+      600.1
+     ],
+     "face_short_side_px": 44
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      206,
+      402,
+      234,
+      440
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 245,
+     "ita": 38.5,
+     "skin_bucket": "medium",
+     "skin_chardon": "intermediate",
+     "prompt_skin_word": "medium tan skin",
+     "prompt_words": {
+      "age": "in their twenties",
+      "gender_word": "man",
+      "view_or_accessory": "head tilted slightly",
+      "light": "soft even light",
+      "glasses": false,
+      "hair": "short dark hair"
+     },
+     "yunet_score": 0.8923,
+     "yunet_landmarks": [
+      393.4,
+      470.0,
+      595.4,
+      474.7,
+      482.7,
+      602.9,
+      399.7,
+      694.5,
+      574.7,
+      700.4
+     ],
+     "face_short_side_px": 28
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      879,
+      524,
+      924,
+      585
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 215,
+     "ita": 19.5,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their thirties",
+      "gender_word": "woman",
+      "view_or_accessory": "head tilted slightly",
+      "light": "dim warm indoor light",
+      "glasses": true,
+      "hair": "curly dark hair"
+     },
+     "yunet_score": 0.928,
+     "yunet_landmarks": [
+      529.3,
+      450.7,
+      672.5,
+      463.7,
+      605.3,
+      549.6,
+      525.5,
+      598.2,
+      653.4,
+      609.7
+     ],
+     "face_short_side_px": 45
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene_012.jpg",
+   "type": "scene",
+   "split": "dev",
+   "variety": [
+    "background:i229",
+    "bg_zoom:1.0",
+    "jpg_q80",
+    "smallest_face:small_20_59px",
+    "faces:3"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    155,
+    106,
+    255
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      589,
+      510,
+      624,
+      558
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 155,
+     "ita": 34.0,
+     "skin_bucket": "medium",
+     "skin_chardon": "intermediate",
+     "prompt_skin_word": "medium tan skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "woman",
+      "view_or_accessory": "facing the camera",
+      "light": "soft even light",
+      "glasses": true,
+      "hair": "shoulder-length brown hair"
+     },
+     "yunet_score": 0.9262,
+     "yunet_landmarks": [
+      480.0,
+      393.9,
+      627.6,
+      400.2,
+      549.2,
+      488.6,
+      481.9,
+      543.6,
+      613.9,
+      549.7
+     ],
+     "face_short_side_px": 35
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      936,
+      495,
+      970,
+      542
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 106,
+     "ita": 59.5,
+     "skin_bucket": "light",
+     "skin_chardon": "very light",
+     "prompt_skin_word": "very light skin",
+     "prompt_words": {
+      "age": "in their twenties",
+      "gender_word": "man",
+      "view_or_accessory": "facing the camera",
+      "light": "soft even light",
+      "glasses": true,
+      "hair": "bald"
+     },
+     "yunet_score": 0.9095,
+     "yunet_landmarks": [
+      436.0,
+      329.9,
+      585.5,
+      331.7,
+      503.6,
+      425.1,
+      441.7,
+      494.4,
+      568.2,
+      498.7
+     ],
+     "face_short_side_px": 34
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      767,
+      446,
+      803,
+      495
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 255,
+     "ita": 35.5,
+     "skin_bucket": "medium",
+     "skin_chardon": "intermediate",
+     "prompt_skin_word": "light olive skin",
+     "prompt_words": {
+      "age": "in their sixties",
+      "gender_word": "man",
+      "view_or_accessory": "head tilted slightly",
+      "light": "dim warm indoor light",
+      "glasses": false,
+      "hair": "curly black hair"
+     },
+     "yunet_score": 0.8849,
+     "yunet_landmarks": [
+      392.6,
+      499.8,
+      570.5,
+      494.3,
+      479.7,
+      613.6,
+      411.3,
+      697.4,
+      562.7,
+      692.9
+     ],
+     "face_short_side_px": 36
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene_013.jpg",
+   "type": "scene",
+   "split": "holdout",
+   "variety": [
+    "background:i231",
+    "bg_zoom:0.85",
+    "blur:1.6",
+    "jpg_q60",
+    "smallest_face:tiny_lt20px",
+    "faces:4"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    143,
+    195,
+    108,
+    110
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      673,
+      422,
+      706,
+      466
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 143,
+     "ita": 15.0,
+     "skin_bucket": "medium",
+     "skin_chardon": "tan",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their forties",
+      "gender_word": "woman",
+      "view_or_accessory": "facing the camera",
+      "light": "bright harsh daylight",
+      "glasses": false,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.939,
+     "yunet_landmarks": [
+      381.3,
+      323.9,
+      514.7,
+      321.3,
+      446.9,
+      400.9,
+      392.5,
+      461.9,
+      509.4,
+      459.9
+     ],
+     "face_short_side_px": 33
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      918,
+      498,
+      949,
+      535
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 195,
+     "ita": -21.4,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "man",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "strong side light from a window",
+      "glasses": false,
+      "hair": "short blond hair"
+     },
+     "yunet_score": 0.8373,
+     "yunet_landmarks": [
+      440.1,
+      394.7,
+      666.4,
+      408.7,
+      542.9,
+      535.0,
+      438.5,
+      624.1,
+      634.7,
+      635.9
+     ],
+     "face_short_side_px": 31
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      145,
+      321,
+      164,
+      345
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 108,
+     "ita": -4.5,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their thirties",
+      "gender_word": "woman",
+      "view_or_accessory": "facing the camera",
+      "light": "strong side light from a window",
+      "glasses": false,
+      "hair": "red hair"
+     },
+     "yunet_score": 0.9163,
+     "yunet_landmarks": [
+      404.8,
+      297.6,
+      534.9,
+      309.8,
+      434.5,
+      389.4,
+      405.0,
+      451.9,
+      510.8,
+      461.5
+     ],
+     "face_short_side_px": 19
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      457,
+      322,
+      479,
+      351
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 110,
+     "ita": -4.6,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "medium tan skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "man",
+      "view_or_accessory": "head tilted slightly",
+      "light": "strong side light from a window",
+      "glasses": true,
+      "hair": "short brown hair with a beard"
+     },
+     "yunet_score": 0.8794,
+     "yunet_landmarks": [
+      458.2,
+      375.5,
+      645.3,
+      376.4,
+      567.9,
+      501.6,
+      470.0,
+      590.7,
+      621.1,
+      592.5
+     ],
+     "face_short_side_px": 22
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene_014.jpg",
+   "type": "scene",
+   "split": "dev",
+   "variety": [
+    "background:i231",
+    "bg_zoom:0.85",
+    "blur:1.6",
+    "jpg_q95",
+    "smallest_face:tiny_lt20px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    129
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      180,
+      311,
+      199,
+      337
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 129,
+     "ita": -28.9,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "woman",
+      "view_or_accessory": "head turned slightly to the left",
+      "light": "strong side light from a window",
+      "glasses": false,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.8347,
+     "yunet_landmarks": [
+      325.9,
+      469.2,
+      502.6,
+      445.5,
+      389.6,
+      584.6,
+      366.2,
+      676.4,
+      516.1,
+      657.9
+     ],
+     "face_short_side_px": 19
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene_015.jpg",
+   "type": "scene",
+   "split": "dev",
+   "variety": [
+    "background:i232",
+    "bg_zoom:0.85",
+    "jpg_q80",
+    "smallest_face:small_20_59px",
+    "faces:3"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    184,
+    137,
+    170
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      434,
+      542,
+      473,
+      596
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 184,
+     "ita": 1.1,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "woman",
+      "view_or_accessory": "head turned slightly to the right",
+      "light": "overhead fluorescent light",
+      "glasses": false,
+      "hair": "short grey hair"
+     },
+     "yunet_score": 0.9331,
+     "yunet_landmarks": [
+      471.5,
+      433.3,
+      598.1,
+      440.2,
+      514.6,
+      513.0,
+      472.3,
+      571.0,
+      584.6,
+      577.3
+     ],
+     "face_short_side_px": 39
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      538,
+      511,
+      584,
+      569
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 137,
+     "ita": -44.8,
+     "skin_bucket": "dark",
+     "skin_chardon": "dark",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "man",
+      "view_or_accessory": "facing the camera",
+      "light": "dim warm indoor light",
+      "glasses": true,
+      "hair": "short blond hair"
+     },
+     "yunet_score": 0.8102,
+     "yunet_landmarks": [
+      427.8,
+      344.6,
+      623.2,
+      343.9,
+      540.9,
+      468.1,
+      443.4,
+      550.4,
+      607.7,
+      550.0
+     ],
+     "face_short_side_px": 46
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      614,
+      484,
+      652,
+      534
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 170,
+     "ita": 29.4,
+     "skin_bucket": "medium",
+     "skin_chardon": "intermediate",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "woman",
+      "view_or_accessory": "head tilted slightly",
+      "light": "overhead fluorescent light",
+      "glasses": false,
+      "hair": "shoulder-length brown hair"
+     },
+     "yunet_score": 0.8789,
+     "yunet_landmarks": [
+      414.9,
+      356.2,
+      615.1,
+      358.6,
+      510.5,
+      482.0,
+      420.0,
+      562.6,
+      599.1,
+      567.8
+     ],
+     "face_short_side_px": 38
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene_016.jpg",
+   "type": "scene",
+   "split": "dev",
+   "variety": [
+    "background:i230",
+    "bg_zoom:1.0",
+    "jpg_q95",
+    "smallest_face:small_20_59px",
+    "faces:3"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    265,
+    148,
+    124
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      578,
+      583,
+      627,
+      652
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 265,
+     "ita": 31.6,
+     "skin_bucket": "medium",
+     "skin_chardon": "intermediate",
+     "prompt_skin_word": "medium tan skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "man",
+      "view_or_accessory": "head tilted slightly",
+      "light": "strong side light from a window",
+      "glasses": true,
+      "hair": "short brown hair with a beard"
+     },
+     "yunet_score": 0.8891,
+     "yunet_landmarks": [
+      465.0,
+      352.1,
+      632.2,
+      353.3,
+      553.7,
+      455.8,
+      474.0,
+      534.1,
+      616.2,
+      537.3
+     ],
+     "face_short_side_px": 49
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      93,
+      432,
+      130,
+      482
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 148,
+     "ita": 62.5,
+     "skin_bucket": "light",
+     "skin_chardon": "very light",
+     "prompt_skin_word": "very light skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "woman",
+      "view_or_accessory": "head tilted slightly",
+      "light": "soft even light",
+      "glasses": true,
+      "hair": "long black hair"
+     },
+     "yunet_score": 0.9267,
+     "yunet_landmarks": [
+      414.0,
+      302.0,
+      545.3,
+      291.4,
+      471.1,
+      379.6,
+      437.7,
+      449.3,
+      545.3,
+      439.8
+     ],
+     "face_short_side_px": 37
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      623,
+      397,
+      659,
+      446
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 124,
+     "ita": 1.3,
+     "skin_bucket": "dark",
+     "skin_chardon": "brown",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their fifties",
+      "gender_word": "woman",
+      "view_or_accessory": "facing the camera",
+      "light": "dim warm indoor light",
+      "glasses": false,
+      "hair": "blond hair tied back"
+     },
+     "yunet_score": 0.921,
+     "yunet_landmarks": [
+      564.5,
+      343.9,
+      689.9,
+      349.7,
+      674.6,
+      429.2,
+      566.9,
+      500.2,
+      673.0,
+      506.9
+     ],
+     "face_short_side_px": 36
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene_017.jpg",
+   "type": "scene",
+   "split": "dev",
+   "variety": [
+    "background:i232",
+    "bg_zoom:0.7",
+    "jpg_q60",
+    "smallest_face:small_20_59px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    146
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      373,
+      538,
+      420,
+      603
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 146,
+     "ita": 29.8,
+     "skin_bucket": "medium",
+     "skin_chardon": "intermediate",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their thirties",
+      "gender_word": "woman",
+      "view_or_accessory": "facing the camera",
+      "light": "soft even light",
+      "glasses": true,
+      "hair": "shoulder-length brown hair"
+     },
+     "yunet_score": 0.9345,
+     "yunet_landmarks": [
+      442.9,
+      305.1,
+      573.6,
+      306.5,
+      509.0,
+      383.5,
+      447.0,
+      435.8,
+      563.2,
+      438.1
+     ],
+     "face_short_side_px": 47
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene_018.jpg",
+   "type": "scene",
+   "split": "dev",
+   "variety": [
+    "background:i226",
+    "bg_zoom:0.7",
+    "jpg_q95",
+    "smallest_face:small_20_59px",
+    "faces:2"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    154,
+    144
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      560,
+      564,
+      605,
+      630
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 154,
+     "ita": -35.8,
+     "skin_bucket": "dark",
+     "skin_chardon": "dark",
+     "prompt_skin_word": "brown skin",
+     "prompt_words": {
+      "age": "in their seventies",
+      "gender_word": "man",
+      "view_or_accessory": "facing the camera",
+      "light": "dim warm indoor light",
+      "glasses": false,
+      "hair": "short dark hair"
+     },
+     "yunet_score": 0.9249,
+     "yunet_landmarks": [
+      377.7,
+      228.3,
+      509.3,
+      219.6,
+      434.7,
+      301.7,
+      396.9,
+      374.3,
+      508.1,
+      368.2
+     ],
+     "face_short_side_px": 45
+    },
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      846,
+      345,
+      874,
+      384
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 144,
+     "ita": 44.3,
+     "skin_bucket": "light",
+     "skin_chardon": "light",
+     "prompt_skin_word": "deep dark brown skin",
+     "prompt_words": {
+      "age": "in their twenties",
+      "gender_word": "woman",
+      "view_or_accessory": "head turned slightly to the right",
+      "light": "dim warm indoor light",
+      "glasses": false,
+      "hair": "shoulder-length brown hair"
+     },
+     "yunet_score": 0.9125,
+     "yunet_landmarks": [
+      391.9,
+      354.6,
+      555.7,
+      351.2,
+      484.3,
+      456.5,
+      407.0,
+      536.6,
+      546.0,
+      533.4
+     ],
+     "face_short_side_px": 28
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  },
+  {
+   "file": "scene_019.jpg",
+   "type": "scene",
+   "split": "dev",
+   "variety": [
+    "background:i227",
+    "bg_zoom:0.85",
+    "blur:1.6",
+    "jpg_q40",
+    "smallest_face:small_20_59px",
+    "faces:1"
+   ],
+   "width": 1024,
+   "height": 768,
+   "portrait_indices": [
+    135
+   ],
+   "spans": [
+    {
+     "text": "",
+     "kind": "personal",
+     "pii_type": "face",
+     "box": [
+      269,
+      481,
+      311,
+      540
+     ],
+     "box_method": "YuNet box on the source portrait, moved and scaled by our own placement",
+     "portrait_index": 135,
+     "ita": -51.8,
+     "skin_bucket": "dark",
+     "skin_chardon": "dark",
+     "prompt_skin_word": "dark brown skin",
+     "prompt_words": {
+      "age": "in their twenties",
+      "gender_word": "woman",
+      "view_or_accessory": "facing the camera",
+      "light": "strong side light from a window",
+      "glasses": false,
+      "hair": "blond hair tied back"
+     },
+     "yunet_score": 0.9117,
+     "yunet_landmarks": [
+      520.6,
+      429.1,
+      643.9,
+      421.1,
+      628.4,
+      508.4,
+      539.1,
+      583.4,
+      640.6,
+      577.6
+     ],
+     "face_short_side_px": 42
+    },
+    {
+     "text": "SYNTHETIC TEST DATA",
+     "kind": "other",
+     "pii_type": null,
+     "box": [
+      3,
+      4,
+      139,
+      13
+     ]
+    }
+   ]
+  }
+ ],
+ "sha256": {
+  "side_view_000.png": "a5d98631838a42b43c713926599156d73b570955219f1d183af04a4af907bc0c",
+  "side_view_001.jpg": "c26a6256823d207d844c0c077484da0efb3e9904f6d8612afb138a2caea8ac2e",
+  "side_view_002.png": "b0ba3647f7cfbf37a849dc5df375bca6c9b8a87e7f89c859398f1a280b22a270",
+  "side_view_003.png": "2412caf434850776f5c65ac223e1d6eae8c1bbbeea408259bbddc485bb547128",
+  "side_view_004.jpg": "5a09d4f0d13022cefb7b6d2530538e918005dc4657ae9e6d1535940b486ab930",
+  "side_view_005.jpg": "34c49abd0bb0aaba776a7dccf97beb43365a8b8242ab3b38344b241c049bd631",
+  "side_view_006.png": "b8c93299dcfd6eebda93e9a0cfa05e2fc204f2d0ff4268253edad48b6e8b715e",
+  "side_view_007.jpg": "c75f742976a10b9ddd9189c985d952d44c6c1ea068157c8bd55ba7c21cfc75d0",
+  "side_view_008.jpg": "ecbfe1a3e831a18542d6f49dfe6bef828cbd2638bfd9a09a58758a46d4905d05",
+  "side_view_009.jpg": "9349be9a7ad1d6ceaafe8cb6401e2be13e08fa1989702885cbc05c2b7a03bb9f",
+  "side_view_010.png": "a84c160f78ef766357e0bc8ecf7af40d06fbe5b8e43065c64ce799a90ea03171",
+  "side_view_011.jpg": "55c8e6f1c64c424ec449e148cea600af5238c2acac1233866fe9e4b6edb4f463",
+  "side_view_012.png": "92ed4a0be0b4c1c429699d0dcad65d2fd1fa320f58f01ba1bc867021271bed40",
+  "side_view_013.png": "d152dc73bcd608caa1d2311163810069a351f7259a928e6aa294514b6f0c31f5",
+  "side_view_014.jpg": "01b6b99d821fa0fe92a88c0cf14c07fcd31dee2939c90ce4a9a7127e03605f25",
+  "side_view_015.jpg": "de74e7f9a603b4fe0236a470f645f2cd70423f870c6826fc984fe7cfd03f4c3f",
+  "side_view_016.jpg": "28e9179cbd694bfb52409ba3081472f46f56477a1c388ba09f4482439ad2b0e0",
+  "side_view_017.jpg": "a6945d606ca0196f0210670043214c93b30a921b65eb187576f4483f7157fe0c",
+  "side_view_018.jpg": "4631bb50c15b77a52091aefdb8a7d419dd7ea3c42162e86f76e5bcbd7178f1af",
+  "side_view_019.jpg": "f5d329e85a82130a2daf0ccece111e70e75ff6988d8e065056132a72f4916ee8",
+  "accessory_000.jpg": "5cbf68897896836f32986c17dbac079ab21101e0664bd1e6a7cddb0353d85b8a",
+  "accessory_001.png": "549c673169478165a937d0ad514d9ca7c76b45b7e07d2e828f7dfaebd5b0f860",
+  "accessory_002.jpg": "c2612f8e1a001708aadc747499cd91ea7207adcaff9bda0591c1ac82831e8c55",
+  "accessory_003.png": "7173d174e1c161f036f35ff8778e86baf3defe088ae970af81950561d20175ff",
+  "accessory_004.jpg": "ee49b19e0cee15ed56799e4d32581e3151b5a63d22c3d60a0422e7bf6e56eb11",
+  "accessory_005.jpg": "70fa5f006d654a95f2236bb849738d1d36edd668249fc4b8ed460af430fdd85b",
+  "accessory_006.jpg": "6df7ab0d5ebc26b763d63464907d5ff2e37dd4a5b45a2a392763d227e3bf8446",
+  "accessory_007.png": "347fa0ff32b5c8245fd15ce9a02bc3dc125608ca379392b3d11b1e6c09e0df28",
+  "accessory_008.jpg": "ec05d4bbb6640f331e7b1019e48bef520d0de2ee9a874d87b0aa7888a8ee6b64",
+  "accessory_009.jpg": "b2290f40e5b508b3ddd20d53c1637341baee355ff75eab4d31fc91a98a5e9ebc",
+  "accessory_010.png": "14d7d68569c579b7706d4ede2edf6ca5527ab199994f988b4d5e1b2023536d63",
+  "accessory_011.jpg": "17d93753d802cab8bbb43e7aa39bd4568971ff962f17d648df477f0374f8246c",
+  "accessory_012.jpg": "b13b1025757e353a91e63efd42cf8aa81f7d6576a9a34784e9f089b200deb995",
+  "accessory_013.jpg": "9a1941664331d8d4c9a9c59dd87009f8e672bc9179c9777244c61172826c7d98",
+  "accessory_014.jpg": "aab903b03f930cc11611795bf0a7f8caa178387f59abd4b0e89536ef79f220af",
+  "accessory_015.jpg": "337b9321216462e5c33650dd01d88f47161d11d14985c28fcc4f026c1b35faae",
+  "accessory_016.jpg": "6ef790c5e3136767dc3d324d910518f7a0af17976169353ad58c6d719f229064",
+  "accessory_017.jpg": "ab5d6a78a360fc7741c0dec00576b4d5a34f0c7494f81b41d14bd4f9be4856c7",
+  "accessory_018.jpg": "85c310d3434e4e5821752138b39a0a45fb87919355eef123705b87bd6463c4d6",
+  "accessory_019.png": "4c5d160704f765feb18595619c94d798da4c4588592f43d02960d490bd202a64",
+  "group_000.png": "d55e9d5aa7f71b348cde77928a9a0d363e40800b4e22dff42c4c7e51831e5d59",
+  "group_001.jpg": "3dc0e038714c51d9860ada5d0d923ddeaa882b63bbec8d2c3855f8d6b76e4764",
+  "group_002.jpg": "7cda6132330f804b68bc8298ba5e5c31929ea4525491d9aee7ae0a832a55ac42",
+  "group_003.png": "0a3950049fd88ae94ec8a418ed28141ff704aaebecdd8e7a004e9dd041b5a48c",
+  "group_004.png": "7215c24c90d293ea8f6e9e1163a4205c1dedb2aad45f8b4a5a82049f6fd04e7e",
+  "group_005.jpg": "84e64fb31e6254b3599dc18b264e4b1e8c8d19a9ee101c7d26f1bf24c37399cc",
+  "group_006.jpg": "3effe2be1001e212a69f37dcb8da4b7f0d0f435bb485a912971f672f79fc2528",
+  "group_007.png": "7a941d5f079071e1407fe36bd2bf352cfda982acfe13bef8f2ea8c13de1790f7",
+  "group_008.jpg": "06146f13ea76945dcae57b2cbbaeb7cb0122b5e9c999a9b74a7fe9930641e52e",
+  "group_009.png": "4295cc49b91d07e54be0248be38658391b05e757580cca46a95ea65ed2b35229",
+  "group_010.jpg": "acbed272a369ae7663a2450161da02f710146e350db1b5efb03361fe2f0dc679",
+  "group_011.jpg": "758465b4e349548616a6dba514016cd902bb87fe9690cd7d60658f8031bd3a18",
+  "group_012.jpg": "096d8a92cf20d99b0b57e0f91da385e1af1c7315af3fd5a6ceac930af6c5bb00",
+  "group_013.png": "7bba87e01c9dc3f45336bb1c47f0ec210e704a39ac93c2cc00252c01894fd0c4",
+  "group_014.jpg": "392682f6ad951136a4fb0e163593ba544348c072a98e894ed7e4724ecc535274",
+  "group_015.jpg": "c451fbcd6d6a8b251acb0d4be50de09ddfb343e78b6bce7dc6e7b30356afb2c7",
+  "group_016.png": "0c44a834d5a5953692c8523830a431b826c10e7e1d5d9ba92512d731391acf6e",
+  "group_017.jpg": "7af90c8af6d62786d243c19132150ca1c59326c105d236ea2b0a5f5c4ab4f6d8",
+  "group_018.jpg": "71c21ae11be3d9b19f506c62ddc2f6ae2462556ef3af9fe72ff098c46ed7dcf6",
+  "group_019.jpg": "a78d59068bdd4fbbc578c71701afeb10a3daa05f71c390b4a77841b05835d4a5",
+  "scene_000.jpg": "76c4e35e9b22817b697d46b0171057cc2b079bd436b45d2aca0f49167e1ebd2f",
+  "scene_001.jpg": "ca05f20cda5b765fb1f317224a0325b311866dcb544c743ad30e270e0adcb37d",
+  "scene_002.png": "9c3f17419ec929dd4eec860937542054a47c11948baf47a5d3f38ee1bd6c4fcb",
+  "scene_003.jpg": "e047fdce5c7e94361d7e5e7ca756a3291f270b17158cbbb81514ee4188bf54d0",
+  "scene_004.jpg": "b8f827c0f56bcecf3f71f15cf386fbe24996812f374379ba2ef055f259709181",
+  "scene_005.png": "7861d4f7cb270fe0f1ce738ffda50d406e5c189edbf0a34a3b7178e85b859bc8",
+  "scene_006.png": "a685382f1360600c30db2a6093a648473f2bc4d661eb504a480a77c33b13ddcc",
+  "scene_007.jpg": "2de4036b406ac379bd4cf8ca613e69f2e826786fa2cf429ea646b5790ee0dc6d",
+  "scene_008.jpg": "542e24f26b4b0a464c0196352d1e5434ca86a7ee9bf287c46cd78dcfbc18aabb",
+  "scene_009.png": "0462b31754e994c078305aac3b9dc309dd4ad78b4c83cf39b9bee758e8179664",
+  "scene_010.jpg": "f84070ba0ea8d7abb664debcde664cc11ce41be595fe91d0ced95e3523c65246",
+  "scene_011.jpg": "3690111018905defa5a0877210d6213af411da1f2faab4e6e6c898b0a146ff14",
+  "scene_012.jpg": "acb1d3816ae875972f9a09d7e25917ed29e7554cb2ce4e332b8dd68d5691055d",
+  "scene_013.jpg": "050cda096c68799cf68ab421638f401de16c95a2d7bbee7014d9b09962b2e291",
+  "scene_014.jpg": "85c49299213c3b941ae40cff4febb76f5f015454eff7433e9445c7e53ccbc2a9",
+  "scene_015.jpg": "010f163cd3470b86cbe69c20b8f7ca68aaea3919fdeaa89580afb19743a2e1ef",
+  "scene_016.jpg": "026ce3209712cc3a5a14fb9096b55427077382cfc9ad0616cd614be55baa048f",
+  "scene_017.jpg": "c04e2c801c932565e5c234bfdbd7c027b2773297390bd38ada4e1c542b42601f",
+  "scene_018.jpg": "72a2407f39b124abf289e61a990732ee1812e81709a2e1bdf8ff651843529009",
+  "scene_019.jpg": "ee6d41a8872d728750d2c1d63c1e23554b1b6748fdd215d8963eafa52d66f7b4"
+ }
+}
