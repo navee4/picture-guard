@@ -126,3 +126,28 @@ class Judge(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Layout(unittest.TestCase):
+    def test_dob_label_above_the_value(self):
+        label = [Word("Date", 95, (100, 10, 140, 30), (1, 1, 1)), Word("of", 95, (145, 10, 160, 30), (1, 1, 1)), Word("birth", 95, (165, 10, 210, 30), (1, 1, 1))]
+        value = [Word("11", 95, (100, 40, 120, 60), (1, 1, 2)), Word("April", 95, (125, 40, 170, 60), (1, 1, 2)), Word("1959", 95, (175, 40, 215, 60), (1, 1, 2))]
+        found, _ = rules.find_values([label, value])
+        self.assertEqual([f.type for f in found], ["dob"])
+
+    def test_a_date_with_another_label_above_it_is_left_alone(self):
+        label = [Word("Date", 95, (100, 10, 140, 30), (1, 1, 1)), Word("issued", 95, (145, 10, 200, 30), (1, 1, 1))]
+        value = [Word("11", 95, (100, 40, 120, 60), (1, 1, 2)), Word("April", 95, (125, 40, 170, 60), (1, 1, 2)), Word("2019", 95, (175, 40, 215, 60), (1, 1, 2))]
+        found, _ = rules.find_values([label, value])
+        self.assertEqual(found, [])
+
+    def test_label_far_above_is_not_used(self):
+        label = [Word("DOB", 95, (100, 10, 140, 30), (1, 1, 1))]
+        value = [Word("11", 95, (100, 200, 120, 220), (1, 1, 2)), Word("April", 95, (125, 200, 170, 220), (1, 1, 2)), Word("1959", 95, (175, 200, 215, 220), (1, 1, 2))]
+        found, _ = rules.find_values([label, value])
+        self.assertEqual(found, [])
+
+    def test_email_split_by_ocr(self):
+        self.assertEqual(types("Email on file: jennifer. lewis@example.org"), ["email"])
+        self.assertEqual(types("email me at charlie fisher@mail test"), ["email"])
+        self.assertEqual(types("meet me at noon"), [])

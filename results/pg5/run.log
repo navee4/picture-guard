@@ -1,0 +1,6 @@
+testset  exit 0
+faces  exit 0
+faces_hard  exit 0
+testset --ablation exit 0
+faces --ablation exit 0
+faces_hard --ablation exit 0

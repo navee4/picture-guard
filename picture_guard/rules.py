@@ -34,6 +34,7 @@ class Line:
     text: str
     view: str  # same length as text, OCR swaps applied inside digit-heavy tokens
     spans: list  # (start, end) of each word in text
+    near: list = None  # every word of the same OCR pass, for labels that sit beside or above a value
 
 
 def make_line(words: list[Word]) -> Line:
@@ -106,8 +107,34 @@ _SORT = re.compile(r"(?<!\d)\d{2}[-– ]\d{2}[-– ]\d{2}(?!\d)")
 _ACC = re.compile(r"(?<!\d)\d{8}(?!\d)")
 
 
+def _geo_context(line: Line, start: int) -> str:
+    """Words that sit directly above (within 1.8 line heights, within 150 px sideways) or to the left on the same row (within
+    500 px) of the word at `start`. Labels are often laid out that way, which a text line does not show."""
+    if not line.near:
+        return ""
+    k = next((i for i, (a, b) in enumerate(line.spans) if a <= start < b or start < a), None)
+    if k is None:
+        return ""
+    x0, y0, x1, y1 = line.words[k].box
+    h = max(1, y1 - y0)
+    above, left = [], []
+    for w in line.near:
+        a0, b0, a1, b1 = w.box
+        if w.box == line.words[k].box:
+            continue
+        if b1 <= y0 + 0.3 * h and y0 - b1 <= 1.8 * h and a0 < x1 + 150 and a1 > x0 - 150:
+            above.append(w)
+        elif a1 <= x0 + 2 and x0 - a1 <= 500 and min(b1, y1) - max(b0, y0) >= 0.5 * h:
+            left.append(w)
+    above.sort(key=lambda w: (w.box[1], w.box[0]))
+    left.sort(key=lambda w: w.box[0])
+    return " ".join(w.text for w in above + left)
+
+
 def _context(line: Line, prev: Line | None, start: int) -> str:
     before = line.text[max(0, start - 30):start]
+    if line.near:  # positions are known: use what is really above or beside the value, not just the previous text line
+        return _geo_context(line, start) + " " + before
     if not before.strip() and prev is not None:
         before = prev.text[-30:] + " " + before
     return before
@@ -200,6 +227,18 @@ def _line_findings(line: Line, prev: Line | None) -> list[tuple]:
                 add("ni_number", "ni_prefix_and_suffix", m.start(), m.end())
     for m in _EMAIL.finditer(t):
         add("email", "email_shape", m.start(), m.end())
+    # OCR often breaks an address into pieces ("jane. doe@example.org", "jane doe@mail test"): a token with an @ takes
+    # the word before it (when that word is letters, possibly with a trailing dot) and a dot-less domain takes the next word.
+    for i, (a, b) in enumerate(toks):
+        tok = t[a:b]
+        if "@" not in tok or any(a < ea and b > sa for _, _, sa, ea in out):
+            continue
+        lo, hi = a, b
+        if i > 0 and re.fullmatch(r"[A-Za-z0-9._-]{2,}", t[toks[i - 1][0]:toks[i - 1][1]]):
+            lo = toks[i - 1][0]
+        if "." not in tok.split("@", 1)[-1] and i + 1 < len(toks) and re.fullmatch(r"[A-Za-z]{2,}", t[toks[i + 1][0]:toks[i + 1][1]]):
+            hi = toks[i + 1][1]
+        add("email", "at_sign_with_ocr_splits", lo, hi)
     for m in _POSTCODE.finditer(t.upper()):
         add("postcode", "uk_postcode_shape", m.start(), m.end())
     # date of birth: a date whose label (dob, date of birth, born) is within 30 characters before it
@@ -212,6 +251,9 @@ def _line_findings(line: Line, prev: Line | None) -> list[tuple]:
 
 def find_values(lines: list[list[Word]]) -> tuple[list[Finding], list[Line]]:
     made = [make_line(ws) for ws in lines]
+    everything = [w for ws in lines for w in ws]
+    for ln in made:
+        ln.near = everything
     found: list[Finding] = []
     for li, line in enumerate(made):
         for ty, rule, a, b in _line_findings(line, made[li - 1] if li else None):
