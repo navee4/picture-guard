@@ -79,6 +79,11 @@ def _measure(entry, safe_path: Path, report: dict, do_ocr: bool, orig_path: Path
                            "plain_readable": sum(readback.found(s["text"], text) for s in plain)}
         for rv, v in zip(rec["values"], values):
             rv["left_readable"] = readback.found(v["text"], text)
+        stext = readback.norm(readback.ocr_text_strict(str(safe_path)))  # stricter read-back: plain + inverted-dark + local-contrast reads
+        rec["readback_strict"] = {"values_left": [s["text"] for s in values if readback.found(s["text"], stext)],
+                                  "plain_readable": sum(readback.found(s["text"], stext) for s in plain)}
+        for rv, v in zip(rec["values"], values):
+            rv["left_readable_strict"] = readback.found(v["text"], stext)
         if orig_path is not None:  # the ceiling: what Tesseract reads when nothing is covered
             otext = readback.norm(readback.ocr_text(str(orig_path)))
             rec["readback_original"] = {"values_read": sum(readback.found(s["text"], otext) for s in values),
@@ -91,7 +96,7 @@ def _measure(entry, safe_path: Path, report: dict, do_ocr: bool, orig_path: Path
 
 
 def run_eval(set_name: str, split: str, limit: int = 0, results_dir: str | None = None, ablation: bool = False, check_glimmer: bool = False,
-             fallback: str = "zoom", replay: bool = False) -> int:
+             fallback: str = "zoom", replay: bool = False, cleanups: tuple | None = None) -> int:
     if split != "dev":
         print(f"pg: error: split {split!r} refused. Only 'dev' may be run until day 9; the hold-out stays sealed.", file=sys.stderr)
         return 2
@@ -105,7 +110,7 @@ def run_eval(set_name: str, split: str, limit: int = 0, results_dir: str | None 
     do_ocr = readback.available()
     out_dir = Path(results_dir) if results_dir else ROOT / "results" / ("pg7" if (fallback != "none" or replay) else "pg6")
     out_dir.mkdir(parents=True, exist_ok=True)
-    suffix = ("-ablation" if ablation else "") + ("-checkglimmer" if check_glimmer else "") + (f"-fb-{fallback}" if fallback != "none" else "") + ("-replay" if replay and fallback == "none" else "")
+    suffix = ("-ablation" if ablation else "") + ("-checkglimmer" if check_glimmer else "") + (f"-fb-{fallback}" if fallback != "none" else "") + (("-clean-" + "+".join(cleanups) if cleanups else "-clean-none") if cleanups is not None else "") + ("-replay" if replay and fallback == "none" else "")
     recs, failures = [], []
     t_start = time.time()
     session = nullcontext(None)
@@ -123,7 +128,7 @@ def run_eval(set_name: str, split: str, limit: int = 0, results_dir: str | None 
             safe, rep = tmp / "safe.png", tmp / "report.json"
             t0 = time.perf_counter()
             try:
-                report = protect(base / "images" / e["file"], safe, rep, ablation=ablation, guard=guard, options={"check_glimmer": check_glimmer, "fallback": fallback})
+                report = protect(base / "images" / e["file"], safe, rep, ablation=ablation, guard=guard, options={"check_glimmer": check_glimmer, "fallback": fallback, **({"cleanups": cleanups} if cleanups is not None else {})})
             except Exception as ex:  # noqa: BLE001  (a remote spend-cap stop ends the run; anything else is logged and the run goes on)
                 failures.append({"file": e["file"], "error": f"{type(ex).__name__}: {str(ex)[:300]}"})
                 if "spend cap" in str(ex):
@@ -142,16 +147,16 @@ def run_eval(set_name: str, split: str, limit: int = 0, results_dir: str | None 
     if guard is not None:
         cold, info = guard.cold_start_seconds, guard.info
     raw = {"tool_version": __version__, "set": set_name, "split": split, "pictures_asked": len(entries), "pictures_scored": len(recs),
-           "mode": "ablation: NOT A PRODUCT RESULT" if ablation else "product", "check_glimmer": check_glimmer, "fallback": fallback, "replay_of_day3_answers": replay,
+           "mode": "ablation: NOT A PRODUCT RESULT" if ablation else "product", "check_glimmer": check_glimmer, "fallback": fallback, "cleanups": list(cleanups) if cleanups is not None else "default", "replay_of_day3_answers": replay,
            "live_modal_calls": getattr(guard, "live_calls", None),
            "failures": failures, "tesseract_installed": do_ocr, "black_max_channel": BLACK_MAX,
            "modal": {"cold_start_seconds": cold, "container": info},
            "key_sha256": key.get("sha256"), "unix_time": int(t_start),
-           "command": f".venv/bin/pg eval --set {set_name} --split {split}" + (" --ablation" if ablation else "") + (" --check-glimmer" if check_glimmer else "") + (f" --fallback {fallback}" if fallback != "none" else "") + (" --replay" if replay else "") + (f" --limit {limit}" if limit else ""),
+           "command": f".venv/bin/pg eval --set {set_name} --split {split}" + (" --ablation" if ablation else "") + (" --check-glimmer" if check_glimmer else "") + (f" --fallback {fallback}" if fallback != "none" else "") + (" --replay" if replay else "") + (f" --cleanups {','.join(cleanups) or 'none'}" if cleanups is not None else "") + (f" --limit {limit}" if limit else ""),
            "summary": summarise(recs), "by_value_type": by_value_type(recs), "first_failure_stage": _tally(r.get("first_failure") for r in recs),
            "whole_black_reasons": _tally(r.get("reason") for r in recs if r["whole_black_pixels"]),
-           "leak_list_still_readable": [{"file": r["file"], "picture_type": r["type"], "value_type": v["type"]}
-                                        for r in recs for v in r["values"] if v["left_readable"]],
+           "leak_list_still_readable": [{"file": r["file"], "picture_type": r["type"], "value_type": v["type"], "found_by": "plain" if v["left_readable"] else "strict"}
+                                        for r in recs for v in r["values"] if v["left_readable"] or v.get("left_readable_strict")],
            "pictures": recs}
     (out_dir / f"eval-{set_name}-{split}{suffix}.json").write_text(json.dumps(raw, indent=1))
     table = render_table(set_name, split, raw)
@@ -230,6 +235,8 @@ def summarise(recs: list) -> dict:
                 "value_boxes_90_black": sum(x >= 0.9 for x in kv), "value_boxes": len(kv),
                 "face_boxes_90_black": sum(x >= 0.9 for x in kf), "face_boxes": len(kf), "face_black_mean": _mean(kf),
                 "plain_readable": sum(r["readback"]["plain_readable"] for r in kept) if ran else None,
+                "values_left_readable_strict": sum(len(r["readback_strict"]["values_left"]) for r in kept) if ran and all("readback_strict" in r for r in kept) else None,
+                "values_under_50_pixels": sum(x < 0.5 for x in kv), "values_50_90_pixels": sum(0.5 <= x < 0.9 for x in kv),
                 "plain_readable_on_original": sum(r["readback_original"]["plain_readable"] for r in kept) if ran and all("readback_original" in r for r in kept) else None,
             },
         }

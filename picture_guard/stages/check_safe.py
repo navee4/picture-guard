@@ -17,7 +17,7 @@ def run(ctx) -> StageResult:
     if ctx.ablation:
         return StageResult(OK, {"boxes": []}, "ABLATION: no check run; answers 'nothing found'")
     safe = ctx.safe_image
-    passes = ocr.read_passes(safe)
+    passes = ocr.read_passes(safe, cleanups=ctx.options.get("cleanups", ocr.DEFAULT_CLEANUPS))
     for label, words in passes.items():
         found, _ = rules.find_values(ocr.group_lines(words))
         if found:

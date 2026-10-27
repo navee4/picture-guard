@@ -12,7 +12,7 @@ MIN_WORDS = 5
 
 
 def run(ctx) -> StageResult:
-    passes = ocr.read_passes(ctx.loaded.image)
+    passes = ocr.read_passes(ctx.loaded.image, cleanups=ctx.options.get("cleanups", ocr.DEFAULT_CLEANUPS))
     ctx.data["words"] = passes
     sure_words = max(sum(w.conf >= 30 for w in ws) for ws in passes.values())
     answer = {"words_by_pass": {p: len(ws) for p, ws in passes.items()}, "words_conf30_best_pass": sure_words}

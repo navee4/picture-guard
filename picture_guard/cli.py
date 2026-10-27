@@ -24,6 +24,7 @@ def main(argv=None) -> int:
     e.add_argument("--check-glimmer", action="store_true", help="also ask Glimmer about the safe copy (extra Glimmer call; off by default)")
     e.add_argument("--fallback", default="zoom", choices=["none", "zoom", "line", "zoom+line"], help="place values Tesseract cannot find: zoom read, line cover, or both in order")
     e.add_argument("--replay", action="store_true", help="reuse the saved day-3 Glimmer/SAM answers (dev pictures); only new calls go to Modal")
+    e.add_argument("--cleanups", default=None, help="reader clean-ups to add, comma list of inv,loc,big3,invloc or 'none' (default: the built-in default)")
     e.add_argument("--limit", type=int, default=0, help="first N pictures only (testing the harness)")
     e.add_argument("--results-dir", default=None, help="where the raw JSON and table go (default results/pg6)")
     a = ap.parse_args(argv)
@@ -44,7 +45,7 @@ def main(argv=None) -> int:
                   f"{len(fs['reasons'])} reasons) and {a.report}")
             return 0
         from picture_guard.evaluate import run_eval
-        return run_eval(a.set_name, a.split, a.limit, a.results_dir, a.ablation, a.check_glimmer, a.fallback, a.replay)
+        return run_eval(a.set_name, a.split, a.limit, a.results_dir, a.ablation, a.check_glimmer, a.fallback, a.replay, None if a.cleanups is None else tuple(c for c in a.cleanups.split(',') if c and c != 'none'))
     except NotAPictureError as ex:
         print(f"pg: error: {ex}", file=sys.stderr)
         return 2

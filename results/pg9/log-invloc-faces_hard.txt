@@ -1,0 +1,63 @@
+✓ Initialized. View run at 
+https://modal.com/apps/workspace/main/ap-DV6VXaSg5kCxndh4oB4xdQ
+✓ Created objects.
+├── ✓ Uploaded PythonPackage:picture_guard
+├── ✓ Uploaded 
+│   ./picture_guard/remote/container_i
+│   mpl.py
+└── ✓ Created Function Guard.*.
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 12.8.1
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+/usr/local/lib/python3.12/site-packages/huggingface_hub/constants.py:302: FutureWarning: The `HF_HUB_ENABLE_HF_TRANSFER` environment variable is deprecated as 'hf_transfer' is not used anymore. Please use `HF_XET_HIGH_PERFORMANCE` instead to enable high performance transfer with Xet. Visit https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#hfxethighperformance for more details.
+  warnings.warn(
+/usr/local/lib/python3.12/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+dynamic_multimask_via_stability is reset to False in the multiplex model
+[0m[32mINFO 2026-10-27 17:55:30,500 2 sam3_multiplex_base.py: 337:[0m `setting max_num_objects` to 16 -- creating num_obj_for_compile=1 objects for torch.compile cache
+Missing keys (64): ['detector.backbone.vision_backbone.trunk.blocks.0.attn.freqs_cis_real', 'detector.backbone.vision_backbone.trunk.blocks.0.attn.freqs_cis_imag', 'detector.backbone.vision_backbone.trunk.blocks.1.attn.freqs_cis_real', 'detector.backbone.vision_backbone.trunk.blocks.1.attn.freqs_cis_imag', 'detector.backbone.vision_backbone.trunk.blocks.2.attn.freqs_cis_real', 'detector.backbone.vision_backbone.trunk.blocks.2.attn.freqs_cis_imag', 'detector.backbone.vision_backbone.trunk.blocks.3.attn.freqs_cis_real', 'detector.backbone.vision_backbone.trunk.blocks.3.attn.freqs_cis_imag', 'detector.backbone.vision_backbone.trunk.blocks.4.attn.freqs_cis_real', 'detector.backbone.vision_backbone.trunk.blocks.4.attn.freqs_cis_imag']...
+[0m[32mINFO 2026-10-27 17:55:34,917 2 sam3_base_predictor.py: 167:[0m started new session f41f6d52-3c94-45e5-b976-6d85240c4c8f
+[0m[32mINFO 2026-10-27 17:55:34,917 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 17:55:37,827 2 sam3_base_predictor.py: 467:[0m removed session f41f6d52-3c94-45e5-b976-6d85240c4c8f
+[0m[32mINFO 2026-10-27 17:55:51,548 2 sam3_base_predictor.py: 167:[0m started new session d2d44a23-b681-42b5-aee9-de49ddc38f52
+[0m[32mINFO 2026-10-27 17:55:51,549 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 17:55:51,925 2 sam3_base_predictor.py: 467:[0m removed session d2d44a23-b681-42b5-aee9-de49ddc38f52
+[0m[32mINFO 2026-10-27 17:56:51,918 2 sam3_base_predictor.py: 167:[0m started new session f0e83a36-40d9-421c-a203-8eecc3bc42ce
+[0m[32mINFO 2026-10-27 17:56:51,919 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 17:56:52,306 2 sam3_base_predictor.py: 467:[0m removed session f0e83a36-40d9-421c-a203-8eecc3bc42ce
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/workspace/main/ap-DV6VXaSg5kCxndh4oB4xdQ
+[spend] eval-faces_hard-dev-fb-zoom-clean-invloc: 484 s = $0.37; running total $12.08 of $15
+## faces_hard, split dev, mode: product (60 of 60 pictures scored, version 0.1.0-day1)
+
+Modal: cold start 53.5 s (both models loaded); container {'glimmer_load_seconds': 10.3, 'sam_load_seconds': 15.1, 'load_seconds': 25.4, 'gpu': 'NVIDIA L40S', 'peak_mib': 20901}.
+
+| Type | Pictures | Whole picture black | Not black: values left readable / planted | Not black: face boxes 90%+ covered | Not black: ordinary spans readable (original) | Whole-black pictures: planted values left readable | s/picture Mac / Modal / total |
+|---|---|---|---|---|---|---|---|
+| all | 60 | 3 of 60 (5.0%) | 0 / 0 | 115 of 115 | 9 of 57 (8) | 0 | 5.7237 / 4.4358 / 10.1595 |
+| accessory | 15 | 2 of 15 (13.3%) | 0 / 0 | 13 of 13 | 2 of 13 (3) | 0 | 3.9845 / 4.1467 / 8.1311 |
+| group | 15 | 0 of 15 (0.0%) | 0 / 0 | 57 of 57 | 2 of 15 (0) | 0 | 4.8722 / 5.002 / 9.8742 |
+| scene | 15 | 0 of 15 (0.0%) | 0 / 0 | 31 of 31 | 1 of 15 (1) | 0 | 6.447 / 4.5973 / 11.0443 |
+| side_view | 15 | 1 of 15 (6.7%) | 0 / 0 | 14 of 14 | 4 of 14 (4) | 0 | 7.5912 / 3.9973 / 11.5885 |
+
+Why pictures went whole black: {
+"rule 3: a stage failed, timed out or read almost nothing (read)": 3
+}
+First not-sure or failing stage: {'None': 57, 'read': 3} (None = no stage failed).
+The day-2 word list would have refused 57 of 57 pictures that reached `decide`.
+
+Report says whole-black but pixels disagree: 0. Safe copy wrong size: 0. Safe copies with metadata chunks: 0. Pictures that failed to run: 0.
+

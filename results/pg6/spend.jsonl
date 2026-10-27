@@ -11,3 +11,8 @@
 {"run": "eval-faces_hard-dev-checkglimmer", "seconds": 790.5, "usd": 0.6092, "note": "session wall time (upper bound: includes image build and cold start)"}
 {"run": "eval-testset-dev-fb-zoom", "seconds": 1584.5, "usd": 1.2212, "note": "session wall time (upper bound: includes image build and cold start)"}
 {"run": "protect", "seconds": 73.1, "usd": 0.0564, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "eval-faces_hard-dev-fb-zoom-clean-inv", "seconds": 445.5, "usd": 0.3434, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "eval-faces_hard-dev-fb-zoom-clean-invloc", "seconds": 484.4, "usd": 0.3734, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "eval-faces_hard-dev-fb-zoom-clean-big3", "seconds": 460.6, "usd": 0.355, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "eval-faces_hard-dev-fb-zoom-clean-inv+loc", "seconds": 532.1, "usd": 0.4101, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "eval-faces_hard-dev-fb-zoom-clean-inv+loc+big3", "seconds": 677.4, "usd": 0.5221, "note": "session wall time (upper bound: includes image build and cold start)"}

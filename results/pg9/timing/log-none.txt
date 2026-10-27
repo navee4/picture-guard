@@ -1,0 +1,33 @@
+## testset, split dev, mode: product (40 of 40 pictures scored, version 0.1.0-day1)
+
+| Type | Pictures | Whole picture black | Not black: values left readable / planted | Not black: face boxes 90%+ covered | Not black: ordinary spans readable (original) | Whole-black pictures: planted values left readable | s/picture Mac / Modal / total |
+|---|---|---|---|---|---|---|---|
+| all | 40 | 8 of 40 (20.0%) | 0 / 258 | none planted | 873 of 978 (914) | 0 | 5.4741 / 16.4235 / 21.8976 |
+| letter | 2 | 1 of 2 (50.0%) | 0 / 10 | none planted | 15 of 17 (16) | 0 | 5.891 / 29.83 / 35.721 |
+| payslip | 38 | 7 of 38 (18.4%) | 0 / 248 | none planted | 858 of 961 (898) | 0 | 5.4522 / 15.7179 / 21.1701 |
+
+Why pictures went whole black: {
+"rule 1: a private value has no word box (decide)": 8
+}
+First not-sure or failing stage: {'None': 32, 'decide': 8} (None = no stage failed).
+The day-2 word list would have refused 40 of 40 pictures that reached `decide`.
+Fallback (zoom): tried on 11 pictures, 41 values; placed by zoom 20, by line cover 0; no clear frame in 10 pictures. Frames chosen: {'norm1000': 1, 'None': 10}.
+
+| Value type | Planted | Pictures not black: planted | ...of those left readable | Box 90%+ black (all pictures) | Left readable (all pictures) |
+|---|---|---|---|---|---|
+| account_number | 40 | 32 | 0 | 39 (97.5%) | 0 |
+| address | 80 | 64 | 0 | 77 (96.2%) | 0 |
+| dob | 38 | 31 | 0 | 38 (100.0%) | 0 |
+| email | 2 | 1 | 0 | 2 (100.0%) | 0 |
+| iban | 1 | 0 | 0 | 1 (100.0%) | 0 |
+| name | 44 | 34 | 0 | 43 (97.7%) | 0 |
+| ni_number | 38 | 31 | 0 | 38 (100.0%) | 0 |
+| phone | 2 | 1 | 0 | 2 (100.0%) | 0 |
+| postcode | 40 | 32 | 0 | 40 (100.0%) | 0 |
+| sort_code | 39 | 32 | 0 | 39 (100.0%) | 0 |
+
+Report says whole-black but pixels disagree: 0. Safe copy wrong size: 0. Safe copies with metadata chunks: 0. Pictures that failed to run: 0.
+
+real 354.74
+user 342.58
+sys 10.23

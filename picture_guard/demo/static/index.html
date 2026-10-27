@@ -39,7 +39,7 @@ table{border-collapse:collapse;width:100%} td,th{border-top:1px solid var(--line
 <div class="wrap">
   <div class="banner" id="banner">Hackathon demo. Pictures are processed in memory and not stored. Please use made-up pictures.</div>
   <h1>Picture guard</h1>
-  <p class="sub">Drop in a picture. Names, addresses, ID and account numbers and faces are covered with black boxes (or the whole picture goes black if I am not sure). Only that safe copy goes to the AI.</p>
+  <p class="sub">Drop in a picture. Names, addresses, ID and account numbers and faces are covered with black boxes (or the whole picture goes black if I am not sure). Only that safe copy can go to Muse Spark, Meta's AI. The original goes only to our own GPU for analysis.</p>
 
   <div class="card">
     <h2>1. Pick a picture</h2>
@@ -59,8 +59,8 @@ table{border-collapse:collapse;width:100%} td,th{border-top:1px solid var(--line
   <div class="card" id="resultCard" hidden>
     <h2>3. Before and after</h2>
     <div class="cols">
-      <div><div class="mute">Original (stays on this page)</div><div class="pic"><img id="orig" alt="original picture"></div></div>
-      <div><div class="mute">Safe copy (this is all that can leave)</div><div class="pic"><img id="safe" alt="safe copy"></div></div>
+      <div><div class="mute">Original (goes only to our own GPU, never to Meta)</div><div class="pic"><img id="orig" alt="original picture"></div></div>
+      <div><div class="mute">Safe copy (the only version that can go to Muse Spark)</div><div class="pic"><img id="safe" alt="safe copy"></div></div>
     </div>
     <p id="verdict"></p>
     <div id="covered"></div>
@@ -74,11 +74,11 @@ table{border-collapse:collapse;width:100%} td,th{border-top:1px solid var(--line
   </div>
 
   <div class="card" id="proofCard" hidden>
-    <h2>What left the machine</h2>
+    <h2>What went to Meta</h2>
     <table>
       <tr><td>SHA-256 of the original</td><td class="mono" id="hOrig"></td></tr>
       <tr><td>SHA-256 of the safe copy</td><td class="mono" id="hSafe"></td></tr>
-      <tr><td>Sent to Muse Spark (hash of the image bytes in the request)</td><td class="mono" id="hSent">nothing sent yet</td></tr>
+      <tr><td>Sent to Muse Spark at Meta (hash of the image bytes in the request)</td><td class="mono" id="hSent">nothing sent yet</td></tr>
       <tr><td>Check</td><td id="hCheck" class="mute">waiting for a question</td></tr>
     </table>
     <h2 style="margin-top:14px">Request log</h2>

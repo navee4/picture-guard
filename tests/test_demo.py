@@ -114,12 +114,19 @@ class Limits(unittest.TestCase):
         self.assertTrue(rl.allow("a"))
 
     def test_samples_are_dev_pictures_only(self):
-        key = json.loads((ROOT / "testset" / "key.json").read_text())
-        split = {e["file"]: e["split"] for e in key["images"]}
+        sources = json.loads((SAMPLES / "SOURCES.json").read_text())
         names = self.demo.sample_names()
+        self.assertEqual(sorted(names), sorted(sources))
         self.assertEqual(len(names), 4)
         for n in names:
-            self.assertEqual(split[n], "dev", n)
+            key = json.loads((ROOT / sources[n] / "key.json").read_text())
+            self.assertEqual({e["file"]: e["split"] for e in key["images"]}[n], "dev", n)
+
+    def test_page_does_not_say_the_original_stays_on_the_page(self):
+        html = (ROOT / "picture_guard" / "demo" / "static" / "index.html").read_text()
+        self.assertNotIn("stays on this page", html)
+        self.assertNotIn("this is all that can leave", html)
+        self.assertIn("goes only to our own GPU, never to Meta", html)
 
 
 @needs_tesseract
