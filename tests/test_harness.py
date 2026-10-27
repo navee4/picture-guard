@@ -12,7 +12,8 @@ class Measure(unittest.TestCase):
     def test_untouched_picture_scores_as_unprotected(self):
         key = json.loads((ROOT / "testset" / "key.json").read_text())
         e = next(x for x in key["images"] if x["split"] == "dev" and x["type"] == "payslip")
-        fake_report = {"fail_safe": {"whole_black": False}, "total_seconds": 0, "output": {"png_chunks": ["IHDR", "IDAT", "IEND"]}}
+        fake_report = {"fail_safe": {"whole_black": False}, "total_seconds": 0, "stages": [], "input": {"in_scope": True}, "remote_calls": [],
+                       "output": {"png_chunks": ["IHDR", "IDAT", "IEND"], "boxes_filled": 0}}
         m = evaluate._measure(e, ROOT / "testset" / "images" / e["file"], fake_report, do_ocr=False)
         self.assertFalse(m["whole_black_pixels"])
         self.assertLess(max(m["value_box_black_share"]), 0.5)  # planted boxes are mostly NOT black in the original

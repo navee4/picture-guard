@@ -5,6 +5,9 @@ description = "Cover private values and faces in a picture, or black out the who
 requires-python = ">=3.12"
 dependencies = ["pillow", "numpy"]
 
+[project.optional-dependencies]
+remote = ["modal"]
+
 [project.scripts]
 pg = "picture_guard.cli:main"
 

@@ -18,6 +18,7 @@ from picture_guard.stages import black_out, check_safe, count_check, decide, fac
 from picture_guard.types import OK, Context, StageResult
 
 DEFAULT_TIMEOUT_S = 120.0
+MODEL_TIMEOUT_S = 300.0  # decide waits for Modal (Glimmer about 6-15 s when warm)
 SHORT_TIMEOUT_S = 30.0
 
 
@@ -32,7 +33,7 @@ def _stage(mod, timeout_s=DEFAULT_TIMEOUT_S) -> Stage:
     return Stage(mod.NAME, mod.run, timeout_s)
 
 
-DETECT = [_stage(read), _stage(decide), _stage(locate), _stage(faces), _stage(count_check)]
+DETECT = [_stage(read), _stage(decide, MODEL_TIMEOUT_S), _stage(locate), _stage(faces), _stage(count_check)]
 BLACK_OUT = _stage(black_out, SHORT_TIMEOUT_S)
 CHECK = _stage(check_safe)
 SEND = _stage(send, SHORT_TIMEOUT_S)
@@ -87,15 +88,24 @@ def _skipped(name: str, because: str) -> dict:
     return {"name": name, "seconds": 0.0, "status": "skipped", "answer": {}, "why": f"skipped: {because}"}
 
 
-def protect(in_path, out_path, report_path, plan: Plan | None = None, ablation: bool = False) -> dict:
+def preflight(in_path, out_path, report_path) -> None:
+    """Refuse bad input before anything expensive starts (a Modal session costs money). Writes nothing."""
+    if len({Path(p).resolve() for p in (in_path, out_path, report_path)}) != 3:
+        raise ValueError("input, safe copy and report must be three different files")
+    imaging.load_picture(in_path)
+
+
+def protect(in_path, out_path, report_path, plan: Plan | None = None, ablation: bool = False, guard=None, options: dict | None = None) -> dict:
     """Write the safe copy and the report. Raises NotAPictureError (nothing written) if the input is not a picture."""
     plan = plan or default_plan()
     ins, outs, reps = (Path(p).resolve() for p in (in_path, out_path, report_path))
     if len({ins, outs, reps}) != 3:
         raise ValueError("input, safe copy and report must be three different files")
     t_all = time.perf_counter()
+    if guard is not None and hasattr(guard, "reset_calls"):
+        guard.reset_calls()
     loaded = imaging.load_picture(ins)  # raises before anything is written
-    ctx = Context(loaded=loaded, in_path=str(ins), out_path=str(outs), ablation=ablation)
+    ctx = Context(loaded=loaded, in_path=str(ins), out_path=str(outs), ablation=ablation, guard=guard, options=options or {})
     stages, reasons = [], []
 
     if not loaded.in_scope:
@@ -158,6 +168,7 @@ def protect(in_path, out_path, report_path, plan: Plan | None = None, ablation: 
                    "sha256": imaging.sha256_file(outs), "png_chunks": [c.decode() for c in chunks],
                    "boxes_filled": 0 if ctx.fail_safe else len(ctx.boxes)},
         "total_seconds": round(time.perf_counter() - t_all, 4),
+        "remote_calls": list(getattr(guard, "calls", []) or []),
     }
     imaging.write_bytes(reps, (json.dumps(report, indent=1) + "\n").encode())
     return report

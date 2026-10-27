@@ -9,6 +9,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 from picture_guard import imaging, ocr, readback
 from picture_guard.pipeline import default_plan, protect
+from picture_guard.remote.fake import FakeGuard
 from picture_guard.types import NOT_SURE, OK, StageResult
 
 TEXT_OK = ["Sort code 12-34-56", "Account number 12345678", "Date of birth 12 Jan 1976", "Total 12.50 thanks"]
@@ -24,11 +25,7 @@ def draw(lines, size=(900, 420)):
     return im
 
 
-def with_stubs_sure(plan):
-    for st in plan.detect:
-        if st.name in ("faces", "count_check"):
-            st.run = lambda ctx: StageResult(OK, {"boxes": []}, "test: sure")
-    plan.check.run = lambda ctx: StageResult(OK, {}, "test: sure")
+def with_stubs_sure(plan):  # kept for the tests that only look at reading and rotation; the model stages answer through a fake Modal
     return plan
 
 
@@ -79,7 +76,7 @@ class ExifRotation(Base):
         ex[0x0112] = 6  # ... with the tag that says "turn it 90 degrees clockwise" to display it upright
         src = self.d / "side.png"
         sideways.save(src, exif=ex)
-        rep = protect(src, self.out, self.rep, with_stubs_sure(default_plan()))
+        rep = protect(src, self.out, self.rep, default_plan(), guard=FakeGuard())
         self.assertEqual(Image.open(self.out).size, upright.size)
         self.assertFalse(rep["fail_safe"]["whole_black"], rep["fail_safe"])
         self.assertGreaterEqual(rep["output"]["boxes_filled"], 3)
@@ -100,7 +97,7 @@ class RealChain(Base):
         draw(TEXT_OK).save(self.src)
 
     def test_values_are_covered_and_ordinary_text_stays(self):
-        rep = protect(self.src, self.out, self.rep, with_stubs_sure(default_plan()))
+        rep = protect(self.src, self.out, self.rep, default_plan(), guard=FakeGuard())
         self.assertFalse(rep["fail_safe"]["whole_black"], rep["fail_safe"])
         status = {s["name"]: s["status"] for s in rep["stages"]}
         for n in ("read", "decide", "locate", "black_out"):
@@ -114,33 +111,58 @@ class RealChain(Base):
         self.assertTrue(readback.found("Sort code", text))  # labels too
 
     def test_report_holds_no_private_text(self):
-        protect(self.src, self.out, self.rep, with_stubs_sure(default_plan()))
+        g = FakeGuard(values=[{"text": "Katie Edwards", "type": "name"}])
+        draw(["Dear Katie Edwards", "Sort code 12-34-56 thanks"]).save(self.src)
+        protect(self.src, self.out, self.rep, default_plan(), guard=g)
         blob = self.rep.read_text()
-        for planted in ("12-34-56", "12345678", "Jan 1976", "thanks"):
+        for planted in ("12-34-56", "Katie", "Edwards", "thanks"):  # rule values, Glimmer values and ordinary words
             self.assertNotIn(planted, blob)
+        self.assertIn("remote_calls", blob)
 
-    def test_a_name_makes_decide_not_sure_so_the_picture_goes_black(self):
+    def test_a_glimmer_value_is_located_and_covered(self):
         draw(["Dear Katie Edwards", "Sort code 12-34-56"]).save(self.src)
-        rep = protect(self.src, self.out, self.rep, with_stubs_sure(default_plan()))
+        g = FakeGuard(values=[{"text": "Katie Edwards", "type": "name"}])
+        rep = protect(self.src, self.out, self.rep, default_plan(), guard=g)
+        self.assertFalse(rep["fail_safe"]["whole_black"], rep["fail_safe"])
+        text = readback.norm(readback.ocr_text(str(self.out)))
+        self.assertFalse(readback.found("Katie", text))
+        self.assertFalse(readback.found("12-34-56", text))
+        self.assertTrue(readback.found("Dear", text))
+        decide = next(s for s in rep["stages"] if s["name"] == "decide")
+        self.assertEqual(decide["answer"]["glimmer_values"], 1)
+        self.assertEqual(decide["answer"]["glimmer_values_unlocated"], 0)
+
+    def test_a_glimmer_value_with_no_word_box_is_rule_1(self):
+        draw(["Dear Katie Edwards", "Sort code 12-34-56"]).save(self.src)
+        g = FakeGuard(values=[{"text": "Zebediah Quux", "type": "name"}])
+        rep = protect(self.src, self.out, self.rep, default_plan(), guard=g)
         self.assertTrue(rep["fail_safe"]["whole_black"])
-        self.assertEqual(next(s for s in rep["stages"] if s["name"] == "decide")["status"], "not_sure")
+        decide = next(s for s in rep["stages"] if s["name"] == "decide")
+        self.assertEqual((decide["status"], decide["answer"]["failsafe_rule"]), ("not_sure", 1))
         self.assertEqual(np.asarray(Image.open(self.out)).max(), 0)
         status = {s["name"]: s["status"] for s in rep["stages"]}
         self.assertEqual(status["locate"], "skipped")  # later stages do not run after the first "not sure"
         self.assertEqual(status["faces"], "skipped")
         self.assertEqual(status["check_safe"], "skipped")
 
+    def test_the_word_list_is_only_measured_not_a_gate(self):
+        draw(["Dear Katie Edwards", "Sort code 12-34-56"]).save(self.src)
+        g = FakeGuard(values=[{"text": "Katie Edwards", "type": "name"}])
+        rep = protect(self.src, self.out, self.rep, default_plan(), guard=g)
+        decide = next(s for s in rep["stages"] if s["name"] == "decide")
+        self.assertTrue(decide["answer"]["word_list_would_refuse"])  # day 2 would have refused ...
+        self.assertFalse(rep["fail_safe"]["whole_black"])  # ... day 3 does not
+
+    def test_no_guard_means_whole_black(self):
+        rep = protect(self.src, self.out, self.rep)
+        self.assertTrue(rep["fail_safe"]["whole_black"])
+        self.assertIn("no models available", rep["fail_safe"]["reasons"][0])
+
     def test_blank_picture_is_not_sure_at_read(self):
         Image.new("RGB", (400, 300), "white").save(self.src)
-        rep = protect(self.src, self.out, self.rep, with_stubs_sure(default_plan()))
+        rep = protect(self.src, self.out, self.rep, default_plan(), guard=FakeGuard())
         self.assertTrue(rep["fail_safe"]["whole_black"])
         self.assertEqual(next(s for s in rep["stages"] if s["name"] == "read")["status"], "not_sure")
-
-    def test_product_default_with_the_day2_stubs_is_still_whole_black(self):
-        rep = protect(self.src, self.out, self.rep)  # faces is still a stub that says not sure
-        self.assertTrue(rep["fail_safe"]["whole_black"])
-        self.assertEqual(np.asarray(Image.open(self.out)).max(), 0)
-        self.assertEqual(rep["mode"], "product")
 
     def test_ablation_is_labelled_and_covers_without_the_alarms(self):
         draw(["Dear Katie Edwards", "Sort code 12-34-56"]).save(self.src)

@@ -19,3 +19,5 @@ faces_hard/images/
 faces_hard/images_raw/
 faces_hard/.check_tmp/
 *.egg-info/
+results/pg6/debug/
+results/pg5/debug/

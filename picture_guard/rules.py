@@ -26,6 +26,7 @@ class Finding:
     first: int  # word index range inside that line, inclusive
     last: int
     box: tuple  # union of the word boxes
+    text: str = ""  # the words as read; stays in memory, never written to a report
 
 
 @dataclass
@@ -262,7 +263,8 @@ def find_values(lines: list[list[Word]]) -> tuple[list[Finding], list[Line]]:
                 continue
             bx = [line.words[k].box for k in idx]
             found.append(Finding(ty, rule, li, idx[0], idx[-1],
-                                 (min(x[0] for x in bx), min(x[1] for x in bx), max(x[2] for x in bx), max(x[3] for x in bx))))
+                                 (min(x[0] for x in bx), min(x[1] for x in bx), max(x[2] for x in bx), max(x[3] for x in bx)),
+                                 " ".join(line.words[k].text for k in idx)))
     return found, made
 
 

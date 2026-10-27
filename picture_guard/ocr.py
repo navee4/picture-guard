@@ -60,3 +60,20 @@ def group_lines(words: list[Word]) -> list[list[Word]]:
         by.setdefault(w.line, []).append(w)
     lines = [sorted(v, key=lambda w: w.box[0]) for v in by.values()]
     return sorted(lines, key=lambda ln: (min(w.box[1] for w in ln), ln[0].box[0]))
+
+
+SCALES = (1, 2)  # the second read is on a picture enlarged 2x, which reads small or faint text a plain read misses
+
+
+def read_passes(image: Image.Image, timeout_s: float = 60.0) -> dict:
+    """{"1x-psm6": words, "1x-psm11": words, "2x-psm6": ..., "2x-psm11": ...}. Boxes of the 2x reads are scaled back to the picture."""
+    out = {}
+    for sc in SCALES:
+        img = image if sc == 1 else image.resize((image.width * sc, image.height * sc), Image.LANCZOS)
+        for psm in PSMS:
+            words = read_words(img, psm, timeout_s)
+            if sc != 1:
+                for w in words:
+                    w.box = tuple(int(round(v / sc)) for v in w.box)
+            out[f"{sc}x-psm{psm}"] = words
+    return out

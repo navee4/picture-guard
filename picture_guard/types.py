@@ -22,6 +22,8 @@ class Context:
     results: dict = field(default_factory=dict)
     fail_safe: bool = False
     safe_image: object = None  # PIL image produced by black_out; checked by check_safe; written by the pipeline
+    guard: object = None  # the Modal session (remote.client.ModalGuard or a test double); None means no models are available
+    options: dict = field(default_factory=dict)  # e.g. {"check_glimmer": True}
     ablation: bool = False  # measurement only: stages that are not built answer "ok, nothing found". NEVER the product default.
     data: dict = field(default_factory=dict)  # working data between stages (OCR words, findings). Never written to report.json: it holds private text.
     boxes: list = field(default_factory=list)  # [x0, y0, x1, y1] to fill, from locate and faces when they are sure
