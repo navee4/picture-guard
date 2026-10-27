@@ -1,2 +1,5 @@
 {"run": "smoke", "seconds": 341.0, "usd": 0.2628, "note": "session wall time (upper bound: includes image build and cold start)"}
 {"run": "eval-testset-dev", "seconds": 157.7, "usd": 0.1215, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "eval-testset-dev", "seconds": 2423.3, "usd": 1.8677, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "eval-faces-dev", "seconds": 581.8, "usd": 0.4484, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "eval-faces_hard-dev", "seconds": 399.5, "usd": 0.3079, "note": "session wall time (upper bound: includes image build and cold start)"}

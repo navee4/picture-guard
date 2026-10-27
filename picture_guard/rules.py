@@ -232,7 +232,7 @@ def _line_findings(line: Line, prev: Line | None) -> list[tuple]:
     # the word before it (when that word is letters, possibly with a trailing dot) and a dot-less domain takes the next word.
     for i, (a, b) in enumerate(toks):
         tok = t[a:b]
-        if "@" not in tok or any(a < ea and b > sa for _, _, sa, ea in out):
+        if not re.search(r"[A-Za-z0-9]@[A-Za-z0-9]", tok) or any(a < ea and b > sa for _, _, sa, ea in out):  # a bare "@" (an icon, an avatar) is not an address
             continue
         lo, hi = a, b
         if i > 0 and re.fullmatch(r"[A-Za-z0-9._-]{2,}", t[toks[i - 1][0]:toks[i - 1][1]]):

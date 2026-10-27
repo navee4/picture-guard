@@ -1,4 +1,4 @@
-"""Read the words and their exact spots with Tesseract (design step 1). Four passes: a plain read and a 2x enlarged read,
+"""Read the words and their exact spots with Tesseract (design step 1). Six passes: a plain read, a 2x enlarged read and a 2x contrast-stretched sharpened read,
 each as block text (psm 6) and sparse text (psm 11). The enlarged read catches small or faint text the plain read misses.
 
 Not sure when Tesseract reads almost nothing (fewer than MIN_WORDS words at confidence 30 or more): then it cannot

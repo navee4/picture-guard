@@ -151,3 +151,9 @@ class Layout(unittest.TestCase):
         self.assertEqual(types("Email on file: jennifer. lewis@example.org"), ["email"])
         self.assertEqual(types("email me at charlie fisher@mail test"), ["email"])
         self.assertEqual(types("meet me at noon"), [])
+
+
+class StrayAt(unittest.TestCase):
+    def test_a_bare_at_sign_is_not_an_email(self):
+        self.assertEqual(types("@ Iwill be there"), [])
+        self.assertEqual(types("see you ,@) soon"), [])
