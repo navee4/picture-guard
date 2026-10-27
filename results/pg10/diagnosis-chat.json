@@ -1,0 +1,1299 @@
+{
+ "set": "testset",
+ "type": "chat",
+ "pictures": 24,
+ "unlocated_values": 49,
+ "cause_counts": {
+  "A": 4,
+  "B1": 22,
+  "B2": 21,
+  "C": 1,
+  "F": 1
+ },
+ "pictures_by_cause_set": {
+  "B2": 4,
+  "B1 + B2": 5,
+  "A + B2": 1,
+  "B1": 10,
+  "B1 + C": 1,
+  "A + B1 + B2": 2,
+  "B1 + B2 + F": 1
+ },
+ "rows": [
+  {
+   "file": "chat_000.png",
+   "glimmer_type": "card_number",
+   "variety": [
+    "font:trebuchet",
+    "scale:1.1",
+    "rotate:1.81",
+    "phone_blur",
+    "png"
+   ],
+   "planted": true,
+   "planted_type": "card_number",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 10,
+   "best_read_similarity": 0.214,
+   "height_px": 29,
+   "contrast": 0.37,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "B2: read as something else (similarity under 0.5)"
+  },
+  {
+   "file": "chat_001.png",
+   "glimmer_type": "id_number",
+   "variety": [
+    "font:courier",
+    "scale:0.9",
+    "scan_noise",
+    "png"
+   ],
+   "planted": true,
+   "planted_type": "id_number",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 3,
+   "best_read_similarity": 0.0,
+   "height_px": 13,
+   "contrast": 0.51,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "B2: read as something else (similarity under 0.5)"
+  },
+  {
+   "file": "chat_001.png",
+   "glimmer_type": "sort_code",
+   "variety": [
+    "font:courier",
+    "scale:0.9",
+    "scan_noise",
+    "png"
+   ],
+   "planted": true,
+   "planted_type": "sort_code",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 13,
+   "best_read_similarity": 0.6,
+   "height_px": 13,
+   "contrast": 0.69,
+   "background": "dark",
+   "bg_colour_bin": "dark",
+   "cause": "B1: read with errors (similarity 0.5-0.85)"
+  },
+  {
+   "file": "chat_001.png",
+   "glimmer_type": "account_number",
+   "variety": [
+    "font:courier",
+    "scale:0.9",
+    "scan_noise",
+    "png"
+   ],
+   "planted": true,
+   "planted_type": "account_number",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 16,
+   "best_read_similarity": 0.769,
+   "height_px": 13,
+   "contrast": 0.72,
+   "background": "dark",
+   "bg_colour_bin": "dark",
+   "cause": "B1: read with errors (similarity 0.5-0.85)"
+  },
+  {
+   "file": "chat_001.png",
+   "glimmer_type": "ni_number",
+   "variety": [
+    "font:courier",
+    "scale:0.9",
+    "scan_noise",
+    "png"
+   ],
+   "planted": true,
+   "planted_type": "ni_number",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 8,
+   "best_read_similarity": 0.167,
+   "height_px": 13,
+   "contrast": 0.48,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "B2: read as something else (similarity under 0.5)"
+  },
+  {
+   "file": "chat_002.png",
+   "glimmer_type": "sort_code",
+   "variety": [
+    "font:arial",
+    "scale:1.0",
+    "rotate:2.41",
+    "png"
+   ],
+   "planted": true,
+   "planted_type": "sort_code",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 11,
+   "best_read_similarity": 0.667,
+   "height_px": 19,
+   "contrast": 0.79,
+   "background": "dark",
+   "bg_colour_bin": "dark",
+   "cause": "B1: read with errors (similarity 0.5-0.85)"
+  },
+  {
+   "file": "chat_002.png",
+   "glimmer_type": "card_number",
+   "variety": [
+    "font:arial",
+    "scale:1.0",
+    "rotate:2.41",
+    "png"
+   ],
+   "planted": true,
+   "planted_type": "card_number",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 2,
+   "best_read_similarity": 0.111,
+   "height_px": 24,
+   "contrast": 0.5,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "B2: read as something else (similarity under 0.5)"
+  },
+  {
+   "file": "chat_003.jpg",
+   "glimmer_type": "card_number",
+   "variety": [
+    "font:verdana",
+    "scale:0.9",
+    "scan_noise",
+    "jpg_q75"
+   ],
+   "planted": true,
+   "planted_type": "card_number",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 2,
+   "best_read_similarity": 0.0,
+   "height_px": 15,
+   "contrast": 0.52,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "B2: read as something else (similarity under 0.5)"
+  },
+  {
+   "file": "chat_003.jpg",
+   "glimmer_type": "email",
+   "variety": [
+    "font:verdana",
+    "scale:0.9",
+    "scan_noise",
+    "jpg_q75"
+   ],
+   "planted": true,
+   "planted_type": "email",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 2,
+   "best_read_similarity": 0.231,
+   "height_px": 19,
+   "contrast": 0.49,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "B2: read as something else (similarity under 0.5)"
+  },
+  {
+   "file": "chat_004.png",
+   "glimmer_type": "sort_code",
+   "variety": [
+    "font:georgia",
+    "scale:0.9",
+    "png"
+   ],
+   "planted": true,
+   "planted_type": "sort_code",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 8,
+   "best_read_similarity": 0.632,
+   "height_px": 15,
+   "contrast": 0.88,
+   "background": "light",
+   "bg_colour_bin": "white",
+   "cause": "B1: read with errors (similarity 0.5-0.85)"
+  },
+  {
+   "file": "chat_009.png",
+   "glimmer_type": "sort_code",
+   "variety": [
+    "font:courier",
+    "scale:0.9",
+    "scan_noise",
+    "png"
+   ],
+   "planted": true,
+   "planted_type": "sort_code",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 6,
+   "best_read_similarity": 0.632,
+   "height_px": 13,
+   "contrast": 0.45,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "B1: read with errors (similarity 0.5-0.85)"
+  },
+  {
+   "file": "chat_013.jpg",
+   "glimmer_type": "sort_code",
+   "variety": [
+    "font:arial",
+    "scale:1.0",
+    "low_contrast",
+    "phone_blur",
+    "jpg_q75"
+   ],
+   "planted": true,
+   "planted_type": "sort_code",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 8,
+   "best_read_similarity": 0.632,
+   "height_px": 22,
+   "contrast": 0.15,
+   "background": "light",
+   "bg_colour_bin": "grey",
+   "cause": "B1: read with errors (similarity 0.5-0.85)"
+  },
+  {
+   "file": "chat_014.png",
+   "glimmer_type": "sort_code",
+   "variety": [
+    "font:arial",
+    "scale:1.1",
+    "png"
+   ],
+   "planted": true,
+   "planted_type": "sort_code",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 7,
+   "best_read_similarity": 0.632,
+   "height_px": 18,
+   "contrast": 0.78,
+   "background": "dark",
+   "bg_colour_bin": "dark",
+   "cause": "B1: read with errors (similarity 0.5-0.85)"
+  },
+  {
+   "file": "chat_015.png",
+   "glimmer_type": "card_number",
+   "variety": [
+    "font:trebuchet",
+    "scale:1.1",
+    "rotate:1.21",
+    "phone_blur",
+    "png"
+   ],
+   "planted": true,
+   "planted_type": "card_number",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 4,
+   "best_read_similarity": 0.0,
+   "height_px": 31,
+   "contrast": 0.21,
+   "background": "light",
+   "bg_colour_bin": "grey",
+   "cause": "B2: read as something else (similarity under 0.5)"
+  },
+  {
+   "file": "chat_015.png",
+   "glimmer_type": "sort_code",
+   "variety": [
+    "font:trebuchet",
+    "scale:1.1",
+    "rotate:1.21",
+    "phone_blur",
+    "png"
+   ],
+   "planted": true,
+   "planted_type": "sort_code",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 6,
+   "best_read_similarity": 0.667,
+   "height_px": 28,
+   "contrast": 0.33,
+   "background": "dark",
+   "bg_colour_bin": "dark",
+   "cause": "B1: read with errors (similarity 0.5-0.85)"
+  },
+  {
+   "file": "chat_017.jpg",
+   "glimmer_type": "card_number",
+   "variety": [
+    "font:courier",
+    "scale:1.0",
+    "phone_blur",
+    "jpg_q75"
+   ],
+   "planted": true,
+   "planted_type": "card_number",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 1,
+   "best_read_similarity": 0.0,
+   "height_px": 19,
+   "contrast": 0.22,
+   "background": "light",
+   "bg_colour_bin": "grey",
+   "cause": "B2: read as something else (similarity under 0.5)"
+  },
+  {
+   "file": "chat_017.jpg",
+   "glimmer_type": "id_number",
+   "variety": [
+    "font:courier",
+    "scale:1.0",
+    "phone_blur",
+    "jpg_q75"
+   ],
+   "planted": true,
+   "planted_type": "id_number",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 1,
+   "best_read_similarity": 0.0,
+   "height_px": 19,
+   "contrast": 0.24,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "B2: read as something else (similarity under 0.5)"
+  },
+  {
+   "file": "chat_017.jpg",
+   "glimmer_type": "sort_code",
+   "variety": [
+    "font:courier",
+    "scale:1.0",
+    "phone_blur",
+    "jpg_q75"
+   ],
+   "planted": true,
+   "planted_type": "sort_code",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 0,
+   "best_read_similarity": 0.0,
+   "height_px": 19,
+   "contrast": 0.21,
+   "background": "light",
+   "bg_colour_bin": "grey",
+   "cause": "A: Tesseract reads no word at the value"
+  },
+  {
+   "file": "chat_017.jpg",
+   "glimmer_type": "account_number",
+   "variety": [
+    "font:courier",
+    "scale:1.0",
+    "phone_blur",
+    "jpg_q75"
+   ],
+   "planted": true,
+   "planted_type": "account_number",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 0,
+   "best_read_similarity": 0.0,
+   "height_px": 19,
+   "contrast": 0.23,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "A: Tesseract reads no word at the value"
+  },
+  {
+   "file": "chat_018.png",
+   "glimmer_type": "id_number",
+   "variety": [
+    "font:courier",
+    "scale:1.1",
+    "rotate:1.68",
+    "scan_noise",
+    "low_contrast",
+    "png"
+   ],
+   "planted": true,
+   "planted_type": "id_number",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 7,
+   "best_read_similarity": 0.211,
+   "height_px": 20,
+   "contrast": 0.33,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "B2: read as something else (similarity under 0.5)"
+  },
+  {
+   "file": "chat_018.png",
+   "glimmer_type": "iban",
+   "variety": [
+    "font:courier",
+    "scale:1.1",
+    "rotate:1.68",
+    "scan_noise",
+    "low_contrast",
+    "png"
+   ],
+   "planted": true,
+   "planted_type": "iban",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 50,
+   "best_read_similarity": 0.667,
+   "height_px": 25,
+   "contrast": 0.3,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "B1: read with errors (similarity 0.5-0.85)"
+  },
+  {
+   "file": "chat_018.png",
+   "glimmer_type": "phone",
+   "variety": [
+    "font:courier",
+    "scale:1.1",
+    "rotate:1.68",
+    "scan_noise",
+    "low_contrast",
+    "png"
+   ],
+   "planted": true,
+   "planted_type": "phone",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 8,
+   "best_read_similarity": 0.375,
+   "height_px": 20,
+   "contrast": 0.32,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "B2: read as something else (similarity under 0.5)"
+  },
+  {
+   "file": "chat_019.jpg",
+   "glimmer_type": "sort_code",
+   "variety": [
+    "font:trebuchet",
+    "scale:0.9",
+    "rotate:1.21",
+    "scan_noise",
+    "low_contrast",
+    "jpg_q55"
+   ],
+   "planted": true,
+   "planted_type": "sort_code",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 5,
+   "best_read_similarity": 0.632,
+   "height_px": 18,
+   "contrast": 0.49,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "B1: read with errors (similarity 0.5-0.85)"
+  },
+  {
+   "file": "chat_020.jpg",
+   "glimmer_type": "name",
+   "variety": [
+    "font:georgia",
+    "scale:1.0",
+    "scan_noise",
+    "low_contrast",
+    "phone_blur",
+    "jpg_q75"
+   ],
+   "planted": true,
+   "planted_type": "name",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 32,
+   "best_read_similarity": 0.696,
+   "height_px": 25,
+   "contrast": 0.4,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "B1: read with errors (similarity 0.5-0.85)"
+  },
+  {
+   "file": "chat_020.jpg",
+   "glimmer_type": "email",
+   "variety": [
+    "font:georgia",
+    "scale:1.0",
+    "scan_noise",
+    "low_contrast",
+    "phone_blur",
+    "jpg_q75"
+   ],
+   "planted": true,
+   "planted_type": "email",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 47,
+   "best_read_similarity": 0.323,
+   "height_px": 27,
+   "contrast": 0.19,
+   "background": "light",
+   "bg_colour_bin": "grey",
+   "cause": "B2: read as something else (similarity under 0.5)"
+  },
+  {
+   "file": "chat_020.jpg",
+   "glimmer_type": "id_number",
+   "variety": [
+    "font:georgia",
+    "scale:1.0",
+    "scan_noise",
+    "low_contrast",
+    "phone_blur",
+    "jpg_q75"
+   ],
+   "planted": true,
+   "planted_type": "id_number",
+   "glimmer_to_planted_similarity": 0.889,
+   "words_read_near_box": 18,
+   "best_read_similarity": 0.333,
+   "height_px": 25,
+   "contrast": 0.29,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "B2: read as something else (similarity under 0.5)",
+   "glimmer_misread_planted": true
+  },
+  {
+   "file": "chat_020.jpg",
+   "glimmer_type": "ni_number",
+   "variety": [
+    "font:georgia",
+    "scale:1.0",
+    "scan_noise",
+    "low_contrast",
+    "phone_blur",
+    "jpg_q75"
+   ],
+   "planted": false,
+   "cause": "F: Glimmer lists something that is not on the picture's key (misread or invented)",
+   "best_similarity_to_any_span": 0.778
+  },
+  {
+   "file": "chat_021.png",
+   "glimmer_type": "id_number",
+   "variety": [
+    "font:courier",
+    "scale:1.0",
+    "png"
+   ],
+   "planted": true,
+   "planted_type": "id_number",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 4,
+   "best_read_similarity": 0.2,
+   "height_px": 15,
+   "contrast": 0.41,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "B2: read as something else (similarity under 0.5)"
+  },
+  {
+   "file": "chat_021.png",
+   "glimmer_type": "address",
+   "variety": [
+    "font:courier",
+    "scale:1.0",
+    "png"
+   ],
+   "planted": true,
+   "planted_type": "address",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 8,
+   "best_read_similarity": 0.564,
+   "height_px": 18,
+   "contrast": 0.37,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "B1: read with errors (similarity 0.5-0.85)"
+  },
+  {
+   "file": "chat_021.png",
+   "glimmer_type": "postcode",
+   "variety": [
+    "font:courier",
+    "scale:1.0",
+    "png"
+   ],
+   "planted": true,
+   "planted_type": "address",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 8,
+   "best_read_similarity": 0.564,
+   "height_px": 18,
+   "contrast": 0.37,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "B1: read with errors (similarity 0.5-0.85)"
+  },
+  {
+   "file": "chat_022.jpg",
+   "glimmer_type": "postcode",
+   "variety": [
+    "font:georgia",
+    "scale:1.1",
+    "scan_noise",
+    "low_contrast",
+    "jpg_q55"
+   ],
+   "planted": true,
+   "planted_type": "address",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 34,
+   "best_read_similarity": 0.944,
+   "height_px": 22,
+   "contrast": 0.34,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "C: words are read and look right but matching still fails"
+  },
+  {
+   "file": "chat_022.jpg",
+   "glimmer_type": "sort_code",
+   "variety": [
+    "font:georgia",
+    "scale:1.1",
+    "scan_noise",
+    "low_contrast",
+    "jpg_q55"
+   ],
+   "planted": true,
+   "planted_type": "sort_code",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 8,
+   "best_read_similarity": 0.8,
+   "height_px": 20,
+   "contrast": 0.33,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "B1: read with errors (similarity 0.5-0.85)"
+  },
+  {
+   "file": "chat_025.jpg",
+   "glimmer_type": "sort_code",
+   "variety": [
+    "font:georgia",
+    "scale:1.0",
+    "rotate:2.16",
+    "phone_blur",
+    "jpg_q55"
+   ],
+   "planted": true,
+   "planted_type": "sort_code",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 8,
+   "best_read_similarity": 0.8,
+   "height_px": 25,
+   "contrast": 0.21,
+   "background": "light",
+   "bg_colour_bin": "grey",
+   "cause": "B1: read with errors (similarity 0.5-0.85)"
+  },
+  {
+   "file": "chat_026.png",
+   "glimmer_type": "sort_code",
+   "variety": [
+    "font:verdana",
+    "scale:0.9",
+    "rotate:-1.43",
+    "scan_noise",
+    "png"
+   ],
+   "planted": true,
+   "planted_type": "sort_code",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 8,
+   "best_read_similarity": 0.632,
+   "height_px": 18,
+   "contrast": 0.8,
+   "background": "light",
+   "bg_colour_bin": "white",
+   "cause": "B1: read with errors (similarity 0.5-0.85)"
+  },
+  {
+   "file": "chat_027.jpg",
+   "glimmer_type": "sort_code",
+   "variety": [
+    "font:courier",
+    "scale:1.0",
+    "rotate:-2.83",
+    "jpg_q55"
+   ],
+   "planted": true,
+   "planted_type": "sort_code",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 8,
+   "best_read_similarity": 0.526,
+   "height_px": 20,
+   "contrast": 0.57,
+   "background": "light",
+   "bg_colour_bin": "white",
+   "cause": "B1: read with errors (similarity 0.5-0.85)"
+  },
+  {
+   "file": "chat_030.png",
+   "glimmer_type": "sort_code",
+   "variety": [
+    "font:courier",
+    "scale:1.0",
+    "scan_noise",
+    "png"
+   ],
+   "planted": true,
+   "planted_type": "sort_code",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 8,
+   "best_read_similarity": 0.632,
+   "height_px": 15,
+   "contrast": 0.68,
+   "background": "light",
+   "bg_colour_bin": "white",
+   "cause": "B1: read with errors (similarity 0.5-0.85)"
+  },
+  {
+   "file": "chat_031.jpg",
+   "glimmer_type": "sort_code",
+   "variety": [
+    "font:courier",
+    "scale:1.0",
+    "scan_noise",
+    "jpg_q90"
+   ],
+   "planted": true,
+   "planted_type": "sort_code",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 2,
+   "best_read_similarity": 0.0,
+   "height_px": 15,
+   "contrast": 0.43,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "B2: read as something else (similarity under 0.5)"
+  },
+  {
+   "file": "chat_031.jpg",
+   "glimmer_type": "account_number",
+   "variety": [
+    "font:courier",
+    "scale:1.0",
+    "scan_noise",
+    "jpg_q90"
+   ],
+   "planted": true,
+   "planted_type": "account_number",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 0,
+   "best_read_similarity": 0.0,
+   "height_px": 15,
+   "contrast": 0.46,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "A: Tesseract reads no word at the value"
+  },
+  {
+   "file": "chat_031.jpg",
+   "glimmer_type": "postcode",
+   "variety": [
+    "font:courier",
+    "scale:1.0",
+    "scan_noise",
+    "jpg_q90"
+   ],
+   "planted": true,
+   "planted_type": "address",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 28,
+   "best_read_similarity": 0.774,
+   "height_px": 18,
+   "contrast": 0.63,
+   "background": "dark",
+   "bg_colour_bin": "dark",
+   "cause": "B1: read with errors (similarity 0.5-0.85)"
+  },
+  {
+   "file": "chat_031.jpg",
+   "glimmer_type": "dob",
+   "variety": [
+    "font:courier",
+    "scale:1.0",
+    "scan_noise",
+    "jpg_q90"
+   ],
+   "planted": true,
+   "planted_type": "dob",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 1,
+   "best_read_similarity": 0.526,
+   "height_px": 15,
+   "contrast": 0.45,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "B1: read with errors (similarity 0.5-0.85)"
+  },
+  {
+   "file": "chat_032.jpg",
+   "glimmer_type": "iban",
+   "variety": [
+    "font:times",
+    "scale:1.0",
+    "rotate:1.28",
+    "low_contrast",
+    "jpg_q75"
+   ],
+   "planted": true,
+   "planted_type": "iban",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 0,
+   "best_read_similarity": 0.0,
+   "height_px": 21,
+   "contrast": 0.28,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "A: Tesseract reads no word at the value"
+  },
+  {
+   "file": "chat_032.jpg",
+   "glimmer_type": "sort_code",
+   "variety": [
+    "font:times",
+    "scale:1.0",
+    "rotate:1.28",
+    "low_contrast",
+    "jpg_q75"
+   ],
+   "planted": true,
+   "planted_type": "sort_code",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 5,
+   "best_read_similarity": 0.632,
+   "height_px": 18,
+   "contrast": 0.39,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "B1: read with errors (similarity 0.5-0.85)"
+  },
+  {
+   "file": "chat_032.jpg",
+   "glimmer_type": "phone",
+   "variety": [
+    "font:times",
+    "scale:1.0",
+    "rotate:1.28",
+    "low_contrast",
+    "jpg_q75"
+   ],
+   "planted": true,
+   "planted_type": "phone",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 3,
+   "best_read_similarity": 0.286,
+   "height_px": 18,
+   "contrast": 0.29,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "B2: read as something else (similarity under 0.5)"
+  },
+  {
+   "file": "chat_034.jpg",
+   "glimmer_type": "ni_number",
+   "variety": [
+    "font:times",
+    "scale:1.0",
+    "phone_blur",
+    "jpg_q75"
+   ],
+   "planted": true,
+   "planted_type": "ni_number",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 2,
+   "best_read_similarity": 0.0,
+   "height_px": 23,
+   "contrast": 0.16,
+   "background": "light",
+   "bg_colour_bin": "grey",
+   "cause": "B2: read as something else (similarity under 0.5)"
+  },
+  {
+   "file": "chat_034.jpg",
+   "glimmer_type": "address",
+   "variety": [
+    "font:times",
+    "scale:1.0",
+    "phone_blur",
+    "jpg_q75"
+   ],
+   "planted": true,
+   "planted_type": "address",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 5,
+   "best_read_similarity": 0.143,
+   "height_px": 28,
+   "contrast": 0.17,
+   "background": "light",
+   "bg_colour_bin": "grey",
+   "cause": "B2: read as something else (similarity under 0.5)"
+  },
+  {
+   "file": "chat_034.jpg",
+   "glimmer_type": "postcode",
+   "variety": [
+    "font:times",
+    "scale:1.0",
+    "phone_blur",
+    "jpg_q75"
+   ],
+   "planted": true,
+   "planted_type": "address",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 5,
+   "best_read_similarity": 0.143,
+   "height_px": 28,
+   "contrast": 0.17,
+   "background": "light",
+   "bg_colour_bin": "grey",
+   "cause": "B2: read as something else (similarity under 0.5)"
+  },
+  {
+   "file": "chat_035.png",
+   "glimmer_type": "sort_code",
+   "variety": [
+    "font:verdana",
+    "scale:0.9",
+    "rotate:-2.92",
+    "png"
+   ],
+   "planted": true,
+   "planted_type": "sort_code",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 4,
+   "best_read_similarity": 0.632,
+   "height_px": 20,
+   "contrast": 0.42,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "B1: read with errors (similarity 0.5-0.85)"
+  },
+  {
+   "file": "chat_036.jpg",
+   "glimmer_type": "id_number",
+   "variety": [
+    "font:courier",
+    "scale:1.0",
+    "rotate:1.09",
+    "scan_noise",
+    "jpg_q55"
+   ],
+   "planted": true,
+   "planted_type": "id_number",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 1,
+   "best_read_similarity": 0.0,
+   "height_px": 18,
+   "contrast": 0.44,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "B2: read as something else (similarity under 0.5)"
+  },
+  {
+   "file": "chat_036.jpg",
+   "glimmer_type": "phone",
+   "variety": [
+    "font:courier",
+    "scale:1.0",
+    "rotate:1.09",
+    "scan_noise",
+    "jpg_q55"
+   ],
+   "planted": true,
+   "planted_type": "phone",
+   "glimmer_to_planted_similarity": 1.0,
+   "words_read_near_box": 2,
+   "best_read_similarity": 0.0,
+   "height_px": 19,
+   "contrast": 0.41,
+   "background": "light",
+   "bg_colour_bin": "colour",
+   "cause": "B2: read as something else (similarity under 0.5)"
+  }
+ ],
+ "per_picture": [
+  {
+   "file": "chat_000.png",
+   "unlocated_values": 1,
+   "whole_black": true,
+   "variety": [
+    "font:trebuchet",
+    "scale:1.1",
+    "rotate:1.81",
+    "phone_blur",
+    "png"
+   ]
+  },
+  {
+   "file": "chat_001.png",
+   "unlocated_values": 4,
+   "whole_black": true,
+   "variety": [
+    "font:courier",
+    "scale:0.9",
+    "scan_noise",
+    "png"
+   ]
+  },
+  {
+   "file": "chat_002.png",
+   "unlocated_values": 2,
+   "whole_black": true,
+   "variety": [
+    "font:arial",
+    "scale:1.0",
+    "rotate:2.41",
+    "png"
+   ]
+  },
+  {
+   "file": "chat_003.jpg",
+   "unlocated_values": 2,
+   "whole_black": true,
+   "variety": [
+    "font:verdana",
+    "scale:0.9",
+    "scan_noise",
+    "jpg_q75"
+   ]
+  },
+  {
+   "file": "chat_004.png",
+   "unlocated_values": 1,
+   "whole_black": true,
+   "variety": [
+    "font:georgia",
+    "scale:0.9",
+    "png"
+   ]
+  },
+  {
+   "file": "chat_009.png",
+   "unlocated_values": 1,
+   "whole_black": true,
+   "variety": [
+    "font:courier",
+    "scale:0.9",
+    "scan_noise",
+    "png"
+   ]
+  },
+  {
+   "file": "chat_013.jpg",
+   "unlocated_values": 1,
+   "whole_black": true,
+   "variety": [
+    "font:arial",
+    "scale:1.0",
+    "low_contrast",
+    "phone_blur",
+    "jpg_q75"
+   ]
+  },
+  {
+   "file": "chat_014.png",
+   "unlocated_values": 1,
+   "whole_black": true,
+   "variety": [
+    "font:arial",
+    "scale:1.1",
+    "png"
+   ]
+  },
+  {
+   "file": "chat_015.png",
+   "unlocated_values": 2,
+   "whole_black": true,
+   "variety": [
+    "font:trebuchet",
+    "scale:1.1",
+    "rotate:1.21",
+    "phone_blur",
+    "png"
+   ]
+  },
+  {
+   "file": "chat_017.jpg",
+   "unlocated_values": 4,
+   "whole_black": true,
+   "variety": [
+    "font:courier",
+    "scale:1.0",
+    "phone_blur",
+    "jpg_q75"
+   ]
+  },
+  {
+   "file": "chat_018.png",
+   "unlocated_values": 3,
+   "whole_black": true,
+   "variety": [
+    "font:courier",
+    "scale:1.1",
+    "rotate:1.68",
+    "scan_noise",
+    "low_contrast",
+    "png"
+   ]
+  },
+  {
+   "file": "chat_019.jpg",
+   "unlocated_values": 1,
+   "whole_black": true,
+   "variety": [
+    "font:trebuchet",
+    "scale:0.9",
+    "rotate:1.21",
+    "scan_noise",
+    "low_contrast",
+    "jpg_q55"
+   ]
+  },
+  {
+   "file": "chat_020.jpg",
+   "unlocated_values": 4,
+   "whole_black": true,
+   "variety": [
+    "font:georgia",
+    "scale:1.0",
+    "scan_noise",
+    "low_contrast",
+    "phone_blur",
+    "jpg_q75"
+   ]
+  },
+  {
+   "file": "chat_021.png",
+   "unlocated_values": 3,
+   "whole_black": true,
+   "variety": [
+    "font:courier",
+    "scale:1.0",
+    "png"
+   ]
+  },
+  {
+   "file": "chat_022.jpg",
+   "unlocated_values": 2,
+   "whole_black": true,
+   "variety": [
+    "font:georgia",
+    "scale:1.1",
+    "scan_noise",
+    "low_contrast",
+    "jpg_q55"
+   ]
+  },
+  {
+   "file": "chat_025.jpg",
+   "unlocated_values": 1,
+   "whole_black": true,
+   "variety": [
+    "font:georgia",
+    "scale:1.0",
+    "rotate:2.16",
+    "phone_blur",
+    "jpg_q55"
+   ]
+  },
+  {
+   "file": "chat_026.png",
+   "unlocated_values": 1,
+   "whole_black": true,
+   "variety": [
+    "font:verdana",
+    "scale:0.9",
+    "rotate:-1.43",
+    "scan_noise",
+    "png"
+   ]
+  },
+  {
+   "file": "chat_027.jpg",
+   "unlocated_values": 1,
+   "whole_black": true,
+   "variety": [
+    "font:courier",
+    "scale:1.0",
+    "rotate:-2.83",
+    "jpg_q55"
+   ]
+  },
+  {
+   "file": "chat_030.png",
+   "unlocated_values": 1,
+   "whole_black": true,
+   "variety": [
+    "font:courier",
+    "scale:1.0",
+    "scan_noise",
+    "png"
+   ]
+  },
+  {
+   "file": "chat_031.jpg",
+   "unlocated_values": 4,
+   "whole_black": true,
+   "variety": [
+    "font:courier",
+    "scale:1.0",
+    "scan_noise",
+    "jpg_q90"
+   ]
+  },
+  {
+   "file": "chat_032.jpg",
+   "unlocated_values": 3,
+   "whole_black": true,
+   "variety": [
+    "font:times",
+    "scale:1.0",
+    "rotate:1.28",
+    "low_contrast",
+    "jpg_q75"
+   ]
+  },
+  {
+   "file": "chat_034.jpg",
+   "unlocated_values": 3,
+   "whole_black": true,
+   "variety": [
+    "font:times",
+    "scale:1.0",
+    "phone_blur",
+    "jpg_q75"
+   ]
+  },
+  {
+   "file": "chat_035.png",
+   "unlocated_values": 1,
+   "whole_black": true,
+   "variety": [
+    "font:verdana",
+    "scale:0.9",
+    "rotate:-2.92",
+    "png"
+   ]
+  },
+  {
+   "file": "chat_036.jpg",
+   "unlocated_values": 2,
+   "whole_black": true,
+   "variety": [
+    "font:courier",
+    "scale:1.0",
+    "rotate:1.09",
+    "scan_noise",
+    "jpg_q55"
+   ]
+  }
+ ]
+}

@@ -19,3 +19,9 @@ invloc testset exit 0
 inv,loc testset exit 0
 big3 testset exit 0
 inv,loc,big3 testset exit 0
+loc,dig faces exit 0
+loc,dig faces_hard exit 0
+loc,dig testset exit 0
+loc,dig,pol,digpol faces exit 0
+loc,dig,pol,digpol faces_hard exit 0
+loc,dig,pol,digpol testset exit 0

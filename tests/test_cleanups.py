@@ -59,7 +59,7 @@ class Passes(unittest.TestCase):
         self.assertNotIn("inv-psm6", words)
 
     def test_default_cleanup_is_the_one_measured_on_day_6(self):
-        self.assertEqual(ocr.DEFAULT_CLEANUPS, ("loc",))
+        self.assertEqual(ocr.DEFAULT_CLEANUPS, ("loc", "dig"))
 
     def test_strict_readback_reads_light_on_dark(self):
         import tempfile
@@ -71,3 +71,35 @@ class Passes(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+@needs_tesseract
+class DigitsAndMatching(unittest.TestCase):
+    def test_digits_reader_adds_only_digit_characters(self):
+        im = Image.new("RGB", (900, 200), "white")
+        ImageDraw.Draw(im).text((30, 60), "card is 4000 0566 5566 5556", fill="black", font=ImageFont.load_default(size=40))
+        words = ocr.read_passes(im, cleanups=("dig",))
+        dig = [w.text for k, ws in words.items() if k.startswith("dig-") for w in ws]
+        self.assertTrue(dig)
+        self.assertTrue(all(set(t) <= set(ocr.DIGIT_CHARS) for t in dig))
+        self.assertIn("4000", " ".join(dig))
+
+    def test_polarity_pass_flips_dark_tiles_only(self):
+        im = Image.new("RGB", (256, 128), "white")
+        d = ImageDraw.Draw(im)
+        d.rectangle([128, 0, 256, 128], fill=(30, 60, 160))
+        d.text((140, 40), "Hello", fill="white", font=ImageFont.load_default(size=30))
+        d.text((10, 40), "World", fill="black", font=ImageFont.load_default(size=30))
+        out = np.asarray(ocr.polarity_contrast(im).convert("L"))
+        self.assertGreater(out[5, 200], 200)  # the blue bubble's background is light now
+        self.assertGreater(out[5, 20], 200)  # the white half stays light
+
+    def test_look_alike_matching_is_off_by_default_and_never_loosens_text(self):
+        from picture_guard import match
+        from picture_guard.ocr import Word
+        w = [Word("5O-9I-2O", 90, (0, 0, 80, 20), (1, 1, 1))]  # "50-91-20" read with letter look-alikes
+        passes = {"1x": w}
+        self.assertIsNone(match.locate("50-91-20", passes))
+        self.assertIsNotNone(match.locate("50-91-20", passes, lenient={"confusables": True}))
+        names = {"1x": [Word("Katle", 90, (0, 0, 50, 20), (1, 1, 1))]}
+        self.assertIsNone(match.locate("Katie Edwards", names, lenient={"confusables": True}))

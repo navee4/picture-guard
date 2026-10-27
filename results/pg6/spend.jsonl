@@ -16,3 +16,4 @@
 {"run": "eval-faces_hard-dev-fb-zoom-clean-big3", "seconds": 460.6, "usd": 0.355, "note": "session wall time (upper bound: includes image build and cold start)"}
 {"run": "eval-faces_hard-dev-fb-zoom-clean-inv+loc", "seconds": 532.1, "usd": 0.4101, "note": "session wall time (upper bound: includes image build and cold start)"}
 {"run": "eval-faces_hard-dev-fb-zoom-clean-inv+loc+big3", "seconds": 677.4, "usd": 0.5221, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "eval-faces_hard-dev-fb-zoom-clean-loc+dig+pol+digpol", "seconds": 655.0, "usd": 0.5048, "note": "session wall time (upper bound: includes image build and cold start)"}

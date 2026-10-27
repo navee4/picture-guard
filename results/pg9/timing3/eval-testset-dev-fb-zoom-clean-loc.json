@@ -1,0 +1,6591 @@
+{
+ "tool_version": "0.1.0-day1",
+ "set": "testset",
+ "split": "dev",
+ "pictures_asked": 40,
+ "pictures_scored": 40,
+ "mode": "product",
+ "check_glimmer": false,
+ "fallback": "zoom",
+ "cleanups": [
+  "loc"
+ ],
+ "replay_of_day3_answers": true,
+ "live_modal_calls": 0,
+ "failures": [],
+ "tesseract_installed": true,
+ "black_max_channel": 16,
+ "modal": {
+  "cold_start_seconds": null,
+  "container": null
+ },
+ "key_sha256": {
+  "payslip_000.jpg": "5f9494fe02e89bd22376851003c1b240089f6fc91801181e83498895b1c53034",
+  "payslip_001.png": "1da29548391d109cc12e94f21961a15a9b2f5e63b1803f2a3975c5e437255b04",
+  "payslip_002.png": "0a82e9f7b3aca36604712ee11d1fc0f7d65bd46d0886d5812c7b187c5040554c",
+  "payslip_003.jpg": "dae56731343019a41a413579237c693dcb5870f0fb8468fde6b838589d088328",
+  "payslip_004.png": "1fd72fe662f0f85cff03128e8797bef838166b060a2d52822e5733c40fd300ee",
+  "payslip_005.jpg": "8068391a8a7f159452a11650508f61b8cd790b44743d73b5b246e436af391857",
+  "payslip_006.png": "3e9cad42cfc914a8012bb5da225f0c1074b409a7c4e40e72931ce1e75f80e8fc",
+  "payslip_007.png": "b48205dc0a71fcd4372b82ddfe57001271a3f5d183d8248877e6799e83405f11",
+  "payslip_008.jpg": "a46653b56a9c58e00d4f99c1614d0369fb489ca03d3c778065b3c764f043d9a2",
+  "payslip_009.png": "d6bd52035514829010161f37af7ebb094f5a5789079387f89db315ae6cfc02fc",
+  "payslip_010.jpg": "c3d2125d4fb7b8211c42ac2b6705c47fa6d1107481d9e5237e878c078a75f204",
+  "payslip_011.png": "307612546841a38049d138c327819b2bcce3f7f022061a135e846e58f85216de",
+  "payslip_012.png": "4967575ee95fb2e169628f985d75ebd505dea2efa9f8acfa01b8ec662ad9e853",
+  "payslip_013.jpg": "a31232d1927df34fbe779f2e9911c362fb156ca9e9f036c68e400014f4510a3c",
+  "payslip_014.jpg": "dddb4d55ca885045f27134d5062e7c4b58bc4408082b6ea92e373926d50acd14",
+  "payslip_015.png": "29398194e05daae044e304cde325c927f0b34fa3d078279a5ddde663163da656",
+  "payslip_016.jpg": "2e8937f730a083ec1e80fbbaa5954e041ad052c72ac951eb3b9b2a0a580454f3",
+  "payslip_017.jpg": "7a1dbfc51145003b9ad393eaf43ae7fcfb5f96f700ef3513936116a5c2a3bbb0",
+  "payslip_018.png": "2a7afe2bae4d6068e94343bed1e8734ad77fef65d34f9727374c3ff0700c3c97",
+  "payslip_019.jpg": "eeed3b27a6f4675b4a3b20df2331bd3a44ad14a1130d4fddf3539381e0fdfd61",
+  "payslip_020.jpg": "4868878a42a05351e4ab2ea435f6b00026130c574955ef214f5e303dbc4eb45d",
+  "payslip_021.jpg": "ec49ec77a10c5d966d63e9f8f07ba4674405e44fb6f3f2462dc8c2cc96e27140",
+  "payslip_022.png": "f842b240c298ab6ffe2341bfaad5c8ff9df85e0c8428e10c1aa8d52ef9392058",
+  "payslip_023.jpg": "66360150367df7556396552f148c25fd343dbbd056e75616c92e0144b66c6413",
+  "payslip_024.png": "286ecbc22f57f293a3e3eeeb1e89ae0120f62715543554d20c90f5820e253e1e",
+  "payslip_025.jpg": "ec50484b8bf1bdbddfd90ea71a31cfd827a811009a69ea093fab9e167e8a4100",
+  "payslip_026.jpg": "bd4dac71f043699859cca3342ad556aa3fe91b9d9294869a549776970b4304c2",
+  "payslip_027.png": "b519305ca9a8a0e818e38fdb35da40eab3df837e522563959013bb8198fcb3f9",
+  "payslip_028.jpg": "197d503171a3e3097f28e90a6c92693df547d1edff3c6cf23c59a44079eaed03",
+  "payslip_029.png": "8f0533c8e7f2cbb60511d03c9e2e3bccf565edc8bc0934fe37c2c7538cc44d8e",
+  "payslip_030.png": "75e958d8a081f699979740056c9febd6caf1519910df3bf57b5bc81ee4a54a34",
+  "payslip_031.png": "5820531490a2a318e5d2f0a18a6d473870a4c247a4b32b6a1f3112e206c982df",
+  "payslip_032.jpg": "5e71e4ffc6839c9621a497064bc085dfb3d42db5738c15f0874a6488c3ece7a1",
+  "payslip_033.png": "89524cb9a9fd3e2607f5dd109cc84c428c7c2cd732bf840519446c527478f4b4",
+  "payslip_034.png": "50d13cf21e167919ad5a15816017e9c22f209740a8c164e8bafedc0ffa211fdf",
+  "payslip_035.png": "f763c953a0f88c1c1d806f7d13a0a96cb824600e4e9040a68d6be6b7855c17de",
+  "payslip_036.jpg": "f416381c912f3ea15f824f6603db72ebd2e925231dc34bbc416be1ec1b19af46",
+  "payslip_037.png": "c96da78d082ed30e4443562eacbbeafd5d7a2b2dd784b3530a4832f473ec7d9e",
+  "payslip_038.png": "dc49de080a65907f1a70424b9af64ed76e2f314efc05ae26af079821cb982ae6",
+  "payslip_039.png": "5de6e587edebfadf283fb4ad32136db4ad7626a634e3dfa5733be690c3e338ed",
+  "payslip_040.jpg": "10a6a7a94297c59781381b55037a4cf180df6e6091ba02e3cc889195576a4276",
+  "payslip_041.png": "11be8758c8f01818d31fd3ba873b890c1914ee7386a4409129b239be8afbf1f1",
+  "payslip_042.png": "800759e48fc3018372341e691d0288723edc2cb5e2906d9a564d597c699bc0f5",
+  "payslip_043.png": "d3c8d23a2593c63c2d22982c5e234a2e86bc3716e9eb5f6bae220ee5386617fa",
+  "payslip_044.png": "a928770df45afd77ded46e86f36788e4a02cd414f961fc289871ff1e592bf4a6",
+  "payslip_045.png": "1670fba1315e68a1c9e0d161a11dbd563cab4f29f25d10752e544d0cdcdd17e9",
+  "payslip_046.png": "1e4045d77e9a75f9339778d42fb67fce0e2195d147191fecb7107671491be2ce",
+  "payslip_047.png": "062cbbaff0e78408caa300758771128c8da35ad27f5d2bf39fafaeb1541c5b9e",
+  "payslip_048.jpg": "c5a763ea3a7feb391579b665b4b9646b58acfc8b48a5ddae4ab2f5590ffcad31",
+  "payslip_049.jpg": "543ba8282204ac46e823fb4efb0c228738670d4c3639909077c228c5eb71abaf",
+  "letter_000.png": "9d43b61ee7a8302e4cad05f33e45b212191433f7156ff9b9d31e4532a7b32d6d",
+  "letter_001.png": "00b2f746e826701576be167818ccc9335c0a32880075a747d28574e3244327eb",
+  "letter_002.png": "f9fec665e15555e36dd4b6257f5706ac49d776f18d143785d9c84731e57357b7",
+  "letter_003.png": "61e0c2220f3e3120614a81349d9244bc6ac8b2c19067b582941e9731c3d1d4b5",
+  "letter_004.png": "ff3195464bf6f6621a540e981defce8589c6cbf82ef03f626098a59d4d8838ca",
+  "letter_005.png": "590622b755fb06e6e39dea5ecdd3d952653ad1c5cc717190ef50b9554f38d1c0",
+  "letter_006.jpg": "01637345ae7fe28977f47de8cce1dfd1aca1c958461a98b9ccdfe63446f2692c",
+  "letter_007.png": "b5fdb6247305309ed46bd3417416deaa131d231aea3e9701496592218120dce1",
+  "letter_008.png": "056fbecf88d10b24f2cf215537aa4616ed894ca096ffc3f0d5628d37c621d64b",
+  "letter_009.png": "13ce06a059e417e2e0c000d47eb3959efb934f8be2f6ea8c79a900fcd417669f",
+  "letter_010.jpg": "daef0df926542006305103e4a92787da4e0c2321f49bbb5243c8f4017150cea5",
+  "letter_011.png": "771c73712bb6c2aab56aae7cf5f621f40b6983bb7d007129d1e85ddd0fd9c8eb",
+  "letter_012.jpg": "102d186f0990ee653761e021a21462d28b757c233bc88cece44715d678a1f237",
+  "letter_013.png": "eab8d87fe10fddb811468013a96ab0935c538036a1383d4d47bf69be43ff55c2",
+  "letter_014.jpg": "2435067013779727e41238caa14c1bdf8408109bcdf830cec8fc1b1d47266ad1",
+  "letter_015.jpg": "316554f2de391859412714f9a2b12cd7f352cf43b5acba41506b60367d52f37e",
+  "letter_016.jpg": "446800616faf301a7d5afbf859c9c3882dcd615309d7dca383a41977574d89c2",
+  "letter_017.jpg": "09c1754443b31197574c83bc883b14f3a14aa9495493d471644e9df2acea71d5",
+  "letter_018.jpg": "c2f9e0347dae1c90dd60d56526dadabdf03707b3dca5fc617c87320cca5a1299",
+  "letter_019.jpg": "7c4b24dccfe1d6c238de6766a2f365eed201002ad27bbcc38d0b2dd51d6635a8",
+  "letter_020.png": "7c84ea7aec4af43c8621546a5951a3eb64fc530734f0be20ab9a03a0cb361e8b",
+  "letter_021.jpg": "9ae1e6508336a26e34ede345864bb493fa5f7456f6de36c103488ce3dba38305",
+  "letter_022.jpg": "5651069260d52982733a0adb0a368a8baa86111b92e0ad3fb96ebb6f374fa937",
+  "letter_023.jpg": "83a77c10c788f9e942e753561cc2760ab5497bdd5d68ef856f7d0f0267383239",
+  "letter_024.jpg": "354aecc7ae6e3a6e0d3db80af7b88e97f1c528fd2e4f8ae140fae236259f7b54",
+  "letter_025.png": "7e4fb323a348df15744d781114e74a1ab01130f2e3c2864155c19cb4e61e6764",
+  "letter_026.png": "264e2105d6b08fe4daa1a0b67d44d15531d5c13f1fe3d3b10655ed83597b9e24",
+  "letter_027.png": "6cfa5593ff13c0469d0124c87400a9390839cf141a80eb0268120f7032e7afd9",
+  "letter_028.jpg": "e356864f40747b6a5109a13a47c6662254bb11ebceea10f9c95835ec7c003187",
+  "letter_029.png": "d411acf5402721d58106f475b834019a59762618a56e2ed42d0888503816831d",
+  "letter_030.png": "c5b9da669993eed7941227715c101c8e84d22d8d4bd18cde662c33f1e12c831a",
+  "letter_031.png": "833c5c656274723178565fb537d268b1c1fed33154724fef80a986d42a15b449",
+  "letter_032.jpg": "8ee4a50f52aaf86009e2ffac3da9b093ad0797b8353f7e320ee7c495b2660942",
+  "letter_033.png": "689c6771fd10788c35066dea3ff0613528080e5a6ca7a9c4b0b1e4c074e515bf",
+  "letter_034.png": "a5d4f6fc31d1fc003c5c678ee1a2c366fe1b975d0f9e41de34a28fc18ebd600d",
+  "letter_035.jpg": "ec40482e295e4a96abe2765fa17da46c89b3caa1bf22cd6f5e9c40e03f12e438",
+  "letter_036.jpg": "60005a2587c6981ed961856b75678e9665fffc80f808005f7132b3b01974bda6",
+  "letter_037.jpg": "9d3e840530bf2b6dcea8d6ebd77663e2671b644f0677b15c55d877cc2d9a94df",
+  "letter_038.png": "351b28c1c1686d07b87ff6ac061affb12f6c68cd920778f094fbf8871af4fd8f",
+  "letter_039.png": "f6fc387e5e60e40642025b67a158c142567c8e2673a02ef460a6ce6c8e1ad963",
+  "letter_040.jpg": "fa0915276c00083d885061db74c4c55b6c5d1e44c9971591de9c62c2a46aac81",
+  "letter_041.jpg": "b8de66c739da97bddef8f7fb74a154b299b0f03574370fb0e3e9e19e83ea5f83",
+  "letter_042.jpg": "d4e86e2abc976bcc22b7d5ba944e9c2d7cb0cb106f2c52bcbcaed019d42211f7",
+  "letter_043.jpg": "dd9bb9fb7491a05c6bd581f45e4d04dc8426846fd0223860e6f4bc2d9f656471",
+  "letter_044.png": "daaf883dd9bdb62893a89e4318366daeefa969a0a4b361cf95542fc4be576c51",
+  "letter_045.png": "a79b810a0f8009e2a986dd64468b245f33255603829ace34622c27cbf30c80db",
+  "letter_046.jpg": "688b372b78fada47bd5cdd64821f1ea482d34aeec80a564fa3dd2c1f0c95c584",
+  "letter_047.jpg": "0ae290a479c0f2df537e3da838ab51b2114622c7e4d0dc95d36b668ae9a67904",
+  "letter_048.jpg": "61f24627f7acb59e148ebf66d6a905b7e16076ef20d2df6d3d6ecf3224684b44",
+  "letter_049.png": "6cd40bb8e2bdf410cf905ed6b86e060b5d33dd60278fdbb1cb98cf4e26c3a576",
+  "id_card_000.jpg": "0ab4d4cf3e30f7fc9c3da20a9a0115963c63ede8d7b923c9951ba5b810e6a086",
+  "id_card_001.png": "47316fcf9eeee96e526db7dbc9ff18dacf2641379709abd16335734a0dda72b5",
+  "id_card_002.jpg": "cc81d0e8adbb49e506a57b8bb1dfd300dc65f77f19bc90fdcf12ae7c78b6c6f2",
+  "id_card_003.jpg": "771a97d5f9bee59a3d99e67a897f9ecb5fd14d4b9363bd725de89be2da80a3f9",
+  "id_card_004.jpg": "67011ef578a992653c558c9fe17ff4f6c526ec2a2a89b3e238eb1a9a019f586a",
+  "id_card_005.jpg": "ec523dcc0e0a2fd059a8fbd9f0dd2e7ad88f1f7645a1021a4a8e2d2bc1186770",
+  "id_card_006.png": "5a1291a5638b4f34e2a018cf113885117ff413b507e455359f4381b108c2562f",
+  "id_card_007.jpg": "9cdd3db8ae2034259c92f2b6dcae3e1fd3cccf1e1e8d5e1408ea4da5819c0630",
+  "id_card_008.png": "5cbcceff8e736d2195b8be301bdd037f609d09c4c427715bd8223484f43222a9",
+  "id_card_009.jpg": "ac6f8f1a282a1cd6df3dd6d1c8b6c804fbf0abc8ebbfd48accb909fc5dd50c8c",
+  "id_card_010.png": "d7d62fd5d8386e4eb65eaed51e88a664d3b7d07c99a3066b4ef7d05463013fcb",
+  "id_card_011.png": "1a8a84774a196d333ed44e572da0d1be535267c70980745380def025b5cce8fc",
+  "id_card_012.png": "2942f889f4a0749e0a83b26955890731cd02c46de850b9ebe14797b3c2960e6a",
+  "id_card_013.jpg": "4938ef34bdda12fb387be54870715dade1bccb5e63bf4843e7e413300f39b78b",
+  "id_card_014.png": "7f7d2013dc8466025d7794d374d8f418611b0cf500c201c7b92c61ed467a457a",
+  "id_card_015.png": "517b388b4bec4660ca5f34a20037fe494a209bc891ddd1964b3d4173acacfac5",
+  "id_card_016.jpg": "2bd87fe9ba363fc4c80e1cb47ce88a8c30a0bcb871b38ad16487e4f6284e0dd0",
+  "id_card_017.png": "aafd27ff6eaacbf621cced24298efc68f89247432493ca0af7e4c52a8964ec6c",
+  "id_card_018.png": "f9b8373ae3ad19e24d3b58c4cdb2dcd943aa7487ef23cc64fc512a57e603507d",
+  "id_card_019.png": "b31f97476a0bdb3edf56a41e14031b9354f7ecde66f9039d06649afbbf9a5af8",
+  "id_card_020.png": "fc1a05cbc9eb8aae972a598acb858187360c903531e483a377aacac0d74fc524",
+  "id_card_021.png": "1edb7c684f428ff6d8569e68e3423ce4f22d78ebca00ed13359ef160e1d74828",
+  "id_card_022.jpg": "24b1f23b27657d79835e1722ac49e73f9fb16b709017097714f01cf92c4dfb94",
+  "id_card_023.png": "75fa95d71f4c0814c63ce9edb73b299319b95859ad28bbcb55b16fa826e9fbd7",
+  "id_card_024.png": "155d7b8d0252a8963c64c4776f770aa1a99fd5aff6ab804480a334bfb337628a",
+  "id_card_025.png": "25b78af5f654586b6e588b2405679fb58eb00374e0edafb1576e4df6b75287e9",
+  "id_card_026.png": "f4df9ce4306bfc8b9b6ec28b0e0ae45f8c638df41625dcb88f96645ee8c40d76",
+  "id_card_027.png": "9d057a8a2c02f03c2ed375e7dc71f4f9e19fea81188d1e45d71bcb630dad7077",
+  "id_card_028.jpg": "a6028d346b26941f24a051d7af5bbd0ffd20777e81e4ef5d947e3d9aae89946a",
+  "id_card_029.jpg": "f209fa56db049cf8d33aff5f8c192ff39e38d93fedd24eb8095b3b05c2b8d13e",
+  "id_card_030.jpg": "8d2f83142fac58beb5f569eeed60367ce0dfca22122e98544e97b3deb0080923",
+  "id_card_031.png": "6a9988d0abb2d038fd747293f30cfaafabdbf02aeede31ffeae4d634c63d1336",
+  "id_card_032.jpg": "8805392e24e2ceee2b4a06c1503ac87459dec156f72c0c26f574d83f88221ab6",
+  "id_card_033.png": "67231461c1b722f801b51baff233bb049dd119863edcd5b3df185f20e1862a43",
+  "id_card_034.jpg": "344f19206d2433a17fa82bc224aeba9b0d9d5899b1a2202845c7925feb23f663",
+  "id_card_035.png": "aff41acdcfed9b7ffd516d8f377b884c01d56aee015cc947e2707831518e0aad",
+  "id_card_036.png": "b335e7e1a5f2c12fad0bb582a7057c45a42ef444249b400b109be679db0a7292",
+  "id_card_037.jpg": "4fa31624af71422781557dbc48cbbb774042351b58cb9d10f7c4a90c092629eb",
+  "id_card_038.jpg": "e35f589778c6404c89edb3b90e96d0f895865db32baa08f3dfe5db89f57e464b",
+  "id_card_039.jpg": "2cf2a35167fde5282935ff29fe80bbe728749a2996bd9ed370f1856902545cb5",
+  "id_card_040.jpg": "574f091b43ad4b426deb02684240d8d9090f5ed3f5fe320ddb6afee799c5489d",
+  "id_card_041.jpg": "8ec4abc9427dd4b38b8e1b234b1f0a552ba689b9b903209fafcd49f8f6117d30",
+  "id_card_042.jpg": "13088b22777b02b21017cf5dff1ffefe86f453c47bb577fc6ea4bc27cdecdc3b",
+  "id_card_043.png": "f39a42dd5314ab7b8ca3d023c9472eaac76b6aeaff286a318e10b413601b6b26",
+  "id_card_044.jpg": "71e416c1903c9e432e2a51e01e93d6ad0d116132d9b14ba84a66bd20337777ae",
+  "id_card_045.jpg": "cb144146af48f2eeb8e32aefe1847282f7e27f44a3075c31e389b639507e351f",
+  "id_card_046.jpg": "9e04b6e6863a9bbb06fb53140bd79367b7ef1ad663c5fe8a18c17f3e53856838",
+  "id_card_047.png": "e2014bb21ff35bcfd594afdfd8b5a17b13e2b9d123b58c3980b6e9e31b1197f9",
+  "id_card_048.png": "5028ac6ca99b5422b9cb74bf484f73fafd9890f96c7b4804082c6b927ad82ac2",
+  "id_card_049.jpg": "b9e5c0c3963fa29a6c591ae2eaed08ace7ad88e2ebf0876994e09ebe3001d056",
+  "chat_000.png": "e5f8ee538c61a1336341fa2a0de8ebd4167571d5fbc910f2554c120b3296dae4",
+  "chat_001.png": "c417e1f72d7f1f360d5385698e146f1fdfd7a8da1e59761ea4c270bcfbc229e1",
+  "chat_002.png": "3b8b52c51ff0a2d9ada61747d5c19c1258b8e5195152cb6a27513396702027f1",
+  "chat_003.jpg": "5b907a9ea2d7df8c77ee1275af2eb73a5a9d559471b4d57fde9eb4af7a38f7cd",
+  "chat_004.png": "681870a58044140c982290f83ee02b30d174e22eb251703a4d65a5e52c99362a",
+  "chat_005.png": "e846b33012f8d062b474daeaec3b5d4e446e5ca9e22547c9681c56596cf63345",
+  "chat_006.jpg": "90f83e0cfdd3b71e6f7ea3434a6c46f9fada4beef4ee48d0c32f8b834a2abd1b",
+  "chat_007.png": "2f354f93912f2af657f8cc01a970201da913ede2f35cb6d34a1ff4acec370c39",
+  "chat_008.png": "6c4350eb36db779bdc70d8dce318e158b721d964afcf6b0b908cf0f3399b210e",
+  "chat_009.png": "0c5fb94f8e209fd9e5b60d7ab152a3c27536ea80b1fb7d680f8d8ae34efc6905",
+  "chat_010.jpg": "1a96cae954ce76e387e74c4396e3f3e6221cb1c353ff288ff229377b6a112933",
+  "chat_011.png": "3895ae1eddd00baeaa598a22f101b5dabeee159866f1d8148036babf67484c56",
+  "chat_012.jpg": "84928e1c1cc40b77f0aed1eaaa5729a253b004533802e9b4749a215e12be9c43",
+  "chat_013.jpg": "4681fbbf5d543a209e75eaac99077b499991e8b0d205b1c03260274cf51b29b6",
+  "chat_014.png": "72fff14edbd7dd03061ea34fdc719e0b967dd09cc33c0803b902e72841bf808b",
+  "chat_015.png": "bcb18b580c492e1317a6342c2e9cc97986f544df390627d949db552180f367de",
+  "chat_016.jpg": "828ddadaf590bab253c3b1e451b53653fab3eba91e4f4d970ce3bfd61460a115",
+  "chat_017.jpg": "ebb0db5b75fcedf297f1b021682841866f420a27af724971b8a7aa6895f74913",
+  "chat_018.png": "cd2871c2b2fb8cdbd4532daa4bbdfc3875a611f6c7ad145eeccc15021528d507",
+  "chat_019.jpg": "8062d2f8e67fa65f29305dd523bc6ece7483f3863ae27f6219574d307bda6d8a",
+  "chat_020.jpg": "5a4fe1ad51c131d20602e5d4fb3113be1f81f74c6e96eba5530b0f03bcdd05d7",
+  "chat_021.png": "19fba5504960ab5ffd96458c4622b14566e1f8e86c64888a14e772abcbd98c33",
+  "chat_022.jpg": "399bc2e2c4cf79d0013a37564bdc5e79b9b1d9b3bf5a212cafbed6b017aa6154",
+  "chat_023.jpg": "09cd8b14795f1365efa6bb39cf7e796e5f02c57c773f4e367835912b4f31e401",
+  "chat_024.png": "f1e0dd296b2e24bd913c045a6c19ecc4b717b661ad8885ee80335dc7ed409216",
+  "chat_025.jpg": "88c1aa87d043db57609ab3fe6d73d9eeef00962339cd50f3cc77363913094e4f",
+  "chat_026.png": "d8cf13b83bf2f25bd9ee913f50d73560ed41f2cab052fb6f979a4e363c7e2b7f",
+  "chat_027.jpg": "e9e9f61db7ce16f02d91044d7e2af4effdd92254aa63fffa3d3590efceb4d709",
+  "chat_028.png": "d84c8658d0e61a8cb9a6b123d150f5f9435adfb5543064c047ca5b9f06e53008",
+  "chat_029.jpg": "943e46d32ecc1e42962631ab109041b9fe2db5af04ed93a6a0252015740b56cc",
+  "chat_030.png": "ad6cf3a13a647b9ad5bf68ba9b95355305e2b0b4c68f45cd56624402caf6ff79",
+  "chat_031.jpg": "18db36196291888ca68dfdd43e215e89ebe4b55d3549ea35fa7ef95f8c0dbae4",
+  "chat_032.jpg": "11d4b032b6c40025b68ba28b663e9e3270285e0960fe77a33c08df0991748248",
+  "chat_033.png": "614640a167bde8969a53612013d8e8bbe7863802bd5b6cd385bf61955dec1c66",
+  "chat_034.jpg": "470c511fa1a5bb7efa1493af020c87b12f56824a6280590fc827848b68531757",
+  "chat_035.png": "e7a84b174752077457da582187be7952498e5ad500ccbb4f41392dd161827f01",
+  "chat_036.jpg": "97bf3e0f7e019fe17722af63c7c685e6fc746d38ce460ddea2b1304dec13b473",
+  "chat_037.png": "94232e738a6d2f168e21876081ffc9cd987bf5e1d1b3c679f13fbff60d527680",
+  "chat_038.jpg": "8dad81b30907fe81a601d7431e420dfa3ad359779ce17173fd560dce6db8032e",
+  "chat_039.jpg": "969bc4b1d84cea1cbea1dea1877042f1899838ce1a6c1ae78cca711342466f9a",
+  "chat_040.jpg": "012dec7d5c00569a2b2e3e693796e0577514c95977b09df1e73f61ef3e382072",
+  "chat_041.png": "2fc6804e6417a7c4e9afb62d781d030fd55a341f1261625485243871ac326a91",
+  "chat_042.png": "5350b26bf336cdc4cad0f8481fe88a02621ce7da132de94c5ce08a2a011cac71",
+  "chat_043.png": "31e231ee17c77dd834f28cc83e3bb1cde9c2e8ccd551282203e1de5972d4a78d",
+  "chat_044.png": "ad178b2ae0510aaf741de0bfdb997d07740cd0e7e650253e02f3632837226fd3",
+  "chat_045.jpg": "7d6ea454616e24a962cecaa1042ce476dd7bc18f8d233ef5d32478320becbcd3",
+  "chat_046.jpg": "1fb5a59760ebfec2ea0ddef8b5861c5884b4b002bed4745c4d31b3a8c711be01",
+  "chat_047.png": "570eedfb111da98d6c3de13565f9f947a373b020127d9d459ce29bb486102223",
+  "chat_048.png": "8586e68e2514fbe363cb33a611d2e9026f4b71f29117f8122438c777ba58da74",
+  "chat_049.png": "b0578766747ffd25772ec9f111930d933985982511840dcff6734b7579719a20"
+ },
+ "unix_time": 1793135560,
+ "command": ".venv/bin/pg eval --set testset --split dev --fallback zoom --replay --cleanups loc --limit 40",
+ "summary": {
+  "all": {
+   "pictures": 40,
+   "planted_values": 324,
+   "planted_faces": 0,
+   "plain_spans": 1212,
+   "value_boxes_black_share_mean": 0.9939,
+   "value_boxes_black_share_min": 0.7421052631578947,
+   "face_boxes_black_share_mean": null,
+   "face_boxes_black_share_min": null,
+   "plain_text_boxes_nonblack_share_mean": 0.8242,
+   "whole_black_pixels": 6,
+   "whole_black_report": 6,
+   "report_and_pixels_disagree": 0,
+   "size_wrong": 0,
+   "metadata_chunks_found": 0,
+   "pipeline_seconds_mean": 22.5021,
+   "mac_seconds_mean": 7.7294,
+   "remote_seconds_mean": 14.7728,
+   "wall_seconds_mean": 7.73,
+   "word_list_would_have_refused": 40,
+   "word_list_judged": 40,
+   "readback": {
+    "values_left": 0,
+    "plain_readable": 879
+   },
+   "kept": {
+    "pictures": 34,
+    "planted_values": 276,
+    "planted_faces": 0,
+    "plain_spans": 1026,
+    "values_left_readable": 0,
+    "value_boxes_90_black": 272,
+    "value_boxes": 276,
+    "face_boxes_90_black": 0,
+    "face_boxes": 0,
+    "face_black_mean": null,
+    "plain_readable": 879,
+    "values_left_readable_strict": 0,
+    "values_under_50_pixels": 0,
+    "values_50_90_pixels": 4,
+    "plain_readable_on_original": 924
+   }
+  },
+  "letter": {
+   "pictures": 2,
+   "planted_values": 20,
+   "planted_faces": 0,
+   "plain_spans": 34,
+   "value_boxes_black_share_mean": 0.9989,
+   "value_boxes_black_share_min": 0.9917241379310345,
+   "face_boxes_black_share_mean": null,
+   "face_boxes_black_share_min": null,
+   "plain_text_boxes_nonblack_share_mean": 0.8892,
+   "whole_black_pixels": 0,
+   "whole_black_report": 0,
+   "report_and_pixels_disagree": 0,
+   "size_wrong": 0,
+   "metadata_chunks_found": 0,
+   "pipeline_seconds_mean": 23.1645,
+   "mac_seconds_mean": 5.0045,
+   "remote_seconds_mean": 18.16,
+   "wall_seconds_mean": 5.005,
+   "word_list_would_have_refused": 2,
+   "word_list_judged": 2,
+   "readback": {
+    "values_left": 0,
+    "plain_readable": 18
+   },
+   "kept": {
+    "pictures": 2,
+    "planted_values": 20,
+    "planted_faces": 0,
+    "plain_spans": 34,
+    "values_left_readable": 0,
+    "value_boxes_90_black": 20,
+    "value_boxes": 20,
+    "face_boxes_90_black": 0,
+    "face_boxes": 0,
+    "face_black_mean": null,
+    "plain_readable": 18,
+    "values_left_readable_strict": 0,
+    "values_under_50_pixels": 0,
+    "values_50_90_pixels": 0,
+    "plain_readable_on_original": 18
+   }
+  },
+  "payslip": {
+   "pictures": 38,
+   "planted_values": 304,
+   "planted_faces": 0,
+   "plain_spans": 1178,
+   "value_boxes_black_share_mean": 0.9935,
+   "value_boxes_black_share_min": 0.7421052631578947,
+   "face_boxes_black_share_mean": null,
+   "face_boxes_black_share_min": null,
+   "plain_text_boxes_nonblack_share_mean": 0.8223,
+   "whole_black_pixels": 6,
+   "whole_black_report": 6,
+   "report_and_pixels_disagree": 0,
+   "size_wrong": 0,
+   "metadata_chunks_found": 0,
+   "pipeline_seconds_mean": 22.4673,
+   "mac_seconds_mean": 7.8728,
+   "remote_seconds_mean": 14.5945,
+   "wall_seconds_mean": 7.8734,
+   "word_list_would_have_refused": 38,
+   "word_list_judged": 38,
+   "readback": {
+    "values_left": 0,
+    "plain_readable": 861
+   },
+   "kept": {
+    "pictures": 32,
+    "planted_values": 256,
+    "planted_faces": 0,
+    "plain_spans": 992,
+    "values_left_readable": 0,
+    "value_boxes_90_black": 252,
+    "value_boxes": 256,
+    "face_boxes_90_black": 0,
+    "face_boxes": 0,
+    "face_black_mean": null,
+    "plain_readable": 861,
+    "values_left_readable_strict": 0,
+    "values_under_50_pixels": 0,
+    "values_50_90_pixels": 4,
+    "plain_readable_on_original": 906
+   }
+  }
+ },
+ "by_value_type": {
+  "account_number": {
+   "n": 40,
+   "black_ge90": 40,
+   "black_sum": 39.798585673048485,
+   "left_readable": 0,
+   "read_on_original": 33,
+   "ocr_ran": 40,
+   "n_kept": 34,
+   "left_readable_kept": 0,
+   "black_mean": 0.995
+  },
+  "address": {
+   "n": 80,
+   "black_ge90": 77,
+   "black_sum": 79.1511649876106,
+   "left_readable": 0,
+   "read_on_original": 66,
+   "ocr_ran": 80,
+   "n_kept": 68,
+   "left_readable_kept": 0,
+   "black_mean": 0.9894
+  },
+  "dob": {
+   "n": 38,
+   "black_ge90": 38,
+   "black_sum": 37.85201395644407,
+   "left_readable": 0,
+   "read_on_original": 32,
+   "ocr_ran": 38,
+   "n_kept": 32,
+   "left_readable_kept": 0,
+   "black_mean": 0.9961
+  },
+  "email": {
+   "n": 2,
+   "black_ge90": 2,
+   "black_sum": 2.0,
+   "left_readable": 0,
+   "read_on_original": 0,
+   "ocr_ran": 2,
+   "n_kept": 2,
+   "left_readable_kept": 0,
+   "black_mean": 1.0
+  },
+  "iban": {
+   "n": 1,
+   "black_ge90": 1,
+   "black_sum": 1.0,
+   "left_readable": 0,
+   "read_on_original": 0,
+   "ocr_ran": 1,
+   "n_kept": 1,
+   "left_readable_kept": 0,
+   "black_mean": 1.0
+  },
+  "name": {
+   "n": 44,
+   "black_ge90": 43,
+   "black_sum": 43.51220341718581,
+   "left_readable": 0,
+   "read_on_original": 35,
+   "ocr_ran": 44,
+   "n_kept": 38,
+   "left_readable_kept": 0,
+   "black_mean": 0.9889
+  },
+  "ni_number": {
+   "n": 38,
+   "black_ge90": 38,
+   "black_sum": 37.90347040820607,
+   "left_readable": 0,
+   "read_on_original": 28,
+   "ocr_ran": 38,
+   "n_kept": 32,
+   "left_readable_kept": 0,
+   "black_mean": 0.9975
+  },
+  "phone": {
+   "n": 2,
+   "black_ge90": 2,
+   "black_sum": 2.0,
+   "left_readable": 0,
+   "read_on_original": 1,
+   "ocr_ran": 2,
+   "n_kept": 2,
+   "left_readable_kept": 0,
+   "black_mean": 1.0
+  },
+  "postcode": {
+   "n": 40,
+   "black_ge90": 40,
+   "black_sum": 39.91477646800285,
+   "left_readable": 0,
+   "read_on_original": 29,
+   "ocr_ran": 40,
+   "n_kept": 34,
+   "left_readable_kept": 0,
+   "black_mean": 0.9979
+  },
+  "sort_code": {
+   "n": 39,
+   "black_ge90": 39,
+   "black_sum": 38.877502809811325,
+   "left_readable": 0,
+   "read_on_original": 33,
+   "ocr_ran": 39,
+   "n_kept": 33,
+   "left_readable_kept": 0,
+   "black_mean": 0.9969
+  }
+ },
+ "first_failure_stage": {
+  "None": 34,
+  "decide": 5,
+  "check_safe": 1
+ },
+ "whole_black_reasons": {
+  "rule 1: a private value has no word box (decide)": 5,
+  "rule 2: the safe copy still shows a private value (check_safe)": 1
+ },
+ "leak_list_still_readable": [],
+ "pictures": [
+  {
+   "file": "payslip_000.jpg",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9467993079584776,
+    1.0,
+    0.9431291816778178,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9896563229896563,
+    1.0,
+    0.9863163656267104,
+    1.0,
+    0.9870903674280039,
+    0.9546716003700277,
+    0.9380804953560371,
+    0.9830043859649122,
+    0.984375,
+    0.9871621621621621,
+    0.9830827067669173,
+    0.9785801713586292,
+    0.9876644736842105,
+    0.9842233009708737,
+    0.9875598086124402,
+    0.9770797962648556,
+    0.9894736842105263,
+    0.9566433566433566,
+    0.9557109557109558,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 19.886,
+   "remote_seconds": 14.79,
+   "mac_seconds": 5.096,
+   "glimmer_seconds": 13.35,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 13,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 31
+   },
+   "wall_seconds": 5.096
+  },
+  {
+   "file": "payslip_001.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    0.9873417721518988,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9891304347826086,
+    0.9891304347826086
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9834335337341349,
+    1.0,
+    0.9716783216783217,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9978927203065134,
+    1.0,
+    0.9985380116959064,
+    1.0,
+    0.9917582417582418,
+    0.9893333333333333,
+    0.9802816901408451,
+    0.9964230965763924,
+    0.9991769547325103,
+    0.9972826086956522,
+    0.9950617283950617,
+    0.9974937343358397,
+    0.9975308641975309,
+    0.9951111111111111,
+    0.9975308641975309,
+    0.9984567901234568,
+    1.0,
+    0.9911924119241192,
+    0.9822530864197531,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 21.865,
+   "remote_seconds": 14.43,
+   "mac_seconds": 7.435,
+   "glimmer_seconds": 11.9,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 15,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 0.9873417721518988,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 0.9891304347826086,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 0.9891304347826086,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 24
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 29
+   },
+   "readback_original": {
+    "values_read": 7,
+    "plain_readable": 30
+   },
+   "wall_seconds": 7.435
+  },
+  {
+   "file": "payslip_002.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    0.9883720930232558,
+    0.9825581395348837,
+    1.0,
+    1.0,
+    1.0,
+    0.9891304347826086,
+    0.99,
+    0.98
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 15.735,
+   "remote_seconds": 10.86,
+   "mac_seconds": 4.875,
+   "glimmer_seconds": 10.25,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 13,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 0.9883720930232558,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 0.9825581395348837,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 0.9891304347826086,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 0.99,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 0.98,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 29
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 31
+   },
+   "wall_seconds": 4.876
+  },
+  {
+   "file": "payslip_003.jpg",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9469907407407407,
+    1.0,
+    0.9251399253731343,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.970225321888412,
+    1.0,
+    0.9602272727272727,
+    1.0,
+    0.96875,
+    0.9626373626373627,
+    0.9594594594594594,
+    0.9619277108433735,
+    0.9657142857142857,
+    0.9660529344073648,
+    0.9442857142857143,
+    0.9690522243713733,
+    0.9542857142857143,
+    0.9696541990119971,
+    0.95,
+    0.9570422535211267,
+    0.9628571428571429,
+    0.9553990610328639,
+    0.9274509803921569,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 17.025,
+   "remote_seconds": 12.01,
+   "mac_seconds": 5.015,
+   "glimmer_seconds": 11.87,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 13,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 31
+   },
+   "wall_seconds": 5.015
+  },
+  {
+   "file": "payslip_004.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "whole_black_pixels": true,
+   "whole_black_report": true,
+   "reason": "rule 1: a private value has no word box (decide)",
+   "pipeline_seconds": 36.602,
+   "remote_seconds": 25.56,
+   "mac_seconds": 11.041,
+   "glimmer_seconds": 11.43,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 0,
+   "first_failure": "decide",
+   "fallback": {
+    "mode": "zoom",
+    "tried": 1,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": {
+     "px": 0,
+     "norm1000": 0,
+     "norm1": 0
+    }
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 31
+   },
+   "wall_seconds": 11.042
+  },
+  {
+   "file": "payslip_005.jpg",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9484685893136597,
+    1.0,
+    0.9185990338164252,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9924012158054711,
+    1.0,
+    0.9936868686868687,
+    1.0,
+    0.9844054580896686,
+    0.9820560747663551,
+    0.947972972972973,
+    0.9883351007423118,
+    0.9897660818713451,
+    0.989337822671156,
+    0.9859154929577465,
+    0.9916543937162494,
+    0.9866567828020756,
+    0.9930275229357798,
+    0.9839181286549707,
+    0.9902985074626866,
+    0.9847198641765704,
+    0.9582379862700229,
+    0.9592969472710453,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 15.488,
+   "remote_seconds": 10.44,
+   "mac_seconds": 5.048,
+   "glimmer_seconds": 9.9,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 13,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 31
+   },
+   "wall_seconds": 5.048
+  },
+  {
+   "file": "payslip_006.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9610672163059659,
+    1.0,
+    0.9628019323671497,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9962641960549911,
+    1.0,
+    0.9973913043478261,
+    1.0,
+    0.9917695473251029,
+    0.9525233644859813,
+    0.984,
+    0.9946323134728932,
+    0.993421052631579,
+    0.9960718294051627,
+    0.9955197132616488,
+    0.9953608247422681,
+    0.9933283914010378,
+    0.9948623853211009,
+    0.9962935507783544,
+    0.99528672427337,
+    0.993421052631579,
+    0.9845537757437071,
+    0.9588974854932302,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 16.768,
+   "remote_seconds": 11.89,
+   "mac_seconds": 4.878,
+   "glimmer_seconds": 11.18,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 13,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 30
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 31
+   },
+   "wall_seconds": 4.879
+  },
+  {
+   "file": "payslip_007.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    0.98698224852071,
+    0.9849914236706689,
+    0.9909188034188035,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 31.621,
+   "remote_seconds": 26.84,
+   "mac_seconds": 4.781,
+   "glimmer_seconds": 11.29,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 13,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 1,
+    "by_zoom": 1,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": {
+     "px": 0,
+     "norm1000": 0,
+     "norm1": 0
+    }
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 0.98698224852071,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 0.9849914236706689,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 0.9909188034188035,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 30
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_original": {
+    "values_read": 0,
+    "plain_readable": 8
+   },
+   "wall_seconds": 4.782
+  },
+  {
+   "file": "payslip_008.jpg",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    0.984375,
+    1.0,
+    1.0,
+    1.0,
+    0.99,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.958265306122449,
+    1.0,
+    0.919774011299435,
+    1.0,
+    0.55,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9640084685956245,
+    1.0,
+    0.9623015873015873,
+    1.0,
+    0.957843137254902,
+    0.9548514851485148,
+    0.945,
+    0.958987341772152,
+    0.9325757575757576,
+    0.9570840681951793,
+    0.953030303030303,
+    0.950354609929078,
+    0.943939393939394,
+    0.9575091575091575,
+    0.9440298507462687,
+    0.9432835820895522,
+    0.9601694915254237,
+    0.9464285714285714,
+    0.9513157894736842,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 16.961,
+   "remote_seconds": 11.86,
+   "mac_seconds": 5.101,
+   "glimmer_seconds": 11.02,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 13,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 0.984375,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 0.99,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 29
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 30
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 31
+   },
+   "wall_seconds": 5.102
+  },
+  {
+   "file": "payslip_009.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    0.8849557522123894,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 13.813,
+   "remote_seconds": 9.49,
+   "mac_seconds": 4.323,
+   "glimmer_seconds": 9.2,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 13,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 0.8849557522123894,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 31
+   },
+   "wall_seconds": 4.324
+  },
+  {
+   "file": "payslip_010.jpg",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9540248691099477,
+    1.0,
+    0.9371890547263682,
+    1.0,
+    1.0,
+    0.7647058823529411,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9810747663551402,
+    0.9994649545211343,
+    0.9829001367989056,
+    1.0,
+    0.9767156862745098,
+    0.9758064516129032,
+    0.9785447761194029,
+    0.9809523809523809,
+    0.9761904761904762,
+    0.9722222222222222,
+    0.9801587301587301,
+    0.975,
+    0.9768518518518519,
+    0.9778406412069779,
+    0.9871031746031746,
+    0.9768563162970106,
+    0.9811507936507936,
+    0.98203125,
+    0.9562542720437457,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 30.934,
+   "remote_seconds": 10.81,
+   "mac_seconds": 20.124,
+   "glimmer_seconds": 9.88,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 14,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 28
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 30
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 29
+   },
+   "wall_seconds": 20.125
+  },
+  {
+   "file": "payslip_011.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9922480620155039,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9757113523027281,
+    1.0,
+    0.9705730511099638,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9923020527859238,
+    1.0,
+    0.9898589065255732,
+    1.0,
+    0.9817444219066938,
+    0.9803030303030303,
+    0.9751948972360028,
+    0.9866238630283574,
+    0.988540870893812,
+    0.9887640449438202,
+    0.9910873440285205,
+    0.9884551951621771,
+    0.9877769289533995,
+    0.9946969696969697,
+    0.985485103132162,
+    0.9903303787268332,
+    0.9938884644766998,
+    0.980836236933798,
+    0.9899519440803844,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 19.675,
+   "remote_seconds": 12.71,
+   "mac_seconds": 6.965,
+   "glimmer_seconds": 12.04,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 13,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 0.9922480620155039,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 31
+   },
+   "wall_seconds": 6.966
+  },
+  {
+   "file": "payslip_012.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9335633404104742,
+    1.0,
+    0.9063390313390314,
+    1.0,
+    0.8333333333333334,
+    0.33333333333333337,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9878172588832488,
+    1.0,
+    0.9854671280276817,
+    1.0,
+    0.9713541666666666,
+    0.9603174603174603,
+    0.9551820728291317,
+    0.9922535211267606,
+    0.9883474576271186,
+    0.9828431372549019,
+    0.984375,
+    0.9874338624338624,
+    0.9883474576271186,
+    0.9933014354066986,
+    0.9841101694915254,
+    0.9867172675521821,
+    0.984375,
+    0.9492063492063492,
+    0.9607594936708861,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 35.8,
+   "remote_seconds": 12.28,
+   "mac_seconds": 23.52,
+   "glimmer_seconds": 11.63,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 14,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 27
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 27
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 28
+   },
+   "wall_seconds": 23.521
+  },
+  {
+   "file": "payslip_013.jpg",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "whole_black_pixels": true,
+   "whole_black_report": true,
+   "reason": "rule 2: the safe copy still shows a private value (check_safe)",
+   "pipeline_seconds": 17.448,
+   "remote_seconds": 10.22,
+   "mac_seconds": 7.228,
+   "glimmer_seconds": 9.55,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 0,
+   "first_failure": "check_safe",
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 30
+   },
+   "wall_seconds": 7.229
+  },
+  {
+   "file": "payslip_014.jpg",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9696,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9484239130434783,
+    1.0,
+    0.9043360433604336,
+    1.0,
+    0.55,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.989694041867955,
+    1.0,
+    0.9882352941176471,
+    1.0,
+    0.9841269841269842,
+    0.946236559139785,
+    0.9485294117647058,
+    0.9862700228832952,
+    0.984375,
+    0.9828571428571429,
+    0.98359375,
+    0.9907084785133565,
+    0.98046875,
+    0.9896907216494846,
+    0.99140625,
+    0.98984375,
+    0.9866028708133971,
+    0.9402173913043478,
+    0.9353546910755148,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 34.216,
+   "remote_seconds": 12.29,
+   "mac_seconds": 21.926,
+   "glimmer_seconds": 11.74,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 14,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 0.9696,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 28
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 29
+   },
+   "readback_original": {
+    "values_read": 7,
+    "plain_readable": 29
+   },
+   "wall_seconds": 21.927
+  },
+  {
+   "file": "payslip_015.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9915596330275229,
+    1.0,
+    0.9893617021276596
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9755360087960417,
+    1.0,
+    0.9424668874172185,
+    1.0,
+    0.36363636363636365,
+    0.0,
+    0.9130434782608696,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9727481353987378,
+    1.0,
+    0.9702797202797203,
+    1.0,
+    0.9388794567062818,
+    0.9338842975206612,
+    0.9455782312925171,
+    0.9656593406593407,
+    0.9620253164556962,
+    0.9582010582010582,
+    0.9578059071729957,
+    0.9604377104377104,
+    0.9438339438339438,
+    0.9666059502125076,
+    0.9590964590964591,
+    0.9676190476190476,
+    0.9603174603174603,
+    0.9661904761904762,
+    0.9584199584199584,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 17.654,
+   "remote_seconds": 12.63,
+   "mac_seconds": 5.024,
+   "glimmer_seconds": 12.34,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 13,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 0.9915596330275229,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 0.9893617021276596,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 29
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 29
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 30
+   },
+   "wall_seconds": 5.024
+  },
+  {
+   "file": "payslip_016.jpg",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "whole_black_pixels": true,
+   "whole_black_report": true,
+   "reason": "rule 1: a private value has no word box (decide)",
+   "pipeline_seconds": 67.555,
+   "remote_seconds": 24.88,
+   "mac_seconds": 42.675,
+   "glimmer_seconds": 11.08,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 0,
+   "first_failure": "decide",
+   "fallback": {
+    "mode": "zoom",
+    "tried": 6,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": {
+     "px": 0,
+     "norm1000": 0,
+     "norm1": 0
+    }
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_original": {
+    "values_read": 0,
+    "plain_readable": 1
+   },
+   "wall_seconds": 42.676
+  },
+  {
+   "file": "payslip_017.jpg",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    0.9008403361344538,
+    1.0,
+    1.0,
+    0.9752066115702479,
+    0.9829545454545454,
+    1.0,
+    1.0,
+    0.9746954076850984
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 14.436,
+   "remote_seconds": 10.71,
+   "mac_seconds": 3.726,
+   "glimmer_seconds": 10.3,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 10,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 0.9008403361344538,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 0.9752066115702479,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 0.9829545454545454,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 0.9746954076850984,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 1
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 18
+   },
+   "readback_original": {
+    "values_read": 0,
+    "plain_readable": 9
+   },
+   "wall_seconds": 3.727
+  },
+  {
+   "file": "payslip_018.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    0.987012987012987,
+    1.0,
+    1.0,
+    1.0,
+    0.9912280701754386,
+    0.9761904761904762,
+    0.9761904761904762
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 15.654,
+   "remote_seconds": 10.94,
+   "mac_seconds": 4.714,
+   "glimmer_seconds": 9.71,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 14,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 0.987012987012987,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 0.9912280701754386,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 0.9761904761904762,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 0.9761904761904762,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 26
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 30
+   },
+   "wall_seconds": 4.714
+  },
+  {
+   "file": "payslip_019.jpg",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    0.8817594834543987,
+    1.0,
+    0.9346590909090909,
+    0.9777777777777777,
+    0.991869918699187,
+    1.0,
+    1.0,
+    0.9772727272727273
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9971326164874552,
+    1.0,
+    0.997080291970803,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 34.151,
+   "remote_seconds": 28.73,
+   "mac_seconds": 5.421,
+   "glimmer_seconds": 11.58,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 12,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 1,
+    "by_zoom": 1,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": {
+     "px": 0,
+     "norm1000": 0,
+     "norm1": 0
+    }
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 0.8817594834543987,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 0.9346590909090909,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 0.9777777777777777,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 0.991869918699187,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 0.9772727272727273,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 30
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_original": {
+    "values_read": 7,
+    "plain_readable": 31
+   },
+   "wall_seconds": 5.422
+  },
+  {
+   "file": "payslip_020.jpg",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    0.9992673992673993,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9905405405405405,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9554901960784313,
+    1.0,
+    0.9474112225535376,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9193719124911786,
+    1.0,
+    0.9588293650793651,
+    1.0,
+    0.9453044375644994,
+    0.9527798933739527,
+    0.9731723675385647,
+    0.96,
+    0.9477611940298507,
+    0.9547619047619048,
+    0.9551470588235295,
+    0.9593810444874274,
+    0.9584745762711865,
+    0.9615384615384616,
+    0.9595588235294118,
+    0.941044776119403,
+    0.9603448275862069,
+    0.9480676328502415,
+    0.9549473684210527,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 16.771,
+   "remote_seconds": 11.71,
+   "mac_seconds": 5.061,
+   "glimmer_seconds": 10.92,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 13,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 0.9992673992673993,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 0.9905405405405405,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 30
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 30
+   },
+   "wall_seconds": 5.061
+  },
+  {
+   "file": "payslip_021.jpg",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9872611464968153,
+    0.9868421052631579,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 16.225,
+   "remote_seconds": 11.47,
+   "mac_seconds": 4.755,
+   "glimmer_seconds": 11.05,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 13,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 0.9872611464968153,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 0.9868421052631579,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 29
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 31
+   },
+   "wall_seconds": 4.756
+  },
+  {
+   "file": "payslip_022.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "whole_black_pixels": true,
+   "whole_black_report": true,
+   "reason": "rule 1: a private value has no word box (decide)",
+   "pipeline_seconds": 25.968,
+   "remote_seconds": 23.02,
+   "mac_seconds": 2.948,
+   "glimmer_seconds": 11.0,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 0,
+   "first_failure": "decide",
+   "fallback": {
+    "mode": "zoom",
+    "tried": 1,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": {
+     "px": 0,
+     "norm1000": 0,
+     "norm1": 0
+    }
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_original": {
+    "values_read": 0,
+    "plain_readable": 7
+   },
+   "wall_seconds": 2.949
+  },
+  {
+   "file": "payslip_023.jpg",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "whole_black_pixels": true,
+   "whole_black_report": true,
+   "reason": "rule 1: a private value has no word box (decide)",
+   "pipeline_seconds": 32.57,
+   "remote_seconds": 28.46,
+   "mac_seconds": 4.11,
+   "glimmer_seconds": 12.95,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 0,
+   "first_failure": "decide",
+   "fallback": {
+    "mode": "zoom",
+    "tried": 2,
+    "by_zoom": 1,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": {
+     "px": 0,
+     "norm1000": 0,
+     "norm1": 0
+    }
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_original": {
+    "values_read": 7,
+    "plain_readable": 31
+   },
+   "wall_seconds": 4.111
+  },
+  {
+   "file": "payslip_024.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    0.9259259259259259,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9755826859045506,
+    1.0,
+    0.953125,
+    1.0,
+    0.2857142857142857,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9922469887858231,
+    1.0,
+    0.9893320964749536,
+    1.0,
+    0.9793103448275862,
+    0.9742380261248186,
+    0.9346031746031747,
+    0.9789377289377289,
+    0.9943661971830986,
+    0.9813800657174151,
+    0.9859154929577465,
+    0.9872361315660285,
+    0.9781690140845071,
+    0.9873294346978557,
+    0.9792085848423877,
+    0.9823129251700681,
+    0.9857142857142858,
+    0.9788888888888889,
+    0.9534883720930233,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 16.158,
+   "remote_seconds": 11.13,
+   "mac_seconds": 5.028,
+   "glimmer_seconds": 10.79,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 14,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 0.9259259259259259,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 30
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 30
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 31
+   },
+   "wall_seconds": 5.029
+  },
+  {
+   "file": "payslip_025.jpg",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    0.9666666666666667,
+    1.0,
+    0.9479873360470376,
+    1.0,
+    0.9727615184004637,
+    0.9439471440750213,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9326599326599326,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 18.169,
+   "remote_seconds": 13.44,
+   "mac_seconds": 4.729,
+   "glimmer_seconds": 11.03,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 13,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 0.9666666666666667,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 0.9479873360470376,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 0.9727615184004637,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 0.9439471440750213,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 24
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 30
+   },
+   "readback_original": {
+    "values_read": 7,
+    "plain_readable": 30
+   },
+   "wall_seconds": 4.73
+  },
+  {
+   "file": "payslip_026.jpg",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9458689458689459,
+    1.0,
+    0.9231592465753424,
+    1.0,
+    0.7272727272727273,
+    0.0,
+    0.8695652173913043,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9812219730941704,
+    1.0,
+    0.9796659404502541,
+    0.9994019138755981,
+    0.9748917748917749,
+    0.9662118258609487,
+    0.9670781893004116,
+    0.9812345679012345,
+    0.9708994708994709,
+    0.9720238095238095,
+    0.9710648148148148,
+    0.9803827751196172,
+    0.9764492753623188,
+    0.9797297297297297,
+    0.968452380952381,
+    0.9765258215962441,
+    0.9747652582159625,
+    0.9615384615384616,
+    0.95625,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 20.433,
+   "remote_seconds": 11.64,
+   "mac_seconds": 8.793,
+   "glimmer_seconds": 9.8,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 14,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 29
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 29
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 31
+   },
+   "wall_seconds": 8.793
+  },
+  {
+   "file": "payslip_027.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    0.9938271604938271,
+    0.9949238578680203,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9901960784313726,
+    0.9900990099009901
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9498520036429873,
+    1.0,
+    0.8984084880636605,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9994366831906264,
+    1.0,
+    0.9996549344375432,
+    1.0,
+    1.0,
+    0.9515328467153285,
+    0.9311740890688259,
+    0.9992625368731564,
+    0.998876404494382,
+    0.9985294117647059,
+    0.9983333333333333,
+    0.9987368421052631,
+    0.998876404494382,
+    0.9991304347826087,
+    0.9983333333333333,
+    0.998876404494382,
+    0.9980519480519481,
+    0.9612995699952221,
+    0.9619084263178146,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 19.719,
+   "remote_seconds": 14.4,
+   "mac_seconds": 5.319,
+   "glimmer_seconds": 13.78,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 13,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 0.9938271604938271,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 0.9949238578680203,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 0.9901960784313726,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 0.9900990099009901,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 24
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 30
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 30
+   },
+   "wall_seconds": 5.319
+  },
+  {
+   "file": "payslip_028.jpg",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "whole_black_pixels": true,
+   "whole_black_report": true,
+   "reason": "rule 1: a private value has no word box (decide)",
+   "pipeline_seconds": 34.652,
+   "remote_seconds": 26.91,
+   "mac_seconds": 7.742,
+   "glimmer_seconds": 11.09,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 0,
+   "first_failure": "decide",
+   "fallback": {
+    "mode": "zoom",
+    "tried": 2,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": {
+     "px": 0,
+     "norm1000": 0,
+     "norm1": 0
+    }
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_original": {
+    "values_read": 0,
+    "plain_readable": 0
+   },
+   "wall_seconds": 7.742
+  },
+  {
+   "file": "payslip_029.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    0.9107565011820331,
+    0.7421052631578947,
+    0.7782828282828282,
+    0.9876543209876543,
+    0.9636363636363636,
+    0.9929078014184397,
+    0.9904761904761905,
+    0.9619047619047619
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 16.882,
+   "remote_seconds": 12.3,
+   "mac_seconds": 4.582,
+   "glimmer_seconds": 11.66,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 14,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 0.9107565011820331,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 0.7421052631578947,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 0.7782828282828282,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 0.9876543209876543,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 0.9636363636363636,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 0.9929078014184397,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 0.9904761904761905,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 0.9619047619047619,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 9
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 30
+   },
+   "readback_original": {
+    "values_read": 0,
+    "plain_readable": 7
+   },
+   "wall_seconds": 4.583
+  },
+  {
+   "file": "payslip_030.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9959985110738879,
+    1.0,
+    0.9947916666666666,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9997788589119858,
+    1.0,
+    0.9989258861439313,
+    1.0,
+    0.9988207547169812,
+    0.9971428571428571,
+    0.9967767929089444,
+    0.9993421052631579,
+    0.9973214285714286,
+    0.9978902953586498,
+    0.9991071428571429,
+    0.9993489583333334,
+    0.9991071428571429,
+    0.9990740740740741,
+    0.9991071428571429,
+    0.9990530303030303,
+    1.0,
+    0.9985775248933144,
+    0.99830220713073,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 19.716,
+   "remote_seconds": 12.78,
+   "mac_seconds": 6.936,
+   "glimmer_seconds": 11.95,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 13,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 31
+   },
+   "wall_seconds": 6.937
+  },
+  {
+   "file": "payslip_031.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    0.9902777777777778,
+    1.0,
+    1.0,
+    0.9841269841269841,
+    0.9857142857142858
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9728440048585806,
+    1.0,
+    0.9559620596205962,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9952380952380953,
+    1.0,
+    0.9992360580595875,
+    1.0,
+    0.9987745098039216,
+    0.9590361445783132,
+    0.9616935483870968,
+    0.9948529411764706,
+    0.995,
+    0.9926470588235294,
+    0.993421052631579,
+    0.9874509803921568,
+    0.9956140350877193,
+    0.9883333333333333,
+    0.9967105263157895,
+    0.9926470588235294,
+    0.9978448275862069,
+    0.975,
+    0.9565217391304348,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 16.672,
+   "remote_seconds": 11.69,
+   "mac_seconds": 4.982,
+   "glimmer_seconds": 11.35,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 13,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 0.9902777777777778,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 0.9841269841269841,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 0.9857142857142858,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 30
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 30
+   },
+   "wall_seconds": 4.983
+  },
+  {
+   "file": "payslip_032.jpg",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    0.9897959183673469,
+    0.9932432432432432,
+    1.0,
+    1.0,
+    1.0,
+    0.98,
+    0.98
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9805243445692884,
+    1.0,
+    0.9655797101449275,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9986437613019892,
+    1.0,
+    0.9991511035653651,
+    1.0,
+    0.9954044117647058,
+    0.9926470588235294,
+    0.9878246753246753,
+    0.9965986394557823,
+    0.9966577540106952,
+    0.9929411764705882,
+    0.9959893048128342,
+    0.9974798387096774,
+    0.9979946524064172,
+    0.9947478991596639,
+    0.9986631016042781,
+    0.9933155080213903,
+    0.9939839572192514,
+    0.9803370786516854,
+    0.9830357142857142,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 15.453,
+   "remote_seconds": 10.31,
+   "mac_seconds": 5.143,
+   "glimmer_seconds": 9.56,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 13,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 0.9897959183673469,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 0.9932432432432432,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 0.98,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 0.98,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 24
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 30
+   },
+   "wall_seconds": 5.144
+  },
+  {
+   "file": "payslip_033.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    0.9527243589743589,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.996379726468222,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9638854296388543,
+    1.0,
+    0.9482244510707509,
+    1.0,
+    0.19999999999999996,
+    0.0,
+    0.33333333333333337,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9738724273828638,
+    1.0,
+    0.9677579365079365,
+    1.0,
+    0.9666666666666667,
+    0.9488461538461539,
+    0.9684775318578136,
+    0.9670886075949368,
+    0.9559884559884559,
+    0.9576719576719577,
+    0.961038961038961,
+    0.9660287081339713,
+    0.9574314574314574,
+    0.9738751814223512,
+    0.9574314574314574,
+    0.9602941176470589,
+    0.9630419331911869,
+    0.9642857142857143,
+    0.9531914893617022,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 15.684,
+   "remote_seconds": 10.96,
+   "mac_seconds": 4.724,
+   "glimmer_seconds": 10.56,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 14,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 0.9527243589743589,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 0.996379726468222,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 28
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 28
+   },
+   "readback_original": {
+    "values_read": 7,
+    "plain_readable": 31
+   },
+   "wall_seconds": 4.725
+  },
+  {
+   "file": "payslip_034.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9696209150326798,
+    1.0,
+    0.9409569798068481,
+    1.0,
+    0.4545454545454546,
+    0.0,
+    0.8181818181818181,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.96875,
+    1.0,
+    0.960287081339713,
+    1.0,
+    0.9705357142857143,
+    0.9626373626373627,
+    0.9347684279191129,
+    0.9656593406593407,
+    0.9671361502347418,
+    0.9642267473858007,
+    0.964625850340136,
+    0.9725177304964538,
+    0.9558441558441558,
+    0.9724770642201834,
+    0.9662337662337662,
+    0.9628681177976952,
+    0.9545454545454546,
+    0.9512459371614301,
+    0.9534883720930233,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 20.315,
+   "remote_seconds": 13.4,
+   "mac_seconds": 6.915,
+   "glimmer_seconds": 12.85,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 14,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 28
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 28
+   },
+   "readback_original": {
+    "values_read": 7,
+    "plain_readable": 31
+   },
+   "wall_seconds": 6.915
+  },
+  {
+   "file": "payslip_035.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    0.9975282485875706,
+    0.9826977401129944,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 20.131,
+   "remote_seconds": 15.6,
+   "mac_seconds": 4.531,
+   "glimmer_seconds": 14.86,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 13,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 0.9975282485875706,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 0.9826977401129944,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 19
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 30
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 30
+   },
+   "wall_seconds": 4.532
+  },
+  {
+   "file": "payslip_036.jpg",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    0.9929411764705882,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9289633060206626,
+    1.0,
+    0.9037170882808466,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9683164604424447,
+    1.0,
+    0.9695767195767195,
+    1.0,
+    0.9690927218344965,
+    0.9651515151515151,
+    0.9560595322466336,
+    0.9641519529159979,
+    0.9564553093964858,
+    0.9596827495042961,
+    0.9541634835752483,
+    0.9653655854865311,
+    0.9587471352177235,
+    0.9704545454545455,
+    0.966131907308378,
+    0.9532634971796938,
+    0.9625668449197861,
+    0.9384436701509872,
+    0.9427697684578419,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 20.212,
+   "remote_seconds": 11.04,
+   "mac_seconds": 9.172,
+   "glimmer_seconds": 10.62,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 12,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 0.9929411764705882,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_original": {
+    "values_read": 7,
+    "plain_readable": 31
+   },
+   "wall_seconds": 9.173
+  },
+  {
+   "file": "payslip_037.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9727358490566038,
+    1.0,
+    0.9459669582118562,
+    1.0,
+    0.3913043478260869,
+    0.9565217391304348,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9501661129568106,
+    1.0,
+    0.9633962264150944,
+    1.0,
+    0.9722024233784747,
+    0.9394302848575712,
+    0.9675925925925926,
+    0.9580745341614907,
+    0.9497863247863247,
+    0.9554597701149425,
+    0.968482905982906,
+    0.9587339743589743,
+    0.9631410256410257,
+    0.9607142857142857,
+    0.9572591587516961,
+    0.9599096555618295,
+    0.9542920847268673,
+    0.9705603038936372,
+    0.9357610474631751,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 14.739,
+   "remote_seconds": 9.96,
+   "mac_seconds": 4.779,
+   "glimmer_seconds": 9.79,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 13,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 29
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 30
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 30
+   },
+   "wall_seconds": 4.779
+  },
+  {
+   "file": "letter_000.png",
+   "type": "letter",
+   "n_values": 10,
+   "n_faces": 0,
+   "n_plain_spans": 17,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    0.9786871270247229,
+    1.0,
+    0.8466183574879227,
+    0.0,
+    0.9506519784172662,
+    0.9911532385466034,
+    0.9924709103353867,
+    0.982626019273536,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.989454094292804,
+    0.9766590389016019,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 20.075,
+   "remote_seconds": 13.29,
+   "mac_seconds": 6.785,
+   "glimmer_seconds": 12.65,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 15,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "email",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "phone",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 15
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 15
+   },
+   "readback_original": {
+    "values_read": 9,
+    "plain_readable": 16
+   },
+   "wall_seconds": 6.785
+  },
+  {
+   "file": "letter_001.png",
+   "type": "letter",
+   "n_values": 10,
+   "n_faces": 0,
+   "n_plain_spans": 17,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    0.9917241379310345,
+    1.0,
+    0.9920634920634921,
+    1.0,
+    0.9942168674698795,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.8857817109144542,
+    0.5708661417322834,
+    0.9245283018867925,
+    0.6258503401360545,
+    0.78,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9720973135016718,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.7659574468085106,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 26.254,
+   "remote_seconds": 23.03,
+   "mac_seconds": 3.224,
+   "glimmer_seconds": 22.69,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 18,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 0.9917241379310345,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 0.9920634920634921,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "iban",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 0.9942168674698795,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "email",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "phone",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 3
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 8
+   },
+   "readback_original": {
+    "values_read": 0,
+    "plain_readable": 2
+   },
+   "wall_seconds": 3.225
+  }
+ ]
+}

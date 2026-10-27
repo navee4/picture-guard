@@ -1,0 +1,338 @@
+{
+ "V0 current": {
+  "payslip": {
+   "values": 304,
+   "located": 290,
+   "pictures": 38,
+   "pictures_all_located": 31,
+   "located_wrong_spot": 0,
+   "located_right_spot": 290,
+   "located_not_planted": 0
+  },
+  "letter": {
+   "values": 362,
+   "located": 314,
+   "pictures": 37,
+   "pictures_all_located": 25,
+   "located_wrong_spot": 0,
+   "located_right_spot": 289,
+   "located_not_planted": 25
+  },
+  "id_card": {
+   "values": 266,
+   "located": 257,
+   "pictures": 38,
+   "pictures_all_located": 33,
+   "located_wrong_spot": 0,
+   "located_right_spot": 257,
+   "located_not_planted": 0
+  },
+  "chat": {
+   "values": 210,
+   "located": 159,
+   "pictures": 37,
+   "pictures_all_located": 11,
+   "located_wrong_spot": 0,
+   "located_right_spot": 143,
+   "located_not_planted": 16
+  }
+ },
+ "V1 look-alikes": {
+  "payslip": {
+   "values": 304,
+   "located": 290,
+   "pictures": 38,
+   "pictures_all_located": 31,
+   "located_wrong_spot": 0,
+   "located_right_spot": 290,
+   "located_not_planted": 0
+  },
+  "letter": {
+   "values": 362,
+   "located": 316,
+   "pictures": 37,
+   "pictures_all_located": 25,
+   "located_wrong_spot": 0,
+   "located_right_spot": 291,
+   "located_not_planted": 25
+  },
+  "id_card": {
+   "values": 266,
+   "located": 257,
+   "pictures": 38,
+   "pictures_all_located": 33,
+   "located_wrong_spot": 0,
+   "located_right_spot": 257,
+   "located_not_planted": 0
+  },
+  "chat": {
+   "values": 210,
+   "located": 159,
+   "pictures": 37,
+   "pictures_all_located": 11,
+   "located_wrong_spot": 0,
+   "located_right_spot": 143,
+   "located_not_planted": 16
+  }
+ },
+ "V6 digits reader only (thresholds as now)": {
+  "payslip": {
+   "values": 304,
+   "located": 290,
+   "pictures": 38,
+   "pictures_all_located": 31,
+   "located_wrong_spot": 0,
+   "located_right_spot": 290,
+   "located_not_planted": 0
+  },
+  "letter": {
+   "values": 362,
+   "located": 314,
+   "pictures": 37,
+   "pictures_all_located": 25,
+   "located_wrong_spot": 0,
+   "located_right_spot": 289,
+   "located_not_planted": 25
+  },
+  "id_card": {
+   "values": 266,
+   "located": 257,
+   "pictures": 38,
+   "pictures_all_located": 33,
+   "located_wrong_spot": 0,
+   "located_right_spot": 257,
+   "located_not_planted": 0
+  },
+  "chat": {
+   "values": 210,
+   "located": 171,
+   "pictures": 37,
+   "pictures_all_located": 20,
+   "located_wrong_spot": 0,
+   "located_right_spot": 155,
+   "located_not_planted": 16
+  }
+ },
+ "V7 look-alikes + digits reader": {
+  "payslip": {
+   "values": 304,
+   "located": 290,
+   "pictures": 38,
+   "pictures_all_located": 31,
+   "located_wrong_spot": 0,
+   "located_right_spot": 290,
+   "located_not_planted": 0
+  },
+  "letter": {
+   "values": 362,
+   "located": 316,
+   "pictures": 37,
+   "pictures_all_located": 25,
+   "located_wrong_spot": 0,
+   "located_right_spot": 291,
+   "located_not_planted": 25
+  },
+  "id_card": {
+   "values": 266,
+   "located": 257,
+   "pictures": 38,
+   "pictures_all_located": 33,
+   "located_wrong_spot": 0,
+   "located_right_spot": 257,
+   "located_not_planted": 0
+  },
+  "chat": {
+   "values": 210,
+   "located": 171,
+   "pictures": 37,
+   "pictures_all_located": 20,
+   "located_wrong_spot": 0,
+   "located_right_spot": 155,
+   "located_not_planted": 16
+  }
+ },
+ "V2 + digit threshold 0.80": {
+  "payslip": {
+   "values": 304,
+   "located": 291,
+   "pictures": 38,
+   "pictures_all_located": 31,
+   "located_wrong_spot": 1,
+   "located_right_spot": 290,
+   "located_not_planted": 0,
+   "wrong_spot_cases": [
+    {
+     "file": "payslip_016.jpg",
+     "glimmer_type": "sort_code",
+     "planted_type": "sort_code",
+     "similarity": 1.0
+    }
+   ]
+  },
+  "letter": {
+   "values": 362,
+   "located": 320,
+   "pictures": 37,
+   "pictures_all_located": 25,
+   "located_wrong_spot": 0,
+   "located_right_spot": 293,
+   "located_not_planted": 27
+  },
+  "id_card": {
+   "values": 266,
+   "located": 257,
+   "pictures": 38,
+   "pictures_all_located": 33,
+   "located_wrong_spot": 0,
+   "located_right_spot": 257,
+   "located_not_planted": 0
+  },
+  "chat": {
+   "values": 210,
+   "located": 161,
+   "pictures": 37,
+   "pictures_all_located": 12,
+   "located_wrong_spot": 0,
+   "located_right_spot": 145,
+   "located_not_planted": 16
+  }
+ },
+ "V3 V2 + digits reader": {
+  "payslip": {
+   "values": 304,
+   "located": 291,
+   "pictures": 38,
+   "pictures_all_located": 31,
+   "located_wrong_spot": 1,
+   "located_right_spot": 290,
+   "located_not_planted": 0,
+   "wrong_spot_cases": [
+    {
+     "file": "payslip_016.jpg",
+     "glimmer_type": "sort_code",
+     "planted_type": "sort_code",
+     "similarity": 1.0
+    }
+   ]
+  },
+  "letter": {
+   "values": 362,
+   "located": 320,
+   "pictures": 37,
+   "pictures_all_located": 25,
+   "located_wrong_spot": 0,
+   "located_right_spot": 293,
+   "located_not_planted": 27
+  },
+  "id_card": {
+   "values": 266,
+   "located": 257,
+   "pictures": 38,
+   "pictures_all_located": 33,
+   "located_wrong_spot": 0,
+   "located_right_spot": 257,
+   "located_not_planted": 0
+  },
+  "chat": {
+   "values": 210,
+   "located": 172,
+   "pictures": 37,
+   "pictures_all_located": 21,
+   "located_wrong_spot": 0,
+   "located_right_spot": 156,
+   "located_not_planted": 16
+  }
+ },
+ "V4 V3 + text threshold 0.80": {
+  "payslip": {
+   "values": 304,
+   "located": 292,
+   "pictures": 38,
+   "pictures_all_located": 31,
+   "located_wrong_spot": 1,
+   "located_right_spot": 291,
+   "located_not_planted": 0,
+   "wrong_spot_cases": [
+    {
+     "file": "payslip_016.jpg",
+     "glimmer_type": "sort_code",
+     "planted_type": "sort_code",
+     "similarity": 1.0
+    }
+   ]
+  },
+  "letter": {
+   "values": 362,
+   "located": 324,
+   "pictures": 37,
+   "pictures_all_located": 27,
+   "located_wrong_spot": 0,
+   "located_right_spot": 297,
+   "located_not_planted": 27
+  },
+  "id_card": {
+   "values": 266,
+   "located": 259,
+   "pictures": 38,
+   "pictures_all_located": 34,
+   "located_wrong_spot": 0,
+   "located_right_spot": 259,
+   "located_not_planted": 0
+  },
+  "chat": {
+   "values": 210,
+   "located": 173,
+   "pictures": 37,
+   "pictures_all_located": 22,
+   "located_wrong_spot": 0,
+   "located_right_spot": 156,
+   "located_not_planted": 17
+  }
+ },
+ "V5 V2 + digit threshold 0.75": {
+  "payslip": {
+   "values": 304,
+   "located": 292,
+   "pictures": 38,
+   "pictures_all_located": 32,
+   "located_wrong_spot": 1,
+   "located_right_spot": 291,
+   "located_not_planted": 0,
+   "wrong_spot_cases": [
+    {
+     "file": "payslip_016.jpg",
+     "glimmer_type": "sort_code",
+     "planted_type": "sort_code",
+     "similarity": 1.0
+    }
+   ]
+  },
+  "letter": {
+   "values": 362,
+   "located": 320,
+   "pictures": 37,
+   "pictures_all_located": 25,
+   "located_wrong_spot": 0,
+   "located_right_spot": 293,
+   "located_not_planted": 27
+  },
+  "id_card": {
+   "values": 266,
+   "located": 257,
+   "pictures": 38,
+   "pictures_all_located": 33,
+   "located_wrong_spot": 0,
+   "located_right_spot": 257,
+   "located_not_planted": 0
+  },
+  "chat": {
+   "values": 210,
+   "located": 172,
+   "pictures": 37,
+   "pictures_all_located": 21,
+   "located_wrong_spot": 0,
+   "located_right_spot": 156,
+   "located_not_planted": 16
+  }
+ }
+}

@@ -30,14 +30,15 @@ def available() -> bool:
     return shutil.which("tesseract") is not None
 
 
-def read_words(image: Image.Image, psm: int, timeout_s: float = 60.0) -> list[Word]:
+def read_words(image: Image.Image, psm: int, timeout_s: float = 60.0, whitelist: str | None = None) -> list[Word]:
     exe = shutil.which("tesseract")
     if exe is None:
         raise TesseractMissing("the tesseract program is not installed")
     with tempfile.TemporaryDirectory(prefix="pg-ocr-") as d:
         f = Path(d) / "in.png"
         image.save(f, format="PNG")
-        r = subprocess.run([exe, str(f), "stdout", "--psm", str(psm), "tsv"], capture_output=True, text=True, timeout=timeout_s)
+        cmd = [exe, str(f), "stdout", "--psm", str(psm)] + (["-c", f"tessedit_char_whitelist={whitelist}"] if whitelist else []) + ["tsv"]
+        r = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout_s)
     if r.returncode != 0:
         raise RuntimeError(f"tesseract exit {r.returncode}: {r.stderr[:200]}")
     return parse_tsv(r.stdout)
@@ -92,7 +93,7 @@ def read_passes(image: Image.Image, timeout_s: float = 60.0, cleanups: tuple = (
         scale = 3 if name == "big3" else 2
         big = cleaned.resize((cleaned.width * scale, cleaned.height * scale), Image.LANCZOS)
         for psm in PSMS:
-            words = read_words(big, psm, timeout_s)
+            words = read_words(big, psm, timeout_s, DIGIT_CHARS if name.startswith("dig") else None)
             for w in words:
                 w.box = tuple(int(round(v / scale)) for v in w.box)
             out[f"{name}-psm{psm}"] = words
@@ -160,11 +161,30 @@ def local_contrast(image: Image.Image) -> Image.Image:
     return out.convert("RGB")
 
 
+def polarity_contrast(image: Image.Image) -> Image.Image:
+    """Per-tile: if a tile is mostly dark (light text on a dark or coloured bubble), invert it, then stretch its contrast.
+    The whole-area `invert_dark` misses coloured chat bubbles; this decides tile by tile."""
+    g = image.convert("L")
+    out = g.copy()
+    for y in range(0, g.height, TILE):
+        for x in range(0, g.width, TILE):
+            box = (x, y, min(g.width, x + TILE), min(g.height, y + TILE))
+            t = g.crop(box)
+            a = np.asarray(t)
+            if a.std() < 8:
+                continue
+            if np.median(a) < 128:
+                t = ImageOps.invert(t)
+            out.paste(ImageOps.autocontrast(t, cutoff=2), box)
+    return out.convert("RGB")
+
+
 def invert_then_local(image: Image.Image) -> Image.Image | None:
     inv = invert_dark(image)
     return local_contrast(inv if inv is not None else image)
 
 
-CLEANUP_FNS = {"inv": invert_dark, "loc": local_contrast, "big3": lambda im: im.convert("RGB"), "invloc": invert_then_local}
+DIGIT_CHARS = "0123456789-+()@./ "  # the digits reader: only characters that numbers, codes, phones and dates use
+CLEANUP_FNS = {"dig": local_contrast, "pol": polarity_contrast, "digpol": polarity_contrast, "inv": invert_dark, "loc": local_contrast, "big3": lambda im: im.convert("RGB"), "invloc": invert_then_local}
 CLEANUPS = tuple(CLEANUP_FNS)
-DEFAULT_CLEANUPS: tuple = ("loc",)  # chosen on the day-6 dev measurements (see PG9 results)
+DEFAULT_CLEANUPS: tuple = ("loc", "dig")  # day 6: loc (per-tile contrast); day 7: dig (digits-only reader, whitelist). See the PG9 and PG10 results

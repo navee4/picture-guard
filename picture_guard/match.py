@@ -24,10 +24,24 @@ def parts_of(value: str) -> list[str]:
     return parts or ([value.strip()] if norm(value) else [])
 
 
-def _locate_part(part: str, lines: list[list[Word]], threshold: float) -> list[tuple]:
+CONFUSABLE = str.maketrans({"o": "0", "i": "1", "l": "1", "|": "1", "s": "5", "b": "8", "z": "2", "g": "6", "q": "9", "t": "7"})
+
+
+def digit_heavy(s: str) -> bool:
+    return len(s) >= 5 and sum(c.isdigit() for c in s) >= 0.6 * len(s)
+
+
+def _locate_part(part: str, lines: list[list[Word]], threshold: float, lenient: dict | None = None) -> list[tuple]:
     target = norm(part)
     if not target:
         return []
+    digits = bool(lenient) and digit_heavy(target)  # numbers and codes: look-alike letters count as the digit they imitate
+    if digits:
+        threshold = lenient.get("digit_threshold", threshold)
+        if lenient.get("confusables"):
+            target = target.translate(CONFUSABLE)
+    elif lenient:
+        threshold = lenient.get("text_threshold", threshold)
     n = max(1, len(part.split()))
     hits = []
     for ln in lines:
@@ -38,6 +52,8 @@ def _locate_part(part: str, lines: list[list[Word]], threshold: float) -> list[t
                 cand = norm("".join(w.text for w in ln[i:i + size]))
                 if not cand:
                     continue
+                if digits and lenient.get("confusables"):
+                    cand = cand.translate(CONFUSABLE)
                 if abs(len(cand) - len(target)) > max(2, len(target) // 3):
                     continue
                 r = 1.0 if cand == target else (0.0 if len(target) < SHORT else SequenceMatcher(None, cand, target).ratio())
@@ -57,14 +73,14 @@ def _overlap(a, b) -> float:
     return ix / max(1, min((a[2] - a[0]) * (a[3] - a[1]), (b[2] - b[0]) * (b[3] - b[1])))
 
 
-def locate(value: str, passes: dict, threshold: float = THRESHOLD) -> list[tuple] | None:
+def locate(value: str, passes: dict, threshold: float = THRESHOLD, lenient: dict | None = None) -> list[tuple] | None:
     """Boxes for every occurrence of every part of `value`, over all OCR passes; None if some part is found nowhere."""
     grouped = {k: group_lines(ws) for k, ws in passes.items()}
     boxes: list[tuple] = []
     for part in parts_of(value):
         found = []
         for lines in grouped.values():
-            for b in _locate_part(part, lines, threshold):
+            for b in _locate_part(part, lines, threshold, lenient):
                 if not any(_overlap(b, f) > 0.5 for f in found):
                     found.append(b)
         if not found:
