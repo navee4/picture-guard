@@ -28,7 +28,8 @@ class DemoE2E(unittest.TestCase):
         from playwright.sync_api import sync_playwright
         original = (ROOT / "demo_samples" / SAMPLE).read_bytes()
         orig_sha = hashlib.sha256(original).hexdigest()
-        key = json.loads((ROOT / "testset" / "key.json").read_text())
+        src = json.loads((ROOT / "demo_samples" / "SOURCES.json").read_text())[SAMPLE]
+        key = json.loads((ROOT / src / "key.json").read_text())
         entry = next(e for e in key["images"] if e["file"] == SAMPLE and e["split"] == "dev")
         private = [s["text"] for s in entry["spans"] if s["kind"] == "personal" and s["text"] and s["pii_type"] != "face"]
         bodies, requests = [], []
