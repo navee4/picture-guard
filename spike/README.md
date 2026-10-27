@@ -7,9 +7,9 @@ Rules: models run on Modal only (never on the Mac); ephemeral apps (`modal run`)
 spend cap $25 (ledger `results/spend.jsonl`, checked before each GPU run); the hold-out is never run
 (`prepare_dev.py` stages dev pictures only, so hold-out pictures never leave the Mac).
 
-Needs: `.venv/bin/modal setup` done once by the builder (no token is ever typed into this repo or a chat);
+Needs: `.venv/bin/modal setup` done once by the account owner (no token is ever typed into this repo or a chat);
 for SAM 3.1 (gated repo): accept the terms at huggingface.co/facebook/sam3.1 and create the Modal secret
-`huggingface-secret` holding `HF_TOKEN` (`modal secret create huggingface-secret HF_TOKEN=...`, typed by the builder).
+`huggingface-secret` holding `HF_TOKEN` (`modal secret create huggingface-secret HF_TOKEN=...`, typed by the account owner).
 
     .venv/bin/python spike/prepare_dev.py
     sh spike/licences.sh                                           # step 1

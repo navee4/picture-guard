@@ -6,8 +6,8 @@ This file is not legal advice. A lawyer has not read any of it.
 
 ## The entry itself (`picture_guard/`)
 
-Written new from 27 October 2026. No code copied from any other project. **No licence file for our own code yet**:
-the builder has to choose one before the repository is made public (open question in the PG-5 results).
+Written new from 27 October 2026. No code copied from any other project. 
+Apache-2.0 (see `LICENSE`); it covers our code only, not the dependencies and models below.
 
 ## What the entry needs to run
 
@@ -25,7 +25,7 @@ the builder has to choose one before the repository is made public (open questio
 |---|---|---|
 | Muse Glimmer 30B (GGUF 4-bit build, run with llama.cpp) | Apache-2.0, plus a separate `USAGE_POLICY.md`. Whether the policy binds on top of Apache-2.0 is **unknown**. Item 1.5 bars processing private information about individuals "unless you have obtained the right to do so in accordance with applicable law". Picture guard hides personal data; that reading is **inferred**, not checked by a lawyer | read in PG-1 (`PG1-RESULTS-prep-1020.md`, `sh spike/licences.sh`) |
 | SAM 3.1 (Meta; "SAM License", 19 Nov 2025; gated, access granted) | Custom licence. Royalty-free limited licence to use, copy, modify and distribute; follow privacy and data-protection law; no weapons or military use; credit SAM in published research; terms may change | read in PG-1 |
-| Muse Spark through the Meta Model API | **Unknown.** Not read; not used yet (day 3 or later) | unknown |
+| Muse Spark through the Meta Model API (not called yet) | **Terms read on 27 Oct 2026 from Meta's developer documentation (`dev.meta.ai/docs`, pages on pricing and rate limits, vision input, and the Build with Muse Spark post). The legal Terms of Service itself (linked as `facebook.com/policies_center/`) was NOT read.** What matters for sending pictures: (1) **Standard mode**: "your content is not used to train Meta models". (2) **Contributor mode** (models named `muse-spark-1.3-contributor`, `muse-spark-1.2-contributor`): cheaper, in return for "permission to use your content", the prompts, files and responses, to train future Meta models. **We must use only the standard models, never a Contributor one**, because pictures are personal data. (3) Muse Spark is in public preview on the Meta Model API "to developers in the US" only. (4) Images are sent inline as a base64 data URL (PNG, JPEG, GIF, WebP; 50 MB each, about 50 per request). (5) The docs do **not** say how long images are kept, whether they are retained for abuse checks, or how they are secured; zero data retention is mentioned only for a voice model. A secondary tracker (ConductAtlas, about the older Llama API terms, not Meta's own page) says Meta may keep flagged content; **unverified**. Only the cleaned copy is ever sent | read (docs, partly) / unknown (legal terms, retention) |
 | llama.cpp (runs Glimmer on Modal) | MIT | from memory |
 
 ## Test tools and test data (`spike/`, `testset/`, `faces/`, `faces_hard/`; made before the hackathon; not the entry)

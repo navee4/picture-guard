@@ -16,6 +16,10 @@ the face-count check, the check of the safe copy and the AI step are not, so the
 "black out the whole picture" whenever a stage is not sure. `--ablation` switches the unbuilt stages off for
 measurement only; it is **not a product result**. See `BUILT-BEFORE-HACKATHON.md` and `LICENCES.md`.
 
+## Licence
+
+Our code is licensed under Apache-2.0 (see `LICENSE`). That covers our code only; the models and programs it uses have their own licences, listed in `LICENCES.md`.
+
 ---
 
 # Picture guard — prep (test set + model spike)
@@ -53,4 +57,4 @@ No model weights or model runs on the Mac. Models run on Modal only (`modal prof
 
 ## Spike (`spike/`)
 
-See `spike/README.md`. Results go to the events folder (see the task brief), not into this repo.
+See `spike/README.md`.
