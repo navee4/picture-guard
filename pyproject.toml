@@ -1,0 +1,16 @@
+[project]
+name = "picture-guard"
+version = "0.1.0"
+description = "Cover private values and faces in a picture, or black out the whole picture if unsure."
+requires-python = ">=3.12"
+dependencies = ["pillow", "numpy"]
+
+[project.scripts]
+pg = "picture_guard.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["picture_guard*"]

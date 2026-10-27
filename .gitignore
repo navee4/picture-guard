@@ -18,3 +18,4 @@ faces/.check_tmp/
 faces_hard/images/
 faces_hard/images_raw/
 faces_hard/.check_tmp/
+*.egg-info/
