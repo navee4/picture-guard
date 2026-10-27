@@ -51,9 +51,20 @@ def default_plan() -> Plan:
     return Plan([replace(s) for s in DETECT], replace(BLACK_OUT), replace(CHECK), replace(SEND))  # fresh copies: callers may edit
 
 
+def _notify(ctx: Context, event: dict) -> None:
+    """Tell a listener (the demo page) which stage is running or done. A listener that fails never changes the result."""
+    cb = ctx.options.get("on_stage")
+    if cb is not None:
+        try:
+            cb(event)
+        except Exception:  # noqa: BLE001
+            pass
+
+
 def _call(stage: Stage, ctx: Context) -> dict:
     """Run one stage in a daemon thread so a hang cannot hold us. Returns the report record for the stage."""
     box: dict = {}
+    _notify(ctx, {"name": stage.name, "status": "running"})
 
     def target():
         try:
@@ -81,6 +92,7 @@ def _call(stage: Stage, ctx: Context) -> dict:
             ctx.results[stage.name] = r
         else:
             rec.update(status="not_sure", answer=r.answer, why=r.why)
+    _notify(ctx, {"name": rec["name"], "status": rec["status"], "seconds": rec["seconds"]})
     return rec
 
 

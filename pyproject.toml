@@ -7,6 +7,8 @@ dependencies = ["pillow", "numpy"]
 
 [project.optional-dependencies]
 remote = ["modal"]
+demo = ["fastapi", "python-multipart", "uvicorn"]
+demo-test = ["fastapi", "python-multipart", "uvicorn", "httpx", "playwright"]
 
 [project.scripts]
 pg = "picture_guard.cli:main"

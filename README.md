@@ -16,6 +16,15 @@ the face-count check, the check of the safe copy and the AI step are not, so the
 "black out the whole picture" whenever a stage is not sure. `--ablation` switches the unbuilt stages off for
 measurement only; it is **not a product result**. See `BUILT-BEFORE-HACKATHON.md` and `LICENCES.md`.
 
+## The live demo (`picture_guard/demo/`)
+
+A web page over the same pipeline as `pg protect`: pick a made-up sample or upload a PNG/JPEG, see the original beside the safe copy, what was covered (types and counts only), progress per stage, then ask Muse Spark a question about the safe copy. A panel shows the SHA-256 of the original, of the safe copy and of the image bytes in the request to Muse Spark (they must match the safe copy and never the original).
+
+- Deploy (Modal, scales to zero, one container each for the web part and the GPU part): `.venv/bin/python tools/deploy_demo.py`. The Muse Spark call uses the Modal secret `meta-model-api` (key `META_MODEL_API_KEY`) if it exists; otherwise the page says "not connected yet" and nothing is sent.
+- Limits: 5 MB, 16 megapixels, 8 pictures and 12 questions per visitor per 10 minutes, 200 pictures a day, one picture at a time, 240 s per request.
+- Pictures are processed in memory-backed temporary files that are deleted at once. Nothing is stored or logged.
+- Tests: `.venv/bin/python -m unittest tests.test_demo`; end to end in a real browser against a deployed demo: `PG_DEMO_URL=... .venv/bin/python -m unittest tests.e2e.test_demo_e2e` (needs `uv pip install -e '.[demo-test]'` and `playwright install chromium`).
+
 ## Licence
 
 Our code is licensed under Apache-2.0 (see `LICENSE`). That covers our code only; the models and programs it uses have their own licences, listed in `LICENCES.md`.

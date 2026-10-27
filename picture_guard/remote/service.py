@@ -33,7 +33,7 @@ image = (
 
 
 @app.cls(image=image, gpu="L40S", volumes={MODELS: vol}, secrets=[modal.Secret.from_name("huggingface-secret")],
-         timeout=1800, cpu=4, memory=32768, scaledown_window=600, max_containers=1)
+         timeout=1800, cpu=4, memory=32768, scaledown_window=180, max_containers=1)
 class Guard:
     @modal.enter()
     def start(self):
