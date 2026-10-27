@@ -1,0 +1,15 @@
+## faces, split dev, mode: ablation: NOT A PRODUCT RESULT (55 of 55 pictures scored, version 0.1.0-day1)
+
+**ABLATION: NOT A PRODUCT RESULT.** No model was called; unbuilt-model stages answered 'nothing found' and the 'cannot judge' alarms were off. Measurement only.
+
+| Type | Pictures | Whole picture black | Not black: values left readable / planted | Not black: face boxes 90%+ covered | Not black: ordinary spans readable (original) | Whole-black pictures: planted values left readable | s/picture Mac / Modal / total |
+|---|---|---|---|---|---|---|---|
+| all | 55 | 0 of 55 (0.0%) | 0 / 0 | 0 of 122 | 26 of 55 (24) | 0 | 1.2078 / 0 / 1.2078 |
+| chat | 18 | 0 of 18 (0.0%) | 0 / 0 | 0 of 85 | 18 of 18 (18) | 0 | 1.2662 / 0 / 1.2662 |
+| id_card | 37 | 0 of 37 (0.0%) | 0 / 0 | 0 of 37 | 8 of 37 (6) | 0 | 1.1794 / 0 / 1.1794 |
+
+Why pictures went whole black: {}
+First not-sure or failing stage: {'None': 55} (None = no stage failed).
+The day-2 word list would have refused 55 of 55 pictures that reached `decide`.
+
+Report says whole-black but pixels disagree: 0. Safe copy wrong size: 0. Safe copies with metadata chunks: 0. Pictures that failed to run: 0.

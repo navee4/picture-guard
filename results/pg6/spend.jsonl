@@ -3,3 +3,9 @@
 {"run": "eval-testset-dev", "seconds": 2423.3, "usd": 1.8677, "note": "session wall time (upper bound: includes image build and cold start)"}
 {"run": "eval-faces-dev", "seconds": 581.8, "usd": 0.4484, "note": "session wall time (upper bound: includes image build and cold start)"}
 {"run": "eval-faces_hard-dev", "seconds": 399.5, "usd": 0.3079, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "eval-testset-dev", "seconds": 2834.6, "usd": 2.1847, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "eval-faces-dev", "seconds": 653.2, "usd": 0.5034, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "eval-faces_hard-dev", "seconds": 488.3, "usd": 0.3763, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "eval-testset-dev-checkglimmer", "seconds": 3364.6, "usd": 2.5932, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "eval-faces-dev-checkglimmer", "seconds": 1051.1, "usd": 0.8101, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "eval-faces_hard-dev-checkglimmer", "seconds": 790.5, "usd": 0.6092, "note": "session wall time (upper bound: includes image build and cold start)"}

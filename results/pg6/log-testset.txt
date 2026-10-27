@@ -1,0 +1,519 @@
+✓ Initialized. View run at 
+https://modal.com/apps/workspace/main/ap-fBAnfpvuwGF9xl9aiA7tci
+✓ Created objects.
+├── ✓ Uploaded PythonPackage:picture_guard
+├── ✓ Uploaded 
+│   ./picture_guard/remote/container_i
+│   mpl.py
+└── ✓ Created Function Guard.*.
+
+==========
+== CUDA ==
+==========
+
+CUDA Version 12.8.1
+
+Container image Copyright (c) 2016-2023, NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+This container image and its contents are governed by the NVIDIA Deep Learning Container License.
+By pulling and using the container, you accept the terms and conditions of this license:
+https://developer.nvidia.com/ngc/nvidia-deep-learning-container-license
+
+A copy of this license is made available in this container at /NGC-DL-CONTAINER-LICENSE for your convenience.
+
+/usr/local/lib/python3.12/site-packages/huggingface_hub/constants.py:302: FutureWarning: The `HF_HUB_ENABLE_HF_TRANSFER` environment variable is deprecated as 'hf_transfer' is not used anymore. Please use `HF_XET_HIGH_PERFORMANCE` instead to enable high performance transfer with Xet. Visit https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#hfxethighperformance for more details.
+  warnings.warn(
+/usr/local/lib/python3.12/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+dynamic_multimask_via_stability is reset to False in the multiplex model
+[0m[32mINFO 2026-10-27 10:55:32,894 2 sam3_multiplex_base.py: 337:[0m `setting max_num_objects` to 16 -- creating num_obj_for_compile=1 objects for torch.compile cache
+Missing keys (64): ['detector.backbone.vision_backbone.trunk.blocks.0.attn.freqs_cis_real', 'detector.backbone.vision_backbone.trunk.blocks.0.attn.freqs_cis_imag', 'detector.backbone.vision_backbone.trunk.blocks.1.attn.freqs_cis_real', 'detector.backbone.vision_backbone.trunk.blocks.1.attn.freqs_cis_imag', 'detector.backbone.vision_backbone.trunk.blocks.2.attn.freqs_cis_real', 'detector.backbone.vision_backbone.trunk.blocks.2.attn.freqs_cis_imag', 'detector.backbone.vision_backbone.trunk.blocks.3.attn.freqs_cis_real', 'detector.backbone.vision_backbone.trunk.blocks.3.attn.freqs_cis_imag', 'detector.backbone.vision_backbone.trunk.blocks.4.attn.freqs_cis_real', 'detector.backbone.vision_backbone.trunk.blocks.4.attn.freqs_cis_imag']...
+[0m[32mINFO 2026-10-27 10:55:39,703 2 sam3_base_predictor.py: 167:[0m started new session 1e4d8158-1df1-4b5e-9b39-bf850034e811
+[0m[32mINFO 2026-10-27 10:55:39,703 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 10:55:41,848 2 sam3_base_predictor.py: 467:[0m removed session 1e4d8158-1df1-4b5e-9b39-bf850034e811
+[0m[32mINFO 2026-10-27 10:56:01,006 2 sam3_base_predictor.py: 167:[0m started new session 0ed3f95a-d197-47e9-8c96-36c3bdd3fbf2
+[0m[32mINFO 2026-10-27 10:56:01,006 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 10:56:01,403 2 sam3_base_predictor.py: 467:[0m removed session 0ed3f95a-d197-47e9-8c96-36c3bdd3fbf2
+[0m[32mINFO 2026-10-27 10:56:17,918 2 sam3_base_predictor.py: 167:[0m started new session 0ff9f19d-59f0-466d-99a1-2a96c37a3476
+[0m[32mINFO 2026-10-27 10:56:17,918 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 10:56:18,139 2 sam3_base_predictor.py: 467:[0m removed session 0ff9f19d-59f0-466d-99a1-2a96c37a3476
+[0m[32mINFO 2026-10-27 10:56:32,699 2 sam3_base_predictor.py: 167:[0m started new session 0f0acc3d-0b2a-4df1-b2a6-a3e3c700bb5f
+[0m[32mINFO 2026-10-27 10:56:32,700 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 10:56:32,962 2 sam3_base_predictor.py: 467:[0m removed session 0f0acc3d-0b2a-4df1-b2a6-a3e3c700bb5f
+[0m[32mINFO 2026-10-27 10:56:49,180 2 sam3_base_predictor.py: 167:[0m started new session 78e010c1-8580-4015-abbb-8b5a6ecf8dbc
+[0m[32mINFO 2026-10-27 10:56:49,181 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 10:56:49,413 2 sam3_base_predictor.py: 467:[0m removed session 78e010c1-8580-4015-abbb-8b5a6ecf8dbc
+[0m[32mINFO 2026-10-27 10:57:03,102 2 sam3_base_predictor.py: 167:[0m started new session 55b31af4-4873-4784-97c9-0b31281d7f90
+[0m[32mINFO 2026-10-27 10:57:03,102 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 10:57:03,351 2 sam3_base_predictor.py: 467:[0m removed session 55b31af4-4873-4784-97c9-0b31281d7f90
+[0m[32mINFO 2026-10-27 10:57:18,238 2 sam3_base_predictor.py: 167:[0m started new session a6430b39-ac86-4819-8402-ecb0f9cef769
+[0m[32mINFO 2026-10-27 10:57:18,239 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 10:57:18,498 2 sam3_base_predictor.py: 467:[0m removed session a6430b39-ac86-4819-8402-ecb0f9cef769
+[0m[32mINFO 2026-10-27 10:57:33,435 2 sam3_base_predictor.py: 167:[0m started new session 926a38a3-5fdb-4ca6-97b7-ea4b7a7a2aff
+[0m[32mINFO 2026-10-27 10:57:33,436 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 10:57:33,670 2 sam3_base_predictor.py: 467:[0m removed session 926a38a3-5fdb-4ca6-97b7-ea4b7a7a2aff
+[0m[32mINFO 2026-10-27 10:57:47,622 2 sam3_base_predictor.py: 167:[0m started new session ec74460e-6920-421d-99ee-0fa621721fde
+[0m[32mINFO 2026-10-27 10:57:47,622 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 10:57:47,883 2 sam3_base_predictor.py: 467:[0m removed session ec74460e-6920-421d-99ee-0fa621721fde
+[0m[32mINFO 2026-10-27 10:58:03,304 2 sam3_base_predictor.py: 167:[0m started new session df961e77-0955-434c-a516-42adc600f27c
+[0m[32mINFO 2026-10-27 10:58:03,304 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 10:58:03,542 2 sam3_base_predictor.py: 467:[0m removed session df961e77-0955-434c-a516-42adc600f27c
+[0m[32mINFO 2026-10-27 10:58:18,318 2 sam3_base_predictor.py: 167:[0m started new session 70d91a7f-7ea0-432d-a07d-ecafe5f5dc59
+[0m[32mINFO 2026-10-27 10:58:18,318 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 10:58:18,556 2 sam3_base_predictor.py: 467:[0m removed session 70d91a7f-7ea0-432d-a07d-ecafe5f5dc59
+[0m[32mINFO 2026-10-27 10:58:34,661 2 sam3_base_predictor.py: 167:[0m started new session 89263437-8aa0-47cc-90bd-5ceb316fef0f
+[0m[32mINFO 2026-10-27 10:58:34,661 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 10:58:34,926 2 sam3_base_predictor.py: 467:[0m removed session 89263437-8aa0-47cc-90bd-5ceb316fef0f
+[0m[32mINFO 2026-10-27 10:58:53,975 2 sam3_base_predictor.py: 167:[0m started new session 4bafa7f7-9274-427f-94dd-0c0afecc5ec0
+[0m[32mINFO 2026-10-27 10:58:53,975 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 10:58:54,348 2 sam3_base_predictor.py: 467:[0m removed session 4bafa7f7-9274-427f-94dd-0c0afecc5ec0
+[0m[32mINFO 2026-10-27 10:59:12,326 2 sam3_base_predictor.py: 167:[0m started new session d15278a9-8731-4135-9468-129bab54cb94
+[0m[32mINFO 2026-10-27 10:59:12,327 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 10:59:12,702 2 sam3_base_predictor.py: 467:[0m removed session d15278a9-8731-4135-9468-129bab54cb94
+[0m[32mINFO 2026-10-27 10:59:29,090 2 sam3_base_predictor.py: 167:[0m started new session 8cec586e-5428-48db-bd75-6bfe6fa36b28
+[0m[32mINFO 2026-10-27 10:59:29,090 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 10:59:29,446 2 sam3_base_predictor.py: 467:[0m removed session 8cec586e-5428-48db-bd75-6bfe6fa36b28
+[0m[32mINFO 2026-10-27 10:59:43,474 2 sam3_base_predictor.py: 167:[0m started new session 8bf00458-5712-461a-beb1-926a9c973a85
+[0m[32mINFO 2026-10-27 10:59:43,475 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 10:59:43,749 2 sam3_base_predictor.py: 467:[0m removed session 8bf00458-5712-461a-beb1-926a9c973a85
+[0m[32mINFO 2026-10-27 11:00:19,511 2 sam3_base_predictor.py: 167:[0m started new session 808b8459-b7ef-4f5d-909d-c7b27f9ffd44
+[0m[32mINFO 2026-10-27 11:00:19,512 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:00:19,764 2 sam3_base_predictor.py: 467:[0m removed session 808b8459-b7ef-4f5d-909d-c7b27f9ffd44
+[0m[32mINFO 2026-10-27 11:00:33,277 2 sam3_base_predictor.py: 167:[0m started new session 450cc302-3d94-4c98-b224-816bdc1cdbd5
+[0m[32mINFO 2026-10-27 11:00:33,277 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:00:33,530 2 sam3_base_predictor.py: 467:[0m removed session 450cc302-3d94-4c98-b224-816bdc1cdbd5
+[0m[32mINFO 2026-10-27 11:00:46,876 2 sam3_base_predictor.py: 167:[0m started new session 940d543e-e71e-4ba5-b0f7-69c6e4277bbe
+[0m[32mINFO 2026-10-27 11:00:46,876 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:00:47,121 2 sam3_base_predictor.py: 467:[0m removed session 940d543e-e71e-4ba5-b0f7-69c6e4277bbe
+[0m[32mINFO 2026-10-27 11:01:01,582 2 sam3_base_predictor.py: 167:[0m started new session 630e179e-9ab4-4af2-8982-0310e5aef53e
+[0m[32mINFO 2026-10-27 11:01:01,582 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:01:01,844 2 sam3_base_predictor.py: 467:[0m removed session 630e179e-9ab4-4af2-8982-0310e5aef53e
+[0m[32mINFO 2026-10-27 11:01:16,388 2 sam3_base_predictor.py: 167:[0m started new session fc02a025-a6b2-4590-9449-611c10347b0e
+[0m[32mINFO 2026-10-27 11:01:16,388 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:01:16,662 2 sam3_base_predictor.py: 467:[0m removed session fc02a025-a6b2-4590-9449-611c10347b0e
+[0m[32mINFO 2026-10-27 11:01:32,076 2 sam3_base_predictor.py: 167:[0m started new session d9d66928-3465-446d-a65c-6c6b57bb8dbd
+[0m[32mINFO 2026-10-27 11:01:32,077 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:01:32,355 2 sam3_base_predictor.py: 467:[0m removed session d9d66928-3465-446d-a65c-6c6b57bb8dbd
+[0m[32mINFO 2026-10-27 11:01:47,207 2 sam3_base_predictor.py: 167:[0m started new session 236754fc-d84c-46f3-8267-5d0547d48a6a
+[0m[32mINFO 2026-10-27 11:01:47,207 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:01:47,473 2 sam3_base_predictor.py: 467:[0m removed session 236754fc-d84c-46f3-8267-5d0547d48a6a
+[0m[32mINFO 2026-10-27 11:02:01,356 2 sam3_base_predictor.py: 167:[0m started new session 1793c3aa-192f-481a-9b6c-9a413b4bbbb6
+[0m[32mINFO 2026-10-27 11:02:01,356 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:02:01,613 2 sam3_base_predictor.py: 467:[0m removed session 1793c3aa-192f-481a-9b6c-9a413b4bbbb6
+[0m[32mINFO 2026-10-27 11:02:17,087 2 sam3_base_predictor.py: 167:[0m started new session 5558f5ce-7c9b-4cf2-a553-6f035ab11c50
+[0m[32mINFO 2026-10-27 11:02:17,087 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:02:17,356 2 sam3_base_predictor.py: 467:[0m removed session 5558f5ce-7c9b-4cf2-a553-6f035ab11c50
+[0m[32mINFO 2026-10-27 11:02:34,399 2 sam3_base_predictor.py: 167:[0m started new session bf639b9d-36c8-4732-812a-8e82f94bf52d
+[0m[32mINFO 2026-10-27 11:02:34,400 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:02:34,662 2 sam3_base_predictor.py: 467:[0m removed session bf639b9d-36c8-4732-812a-8e82f94bf52d
+[0m[32mINFO 2026-10-27 11:02:53,015 2 sam3_base_predictor.py: 167:[0m started new session 2be0a2e8-fc8d-4d75-89c0-7f40f59b7e89
+[0m[32mINFO 2026-10-27 11:02:53,016 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:02:53,399 2 sam3_base_predictor.py: 467:[0m removed session 2be0a2e8-fc8d-4d75-89c0-7f40f59b7e89
+[0m[32mINFO 2026-10-27 11:03:08,464 2 sam3_base_predictor.py: 167:[0m started new session 78d8761a-9013-460a-a584-095f90f2d698
+[0m[32mINFO 2026-10-27 11:03:08,464 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:03:08,728 2 sam3_base_predictor.py: 467:[0m removed session 78d8761a-9013-460a-a584-095f90f2d698
+[0m[32mINFO 2026-10-27 11:03:30,698 2 sam3_base_predictor.py: 167:[0m started new session 9e4ad44a-23f6-424b-9f99-53f63c85f624
+[0m[32mINFO 2026-10-27 11:03:30,699 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:03:30,925 2 sam3_base_predictor.py: 467:[0m removed session 9e4ad44a-23f6-424b-9f99-53f63c85f624
+[0m[32mINFO 2026-10-27 11:03:44,122 2 sam3_base_predictor.py: 167:[0m started new session 6cbb61e2-3b7c-40d1-a540-2e2497778318
+[0m[32mINFO 2026-10-27 11:03:44,123 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:03:44,374 2 sam3_base_predictor.py: 467:[0m removed session 6cbb61e2-3b7c-40d1-a540-2e2497778318
+[0m[32mINFO 2026-10-27 11:04:01,727 2 sam3_base_predictor.py: 167:[0m started new session 63c954b9-eeb1-4ada-8c38-fe632397a798
+[0m[32mINFO 2026-10-27 11:04:01,728 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:04:02,122 2 sam3_base_predictor.py: 467:[0m removed session 63c954b9-eeb1-4ada-8c38-fe632397a798
+[0m[32mINFO 2026-10-27 11:04:18,709 2 sam3_base_predictor.py: 167:[0m started new session 9bd32230-7039-4716-bc16-7add639bb2b5
+[0m[32mINFO 2026-10-27 11:04:18,710 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:04:18,948 2 sam3_base_predictor.py: 467:[0m removed session 9bd32230-7039-4716-bc16-7add639bb2b5
+[0m[32mINFO 2026-10-27 11:04:34,971 2 sam3_base_predictor.py: 167:[0m started new session dd25e1c1-9efc-4458-baef-f467d5efc463
+[0m[32mINFO 2026-10-27 11:04:34,971 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:04:35,224 2 sam3_base_predictor.py: 467:[0m removed session dd25e1c1-9efc-4458-baef-f467d5efc463
+[0m[32mINFO 2026-10-27 11:04:49,179 2 sam3_base_predictor.py: 167:[0m started new session 0cfe9a0f-cd98-43dd-beb0-cec978f383d5
+[0m[32mINFO 2026-10-27 11:04:49,179 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:04:49,444 2 sam3_base_predictor.py: 467:[0m removed session 0cfe9a0f-cd98-43dd-beb0-cec978f383d5
+[0m[32mINFO 2026-10-27 11:05:05,730 2 sam3_base_predictor.py: 167:[0m started new session 9914f50f-b81b-4f93-8975-1399dba6735c
+[0m[32mINFO 2026-10-27 11:05:05,730 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:05:05,994 2 sam3_base_predictor.py: 467:[0m removed session 9914f50f-b81b-4f93-8975-1399dba6735c
+[0m[32mINFO 2026-10-27 11:05:23,725 2 sam3_base_predictor.py: 167:[0m started new session f55efd43-87bf-445b-89fb-a71b0cf820b0
+[0m[32mINFO 2026-10-27 11:05:23,726 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:05:23,985 2 sam3_base_predictor.py: 467:[0m removed session f55efd43-87bf-445b-89fb-a71b0cf820b0
+[0m[32mINFO 2026-10-27 11:05:44,012 2 sam3_base_predictor.py: 167:[0m started new session cf26e613-9d12-40f3-8799-881c40a15836
+[0m[32mINFO 2026-10-27 11:05:44,013 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:05:44,271 2 sam3_base_predictor.py: 467:[0m removed session cf26e613-9d12-40f3-8799-881c40a15836
+[0m[32mINFO 2026-10-27 11:05:59,928 2 sam3_base_predictor.py: 167:[0m started new session 434ad56a-0191-4e22-ad46-adeb785c6c61
+[0m[32mINFO 2026-10-27 11:05:59,928 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:06:00,189 2 sam3_base_predictor.py: 467:[0m removed session 434ad56a-0191-4e22-ad46-adeb785c6c61
+[0m[32mINFO 2026-10-27 11:06:15,403 2 sam3_base_predictor.py: 167:[0m started new session b758c79a-3cad-4bce-aa72-d7fc0ce9d1d2
+[0m[32mINFO 2026-10-27 11:06:15,403 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:06:15,767 2 sam3_base_predictor.py: 467:[0m removed session b758c79a-3cad-4bce-aa72-d7fc0ce9d1d2
+[0m[32mINFO 2026-10-27 11:06:32,451 2 sam3_base_predictor.py: 167:[0m started new session 0af13fdc-acdb-4505-b87c-555b7bedb721
+[0m[32mINFO 2026-10-27 11:06:32,451 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:06:32,697 2 sam3_base_predictor.py: 467:[0m removed session 0af13fdc-acdb-4505-b87c-555b7bedb721
+[0m[32mINFO 2026-10-27 11:07:14,714 2 sam3_base_predictor.py: 167:[0m started new session 15fe98fe-0da5-485f-bdc2-ffed9564b34f
+[0m[32mINFO 2026-10-27 11:07:14,714 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:07:15,105 2 sam3_base_predictor.py: 467:[0m removed session 15fe98fe-0da5-485f-bdc2-ffed9564b34f
+[0m[32mINFO 2026-10-27 11:07:36,200 2 sam3_base_predictor.py: 167:[0m started new session a12f03e5-e93d-49ee-a362-feb2a1f0aa15
+[0m[32mINFO 2026-10-27 11:07:36,200 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:07:36,583 2 sam3_base_predictor.py: 467:[0m removed session a12f03e5-e93d-49ee-a362-feb2a1f0aa15
+[0m[32mINFO 2026-10-27 11:07:53,139 2 sam3_base_predictor.py: 167:[0m started new session f38b60c7-aefc-498f-b2ae-054c36448055
+[0m[32mINFO 2026-10-27 11:07:53,139 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:07:53,367 2 sam3_base_predictor.py: 467:[0m removed session f38b60c7-aefc-498f-b2ae-054c36448055
+[0m[32mINFO 2026-10-27 11:08:16,193 2 sam3_base_predictor.py: 167:[0m started new session 3714a9eb-86ce-4eb9-8c68-2923729ceb3a
+[0m[32mINFO 2026-10-27 11:08:16,193 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:08:16,444 2 sam3_base_predictor.py: 467:[0m removed session 3714a9eb-86ce-4eb9-8c68-2923729ceb3a
+[0m[32mINFO 2026-10-27 11:08:34,044 2 sam3_base_predictor.py: 167:[0m started new session ccd023e9-cb38-45b8-92bc-35e77e1f5584
+[0m[32mINFO 2026-10-27 11:08:34,044 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:08:34,277 2 sam3_base_predictor.py: 467:[0m removed session ccd023e9-cb38-45b8-92bc-35e77e1f5584
+[0m[32mINFO 2026-10-27 11:08:51,336 2 sam3_base_predictor.py: 167:[0m started new session c5f9ad21-1608-4bb9-98ab-2a4630fefe2e
+[0m[32mINFO 2026-10-27 11:08:51,336 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:08:51,591 2 sam3_base_predictor.py: 467:[0m removed session c5f9ad21-1608-4bb9-98ab-2a4630fefe2e
+[0m[32mINFO 2026-10-27 11:09:15,787 2 sam3_base_predictor.py: 167:[0m started new session 14596104-170f-42b6-844e-7f04f53cc7d4
+[0m[32mINFO 2026-10-27 11:09:15,788 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:09:16,177 2 sam3_base_predictor.py: 467:[0m removed session 14596104-170f-42b6-844e-7f04f53cc7d4
+[0m[32mINFO 2026-10-27 11:09:34,308 2 sam3_base_predictor.py: 167:[0m started new session bc2e52a3-d332-4c28-8410-647d7df72422
+[0m[32mINFO 2026-10-27 11:09:34,308 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:09:34,542 2 sam3_base_predictor.py: 467:[0m removed session bc2e52a3-d332-4c28-8410-647d7df72422
+[0m[32mINFO 2026-10-27 11:09:56,879 2 sam3_base_predictor.py: 167:[0m started new session a5e7ad62-3eed-41b0-9057-74062555fed7
+[0m[32mINFO 2026-10-27 11:09:56,879 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:09:57,146 2 sam3_base_predictor.py: 467:[0m removed session a5e7ad62-3eed-41b0-9057-74062555fed7
+[0m[32mINFO 2026-10-27 11:10:22,918 2 sam3_base_predictor.py: 167:[0m started new session fd0481f3-ad2d-47b9-8d00-e8168b58a0cb
+[0m[32mINFO 2026-10-27 11:10:22,918 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:10:23,313 2 sam3_base_predictor.py: 467:[0m removed session fd0481f3-ad2d-47b9-8d00-e8168b58a0cb
+[0m[32mINFO 2026-10-27 11:10:45,637 2 sam3_base_predictor.py: 167:[0m started new session 3189ed14-2474-457c-bbd8-12b577d7186d
+[0m[32mINFO 2026-10-27 11:10:45,637 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:10:45,901 2 sam3_base_predictor.py: 467:[0m removed session 3189ed14-2474-457c-bbd8-12b577d7186d
+[0m[32mINFO 2026-10-27 11:11:16,878 2 sam3_base_predictor.py: 167:[0m started new session 8a875013-0da3-4189-bd3c-c344220ffc6e
+[0m[32mINFO 2026-10-27 11:11:16,879 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:11:17,268 2 sam3_base_predictor.py: 467:[0m removed session 8a875013-0da3-4189-bd3c-c344220ffc6e
+[0m[32mINFO 2026-10-27 11:11:35,654 2 sam3_base_predictor.py: 167:[0m started new session 1c60a14c-473f-47c3-b99b-79fadb138156
+[0m[32mINFO 2026-10-27 11:11:35,654 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:11:35,978 2 sam3_base_predictor.py: 467:[0m removed session 1c60a14c-473f-47c3-b99b-79fadb138156
+[0m[32mINFO 2026-10-27 11:11:53,272 2 sam3_base_predictor.py: 167:[0m started new session 767e9d90-21c5-48a6-9f9f-58761a2748a7
+[0m[32mINFO 2026-10-27 11:11:53,272 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:11:53,527 2 sam3_base_predictor.py: 467:[0m removed session 767e9d90-21c5-48a6-9f9f-58761a2748a7
+[0m[32mINFO 2026-10-27 11:12:14,629 2 sam3_base_predictor.py: 167:[0m started new session a0994845-fb87-42eb-99fb-523bdaa404d7
+[0m[32mINFO 2026-10-27 11:12:14,630 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:12:15,033 2 sam3_base_predictor.py: 467:[0m removed session a0994845-fb87-42eb-99fb-523bdaa404d7
+[0m[32mINFO 2026-10-27 11:12:45,398 2 sam3_base_predictor.py: 167:[0m started new session 38146210-a715-47f3-982b-e2dbe470d6a8
+[0m[32mINFO 2026-10-27 11:12:45,398 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:12:45,727 2 sam3_base_predictor.py: 467:[0m removed session 38146210-a715-47f3-982b-e2dbe470d6a8
+[0m[32mINFO 2026-10-27 11:13:07,015 2 sam3_base_predictor.py: 167:[0m started new session 33c23ace-4c4c-41b5-a59e-76eae72cf354
+[0m[32mINFO 2026-10-27 11:13:07,015 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:13:07,266 2 sam3_base_predictor.py: 467:[0m removed session 33c23ace-4c4c-41b5-a59e-76eae72cf354
+[0m[32mINFO 2026-10-27 11:13:28,181 2 sam3_base_predictor.py: 167:[0m started new session 55278fff-354d-4d78-8753-29e3c66fb6ec
+[0m[32mINFO 2026-10-27 11:13:28,182 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:13:28,427 2 sam3_base_predictor.py: 467:[0m removed session 55278fff-354d-4d78-8753-29e3c66fb6ec
+[0m[32mINFO 2026-10-27 11:13:51,224 2 sam3_base_predictor.py: 167:[0m started new session 6d068b14-cb7d-4d5e-9c70-50f9ab9e4772
+[0m[32mINFO 2026-10-27 11:13:51,224 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:13:51,485 2 sam3_base_predictor.py: 467:[0m removed session 6d068b14-cb7d-4d5e-9c70-50f9ab9e4772
+[0m[32mINFO 2026-10-27 11:14:08,018 2 sam3_base_predictor.py: 167:[0m started new session 84eeb47f-2688-4f50-8ff3-f60278cfcd7a
+[0m[32mINFO 2026-10-27 11:14:08,018 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:14:08,257 2 sam3_base_predictor.py: 467:[0m removed session 84eeb47f-2688-4f50-8ff3-f60278cfcd7a
+[0m[32mINFO 2026-10-27 11:14:53,870 2 sam3_base_predictor.py: 167:[0m started new session ce6fcb1f-703a-4ea8-bbb9-1c1a09c6558b
+[0m[32mINFO 2026-10-27 11:14:53,870 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:14:54,200 2 sam3_base_predictor.py: 467:[0m removed session ce6fcb1f-703a-4ea8-bbb9-1c1a09c6558b
+[0m[32mINFO 2026-10-27 11:15:16,693 2 sam3_base_predictor.py: 167:[0m started new session f597f0bb-116f-467d-8602-2ada67fd644a
+[0m[32mINFO 2026-10-27 11:15:16,693 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:15:16,952 2 sam3_base_predictor.py: 467:[0m removed session f597f0bb-116f-467d-8602-2ada67fd644a
+[0m[32mINFO 2026-10-27 11:15:40,283 2 sam3_base_predictor.py: 167:[0m started new session 4159826d-6113-40c4-97f0-1b9db0cc9880
+[0m[32mINFO 2026-10-27 11:15:40,284 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:15:40,519 2 sam3_base_predictor.py: 467:[0m removed session 4159826d-6113-40c4-97f0-1b9db0cc9880
+[0m[32mINFO 2026-10-27 11:16:01,234 2 sam3_base_predictor.py: 167:[0m started new session eb587a32-cb04-4d02-a84d-4bd5437168e4
+[0m[32mINFO 2026-10-27 11:16:01,235 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:16:01,477 2 sam3_base_predictor.py: 467:[0m removed session eb587a32-cb04-4d02-a84d-4bd5437168e4
+[0m[32mINFO 2026-10-27 11:16:42,682 2 sam3_base_predictor.py: 167:[0m started new session ac99ec73-2acb-4aeb-af0f-0125e35c14cd
+[0m[32mINFO 2026-10-27 11:16:42,683 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:16:43,072 2 sam3_base_predictor.py: 467:[0m removed session ac99ec73-2acb-4aeb-af0f-0125e35c14cd
+[0m[32mINFO 2026-10-27 11:17:07,521 2 sam3_base_predictor.py: 167:[0m started new session 2d49f2fa-e846-47e4-a65a-a84ca9ce1f0f
+[0m[32mINFO 2026-10-27 11:17:07,521 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:17:07,756 2 sam3_base_predictor.py: 467:[0m removed session 2d49f2fa-e846-47e4-a65a-a84ca9ce1f0f
+[0m[32mINFO 2026-10-27 11:17:27,479 2 sam3_base_predictor.py: 167:[0m started new session 15707684-e27b-48d0-b1b5-a39ceef68bb6
+[0m[32mINFO 2026-10-27 11:17:27,480 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:17:27,750 2 sam3_base_predictor.py: 467:[0m removed session 15707684-e27b-48d0-b1b5-a39ceef68bb6
+[0m[32mINFO 2026-10-27 11:17:44,531 2 sam3_base_predictor.py: 167:[0m started new session 61656ee8-3601-4b68-bc38-a9f3e19f40d6
+[0m[32mINFO 2026-10-27 11:17:44,532 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:17:44,792 2 sam3_base_predictor.py: 467:[0m removed session 61656ee8-3601-4b68-bc38-a9f3e19f40d6
+[0m[32mINFO 2026-10-27 11:18:20,971 2 sam3_base_predictor.py: 167:[0m started new session fd1a1fd1-5a97-4643-8a23-fe4948af1285
+[0m[32mINFO 2026-10-27 11:18:20,971 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:18:21,220 2 sam3_base_predictor.py: 467:[0m removed session fd1a1fd1-5a97-4643-8a23-fe4948af1285
+[0m[32mINFO 2026-10-27 11:18:42,520 2 sam3_base_predictor.py: 167:[0m started new session ce8abcae-5235-42ca-92eb-6ec63b6b6758
+[0m[32mINFO 2026-10-27 11:18:42,520 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:18:42,772 2 sam3_base_predictor.py: 467:[0m removed session ce8abcae-5235-42ca-92eb-6ec63b6b6758
+[0m[32mINFO 2026-10-27 11:19:02,782 2 sam3_base_predictor.py: 167:[0m started new session b43e6178-a63d-403f-b916-2fe177d1b243
+[0m[32mINFO 2026-10-27 11:19:02,782 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:19:03,049 2 sam3_base_predictor.py: 467:[0m removed session b43e6178-a63d-403f-b916-2fe177d1b243
+[0m[32mINFO 2026-10-27 11:19:19,961 2 sam3_base_predictor.py: 167:[0m started new session 73c4eeca-76d1-4f4e-ad3e-8488df62fce4
+[0m[32mINFO 2026-10-27 11:19:19,961 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:19:20,236 2 sam3_base_predictor.py: 467:[0m removed session 73c4eeca-76d1-4f4e-ad3e-8488df62fce4
+[0m[32mINFO 2026-10-27 11:19:36,159 2 sam3_base_predictor.py: 167:[0m started new session fe9b05e2-3819-4f31-962d-2225a356328a
+[0m[32mINFO 2026-10-27 11:19:36,159 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:19:36,423 2 sam3_base_predictor.py: 467:[0m removed session fe9b05e2-3819-4f31-962d-2225a356328a
+[0m[32mINFO 2026-10-27 11:19:58,169 2 sam3_base_predictor.py: 167:[0m started new session b4e03959-89c3-4f5d-be9d-350c9a2bc95d
+[0m[32mINFO 2026-10-27 11:19:58,169 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:19:58,423 2 sam3_base_predictor.py: 467:[0m removed session b4e03959-89c3-4f5d-be9d-350c9a2bc95d
+[0m[32mINFO 2026-10-27 11:20:18,507 2 sam3_base_predictor.py: 167:[0m started new session 39f988aa-0cf1-4963-933e-a657ee8ffe22
+[0m[32mINFO 2026-10-27 11:20:18,508 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:20:18,762 2 sam3_base_predictor.py: 467:[0m removed session 39f988aa-0cf1-4963-933e-a657ee8ffe22
+[0m[32mINFO 2026-10-27 11:20:42,765 2 sam3_base_predictor.py: 167:[0m started new session de0f56bc-ae56-407a-b3ba-fa728c177e2a
+[0m[32mINFO 2026-10-27 11:20:42,766 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:20:43,248 2 sam3_base_predictor.py: 467:[0m removed session de0f56bc-ae56-407a-b3ba-fa728c177e2a
+[0m[32mINFO 2026-10-27 11:21:02,171 2 sam3_base_predictor.py: 167:[0m started new session 202332ab-be0a-418b-898b-d631d73af713
+[0m[32mINFO 2026-10-27 11:21:02,171 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:21:02,442 2 sam3_base_predictor.py: 467:[0m removed session 202332ab-be0a-418b-898b-d631d73af713
+[0m[32mINFO 2026-10-27 11:21:21,389 2 sam3_base_predictor.py: 167:[0m started new session 6efff262-79c6-4868-85f6-c6c2ae3a6130
+[0m[32mINFO 2026-10-27 11:21:21,390 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:21:21,795 2 sam3_base_predictor.py: 467:[0m removed session 6efff262-79c6-4868-85f6-c6c2ae3a6130
+[0m[32mINFO 2026-10-27 11:21:37,444 2 sam3_base_predictor.py: 167:[0m started new session 50bb9c10-d014-4d66-b465-560e868e41e2
+[0m[32mINFO 2026-10-27 11:21:37,445 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:21:37,717 2 sam3_base_predictor.py: 467:[0m removed session 50bb9c10-d014-4d66-b465-560e868e41e2
+[0m[32mINFO 2026-10-27 11:21:55,833 2 sam3_base_predictor.py: 167:[0m started new session a17daa35-1a50-43ff-9cf6-338c51508c80
+[0m[32mINFO 2026-10-27 11:21:55,833 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:21:56,228 2 sam3_base_predictor.py: 467:[0m removed session a17daa35-1a50-43ff-9cf6-338c51508c80
+[0m[32mINFO 2026-10-27 11:22:16,467 2 sam3_base_predictor.py: 167:[0m started new session 31faaa02-990f-49fa-a440-2d648a36a1fd
+[0m[32mINFO 2026-10-27 11:22:16,467 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:22:16,881 2 sam3_base_predictor.py: 467:[0m removed session 31faaa02-990f-49fa-a440-2d648a36a1fd
+[0m[32mINFO 2026-10-27 11:22:34,673 2 sam3_base_predictor.py: 167:[0m started new session 83a8a588-4aa1-4e98-b39e-a8f5f7ce2900
+[0m[32mINFO 2026-10-27 11:22:34,674 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:22:34,945 2 sam3_base_predictor.py: 467:[0m removed session 83a8a588-4aa1-4e98-b39e-a8f5f7ce2900
+[0m[32mINFO 2026-10-27 11:22:53,830 2 sam3_base_predictor.py: 167:[0m started new session 1213a373-ebd3-41ed-a959-1b1e46b7da85
+[0m[32mINFO 2026-10-27 11:22:53,831 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:22:54,246 2 sam3_base_predictor.py: 467:[0m removed session 1213a373-ebd3-41ed-a959-1b1e46b7da85
+[0m[32mINFO 2026-10-27 11:23:08,570 2 sam3_base_predictor.py: 167:[0m started new session c1e405d9-643f-4bea-9389-d5d783ff169f
+[0m[32mINFO 2026-10-27 11:23:08,571 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:23:08,875 2 sam3_base_predictor.py: 467:[0m removed session c1e405d9-643f-4bea-9389-d5d783ff169f
+[0m[32mINFO 2026-10-27 11:23:25,795 2 sam3_base_predictor.py: 167:[0m started new session 6eb84665-5be1-4313-925a-6c503809df63
+[0m[32mINFO 2026-10-27 11:23:25,795 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:23:26,198 2 sam3_base_predictor.py: 467:[0m removed session 6eb84665-5be1-4313-925a-6c503809df63
+[0m[32mINFO 2026-10-27 11:23:46,340 2 sam3_base_predictor.py: 167:[0m started new session 76b21db3-9e8c-42ca-9e73-43fc75ebeb75
+[0m[32mINFO 2026-10-27 11:23:46,340 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:23:46,617 2 sam3_base_predictor.py: 467:[0m removed session 76b21db3-9e8c-42ca-9e73-43fc75ebeb75
+[0m[32mINFO 2026-10-27 11:24:04,242 2 sam3_base_predictor.py: 167:[0m started new session 825264d4-f8aa-43e6-a161-d922e0e8fc80
+[0m[32mINFO 2026-10-27 11:24:04,242 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:24:04,510 2 sam3_base_predictor.py: 467:[0m removed session 825264d4-f8aa-43e6-a161-d922e0e8fc80
+[0m[32mINFO 2026-10-27 11:24:25,412 2 sam3_base_predictor.py: 167:[0m started new session 33cb2784-efa3-438b-b718-2b04776b7245
+[0m[32mINFO 2026-10-27 11:24:25,413 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:24:25,682 2 sam3_base_predictor.py: 467:[0m removed session 33cb2784-efa3-438b-b718-2b04776b7245
+[0m[32mINFO 2026-10-27 11:24:45,691 2 sam3_base_predictor.py: 167:[0m started new session 2627af63-8ea2-4610-bc59-d08aae5e4c17
+[0m[32mINFO 2026-10-27 11:24:45,692 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:24:45,929 2 sam3_base_predictor.py: 467:[0m removed session 2627af63-8ea2-4610-bc59-d08aae5e4c17
+[0m[32mINFO 2026-10-27 11:25:07,878 2 sam3_base_predictor.py: 167:[0m started new session dca8c998-cfd3-49b0-83f4-5becdf10b31c
+[0m[32mINFO 2026-10-27 11:25:07,879 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:25:08,290 2 sam3_base_predictor.py: 467:[0m removed session dca8c998-cfd3-49b0-83f4-5becdf10b31c
+[0m[32mINFO 2026-10-27 11:25:26,365 2 sam3_base_predictor.py: 167:[0m started new session e2e429f3-1105-44f5-bfce-2a5e6dddd064
+[0m[32mINFO 2026-10-27 11:25:26,365 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:25:26,675 2 sam3_base_predictor.py: 467:[0m removed session e2e429f3-1105-44f5-bfce-2a5e6dddd064
+[0m[32mINFO 2026-10-27 11:25:44,752 2 sam3_base_predictor.py: 167:[0m started new session b2e1ac43-f19b-44a5-b0cd-1e5e4efce419
+[0m[32mINFO 2026-10-27 11:25:44,752 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:25:45,025 2 sam3_base_predictor.py: 467:[0m removed session b2e1ac43-f19b-44a5-b0cd-1e5e4efce419
+[0m[32mINFO 2026-10-27 11:26:07,840 2 sam3_base_predictor.py: 167:[0m started new session 7a091a14-ef9c-4ced-8d23-6f7085b0e75d
+[0m[32mINFO 2026-10-27 11:26:07,840 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:26:08,252 2 sam3_base_predictor.py: 467:[0m removed session 7a091a14-ef9c-4ced-8d23-6f7085b0e75d
+[0m[32mINFO 2026-10-27 11:26:23,530 2 sam3_base_predictor.py: 167:[0m started new session ecdfe00b-6d32-4ce4-ac94-d636ae425dc4
+[0m[32mINFO 2026-10-27 11:26:23,530 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:26:23,796 2 sam3_base_predictor.py: 467:[0m removed session ecdfe00b-6d32-4ce4-ac94-d636ae425dc4
+[0m[32mINFO 2026-10-27 11:26:46,310 2 sam3_base_predictor.py: 167:[0m started new session abb8d593-2aef-43ef-8a56-829770aea22a
+[0m[32mINFO 2026-10-27 11:26:46,310 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:26:46,703 2 sam3_base_predictor.py: 467:[0m removed session abb8d593-2aef-43ef-8a56-829770aea22a
+[0m[32mINFO 2026-10-27 11:27:10,987 2 sam3_base_predictor.py: 167:[0m started new session 9dfd98d4-cfc0-4e4f-9a4a-bb3494897445
+[0m[32mINFO 2026-10-27 11:27:10,987 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:27:11,379 2 sam3_base_predictor.py: 467:[0m removed session 9dfd98d4-cfc0-4e4f-9a4a-bb3494897445
+[0m[32mINFO 2026-10-27 11:27:27,904 2 sam3_base_predictor.py: 167:[0m started new session b2b83066-0074-4d44-9a43-2774c3bd21d3
+[0m[32mINFO 2026-10-27 11:27:27,905 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:27:28,175 2 sam3_base_predictor.py: 467:[0m removed session b2b83066-0074-4d44-9a43-2774c3bd21d3
+[0m[32mINFO 2026-10-27 11:27:46,750 2 sam3_base_predictor.py: 167:[0m started new session 645166a6-2008-4174-be5b-5e7a09ba1bf6
+[0m[32mINFO 2026-10-27 11:27:46,750 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:27:47,021 2 sam3_base_predictor.py: 467:[0m removed session 645166a6-2008-4174-be5b-5e7a09ba1bf6
+[0m[32mINFO 2026-10-27 11:28:07,164 2 sam3_base_predictor.py: 167:[0m started new session 1ee28dea-43b7-4fdc-a2a0-1d36a9091a61
+[0m[32mINFO 2026-10-27 11:28:07,165 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:28:07,560 2 sam3_base_predictor.py: 467:[0m removed session 1ee28dea-43b7-4fdc-a2a0-1d36a9091a61
+[0m[32mINFO 2026-10-27 11:28:27,284 2 sam3_base_predictor.py: 167:[0m started new session 36d06324-1e7d-4be7-8152-c0950e445646
+[0m[32mINFO 2026-10-27 11:28:27,284 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:28:27,555 2 sam3_base_predictor.py: 467:[0m removed session 36d06324-1e7d-4be7-8152-c0950e445646
+[0m[32mINFO 2026-10-27 11:28:47,397 2 sam3_base_predictor.py: 167:[0m started new session 5f66490f-a7a0-48c2-b1e8-4d3a8b99e0f0
+[0m[32mINFO 2026-10-27 11:28:47,397 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:28:47,663 2 sam3_base_predictor.py: 467:[0m removed session 5f66490f-a7a0-48c2-b1e8-4d3a8b99e0f0
+[0m[32mINFO 2026-10-27 11:29:04,843 2 sam3_base_predictor.py: 167:[0m started new session f6984992-96cb-4c79-bf67-2c99d4995fb1
+[0m[32mINFO 2026-10-27 11:29:04,843 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:29:05,120 2 sam3_base_predictor.py: 467:[0m removed session f6984992-96cb-4c79-bf67-2c99d4995fb1
+[0m[32mINFO 2026-10-27 11:29:26,552 2 sam3_base_predictor.py: 167:[0m started new session 5e6dacd7-4267-4904-9ad8-f1a9544e836f
+[0m[32mINFO 2026-10-27 11:29:26,552 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:29:26,949 2 sam3_base_predictor.py: 467:[0m removed session 5e6dacd7-4267-4904-9ad8-f1a9544e836f
+[0m[32mINFO 2026-10-27 11:29:42,893 2 sam3_base_predictor.py: 167:[0m started new session 4da1225e-5c51-4ffa-bcd7-003f0bbb5259
+[0m[32mINFO 2026-10-27 11:29:42,894 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:29:43,166 2 sam3_base_predictor.py: 467:[0m removed session 4da1225e-5c51-4ffa-bcd7-003f0bbb5259
+[0m[32mINFO 2026-10-27 11:30:03,166 2 sam3_base_predictor.py: 167:[0m started new session 107ac9bb-7a67-45c0-821a-666960ab82f5
+[0m[32mINFO 2026-10-27 11:30:03,167 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:30:03,471 2 sam3_base_predictor.py: 467:[0m removed session 107ac9bb-7a67-45c0-821a-666960ab82f5
+[0m[32mINFO 2026-10-27 11:30:18,378 2 sam3_base_predictor.py: 167:[0m started new session e590ec60-c212-4bc0-915d-61766377240e
+[0m[32mINFO 2026-10-27 11:30:18,378 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:30:18,794 2 sam3_base_predictor.py: 467:[0m removed session e590ec60-c212-4bc0-915d-61766377240e
+[0m[32mINFO 2026-10-27 11:30:38,188 2 sam3_base_predictor.py: 167:[0m started new session 5dcce685-55d3-497a-b308-89e375050c16
+[0m[32mINFO 2026-10-27 11:30:38,188 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:30:38,456 2 sam3_base_predictor.py: 467:[0m removed session 5dcce685-55d3-497a-b308-89e375050c16
+[0m[32mINFO 2026-10-27 11:31:00,391 2 sam3_base_predictor.py: 167:[0m started new session c78ffd5e-373b-470b-9cbd-2ac4b6cd08a4
+[0m[32mINFO 2026-10-27 11:31:00,391 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:31:00,792 2 sam3_base_predictor.py: 467:[0m removed session c78ffd5e-373b-470b-9cbd-2ac4b6cd08a4
+[0m[32mINFO 2026-10-27 11:31:16,221 2 sam3_base_predictor.py: 167:[0m started new session bf78f053-5055-46ac-9d78-2a9e7ba44a87
+[0m[32mINFO 2026-10-27 11:31:16,221 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:31:16,489 2 sam3_base_predictor.py: 467:[0m removed session bf78f053-5055-46ac-9d78-2a9e7ba44a87
+[0m[32mINFO 2026-10-27 11:31:35,501 2 sam3_base_predictor.py: 167:[0m started new session 6d0a985c-db5a-4e7e-a657-dd9871880ec6
+[0m[32mINFO 2026-10-27 11:31:35,502 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:31:35,894 2 sam3_base_predictor.py: 467:[0m removed session 6d0a985c-db5a-4e7e-a657-dd9871880ec6
+[0m[32mINFO 2026-10-27 11:31:53,129 2 sam3_base_predictor.py: 167:[0m started new session 068b5fc6-2c73-41ae-afdc-800f30b9b14e
+[0m[32mINFO 2026-10-27 11:31:53,129 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:31:53,401 2 sam3_base_predictor.py: 467:[0m removed session 068b5fc6-2c73-41ae-afdc-800f30b9b14e
+[0m[32mINFO 2026-10-27 11:32:08,885 2 sam3_base_predictor.py: 167:[0m started new session ee0d7312-aae5-4d7d-898b-06ed63672e90
+[0m[32mINFO 2026-10-27 11:32:08,886 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:32:09,155 2 sam3_base_predictor.py: 467:[0m removed session ee0d7312-aae5-4d7d-898b-06ed63672e90
+[0m[32mINFO 2026-10-27 11:32:27,949 2 sam3_base_predictor.py: 167:[0m started new session 2f9655e8-cfc5-4941-9d17-87ddc412b80e
+[0m[32mINFO 2026-10-27 11:32:27,950 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:32:28,222 2 sam3_base_predictor.py: 467:[0m removed session 2f9655e8-cfc5-4941-9d17-87ddc412b80e
+[0m[32mINFO 2026-10-27 11:32:47,495 2 sam3_base_predictor.py: 167:[0m started new session 19eaec1d-450b-4192-9c94-1076c8a84b2a
+[0m[32mINFO 2026-10-27 11:32:47,496 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:32:47,737 2 sam3_base_predictor.py: 467:[0m removed session 19eaec1d-450b-4192-9c94-1076c8a84b2a
+[0m[32mINFO 2026-10-27 11:33:06,863 2 sam3_base_predictor.py: 167:[0m started new session 1630acaf-e8a9-4d39-8a53-1a87a01586bd
+[0m[32mINFO 2026-10-27 11:33:06,863 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:33:07,207 2 sam3_base_predictor.py: 467:[0m removed session 1630acaf-e8a9-4d39-8a53-1a87a01586bd
+[0m[32mINFO 2026-10-27 11:33:20,457 2 sam3_base_predictor.py: 167:[0m started new session d38299c8-0487-4f5c-928d-a19b5240ffd3
+[0m[32mINFO 2026-10-27 11:33:20,457 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:33:20,700 2 sam3_base_predictor.py: 467:[0m removed session d38299c8-0487-4f5c-928d-a19b5240ffd3
+[0m[32mINFO 2026-10-27 11:33:37,668 2 sam3_base_predictor.py: 167:[0m started new session f53c04ac-4d7d-4072-a460-c0e4cb28b135
+[0m[32mINFO 2026-10-27 11:33:37,668 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:33:38,024 2 sam3_base_predictor.py: 467:[0m removed session f53c04ac-4d7d-4072-a460-c0e4cb28b135
+[0m[32mINFO 2026-10-27 11:33:49,038 2 sam3_base_predictor.py: 167:[0m started new session 3f0d4926-75c8-4a70-9acd-b90d78dcdc9d
+[0m[32mINFO 2026-10-27 11:33:49,038 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:33:49,275 2 sam3_base_predictor.py: 467:[0m removed session 3f0d4926-75c8-4a70-9acd-b90d78dcdc9d
+[0m[32mINFO 2026-10-27 11:34:03,155 2 sam3_base_predictor.py: 167:[0m started new session 29108d22-3fac-4b6b-a5e9-2f322fc529eb
+[0m[32mINFO 2026-10-27 11:34:03,155 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:34:03,395 2 sam3_base_predictor.py: 467:[0m removed session 29108d22-3fac-4b6b-a5e9-2f322fc529eb
+[0m[32mINFO 2026-10-27 11:34:17,762 2 sam3_base_predictor.py: 167:[0m started new session ed1ea1b3-d581-490f-ac3a-194256c5cebb
+[0m[32mINFO 2026-10-27 11:34:17,763 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:34:17,992 2 sam3_base_predictor.py: 467:[0m removed session ed1ea1b3-d581-490f-ac3a-194256c5cebb
+[0m[32mINFO 2026-10-27 11:34:31,213 2 sam3_base_predictor.py: 167:[0m started new session cc3953fc-00f3-4ea8-9402-79f1d36d66ac
+[0m[32mINFO 2026-10-27 11:34:31,214 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:34:31,571 2 sam3_base_predictor.py: 467:[0m removed session cc3953fc-00f3-4ea8-9402-79f1d36d66ac
+[0m[32mINFO 2026-10-27 11:34:46,246 2 sam3_base_predictor.py: 167:[0m started new session 7ff20e26-8d49-4f1b-98cd-98e5e50c8671
+[0m[32mINFO 2026-10-27 11:34:46,247 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:34:46,458 2 sam3_base_predictor.py: 467:[0m removed session 7ff20e26-8d49-4f1b-98cd-98e5e50c8671
+[0m[32mINFO 2026-10-27 11:35:03,944 2 sam3_base_predictor.py: 167:[0m started new session 62ea4f82-64c0-4745-84d7-12935fa6a6c7
+[0m[32mINFO 2026-10-27 11:35:03,944 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:35:04,309 2 sam3_base_predictor.py: 467:[0m removed session 62ea4f82-64c0-4745-84d7-12935fa6a6c7
+[0m[32mINFO 2026-10-27 11:35:18,317 2 sam3_base_predictor.py: 167:[0m started new session e5cd236d-c316-4b02-a7ab-c48e4c2b316c
+[0m[32mINFO 2026-10-27 11:35:18,317 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:35:18,725 2 sam3_base_predictor.py: 467:[0m removed session e5cd236d-c316-4b02-a7ab-c48e4c2b316c
+[0m[32mINFO 2026-10-27 11:35:32,430 2 sam3_base_predictor.py: 167:[0m started new session d9d08975-1a1c-4d7d-ab0f-904c34eb3343
+[0m[32mINFO 2026-10-27 11:35:32,430 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:35:32,678 2 sam3_base_predictor.py: 467:[0m removed session d9d08975-1a1c-4d7d-ab0f-904c34eb3343
+[0m[32mINFO 2026-10-27 11:35:45,743 2 sam3_base_predictor.py: 167:[0m started new session 230b462b-3c60-4a6b-b2ce-7f1314394a8c
+[0m[32mINFO 2026-10-27 11:35:45,743 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:35:45,993 2 sam3_base_predictor.py: 467:[0m removed session 230b462b-3c60-4a6b-b2ce-7f1314394a8c
+[0m[32mINFO 2026-10-27 11:36:05,462 2 sam3_base_predictor.py: 167:[0m started new session fba32439-0b88-4386-ab56-dceb852cda99
+[0m[32mINFO 2026-10-27 11:36:05,462 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:36:05,706 2 sam3_base_predictor.py: 467:[0m removed session fba32439-0b88-4386-ab56-dceb852cda99
+[0m[32mINFO 2026-10-27 11:36:21,714 2 sam3_base_predictor.py: 167:[0m started new session 6655a45c-877e-4447-9dca-4b1936e6e3c9
+[0m[32mINFO 2026-10-27 11:36:21,715 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:36:21,960 2 sam3_base_predictor.py: 467:[0m removed session 6655a45c-877e-4447-9dca-4b1936e6e3c9
+[0m[32mINFO 2026-10-27 11:36:31,708 2 sam3_base_predictor.py: 167:[0m started new session be1c374f-f789-42f4-af07-9e97dc57cadb
+[0m[32mINFO 2026-10-27 11:36:31,708 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:36:31,925 2 sam3_base_predictor.py: 467:[0m removed session be1c374f-f789-42f4-af07-9e97dc57cadb
+[0m[32mINFO 2026-10-27 11:36:43,337 2 sam3_base_predictor.py: 167:[0m started new session 055423ed-8c1c-47d3-8546-e36498f19905
+[0m[32mINFO 2026-10-27 11:36:43,338 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:36:43,579 2 sam3_base_predictor.py: 467:[0m removed session 055423ed-8c1c-47d3-8546-e36498f19905
+[0m[32mINFO 2026-10-27 11:36:55,538 2 sam3_base_predictor.py: 167:[0m started new session 459a1ffb-108d-4d05-bf0f-f69952b72914
+[0m[32mINFO 2026-10-27 11:36:55,538 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:36:55,782 2 sam3_base_predictor.py: 467:[0m removed session 459a1ffb-108d-4d05-bf0f-f69952b72914
+[0m[32mINFO 2026-10-27 11:37:19,744 2 sam3_base_predictor.py: 167:[0m started new session 34dc511f-e404-4eba-95dc-0915e08c431f
+[0m[32mINFO 2026-10-27 11:37:19,744 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:37:20,078 2 sam3_base_predictor.py: 467:[0m removed session 34dc511f-e404-4eba-95dc-0915e08c431f
+[0m[32mINFO 2026-10-27 11:37:36,579 2 sam3_base_predictor.py: 167:[0m started new session dcd9b23f-ef6d-4e34-940b-71b02a22d9e4
+[0m[32mINFO 2026-10-27 11:37:36,579 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:37:36,943 2 sam3_base_predictor.py: 467:[0m removed session dcd9b23f-ef6d-4e34-940b-71b02a22d9e4
+[0m[32mINFO 2026-10-27 11:37:55,800 2 sam3_base_predictor.py: 167:[0m started new session d552918e-2d37-47b3-93fd-81b339b183ac
+[0m[32mINFO 2026-10-27 11:37:55,801 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:37:56,158 2 sam3_base_predictor.py: 467:[0m removed session d552918e-2d37-47b3-93fd-81b339b183ac
+[0m[32mINFO 2026-10-27 11:38:09,991 2 sam3_base_predictor.py: 167:[0m started new session f57c0599-2f73-4eb1-b120-1237ab45354a
+[0m[32mINFO 2026-10-27 11:38:09,992 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:38:10,238 2 sam3_base_predictor.py: 467:[0m removed session f57c0599-2f73-4eb1-b120-1237ab45354a
+[0m[32mINFO 2026-10-27 11:38:30,589 2 sam3_base_predictor.py: 167:[0m started new session 01184c16-4a8a-4923-9e71-a403748b7e42
+[0m[32mINFO 2026-10-27 11:38:30,589 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:38:30,948 2 sam3_base_predictor.py: 467:[0m removed session 01184c16-4a8a-4923-9e71-a403748b7e42
+[0m[32mINFO 2026-10-27 11:38:51,152 2 sam3_base_predictor.py: 167:[0m started new session 70af806b-12dc-4c56-96af-83e254195161
+[0m[32mINFO 2026-10-27 11:38:51,152 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:38:51,399 2 sam3_base_predictor.py: 467:[0m removed session 70af806b-12dc-4c56-96af-83e254195161
+[0m[32mINFO 2026-10-27 11:39:05,795 2 sam3_base_predictor.py: 167:[0m started new session ba55e67a-f34a-4cad-98c7-593fb4754c6a
+[0m[32mINFO 2026-10-27 11:39:05,796 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:39:06,045 2 sam3_base_predictor.py: 467:[0m removed session ba55e67a-f34a-4cad-98c7-593fb4754c6a
+[0m[32mINFO 2026-10-27 11:39:18,955 2 sam3_base_predictor.py: 167:[0m started new session 10ba8d15-1335-4e81-bfec-477d7c8f0d87
+[0m[32mINFO 2026-10-27 11:39:18,956 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:39:19,205 2 sam3_base_predictor.py: 467:[0m removed session 10ba8d15-1335-4e81-bfec-477d7c8f0d87
+[0m[32mINFO 2026-10-27 11:39:30,491 2 sam3_base_predictor.py: 167:[0m started new session f9794466-7174-479a-8369-6b4ac785e6c6
+[0m[32mINFO 2026-10-27 11:39:30,491 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:39:30,856 2 sam3_base_predictor.py: 467:[0m removed session f9794466-7174-479a-8369-6b4ac785e6c6
+[0m[32mINFO 2026-10-27 11:39:47,755 2 sam3_base_predictor.py: 167:[0m started new session 309598b7-7ad1-440d-9fe6-4cebf76d6556
+[0m[32mINFO 2026-10-27 11:39:47,755 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:39:47,999 2 sam3_base_predictor.py: 467:[0m removed session 309598b7-7ad1-440d-9fe6-4cebf76d6556
+[0m[32mINFO 2026-10-27 11:39:57,234 2 sam3_base_predictor.py: 167:[0m started new session 1c33180c-a8e6-4aa6-a11c-7db76a4b8280
+[0m[32mINFO 2026-10-27 11:39:57,234 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:39:57,444 2 sam3_base_predictor.py: 467:[0m removed session 1c33180c-a8e6-4aa6-a11c-7db76a4b8280
+[0m[32mINFO 2026-10-27 11:40:12,478 2 sam3_base_predictor.py: 167:[0m started new session 3cde32e6-f66a-40d9-aadd-f0642105267a
+[0m[32mINFO 2026-10-27 11:40:12,478 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:40:12,715 2 sam3_base_predictor.py: 467:[0m removed session 3cde32e6-f66a-40d9-aadd-f0642105267a
+[0m[32mINFO 2026-10-27 11:40:27,852 2 sam3_base_predictor.py: 167:[0m started new session 52cd4959-e97c-46eb-8c59-87030c86e083
+[0m[32mINFO 2026-10-27 11:40:27,852 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:40:28,190 2 sam3_base_predictor.py: 467:[0m removed session 52cd4959-e97c-46eb-8c59-87030c86e083
+[0m[32mINFO 2026-10-27 11:40:43,018 2 sam3_base_predictor.py: 167:[0m started new session da767496-1596-4b67-b550-d567f347aa72
+[0m[32mINFO 2026-10-27 11:40:43,018 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:40:43,395 2 sam3_base_predictor.py: 467:[0m removed session da767496-1596-4b67-b550-d567f347aa72
+[0m[32mINFO 2026-10-27 11:40:59,994 2 sam3_base_predictor.py: 167:[0m started new session d5c6f3d8-cbc1-46cb-b1ac-a9a135b2dbd6
+[0m[32mINFO 2026-10-27 11:40:59,994 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:41:00,240 2 sam3_base_predictor.py: 467:[0m removed session d5c6f3d8-cbc1-46cb-b1ac-a9a135b2dbd6
+[0m[32mINFO 2026-10-27 11:41:13,284 2 sam3_base_predictor.py: 167:[0m started new session 9f94fac8-4ae2-4806-8a55-a5001333e387
+[0m[32mINFO 2026-10-27 11:41:13,284 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:41:13,522 2 sam3_base_predictor.py: 467:[0m removed session 9f94fac8-4ae2-4806-8a55-a5001333e387
+[0m[32mINFO 2026-10-27 11:41:27,479 2 sam3_base_predictor.py: 167:[0m started new session 79716e86-9699-42c2-aef4-73f22bcb414b
+[0m[32mINFO 2026-10-27 11:41:27,480 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:41:27,734 2 sam3_base_predictor.py: 467:[0m removed session 79716e86-9699-42c2-aef4-73f22bcb414b
+[0m[32mINFO 2026-10-27 11:41:41,094 2 sam3_base_predictor.py: 167:[0m started new session 6e58f4c8-06b9-4cf6-bbcf-3a98138a15f8
+[0m[32mINFO 2026-10-27 11:41:41,095 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:41:41,334 2 sam3_base_predictor.py: 467:[0m removed session 6e58f4c8-06b9-4cf6-bbcf-3a98138a15f8
+[0m[32mINFO 2026-10-27 11:41:57,458 2 sam3_base_predictor.py: 167:[0m started new session b9f0ef91-500d-4287-99da-93c67f63861f
+[0m[32mINFO 2026-10-27 11:41:57,459 2 sam3_multiplex_tracking.py:1677:[0m Running add_prompt on frame 0
+[0m[32mINFO 2026-10-27 11:41:57,822 2 sam3_base_predictor.py: 467:[0m removed session b9f0ef91-500d-4287-99da-93c67f63861f
+Stopping app - local entrypoint completed.
+✓ App completed. View run at 
+https://modal.com/apps/workspace/main/ap-fBAnfpvuwGF9xl9aiA7tci
+[spend] eval-testset-dev: 2835 s = $2.18; running total $5.19 of $15
+## testset, split dev, mode: product (150 of 150 pictures scored, version 0.1.0-day1)
+
+Modal: cold start 30.0 s (both models loaded); container {'glimmer_load_seconds': 8.5, 'sam_load_seconds': 13.8, 'load_seconds': 22.4, 'gpu': 'NVIDIA L40S', 'peak_mib': 20903}.
+
+| Type | Pictures | Whole picture black | Not black: values left readable / planted | Not black: face boxes 90%+ covered | Not black: ordinary spans readable (original) | Whole-black pictures: planted values left readable | s/picture Mac / Modal / total |
+|---|---|---|---|---|---|---|---|
+| all | 150 | 58 of 150 (38.7%) | 0 / 715 | 0 of 33 | 1297 of 1821 (1555) | 0 | 3.7752 / 14.2757 / 18.0509 |
+| chat | 37 | 27 of 37 (73.0%) | 0 / 50 | none planted | 118 of 200 (170) | 0 | 2.5787 / 12.1219 / 14.7005 |
+| id_card | 38 | 5 of 38 (13.2%) | 0 / 231 | 0 of 33 | 201 of 396 (250) | 0 | 2.8872 / 15.7326 / 18.6198 |
+| letter | 37 | 16 of 37 (43.2%) | 0 / 210 | none planted | 211 of 357 (307) | 0 | 5.5843 / 17.2592 / 22.8435 |
+| payslip | 38 | 10 of 38 (26.3%) | 0 / 224 | none planted | 767 of 868 (828) | 0 | 4.0669 / 12.0111 / 16.0779 |
+
+Why pictures went whole black: {
+"rule 1: a private value has no word box (decide)": 58
+}
+First not-sure or failing stage: {'None': 92, 'decide': 58} (None = no stage failed).
+The day-2 word list would have refused 150 of 150 pictures that reached `decide`.
+
+| Value type | Planted | Pictures not black: planted | ...of those left readable | Box 90%+ black (all pictures) | Left readable (all pictures) |
+|---|---|---|---|---|---|
+| account_number | 83 | 43 | 0 | 82 (98.8%) | 0 |
+| address | 241 | 167 | 0 | 235 (97.5%) | 0 |
+| card_number | 35 | 17 | 0 | 35 (100.0%) | 0 |
+| dob | 85 | 65 | 0 | 84 (98.8%) | 0 |
+| email | 43 | 20 | 0 | 43 (100.0%) | 0 |
+| iban | 42 | 20 | 0 | 41 (97.6%) | 0 |
+| id_number | 56 | 39 | 0 | 54 (96.4%) | 0 |
+| name | 276 | 172 | 0 | 273 (98.9%) | 0 |
+| ni_number | 46 | 29 | 0 | 46 (100.0%) | 0 |
+| phone | 41 | 17 | 0 | 41 (100.0%) | 0 |
+| postcode | 113 | 82 | 0 | 111 (98.2%) | 0 |
+| sort_code | 84 | 44 | 0 | 84 (100.0%) | 0 |
+
+Report says whole-black but pixels disagree: 0. Safe copy wrong size: 0. Safe copies with metadata chunks: 0. Pictures that failed to run: 0.
+
