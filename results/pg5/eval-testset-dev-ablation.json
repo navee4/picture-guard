@@ -210,7 +210,7 @@
   "chat_048.png": "8586e68e2514fbe363cb33a611d2e9026f4b71f29117f8122438c777ba58da74",
   "chat_049.png": "b0578766747ffd25772ec9f111930d933985982511840dcff6734b7579719a20"
  },
- "unix_time": 1793091375,
+ "unix_time": 1793091901,
  "command": ".venv/bin/pg eval --set testset --split dev --ablation",
  "summary": {
   "all": {
@@ -218,21 +218,21 @@
    "planted_values": 1145,
    "planted_faces": 38,
    "plain_spans": 3033,
-   "value_boxes_black_share_mean": 0.3214,
+   "value_boxes_black_share_mean": 0.3258,
    "value_boxes_black_share_min": 0.0,
-   "face_boxes_black_share_mean": 0.0074,
+   "face_boxes_black_share_mean": 0.0177,
    "face_boxes_black_share_min": 0.0,
-   "plain_text_boxes_nonblack_share_mean": 0.9881,
+   "plain_text_boxes_nonblack_share_mean": 0.9882,
    "whole_black_pixels": 0,
    "whole_black_report": 0,
    "report_and_pixels_disagree": 0,
    "size_wrong": 0,
    "metadata_chunks_found": 0,
-   "pipeline_seconds_mean": 0.3808,
-   "wall_seconds_mean": 0.4191,
+   "pipeline_seconds_mean": 0.375,
+   "wall_seconds_mean": 0.4125,
    "readback": {
-    "values_left": 478,
-    "plain_readable": 1969
+    "values_left": 471,
+    "plain_readable": 1960
    }
   },
   "chat": {
@@ -240,21 +240,21 @@
    "planted_values": 205,
    "planted_faces": 0,
    "plain_spans": 770,
-   "value_boxes_black_share_mean": 0.3282,
+   "value_boxes_black_share_mean": 0.3331,
    "value_boxes_black_share_min": 0.0,
    "face_boxes_black_share_mean": null,
    "face_boxes_black_share_min": null,
-   "plain_text_boxes_nonblack_share_mean": 0.9758,
+   "plain_text_boxes_nonblack_share_mean": 0.9757,
    "whole_black_pixels": 0,
    "whole_black_report": 0,
    "report_and_pixels_disagree": 0,
    "size_wrong": 0,
    "metadata_chunks_found": 0,
-   "pipeline_seconds_mean": 0.3061,
-   "wall_seconds_mean": 0.3443,
+   "pipeline_seconds_mean": 0.3044,
+   "wall_seconds_mean": 0.3418,
    "readback": {
-    "values_left": 62,
-    "plain_readable": 352
+    "values_left": 61,
+    "plain_readable": 351
    }
   },
   "id_card": {
@@ -262,21 +262,21 @@
    "planted_values": 266,
    "planted_faces": 38,
    "plain_spans": 456,
-   "value_boxes_black_share_mean": 0.1772,
+   "value_boxes_black_share_mean": 0.1885,
    "value_boxes_black_share_min": 0.0,
-   "face_boxes_black_share_mean": 0.0074,
+   "face_boxes_black_share_mean": 0.0177,
    "face_boxes_black_share_min": 0.0,
-   "plain_text_boxes_nonblack_share_mean": 0.9928,
+   "plain_text_boxes_nonblack_share_mean": 0.9933,
    "whole_black_pixels": 0,
    "whole_black_report": 0,
    "report_and_pixels_disagree": 0,
    "size_wrong": 0,
    "metadata_chunks_found": 0,
-   "pipeline_seconds_mean": 0.2805,
-   "wall_seconds_mean": 0.3187,
+   "pipeline_seconds_mean": 0.2772,
+   "wall_seconds_mean": 0.3146,
    "readback": {
-    "values_left": 201,
-    "plain_readable": 281
+    "values_left": 197,
+    "plain_readable": 274
    }
   },
   "letter": {
@@ -284,21 +284,21 @@
    "planted_values": 370,
    "planted_faces": 0,
    "plain_spans": 629,
-   "value_boxes_black_share_mean": 0.2733,
+   "value_boxes_black_share_mean": 0.2786,
    "value_boxes_black_share_min": 0.0,
    "face_boxes_black_share_mean": null,
    "face_boxes_black_share_min": null,
-   "plain_text_boxes_nonblack_share_mean": 0.9977,
+   "plain_text_boxes_nonblack_share_mean": 0.9976,
    "whole_black_pixels": 0,
    "whole_black_report": 0,
    "report_and_pixels_disagree": 0,
    "size_wrong": 0,
    "metadata_chunks_found": 0,
-   "pipeline_seconds_mean": 0.4693,
-   "wall_seconds_mean": 0.5071,
+   "pipeline_seconds_mean": 0.4672,
+   "wall_seconds_mean": 0.5048,
    "readback": {
-    "values_left": 116,
-    "plain_readable": 345
+    "values_left": 114,
+    "plain_readable": 344
    }
   },
   "payslip": {
@@ -306,7 +306,7 @@
    "planted_values": 304,
    "planted_faces": 0,
    "plain_spans": 1178,
-   "value_boxes_black_share_mean": 0.5014,
+   "value_boxes_black_share_mean": 0.4986,
    "value_boxes_black_share_min": 0.0,
    "face_boxes_black_share_mean": null,
    "face_boxes_black_share_min": null,
@@ -316,8 +316,8 @@
    "report_and_pixels_disagree": 0,
    "size_wrong": 0,
    "metadata_chunks_found": 0,
-   "pipeline_seconds_mean": 0.4676,
-   "wall_seconds_mean": 0.5068,
+   "pipeline_seconds_mean": 0.4519,
+   "wall_seconds_mean": 0.4893,
    "readback": {
     "values_left": 99,
     "plain_readable": 991
@@ -327,12 +327,12 @@
  "by_value_type": {
   "account_number": {
    "n": 83,
-   "black_ge90": 57,
-   "black_sum": 57.84860457405682,
-   "left_readable": 2,
+   "black_ge90": 58,
+   "black_sum": 58.824214330154376,
+   "left_readable": 1,
    "read_on_original": 62,
    "ocr_ran": 83,
-   "black_mean": 0.697
+   "black_mean": 0.7087
   },
   "address": {
    "n": 241,
@@ -354,21 +354,21 @@
   },
   "dob": {
    "n": 85,
-   "black_ge90": 55,
-   "black_sum": 55.00762706152135,
-   "left_readable": 20,
+   "black_ge90": 57,
+   "black_sum": 57.36558124547436,
+   "left_readable": 17,
    "read_on_original": 73,
    "ocr_ran": 85,
-   "black_mean": 0.6471
+   "black_mean": 0.6749
   },
   "email": {
    "n": 43,
-   "black_ge90": 14,
-   "black_sum": 22.59464784379698,
-   "left_readable": 2,
+   "black_ge90": 16,
+   "black_sum": 24.58220765240942,
+   "left_readable": 0,
    "read_on_original": 25,
    "ocr_ran": 43,
-   "black_mean": 0.5255
+   "black_mean": 0.5717
   },
   "iban": {
    "n": 42,
@@ -382,11 +382,11 @@
   "id_number": {
    "n": 56,
    "black_ge90": 0,
-   "black_sum": 0.6304275299818852,
-   "left_readable": 42,
+   "black_sum": 0.7159538457713589,
+   "left_readable": 41,
    "read_on_original": 44,
    "ocr_ran": 56,
-   "black_mean": 0.0113
+   "black_mean": 0.0128
   },
   "name": {
    "n": 276,
@@ -400,11 +400,11 @@
   "ni_number": {
    "n": 46,
    "black_ge90": 30,
-   "black_sum": 30.39709921609393,
+   "black_sum": 30.089342752374165,
    "left_readable": 1,
    "read_on_original": 31,
    "ocr_ran": 46,
-   "black_mean": 0.6608
+   "black_mean": 0.6541
   },
   "phone": {
    "n": 41,
@@ -490,7 +490,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4137,
+   "pipeline_seconds": 0.4123,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -565,7 +565,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.453
+   "wall_seconds": 0.449
   },
   {
    "file": "payslip_001.png",
@@ -619,7 +619,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.5104,
+   "pipeline_seconds": 0.4976,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -719,8 +719,8 @@
     }
    ],
    "first_failure": null,
-   "boxes_filled": 3,
-   "wall_seconds": 0.55
+   "boxes_filled": 4,
+   "wall_seconds": 0.535
   },
   {
    "file": "payslip_002.png",
@@ -774,7 +774,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4102,
+   "pipeline_seconds": 0.4023,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -846,7 +846,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.452
+   "wall_seconds": 0.44
   },
   {
    "file": "payslip_003.jpg",
@@ -900,7 +900,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4718,
+   "pipeline_seconds": 0.4751,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -975,7 +975,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.51
+   "wall_seconds": 0.512
   },
   {
    "file": "payslip_004.png",
@@ -1029,7 +1029,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.5456,
+   "pipeline_seconds": 0.5379,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -1121,7 +1121,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.583
+   "wall_seconds": 0.576
   },
   {
    "file": "payslip_005.jpg",
@@ -1175,7 +1175,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4532,
+   "pipeline_seconds": 0.4513,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -1249,7 +1249,7 @@
    },
    "leak_list": [],
    "first_failure": null,
-   "boxes_filled": 6,
+   "boxes_filled": 5,
    "wall_seconds": 0.492
   },
   {
@@ -1304,7 +1304,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4653,
+   "pipeline_seconds": 0.4676,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -1377,8 +1377,8 @@
    },
    "leak_list": [],
    "first_failure": null,
-   "boxes_filled": 6,
-   "wall_seconds": 0.504
+   "boxes_filled": 5,
+   "wall_seconds": 0.505
   },
   {
    "file": "payslip_007.png",
@@ -1432,7 +1432,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2234,
+   "pipeline_seconds": 0.2168,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -1535,7 +1535,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 0,
-   "wall_seconds": 0.262
+   "wall_seconds": 0.254
   },
   {
    "file": "payslip_008.jpg",
@@ -1589,7 +1589,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4573,
+   "pipeline_seconds": 0.4562,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -1664,8 +1664,8 @@
    },
    "leak_list": [],
    "first_failure": null,
-   "boxes_filled": 5,
-   "wall_seconds": 0.495
+   "boxes_filled": 4,
+   "wall_seconds": 0.494
   },
   {
    "file": "payslip_009.png",
@@ -1719,7 +1719,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.384,
+   "pipeline_seconds": 0.365,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -1792,7 +1792,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.426
+   "wall_seconds": 0.402
   },
   {
    "file": "payslip_010.jpg",
@@ -1846,7 +1846,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.5153,
+   "pipeline_seconds": 0.454,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -1937,7 +1937,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.557
+   "wall_seconds": 0.492
   },
   {
    "file": "payslip_011.png",
@@ -1991,7 +1991,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.5605,
+   "pipeline_seconds": 0.5011,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -2087,7 +2087,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.603
+   "wall_seconds": 0.538
   },
   {
    "file": "payslip_012.png",
@@ -2141,7 +2141,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.7202,
+   "pipeline_seconds": 0.6505,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -2233,7 +2233,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.764
+   "wall_seconds": 0.688
   },
   {
    "file": "payslip_013.jpg",
@@ -2287,7 +2287,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.5775,
+   "pipeline_seconds": 0.5216,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -2377,8 +2377,8 @@
    },
    "leak_list": [],
    "first_failure": null,
-   "boxes_filled": 5,
-   "wall_seconds": 0.619
+   "boxes_filled": 6,
+   "wall_seconds": 0.559
   },
   {
    "file": "payslip_014.jpg",
@@ -2432,7 +2432,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.6071,
+   "pipeline_seconds": 0.5463,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -2532,7 +2532,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 4,
-   "wall_seconds": 0.649
+   "wall_seconds": 0.584
   },
   {
    "file": "payslip_015.png",
@@ -2586,7 +2586,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4773,
+   "pipeline_seconds": 0.4722,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -2660,7 +2660,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.515
+   "wall_seconds": 0.509
   },
   {
    "file": "payslip_016.jpg",
@@ -2714,7 +2714,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.8978,
+   "pipeline_seconds": 0.8731,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -2840,7 +2840,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 0,
-   "wall_seconds": 0.935
+   "wall_seconds": 0.91
   },
   {
    "file": "payslip_017.jpg",
@@ -2894,7 +2894,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2785,
+   "pipeline_seconds": 0.2544,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -2997,7 +2997,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 0,
-   "wall_seconds": 0.317
+   "wall_seconds": 0.292
   },
   {
    "file": "payslip_018.png",
@@ -3051,7 +3051,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4145,
+   "pipeline_seconds": 0.3892,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -3123,7 +3123,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.454
+   "wall_seconds": 0.427
   },
   {
    "file": "payslip_019.jpg",
@@ -3177,7 +3177,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4079,
+   "pipeline_seconds": 0.3757,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -3255,8 +3255,8 @@
     }
    ],
    "first_failure": null,
-   "boxes_filled": 5,
-   "wall_seconds": 0.447
+   "boxes_filled": 4,
+   "wall_seconds": 0.413
   },
   {
    "file": "payslip_020.jpg",
@@ -3310,7 +3310,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.48,
+   "pipeline_seconds": 0.4843,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -3384,8 +3384,8 @@
    },
    "leak_list": [],
    "first_failure": null,
-   "boxes_filled": 6,
-   "wall_seconds": 0.517
+   "boxes_filled": 5,
+   "wall_seconds": 0.522
   },
   {
    "file": "payslip_021.jpg",
@@ -3439,7 +3439,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4152,
+   "pipeline_seconds": 0.3891,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -3513,7 +3513,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.454
+   "wall_seconds": 0.426
   },
   {
    "file": "payslip_022.png",
@@ -3567,7 +3567,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2243,
+   "pipeline_seconds": 0.2244,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -3724,7 +3724,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4273,
+   "pipeline_seconds": 0.4152,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -3803,7 +3803,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 4,
-   "wall_seconds": 0.465
+   "wall_seconds": 0.452
   },
   {
    "file": "payslip_024.png",
@@ -3857,7 +3857,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4855,
+   "pipeline_seconds": 0.4568,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -3930,8 +3930,8 @@
    },
    "leak_list": [],
    "first_failure": null,
-   "boxes_filled": 6,
-   "wall_seconds": 0.524
+   "boxes_filled": 5,
+   "wall_seconds": 0.494
   },
   {
    "file": "payslip_025.jpg",
@@ -3985,7 +3985,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3895,
+   "pipeline_seconds": 0.3738,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -4064,8 +4064,8 @@
     }
    ],
    "first_failure": null,
-   "boxes_filled": 5,
-   "wall_seconds": 0.429
+   "boxes_filled": 4,
+   "wall_seconds": 0.411
   },
   {
    "file": "payslip_026.jpg",
@@ -4119,7 +4119,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.634,
+   "pipeline_seconds": 0.6175,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -4210,7 +4210,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.673
+   "wall_seconds": 0.655
   },
   {
    "file": "payslip_027.png",
@@ -4264,7 +4264,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4888,
+   "pipeline_seconds": 0.4732,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -4338,7 +4338,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.534
+   "wall_seconds": 0.51
   },
   {
    "file": "payslip_028.jpg",
@@ -4392,7 +4392,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3598,
+   "pipeline_seconds": 0.357,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -4506,7 +4506,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 0,
-   "wall_seconds": 0.398
+   "wall_seconds": 0.394
   },
   {
    "file": "payslip_029.png",
@@ -4560,7 +4560,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2778,
+   "pipeline_seconds": 0.2795,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -4663,7 +4663,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 0,
-   "wall_seconds": 0.316
+   "wall_seconds": 0.317
   },
   {
    "file": "payslip_030.png",
@@ -4717,7 +4717,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4855,
+   "pipeline_seconds": 0.4844,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -4809,7 +4809,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.523
+   "wall_seconds": 0.522
   },
   {
    "file": "payslip_031.png",
@@ -4863,7 +4863,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4276,
+   "pipeline_seconds": 0.4236,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -4936,7 +4936,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.466
+   "wall_seconds": 0.461
   },
   {
    "file": "payslip_032.jpg",
@@ -4990,7 +4990,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4288,
+   "pipeline_seconds": 0.4324,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -5065,7 +5065,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.467
+   "wall_seconds": 0.469
   },
   {
    "file": "payslip_033.png",
@@ -5078,8 +5078,8 @@
     0.036155202821869487,
     0.07127882599580712,
     1.0,
-    0.34653878231859886,
-    1.0,
+    0.03878231859883236,
+    0.4481094127111826,
     1.0,
     1.0
    ],
@@ -5119,7 +5119,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4567,
+   "pipeline_seconds": 0.4522,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -5155,13 +5155,13 @@
     },
     {
      "type": "ni_number",
-     "black_share": 0.34653878231859886,
+     "black_share": 0.03878231859883236,
      "left_readable": false,
      "read_on_original": false
     },
     {
      "type": "dob",
-     "black_share": 1.0,
+     "black_share": 0.4481094127111826,
      "left_readable": false,
      "read_on_original": true
     },
@@ -5197,8 +5197,8 @@
     }
    ],
    "first_failure": null,
-   "boxes_filled": 4,
-   "wall_seconds": 0.495
+   "boxes_filled": 3,
+   "wall_seconds": 0.49
   },
   {
    "file": "payslip_034.png",
@@ -5252,7 +5252,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.616,
+   "pipeline_seconds": 0.6133,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -5350,7 +5350,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 4,
-   "wall_seconds": 0.653
+   "wall_seconds": 0.651
   },
   {
    "file": "payslip_035.png",
@@ -5404,7 +5404,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3934,
+   "pipeline_seconds": 0.3913,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -5476,8 +5476,8 @@
    },
    "leak_list": [],
    "first_failure": null,
-   "boxes_filled": 6,
-   "wall_seconds": 0.431
+   "boxes_filled": 5,
+   "wall_seconds": 0.429
   },
   {
    "file": "payslip_036.jpg",
@@ -5531,7 +5531,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.5196,
+   "pipeline_seconds": 0.5162,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -5627,7 +5627,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 4,
-   "wall_seconds": 0.557
+   "wall_seconds": 0.553
   },
   {
    "file": "payslip_037.png",
@@ -5681,7 +5681,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4689,
+   "pipeline_seconds": 0.4674,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -5754,8 +5754,8 @@
    },
    "leak_list": [],
    "first_failure": null,
-   "boxes_filled": 6,
-   "wall_seconds": 0.506
+   "boxes_filled": 5,
+   "wall_seconds": 0.505
   },
   {
    "file": "letter_000.png",
@@ -5797,7 +5797,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.5218,
+   "pipeline_seconds": 0.5207,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -5903,7 +5903,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.56
+   "wall_seconds": 0.561
   },
   {
    "file": "letter_001.png",
@@ -5945,7 +5945,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.1978,
+   "pipeline_seconds": 0.196,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -6068,7 +6068,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 0,
-   "wall_seconds": 0.235
+   "wall_seconds": 0.234
   },
   {
    "file": "letter_002.png",
@@ -6097,7 +6097,7 @@
     1.0,
     1.0,
     1.0,
-    1.0,
+    0.9902298059722031,
     1.0,
     1.0,
     1.0,
@@ -6110,7 +6110,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.7526,
+   "pipeline_seconds": 0.751,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -6257,8 +6257,8 @@
     }
    ],
    "first_failure": null,
-   "boxes_filled": 0,
-   "wall_seconds": 0.79
+   "boxes_filled": 1,
+   "wall_seconds": 0.789
   },
   {
    "file": "letter_003.png",
@@ -6300,7 +6300,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4074,
+   "pipeline_seconds": 0.3914,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -6440,7 +6440,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 0,
-   "wall_seconds": 0.451
+   "wall_seconds": 0.429
   },
   {
    "file": "letter_004.png",
@@ -6482,7 +6482,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4531,
+   "pipeline_seconds": 0.4548,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -6612,7 +6612,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4245,
+   "pipeline_seconds": 0.4243,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -6698,7 +6698,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.462
+   "wall_seconds": 0.461
   },
   {
    "file": "letter_006.jpg",
@@ -6740,7 +6740,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.1876,
+   "pipeline_seconds": 0.1872,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -6863,7 +6863,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 0,
-   "wall_seconds": 0.226
+   "wall_seconds": 0.225
   },
   {
    "file": "letter_007.png",
@@ -6905,7 +6905,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4328,
+   "pipeline_seconds": 0.4318,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -6993,7 +6993,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.471
+   "wall_seconds": 0.47
   },
   {
    "file": "letter_008.png",
@@ -7035,7 +7035,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4889,
+   "pipeline_seconds": 0.4864,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -7147,7 +7147,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 4,
-   "wall_seconds": 0.526
+   "wall_seconds": 0.524
   },
   {
    "file": "letter_009.png",
@@ -7189,7 +7189,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3731,
+   "pipeline_seconds": 0.3719,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -7275,7 +7275,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.41
+   "wall_seconds": 0.409
   },
   {
    "file": "letter_010.jpg",
@@ -7317,7 +7317,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.454,
+   "pipeline_seconds": 0.4419,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -7406,7 +7406,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.491
+   "wall_seconds": 0.482
   },
   {
    "file": "letter_011.png",
@@ -7448,7 +7448,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4923,
+   "pipeline_seconds": 0.494,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -7562,7 +7562,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 3,
-   "wall_seconds": 0.53
+   "wall_seconds": 0.531
   },
   {
    "file": "letter_012.jpg",
@@ -7604,7 +7604,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4271,
+   "pipeline_seconds": 0.4289,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -7702,7 +7702,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 3,
-   "wall_seconds": 0.464
+   "wall_seconds": 0.466
   },
   {
    "file": "letter_013.png",
@@ -7744,7 +7744,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.5719,
+   "pipeline_seconds": 0.571,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -7878,7 +7878,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 0,
-   "wall_seconds": 0.61
+   "wall_seconds": 0.608
   },
   {
    "file": "letter_014.jpg",
@@ -8043,7 +8043,7 @@
     1.0,
     0.022032374100719423,
     1.0,
-    0.012440191387559809,
+    1.0,
     0.9956709956709957,
     1.0,
     0.01474056603773585
@@ -8070,7 +8070,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4014,
+   "pipeline_seconds": 0.3969,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -8118,8 +8118,8 @@
     },
     {
      "type": "email",
-     "black_share": 0.012440191387559809,
-     "left_readable": true,
+     "black_share": 1.0,
+     "left_readable": false,
      "read_on_original": true
     },
     {
@@ -8147,7 +8147,6 @@
      "66 Richardson Creek",
      "Catherinefort",
      "Katherine Griffiths",
-     "katherine.griffiths@mail.test",
      "Gareth Okafor"
     ],
     "plain_readable": 15
@@ -8158,8 +8157,8 @@
    },
    "leak_list": [],
    "first_failure": null,
-   "boxes_filled": 4,
-   "wall_seconds": 0.439
+   "boxes_filled": 5,
+   "wall_seconds": 0.434
   },
   {
    "file": "letter_016.jpg",
@@ -8201,7 +8200,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.5697,
+   "pipeline_seconds": 0.5678,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -8304,7 +8303,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.608
+   "wall_seconds": 0.605
   },
   {
    "file": "letter_017.jpg",
@@ -8346,7 +8345,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.5998,
+   "pipeline_seconds": 0.5977,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -8478,7 +8477,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 0,
-   "wall_seconds": 0.637
+   "wall_seconds": 0.635
   },
   {
    "file": "letter_018.jpg",
@@ -8495,7 +8494,7 @@
     1.0,
     0.2639344262295082,
     1.0,
-    0.0,
+    0.975609756097561,
     0.0
    ],
    "face_box_black_share": [],
@@ -8520,7 +8519,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4854,
+   "pipeline_seconds": 0.4812,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -8599,8 +8598,8 @@
     },
     {
      "type": "account_number",
-     "black_share": 0.0,
-     "left_readable": true,
+     "black_share": 0.975609756097561,
+     "left_readable": false,
      "read_on_original": true
     },
     {
@@ -8615,10 +8614,9 @@
      "Jacqueline Reid",
      "744 Thompson Stravenue",
      "Jacqueline Reid",
-     "97445224",
      "Gareth Okafor"
     ],
-    "plain_readable": 15
+    "plain_readable": 14
    },
    "readback_original": {
     "values_read": 9,
@@ -8631,8 +8629,8 @@
     }
    ],
    "first_failure": null,
-   "boxes_filled": 3,
-   "wall_seconds": 0.522
+   "boxes_filled": 4,
+   "wall_seconds": 0.518
   },
   {
    "file": "letter_019.jpg",
@@ -8674,7 +8672,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.412,
+   "pipeline_seconds": 0.4114,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -8772,7 +8770,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 3,
-   "wall_seconds": 0.449
+   "wall_seconds": 0.448
   },
   {
    "file": "letter_020.png",
@@ -8814,7 +8812,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2117,
+   "pipeline_seconds": 0.2092,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -8936,7 +8934,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 0,
-   "wall_seconds": 0.251
+   "wall_seconds": 0.246
   },
   {
    "file": "letter_021.jpg",
@@ -8978,7 +8976,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4555,
+   "pipeline_seconds": 0.4489,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -9065,7 +9063,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 3,
-   "wall_seconds": 0.493
+   "wall_seconds": 0.486
   },
   {
    "file": "letter_022.jpg",
@@ -9107,7 +9105,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.5214,
+   "pipeline_seconds": 0.517,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -9221,7 +9219,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 3,
-   "wall_seconds": 0.559
+   "wall_seconds": 0.554
   },
   {
    "file": "letter_023.jpg",
@@ -9263,7 +9261,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3896,
+   "pipeline_seconds": 0.3859,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -9351,7 +9349,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.428
+   "wall_seconds": 0.423
   },
   {
    "file": "letter_024.jpg",
@@ -9393,7 +9391,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3789,
+   "pipeline_seconds": 0.3815,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -9481,7 +9479,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.416
+   "wall_seconds": 0.419
   },
   {
    "file": "letter_025.png",
@@ -9523,7 +9521,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4157,
+   "pipeline_seconds": 0.4134,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -9614,7 +9612,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 4,
-   "wall_seconds": 0.453
+   "wall_seconds": 0.451
   },
   {
    "file": "letter_026.png",
@@ -9656,7 +9654,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 1.4127,
+   "pipeline_seconds": 1.4067,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -9804,7 +9802,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 0,
-   "wall_seconds": 1.45
+   "wall_seconds": 1.444
   },
   {
    "file": "letter_027.png",
@@ -9846,7 +9844,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3699,
+   "pipeline_seconds": 0.37,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -9979,7 +9977,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.207,
+   "pipeline_seconds": 0.2069,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -10144,7 +10142,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2166,
+   "pipeline_seconds": 0.213,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -10267,7 +10265,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 0,
-   "wall_seconds": 0.255
+   "wall_seconds": 0.251
   },
   {
    "file": "letter_030.png",
@@ -10309,7 +10307,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 1.3269,
+   "pipeline_seconds": 1.3241,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -10452,8 +10450,8 @@
     }
    ],
    "first_failure": null,
-   "boxes_filled": 0,
-   "wall_seconds": 1.365
+   "boxes_filled": 1,
+   "wall_seconds": 1.362
   },
   {
    "file": "letter_031.png",
@@ -10495,7 +10493,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4024,
+   "pipeline_seconds": 0.4039,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -10581,7 +10579,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.44
+   "wall_seconds": 0.442
   },
   {
    "file": "letter_032.jpg",
@@ -10623,7 +10621,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4074,
+   "pipeline_seconds": 0.4076,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -10761,7 +10759,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3769,
+   "pipeline_seconds": 0.3743,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -10872,7 +10870,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 1,
-   "wall_seconds": 0.415
+   "wall_seconds": 0.412
   },
   {
    "file": "letter_034.png",
@@ -10914,7 +10912,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2675,
+   "pipeline_seconds": 0.2639,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -11037,7 +11035,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 0,
-   "wall_seconds": 0.305
+   "wall_seconds": 0.302
   },
   {
    "file": "letter_035.jpg",
@@ -11079,7 +11077,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4255,
+   "pipeline_seconds": 0.4268,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -11173,7 +11171,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.463
+   "wall_seconds": 0.464
   },
   {
    "file": "letter_036.jpg",
@@ -11215,7 +11213,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.391,
+   "pipeline_seconds": 0.3936,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -11303,7 +11301,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.428
+   "wall_seconds": 0.432
   },
   {
    "file": "id_card_000.jpg",
@@ -11339,7 +11337,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2861,
+   "pipeline_seconds": 0.2858,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -11445,7 +11443,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2753,
+   "pipeline_seconds": 0.2743,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -11513,7 +11511,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 2,
-   "wall_seconds": 0.313
+   "wall_seconds": 0.311
   },
   {
    "file": "id_card_002.jpg",
@@ -11549,7 +11547,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.265,
+   "pipeline_seconds": 0.2662,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -11642,7 +11640,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 0,
-   "wall_seconds": 0.305
+   "wall_seconds": 0.303
   },
   {
    "file": "id_card_003.jpg",
@@ -11678,7 +11676,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2395,
+   "pipeline_seconds": 0.2399,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -11749,7 +11747,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 2,
-   "wall_seconds": 0.278
+   "wall_seconds": 0.277
   },
   {
    "file": "id_card_004.jpg",
@@ -11767,7 +11765,7 @@
     1.0
    ],
    "face_box_black_share": [
-    9.309831181727905e-05
+    0.027929493545183714
    ],
    "plain_box_nonblack_share": [
     1.0,
@@ -11785,11 +11783,10 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3168,
+   "pipeline_seconds": 0.3177,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
-    "IDAT",
     "IDAT",
     "IDAT",
     "IDAT",
@@ -11862,8 +11859,8 @@
    },
    "leak_list": [],
    "first_failure": null,
-   "boxes_filled": 1,
-   "wall_seconds": 0.354
+   "boxes_filled": 2,
+   "wall_seconds": 0.355
   },
   {
    "file": "id_card_005.jpg",
@@ -11881,15 +11878,15 @@
     1.0
    ],
    "face_box_black_share": [
-    0.25943396226415094
+    0.0009620158887785502
    ],
    "plain_box_nonblack_share": [
     1.0,
     1.0,
     1.0,
     1.0,
-    0.1333333333333333,
-    0.5714285714285714,
+    1.0,
+    1.0,
     1.0,
     1.0,
     0.9683035714285715,
@@ -11899,10 +11896,11 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3823,
+   "pipeline_seconds": 0.3854,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
+    "IDAT",
     "IDAT",
     "IDAT",
     "IDAT",
@@ -11982,7 +11980,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 2,
-   "wall_seconds": 0.424
+   "wall_seconds": 0.423
   },
   {
    "file": "id_card_006.png",
@@ -11994,13 +11992,13 @@
     0.03709856035437431,
     0.03678929765886288,
     1.0,
-    0.07351712614870509,
+    0.14118629908103592,
     0.04850280723643169,
     0.05627147766323024,
     1.0
    ],
    "face_box_black_share": [
-    0.0
+    0.1035031847133758
    ],
    "plain_box_nonblack_share": [
     1.0,
@@ -12008,7 +12006,7 @@
     1.0,
     1.0,
     1.0,
-    1.0,
+    0.7121212121212122,
     1.0,
     1.0,
     0.9454619454619455,
@@ -12018,7 +12016,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2479,
+   "pipeline_seconds": 0.2475,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -12047,7 +12045,7 @@
     },
     {
      "type": "id_number",
-     "black_share": 0.07351712614870509,
+     "black_share": 0.14118629908103592,
      "left_readable": true,
      "read_on_original": true
     },
@@ -12078,7 +12076,7 @@
      "977 Houghton Turnpike",
      "Dyertown"
     ],
-    "plain_readable": 10
+    "plain_readable": 8
    },
    "readback_original": {
     "values_read": 7,
@@ -12086,8 +12084,8 @@
    },
    "leak_list": [],
    "first_failure": null,
-   "boxes_filled": 2,
-   "wall_seconds": 0.285
+   "boxes_filled": 3,
+   "wall_seconds": 0.286
   },
   {
    "file": "id_card_007.jpg",
@@ -12105,7 +12103,7 @@
     0.0
    ],
    "face_box_black_share": [
-    2.9032632679131344e-05
+    0.06651376146788991
    ],
    "plain_box_nonblack_share": [
     1.0,
@@ -12123,7 +12121,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3277,
+   "pipeline_seconds": 0.3296,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -12209,8 +12207,8 @@
     }
    ],
    "first_failure": null,
-   "boxes_filled": 0,
-   "wall_seconds": 0.365
+   "boxes_filled": 1,
+   "wall_seconds": 0.367
   },
   {
    "file": "id_card_008.png",
@@ -12246,7 +12244,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2933,
+   "pipeline_seconds": 0.2868,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -12320,7 +12318,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 1,
-   "wall_seconds": 0.332
+   "wall_seconds": 0.324
   },
   {
    "file": "id_card_009.jpg",
@@ -12331,14 +12329,14 @@
    "value_box_black_share": [
     0.0367965367965368,
     0.022067363530778164,
-    0.037377450980392156,
+    1.0,
     0.035633484162895926,
     0.030830280830280832,
     0.032281205164992825,
     1.0
    ],
    "face_box_black_share": [
-    0.0006206554121151937
+    0.04357000993048659
    ],
    "plain_box_nonblack_share": [
     1.0,
@@ -12356,7 +12354,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.321,
+   "pipeline_seconds": 0.3172,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -12386,8 +12384,8 @@
     },
     {
      "type": "dob",
-     "black_share": 0.037377450980392156,
-     "left_readable": true,
+     "black_share": 1.0,
+     "left_readable": false,
      "read_on_original": true
     },
     {
@@ -12419,7 +12417,6 @@
     "values_left": [
      "NORTH",
      "Guy",
-     "21/08/1989",
      "GA2858742",
      "24 Graham Orchard",
      "Lukefurt"
@@ -12432,8 +12429,8 @@
    },
    "leak_list": [],
    "first_failure": null,
-   "boxes_filled": 1,
-   "wall_seconds": 0.36
+   "boxes_filled": 4,
+   "wall_seconds": 0.356
   },
   {
    "file": "id_card_010.png",
@@ -12469,7 +12466,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2453,
+   "pipeline_seconds": 0.2437,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -12542,7 +12539,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 1,
-   "wall_seconds": 0.283
+   "wall_seconds": 0.281
   },
   {
    "file": "id_card_011.png",
@@ -12578,7 +12575,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2336,
+   "pipeline_seconds": 0.2342,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -12647,7 +12644,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 1,
-   "wall_seconds": 0.271
+   "wall_seconds": 0.273
   },
   {
    "file": "id_card_012.png",
@@ -12683,7 +12680,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2191,
+   "pipeline_seconds": 0.2192,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -12758,7 +12755,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 0,
-   "wall_seconds": 0.256
+   "wall_seconds": 0.257
   },
   {
    "file": "id_card_013.jpg",
@@ -12776,7 +12773,7 @@
     0.056207233626588464
    ],
    "face_box_black_share": [
-    0.0005413413869736168
+    0.08547495583793949
    ],
    "plain_box_nonblack_share": [
     1.0,
@@ -12784,7 +12781,7 @@
     1.0,
     1.0,
     0.8888888888888888,
-    1.0,
+    0.7121212121212122,
     1.0,
     1.0,
     0.9464882943143813,
@@ -12794,7 +12791,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2873,
+   "pipeline_seconds": 0.2905,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -12834,7 +12831,7 @@
     {
      "type": "id_number",
      "black_share": 0.04974539757148453,
-     "left_readable": true,
+     "left_readable": false,
      "read_on_original": true
     },
     {
@@ -12860,7 +12857,6 @@
     "values_left": [
      "BURGESS",
      "Sandra",
-     "SB0965342",
      "2 Karen Village",
      "Watsonmouth"
     ],
@@ -12877,8 +12873,8 @@
     }
    ],
    "first_failure": null,
-   "boxes_filled": 1,
-   "wall_seconds": 0.325
+   "boxes_filled": 3,
+   "wall_seconds": 0.328
   },
   {
    "file": "id_card_014.png",
@@ -12896,7 +12892,7 @@
     0.011574074074074073
    ],
    "face_box_black_share": [
-    0.00021722939424031776
+    0.021940168818272095
    ],
    "plain_box_nonblack_share": [
     1.0,
@@ -12914,7 +12910,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3124,
+   "pipeline_seconds": 0.2858,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -12984,7 +12980,7 @@
      "DW7808184",
      "Matthewborough"
     ],
-    "plain_readable": 5
+    "plain_readable": 4
    },
    "readback_original": {
     "values_read": 4,
@@ -13005,8 +13001,8 @@
     }
    ],
    "first_failure": null,
-   "boxes_filled": 0,
-   "wall_seconds": 0.351
+   "boxes_filled": 1,
+   "wall_seconds": 0.323
   },
   {
    "file": "id_card_015.png",
@@ -13042,7 +13038,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2696,
+   "pipeline_seconds": 0.271,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -13114,7 +13110,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 2,
-   "wall_seconds": 0.307
+   "wall_seconds": 0.308
   },
   {
    "file": "id_card_016.jpg",
@@ -13125,7 +13121,7 @@
    "value_box_black_share": [
     0.0,
     0.0,
-    0.0,
+    1.0,
     0.0,
     0.0,
     0.0,
@@ -13139,8 +13135,8 @@
     1.0,
     1.0,
     1.0,
-    1.0,
-    1.0,
+    0.85,
+    0.95,
     1.0,
     1.0,
     1.0,
@@ -13150,7 +13146,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2918,
+   "pipeline_seconds": 0.291,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -13173,8 +13169,8 @@
     },
     {
      "type": "dob",
-     "black_share": 0.0,
-     "left_readable": true,
+     "black_share": 1.0,
+     "left_readable": false,
      "read_on_original": true
     },
     {
@@ -13206,12 +13202,11 @@
     "values_left": [
      "FRANCIS",
      "Irene",
-     "21 Jul 1960",
      "AM2164963",
      "9 Deborah Summit",
      "Walkerfort"
     ],
-    "plain_readable": 11
+    "plain_readable": 8
    },
    "readback_original": {
     "values_read": 7,
@@ -13219,8 +13214,8 @@
    },
    "leak_list": [],
    "first_failure": null,
-   "boxes_filled": 1,
-   "wall_seconds": 0.329
+   "boxes_filled": 2,
+   "wall_seconds": 0.328
   },
   {
    "file": "id_card_017.png",
@@ -13256,7 +13251,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2741,
+   "pipeline_seconds": 0.2742,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -13337,7 +13332,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 1,
-   "wall_seconds": 0.312
+   "wall_seconds": 0.311
   },
   {
    "file": "id_card_018.png",
@@ -13373,7 +13368,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2121,
+   "pipeline_seconds": 0.206,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -13446,7 +13441,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 1,
-   "wall_seconds": 0.25
+   "wall_seconds": 0.244
   },
   {
    "file": "id_card_019.png",
@@ -13458,13 +13453,13 @@
     0.004839685420447671,
     0.004347826086956522,
     1.0,
-    0.003289473684210526,
+    0.021146616541353382,
     0.001949317738791423,
     0.002844950213371266,
     1.0
    ],
    "face_box_black_share": [
-    0.0
+    0.07423038728897716
    ],
    "plain_box_nonblack_share": [
     1.0,
@@ -13472,7 +13467,7 @@
     1.0,
     1.0,
     1.0,
-    1.0,
+    0.7076923076923076,
     1.0,
     1.0,
     0.9979757085020243,
@@ -13482,7 +13477,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3169,
+   "pipeline_seconds": 0.315,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -13519,7 +13514,7 @@
     },
     {
      "type": "id_number",
-     "black_share": 0.003289473684210526,
+     "black_share": 0.021146616541353382,
      "left_readable": true,
      "read_on_original": true
     },
@@ -13550,7 +13545,7 @@
      "84 Lewis Brooks",
      "North Mathewshire"
     ],
-    "plain_readable": 10
+    "plain_readable": 9
    },
    "readback_original": {
     "values_read": 7,
@@ -13558,8 +13553,8 @@
    },
    "leak_list": [],
    "first_failure": null,
-   "boxes_filled": 2,
-   "wall_seconds": 0.354
+   "boxes_filled": 4,
+   "wall_seconds": 0.353
   },
   {
    "file": "id_card_020.png",
@@ -13577,7 +13572,7 @@
     1.0
    ],
    "face_box_black_share": [
-    0.018433465739821252
+    0.10004965243296922
    ],
    "plain_box_nonblack_share": [
     1.0,
@@ -13595,7 +13590,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3461,
+   "pipeline_seconds": 0.336,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -13679,8 +13674,8 @@
    },
    "leak_list": [],
    "first_failure": null,
-   "boxes_filled": 1,
-   "wall_seconds": 0.385
+   "boxes_filled": 2,
+   "wall_seconds": 0.373
   },
   {
    "file": "id_card_021.png",
@@ -13716,7 +13711,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2298,
+   "pipeline_seconds": 0.2249,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -13785,7 +13780,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 1,
-   "wall_seconds": 0.267
+   "wall_seconds": 0.262
   },
   {
    "file": "id_card_022.jpg",
@@ -13821,7 +13816,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2969,
+   "pipeline_seconds": 0.2883,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -13891,7 +13886,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 2,
-   "wall_seconds": 0.335
+   "wall_seconds": 0.326
   },
   {
    "file": "id_card_023.png",
@@ -13927,7 +13922,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2963,
+   "pipeline_seconds": 0.2862,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -14006,7 +14001,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 1,
-   "wall_seconds": 0.335
+   "wall_seconds": 0.323
   },
   {
    "file": "id_card_024.png",
@@ -14042,7 +14037,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2491,
+   "pipeline_seconds": 0.2367,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -14111,7 +14106,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 1,
-   "wall_seconds": 0.288
+   "wall_seconds": 0.274
   },
   {
    "file": "id_card_025.png",
@@ -14147,7 +14142,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2515,
+   "pipeline_seconds": 0.2409,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -14215,7 +14210,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 2,
-   "wall_seconds": 0.29
+   "wall_seconds": 0.278
   },
   {
    "file": "id_card_026.png",
@@ -14251,7 +14246,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2132,
+   "pipeline_seconds": 0.2094,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -14325,7 +14320,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 1,
-   "wall_seconds": 0.251
+   "wall_seconds": 0.248
   },
   {
    "file": "id_card_027.png",
@@ -14361,7 +14356,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3424,
+   "pipeline_seconds": 0.3349,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -14439,7 +14434,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 1,
-   "wall_seconds": 0.38
+   "wall_seconds": 0.372
   },
   {
    "file": "id_card_028.jpg",
@@ -14457,7 +14452,7 @@
     0.0
    ],
    "face_box_black_share": [
-    0.0
+    0.041666666666666664
    ],
    "plain_box_nonblack_share": [
     1.0,
@@ -14475,11 +14470,10 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2658,
+   "pipeline_seconds": 0.2644,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
-    "IDAT",
     "IDAT",
     "IDAT",
     "IEND"
@@ -14550,8 +14544,8 @@
     }
    ],
    "first_failure": null,
-   "boxes_filled": 0,
-   "wall_seconds": 0.304
+   "boxes_filled": 2,
+   "wall_seconds": 0.301
   },
   {
    "file": "id_card_029.jpg",
@@ -14569,7 +14563,7 @@
     1.0
    ],
    "face_box_black_share": [
-    0.00037270642201834864
+    0.04174311926605505
    ],
    "plain_box_nonblack_share": [
     1.0,
@@ -14658,7 +14652,7 @@
    },
    "leak_list": [],
    "first_failure": null,
-   "boxes_filled": 1,
+   "boxes_filled": 3,
    "wall_seconds": 0.294
   },
   {
@@ -14670,7 +14664,7 @@
    "value_box_black_share": [
     0.05,
     0.0427689594356261,
-    0.05277777777777778,
+    1.0,
     0.047058823529411764,
     0.038917089678511,
     0.050734312416555405,
@@ -14695,7 +14689,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3406,
+   "pipeline_seconds": 0.3447,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -14735,8 +14729,8 @@
     },
     {
      "type": "dob",
-     "black_share": 0.05277777777777778,
-     "left_readable": true,
+     "black_share": 1.0,
+     "left_readable": false,
      "read_on_original": true
     },
     {
@@ -14768,7 +14762,6 @@
     "values_left": [
      "MYERS",
      "Alexandra",
-     "23/09/1974",
      "TS0083967",
      "731 Christine Ford",
      "South Samanthaville"
@@ -14781,8 +14774,8 @@
    },
    "leak_list": [],
    "first_failure": null,
-   "boxes_filled": 1,
-   "wall_seconds": 0.379
+   "boxes_filled": 2,
+   "wall_seconds": 0.382
   },
   {
    "file": "id_card_031.png",
@@ -14818,7 +14811,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2729,
+   "pipeline_seconds": 0.274,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -14923,7 +14916,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3386,
+   "pipeline_seconds": 0.3403,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -15010,7 +15003,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 1,
-   "wall_seconds": 0.376
+   "wall_seconds": 0.378
   },
   {
    "file": "id_card_033.png",
@@ -15028,7 +15021,7 @@
     1.0
    ],
    "face_box_black_share": [
-    0.0
+    0.06051390268123138
    ],
    "plain_box_nonblack_share": [
     1.0,
@@ -15046,7 +15039,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2711,
+   "pipeline_seconds": 0.2684,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -15113,8 +15106,8 @@
    },
    "leak_list": [],
    "first_failure": null,
-   "boxes_filled": 2,
-   "wall_seconds": 0.308
+   "boxes_filled": 3,
+   "wall_seconds": 0.306
   },
   {
    "file": "id_card_034.jpg",
@@ -15150,7 +15143,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3061,
+   "pipeline_seconds": 0.306,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -15238,7 +15231,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 0,
-   "wall_seconds": 0.345
+   "wall_seconds": 0.343
   },
   {
    "file": "id_card_035.png",
@@ -15274,7 +15267,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.249,
+   "pipeline_seconds": 0.2495,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -15342,7 +15335,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 2,
-   "wall_seconds": 0.288
+   "wall_seconds": 0.287
   },
   {
    "file": "id_card_036.png",
@@ -15378,7 +15371,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2651,
+   "pipeline_seconds": 0.2514,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -15446,7 +15439,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 2,
-   "wall_seconds": 0.307
+   "wall_seconds": 0.289
   },
   {
    "file": "id_card_037.jpg",
@@ -15482,7 +15475,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.252,
+   "pipeline_seconds": 0.2404,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -15558,7 +15551,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 0,
-   "wall_seconds": 0.29
+   "wall_seconds": 0.277
   },
   {
    "file": "chat_000.png",
@@ -15598,7 +15591,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2971,
+   "pipeline_seconds": 0.2972,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -15661,7 +15654,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 1,
-   "wall_seconds": 0.335
+   "wall_seconds": 0.334
   },
   {
    "file": "chat_001.png",
@@ -15704,7 +15697,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2248,
+   "pipeline_seconds": 0.2236,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -15798,7 +15791,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 0,
-   "wall_seconds": 0.262
+   "wall_seconds": 0.26
   },
   {
    "file": "chat_002.png",
@@ -15840,7 +15833,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2874,
+   "pipeline_seconds": 0.2848,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -15909,7 +15902,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 2,
-   "wall_seconds": 0.327
+   "wall_seconds": 0.322
   },
   {
    "file": "chat_003.jpg",
@@ -15949,7 +15942,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3979,
+   "pipeline_seconds": 0.3951,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -16020,7 +16013,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 1,
-   "wall_seconds": 0.435
+   "wall_seconds": 0.432
   },
   {
    "file": "chat_004.png",
@@ -16062,7 +16055,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2744,
+   "pipeline_seconds": 0.2757,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -16120,7 +16113,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.313
+   "wall_seconds": 0.314
   },
   {
    "file": "chat_005.png",
@@ -16131,7 +16124,7 @@
    "value_box_black_share": [
     0.0,
     0.0,
-    0.0,
+    1.0,
     0.9956709956709957,
     1.0
    ],
@@ -16142,7 +16135,7 @@
     1.0,
     1.0,
     1.0,
-    1.0,
+    0.9882352941176471,
     1.0,
     0.987012987012987,
     1.0,
@@ -16160,7 +16153,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2533,
+   "pipeline_seconds": 0.2516,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -16182,8 +16175,8 @@
     },
     {
      "type": "email",
-     "black_share": 0.0,
-     "left_readable": true,
+     "black_share": 1.0,
+     "left_readable": false,
      "read_on_original": true
     },
     {
@@ -16202,10 +16195,9 @@
    "readback": {
     "values_left": [
      "Charlie Fisher",
-     "TD0228381",
-     "charlie.fisher@mail.test"
+     "TD0228381"
     ],
-    "plain_readable": 18
+    "plain_readable": 17
    },
    "readback_original": {
     "values_read": 5,
@@ -16213,8 +16205,8 @@
    },
    "leak_list": [],
    "first_failure": null,
-   "boxes_filled": 2,
-   "wall_seconds": 0.291
+   "boxes_filled": 3,
+   "wall_seconds": 0.292
   },
   {
    "file": "chat_006.jpg",
@@ -16255,7 +16247,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3273,
+   "pipeline_seconds": 0.3268,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -16315,7 +16307,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 3,
-   "wall_seconds": 0.366
+   "wall_seconds": 0.364
   },
   {
    "file": "chat_007.png",
@@ -16355,7 +16347,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3475,
+   "pipeline_seconds": 0.338,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -16423,7 +16415,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 3,
-   "wall_seconds": 0.385
+   "wall_seconds": 0.376
   },
   {
    "file": "chat_008.png",
@@ -16463,7 +16455,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3647,
+   "pipeline_seconds": 0.3636,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -16532,7 +16524,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 3,
-   "wall_seconds": 0.403
+   "wall_seconds": 0.401
   },
   {
    "file": "chat_009.png",
@@ -16575,7 +16567,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3428,
+   "pipeline_seconds": 0.3445,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -16664,7 +16656,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 1,
-   "wall_seconds": 0.38
+   "wall_seconds": 0.382
   },
   {
    "file": "chat_010.jpg",
@@ -16704,7 +16696,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3643,
+   "pipeline_seconds": 0.3637,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -16779,7 +16771,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 1,
-   "wall_seconds": 0.404
+   "wall_seconds": 0.401
   },
   {
    "file": "chat_011.png",
@@ -16819,7 +16811,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2695,
+   "pipeline_seconds": 0.2673,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -16873,7 +16865,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 2,
-   "wall_seconds": 0.311
+   "wall_seconds": 0.304
   },
   {
    "file": "chat_012.jpg",
@@ -16913,7 +16905,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3058,
+   "pipeline_seconds": 0.3046,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -16976,7 +16968,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 3,
-   "wall_seconds": 0.344
+   "wall_seconds": 0.342
   },
   {
    "file": "chat_013.jpg",
@@ -17018,7 +17010,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2341,
+   "pipeline_seconds": 0.2318,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -17090,7 +17082,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 2,
-   "wall_seconds": 0.273
+   "wall_seconds": 0.269
   },
   {
    "file": "chat_014.png",
@@ -17132,7 +17124,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3303,
+   "pipeline_seconds": 0.3313,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -17241,7 +17233,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2649,
+   "pipeline_seconds": 0.2651,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -17350,7 +17342,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2463,
+   "pipeline_seconds": 0.2439,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -17419,7 +17411,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 3,
-   "wall_seconds": 0.284
+   "wall_seconds": 0.281
   },
   {
    "file": "chat_017.jpg",
@@ -17462,7 +17454,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.21,
+   "pipeline_seconds": 0.2083,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -17585,7 +17577,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.4307,
+   "pipeline_seconds": 0.4275,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -17668,7 +17660,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 0,
-   "wall_seconds": 0.469
+   "wall_seconds": 0.465
   },
   {
    "file": "chat_019.jpg",
@@ -17710,7 +17702,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3168,
+   "pipeline_seconds": 0.3114,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -17786,7 +17778,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 3,
-   "wall_seconds": 0.355
+   "wall_seconds": 0.349
   },
   {
    "file": "chat_020.jpg",
@@ -17828,7 +17820,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2672,
+   "pipeline_seconds": 0.2677,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -18022,7 +18014,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 1,
-   "wall_seconds": 0.352
+   "wall_seconds": 0.351
   },
   {
    "file": "chat_022.jpg",
@@ -18064,7 +18056,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3823,
+   "pipeline_seconds": 0.3763,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -18138,7 +18130,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 3,
-   "wall_seconds": 0.421
+   "wall_seconds": 0.414
   },
   {
    "file": "chat_023.jpg",
@@ -18178,7 +18170,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3584,
+   "pipeline_seconds": 0.3481,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -18233,7 +18225,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 3,
-   "wall_seconds": 0.396
+   "wall_seconds": 0.385
   },
   {
    "file": "chat_024.png",
@@ -18273,7 +18265,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3088,
+   "pipeline_seconds": 0.3077,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -18332,7 +18324,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 1,
-   "wall_seconds": 0.346
+   "wall_seconds": 0.345
   },
   {
    "file": "chat_025.jpg",
@@ -18374,7 +18366,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.27,
+   "pipeline_seconds": 0.2676,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -18452,7 +18444,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 0,
-   "wall_seconds": 0.308
+   "wall_seconds": 0.304
   },
   {
    "file": "chat_026.png",
@@ -18494,7 +18486,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3525,
+   "pipeline_seconds": 0.347,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -18569,7 +18561,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 3,
-   "wall_seconds": 0.39
+   "wall_seconds": 0.384
   },
   {
    "file": "chat_027.jpg",
@@ -18612,7 +18604,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2631,
+   "pipeline_seconds": 0.2573,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -18682,7 +18674,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 3,
-   "wall_seconds": 0.301
+   "wall_seconds": 0.294
   },
   {
    "file": "chat_028.png",
@@ -18722,7 +18714,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3459,
+   "pipeline_seconds": 0.3428,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -18791,7 +18783,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 3,
-   "wall_seconds": 0.383
+   "wall_seconds": 0.38
   },
   {
    "file": "chat_029.jpg",
@@ -18833,7 +18825,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2701,
+   "pipeline_seconds": 0.273,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -18950,7 +18942,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3105,
+   "pipeline_seconds": 0.3128,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -19030,7 +19022,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 3,
-   "wall_seconds": 0.348
+   "wall_seconds": 0.35
   },
   {
    "file": "chat_031.jpg",
@@ -19072,7 +19064,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3212,
+   "pipeline_seconds": 0.3227,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -19161,7 +19153,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 0,
-   "wall_seconds": 0.359
+   "wall_seconds": 0.36
   },
   {
    "file": "chat_032.jpg",
@@ -19203,7 +19195,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3015,
+   "pipeline_seconds": 0.2998,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -19273,7 +19265,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 2,
-   "wall_seconds": 0.339
+   "wall_seconds": 0.337
   },
   {
    "file": "chat_033.png",
@@ -19406,7 +19398,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2555,
+   "pipeline_seconds": 0.254,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -19473,7 +19465,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 1,
-   "wall_seconds": 0.293
+   "wall_seconds": 0.291
   },
   {
    "file": "chat_035.png",
@@ -19515,7 +19507,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.2718,
+   "pipeline_seconds": 0.2781,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -19574,7 +19566,7 @@
    "leak_list": [],
    "first_failure": null,
    "boxes_filled": 5,
-   "wall_seconds": 0.309
+   "wall_seconds": 0.315
   },
   {
    "file": "chat_036.jpg",
@@ -19615,7 +19607,7 @@
    ],
    "whole_black_pixels": false,
    "whole_black_report": false,
-   "pipeline_seconds": 0.3721,
+   "pipeline_seconds": 0.3656,
    "size_ok": true,
    "png_chunks": [
     "IHDR",
@@ -19688,7 +19680,7 @@
    ],
    "first_failure": null,
    "boxes_filled": 1,
-   "wall_seconds": 0.412
+   "wall_seconds": 0.403
   }
  ]
 }

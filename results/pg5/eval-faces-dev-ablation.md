@@ -4,9 +4,9 @@
 
 | Type | Pictures | Planted values | Value boxes black (mean / min) | Faces | Face boxes black (mean / min) | Plain-text pixels still visible | Whole picture black | Values left readable | Plain spans readable | s/picture (pipeline / wall) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| all | 55 | 0 | none planted | 122 | 0.9% / 0.0% | 100.0% | 0 of 55 (0.0%) | 0 | 26 of 55 | 0.2356 / 0.2732 |
-| chat | 18 | 0 | none planted | 85 | 0.5% / 0.0% | 99.9% | 0 of 18 (0.0%) | 0 | 18 of 18 | 0.2646 / 0.3019 |
-| id_card | 37 | 0 | none planted | 37 | 2.0% / 0.0% | 100.0% | 0 of 37 (0.0%) | 0 | 8 of 37 | 0.2214 / 0.2593 |
+| all | 55 | 0 | none planted | 122 | 9.9% / 0.0% | 100.0% | 0 of 55 (0.0%) | 0 | 26 of 55 | 0.2344 / 0.2724 |
+| chat | 18 | 0 | none planted | 85 | 13.4% / 0.0% | 99.9% | 0 of 18 (0.0%) | 0 | 18 of 18 | 0.2664 / 0.3058 |
+| id_card | 37 | 0 | none planted | 37 | 2.0% / 0.0% | 100.0% | 0 of 37 (0.0%) | 0 | 8 of 37 | 0.2188 / 0.2562 |
 
 Pictures whose first not-sure or failing stage was: {'None': 55} (None = no stage failed).
 

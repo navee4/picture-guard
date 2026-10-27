@@ -1,3 +1,23 @@
+# Picture guard
+
+Finds names, addresses, account and ID numbers and faces in a picture, covers each with a black box, and sends only
+the cleaned copy to an AI. If it is not sure, it blacks out the whole picture.
+
+## The entry (`picture_guard/`), written from 27 Oct 2026
+
+    uv pip install --python .venv/bin/python -e .      # installs the `pg` command
+    brew install tesseract                              # the reader (a separate program)
+    .venv/bin/pg protect in.png --out safe.png --report report.json
+    .venv/bin/pg eval --set testset --split dev         # measure on made-up test pictures (dev split only)
+    .venv/bin/python -m unittest discover -s tests -t .
+
+Status (day 2): reader (Tesseract), pattern rules with check digits, locating and black-out are built. Faces,
+the face-count check, the check of the safe copy and the AI step are not, so the product answer is still
+"black out the whole picture" whenever a stage is not sure. `--ablation` switches the unbuilt stages off for
+measurement only; it is **not a product result**. See `BUILT-BEFORE-HACKATHON.md` and `LICENCES.md`.
+
+---
+
 # Picture guard — prep (test set + model spike)
 
 Entry for the Meta Global AI Developer Hackathon (starts 26 Oct 2026). Picture guard finds personal

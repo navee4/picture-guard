@@ -2,11 +2,11 @@
 
 | Type | Pictures | Planted values | Value boxes black (mean / min) | Faces | Face boxes black (mean / min) | Plain-text pixels still visible | Whole picture black | Values left readable | Plain spans readable | s/picture (pipeline / wall) |
 |---|---|---|---|---|---|---|---|---|---|---|
-| all | 150 | 1145 | 100.0% / 100.0% | 38 | 100.0% / 100.0% | 0.0% | 150 of 150 (100.0%) | 0 | 0 of 3033 | 0.3654 / 0.4038 |
-| chat | 37 | 205 | 100.0% / 100.0% | 0 | none planted | 0.0% | 37 of 37 (100.0%) | 0 | 0 of 770 | 0.2967 / 0.3352 |
-| id_card | 38 | 266 | 100.0% / 100.0% | 38 | 100.0% / 100.0% | 0.0% | 38 of 38 (100.0%) | 0 | 0 of 456 | 0.2745 / 0.3129 |
-| letter | 37 | 370 | 100.0% / 100.0% | 0 | none planted | 0.0% | 37 of 37 (100.0%) | 0 | 0 of 629 | 0.4578 / 0.4966 |
-| payslip | 38 | 304 | 100.0% / 100.0% | 0 | none planted | 0.0% | 38 of 38 (100.0%) | 0 | 0 of 1178 | 0.4333 / 0.4711 |
+| all | 150 | 1145 | 100.0% / 100.0% | 38 | 100.0% / 100.0% | 0.0% | 150 of 150 (100.0%) | 0 | 0 of 3033 | 0.362 / 0.3996 |
+| chat | 37 | 205 | 100.0% / 100.0% | 0 | none planted | 0.0% | 37 of 37 (100.0%) | 0 | 0 of 770 | 0.2939 / 0.3312 |
+| id_card | 38 | 266 | 100.0% / 100.0% | 38 | 100.0% / 100.0% | 0.0% | 38 of 38 (100.0%) | 0 | 0 of 456 | 0.2656 / 0.3031 |
+| letter | 37 | 370 | 100.0% / 100.0% | 0 | none planted | 0.0% | 37 of 37 (100.0%) | 0 | 0 of 629 | 0.4549 / 0.4929 |
+| payslip | 38 | 304 | 100.0% / 100.0% | 0 | none planted | 0.0% | 38 of 38 (100.0%) | 0 | 0 of 1178 | 0.4342 / 0.472 |
 
 Pictures whose first not-sure or failing stage was: {'decide': 150} (None = no stage failed).
 
