@@ -9,3 +9,5 @@
 {"run": "eval-testset-dev-checkglimmer", "seconds": 3364.6, "usd": 2.5932, "note": "session wall time (upper bound: includes image build and cold start)"}
 {"run": "eval-faces-dev-checkglimmer", "seconds": 1051.1, "usd": 0.8101, "note": "session wall time (upper bound: includes image build and cold start)"}
 {"run": "eval-faces_hard-dev-checkglimmer", "seconds": 790.5, "usd": 0.6092, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "eval-testset-dev-fb-zoom", "seconds": 1584.5, "usd": 1.2212, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "protect", "seconds": 73.1, "usd": 0.0564, "note": "session wall time (upper bound: includes image build and cold start)"}

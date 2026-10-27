@@ -1,0 +1,15 @@
+replay testset exit 0
+replay faces exit 0
+replay faces_hard exit 0
+fb zoom testset exit 0
+fb zoom faces exit 0
+fb zoom faces_hard exit 0
+fb line testset exit 0
+fb line faces exit 0
+fb line faces_hard exit 0
+zoom2 testset exit 0
+zoom2 faces exit 0
+zoom2 faces_hard exit 0
+zl testset exit 0
+zl faces exit 0
+zl faces_hard exit 0

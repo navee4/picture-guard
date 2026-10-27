@@ -15,12 +15,15 @@ def main(argv=None) -> int:
     p.add_argument("--out", required=True, help="safe copy (PNG, no metadata)")
     p.add_argument("--report", required=True, help="report.json")
     p.add_argument("--no-models", action="store_true", help="do not start the Modal app: names and addresses cannot be judged, so the whole picture goes black")
+    p.add_argument("--fallback", default="zoom", choices=["none", "zoom", "line", "zoom+line"], help="place values Tesseract cannot find (see `pg eval --help`)")
     p.add_argument("--ablation", action="store_true", help="MEASUREMENT ONLY, NOT A PRODUCT RESULT: unbuilt stages answer 'nothing found'")
     e = sub.add_parser("eval", help="run pg protect on a test set and measure the safe copies")
     e.add_argument("--set", dest="set_name", required=True, choices=["testset", "faces", "faces_hard"])
     e.add_argument("--split", required=True, help="dev only until day 9; the hold-out is refused")
     e.add_argument("--ablation", action="store_true", help="MEASUREMENT ONLY, NOT A PRODUCT RESULT: unbuilt stages answer 'nothing found'")
     e.add_argument("--check-glimmer", action="store_true", help="also ask Glimmer about the safe copy (extra Glimmer call; off by default)")
+    e.add_argument("--fallback", default="zoom", choices=["none", "zoom", "line", "zoom+line"], help="place values Tesseract cannot find: zoom read, line cover, or both in order")
+    e.add_argument("--replay", action="store_true", help="reuse the saved day-3 Glimmer/SAM answers (dev pictures); only new calls go to Modal")
     e.add_argument("--limit", type=int, default=0, help="first N pictures only (testing the harness)")
     e.add_argument("--results-dir", default=None, help="where the raw JSON and table go (default results/pg6)")
     a = ap.parse_args(argv)
@@ -35,13 +38,13 @@ def main(argv=None) -> int:
                 from picture_guard.remote.client import ModalGuard
                 with ModalGuard("protect") as guard:
                     print(f"models ready after {guard.cold_start_seconds} s (cold start)", file=sys.stderr)
-                    rep = protect(a.input, a.out, a.report, guard=guard)
+                    rep = protect(a.input, a.out, a.report, guard=guard, options={"fallback": a.fallback})
             fs = rep["fail_safe"]
             print(f"wrote {a.out} ({'whole picture black' if fs['whole_black'] else str(rep['output']['boxes_filled']) + ' boxes'}; "
                   f"{len(fs['reasons'])} reasons) and {a.report}")
             return 0
         from picture_guard.evaluate import run_eval
-        return run_eval(a.set_name, a.split, a.limit, a.results_dir, a.ablation, a.check_glimmer)
+        return run_eval(a.set_name, a.split, a.limit, a.results_dir, a.ablation, a.check_glimmer, a.fallback, a.replay)
     except NotAPictureError as ex:
         print(f"pg: error: {ex}", file=sys.stderr)
         return 2

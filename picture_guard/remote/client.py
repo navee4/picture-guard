@@ -78,11 +78,11 @@ class ModalGuard:
     def reset_calls(self):
         self.calls = []
 
-    def _call(self, name: str, png: bytes) -> dict:
+    def _call(self, name: str, png: bytes, *args) -> dict:
         self._check_cap()
         t0 = time.perf_counter()
         try:
-            out = getattr(self._cls, name).remote(png)
+            out = getattr(self._cls, name).remote(png, *args)
         except BaseException as ex:  # noqa: BLE001
             raise RemoteError(f"{name} failed: {type(ex).__name__}: {str(ex)[:200]}") from ex
         self.last = out  # kept in memory for debugging runs on made-up pictures only
@@ -95,3 +95,6 @@ class ModalGuard:
 
     def glimmer_only(self, png: bytes) -> dict:
         return self._call("glimmer_only", png)
+
+    def glimmer_boxes(self, png: bytes, texts: list) -> dict:
+        return self._call("glimmer_boxes", png, list(texts))

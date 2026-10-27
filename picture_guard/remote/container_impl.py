@@ -30,6 +30,37 @@ PROMPT = (
 )
 
 
+BOXES_PROMPT = (
+    "This picture is {w} pixels wide and {h} pixels high. These texts are written in it: {texts}. For each text, give the "
+    "box where it is written, as [x1, y1, x2, y2] in pixels from the top-left corner of the picture. If a text appears "
+    "more than once, give every box. Reply with ONLY a JSON object, no other words: "
+    '{{"items": [{{"text": "<the text exactly as given>", "boxes": [[x1, y1, x2, y2]]}}]}}.'
+)
+
+
+def parse_boxes(text: str) -> tuple[list, str | None]:
+    """([{text, boxes: [[x1,y1,x2,y2], ...]}], error). Boxes that are not four numbers are dropped."""
+    t = re.sub(r"^```(?:json)?|```$", "", (text or "").strip(), flags=re.M).strip()
+    a, b = t.find("{"), t.rfind("}")
+    if a < 0 or b <= a:
+        return [], "no JSON object in the answer"
+    try:
+        d = json.loads(t[a:b + 1])
+    except Exception as ex:  # noqa: BLE001
+        return [], f"JSON error: {str(ex)[:80]}"
+    items = d.get("items")
+    if not isinstance(items, list):
+        return [], "`items` is missing or not a list"
+    out = []
+    for it in items:
+        if not (isinstance(it, dict) and isinstance(it.get("text"), str) and isinstance(it.get("boxes"), list)):
+            continue
+        bx = [[float(v) for v in b] for b in it["boxes"]
+              if isinstance(b, list) and len(b) == 4 and all(isinstance(v, (int, float)) and not isinstance(v, bool) for v in b)]
+        out.append({"text": it["text"], "boxes": bx})
+    return out, None
+
+
 def gpu_mem_mib() -> int:
     out = subprocess.run(["nvidia-smi", "--query-gpu=memory.used", "--format=csv,noheader,nounits"], capture_output=True, text=True).stdout
     return int(out.strip().splitlines()[0])
@@ -118,6 +149,22 @@ class Engine:
                     "w": w, "h": h}
         except Exception as ex:  # noqa: BLE001
             return {"values": [], "face_count": None, "error": f"request failed: {type(ex).__name__}: {str(ex)[:150]}", "seconds": round(time.time() - t, 2)}
+
+    def run_glimmer_boxes(self, png: bytes, texts: list) -> dict:
+        """Where does Glimmer say each text is? A rough guide only; the Mac side checks and calibrates it."""
+        from PIL import Image
+        t = time.time()
+        try:
+            w, h = Image.open(io.BytesIO(png)).size
+            b64 = base64.b64encode(png).decode()
+            prompt = BOXES_PROMPT.format(w=w, h=h, texts=json.dumps(list(texts), ensure_ascii=False))
+            body = {"model": "glimmer", "max_tokens": 6000, "messages": [{"role": "user", "content": [
+                {"type": "image_url", "image_url": {"url": f"data:image/png;base64,{b64}"}}, {"type": "text", "text": prompt}]}]}
+            r = self.requests.post("http://127.0.0.1:8080/v1/chat/completions", json=body, timeout=600).json()
+            items, err = parse_boxes(r["choices"][0]["message"].get("content"))
+            return {"items": items, "error": err, "seconds": round(time.time() - t, 2), "w": w, "h": h}
+        except Exception as ex:  # noqa: BLE001
+            return {"items": [], "error": f"request failed: {type(ex).__name__}: {str(ex)[:150]}", "seconds": round(time.time() - t, 2)}
 
     def run_sam(self, png: bytes) -> dict:
         import numpy as np

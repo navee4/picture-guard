@@ -21,3 +21,4 @@ faces_hard/.check_tmp/
 *.egg-info/
 results/pg6/debug/
 results/pg5/debug/
+results/pg7/debug/

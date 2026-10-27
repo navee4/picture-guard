@@ -52,3 +52,11 @@ class Guard:
     @modal.method()
     def glimmer_only(self, png: bytes) -> dict:
         return self.engine.analyse(png, with_sam=False)
+
+    @modal.method()
+    def glimmer_boxes(self, png: bytes, texts: list) -> dict:
+        """Glimmer's rough boxes for texts already known. Used only by the fallback for values Tesseract cannot find."""
+        t = __import__("time").time()
+        out = {"glimmer": self.engine.run_glimmer_boxes(png, texts)}
+        out["container_seconds"] = round(__import__("time").time() - t, 2)
+        return out

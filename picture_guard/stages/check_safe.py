@@ -28,7 +28,18 @@ def run(ctx) -> StageResult:
             left += 1
     if left:
         return StageResult(NOT_SURE, {"failsafe_rule": 2, "still_readable": left}, f"{left} values found by decide can still be read on the safe copy (fail-safe rule 2)")
-    answer = {"still_found_by_rules": 0, "still_readable": 0}
+    for r in ctx.data.get("fallback_regions", []):  # the region re-check: every fallback box must really hide its value
+        bx = r["box"]
+        crop = safe.crop((bx[0], bx[1], bx[2], bx[3]))
+        if crop.width < 2 or crop.height < 2:
+            return StageResult(NOT_SURE, {"failsafe_rule": 2}, "a fallback region is empty (fail-safe rule 2)")
+        z = max(1, min(2, 2400 // max(crop.width, crop.height)))
+        if z > 1:
+            crop = crop.resize((crop.width * z, crop.height * z))
+        cp = ocr.read_passes(crop)
+        if any(rules.find_values(ocr.group_lines(ws))[0] for ws in cp.values()) or match.locate(r["text"], cp) is not None:
+            return StageResult(NOT_SURE, {"failsafe_rule": 2, "region_recheck_failed": True}, "a fallback region still shows its value (fail-safe rule 2, region re-check)")
+    answer = {"still_found_by_rules": 0, "still_readable": 0, "regions_rechecked": len(ctx.data.get("fallback_regions", []))}
     if ctx.options.get("check_glimmer") and ctx.guard is not None:
         buf = io.BytesIO()
         safe.save(buf, format="PNG")

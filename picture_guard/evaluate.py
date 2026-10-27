@@ -63,11 +63,12 @@ def _measure(entry, safe_path: Path, report: dict, do_ocr: bool, orig_path: Path
         "whole_black_pixels": bool(black.all()),
         "whole_black_report": report["fail_safe"]["whole_black"],
         "reason": _reason(report),
-        "pipeline_seconds": report["total_seconds"], "remote_seconds": remote_s, "mac_seconds": round(report["total_seconds"] - remote_s, 3),
+        "pipeline_seconds": round(report["total_seconds"] + sum(c["round_trip_seconds"] for c in calls if c.get("replayed")), 3), "remote_seconds": remote_s, "mac_seconds": round(report["total_seconds"] - sum(c["round_trip_seconds"] for c in calls if not c.get("replayed")), 3),
         "glimmer_seconds": next((c["glimmer_seconds"] for c in calls if c.get("glimmer_seconds") is not None), None),
         "size_ok": (img.width, img.height) == (entry["width"], entry["height"]),
         "png_chunks": report["output"]["png_chunks"], "boxes_filled": report["output"]["boxes_filled"],
         "first_failure": next((x["name"] for x in report["stages"] if x["status"] not in ("ok", "skipped")), None),
+        "fallback": next((x["answer"].get("fallback") for x in report["stages"] if x["name"] == "decide"), None),
         "word_list_would_refuse": next((x["answer"].get("word_list_would_refuse") for x in report["stages"] if x["name"] == "decide"), None),
     }
     rec["values"] = [{"type": v["pii_type"], "black_share": b, "left_readable": None, "read_on_original": None}
@@ -89,7 +90,8 @@ def _measure(entry, safe_path: Path, report: dict, do_ocr: bool, orig_path: Path
     return rec
 
 
-def run_eval(set_name: str, split: str, limit: int = 0, results_dir: str | None = None, ablation: bool = False, check_glimmer: bool = False) -> int:
+def run_eval(set_name: str, split: str, limit: int = 0, results_dir: str | None = None, ablation: bool = False, check_glimmer: bool = False,
+             fallback: str = "zoom", replay: bool = False) -> int:
     if split != "dev":
         print(f"pg: error: split {split!r} refused. Only 'dev' may be run until day 9; the hold-out stays sealed.", file=sys.stderr)
         return 2
@@ -101,15 +103,17 @@ def run_eval(set_name: str, split: str, limit: int = 0, results_dir: str | None 
     if limit:
         entries = entries[:limit]
     do_ocr = readback.available()
-    out_dir = Path(results_dir) if results_dir else ROOT / "results" / "pg6"
+    out_dir = Path(results_dir) if results_dir else ROOT / "results" / ("pg7" if (fallback != "none" or replay) else "pg6")
     out_dir.mkdir(parents=True, exist_ok=True)
-    suffix = ("-ablation" if ablation else "") + ("-checkglimmer" if check_glimmer else "")
+    suffix = ("-ablation" if ablation else "") + ("-checkglimmer" if check_glimmer else "") + (f"-fb-{fallback}" if fallback != "none" else "") + ("-replay" if replay and fallback == "none" else "")
     recs, failures = [], []
     t_start = time.time()
     session = nullcontext(None)
     if not ablation:
         from picture_guard.remote.client import ModalGuard
         session = ModalGuard(f"eval-{set_name}-dev{suffix}", reserve_usd=1.0)
+        if replay:
+            session = _replay_guard(set_name, entries, base, out_dir, f"eval-{set_name}-dev{suffix}")
     cold = info = None
     with session as guard, tempfile.TemporaryDirectory(prefix="pg-eval-") as tmp:
         if guard is not None:
@@ -119,14 +123,14 @@ def run_eval(set_name: str, split: str, limit: int = 0, results_dir: str | None 
             safe, rep = tmp / "safe.png", tmp / "report.json"
             t0 = time.perf_counter()
             try:
-                report = protect(base / "images" / e["file"], safe, rep, ablation=ablation, guard=guard, options={"check_glimmer": check_glimmer})
+                report = protect(base / "images" / e["file"], safe, rep, ablation=ablation, guard=guard, options={"check_glimmer": check_glimmer, "fallback": fallback})
             except Exception as ex:  # noqa: BLE001  (a remote spend-cap stop ends the run; anything else is logged and the run goes on)
                 failures.append({"file": e["file"], "error": f"{type(ex).__name__}: {str(ex)[:300]}"})
                 if "spend cap" in str(ex):
                     break
                 continue
             wall = time.perf_counter() - t0
-            if guard is not None and getattr(guard, "calls", None) and set_name:  # debug copy of the model answers for made-up pictures: git-ignored
+            if guard is not None and getattr(guard, "calls", None) and set_name and not replay:  # debug copy of the model answers for made-up pictures: git-ignored
                 dbg = out_dir / "debug"
                 dbg.mkdir(exist_ok=True)
                 with open(dbg / f"{set_name}{suffix}.jsonl", "a") as f:
@@ -135,12 +139,15 @@ def run_eval(set_name: str, split: str, limit: int = 0, results_dir: str | None 
             m["wall_seconds"] = round(wall, 3)
             recs.append(m)
             safe.unlink(), rep.unlink()
+    if guard is not None:
+        cold, info = guard.cold_start_seconds, guard.info
     raw = {"tool_version": __version__, "set": set_name, "split": split, "pictures_asked": len(entries), "pictures_scored": len(recs),
-           "mode": "ablation: NOT A PRODUCT RESULT" if ablation else "product", "check_glimmer": check_glimmer,
+           "mode": "ablation: NOT A PRODUCT RESULT" if ablation else "product", "check_glimmer": check_glimmer, "fallback": fallback, "replay_of_day3_answers": replay,
+           "live_modal_calls": getattr(guard, "live_calls", None),
            "failures": failures, "tesseract_installed": do_ocr, "black_max_channel": BLACK_MAX,
            "modal": {"cold_start_seconds": cold, "container": info},
            "key_sha256": key.get("sha256"), "unix_time": int(t_start),
-           "command": f".venv/bin/pg eval --set {set_name} --split {split}" + (" --ablation" if ablation else "") + (" --check-glimmer" if check_glimmer else "") + (f" --limit {limit}" if limit else ""),
+           "command": f".venv/bin/pg eval --set {set_name} --split {split}" + (" --ablation" if ablation else "") + (" --check-glimmer" if check_glimmer else "") + (f" --fallback {fallback}" if fallback != "none" else "") + (" --replay" if replay else "") + (f" --limit {limit}" if limit else ""),
            "summary": summarise(recs), "by_value_type": by_value_type(recs), "first_failure_stage": _tally(r.get("first_failure") for r in recs),
            "whole_black_reasons": _tally(r.get("reason") for r in recs if r["whole_black_pixels"]),
            "leak_list_still_readable": [{"file": r["file"], "picture_type": r["type"], "value_type": v["type"]}
@@ -151,6 +158,28 @@ def run_eval(set_name: str, split: str, limit: int = 0, results_dir: str | None 
     (out_dir / f"eval-{set_name}-{split}{suffix}.md").write_text(table)
     print(table)
     return 1 if failures else 0
+
+
+def _replay_guard(set_name, entries, base, out_dir, run_name):
+    """Saved day-3 Glimmer/SAM answers (git-ignored, results/pg6/debug) looked up by the hash of the PNG that `decide` sends."""
+    import io
+    from picture_guard import imaging
+    from picture_guard.remote.replay import ReplayGuard, key_of
+    dbg = ROOT / "results" / "pg6" / "debug" / f"{set_name}.jsonl"
+    saved_by_file = {}
+    for line in dbg.read_text().splitlines():
+        r = json.loads(line)
+        saved_by_file[r["file"]] = r["response"]
+    day3 = json.loads((ROOT / "results" / "pg6" / f"eval-{set_name}-dev.json").read_text())
+    trip_by_file = {p["file"]: p["remote_seconds"] for p in day3["pictures"]}
+    saved, trips = {}, {}
+    for e in entries:
+        if e["file"] in saved_by_file and saved_by_file[e["file"]]:
+            buf = io.BytesIO()
+            imaging.load_picture(base / "images" / e["file"]).image.save(buf, format="PNG")
+            k = key_of(buf.getvalue())
+            saved[k], trips[k] = saved_by_file[e["file"]], trip_by_file.get(e["file"], 0.0)
+    return ReplayGuard(saved, trips, out_dir / "debug" / f"boxes-{set_name}.jsonl", run_name)
 
 
 def _tally(it):
@@ -253,6 +282,10 @@ def render_table(set_name: str, split: str, raw: dict) -> str:
     L += ["", f"Why pictures went whole black: {json.dumps(raw['whole_black_reasons'], indent=0)}", f"First not-sure or failing stage: {raw['first_failure_stage']} (None = no stage failed)."]
     a = s["all"]
     L += [f"The day-2 word list would have refused {a['word_list_would_have_refused']} of {a['word_list_judged']} pictures that reached `decide`."]
+    fbs = [r["fallback"] for r in raw["pictures"] if r.get("fallback") and r["fallback"].get("tried")]
+    if fbs:
+        L += [f"Fallback ({raw['fallback']}): tried on {len(fbs)} pictures, {sum(f['tried'] for f in fbs)} values; placed by zoom {sum(f['by_zoom'] for f in fbs)}, by line cover {sum(f['by_line'] for f in fbs)}; "
+              f"no clear frame in {sum(f['frame'] is None for f in fbs)} pictures. Frames chosen: {_tally(f['frame'] for f in fbs)}."]
     if raw["by_value_type"]:
         L += ["", "| Value type | Planted | Pictures not black: planted | ...of those left readable | Box 90%+ black (all pictures) | Left readable (all pictures) |", "|---|---|---|---|---|---|"]
         for k, v in raw["by_value_type"].items():
