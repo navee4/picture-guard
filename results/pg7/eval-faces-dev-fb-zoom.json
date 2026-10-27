@@ -93,7 +93,7 @@
   "chat_023.jpg": "1f52a8d0fcba10c9eab461e27d96cade05bfb52789cbc0841926e920cef2e379",
   "chat_024.png": "4321904b0754e0a1b733962ca6067714b5b4beb40397ec5d8e21a0be9b8de462"
  },
- "unix_time": 1793115592,
+ "unix_time": 1793122492,
  "command": ".venv/bin/pg eval --set faces --split dev --fallback zoom --replay",
  "summary": {
   "all": {
@@ -111,10 +111,10 @@
    "report_and_pixels_disagree": 0,
    "size_wrong": 0,
    "metadata_chunks_found": 0,
-   "pipeline_seconds_mean": 10.4819,
-   "mac_seconds_mean": 1.9936,
+   "pipeline_seconds_mean": 10.6877,
+   "mac_seconds_mean": 2.1994,
    "remote_seconds_mean": 8.4884,
-   "wall_seconds_mean": 1.994,
+   "wall_seconds_mean": 2.2001,
    "word_list_would_have_refused": 55,
    "word_list_judged": 55,
    "readback": {
@@ -151,10 +151,10 @@
    "report_and_pixels_disagree": 0,
    "size_wrong": 0,
    "metadata_chunks_found": 0,
-   "pipeline_seconds_mean": 11.0828,
-   "mac_seconds_mean": 2.1218,
+   "pipeline_seconds_mean": 11.3063,
+   "mac_seconds_mean": 2.3452,
    "remote_seconds_mean": 8.9611,
-   "wall_seconds_mean": 2.1221,
+   "wall_seconds_mean": 2.3458,
    "word_list_would_have_refused": 18,
    "word_list_judged": 18,
    "readback": {
@@ -191,10 +191,10 @@
    "report_and_pixels_disagree": 0,
    "size_wrong": 0,
    "metadata_chunks_found": 0,
-   "pipeline_seconds_mean": 10.1895,
-   "mac_seconds_mean": 1.9312,
+   "pipeline_seconds_mean": 10.3868,
+   "mac_seconds_mean": 2.1285,
    "remote_seconds_mean": 8.2584,
-   "wall_seconds_mean": 1.9317,
+   "wall_seconds_mean": 2.1292,
    "word_list_would_have_refused": 37,
    "word_list_judged": 37,
    "readback": {
@@ -243,9 +243,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 10.55,
+   "pipeline_seconds": 10.793,
    "remote_seconds": 8.53,
-   "mac_seconds": 2.02,
+   "mac_seconds": 2.263,
    "glimmer_seconds": 7.76,
    "size_ok": true,
    "png_chunks": [
@@ -274,7 +274,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 2.02
+   "wall_seconds": 2.264
   },
   {
    "file": "id_card_001.png",
@@ -292,9 +292,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 11.116,
+   "pipeline_seconds": 11.327,
    "remote_seconds": 9.18,
-   "mac_seconds": 1.936,
+   "mac_seconds": 2.147,
    "glimmer_seconds": 8.75,
    "size_ok": true,
    "png_chunks": [
@@ -322,7 +322,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 1.936
+   "wall_seconds": 2.147
   },
   {
    "file": "id_card_003.png",
@@ -340,9 +340,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 9.103,
+   "pipeline_seconds": 9.316,
    "remote_seconds": 7.17,
-   "mac_seconds": 1.933,
+   "mac_seconds": 2.146,
    "glimmer_seconds": 6.84,
    "size_ok": true,
    "png_chunks": [
@@ -370,7 +370,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 1.934
+   "wall_seconds": 2.147
   },
   {
    "file": "id_card_004.png",
@@ -388,9 +388,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 9.845,
+   "pipeline_seconds": 10.053,
    "remote_seconds": 7.95,
-   "mac_seconds": 1.895,
+   "mac_seconds": 2.103,
    "glimmer_seconds": 7.61,
    "size_ok": true,
    "png_chunks": [
@@ -418,7 +418,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 1.896
+   "wall_seconds": 2.104
   },
   {
    "file": "id_card_005.jpg",
@@ -436,9 +436,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 11.223,
+   "pipeline_seconds": 11.425,
    "remote_seconds": 9.27,
-   "mac_seconds": 1.953,
+   "mac_seconds": 2.155,
    "glimmer_seconds": 8.92,
    "size_ok": true,
    "png_chunks": [
@@ -468,7 +468,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 1.953
+   "wall_seconds": 2.156
   },
   {
    "file": "id_card_006.jpg",
@@ -486,9 +486,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 10.405,
+   "pipeline_seconds": 10.598,
    "remote_seconds": 8.52,
-   "mac_seconds": 1.885,
+   "mac_seconds": 2.078,
    "glimmer_seconds": 8.18,
    "size_ok": true,
    "png_chunks": [
@@ -516,7 +516,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 1.886
+   "wall_seconds": 2.079
   },
   {
    "file": "id_card_007.jpg",
@@ -534,9 +534,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 11.568,
+   "pipeline_seconds": 11.776,
    "remote_seconds": 9.66,
-   "mac_seconds": 1.908,
+   "mac_seconds": 2.116,
    "glimmer_seconds": 9.26,
    "size_ok": true,
    "png_chunks": [
@@ -565,7 +565,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 1.908
+   "wall_seconds": 2.116
   },
   {
    "file": "id_card_008.jpg",
@@ -583,9 +583,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 10.977,
+   "pipeline_seconds": 11.163,
    "remote_seconds": 8.99,
-   "mac_seconds": 1.987,
+   "mac_seconds": 2.173,
    "glimmer_seconds": 8.66,
    "size_ok": true,
    "png_chunks": [
@@ -614,7 +614,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 1.987
+   "wall_seconds": 2.173
   },
   {
    "file": "id_card_010.jpg",
@@ -632,9 +632,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 10.35,
+   "pipeline_seconds": 10.54,
    "remote_seconds": 8.41,
-   "mac_seconds": 1.94,
+   "mac_seconds": 2.13,
    "glimmer_seconds": 8.07,
    "size_ok": true,
    "png_chunks": [
@@ -663,7 +663,7 @@
     "values_read": 0,
     "plain_readable": 1
    },
-   "wall_seconds": 1.94
+   "wall_seconds": 2.131
   },
   {
    "file": "id_card_011.png",
@@ -681,9 +681,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 9.724,
+   "pipeline_seconds": 9.885,
    "remote_seconds": 7.71,
-   "mac_seconds": 2.014,
+   "mac_seconds": 2.175,
    "glimmer_seconds": 7.3,
    "size_ok": true,
    "png_chunks": [
@@ -712,7 +712,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 2.014
+   "wall_seconds": 2.176
   },
   {
    "file": "id_card_012.jpg",
@@ -730,9 +730,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 9.75,
+   "pipeline_seconds": 9.938,
    "remote_seconds": 7.7,
-   "mac_seconds": 2.05,
+   "mac_seconds": 2.238,
    "glimmer_seconds": 7.37,
    "size_ok": true,
    "png_chunks": [
@@ -761,7 +761,7 @@
     "values_read": 0,
     "plain_readable": 1
    },
-   "wall_seconds": 2.051
+   "wall_seconds": 2.239
   },
   {
    "file": "id_card_014.jpg",
@@ -779,9 +779,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 10.844,
+   "pipeline_seconds": 11.055,
    "remote_seconds": 8.77,
-   "mac_seconds": 2.074,
+   "mac_seconds": 2.285,
    "glimmer_seconds": 8.44,
    "size_ok": true,
    "png_chunks": [
@@ -810,7 +810,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 2.075
+   "wall_seconds": 2.286
   },
   {
    "file": "id_card_015.jpg",
@@ -828,9 +828,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 9.973,
+   "pipeline_seconds": 10.186,
    "remote_seconds": 7.83,
-   "mac_seconds": 2.143,
+   "mac_seconds": 2.356,
    "glimmer_seconds": 7.44,
    "size_ok": true,
    "png_chunks": [
@@ -859,7 +859,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 2.143
+   "wall_seconds": 2.356
   },
   {
    "file": "id_card_017.jpg",
@@ -877,9 +877,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 10.627,
+   "pipeline_seconds": 10.816,
    "remote_seconds": 8.85,
-   "mac_seconds": 1.777,
+   "mac_seconds": 1.966,
    "glimmer_seconds": 8.49,
    "size_ok": true,
    "png_chunks": [
@@ -908,7 +908,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 1.778
+   "wall_seconds": 1.966
   },
   {
    "file": "id_card_018.png",
@@ -926,9 +926,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 7.74,
+   "pipeline_seconds": 7.937,
    "remote_seconds": 5.92,
-   "mac_seconds": 1.82,
+   "mac_seconds": 2.017,
    "glimmer_seconds": 5.59,
    "size_ok": true,
    "png_chunks": [
@@ -957,7 +957,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 1.821
+   "wall_seconds": 2.018
   },
   {
    "file": "id_card_019.png",
@@ -975,9 +975,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 9.146,
+   "pipeline_seconds": 9.342,
    "remote_seconds": 7.31,
-   "mac_seconds": 1.836,
+   "mac_seconds": 2.032,
    "glimmer_seconds": 6.92,
    "size_ok": true,
    "png_chunks": [
@@ -1006,7 +1006,7 @@
     "values_read": 0,
     "plain_readable": 1
    },
-   "wall_seconds": 1.836
+   "wall_seconds": 2.033
   },
   {
    "file": "id_card_020.jpg",
@@ -1024,9 +1024,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 10.414,
+   "pipeline_seconds": 10.602,
    "remote_seconds": 8.51,
-   "mac_seconds": 1.904,
+   "mac_seconds": 2.092,
    "glimmer_seconds": 8.09,
    "size_ok": true,
    "png_chunks": [
@@ -1054,7 +1054,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 1.905
+   "wall_seconds": 2.093
   },
   {
    "file": "id_card_021.png",
@@ -1072,9 +1072,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 11.787,
+   "pipeline_seconds": 11.988,
    "remote_seconds": 9.8,
-   "mac_seconds": 1.987,
+   "mac_seconds": 2.188,
    "glimmer_seconds": 9.47,
    "size_ok": true,
    "png_chunks": [
@@ -1102,7 +1102,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 1.987
+   "wall_seconds": 2.189
   },
   {
    "file": "id_card_022.jpg",
@@ -1120,9 +1120,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 9.602,
+   "pipeline_seconds": 9.831,
    "remote_seconds": 7.63,
-   "mac_seconds": 1.972,
+   "mac_seconds": 2.201,
    "glimmer_seconds": 7.3,
    "size_ok": true,
    "png_chunks": [
@@ -1151,7 +1151,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 1.972
+   "wall_seconds": 2.202
   },
   {
    "file": "id_card_023.jpg",
@@ -1169,9 +1169,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 10.101,
+   "pipeline_seconds": 10.313,
    "remote_seconds": 8.12,
-   "mac_seconds": 1.982,
+   "mac_seconds": 2.193,
    "glimmer_seconds": 7.78,
    "size_ok": true,
    "png_chunks": [
@@ -1200,7 +1200,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 1.982
+   "wall_seconds": 2.194
   },
   {
    "file": "id_card_024.jpg",
@@ -1218,9 +1218,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 10.864,
+   "pipeline_seconds": 11.048,
    "remote_seconds": 8.93,
-   "mac_seconds": 1.934,
+   "mac_seconds": 2.118,
    "glimmer_seconds": 8.6,
    "size_ok": true,
    "png_chunks": [
@@ -1249,7 +1249,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 1.934
+   "wall_seconds": 2.119
   },
   {
    "file": "id_card_025.jpg",
@@ -1267,9 +1267,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 8.517,
+   "pipeline_seconds": 8.718,
    "remote_seconds": 6.5,
-   "mac_seconds": 2.017,
+   "mac_seconds": 2.218,
    "glimmer_seconds": 6.13,
    "size_ok": true,
    "png_chunks": [
@@ -1298,7 +1298,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 2.017
+   "wall_seconds": 2.219
   },
   {
    "file": "id_card_026.jpg",
@@ -1316,9 +1316,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 9.185,
+   "pipeline_seconds": 9.365,
    "remote_seconds": 7.45,
-   "mac_seconds": 1.735,
+   "mac_seconds": 1.915,
    "glimmer_seconds": 7.12,
    "size_ok": true,
    "png_chunks": [
@@ -1346,7 +1346,7 @@
     "values_read": 0,
     "plain_readable": 1
    },
-   "wall_seconds": 1.736
+   "wall_seconds": 1.916
   },
   {
    "file": "id_card_027.png",
@@ -1364,9 +1364,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 10.256,
+   "pipeline_seconds": 10.417,
    "remote_seconds": 8.38,
-   "mac_seconds": 1.876,
+   "mac_seconds": 2.037,
    "glimmer_seconds": 8.06,
    "size_ok": true,
    "png_chunks": [
@@ -1394,7 +1394,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 1.876
+   "wall_seconds": 2.038
   },
   {
    "file": "id_card_028.jpg",
@@ -1412,9 +1412,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 10.226,
+   "pipeline_seconds": 10.406,
    "remote_seconds": 8.27,
-   "mac_seconds": 1.956,
+   "mac_seconds": 2.136,
    "glimmer_seconds": 7.93,
    "size_ok": true,
    "png_chunks": [
@@ -1443,7 +1443,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 1.956
+   "wall_seconds": 2.137
   },
   {
    "file": "id_card_029.jpg",
@@ -1461,9 +1461,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 11.465,
+   "pipeline_seconds": 11.656,
    "remote_seconds": 9.51,
-   "mac_seconds": 1.955,
+   "mac_seconds": 2.146,
    "glimmer_seconds": 9.18,
    "size_ok": true,
    "png_chunks": [
@@ -1492,7 +1492,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 1.959
+   "wall_seconds": 2.147
   },
   {
    "file": "id_card_030.jpg",
@@ -1510,9 +1510,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 10.487,
+   "pipeline_seconds": 10.662,
    "remote_seconds": 8.64,
-   "mac_seconds": 1.847,
+   "mac_seconds": 2.022,
    "glimmer_seconds": 8.25,
    "size_ok": true,
    "png_chunks": [
@@ -1540,7 +1540,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 1.848
+   "wall_seconds": 2.023
   },
   {
    "file": "id_card_032.jpg",
@@ -1558,9 +1558,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 9.3,
+   "pipeline_seconds": 9.476,
    "remote_seconds": 7.52,
-   "mac_seconds": 1.78,
+   "mac_seconds": 1.956,
    "glimmer_seconds": 7.19,
    "size_ok": true,
    "png_chunks": [
@@ -1588,7 +1588,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 1.781
+   "wall_seconds": 1.957
   },
   {
    "file": "id_card_033.jpg",
@@ -1606,9 +1606,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 10.871,
+   "pipeline_seconds": 11.088,
    "remote_seconds": 8.88,
-   "mac_seconds": 1.991,
+   "mac_seconds": 2.208,
    "glimmer_seconds": 8.53,
    "size_ok": true,
    "png_chunks": [
@@ -1637,7 +1637,7 @@
     "values_read": 0,
     "plain_readable": 1
    },
-   "wall_seconds": 1.991
+   "wall_seconds": 2.208
   },
   {
    "file": "id_card_036.jpg",
@@ -1655,9 +1655,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 10.163,
+   "pipeline_seconds": 10.362,
    "remote_seconds": 8.18,
-   "mac_seconds": 1.983,
+   "mac_seconds": 2.182,
    "glimmer_seconds": 7.83,
    "size_ok": true,
    "png_chunks": [
@@ -1686,7 +1686,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 1.983
+   "wall_seconds": 2.182
   },
   {
    "file": "id_card_038.jpg",
@@ -1704,9 +1704,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 10.246,
+   "pipeline_seconds": 10.448,
    "remote_seconds": 8.34,
-   "mac_seconds": 1.906,
+   "mac_seconds": 2.108,
    "glimmer_seconds": 8.01,
    "size_ok": true,
    "png_chunks": [
@@ -1735,7 +1735,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 1.907
+   "wall_seconds": 2.109
   },
   {
    "file": "id_card_040.jpg",
@@ -1753,9 +1753,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 10.21,
+   "pipeline_seconds": 10.394,
    "remote_seconds": 8.3,
-   "mac_seconds": 1.91,
+   "mac_seconds": 2.094,
    "glimmer_seconds": 7.96,
    "size_ok": true,
    "png_chunks": [
@@ -1783,7 +1783,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 1.911
+   "wall_seconds": 2.095
   },
   {
    "file": "id_card_041.jpg",
@@ -1801,9 +1801,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 9.866,
+   "pipeline_seconds": 10.065,
    "remote_seconds": 7.8,
-   "mac_seconds": 2.066,
+   "mac_seconds": 2.265,
    "glimmer_seconds": 7.47,
    "size_ok": true,
    "png_chunks": [
@@ -1832,7 +1832,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 2.066
+   "wall_seconds": 2.265
   },
   {
    "file": "id_card_042.jpg",
@@ -1850,9 +1850,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 8.702,
+   "pipeline_seconds": 8.899,
    "remote_seconds": 6.91,
-   "mac_seconds": 1.792,
+   "mac_seconds": 1.989,
    "glimmer_seconds": 6.58,
    "size_ok": true,
    "png_chunks": [
@@ -1881,7 +1881,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 1.793
+   "wall_seconds": 1.99
   },
   {
    "file": "id_card_043.png",
@@ -1899,9 +1899,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 9.964,
+   "pipeline_seconds": 10.156,
    "remote_seconds": 8.16,
-   "mac_seconds": 1.804,
+   "mac_seconds": 1.996,
    "glimmer_seconds": 7.83,
    "size_ok": true,
    "png_chunks": [
@@ -1929,7 +1929,7 @@
     "values_read": 0,
     "plain_readable": 1
    },
-   "wall_seconds": 1.804
+   "wall_seconds": 1.996
   },
   {
    "file": "id_card_048.png",
@@ -1947,9 +1947,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 11.698,
+   "pipeline_seconds": 11.901,
    "remote_seconds": 9.83,
-   "mac_seconds": 1.868,
+   "mac_seconds": 2.071,
    "glimmer_seconds": 9.48,
    "size_ok": true,
    "png_chunks": [
@@ -1977,7 +1977,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 1.869
+   "wall_seconds": 2.071
   },
   {
    "file": "id_card_049.png",
@@ -1995,9 +1995,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 10.147,
+   "pipeline_seconds": 10.368,
    "remote_seconds": 8.13,
-   "mac_seconds": 2.017,
+   "mac_seconds": 2.238,
    "glimmer_seconds": 7.79,
    "size_ok": true,
    "png_chunks": [
@@ -2026,7 +2026,7 @@
     "values_read": 0,
     "plain_readable": 0
    },
-   "wall_seconds": 2.017
+   "wall_seconds": 2.238
   },
   {
    "file": "chat_002.jpg",
@@ -2047,9 +2047,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 8.792,
+   "pipeline_seconds": 9.001,
    "remote_seconds": 6.6,
-   "mac_seconds": 2.192,
+   "mac_seconds": 2.401,
    "glimmer_seconds": 6.27,
    "size_ok": true,
    "png_chunks": [
@@ -2078,7 +2078,7 @@
     "values_read": 0,
     "plain_readable": 1
    },
-   "wall_seconds": 2.192
+   "wall_seconds": 2.402
   },
   {
    "file": "chat_003.png",
@@ -2100,9 +2100,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 11.432,
+   "pipeline_seconds": 11.611,
    "remote_seconds": 9.54,
-   "mac_seconds": 1.893,
+   "mac_seconds": 2.071,
    "glimmer_seconds": 9.2,
    "size_ok": true,
    "png_chunks": [
@@ -2130,7 +2130,7 @@
     "values_read": 0,
     "plain_readable": 1
    },
-   "wall_seconds": 1.893
+   "wall_seconds": 2.072
   },
   {
    "file": "chat_004.jpg",
@@ -2152,9 +2152,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 9.833,
+   "pipeline_seconds": 10.017,
    "remote_seconds": 7.8,
-   "mac_seconds": 2.033,
+   "mac_seconds": 2.217,
    "glimmer_seconds": 7.47,
    "size_ok": true,
    "png_chunks": [
@@ -2183,7 +2183,7 @@
     "values_read": 0,
     "plain_readable": 1
    },
-   "wall_seconds": 2.034
+   "wall_seconds": 2.218
   },
   {
    "file": "chat_005.jpg",
@@ -2205,9 +2205,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 12.413,
+   "pipeline_seconds": 12.711,
    "remote_seconds": 9.9,
-   "mac_seconds": 2.513,
+   "mac_seconds": 2.811,
    "glimmer_seconds": 9.53,
    "size_ok": true,
    "png_chunks": [
@@ -2237,7 +2237,7 @@
     "values_read": 0,
     "plain_readable": 1
    },
-   "wall_seconds": 2.513
+   "wall_seconds": 2.812
   },
   {
    "file": "chat_008.png",
@@ -2259,9 +2259,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 11.556,
+   "pipeline_seconds": 11.767,
    "remote_seconds": 9.46,
-   "mac_seconds": 2.096,
+   "mac_seconds": 2.307,
    "glimmer_seconds": 9.14,
    "size_ok": true,
    "png_chunks": [
@@ -2290,7 +2290,7 @@
     "values_read": 0,
     "plain_readable": 1
    },
-   "wall_seconds": 2.096
+   "wall_seconds": 2.308
   },
   {
    "file": "chat_009.jpg",
@@ -2311,9 +2311,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 11.645,
+   "pipeline_seconds": 11.837,
    "remote_seconds": 9.76,
-   "mac_seconds": 1.885,
+   "mac_seconds": 2.077,
    "glimmer_seconds": 9.44,
    "size_ok": true,
    "png_chunks": [
@@ -2342,7 +2342,7 @@
     "values_read": 0,
     "plain_readable": 1
    },
-   "wall_seconds": 1.885
+   "wall_seconds": 2.078
   },
   {
    "file": "chat_010.jpg",
@@ -2364,9 +2364,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 10.514,
+   "pipeline_seconds": 10.73,
    "remote_seconds": 8.28,
-   "mac_seconds": 2.234,
+   "mac_seconds": 2.45,
    "glimmer_seconds": 7.94,
    "size_ok": true,
    "png_chunks": [
@@ -2395,7 +2395,7 @@
     "values_read": 0,
     "plain_readable": 1
    },
-   "wall_seconds": 2.235
+   "wall_seconds": 2.451
   },
   {
    "file": "chat_011.png",
@@ -2416,9 +2416,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 12.595,
+   "pipeline_seconds": 12.858,
    "remote_seconds": 10.33,
-   "mac_seconds": 2.265,
+   "mac_seconds": 2.528,
    "glimmer_seconds": 10.0,
    "size_ok": true,
    "png_chunks": [
@@ -2446,7 +2446,7 @@
     "values_read": 0,
     "plain_readable": 1
    },
-   "wall_seconds": 2.265
+   "wall_seconds": 2.528
   },
   {
    "file": "chat_012.jpg",
@@ -2468,9 +2468,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 7.969,
+   "pipeline_seconds": 8.174,
    "remote_seconds": 5.99,
-   "mac_seconds": 1.979,
+   "mac_seconds": 2.184,
    "glimmer_seconds": 5.66,
    "size_ok": true,
    "png_chunks": [
@@ -2499,7 +2499,7 @@
     "values_read": 0,
     "plain_readable": 1
    },
-   "wall_seconds": 1.979
+   "wall_seconds": 2.184
   },
   {
    "file": "chat_013.jpg",
@@ -2520,9 +2520,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 11.702,
+   "pipeline_seconds": 11.904,
    "remote_seconds": 9.62,
-   "mac_seconds": 2.082,
+   "mac_seconds": 2.284,
    "glimmer_seconds": 9.22,
    "size_ok": true,
    "png_chunks": [
@@ -2551,7 +2551,7 @@
     "values_read": 0,
     "plain_readable": 1
    },
-   "wall_seconds": 2.082
+   "wall_seconds": 2.285
   },
   {
    "file": "chat_015.jpg",
@@ -2573,9 +2573,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 11.307,
+   "pipeline_seconds": 11.54,
    "remote_seconds": 8.72,
-   "mac_seconds": 2.587,
+   "mac_seconds": 2.82,
    "glimmer_seconds": 8.31,
    "size_ok": true,
    "png_chunks": [
@@ -2605,7 +2605,7 @@
     "values_read": 0,
     "plain_readable": 1
    },
-   "wall_seconds": 2.587
+   "wall_seconds": 2.82
   },
   {
    "file": "chat_016.jpg",
@@ -2626,9 +2626,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 10.736,
+   "pipeline_seconds": 11.014,
    "remote_seconds": 8.61,
-   "mac_seconds": 2.126,
+   "mac_seconds": 2.404,
    "glimmer_seconds": 8.29,
    "size_ok": true,
    "png_chunks": [
@@ -2657,7 +2657,7 @@
     "values_read": 0,
     "plain_readable": 1
    },
-   "wall_seconds": 2.126
+   "wall_seconds": 2.404
   },
   {
    "file": "chat_017.jpg",
@@ -2679,9 +2679,9 @@
    "whole_black_pixels": true,
    "whole_black_report": true,
    "reason": "rule 5: Glimmer counts more faces than SAM found (count_check)",
-   "pipeline_seconds": 8.316,
+   "pipeline_seconds": 8.527,
    "remote_seconds": 6.76,
-   "mac_seconds": 1.556,
+   "mac_seconds": 1.767,
    "glimmer_seconds": 6.43,
    "size_ok": true,
    "png_chunks": [
@@ -2709,7 +2709,7 @@
     "values_read": 0,
     "plain_readable": 1
    },
-   "wall_seconds": 1.556
+   "wall_seconds": 1.768
   },
   {
    "file": "chat_020.png",
@@ -2731,9 +2731,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 11.526,
+   "pipeline_seconds": 11.776,
    "remote_seconds": 9.42,
-   "mac_seconds": 2.106,
+   "mac_seconds": 2.356,
    "glimmer_seconds": 9.1,
    "size_ok": true,
    "png_chunks": [
@@ -2761,7 +2761,7 @@
     "values_read": 0,
     "plain_readable": 1
    },
-   "wall_seconds": 2.107
+   "wall_seconds": 2.356
   },
   {
    "file": "chat_021.jpg",
@@ -2783,9 +2783,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 14.215,
+   "pipeline_seconds": 14.404,
    "remote_seconds": 12.32,
-   "mac_seconds": 1.895,
+   "mac_seconds": 2.084,
    "glimmer_seconds": 11.93,
    "size_ok": true,
    "png_chunks": [
@@ -2814,7 +2814,7 @@
     "values_read": 0,
     "plain_readable": 1
    },
-   "wall_seconds": 1.895
+   "wall_seconds": 2.084
   },
   {
    "file": "chat_022.jpg",
@@ -2836,9 +2836,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 12.379,
+   "pipeline_seconds": 12.587,
    "remote_seconds": 10.14,
-   "mac_seconds": 2.239,
+   "mac_seconds": 2.447,
    "glimmer_seconds": 9.77,
    "size_ok": true,
    "png_chunks": [
@@ -2867,7 +2867,7 @@
     "values_read": 0,
     "plain_readable": 1
    },
-   "wall_seconds": 2.24
+   "wall_seconds": 2.448
   },
   {
    "file": "chat_023.jpg",
@@ -2889,9 +2889,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 12.319,
+   "pipeline_seconds": 12.636,
    "remote_seconds": 9.79,
-   "mac_seconds": 2.53,
+   "mac_seconds": 2.846,
    "glimmer_seconds": 9.37,
    "size_ok": true,
    "png_chunks": [
@@ -2921,7 +2921,7 @@
     "values_read": 0,
     "plain_readable": 1
    },
-   "wall_seconds": 2.53
+   "wall_seconds": 2.847
   },
   {
    "file": "chat_024.png",
@@ -2943,9 +2943,9 @@
    "whole_black_pixels": false,
    "whole_black_report": false,
    "reason": null,
-   "pipeline_seconds": 10.242,
+   "pipeline_seconds": 10.419,
    "remote_seconds": 8.26,
-   "mac_seconds": 1.982,
+   "mac_seconds": 2.159,
    "glimmer_seconds": 7.86,
    "size_ok": true,
    "png_chunks": [
@@ -2974,7 +2974,7 @@
     "values_read": 0,
     "plain_readable": 1
    },
-   "wall_seconds": 1.982
+   "wall_seconds": 2.16
   }
  ]
 }

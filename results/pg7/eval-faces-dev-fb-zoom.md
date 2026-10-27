@@ -2,9 +2,9 @@
 
 | Type | Pictures | Whole picture black | Not black: values left readable / planted | Not black: face boxes 90%+ covered | Not black: ordinary spans readable (original) | Whole-black pictures: planted values left readable | s/picture Mac / Modal / total |
 |---|---|---|---|---|---|---|---|
-| all | 55 | 1 of 55 (1.8%) | 0 / 0 | 117 of 117 | 46 of 54 (23) | 0 | 1.9936 / 8.4884 / 10.4819 |
-| chat | 18 | 1 of 18 (5.6%) | 0 / 0 | 80 of 80 | 16 of 17 (17) | 0 | 2.1218 / 8.9611 / 11.0828 |
-| id_card | 37 | 0 of 37 (0.0%) | 0 / 0 | 37 of 37 | 30 of 37 (6) | 0 | 1.9312 / 8.2584 / 10.1895 |
+| all | 55 | 1 of 55 (1.8%) | 0 / 0 | 117 of 117 | 46 of 54 (23) | 0 | 2.1994 / 8.4884 / 10.6877 |
+| chat | 18 | 1 of 18 (5.6%) | 0 / 0 | 80 of 80 | 16 of 17 (17) | 0 | 2.3452 / 8.9611 / 11.3063 |
+| id_card | 37 | 0 of 37 (0.0%) | 0 / 0 | 37 of 37 | 30 of 37 (6) | 0 | 2.1285 / 8.2584 / 10.3868 |
 
 Why pictures went whole black: {
 "rule 5: Glimmer counts more faces than SAM found (count_check)": 1

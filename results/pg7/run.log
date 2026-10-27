@@ -13,3 +13,7 @@ zoom2 faces_hard exit 0
 zl testset exit 0
 zl faces exit 0
 zl faces_hard exit 0
+--- pg8 recheck start
+recheck testset exit 0
+recheck faces exit 0
+recheck faces_hard exit 0

@@ -2,11 +2,11 @@
 
 | Type | Pictures | Whole picture black | Not black: values left readable / planted | Not black: face boxes 90%+ covered | Not black: ordinary spans readable (original) | Whole-black pictures: planted values left readable | s/picture Mac / Modal / total |
 |---|---|---|---|---|---|---|---|
-| all | 60 | 6 of 60 (10.0%) | 0 / 0 | 112 of 112 | 9 of 54 (8) | 0 | 2.7521 / 4.2423 / 6.9944 |
-| accessory | 15 | 2 of 15 (13.3%) | 0 / 0 | 13 of 13 | 2 of 13 (3) | 0 | 2.2778 / 4.1467 / 6.4243 |
-| group | 15 | 0 of 15 (0.0%) | 0 / 0 | 57 of 57 | 2 of 15 (0) | 0 | 2.8765 / 5.002 / 7.8785 |
-| scene | 15 | 0 of 15 (0.0%) | 0 / 0 | 31 of 31 | 1 of 15 (1) | 0 | 3.8119 / 4.5973 / 8.4093 |
-| side_view | 15 | 4 of 15 (26.7%) | 0 / 0 | 11 of 11 | 4 of 11 (4) | 0 | 2.0423 / 3.2233 / 5.2657 |
+| all | 60 | 6 of 60 (10.0%) | 0 / 0 | 112 of 112 | 9 of 54 (8) | 0 | 3.0482 / 4.2423 / 7.2905 |
+| accessory | 15 | 2 of 15 (13.3%) | 0 / 0 | 13 of 13 | 2 of 13 (3) | 0 | 2.5469 / 4.1467 / 6.6935 |
+| group | 15 | 0 of 15 (0.0%) | 0 / 0 | 57 of 57 | 2 of 15 (0) | 0 | 3.1747 / 5.002 / 8.1767 |
+| scene | 15 | 0 of 15 (0.0%) | 0 / 0 | 31 of 31 | 1 of 15 (1) | 0 | 4.2128 / 4.5973 / 8.8102 |
+| side_view | 15 | 4 of 15 (26.7%) | 0 / 0 | 11 of 11 | 4 of 11 (4) | 0 | 2.2585 / 3.2233 / 5.4817 |
 
 Why pictures went whole black: {
 "rule 3: a stage failed, timed out or read almost nothing (read)": 6

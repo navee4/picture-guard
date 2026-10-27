@@ -2,11 +2,11 @@
 
 | Type | Pictures | Whole picture black | Not black: values left readable / planted | Not black: face boxes 90%+ covered | Not black: ordinary spans readable (original) | Whole-black pictures: planted values left readable | s/picture Mac / Modal / total |
 |---|---|---|---|---|---|---|---|
-| all | 150 | 53 of 150 (35.3%) | 0 / 751 | 0 of 33 | 1402 of 1957 (1644) | 0 | 6.3865 / 20.205 / 26.5915 |
-| chat | 37 | 25 of 37 (67.6%) | 0 / 62 | none planted | 132 of 243 (189) | 0 | 5.2014 / 23.4786 / 28.6801 |
-| id_card | 38 | 5 of 38 (13.2%) | 0 / 231 | 0 of 33 | 201 of 396 (250) | 0 | 2.9654 / 17.4268 / 20.3923 |
-| letter | 37 | 16 of 37 (43.2%) | 0 / 210 | none planted | 211 of 357 (307) | 0 | 11.5572 / 24.393 / 35.9502 |
-| payslip | 38 | 7 of 38 (18.4%) | 0 / 248 | none planted | 858 of 961 (898) | 0 | 5.9267 / 15.7179 / 21.6446 |
+| all | 150 | 53 of 150 (35.3%) | 0 / 751 | 0 of 33 | 1402 of 1957 (1644) | 0 | 6.8309 / 20.205 / 27.0359 |
+| chat | 37 | 25 of 37 (67.6%) | 0 / 62 | none planted | 132 of 243 (189) | 0 | 5.7663 / 23.4786 / 29.2449 |
+| id_card | 38 | 5 of 38 (13.2%) | 0 / 231 | 0 of 33 | 201 of 396 (250) | 0 | 3.316 / 17.4268 / 20.7428 |
+| letter | 37 | 16 of 37 (43.2%) | 0 / 210 | none planted | 211 of 357 (307) | 0 | 12.0065 / 24.393 / 36.3995 |
+| payslip | 38 | 7 of 38 (18.4%) | 0 / 248 | none planted | 858 of 961 (898) | 0 | 6.3432 / 15.7179 / 22.0612 |
 
 Why pictures went whole black: {
 "rule 1: a private value has no word box (decide)": 53
