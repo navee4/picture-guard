@@ -83,7 +83,11 @@ def _call(stage: Stage, ctx: Context) -> dict:
     return rec
 
 
-def protect(in_path, out_path, report_path, plan: Plan | None = None) -> dict:
+def _skipped(name: str, because: str) -> dict:
+    return {"name": name, "seconds": 0.0, "status": "skipped", "answer": {}, "why": f"skipped: {because}"}
+
+
+def protect(in_path, out_path, report_path, plan: Plan | None = None, ablation: bool = False) -> dict:
     """Write the safe copy and the report. Raises NotAPictureError (nothing written) if the input is not a picture."""
     plan = plan or default_plan()
     ins, outs, reps = (Path(p).resolve() for p in (in_path, out_path, report_path))
@@ -91,12 +95,15 @@ def protect(in_path, out_path, report_path, plan: Plan | None = None) -> dict:
         raise ValueError("input, safe copy and report must be three different files")
     t_all = time.perf_counter()
     loaded = imaging.load_picture(ins)  # raises before anything is written
-    ctx = Context(loaded=loaded, in_path=str(ins), out_path=str(outs))
+    ctx = Context(loaded=loaded, in_path=str(ins), out_path=str(outs), ablation=ablation)
     stages, reasons = [], []
 
     if not loaded.in_scope:
         reasons.append(f"intake: {loaded.scope_why}")
     for st in plan.detect:
+        if reasons and not ablation:  # an earlier stage already forced the fail-safe: do not spend time on the rest
+            stages.append(_skipped(st.name, reasons[0]))
+            continue
         rec = _call(st, ctx)
         stages.append(rec)
         if rec["status"] != "ok":
@@ -113,9 +120,11 @@ def protect(in_path, out_path, report_path, plan: Plan | None = None) -> dict:
         ctx.fail_safe = True
         ctx.safe_image = imaging.all_black((loaded.width, loaded.height))
 
-    rec = _call(plan.check, ctx)
+    rec = _skipped(plan.check.name, "the whole picture is already black") if ctx.fail_safe else _call(plan.check, ctx)
     stages.append(rec)
-    if rec["status"] != "ok" and not ctx.fail_safe:
+    if rec["status"] == "skipped":
+        pass
+    elif rec["status"] != "ok" and not ctx.fail_safe:
         reasons.append(f"{plan.check.name}: {rec['status']}: {rec['why']}")
         ctx.fail_safe = True
         ctx.safe_image = imaging.all_black((loaded.width, loaded.height))
@@ -137,9 +146,12 @@ def protect(in_path, out_path, report_path, plan: Plan | None = None) -> dict:
 
     stages.append(_call(plan.send, ctx))
     report = {
-        "tool": "picture_guard", "version": __version__, "input": {
+        "tool": "picture_guard", "version": __version__,
+        "mode": "ablation: NOT A PRODUCT RESULT (unbuilt stages switched off)" if ablation else "product",
+        "input": {
             "file": ins.name, "sha256": loaded.sha256, "bytes": loaded.nbytes, "format": loaded.format,
-            "width": loaded.width, "height": loaded.height, "frames": loaded.frames, "in_scope": loaded.in_scope},
+            "width": loaded.width, "height": loaded.height, "frames": loaded.frames, "in_scope": loaded.in_scope,
+            "stored_size": list(loaded.stored_size), "exif_rotated": loaded.exif_rotated},
         "stages": stages,
         "fail_safe": {"whole_black": ctx.fail_safe, "reasons": reasons},
         "output": {"file": outs.name, "format": "PNG", "width": loaded.width, "height": loaded.height,

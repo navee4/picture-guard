@@ -10,7 +10,7 @@ import tempfile
 from dataclasses import dataclass
 from pathlib import Path
 
-from PIL import Image
+from PIL import Image, ImageOps
 
 MAX_PIXELS = 100_000_000
 MAX_BYTES = 200 * 1024 * 1024
@@ -26,11 +26,13 @@ class NotAPictureError(Exception):
 
 @dataclass
 class Loaded:
-    image: Image.Image  # RGB, in the stored orientation (EXIF rotation is not applied)
+    image: Image.Image  # RGB, EXIF rotation already applied
     format: str
     width: int
     height: int
     frames: int
+    stored_size: tuple  # (w, h) as stored in the file; differs from (width, height) when EXIF said "rotate"
+    exif_rotated: bool
     in_scope: bool
     scope_why: str
     sha256: str
@@ -50,7 +52,11 @@ def load_picture(path: str | Path) -> Loaded:
         if w * h > MAX_PIXELS:
             raise NotAPictureError(f"{p} is {w}x{h}, more than {MAX_PIXELS:,} pixels")
         im.load()
+        stored = im.size
+        orientation = im.getexif().get(0x0112, 1)
+        im = ImageOps.exif_transpose(im)  # rotate the pixels first; metadata is dropped later, on write
         rgb = _flatten(im)
+        w, h = rgb.size
     except NotAPictureError:
         raise
     except Exception as ex:  # noqa: BLE001  (PIL raises many types for broken files)
@@ -61,7 +67,7 @@ def load_picture(path: str | Path) -> Loaded:
         scope = (False, f"{frames} frames; only single pictures are in scope")
     else:
         scope = (True, "PNG or JPEG, single frame")
-    return Loaded(rgb, fmt, w, h, frames, scope[0], scope[1], hashlib.sha256(data).hexdigest(), len(data))
+    return Loaded(rgb, fmt, w, h, frames, stored, orientation not in (None, 1), scope[0], scope[1], hashlib.sha256(data).hexdigest(), len(data))
 
 
 def _flatten(im: Image.Image) -> Image.Image:

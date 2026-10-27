@@ -30,7 +30,7 @@ def _black_share(black: np.ndarray, box) -> float | None:
     return float(black[y0:y1, x0:x1].mean())
 
 
-def _measure(entry, safe_path: Path, report: dict, do_ocr: bool) -> dict:
+def _measure(entry, safe_path: Path, report: dict, do_ocr: bool, orig_path: Path | None = None) -> dict:
     img = Image.open(safe_path).convert("RGB")
     black = np.asarray(img).max(axis=2) <= BLACK_MAX
     values = [s for s in entry["spans"] if s["kind"] == "personal" and s["pii_type"] != "face" and s["text"]]
@@ -48,16 +48,28 @@ def _measure(entry, safe_path: Path, report: dict, do_ocr: bool) -> dict:
         "size_ok": (img.width, img.height) == (entry["width"], entry["height"]),
         "png_chunks": report["output"]["png_chunks"],
     }
+    rec["values"] = [{"type": v["pii_type"], "black_share": b, "left_readable": None, "read_on_original": None}
+                     for v, b in zip(values, rec["value_box_black_share"])]
     if do_ocr:
         text = readback.norm(readback.ocr_text(str(safe_path)))
         rec["readback"] = {"values_left": [s["text"] for s in values if readback.found(s["text"], text)],
                            "plain_readable": sum(readback.found(s["text"], text) for s in plain)}
+        for rv, v in zip(rec["values"], values):
+            rv["left_readable"] = readback.found(v["text"], text)
+        if orig_path is not None:  # the ceiling: what Tesseract reads when nothing is covered
+            otext = readback.norm(readback.ocr_text(str(orig_path)))
+            rec["readback_original"] = {"values_read": sum(readback.found(s["text"], otext) for s in values),
+                                        "plain_readable": sum(readback.found(s["text"], otext) for s in plain)}
+            for rv, v in zip(rec["values"], values):
+                rv["read_on_original"] = readback.found(v["text"], otext)
+            rec["leak_list"] = [{"type": v["pii_type"], "kind": "never read by Tesseract on the original"}
+                                for v in values if not readback.found(v["text"], otext)]
     else:
         rec["readback"] = None
     return rec
 
 
-def run_eval(set_name: str, split: str, limit: int = 0, results_dir: str | None = None) -> int:
+def run_eval(set_name: str, split: str, limit: int = 0, results_dir: str | None = None, ablation: bool = False) -> int:
     if split != "dev":
         print(f"pg: error: split {split!r} refused. Only 'dev' may be run until day 9; the hold-out stays sealed.", file=sys.stderr)
         return 2
@@ -77,25 +89,36 @@ def run_eval(set_name: str, split: str, limit: int = 0, results_dir: str | None 
             safe, rep = tmp / "safe.png", tmp / "report.json"
             t0 = time.perf_counter()
             r = subprocess.run([sys.executable, "-m", "picture_guard", "protect", str(base / "images" / e["file"]),
-                                "--out", str(safe), "--report", str(rep)], capture_output=True, text=True, cwd=ROOT)
+                                "--out", str(safe), "--report", str(rep)] + (["--ablation"] if ablation else []), capture_output=True, text=True, cwd=ROOT)
             wall = time.perf_counter() - t0
             if r.returncode != 0:
                 failures.append({"file": e["file"], "exit": r.returncode, "stderr": r.stderr[-400:]})
                 continue
-            m = _measure(e, safe, json.loads(rep.read_text()), do_ocr)
+            m = _measure(e, safe, json.loads(rep.read_text()), do_ocr, base / "images" / e["file"])
+            m["first_failure"] = next((x["name"] for x in json.loads(rep.read_text())["stages"] if x["status"] not in ("ok", "skipped")), None)
+            m["boxes_filled"] = json.loads(rep.read_text())["output"]["boxes_filled"]
             m["wall_seconds"] = round(wall, 3)
             recs.append(m)
             safe.unlink(), rep.unlink()
     raw = {"tool_version": __version__, "set": set_name, "split": split, "pictures_asked": len(entries), "pictures_scored": len(recs),
-           "failures": failures, "tesseract_installed": do_ocr, "black_max_channel": BLACK_MAX,
+           "mode": "ablation: NOT A PRODUCT RESULT" if ablation else "product", "failures": failures, "tesseract_installed": do_ocr, "black_max_channel": BLACK_MAX,
            "key_sha256": key.get("sha256"), "unix_time": int(t_start),
-           "command": f".venv/bin/pg eval --set {set_name} --split {split}" + (f" --limit {limit}" if limit else ""),
-           "summary": summarise(recs), "pictures": recs}
-    (out_dir / f"eval-{set_name}-{split}.json").write_text(json.dumps(raw, indent=1))
+           "command": f".venv/bin/pg eval --set {set_name} --split {split}" + (" --ablation" if ablation else "") + (f" --limit {limit}" if limit else ""),
+           "summary": summarise(recs), "by_value_type": by_value_type(recs), "first_failure_stage": _tally(r.get("first_failure") for r in recs),
+           "pictures": recs}
+    suffix = "-ablation" if ablation else ""
+    (out_dir / f"eval-{set_name}-{split}{suffix}.json").write_text(json.dumps(raw, indent=1))
     table = render_table(set_name, split, raw)
-    (out_dir / f"eval-{set_name}-{split}.md").write_text(table)
+    (out_dir / f"eval-{set_name}-{split}{suffix}.md").write_text(table)
     print(table)
     return 1 if failures else 0
+
+
+def _tally(it):
+    out: dict = {}
+    for x in it:
+        out[str(x)] = out.get(str(x), 0) + 1
+    return out
 
 
 def _mean(v):
@@ -130,13 +153,31 @@ def summarise(recs: list) -> dict:
     return out
 
 
+def by_value_type(recs: list) -> dict:
+    out: dict = {}
+    for r in recs:
+        for v in r.get("values", []):
+            t = out.setdefault(v["type"], {"n": 0, "black_ge90": 0, "black_sum": 0.0, "left_readable": 0, "read_on_original": 0, "ocr_ran": 0})
+            t["n"] += 1
+            b = v["black_share"] or 0.0
+            t["black_sum"] += b
+            t["black_ge90"] += b >= 0.9
+            if v["left_readable"] is not None:
+                t["ocr_ran"] += 1
+                t["left_readable"] += bool(v["left_readable"])
+                t["read_on_original"] += bool(v["read_on_original"])
+    return {k: {**v, "black_mean": round(v.pop("black_sum") / v["n"], 4)} for k, v in sorted(out.items())}
+
+
 def _pct(x):
     return "n/a" if x is None else f"{100 * x:.1f}%"
 
 
 def render_table(set_name: str, split: str, raw: dict) -> str:
     s = raw["summary"]
-    L = [f"## {set_name}, split {split} ({raw['pictures_scored']} of {raw['pictures_asked']} pictures scored, version {raw['tool_version']})", ""]
+    L = [f"## {set_name}, split {split}, mode: {raw['mode']} ({raw['pictures_scored']} of {raw['pictures_asked']} pictures scored, version {raw['tool_version']})", ""]
+    if raw["mode"] != "product":
+        L += ["**ABLATION: NOT A PRODUCT RESULT.** Unbuilt stages answered 'nothing found' and the 'rules cannot judge this' alarm was off. Measurement only.", ""]
     if not raw["tesseract_installed"]:
         L += ["Read-back by Tesseract: **not run** (the `tesseract` program is not installed on this Mac).", ""]
     L += ["| Type | Pictures | Planted values | Value boxes black (mean / min) | Faces | Face boxes black (mean / min) | "
@@ -153,6 +194,13 @@ def render_table(set_name: str, split: str, raw: dict) -> str:
                  f"{_pct(x['plain_text_boxes_nonblack_share_mean'])} | {wb} | {left} | {pr} | "
                  f"{x['pipeline_seconds_mean']} / {x['wall_seconds_mean']} |")
     a = s["all"]
+    L += ["", f"Pictures whose first not-sure or failing stage was: {raw['first_failure_stage']} (None = no stage failed)."]
+    if raw["by_value_type"]:
+        L += ["", "| Value type | Planted | Box 90%+ black | Mean black share | Left readable on safe copy | Read by Tesseract on the original |", "|---|---|---|---|---|---|"]
+        for k, v in raw["by_value_type"].items():
+            ran = v["ocr_ran"] > 0
+            L.append(f"| {k} | {v['n']} | {v['black_ge90']} ({_pct(v['black_ge90'] / v['n'])}) | {_pct(v['black_mean'])} | "
+                     f"{v['left_readable'] if ran else 'not run'} | {str(v['read_on_original']) + ' of ' + str(v['n']) if ran else 'not run'} |")
     L += ["", f"Report says whole-black but pixels disagree: {a['report_and_pixels_disagree']}. Safe copy wrong size: {a['size_wrong']}. "
           f"Safe copies with metadata chunks: {a['metadata_chunks_found']}. Pictures that failed to run: {len(raw['failures'])}.", ""]
     return "\n".join(L)
