@@ -20,6 +20,8 @@ web_image = (
     modal.Image.debian_slim(python_version="3.12")
     .apt_install("tesseract-ocr")
     .pip_install("pillow", "numpy", "fastapi", "python-multipart")
+    # the container re-reads this module: it must see the same flag as the deploy, or Modal finds a different list of secrets and the container fails to start
+    .env({"PG_HAVE_SPARK_SECRET": os.environ.get("PG_HAVE_SPARK_SECRET", "0")})
     .add_local_python_source("picture_guard")
     .add_local_dir(ROOT / "demo_samples", "/root/demo_samples")
 )
