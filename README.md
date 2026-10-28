@@ -36,17 +36,17 @@ Any "not sure" gives a whole black picture. The five fail-safe rules:
 
 **The proof.** The page and the code check, before anything is sent, that the SHA-256 of the image in the request equals the SHA-256 of the safe copy and never the original's (unit tests refuse the original, a second image, an image URL and a file id). Three leak checks run on every test result: a plain Tesseract read of the safe copy, a stricter read (plain, dark areas inverted, local contrast), and a pixel check of every planted box.
 
-## Results (dev set, 27 Oct 2026)
+## Results (dev set, 28 Oct 2026)
 
 Made-up test pictures only. Measured on the **dev** split (150 text pictures, 55 + 60 face pictures); the final numbers will come from a sealed **hold-out** set, run once at the end. Details: `LIMITS.md`.
 
 | Dev set | Pictures | Whole picture black | Planted values left readable (kept pictures) | Faces covered ≥90% (kept pictures) |
 |---|---|---|---|---|
-| Text pictures (payslips, letters, ID-style cards, chats) | 150 | 39 (26%): chats 16 of 37, letters 12 of 37, payslips 5 of 38, ID cards 6 of 38 | 0 by plain Tesseract, 0 by the strict read, 0 under 50% covered by pixels, 1 under 90% (of 853) | drawn placeholder faces not detected (a test-picture limit) |
+| Text pictures (payslips, letters, ID-style cards, chats) | 150 | 41 (27%): chats 16 of 37, letters 12 of 37, payslips 7 of 38, ID cards 6 of 38 | 0 by plain Tesseract, 0 by the strict read, 0 under 50% covered by pixels, 1 under 90% (of 837) | drawn placeholder faces not detected (a test-picture limit) |
 | Faces on cards and chats (AI-made faces) | 55 | 1 (2%) | no values planted | 117 of 117 |
 | Harder faces (side views, hats, masks, groups) | 60 | 6 (10%) | no values planted | 112 of 112 |
 
-Reading the table: a black picture is the safe failure, not a leak. "Kept" means the picture was not blacked out whole. About 56% of the ordinary (not private) text stays readable in kept text pictures.
+Reading the table: a black picture is the safe failure, not a leak. "Kept" means the picture was not blacked out whole. About 55% of the ordinary (not private) text stays readable in kept text pictures.
 
 ## Run it
 
