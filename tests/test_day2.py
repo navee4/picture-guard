@@ -97,7 +97,7 @@ class RealChain(Base):
         draw(TEXT_OK).save(self.src)
 
     def test_values_are_covered_and_ordinary_text_stays(self):
-        rep = protect(self.src, self.out, self.rep, default_plan(), guard=FakeGuard())
+        rep = protect(self.src, self.out, self.rep, default_plan(), guard=FakeGuard(), options={"margin": (0.25, 3)})  # a tight margin keeps the label beside the value
         self.assertFalse(rep["fail_safe"]["whole_black"], rep["fail_safe"])
         status = {s["name"]: s["status"] for s in rep["stages"]}
         for n in ("read", "decide", "locate", "black_out"):
@@ -109,6 +109,15 @@ class RealChain(Base):
             self.assertFalse(readback.found(planted, text), planted)
         self.assertTrue(readback.found("thanks", text))  # ordinary text is still readable
         self.assertTrue(readback.found("Sort code", text))  # labels too
+
+    def test_default_margin_covers_the_value_and_leaves_distant_text(self):
+        draw(["Dear Katie Edwards", "", "", "", "Kind regards and thanks"]).save(self.src)
+        g = FakeGuard(values=[{"text": "Katie Edwards", "type": "name"}])
+        rep = protect(self.src, self.out, self.rep, default_plan(), guard=g)  # the default (wide) margin
+        self.assertFalse(rep["fail_safe"]["whole_black"], rep["fail_safe"])
+        text = readback.norm(readback.ocr_text(str(self.out)))
+        self.assertFalse(readback.found("Katie", text))
+        self.assertTrue(readback.found("thanks", text))
 
     def test_report_holds_no_private_text(self):
         g = FakeGuard(values=[{"text": "Katie Edwards", "type": "name"}])
@@ -122,7 +131,7 @@ class RealChain(Base):
     def test_a_glimmer_value_is_located_and_covered(self):
         draw(["Dear Katie Edwards", "Sort code 12-34-56"]).save(self.src)
         g = FakeGuard(values=[{"text": "Katie Edwards", "type": "name"}])
-        rep = protect(self.src, self.out, self.rep, default_plan(), guard=g)
+        rep = protect(self.src, self.out, self.rep, default_plan(), guard=g, options={"margin": (0.25, 3)})
         self.assertFalse(rep["fail_safe"]["whole_black"], rep["fail_safe"])
         text = readback.norm(readback.ocr_text(str(self.out)))
         self.assertFalse(readback.found("Katie", text))

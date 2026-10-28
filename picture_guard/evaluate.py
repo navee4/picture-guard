@@ -46,6 +46,17 @@ def _reason(report: dict) -> str | None:
     return FAILSAFE_RULES[4] if not report["input"]["in_scope"] else "other: " + "; ".join(report["fail_safe"]["reasons"])[:80]
 
 
+def _edges(black, box):
+    """How black the left / right / top / bottom fifth of a planted box is: where a half-covered value is short. Numbers only."""
+    x0, y0, x1, y1 = [int(v) for v in box]
+    reg = black[max(0, y0):y1, max(0, x0):x1]
+    if reg.size == 0:
+        return None
+    h, w = reg.shape
+    fw, fh = max(1, w // 5), max(1, h // 5)
+    return [round(float(reg[:, :fw].mean()), 2), round(float(reg[:, -fw:].mean()), 2), round(float(reg[:fh, :].mean()), 2), round(float(reg[-fh:, :].mean()), 2)]
+
+
 def _measure(entry, safe_path: Path, report: dict, do_ocr: bool, orig_path: Path | None = None) -> dict:
     img = Image.open(safe_path).convert("RGB")
     black = np.asarray(img).max(axis=2) <= BLACK_MAX
@@ -71,16 +82,17 @@ def _measure(entry, safe_path: Path, report: dict, do_ocr: bool, orig_path: Path
         "fallback": next((x["answer"].get("fallback") for x in report["stages"] if x["name"] == "decide"), None),
         "word_list_would_refuse": next((x["answer"].get("word_list_would_refuse") for x in report["stages"] if x["name"] == "decide"), None),
     }
-    rec["values"] = [{"type": v["pii_type"], "black_share": b, "left_readable": None, "read_on_original": None}
+    rec["values"] = [{"type": v["pii_type"], "black_share": b, "left_readable": None, "read_on_original": None, "black_edges": _edges(black, v["box"])}
                      for v, b in zip(values, rec["value_box_black_share"])]
     if do_ocr:
         text = readback.norm(readback.ocr_text(str(safe_path)))
-        rec["readback"] = {"values_left": [s["text"] for s in values if readback.found(s["text"], text)],
+        rec["readback"] = {"values_left": [s["pii_type"] for s in values if readback.found(s["text"], text)],  # types only: no picture text goes into results files
+                           
                            "plain_readable": sum(readback.found(s["text"], text) for s in plain)}
         for rv, v in zip(rec["values"], values):
             rv["left_readable"] = readback.found(v["text"], text)
         stext = readback.norm(readback.ocr_text_strict(str(safe_path)))  # stricter read-back: plain + inverted-dark + local-contrast reads
-        rec["readback_strict"] = {"values_left": [s["text"] for s in values if readback.found(s["text"], stext)],
+        rec["readback_strict"] = {"values_left": [s["pii_type"] for s in values if readback.found(s["text"], stext)],
                                   "plain_readable": sum(readback.found(s["text"], stext) for s in plain)}
         for rv, v in zip(rec["values"], values):
             rv["left_readable_strict"] = readback.found(v["text"], stext)
@@ -96,7 +108,7 @@ def _measure(entry, safe_path: Path, report: dict, do_ocr: bool, orig_path: Path
 
 
 def run_eval(set_name: str, split: str, limit: int = 0, results_dir: str | None = None, ablation: bool = False, check_glimmer: bool = False,
-             fallback: str = "zoom", replay: bool = False, cleanups: tuple | None = None) -> int:
+             fallback: str = "zoom", replay: bool = False, cleanups: tuple | None = None, margin: tuple | None = None) -> int:
     if split != "dev":
         print(f"pg: error: split {split!r} refused. Only 'dev' may be run until day 9; the hold-out stays sealed.", file=sys.stderr)
         return 2
@@ -110,7 +122,7 @@ def run_eval(set_name: str, split: str, limit: int = 0, results_dir: str | None 
     do_ocr = readback.available()
     out_dir = Path(results_dir) if results_dir else ROOT / "results" / ("pg7" if (fallback != "none" or replay) else "pg6")
     out_dir.mkdir(parents=True, exist_ok=True)
-    suffix = ("-ablation" if ablation else "") + ("-checkglimmer" if check_glimmer else "") + (f"-fb-{fallback}" if fallback != "none" else "") + (("-clean-" + "+".join(cleanups) if cleanups else "-clean-none") if cleanups is not None else "") + ("-replay" if replay and fallback == "none" else "")
+    suffix = ("-ablation" if ablation else "") + ("-checkglimmer" if check_glimmer else "") + (f"-fb-{fallback}" if fallback != "none" else "") + (("-clean-" + "+".join(cleanups) if cleanups else "-clean-none") if cleanups is not None else "") + ("-margin-" + "-".join(str(x) for x in margin) if margin is not None else "") + ("-replay" if replay and fallback == "none" else "")
     recs, failures = [], []
     t_start = time.time()
     session = nullcontext(None)
@@ -128,7 +140,7 @@ def run_eval(set_name: str, split: str, limit: int = 0, results_dir: str | None 
             safe, rep = tmp / "safe.png", tmp / "report.json"
             t0 = time.perf_counter()
             try:
-                report = protect(base / "images" / e["file"], safe, rep, ablation=ablation, guard=guard, options={"check_glimmer": check_glimmer, "fallback": fallback, **({"cleanups": cleanups} if cleanups is not None else {})})
+                report = protect(base / "images" / e["file"], safe, rep, ablation=ablation, guard=guard, options={"check_glimmer": check_glimmer, "fallback": fallback, **({"cleanups": cleanups} if cleanups is not None else {}), **({"margin": margin} if margin is not None else {})})
             except Exception as ex:  # noqa: BLE001  (a remote spend-cap stop ends the run; anything else is logged and the run goes on)
                 failures.append({"file": e["file"], "error": f"{type(ex).__name__}: {str(ex)[:300]}"})
                 if "spend cap" in str(ex):
@@ -147,12 +159,12 @@ def run_eval(set_name: str, split: str, limit: int = 0, results_dir: str | None 
     if guard is not None:
         cold, info = guard.cold_start_seconds, guard.info
     raw = {"tool_version": __version__, "set": set_name, "split": split, "pictures_asked": len(entries), "pictures_scored": len(recs),
-           "mode": "ablation: NOT A PRODUCT RESULT" if ablation else "product", "check_glimmer": check_glimmer, "fallback": fallback, "cleanups": list(cleanups) if cleanups is not None else "default", "replay_of_day3_answers": replay,
+           "mode": "ablation: NOT A PRODUCT RESULT" if ablation else "product", "check_glimmer": check_glimmer, "fallback": fallback, "cleanups": list(cleanups) if cleanups is not None else "default", "margin": list(margin) if margin is not None else "default", "replay_of_day3_answers": replay,
            "live_modal_calls": getattr(guard, "live_calls", None),
            "failures": failures, "tesseract_installed": do_ocr, "black_max_channel": BLACK_MAX,
            "modal": {"cold_start_seconds": cold, "container": info},
            "key_sha256": key.get("sha256"), "unix_time": int(t_start),
-           "command": f".venv/bin/pg eval --set {set_name} --split {split}" + (" --ablation" if ablation else "") + (" --check-glimmer" if check_glimmer else "") + (f" --fallback {fallback}" if fallback != "none" else "") + (" --replay" if replay else "") + (f" --cleanups {','.join(cleanups) or 'none'}" if cleanups is not None else "") + (f" --limit {limit}" if limit else ""),
+           "command": f".venv/bin/pg eval --set {set_name} --split {split}" + (" --ablation" if ablation else "") + (" --check-glimmer" if check_glimmer else "") + (f" --fallback {fallback}" if fallback != "none" else "") + (" --replay" if replay else "") + (f" --cleanups {','.join(cleanups) or 'none'}" if cleanups is not None else "") + (" --margin " + ",".join(str(x) for x in margin) if margin is not None else "") + (f" --limit {limit}" if limit else ""),
            "summary": summarise(recs), "by_value_type": by_value_type(recs), "first_failure_stage": _tally(r.get("first_failure") for r in recs),
            "whole_black_reasons": _tally(r.get("reason") for r in recs if r["whole_black_pixels"]),
            "leak_list_still_readable": [{"file": r["file"], "picture_type": r["type"], "value_type": v["type"], "found_by": "plain" if v["left_readable"] else "strict"}

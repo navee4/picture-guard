@@ -11,13 +11,16 @@ from picture_guard.remote.client import RemoteError
 from picture_guard.types import NOT_SURE, OK, StageResult
 
 NAME = "check_safe"
+# Extra reads for the safe copy beyond the pipeline default. Day 8 tried ("inv", "invloc") (the reads the strict leak check uses): on the dev sets it
+# blacked out 3 more text pictures and 1 more face picture and did not remove the one leak it was aimed at, so it is OFF (see the PG11 results).
+CHECK_EXTRA: tuple = ()
 
 
 def run(ctx) -> StageResult:
     if ctx.ablation:
         return StageResult(OK, {"boxes": []}, "ABLATION: no check run; answers 'nothing found'")
     safe = ctx.safe_image
-    passes = ocr.read_passes(safe, cleanups=ctx.options.get("cleanups", ocr.DEFAULT_CLEANUPS))
+    passes = ocr.read_passes(safe, cleanups=tuple(dict.fromkeys(tuple(ctx.options.get("cleanups", ocr.DEFAULT_CLEANUPS)) + CHECK_EXTRA)))
     for label, words in passes.items():
         found, _ = rules.find_values(ocr.group_lines(words))
         if found:

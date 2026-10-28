@@ -9,7 +9,7 @@
    "seconds": 26.48,
    "items": [
     {
-     "text": "Katie Edwards",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       330,
@@ -19,7 +19,7 @@
      ]
     },
     {
-     "text": "4 Heath Inlet",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       330,
@@ -29,7 +29,7 @@
      ]
     },
     {
-     "text": "Schofieldbury",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       330,
@@ -49,7 +49,7 @@
      ]
     },
     {
-     "text": "LZ 46 07 51 D",
+     "text": "[made-up value]",
      "type": "ni_number",
      "box": [
       330,
@@ -59,7 +59,7 @@
      ]
     },
     {
-     "text": "12 Jan 1976",
+     "text": "[made-up value]",
      "type": "dob",
      "box": [
       330,
@@ -69,7 +69,7 @@
      ]
     },
     {
-     "text": "57-91-20",
+     "text": "[made-up value]",
      "type": "sort_code",
      "box": [
       330,
@@ -79,7 +79,7 @@
      ]
     },
     {
-     "text": "47804613",
+     "text": "[made-up value]",
      "type": "account_number",
      "box": [
       330,
@@ -90,7 +90,7 @@
     }
    ],
    "parse_error": null,
-   "content": "[\n{\"text\": \"Katie Edwards\", \"type\": \"name\", \"box\": [330, 195, 480, 220]},\n{\"text\": \"4 Heath Inlet\", \"type\": \"address\", \"box\": [330, 215, 470, 240]},\n{\"text\": \"Schofieldbury\", \"type\": \"address\", \"box\": [330, 240, 480, 265]},\n{\"text\": \"M9E 0TQ\", \"type\": \"postcode\", \"box\": [330, 265, 450, 290]},\n{\"text\": \"LZ 46 07 51 D\", \"type\": \"ni_number\", \"box\": [330, 290, 500, 315]},\n{\"text\": \"12 Jan 1976\", \"type\": \"dob\", \"box\": [330, 315, 470, 340]},\n{\"text\": \"57-91-20\", \"type\": \"sort_code\", \"box\": [330, 340, 430, 365]},\n{\"text\": \"47804613\", \"type\": \"account_number\", \"box\": [330, 365, 430, 390]}\n]",
+   "content": "[\n{\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [330, 195, 480, 220]},\n{\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [330, 215, 470, 240]},\n{\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [330, 240, 480, 265]},\n{\"text\": \"M9E 0TQ\", \"type\": \"postcode\", \"box\": [330, 265, 450, 290]},\n{\"text\": \"[made-up value]\", \"type\": \"ni_number\", \"box\": [330, 290, 500, 315]},\n{\"text\": \"[made-up value]\", \"type\": \"dob\", \"box\": [330, 315, 470, 340]},\n{\"text\": \"[made-up value]\", \"type\": \"sort_code\", \"box\": [330, 340, 430, 365]},\n{\"text\": \"[made-up value]\", \"type\": \"account_number\", \"box\": [330, 365, 430, 390]}\n]",
    "reasoning_chars": 2161,
    "usage": {
     "completion_tokens": 990,
@@ -107,7 +107,7 @@
    "seconds": 24.71,
    "items": [
     {
-     "text": "Adam Smith",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       365,
@@ -117,7 +117,7 @@
      ]
     },
     {
-     "text": "58 Maurice Rue",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       365,
@@ -127,7 +127,7 @@
      ]
     },
     {
-     "text": "South Abigail",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       365,
@@ -147,7 +147,7 @@
      ]
     },
     {
-     "text": "XZ 74 37 14 B",
+     "text": "[made-up value]",
      "type": "ni_number",
      "box": [
       365,
@@ -157,7 +157,7 @@
      ]
     },
     {
-     "text": "09 May 1975",
+     "text": "[made-up value]",
      "type": "dob",
      "box": [
       365,
@@ -167,7 +167,7 @@
      ]
     },
     {
-     "text": "06-33-48",
+     "text": "[made-up value]",
      "type": "sort_code",
      "box": [
       365,
@@ -177,7 +177,7 @@
      ]
     },
     {
-     "text": "75805277",
+     "text": "[made-up value]",
      "type": "account_number",
      "box": [
       365,
@@ -188,7 +188,7 @@
     }
    ],
    "parse_error": null,
-   "content": "[\n{\"text\": \"Adam Smith\", \"type\": \"name\", \"box\": [365, 155, 490, 175]},\n{\"text\": \"58 Maurice Rue\", \"type\": \"address\", \"box\": [365, 175, 540, 195]},\n{\"text\": \"South Abigail\", \"type\": \"address\", \"box\": [365, 195, 500, 215]},\n{\"text\": \"W4U 7DL\", \"type\": \"postcode\", \"box\": [365, 215, 450, 235]},\n{\"text\": \"XZ 74 37 14 B\", \"type\": \"ni_number\", \"box\": [365, 235, 530, 255]},\n{\"text\": \"09 May 1975\", \"type\": \"dob\", \"box\": [365, 255, 480, 275]},\n{\"text\": \"06-33-48\", \"type\": \"sort_code\", \"box\": [365, 275, 450, 295]},\n{\"text\": \"75805277\", \"type\": \"account_number\", \"box\": [365, 295, 470, 315]}\n]",
+   "content": "[\n{\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [365, 155, 490, 175]},\n{\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [365, 175, 540, 195]},\n{\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [365, 195, 500, 215]},\n{\"text\": \"W4U 7DL\", \"type\": \"postcode\", \"box\": [365, 215, 450, 235]},\n{\"text\": \"[made-up value]\", \"type\": \"ni_number\", \"box\": [365, 235, 530, 255]},\n{\"text\": \"[made-up value]\", \"type\": \"dob\", \"box\": [365, 255, 480, 275]},\n{\"text\": \"[made-up value]\", \"type\": \"sort_code\", \"box\": [365, 275, 450, 295]},\n{\"text\": \"[made-up value]\", \"type\": \"account_number\", \"box\": [365, 295, 470, 315]}\n]",
    "reasoning_chars": 2151,
    "usage": {
     "completion_tokens": 920,
@@ -205,7 +205,7 @@
    "seconds": 21.81,
    "items": [
     {
-     "text": "Sian Griffiths",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       320,
@@ -215,7 +215,7 @@
      ]
     },
     {
-     "text": "99 Leanne Lane",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       320,
@@ -225,7 +225,7 @@
      ]
     },
     {
-     "text": "North Simon",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       320,
@@ -235,7 +235,7 @@
      ]
     },
     {
-     "text": "WC3R 5AL",
+     "text": "[made-up value]",
      "type": "postcode",
      "box": [
       320,
@@ -245,7 +245,7 @@
      ]
     },
     {
-     "text": "BJ 70 50 40 D",
+     "text": "[made-up value]",
      "type": "ni_number",
      "box": [
       320,
@@ -255,7 +255,7 @@
      ]
     },
     {
-     "text": "03 October 1968",
+     "text": "[made-up value]",
      "type": "dob",
      "box": [
       320,
@@ -265,7 +265,7 @@
      ]
     },
     {
-     "text": "86-14-13",
+     "text": "[made-up value]",
      "type": "sort_code",
      "box": [
       320,
@@ -275,7 +275,7 @@
      ]
     },
     {
-     "text": "49908630",
+     "text": "[made-up value]",
      "type": "account_number",
      "box": [
       320,
@@ -286,7 +286,7 @@
     }
    ],
    "parse_error": null,
-   "content": "[\n{\"text\": \"Sian Griffiths\", \"type\": \"name\", \"box\": [320, 190, 560, 215]},\n{\"text\": \"99 Leanne Lane\", \"type\": \"address\", \"box\": [320, 220, 545, 245]},\n{\"text\": \"North Simon\", \"type\": \"address\", \"box\": [320, 250, 485, 275]},\n{\"text\": \"WC3R 5AL\", \"type\": \"postcode\", \"box\": [320, 285, 455, 305]},\n{\"text\": \"BJ 70 50 40 D\", \"type\": \"ni_number\", \"box\": [320, 315, 525, 335]},\n{\"text\": \"03 October 1968\", \"type\": \"dob\", \"box\": [320, 345, 565, 365]},\n{\"text\": \"86-14-13\", \"type\": \"sort_code\", \"box\": [320, 375, 425, 395]},\n{\"text\": \"49908630\", \"type\": \"account_number\", \"box\": [320, 405, 435, 425]}\n]",
+   "content": "[\n{\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [320, 190, 560, 215]},\n{\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [320, 220, 545, 245]},\n{\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [320, 250, 485, 275]},\n{\"text\": \"[made-up value]\", \"type\": \"postcode\", \"box\": [320, 285, 455, 305]},\n{\"text\": \"[made-up value]\", \"type\": \"ni_number\", \"box\": [320, 315, 525, 335]},\n{\"text\": \"[made-up value]\", \"type\": \"dob\", \"box\": [320, 345, 565, 365]},\n{\"text\": \"[made-up value]\", \"type\": \"sort_code\", \"box\": [320, 375, 425, 395]},\n{\"text\": \"[made-up value]\", \"type\": \"account_number\", \"box\": [320, 405, 435, 425]}\n]",
    "reasoning_chars": 1977,
    "usage": {
     "completion_tokens": 815,
@@ -303,7 +303,7 @@
    "seconds": 27.18,
    "items": [
     {
-     "text": "Bruce Taylor",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       360,
@@ -313,7 +313,7 @@
      ]
     },
     {
-     "text": "6 Matthew Track",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       360,
@@ -323,7 +323,7 @@
      ]
     },
     {
-     "text": "Cliffordfurt",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       360,
@@ -343,7 +343,7 @@
      ]
     },
     {
-     "text": "YB 13 81 78 A",
+     "text": "[made-up value]",
      "type": "ni_number",
      "box": [
       360,
@@ -353,7 +353,7 @@
      ]
     },
     {
-     "text": "21 Oct 1975",
+     "text": "[made-up value]",
      "type": "dob",
      "box": [
       360,
@@ -363,7 +363,7 @@
      ]
     },
     {
-     "text": "44-49-30",
+     "text": "[made-up value]",
      "type": "sort_code",
      "box": [
       360,
@@ -373,7 +373,7 @@
      ]
     },
     {
-     "text": "61054617",
+     "text": "[made-up value]",
      "type": "account_number",
      "box": [
       360,
@@ -384,7 +384,7 @@
     }
    ],
    "parse_error": null,
-   "content": "[\n{\"text\": \"Bruce Taylor\", \"type\": \"name\", \"box\": [360, 170, 520, 195]},\n{\"text\": \"6 Matthew Track\", \"type\": \"address\", \"box\": [360, 195, 560, 220]},\n{\"text\": \"Cliffordfurt\", \"type\": \"address\", \"box\": [360, 220, 520, 245]},\n{\"text\": \"W8 1JW\", \"type\": \"postcode\", \"box\": [360, 250, 460, 275]},\n{\"text\": \"YB 13 81 78 A\", \"type\": \"ni_number\", \"box\": [360, 280, 510, 305]},\n{\"text\": \"21 Oct 1975\", \"type\": \"dob\", \"box\": [360, 310, 490, 335]},\n{\"text\": \"44-49-30\", \"type\": \"sort_code\", \"box\": [360, 340, 490, 365]},\n{\"text\": \"61054617\", \"type\": \"account_number\", \"box\": [360, 370, 500, 395]}\n]",
+   "content": "[\n{\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [360, 170, 520, 195]},\n{\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [360, 195, 560, 220]},\n{\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [360, 220, 520, 245]},\n{\"text\": \"W8 1JW\", \"type\": \"postcode\", \"box\": [360, 250, 460, 275]},\n{\"text\": \"[made-up value]\", \"type\": \"ni_number\", \"box\": [360, 280, 510, 305]},\n{\"text\": \"[made-up value]\", \"type\": \"dob\", \"box\": [360, 310, 490, 335]},\n{\"text\": \"[made-up value]\", \"type\": \"sort_code\", \"box\": [360, 340, 490, 365]},\n{\"text\": \"[made-up value]\", \"type\": \"account_number\", \"box\": [360, 370, 500, 395]}\n]",
    "reasoning_chars": 2449,
    "usage": {
     "completion_tokens": 1030,
@@ -401,7 +401,7 @@
    "seconds": 22.74,
    "items": [
     {
-     "text": "Joe Marshall",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       330,
@@ -411,7 +411,7 @@
      ]
     },
     {
-     "text": "34 Gibbs Isle",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       330,
@@ -421,7 +421,7 @@
      ]
     },
     {
-     "text": "North Christine",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       330,
@@ -441,7 +441,7 @@
      ]
     },
     {
-     "text": "CP 17 63 95 A",
+     "text": "[made-up value]",
      "type": "ni_number",
      "box": [
       330,
@@ -451,7 +451,7 @@
      ]
     },
     {
-     "text": "25 September 1996",
+     "text": "[made-up value]",
      "type": "dob",
      "box": [
       330,
@@ -461,7 +461,7 @@
      ]
     },
     {
-     "text": "25-88-67",
+     "text": "[made-up value]",
      "type": "sort_code",
      "box": [
       330,
@@ -471,7 +471,7 @@
      ]
     },
     {
-     "text": "63479653",
+     "text": "[made-up value]",
      "type": "account_number",
      "box": [
       330,
@@ -482,7 +482,7 @@
     }
    ],
    "parse_error": null,
-   "content": "[\n{\"text\": \"Joe Marshall\", \"type\": \"name\", \"box\": [330, 155, 500, 180]},\n{\"text\": \"34 Gibbs Isle\", \"type\": \"address\", \"box\": [330, 180, 440, 205]},\n{\"text\": \"North Christine\", \"type\": \"address\", \"box\": [330, 200, 510, 230]},\n{\"text\": \"W6 9QA\", \"type\": \"postcode\", \"box\": [330, 225, 440, 250]},\n{\"text\": \"CP 17 63 95 A\", \"type\": \"ni_number\", \"box\": [330, 250, 530, 275]},\n{\"text\": \"25 September 1996\", \"type\": \"dob\", \"box\": [330, 270, 550, 300]},\n{\"text\": \"25-88-67\", \"type\": \"sort_code\", \"box\": [330, 305, 430, 330]},\n{\"text\": \"63479653\", \"type\": \"account_number\", \"box\": [330, 330, 450, 355]}\n]",
+   "content": "[\n{\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [330, 155, 500, 180]},\n{\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [330, 180, 440, 205]},\n{\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [330, 200, 510, 230]},\n{\"text\": \"W6 9QA\", \"type\": \"postcode\", \"box\": [330, 225, 440, 250]},\n{\"text\": \"[made-up value]\", \"type\": \"ni_number\", \"box\": [330, 250, 530, 275]},\n{\"text\": \"[made-up value]\", \"type\": \"dob\", \"box\": [330, 270, 550, 300]},\n{\"text\": \"[made-up value]\", \"type\": \"sort_code\", \"box\": [330, 305, 430, 330]},\n{\"text\": \"[made-up value]\", \"type\": \"account_number\", \"box\": [330, 330, 450, 355]}\n]",
    "reasoning_chars": 1918,
    "usage": {
     "completion_tokens": 844,
@@ -499,7 +499,7 @@
    "seconds": 39.61,
    "items": [
     {
-     "text": "Laura Jones",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       60,
@@ -509,7 +509,7 @@
      ]
     },
     {
-     "text": "54 Hill Islands",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       60,
@@ -519,7 +519,7 @@
      ]
     },
     {
-     "text": "South Williamside",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       60,
@@ -539,7 +539,7 @@
      ]
     },
     {
-     "text": "Laura Jones",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       60,
@@ -549,7 +549,7 @@
      ]
     },
     {
-     "text": "laura.jones@example.net",
+     "text": "[made-up value]",
      "type": "email",
      "box": [
       320,
@@ -559,7 +559,7 @@
      ]
     },
     {
-     "text": "47-61-61",
+     "text": "[made-up value]",
      "type": "sort_code",
      "box": [
       320,
@@ -569,7 +569,7 @@
      ]
     },
     {
-     "text": "65485805",
+     "text": "[made-up value]",
      "type": "account_number",
      "box": [
       320,
@@ -579,7 +579,7 @@
      ]
     },
     {
-     "text": "07700 900674",
+     "text": "[made-up value]",
      "type": "phone",
      "box": [
       320,
@@ -589,7 +589,7 @@
      ]
     },
     {
-     "text": "Ellen Okafor",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       70,
@@ -600,7 +600,7 @@
     }
    ],
    "parse_error": null,
-   "content": "[\n  {\"text\": \"Laura Jones\", \"type\": \"name\", \"box\": [60, 185, 200, 210]},\n  {\"text\": \"54 Hill Islands\", \"type\": \"address\", \"box\": [60, 215, 210, 235]},\n  {\"text\": \"South Williamside\", \"type\": \"address\", \"box\": [60, 245, 250, 265]},\n  {\"text\": \"B31 2HD\", \"type\": \"postcode\", \"box\": [60, 275, 160, 295]},\n  {\"text\": \"Laura Jones\", \"type\": \"name\", \"box\": [60, 330, 210, 350]},\n  {\"text\": \"laura.jones@example.net\", \"type\": \"email\", \"box\": [320, 460, 530, 480]},\n  {\"text\": \"47-61-61\", \"type\": \"sort_code\", \"box\": [320, 485, 390, 505]},\n  {\"text\": \"65485805\", \"type\": \"account_number\", \"box\": [320, 510, 400, 530]},\n  {\"text\": \"07700 900674\", \"type\": \"phone\", \"box\": [320, 535, 440, 555]},\n  {\"text\": \"Ellen Okafor\", \"type\": \"name\", \"box\": [70, 640, 200, 660]}\n]",
+   "content": "[\n  {\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [60, 185, 200, 210]},\n  {\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [60, 215, 210, 235]},\n  {\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [60, 245, 250, 265]},\n  {\"text\": \"B31 2HD\", \"type\": \"postcode\", \"box\": [60, 275, 160, 295]},\n  {\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [60, 330, 210, 350]},\n  {\"text\": \"[made-up value]\", \"type\": \"email\", \"box\": [320, 460, 530, 480]},\n  {\"text\": \"[made-up value]\", \"type\": \"sort_code\", \"box\": [320, 485, 390, 505]},\n  {\"text\": \"[made-up value]\", \"type\": \"account_number\", \"box\": [320, 510, 400, 530]},\n  {\"text\": \"[made-up value]\", \"type\": \"phone\", \"box\": [320, 535, 440, 555]},\n  {\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [70, 640, 200, 660]}\n]",
    "reasoning_chars": 4237,
    "usage": {
     "completion_tokens": 1512,
@@ -617,7 +617,7 @@
    "seconds": 46.25,
    "items": [
     {
-     "text": "Alan Tomlinson",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       70,
@@ -627,7 +627,7 @@
      ]
     },
     {
-     "text": "6 Harry Lock",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       70,
@@ -657,7 +657,7 @@
      ]
     },
     {
-     "text": "Priya Lindqvist",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       70,
@@ -667,7 +667,7 @@
      ]
     },
     {
-     "text": "GB28 TSTB 3499 8458 2390 33",
+     "text": "[made-up value]",
      "type": "iban",
      "box": [
       360,
@@ -677,7 +677,7 @@
      ]
     },
     {
-     "text": "16116994",
+     "text": "[made-up value]",
      "type": "account_number",
      "box": [
       360,
@@ -687,7 +687,7 @@
      ]
     },
     {
-     "text": "alan tomlinson@example.org",
+     "text": "[made-up value]@example.org",
      "type": "email",
      "box": [
       360,
@@ -697,7 +697,7 @@
      ]
     },
     {
-     "text": "07700 900525",
+     "text": "[made-up value]",
      "type": "phone",
      "box": [
       360,
@@ -708,7 +708,7 @@
     }
    ],
    "parse_error": null,
-   "content": "[\n{\"text\": \"Alan Tomlinson\", \"type\": \"name\", \"box\": [70, 170, 260, 190]},\n{\"text\": \"6 Harry Lock\", \"type\": \"address\", \"box\": [70, 195, 220, 215]},\n{\"text\": \"Sambury\", \"type\": \"address\", \"box\": [70, 220, 180, 240]},\n{\"text\": \"N90 7NG\", \"type\": \"postcode\", \"box\": [70, 245, 175, 265]},\n{\"text\": \"Priya Lindqvist\", \"type\": \"name\", \"box\": [70, 650, 240, 670]},\n{\"text\": \"GB28 TSTB 3499 8458 2390 33\", \"type\": \"iban\", \"box\": [360, 400, 660, 425]},\n{\"text\": \"16116994\", \"type\": \"account_number\", \"box\": [360, 425, 500, 445]},\n{\"text\": \"alan tomlinson@example.org\", \"type\": \"email\", \"box\": [360, 450, 650, 470]},\n{\"text\": \"07700 900525\", \"type\": \"phone\", \"box\": [360, 475, 550, 495]}\n]",
+   "content": "[\n{\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [70, 170, 260, 190]},\n{\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [70, 195, 220, 215]},\n{\"text\": \"Sambury\", \"type\": \"address\", \"box\": [70, 220, 180, 240]},\n{\"text\": \"N90 7NG\", \"type\": \"postcode\", \"box\": [70, 245, 175, 265]},\n{\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [70, 650, 240, 670]},\n{\"text\": \"[made-up value]\", \"type\": \"iban\", \"box\": [360, 400, 660, 425]},\n{\"text\": \"[made-up value]\", \"type\": \"account_number\", \"box\": [360, 425, 500, 445]},\n{\"text\": \"[made-up value]@example.org\", \"type\": \"email\", \"box\": [360, 450, 650, 470]},\n{\"text\": \"[made-up value]\", \"type\": \"phone\", \"box\": [360, 475, 550, 495]}\n]",
    "reasoning_chars": 4963,
    "usage": {
     "completion_tokens": 1785,
@@ -725,7 +725,7 @@
    "seconds": 37.46,
    "items": [
     {
-     "text": "Dale Pearson",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       105,
@@ -735,7 +735,7 @@
      ]
     },
     {
-     "text": "13 Hart Track",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       105,
@@ -745,7 +745,7 @@
      ]
     },
     {
-     "text": "North Benjaminstad",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       105,
@@ -765,7 +765,7 @@
      ]
     },
     {
-     "text": "Dale Pearson",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       120,
@@ -775,7 +775,7 @@
      ]
     },
     {
-     "text": "Priya Hale",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       115,
@@ -815,7 +815,7 @@
      ]
     },
     {
-     "text": "dale.pearson@mail.test",
+     "text": "[made-up value]",
      "type": "email",
      "box": [
       315,
@@ -826,7 +826,7 @@
     }
    ],
    "parse_error": null,
-   "content": "[\n  {\"text\": \"Dale Pearson\", \"type\": \"name\", \"box\": [105, 185, 245, 205]},\n  {\"text\": \"13 Hart Track\", \"type\": \"address\", \"box\": [105, 210, 225, 230]},\n  {\"text\": \"North Benjaminstad\", \"type\": \"address\", \"box\": [105, 230, 265, 250]},\n  {\"text\": \"DM4 6ZP\", \"type\": \"postcode\", \"box\": [105, 255, 190, 275]},\n  {\"text\": \"Dale Pearson\", \"type\": \"name\", \"box\": [120, 330, 265, 350]},\n  {\"text\": \"Priya Hale\", \"type\": \"name\", \"box\": [115, 650, 220, 670]},\n  {\"text\": \"19881500\", \"type\": \"account_number\", \"box\": [315, 455, 430, 475]},\n  {\"text\": \"07700 900913\", \"type\": \"phone\", \"box\": [315, 475, 495, 495]},\n  {\"text\": \"GB97 TXTB 5883 5276 6413 30\", \"type\": \"iban\", \"box\": [315, 495, 710, 515]},\n  {\"text\": \"dale.pearson@mail.test\", \"type\": \"email\", \"box\": [315, 520, 535, 540]}\n]",
+   "content": "[\n  {\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [105, 185, 245, 205]},\n  {\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [105, 210, 225, 230]},\n  {\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [105, 230, 265, 250]},\n  {\"text\": \"DM4 6ZP\", \"type\": \"postcode\", \"box\": [105, 255, 190, 275]},\n  {\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [120, 330, 265, 350]},\n  {\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [115, 650, 220, 670]},\n  {\"text\": \"19881500\", \"type\": \"account_number\", \"box\": [315, 455, 430, 475]},\n  {\"text\": \"07700 900913\", \"type\": \"phone\", \"box\": [315, 475, 495, 495]},\n  {\"text\": \"GB97 TXTB 5883 5276 6413 30\", \"type\": \"iban\", \"box\": [315, 495, 710, 515]},\n  {\"text\": \"[made-up value]\", \"type\": \"email\", \"box\": [315, 520, 535, 540]}\n]",
    "reasoning_chars": 3619,
    "usage": {
     "completion_tokens": 1423,
@@ -843,7 +843,7 @@
    "seconds": 36.58,
    "items": [
     {
-     "text": "Jason Murphy",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       70,
@@ -853,7 +853,7 @@
      ]
     },
     {
-     "text": "3 Davison Turnpike",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       70,
@@ -863,7 +863,7 @@
      ]
     },
     {
-     "text": "Gibsonborough",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       70,
@@ -883,7 +883,7 @@
      ]
     },
     {
-     "text": "Jason Murphy",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       165,
@@ -893,7 +893,7 @@
      ]
     },
     {
-     "text": "Gareth Marsh",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       70,
@@ -903,7 +903,7 @@
      ]
     },
     {
-     "text": "jason.murphy@example.org",
+     "text": "[made-up value]",
      "type": "email",
      "box": [
       300,
@@ -913,7 +913,7 @@
      ]
     },
     {
-     "text": "07700 900424",
+     "text": "[made-up value]",
      "type": "phone",
      "box": [
       300,
@@ -923,7 +923,7 @@
      ]
     },
     {
-     "text": "GB85 TSTB 8374 0338 2919 95",
+     "text": "[made-up value]",
      "type": "iban",
      "box": [
       300,
@@ -933,7 +933,7 @@
      ]
     },
     {
-     "text": "13567193",
+     "text": "[made-up value]",
      "type": "account_number",
      "box": [
       300,
@@ -954,7 +954,7 @@
     }
    ],
    "parse_error": null,
-   "content": "[\n  {\"text\": \"Jason Murphy\", \"type\": \"name\", \"box\": [70, 195, 215, 220]},\n  {\"text\": \"3 Davison Turnpike\", \"type\": \"address\", \"box\": [70, 225, 255, 250]},\n  {\"text\": \"Gibsonborough\", \"type\": \"address\", \"box\": [70, 255, 220, 280]},\n  {\"text\": \"528 9ZG\", \"type\": \"postcode\", \"box\": [70, 285, 175, 310]},\n  {\"text\": \"Jason Murphy\", \"type\": \"name\", \"box\": [165, 340, 325, 365]},\n  {\"text\": \"Gareth Marsh\", \"type\": \"name\", \"box\": [70, 650, 195, 675]},\n  {\"text\": \"jason.murphy@example.org\", \"type\": \"email\", \"box\": [300, 465, 505, 490]},\n  {\"text\": \"07700 900424\", \"type\": \"phone\", \"box\": [300, 490, 455, 515]},\n  {\"text\": \"GB85 TSTB 8374 0338 2919 95\", \"type\": \"iban\", \"box\": [300, 515, 650, 540]},\n  {\"text\": \"13567193\", \"type\": \"account_number\", \"box\": [300, 540, 405, 565]},\n  {\"text\": \"433516\", \"type\": \"id_number\", \"box\": [820, 185, 880, 205]}\n]",
+   "content": "[\n  {\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [70, 195, 215, 220]},\n  {\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [70, 225, 255, 250]},\n  {\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [70, 255, 220, 280]},\n  {\"text\": \"528 9ZG\", \"type\": \"postcode\", \"box\": [70, 285, 175, 310]},\n  {\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [165, 340, 325, 365]},\n  {\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [70, 650, 195, 675]},\n  {\"text\": \"[made-up value]\", \"type\": \"email\", \"box\": [300, 465, 505, 490]},\n  {\"text\": \"[made-up value]\", \"type\": \"phone\", \"box\": [300, 490, 455, 515]},\n  {\"text\": \"[made-up value]\", \"type\": \"iban\", \"box\": [300, 515, 650, 540]},\n  {\"text\": \"[made-up value]\", \"type\": \"account_number\", \"box\": [300, 540, 405, 565]},\n  {\"text\": \"433516\", \"type\": \"id_number\", \"box\": [820, 185, 880, 205]}\n]",
    "reasoning_chars": 3654,
    "usage": {
     "completion_tokens": 1402,
@@ -971,7 +971,7 @@
    "seconds": 38.38,
    "items": [
     {
-     "text": "Jennifer Lewis",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       50,
@@ -981,7 +981,7 @@
      ]
     },
     {
-     "text": "9 Conor Station",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       50,
@@ -991,7 +991,7 @@
      ]
     },
     {
-     "text": "New Carolmouth",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       50,
@@ -1001,7 +1001,7 @@
      ]
     },
     {
-     "text": "JE12 3BX",
+     "text": "[made-up value]",
      "type": "postcode",
      "box": [
       50,
@@ -1011,7 +1011,7 @@
      ]
     },
     {
-     "text": "Jennifer Lewis",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       50,
@@ -1021,7 +1021,7 @@
      ]
     },
     {
-     "text": "4012 8888 8888 1881",
+     "text": "[made-up value]",
      "type": "card_number",
      "box": [
       340,
@@ -1031,7 +1031,7 @@
      ]
     },
     {
-     "text": "jennifer.lewis@example.org",
+     "text": "[made-up value]",
      "type": "email",
      "box": [
       340,
@@ -1041,7 +1041,7 @@
      ]
     },
     {
-     "text": "07700 900867",
+     "text": "[made-up value]",
      "type": "phone",
      "box": [
       340,
@@ -1051,7 +1051,7 @@
      ]
     },
     {
-     "text": "19934186",
+     "text": "[made-up value]",
      "type": "account_number",
      "box": [
       340,
@@ -1061,7 +1061,7 @@
      ]
     },
     {
-     "text": "Tomasz Okafor",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       60,
@@ -1072,7 +1072,7 @@
     }
    ],
    "parse_error": null,
-   "content": "[\n{\"text\": \"Jennifer Lewis\", \"type\": \"name\", \"box\": [50, 155, 200, 175]},\n{\"text\": \"9 Conor Station\", \"type\": \"address\", \"box\": [50, 185, 230, 205]},\n{\"text\": \"New Carolmouth\", \"type\": \"address\", \"box\": [50, 215, 230, 235]},\n{\"text\": \"JE12 3BX\", \"type\": \"postcode\", \"box\": [50, 245, 180, 265]},\n{\"text\": \"Jennifer Lewis\", \"type\": \"name\", \"box\": [50, 300, 260, 320]},\n{\"text\": \"4012 8888 8888 1881\", \"type\": \"card_number\", \"box\": [340, 435, 640, 455]},\n{\"text\": \"jennifer.lewis@example.org\", \"type\": \"email\", \"box\": [340, 465, 650, 485]},\n{\"text\": \"07700 900867\", \"type\": \"phone\", \"box\": [340, 495, 550, 515]},\n{\"text\": \"19934186\", \"type\": \"account_number\", \"box\": [340, 525, 480, 545]},\n{\"text\": \"Tomasz Okafor\", \"type\": \"name\", \"box\": [60, 555, 250, 575]}\n]",
+   "content": "[\n{\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [50, 155, 200, 175]},\n{\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [50, 185, 230, 205]},\n{\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [50, 215, 230, 235]},\n{\"text\": \"[made-up value]\", \"type\": \"postcode\", \"box\": [50, 245, 180, 265]},\n{\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [50, 300, 260, 320]},\n{\"text\": \"[made-up value]\", \"type\": \"card_number\", \"box\": [340, 435, 640, 455]},\n{\"text\": \"[made-up value]\", \"type\": \"email\", \"box\": [340, 465, 650, 485]},\n{\"text\": \"[made-up value]\", \"type\": \"phone\", \"box\": [340, 495, 550, 515]},\n{\"text\": \"[made-up value]\", \"type\": \"account_number\", \"box\": [340, 525, 480, 545]},\n{\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [60, 555, 250, 575]}\n]",
    "reasoning_chars": 3832,
    "usage": {
     "completion_tokens": 1474,
@@ -1109,7 +1109,7 @@
      ]
     },
     {
-     "text": "29 Oct 1987",
+     "text": "[made-up value]",
      "type": "dob",
      "box": [
       350,
@@ -1119,7 +1119,7 @@
      ]
     },
     {
-     "text": "GH8048004",
+     "text": "[made-up value]",
      "type": "id_number",
      "box": [
       350,
@@ -1129,7 +1129,7 @@
      ]
     },
     {
-     "text": "660 Benjamin Shoals",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       350,
@@ -1170,7 +1170,7 @@
     }
    ],
    "parse_error": null,
-   "content": "[\n  {\"text\": \"GREEN\", \"type\": \"name\", \"box\": [350, 220, 460, 260]},\n  {\"text\": \"Rachel\", \"type\": \"name\", \"box\": [350, 300, 440, 340]},\n  {\"text\": \"29 Oct 1987\", \"type\": \"dob\", \"box\": [350, 370, 490, 410]},\n  {\"text\": \"GH8048004\", \"type\": \"id_number\", \"box\": [350, 445, 500, 490]},\n  {\"text\": \"660 Benjamin Shoals\", \"type\": \"address\", \"box\": [350, 520, 595, 560]},\n  {\"text\": \"West Stephaniestown\", \"type\": \"address\", \"box\": [350, 575, 620, 615]},\n  {\"text\": \"TR8 6DS\", \"type\": \"postcode\", \"box\": [650, 580, 770, 620]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [115, 250, 270, 560]}\n]",
+   "content": "[\n  {\"text\": \"GREEN\", \"type\": \"name\", \"box\": [350, 220, 460, 260]},\n  {\"text\": \"Rachel\", \"type\": \"name\", \"box\": [350, 300, 440, 340]},\n  {\"text\": \"[made-up value]\", \"type\": \"dob\", \"box\": [350, 370, 490, 410]},\n  {\"text\": \"[made-up value]\", \"type\": \"id_number\", \"box\": [350, 445, 500, 490]},\n  {\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [350, 520, 595, 560]},\n  {\"text\": \"West Stephaniestown\", \"type\": \"address\", \"box\": [350, 575, 620, 615]},\n  {\"text\": \"TR8 6DS\", \"type\": \"postcode\", \"box\": [650, 580, 770, 620]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [115, 250, 270, 560]}\n]",
    "reasoning_chars": 3923,
    "usage": {
     "completion_tokens": 1353,
@@ -1207,7 +1207,7 @@
      ]
     },
     {
-     "text": "03 July 1963",
+     "text": "[made-up value]",
      "type": "dob",
      "box": [
       370,
@@ -1217,7 +1217,7 @@
      ]
     },
     {
-     "text": "ZK7814925",
+     "text": "[made-up value]",
      "type": "id_number",
      "box": [
       370,
@@ -1227,7 +1227,7 @@
      ]
     },
     {
-     "text": "885 Lyons Union",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       370,
@@ -1237,7 +1237,7 @@
      ]
     },
     {
-     "text": "Mathewville",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       370,
@@ -1247,7 +1247,7 @@
      ]
     },
     {
-     "text": "PR3Y 4DZ",
+     "text": "[made-up value]",
      "type": "postcode",
      "box": [
       545,
@@ -1268,7 +1268,7 @@
     }
    ],
    "parse_error": null,
-   "content": "[\n  {\"text\": \"HUSSAIN\", \"type\": \"name\", \"box\": [370, 230, 520, 265]},\n  {\"text\": \"Harriet\", \"type\": \"name\", \"box\": [370, 285, 470, 315]},\n  {\"text\": \"03 July 1963\", \"type\": \"dob\", \"box\": [370, 330, 540, 360]},\n  {\"text\": \"ZK7814925\", \"type\": \"id_number\", \"box\": [370, 385, 520, 415]},\n  {\"text\": \"885 Lyons Union\", \"type\": \"address\", \"box\": [370, 450, 560, 480]},\n  {\"text\": \"Mathewville\", \"type\": \"address\", \"box\": [370, 505, 490, 540]},\n  {\"text\": \"PR3Y 4DZ\", \"type\": \"postcode\", \"box\": [545, 505, 660, 540]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [125, 290, 295, 595]}\n]",
+   "content": "[\n  {\"text\": \"HUSSAIN\", \"type\": \"name\", \"box\": [370, 230, 520, 265]},\n  {\"text\": \"Harriet\", \"type\": \"name\", \"box\": [370, 285, 470, 315]},\n  {\"text\": \"[made-up value]\", \"type\": \"dob\", \"box\": [370, 330, 540, 360]},\n  {\"text\": \"[made-up value]\", \"type\": \"id_number\", \"box\": [370, 385, 520, 415]},\n  {\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [370, 450, 560, 480]},\n  {\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [370, 505, 490, 540]},\n  {\"text\": \"[made-up value]\", \"type\": \"postcode\", \"box\": [545, 505, 660, 540]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [125, 290, 295, 595]}\n]",
    "reasoning_chars": 5243,
    "usage": {
     "completion_tokens": 1751,
@@ -1305,7 +1305,7 @@
      ]
     },
     {
-     "text": "24 Jun 2000",
+     "text": "[made-up value]",
      "type": "dob",
      "box": [
       350,
@@ -1315,7 +1315,7 @@
      ]
     },
     {
-     "text": "TP3747147",
+     "text": "[made-up value]",
      "type": "id_number",
      "box": [
       350,
@@ -1325,7 +1325,7 @@
      ]
     },
     {
-     "text": "1 Edwards Street",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       350,
@@ -1335,7 +1335,7 @@
      ]
     },
     {
-     "text": "East Carolefort",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       350,
@@ -1366,7 +1366,7 @@
     }
    ],
    "parse_error": null,
-   "content": "[\n  {\"text\": \"ADAMS\", \"type\": \"name\", \"box\": [350, 250, 420, 280]},\n  {\"text\": \"Molly\", \"type\": \"name\", \"box\": [350, 310, 410, 340]},\n  {\"text\": \"24 Jun 2000\", \"type\": \"dob\", \"box\": [350, 370, 490, 400]},\n  {\"text\": \"TP3747147\", \"type\": \"id_number\", \"box\": [350, 430, 500, 460]},\n  {\"text\": \"1 Edwards Street\", \"type\": \"address\", \"box\": [350, 500, 520, 530]},\n  {\"text\": \"East Carolefort\", \"type\": \"address\", \"box\": [350, 560, 520, 590]},\n  {\"text\": \"B5 8FF\", \"type\": \"postcode\", \"box\": [550, 560, 620, 590]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [70, 220, 270, 600]}\n]",
+   "content": "[\n  {\"text\": \"ADAMS\", \"type\": \"name\", \"box\": [350, 250, 420, 280]},\n  {\"text\": \"Molly\", \"type\": \"name\", \"box\": [350, 310, 410, 340]},\n  {\"text\": \"[made-up value]\", \"type\": \"dob\", \"box\": [350, 370, 490, 400]},\n  {\"text\": \"[made-up value]\", \"type\": \"id_number\", \"box\": [350, 430, 500, 460]},\n  {\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [350, 500, 520, 530]},\n  {\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [350, 560, 520, 590]},\n  {\"text\": \"B5 8FF\", \"type\": \"postcode\", \"box\": [550, 560, 620, 590]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [70, 220, 270, 600]}\n]",
    "reasoning_chars": 3352,
    "usage": {
     "completion_tokens": 1218,
@@ -1403,7 +1403,7 @@
      ]
     },
     {
-     "text": "01 April 1957",
+     "text": "[made-up value]",
      "type": "dob",
      "box": [
       358,
@@ -1413,7 +1413,7 @@
      ]
     },
     {
-     "text": "XT6249609",
+     "text": "[made-up value]",
      "type": "id_number",
      "box": [
       359,
@@ -1423,7 +1423,7 @@
      ]
     },
     {
-     "text": "778 Young Knoll",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       359,
@@ -1433,7 +1433,7 @@
      ]
     },
     {
-     "text": "Cookemouth, LL17 9FS",
+     "text": "[made-up value], [made-up value]",
      "type": "address",
      "box": [
       359,
@@ -1443,7 +1443,7 @@
      ]
     },
     {
-     "text": "LL17 9FS",
+     "text": "[made-up value]",
      "type": "postcode",
      "box": [
       500,
@@ -1464,7 +1464,7 @@
     }
    ],
    "parse_error": null,
-   "content": "[\n  {\"text\": \"NEWMAN\", \"type\": \"name\", \"box\": [359, 225, 484, 257]},\n  {\"text\": \"Tom\", \"type\": \"name\", \"box\": [358, 295, 409, 325]},\n  {\"text\": \"01 April 1957\", \"type\": \"dob\", \"box\": [358, 355, 504, 386]},\n  {\"text\": \"XT6249609\", \"type\": \"id_number\", \"box\": [359, 430, 489, 460]},\n  {\"text\": \"778 Young Knoll\", \"type\": \"address\", \"box\": [359, 505, 489, 535]},\n  {\"text\": \"Cookemouth, LL17 9FS\", \"type\": \"address\", \"box\": [359, 568, 623, 606]},\n  {\"text\": \"LL17 9FS\", \"type\": \"postcode\", \"box\": [500, 570, 620, 603]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [115, 340, 265, 590]}\n]",
+   "content": "[\n  {\"text\": \"NEWMAN\", \"type\": \"name\", \"box\": [359, 225, 484, 257]},\n  {\"text\": \"Tom\", \"type\": \"name\", \"box\": [358, 295, 409, 325]},\n  {\"text\": \"[made-up value]\", \"type\": \"dob\", \"box\": [358, 355, 504, 386]},\n  {\"text\": \"[made-up value]\", \"type\": \"id_number\", \"box\": [359, 430, 489, 460]},\n  {\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [359, 505, 489, 535]},\n  {\"text\": \"[made-up value], [made-up value]\", \"type\": \"address\", \"box\": [359, 568, 623, 606]},\n  {\"text\": \"[made-up value]\", \"type\": \"postcode\", \"box\": [500, 570, 620, 603]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [115, 340, 265, 590]}\n]",
    "reasoning_chars": 3383,
    "usage": {
     "completion_tokens": 1264,
@@ -1491,7 +1491,7 @@
      ]
     },
     {
-     "text": "Jennifer",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       350,
@@ -1501,7 +1501,7 @@
      ]
     },
     {
-     "text": "11 April 1959",
+     "text": "[made-up value]",
      "type": "dob",
      "box": [
       350,
@@ -1511,7 +1511,7 @@
      ]
     },
     {
-     "text": "RT2087064",
+     "text": "[made-up value]",
      "type": "id_number",
      "box": [
       350,
@@ -1521,7 +1521,7 @@
      ]
     },
     {
-     "text": "165 Cheryl Turnpike",
+     "text": "[made-up value]",
      "type": "address",
      "box": [
       350,
@@ -1531,7 +1531,7 @@
      ]
     },
     {
-     "text": "Newtonhaven,",
+     "text": "[made-up value],",
      "type": "address",
      "box": [
       350,
@@ -1562,7 +1562,7 @@
     }
    ],
    "parse_error": null,
-   "content": "[\n  {\"text\": \"WATTS\", \"type\": \"name\", \"box\": [350, 250, 450, 285]},\n  {\"text\": \"Jennifer\", \"type\": \"name\", \"box\": [350, 315, 480, 350]},\n  {\"text\": \"11 April 1959\", \"type\": \"dob\", \"box\": [350, 380, 580, 415]},\n  {\"text\": \"RT2087064\", \"type\": \"id_number\", \"box\": [350, 455, 560, 490]},\n  {\"text\": \"165 Cheryl Turnpike\", \"type\": \"address\", \"box\": [350, 520, 630, 555]},\n  {\"text\": \"Newtonhaven,\", \"type\": \"address\", \"box\": [350, 580, 540, 615]},\n  {\"text\": \"YO6 5AX\", \"type\": \"postcode\", \"box\": [580, 580, 670, 615]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [115, 260, 280, 570]}\n]",
+   "content": "[\n  {\"text\": \"WATTS\", \"type\": \"name\", \"box\": [350, 250, 450, 285]},\n  {\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [350, 315, 480, 350]},\n  {\"text\": \"[made-up value]\", \"type\": \"dob\", \"box\": [350, 380, 580, 415]},\n  {\"text\": \"[made-up value]\", \"type\": \"id_number\", \"box\": [350, 455, 560, 490]},\n  {\"text\": \"[made-up value]\", \"type\": \"address\", \"box\": [350, 520, 630, 555]},\n  {\"text\": \"[made-up value],\", \"type\": \"address\", \"box\": [350, 580, 540, 615]},\n  {\"text\": \"YO6 5AX\", \"type\": \"postcode\", \"box\": [580, 580, 670, 615]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [115, 260, 280, 570]}\n]",
    "reasoning_chars": 3305,
    "usage": {
     "completion_tokens": 1273,
@@ -1579,7 +1579,7 @@
    "seconds": 43.41,
    "items": [
     {
-     "text": "Justin Ali",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       5,
@@ -1609,7 +1609,7 @@
      ]
     },
     {
-     "text": "Justin Ali",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       500,
@@ -1619,7 +1619,7 @@
      ]
     },
     {
-     "text": "LM 20 01 25 C",
+     "text": "[made-up value]",
      "type": "ni_number",
      "box": [
       40,
@@ -1629,7 +1629,7 @@
      ]
     },
     {
-     "text": "4000 0566 5566 5556",
+     "text": "[made-up value]",
      "type": "card_number",
      "box": [
       500,
@@ -1640,7 +1640,7 @@
     }
    ],
    "parse_error": null,
-   "content": "[\n{\"text\":\"Justin Ali\",\"type\":\"name\",\"box\":[5,20,180,65]},\n{\"text\":\"464 Heath Village\",\"type\":\"address\",\"box\":[35,220,380,255]},\n{\"text\":\"ST2Y 0DG\",\"type\":\"postcode\",\"box\":[390,220,570,255]},\n{\"text\":\"Justin Ali\",\"type\":\"name\",\"box\":[500,445,590,485]},\n{\"text\":\"LM 20 01 25 C\",\"type\":\"ni_number\",\"box\":[40,555,480,595]},\n{\"text\":\"4000 0566 5566 5556\",\"type\":\"card_number\",\"box\":[500,795,590,835]}\n]",
+   "content": "[\n{\"text\":\"[made-up value]\",\"type\":\"name\",\"box\":[5,20,180,65]},\n{\"text\":\"464 Heath Village\",\"type\":\"address\",\"box\":[35,220,380,255]},\n{\"text\":\"ST2Y 0DG\",\"type\":\"postcode\",\"box\":[390,220,570,255]},\n{\"text\":\"[made-up value]\",\"type\":\"name\",\"box\":[500,445,590,485]},\n{\"text\":\"[made-up value]\",\"type\":\"ni_number\",\"box\":[40,555,480,595]},\n{\"text\":\"[made-up value]\",\"type\":\"card_number\",\"box\":[500,795,590,835]}\n]",
    "reasoning_chars": 5433,
    "usage": {
     "completion_tokens": 1692,
@@ -1657,7 +1657,7 @@
    "seconds": 36.63,
    "items": [
     {
-     "text": "Georgia Talbot",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       30,
@@ -1667,7 +1667,7 @@
      ]
     },
     {
-     "text": "RG9603170",
+     "text": "[made-up value]",
      "type": "id_number",
      "box": [
       440,
@@ -1677,7 +1677,7 @@
      ]
     },
     {
-     "text": "07700 900382",
+     "text": "[made-up value]",
      "type": "phone",
      "box": [
       90,
@@ -1687,7 +1687,7 @@
      ]
     },
     {
-     "text": "66-78-11",
+     "text": "[made-up value]",
      "type": "sort_code",
      "box": [
       90,
@@ -1697,7 +1697,7 @@
      ]
     },
     {
-     "text": "97010478",
+     "text": "[made-up value]",
      "type": "account_number",
      "box": [
       440,
@@ -1707,7 +1707,7 @@
      ]
     },
     {
-     "text": "GL 01 56 89 C",
+     "text": "[made-up value]",
      "type": "ni_number",
      "box": [
       440,
@@ -1718,7 +1718,7 @@
     }
    ],
    "parse_error": null,
-   "content": "[\n{\"text\":\"Georgia Talbot\",\"type\":\"name\",\"box\":[30,25,260,65]},\n{\"text\":\"RG9603170\",\"type\":\"id_number\",\"box\":[440,570,580,610]},\n{\"text\":\"07700 900382\",\"type\":\"phone\",\"box\":[90,595,430,635]},\n{\"text\":\"66-78-11\",\"type\":\"sort_code\",\"box\":[90,725,260,760]},\n{\"text\":\"97010478\",\"type\":\"account_number\",\"box\":[440,725,590,760]},\n{\"text\":\"GL 01 56 89 C\",\"type\":\"ni_number\",\"box\":[440,810,580,850]}\n]",
+   "content": "[\n{\"text\":\"[made-up value]\",\"type\":\"name\",\"box\":[30,25,260,65]},\n{\"text\":\"[made-up value]\",\"type\":\"id_number\",\"box\":[440,570,580,610]},\n{\"text\":\"[made-up value]\",\"type\":\"phone\",\"box\":[90,595,430,635]},\n{\"text\":\"[made-up value]\",\"type\":\"sort_code\",\"box\":[90,725,260,760]},\n{\"text\":\"[made-up value]\",\"type\":\"account_number\",\"box\":[440,725,590,760]},\n{\"text\":\"[made-up value]\",\"type\":\"ni_number\",\"box\":[440,810,580,850]}\n]",
    "reasoning_chars": 4100,
    "usage": {
     "completion_tokens": 1415,
@@ -1735,7 +1735,7 @@
    "seconds": 45.68,
    "items": [
     {
-     "text": "Danny Kelly",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       5,
@@ -1765,7 +1765,7 @@
      ]
     },
     {
-     "text": "41-27-65",
+     "text": "[made-up value]",
      "type": "sort_code",
      "box": [
       70,
@@ -1775,7 +1775,7 @@
      ]
     },
     {
-     "text": "63936353",
+     "text": "[made-up value]",
      "type": "account_number",
      "box": [
       420,
@@ -1785,7 +1785,7 @@
      ]
     },
     {
-     "text": "4000 0566 5566 5556",
+     "text": "[made-up value]",
      "type": "card_number",
      "box": [
       470,
@@ -1795,7 +1795,7 @@
      ]
     },
     {
-     "text": "Danny Kelly",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       540,
@@ -1806,7 +1806,7 @@
     }
    ],
    "parse_error": null,
-   "content": "[\n  {\"text\": \"Danny Kelly\", \"type\": \"name\", \"box\": [5, 45, 210, 80]},\n  {\"text\": \"39 Sophie Walk\", \"type\": \"address\", \"box\": [40, 370, 380, 400]},\n  {\"text\": \"BS30 5BN\", \"type\": \"postcode\", \"box\": [390, 370, 520, 400]},\n  {\"text\": \"41-27-65\", \"type\": \"sort_code\", \"box\": [70, 670, 260, 695]},\n  {\"text\": \"63936353\", \"type\": \"account_number\", \"box\": [420, 670, 540, 695]},\n  {\"text\": \"4000 0566 5566 5556\", \"type\": \"card_number\", \"box\": [470, 590, 570, 620]},\n  {\"text\": \"Danny Kelly\", \"type\": \"name\", \"box\": [540, 750, 590, 785]}\n]",
+   "content": "[\n  {\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [5, 45, 210, 80]},\n  {\"text\": \"39 Sophie Walk\", \"type\": \"address\", \"box\": [40, 370, 380, 400]},\n  {\"text\": \"BS30 5BN\", \"type\": \"postcode\", \"box\": [390, 370, 520, 400]},\n  {\"text\": \"[made-up value]\", \"type\": \"sort_code\", \"box\": [70, 670, 260, 695]},\n  {\"text\": \"[made-up value]\", \"type\": \"account_number\", \"box\": [420, 670, 540, 695]},\n  {\"text\": \"[made-up value]\", \"type\": \"card_number\", \"box\": [470, 590, 570, 620]},\n  {\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [540, 750, 590, 785]}\n]",
    "reasoning_chars": 5347,
    "usage": {
     "completion_tokens": 1786,
@@ -1823,7 +1823,7 @@
    "seconds": 35.22,
    "items": [
     {
-     "text": "Jeffrey Dobson",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       35,
@@ -1833,7 +1833,7 @@
      ]
     },
     {
-     "text": "6011 0009 9013 9424",
+     "text": "[made-up value]",
      "type": "card_number",
      "box": [
       560,
@@ -1843,7 +1843,7 @@
      ]
     },
     {
-     "text": "jeffrey.dobson@mail.test",
+     "text": "[made-up value]",
      "type": "email",
      "box": [
       470,
@@ -1853,7 +1853,7 @@
      ]
     },
     {
-     "text": "GB63 TSTB 9007 6648 1448 39",
+     "text": "[made-up value]",
      "type": "iban",
      "box": [
       60,
@@ -1863,7 +1863,7 @@
      ]
     },
     {
-     "text": "02/11/1989",
+     "text": "[made-up value]",
      "type": "dob",
      "box": [
       60,
@@ -1874,7 +1874,7 @@
     }
    ],
    "parse_error": null,
-   "content": "[\n  {\"text\": \"Jeffrey Dobson\", \"type\": \"name\", \"box\": [35, 35, 275, 60]},\n  {\"text\": \"6011 0009 9013 9424\", \"type\": \"card_number\", \"box\": [560, 125, 590, 150]},\n  {\"text\": \"jeffrey.dobson@mail.test\", \"type\": \"email\", \"box\": [470, 260, 590, 285]},\n  {\"text\": \"GB63 TSTB 9007 6648 1448 39\", \"type\": \"iban\", \"box\": [60, 325, 590, 345]},\n  {\"text\": \"02/11/1989\", \"type\": \"dob\", \"box\": [60, 460, 310, 480]}\n]",
+   "content": "[\n  {\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [35, 35, 275, 60]},\n  {\"text\": \"[made-up value]\", \"type\": \"card_number\", \"box\": [560, 125, 590, 150]},\n  {\"text\": \"[made-up value]\", \"type\": \"email\", \"box\": [470, 260, 590, 285]},\n  {\"text\": \"[made-up value]\", \"type\": \"iban\", \"box\": [60, 325, 590, 345]},\n  {\"text\": \"[made-up value]\", \"type\": \"dob\", \"box\": [60, 460, 310, 480]}\n]",
    "reasoning_chars": 3855,
    "usage": {
     "completion_tokens": 1371,
@@ -1891,7 +1891,7 @@
    "seconds": 36.31,
    "items": [
     {
-     "text": "Vincent Mills",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       30,
@@ -1901,7 +1901,7 @@
      ]
     },
     {
-     "text": "07700 900836",
+     "text": "[made-up value]",
      "type": "phone",
      "box": [
       30,
@@ -1911,7 +1911,7 @@
      ]
     },
     {
-     "text": "vincent.mills@example.net",
+     "text": "[made-up value]",
      "type": "email",
      "box": [
       470,
@@ -1921,7 +1921,7 @@
      ]
     },
     {
-     "text": "34-42-74",
+     "text": "[made-up value]",
      "type": "sort_code",
      "box": [
       180,
@@ -1931,7 +1931,7 @@
      ]
     },
     {
-     "text": "12479248",
+     "text": "[made-up value]",
      "type": "account_number",
      "box": [
       350,
@@ -1941,7 +1941,7 @@
      ]
     },
     {
-     "text": "GB93 TSTB 9656 3510 0066 19",
+     "text": "[made-up value]",
      "type": "iban",
      "box": [
       475,
@@ -1952,7 +1952,7 @@
     }
    ],
    "parse_error": null,
-   "content": "[\n  {\"text\": \"Vincent Mills\", \"type\": \"name\", \"box\": [30, 30, 230, 60]},\n  {\"text\": \"07700 900836\", \"type\": \"phone\", \"box\": [30, 650, 400, 695]},\n  {\"text\": \"vincent.mills@example.net\", \"type\": \"email\", \"box\": [470, 730, 590, 770]},\n  {\"text\": \"34-42-74\", \"type\": \"sort_code\", \"box\": [180, 340, 340, 370]},\n  {\"text\": \"12479248\", \"type\": \"account_number\", \"box\": [350, 340, 480, 370]},\n  {\"text\": \"GB93 TSTB 9656 3510 0066 19\", \"type\": \"iban\", \"box\": [475, 560, 590, 600]}\n]",
+   "content": "[\n  {\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [30, 30, 230, 60]},\n  {\"text\": \"[made-up value]\", \"type\": \"phone\", \"box\": [30, 650, 400, 695]},\n  {\"text\": \"[made-up value]\", \"type\": \"email\", \"box\": [470, 730, 590, 770]},\n  {\"text\": \"[made-up value]\", \"type\": \"sort_code\", \"box\": [180, 340, 340, 370]},\n  {\"text\": \"[made-up value]\", \"type\": \"account_number\", \"box\": [350, 340, 480, 370]},\n  {\"text\": \"[made-up value]\", \"type\": \"iban\", \"box\": [475, 560, 590, 600]}\n]",
    "reasoning_chars": 4168,
    "usage": {
     "completion_tokens": 1413,

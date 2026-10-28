@@ -19,7 +19,7 @@
      ]
     },
     {
-     "text": "Alexandra",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       280,
@@ -60,7 +60,7 @@
     }
    ],
    "parse_error": null,
-   "content": "[{\"text\": \"WATTS\", \"type\": \"name\", \"box\": [280, 242, 363, 275]}, {\"text\": \"Alexandra\", \"type\": \"name\", \"box\": [280, 331, 393, 366]}, {\"text\": \"08 August 1985\", \"type\": \"dob\", \"box\": [280, 421, 457, 458]}, {\"text\": \"KN1160854\", \"type\": \"id_number\", \"box\": [280, 511, 410, 547]}, {\"text\": \"\", \"type\": \"face\", \"box\": [67, 207, 241, 542]}]",
+   "content": "[{\"text\": \"WATTS\", \"type\": \"name\", \"box\": [280, 242, 363, 275]}, {\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [280, 331, 393, 366]}, {\"text\": \"08 August 1985\", \"type\": \"dob\", \"box\": [280, 421, 457, 458]}, {\"text\": \"KN1160854\", \"type\": \"id_number\", \"box\": [280, 511, 410, 547]}, {\"text\": \"\", \"type\": \"face\", \"box\": [67, 207, 241, 542]}]",
    "reasoning_chars": 1079,
    "usage": {
     "completion_tokens": 442,
@@ -621,7 +621,7 @@
    "seconds": 12.5,
    "items": [
     {
-     "text": "ATKINSON",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       350,
@@ -672,7 +672,7 @@
     }
    ],
    "parse_error": null,
-   "content": "[\n  {\"text\": \"ATKINSON\", \"type\": \"name\", \"box\": [350, 270, 475, 300]},\n  {\"text\": \"Kim\", \"type\": \"name\", \"box\": [350, 360, 395, 390]},\n  {\"text\": \"30 Apr 1978\", \"type\": \"dob\", \"box\": [350, 450, 475, 480]},\n  {\"text\": \"FR4261547\", \"type\": \"id_number\", \"box\": [350, 540, 485, 570]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [65, 230, 310, 610]}\n]",
+   "content": "[\n  {\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [350, 270, 475, 300]},\n  {\"text\": \"Kim\", \"type\": \"name\", \"box\": [350, 360, 395, 390]},\n  {\"text\": \"30 Apr 1978\", \"type\": \"dob\", \"box\": [350, 450, 475, 480]},\n  {\"text\": \"FR4261547\", \"type\": \"id_number\", \"box\": [350, 540, 485, 570]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [65, 230, 310, 610]}\n]",
    "reasoning_chars": 1214,
    "usage": {
     "completion_tokens": 468,
@@ -767,7 +767,7 @@
      ]
     },
     {
-     "text": "Alexandra",
+     "text": "[made-up value]",
      "type": "name",
      "box": [
       410,
@@ -808,7 +808,7 @@
     }
    ],
    "parse_error": null,
-   "content": "[\n  {\"text\": \"WATKINS\", \"type\": \"name\", \"box\": [410, 225, 535, 265]},\n  {\"text\": \"Alexandra\", \"type\": \"name\", \"box\": [410, 320, 540, 360]},\n  {\"text\": \"02 January 1980\", \"type\": \"dob\", \"box\": [410, 410, 595, 450]},\n  {\"text\": \"BL9059153\", \"type\": \"id_number\", \"box\": [410, 505, 575, 545]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [65, 220, 375, 820]}\n]",
+   "content": "[\n  {\"text\": \"WATKINS\", \"type\": \"name\", \"box\": [410, 225, 535, 265]},\n  {\"text\": \"[made-up value]\", \"type\": \"name\", \"box\": [410, 320, 540, 360]},\n  {\"text\": \"02 January 1980\", \"type\": \"dob\", \"box\": [410, 410, 595, 450]},\n  {\"text\": \"BL9059153\", \"type\": \"id_number\", \"box\": [410, 505, 575, 545]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [65, 220, 375, 820]}\n]",
    "reasoning_chars": 1242,
    "usage": {
     "completion_tokens": 505,
@@ -1777,7 +1777,7 @@
    "seconds": 12.12,
    "items": [
     {
-     "text": "RICHARDSON",
+     "text": "[made-up value]ON",
      "type": "name",
      "box": [
       310,
@@ -1828,7 +1828,7 @@
     }
    ],
    "parse_error": null,
-   "content": "[\n  {\"text\": \"RICHARDSON\", \"type\": \"name\", \"box\": [310, 270, 430, 295]},\n  {\"text\": \"Frances\", \"type\": \"name\", \"box\": [310, 350, 385, 370]},\n  {\"text\": \"01/06/1999\", \"type\": \"dob\", \"box\": [310, 430, 430, 455]},\n  {\"text\": \"JF6033570\", \"type\": \"id_number\", \"box\": [310, 510, 420, 535]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [65, 230, 245, 500]}\n]",
+   "content": "[\n  {\"text\": \"[made-up value]ON\", \"type\": \"name\", \"box\": [310, 270, 430, 295]},\n  {\"text\": \"Frances\", \"type\": \"name\", \"box\": [310, 350, 385, 370]},\n  {\"text\": \"01/06/1999\", \"type\": \"dob\", \"box\": [310, 430, 430, 455]},\n  {\"text\": \"JF6033570\", \"type\": \"id_number\", \"box\": [310, 510, 420, 535]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [65, 230, 245, 500]}\n]",
    "reasoning_chars": 1037,
    "usage": {
     "completion_tokens": 454,
@@ -2593,7 +2593,7 @@
    "seconds": 14.99,
    "items": [
     {
-     "text": "Mohammad Davis",
+     "text": "[made-up value] Davis",
      "type": "name",
      "box": [
       28,
@@ -2654,7 +2654,7 @@
     }
    ],
    "parse_error": null,
-   "content": "[\n  {\"text\": \"Mohammad Davis\", \"type\": \"name\", \"box\": [28, 33, 250, 72]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [22, 138, 82, 200]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [22, 222, 82, 285]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [22, 360, 82, 423]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [22, 498, 82, 561]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [22, 638, 82, 701]}\n]",
+   "content": "[\n  {\"text\": \"[made-up value] Davis\", \"type\": \"name\", \"box\": [28, 33, 250, 72]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [22, 138, 82, 200]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [22, 222, 82, 285]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [22, 360, 82, 423]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [22, 498, 82, 561]},\n  {\"text\": \"\", \"type\": \"face\", \"box\": [22, 638, 82, 701]}\n]",
    "reasoning_chars": 1513,
    "usage": {
     "completion_tokens": 569,

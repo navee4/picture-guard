@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 820" width="1000" height="820" role="img" aria-labelledby="t d">
+<title id="t">Picture guard pipeline</title>
+<desc id="d">A picture goes through eight steps. Any step that is not sure sends the whole picture to a black copy instead.</desc>
+<style>text{font-family:system-ui,-apple-system,Segoe UI,sans-serif;fill:#1c1d1f}.b{fill:#ffffff;stroke:#9aa0a6;stroke-width:1.5}.t{font-size:17px;font-weight:600}.s{font-size:12.5px;fill:#5c6066}.m{font-size:13px;fill:#1f5eff;font-weight:600}.f{fill:#fdecea;stroke:#b3261e;stroke-width:2}.fr{font-size:15px;font-weight:700;fill:#b3261e}.fs{font-size:12.5px;fill:#7a1a14}.a{stroke:#5c6066;stroke-width:2;fill:none}.r{stroke:#b3261e;stroke-width:1.6;fill:none;stroke-dasharray:5 4}.g{fill:#e8f5ee;stroke:#16794a;stroke-width:2}</style>
+<rect width="1000" height="820" fill="#f7f7f4"/>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5c6066"/></marker><marker id="rr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#b3261e"/></marker></defs>
+<text x="40" y="40" class="t" style="font-size:22px">Picture guard: what happens to a picture</text>
+<rect class="b" x="40" y="70" width="600" height="62" rx="10"/>
+<text class="t" x="56" y="92">1  Read</text>
+<text class="m" x="56" y="110">Tesseract on CPU</text>
+<text class="s" x="56" y="126">finds every word and where it is (plain, 2x, contrast, digits-only reads)</text>
+<rect class="b" x="40" y="156" width="600" height="62" rx="10"/>
+<text class="t" x="56" y="178">2  Decide</text>
+<text class="m" x="56" y="196">Muse Glimmer 30B, 4-bit, open weights, on our own GPU + pattern rules</text>
+<text class="s" x="56" y="212">lists names, addresses, account, ID and card numbers, dates of birth, emails, phones</text>
+<line class="a" x1="340.0" y1="132" x2="340.0" y2="154" marker-end="url(#ar)"/>
+<rect class="b" x="40" y="242" width="600" height="62" rx="10"/>
+<text class="t" x="56" y="264">3  Locate</text>
+<text class="m" x="56" y="282">Tesseract words (+ a zoomed re-read)</text>
+<text class="s" x="56" y="298">puts a box on every value Glimmer listed</text>
+<line class="a" x1="340.0" y1="218" x2="340.0" y2="240" marker-end="url(#ar)"/>
+<rect class="b" x="40" y="328" width="600" height="62" rx="10"/>
+<text class="t" x="56" y="350">4  Faces</text>
+<text class="m" x="56" y="368">SAM 3.1 on our own GPU</text>
+<text class="s" x="56" y="384">covers each face (mask rectangle grown 15%)</text>
+<line class="a" x1="340.0" y1="304" x2="340.0" y2="326" marker-end="url(#ar)"/>
+<rect class="b" x="40" y="414" width="600" height="62" rx="10"/>
+<text class="t" x="56" y="436">5  Count check</text>
+<text class="m" x="56" y="454">Muse Glimmer</text>
+<text class="s" x="56" y="470">Glimmer counts faces; more than SAM found = not sure</text>
+<line class="a" x1="340.0" y1="390" x2="340.0" y2="412" marker-end="url(#ar)"/>
+<rect class="b" x="40" y="500" width="600" height="62" rx="10"/>
+<text class="t" x="56" y="522">6  Black out</text>
+<text class="m" x="56" y="540">plain code</text>
+<text class="s" x="56" y="556">solid black boxes; new PNG, no metadata</text>
+<line class="a" x1="340.0" y1="476" x2="340.0" y2="498" marker-end="url(#ar)"/>
+<rect class="b" x="40" y="586" width="600" height="62" rx="10"/>
+<text class="t" x="56" y="608">7  Check the safe copy</text>
+<text class="m" x="56" y="626">Tesseract + rules</text>
+<text class="s" x="56" y="642">read it again; any private value still readable = not sure</text>
+<line class="a" x1="340.0" y1="562" x2="340.0" y2="584" marker-end="url(#ar)"/>
+<rect class="b" x="40" y="672" width="600" height="62" rx="10"/>
+<text class="t" x="56" y="694">8  Send</text>
+<text class="m" x="56" y="712">Muse Spark (Meta Model API)</text>
+<text class="s" x="56" y="728">only the safe copy; SHA-256 of the sent bytes must equal the safe copy's</text>
+<line class="a" x1="340.0" y1="648" x2="340.0" y2="670" marker-end="url(#ar)"/>
+<line class="a" x1="340.0" y1="734" x2="340.0" y2="756" marker-end="url(#ar)"/>
+<rect class="g" x="40" y="758" width="600" height="36" rx="10"/>
+<text class="t" x="56" y="782">Muse Spark answers your question about the safe copy</text>
+<rect class="f" x="700" y="70" width="270" height="560" rx="12"/>
+<text class="fr" x="716" y="100">Whole picture black</text>
+<text class="fs" x="716" y="122">(the fail-safe) when:</text>
+<text class="fs" x="716" y="154">1  a value the AI saw has no</text>
+<text class="fs" x="716" y="174">    matching word on the picture</text>
+<text class="fs" x="716" y="194">2  the safe copy still shows a</text>
+<text class="fs" x="716" y="214">    private value when read again</text>
+<text class="fs" x="716" y="234">3  a step fails, times out, or the</text>
+<text class="fs" x="716" y="254">    picture can hardly be read</text>
+<text class="fs" x="716" y="274">4  the file is not one PNG or JPEG</text>
+<text class="fs" x="716" y="294">5  the AI counts more faces than</text>
+<text class="fs" x="716" y="314">    the face finder covered</text>
+<text class="fs" x="716" y="348">Any "not sure" = black.</text>
+<text class="fs" x="716" y="368">Anything not found = not covered:</text>
+<text class="fs" x="716" y="386">see LIMITS.md.</text>
+<path class="r" d="M640 101.0 L700 101.0" marker-end="url(#rr)"/>
+<path class="r" d="M640 187.0 L700 187.0" marker-end="url(#rr)"/>
+<path class="r" d="M640 273.0 L700 273.0" marker-end="url(#rr)"/>
+<path class="r" d="M640 359.0 L700 359.0" marker-end="url(#rr)"/>
+<path class="r" d="M640 445.0 L700 445.0" marker-end="url(#rr)"/>
+<path class="r" d="M640 617.0 L700 617.0" marker-end="url(#rr)"/>
+<text class="s" x="40" y="804">Steps 1 to 7 run before anything leaves our own servers. The original goes only to our own GPU, never to Meta.</text>
+</svg>

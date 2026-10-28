@@ -1,0 +1,35 @@
+## testset, split dev, mode: product (150 of 150 pictures scored, version 0.1.0-day1)
+
+| Type | Pictures | Whole picture black | Not black: values left readable / planted | Not black: face boxes 90%+ covered | Not black: ordinary spans readable (original) | Whole-black pictures: planted values left readable | s/picture Mac / Modal / total |
+|---|---|---|---|---|---|---|---|
+| all | 150 | 41 of 150 (27.3%) | 0 / 835 | 1 of 32 | 1456 of 2218 (1751) | 0 | 11.4853 / 18.5123 / 29.9976 |
+| chat | 37 | 16 of 37 (43.2%) | 0 / 115 | none planted | 189 of 434 (291) | 0 | 8.4874 / 19.8524 / 28.3398 |
+| id_card | 38 | 6 of 38 (15.8%) | 0 / 224 | 1 of 32 | 191 of 384 (239) | 0 | 6.1423 / 17.4268 / 23.5692 |
+| letter | 37 | 13 of 37 (35.1%) | 0 / 240 | none planted | 217 of 408 (315) | 0 | 16.3223 / 22.3105 / 38.6329 |
+| payslip | 38 | 6 of 38 (15.8%) | 0 / 256 | none planted | 859 of 992 (906) | 0 | 15.0376 / 14.5945 / 29.6321 |
+
+Why pictures went whole black: {
+"rule 1: a private value has no word box (decide)": 38,
+"rule 2: the safe copy still shows a private value (check_safe)": 3
+}
+First not-sure or failing stage: {'None': 109, 'decide': 38, 'check_safe': 3} (None = no stage failed).
+The day-2 word list would have refused 150 of 150 pictures that reached `decide`.
+Fallback (zoom): tried on 41 pictures, 110 values; placed by zoom 19, by line cover 0; no clear frame in 28 pictures. Frames chosen: {'None': 28, 'px': 3, 'norm1000': 10}.
+
+| Value type | Planted | Pictures not black: planted | ...of those left readable | Box 90%+ black (all pictures) | Left readable (all pictures) |
+|---|---|---|---|---|---|
+| account_number | 83 | 58 | 0 | 82 (98.8%) | 0 |
+| address | 241 | 184 | 0 | 234 (97.1%) | 0 |
+| card_number | 35 | 21 | 0 | 35 (100.0%) | 0 |
+| dob | 85 | 70 | 0 | 84 (98.8%) | 0 |
+| email | 43 | 28 | 0 | 43 (100.0%) | 0 |
+| iban | 42 | 28 | 0 | 41 (97.6%) | 0 |
+| id_number | 56 | 42 | 0 | 53 (94.6%) | 0 |
+| name | 276 | 196 | 0 | 272 (98.6%) | 0 |
+| ni_number | 46 | 35 | 0 | 45 (97.8%) | 0 |
+| phone | 41 | 26 | 0 | 41 (100.0%) | 0 |
+| postcode | 113 | 88 | 0 | 110 (97.3%) | 0 |
+| sort_code | 84 | 59 | 0 | 83 (98.8%) | 0 |
+
+Report says whole-black but pixels disagree: 0. Safe copy wrong size: 0. Safe copies with metadata chunks: 0. Pictures that failed to run: 0.
+
