@@ -1,5 +1,6 @@
 """Public-repo hygiene: committed text files must not name the private project, a private path, or a planted value from the test keys."""
 import json
+import os
 import re
 import subprocess
 import unittest
@@ -57,6 +58,13 @@ class PublicRepo(unittest.TestCase):
                     hits.append(f.name)
                     break
         self.assertEqual(hits, [])
+
+
+    @unittest.skipUnless(os.environ.get("PG_SUBMIT") == "1", "set PG_SUBMIT=1 when the links exist")
+    def test_no_link_placeholder_left_in_readme(self):
+        txt = (ROOT / "README.md").read_text()
+        left = [w for w in ("DEMO_LINK", "VIDEO_LINK", "REPO_LINK") if w in txt]
+        self.assertEqual(left, [], "replace the placeholders in README.md before submitting")
 
 
 if __name__ == "__main__":

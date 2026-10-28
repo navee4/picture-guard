@@ -1,6 +1,10 @@
 # Picture guard
 
-**Built for the Meta Global AI Developer Hackathon (Startup track).** Demo: link added at submission.
+**Built for the Meta Global AI Developer Hackathon (Startup track).**
+
+- Demo: DEMO_LINK
+- Video: VIDEO_LINK
+- Repo: REPO_LINK
 
 ## The problem
 
@@ -23,6 +27,16 @@ It finds names, addresses, account numbers, ID numbers and faces in a picture. I
 7. **Ask.** **Muse Spark** answers questions about the **safe copy only**. The answer step calls the model `muse-spark-1.3` (Standard mode) through the Meta Model API (`api.meta.ai`). The code refuses to send anything but the safe copy and your question. On Meta's free credits, Meta may use what is sent for product improvement.
 
 The original picture goes only to our own GPU (Modal), never to Meta's API.
+
+## Meta models used
+
+| Model | Where it runs | What it does here | What it sees |
+|---|---|---|---|
+| **Muse Glimmer 30B** (open weights, 4-bit GGUF, run with llama.cpp) | our own Modal GPU | decides what is private (names, addresses, ID numbers), gives boxes for hard values, counts faces; temperature 0, seed 1234 | the **original** picture |
+| **SAM 3.1** (open weights) | our own Modal GPU | finds faces | the **original** picture |
+| **Muse Spark** `muse-spark-1.3` (Standard mode, through the Meta Model API at `api.meta.ai`) | Meta's API | answers the visitor's question | the **safe copy only**, plus the question |
+
+Nothing else of Meta's is used. Tesseract (reader) is not a Meta model. Muse Spark Open was considered and not used (too large for one GPU; `LICENCES.md`).
 
 ## The safety rules
 
@@ -59,6 +73,23 @@ Reading the tables: a black picture is the safe failure, not a leak. "Kept" mean
 
 Development set (the pictures the settings were tuned on, 28 Oct 2026, at the frozen settings): text 150 pictures, 40 black (27%), 0 leaks by all three checks, 1 of 850 planted values under 90%; faces 55 pictures, 1 black, 117 of 117 faces covered; harder faces 60 pictures, 6 black, 112 of 112 covered. Two live runs gave byte-identical safe copies on all 265.
 
+## How judges can check our claims
+
+No command below needs a key, a token or a Modal account.
+
+    # 1. the unit tests (model calls are faked, Tesseract is real)
+    .venv/bin/python -m unittest discover -s tests -t .
+    # 2. the freeze test: the pipeline files are identical to tag freeze-1 (FREEZE.md lists the settings)
+    .venv/bin/python -m unittest tests.test_freeze -v
+    # 3. protect a made-up sample with no models: names and addresses cannot be judged, so the whole picture goes black (the safe failure)
+    .venv/bin/pg protect demo_samples/payslip_000.jpg --no-models --out safe.png --report report.json
+    # 4. the hold-out table, recomputed from the saved result files in results/final/
+    .venv/bin/python tools/holdout_table.py
+    # 5. the public-repo and submission checks
+    sh tools/submission_gate.sh
+
+The hold-out result files are `results/final/eval-testset-holdout-fb-zoom.json`, `eval-faces-holdout-fb-zoom.json` and `eval-faces_hard-holdout-fb-zoom.json` (with `.md` tables beside them). The hold-out was run once on tag `freeze-1`; the gate in `pg eval --final` refuses a second run. Running `pg protect` with the models, or `pg eval` live, needs your own Modal account (see below).
+
 ## Run it
 
     uv pip install --python .venv/bin/python -e .      # installs the `pg` command
@@ -80,7 +111,7 @@ A web page over the same pipeline as `pg protect`: pick a made-up sample or uplo
 
 ### Tests
 
-    .venv/bin/python -m unittest discover -s tests -t .     # 120+ tests; the model calls are faked, Tesseract is real
+    .venv/bin/python -m unittest discover -s tests -t .     # 140+ tests; the model calls are faked, Tesseract is real
     sh tools/secret_scan.sh                                 # looks for keys and tokens before every commit
 
 ## What was built during the hackathon
@@ -89,7 +120,7 @@ The hackathon started on 26 Oct 2026. Everything in `picture_guard/`, `tests/`, 
 
 ## Test data
 
-All pictures are **made up** (each says "SYNTHETIC TEST DATA"): fictional issuers, banks and employers; published test card numbers; Ofcom's drama phone range; reserved example email domains; a fictional IBAN bank code; AI-made or drawn faces. `testset/` has 200 pictures (150 dev, 50 hold-out) with a key of every planted value and its box; `faces/` and `faces_hard/` hold face pictures. The hold-out is not used until the final run.
+All pictures are **made up** (each says "SYNTHETIC TEST DATA"): fictional issuers, banks and employers; published test card numbers; Ofcom's drama phone range; reserved example email domains; a fictional IBAN bank code; AI-made or drawn faces. `testset/` has 200 pictures (150 dev, 50 hold-out) with a key of every planted value and its box; `faces/` and `faces_hard/` hold face pictures. The hold-out was run once, on the commit tagged `freeze-1`; nothing was tuned on it.
 
 ## Limits
 

@@ -5,20 +5,20 @@ that, so the judges can tell old work from new work.
 
 ## The last commit before hackathon work
 
-Git tag `pre-hackathon` points at commit `adbfd62423f97a63158803c108687d5bb75775ad`
+Git tag `pre-hackathon` points at commit `0013a9deca609a6c3786d20ea43a5ca2c8ffa477`
 ("Run SAM 3.1 and Glimmer 4-bit on 60 dev harder-face pictures; scoring, contact sheet", 21 Oct 2026, 07:43 +0100).
 Everything up to and including that commit was made before the hackathon. List it with:
 
     git log --format='%h %ad %s' --date=iso pre-hackathon
 
-## What is in that range (11 commits, 20 to 21 October 2026)
+## What is in that range (10 commits, 20 to 21 October 2026)
 
 | Folder | What it is | Dates (commits) |
 |---|---|---|
-| `testset/` | Generator, key and self-check for 200 made-up pictures (payslips, letters, ID-style cards, chat screenshots) with planted values | 20 Oct 2026 (`c9c236b`, `697a3ee`) |
-| `spike/` | Scripts that tried Muse Glimmer, SAM 3.1 and Tesseract on the test pictures, on Modal; scoring and a spend ledger | 20 Oct 2026 (`2d2e642` to `8fc333c`) |
-| `faces/` | Made-up face pictures (AI-generated portraits placed on cards and chat screenshots), key, self-check, and a run of SAM and Glimmer on them | 20 Oct 2026 (`08a6476`, `eca9fec`) |
-| `faces_hard/` | Harder made-up face pictures (side views, hats, masks, groups, small faces), key, self-check, and a run of SAM and Glimmer on them | 21 Oct 2026 (`55f0e24`, `adbfd62`) |
+| `testset/` | Generator, key and self-check for 200 made-up pictures (payslips, letters, ID-style cards, chat screenshots) with planted values | 20 Oct 2026 (`9d4031a`, `285aca0`) |
+| `spike/` | Scripts that tried Muse Glimmer, SAM 3.1 and Tesseract on the test pictures, on Modal; scoring and a spend ledger | 20 Oct 2026 (`d5bb347` to `8cdcdfb`) |
+| `faces/` | Made-up face pictures (AI-generated portraits placed on cards and chat screenshots), key, self-check, and a run of SAM and Glimmer on them | 20 Oct 2026 (`4e6574e`, `e8fdd7d`) |
+| `faces_hard/` | Harder made-up face pictures (side views, hats, masks, groups, small faces), key, self-check, and a run of SAM and Glimmer on them | 21 Oct 2026 (`acc634b`, `0013a9d`) |
 
 The repo also had a `README.md`, `requirements.txt` and `.gitignore` from 20 October.
 
