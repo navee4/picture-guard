@@ -12,10 +12,8 @@ testset/.check_tmp/
 *.pth
 # scratch: staged dev pictures, licence copies, logs
 spike/out/
-faces/images/
 faces/portraits/
 faces/.check_tmp/
-faces_hard/images/
 faces_hard/images_raw/
 faces_hard/.check_tmp/
 *.egg-info/
