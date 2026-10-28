@@ -8,6 +8,8 @@ import io
 import json
 import os
 import unittest
+import time
+import urllib.error
 import urllib.request
 import uuid
 from pathlib import Path
@@ -23,9 +25,15 @@ def post_sample(name):
     b = uuid.uuid4().hex
     body = f'--{b}\r\nContent-Disposition: form-data; name="sample"\r\n\r\n{name}\r\n--{b}--\r\n'.encode()
     req = urllib.request.Request(URL + "/api/protect", data=body, headers={"Content-Type": f"multipart/form-data; boundary={b}"})
-    with urllib.request.urlopen(req, timeout=300) as r:
-        evs = [json.loads(x) for x in r.read().decode().splitlines() if x.strip()]
-    return evs[-1]
+    for attempt in range(13):  # the demo allows 8 pictures per visitor per 10 minutes: on HTTP 429 wait for the window, never fail for that
+        try:
+            with urllib.request.urlopen(req, timeout=300) as r:
+                evs = [json.loads(x) for x in r.read().decode().splitlines() if x.strip()]
+            return evs[-1]
+        except urllib.error.HTTPError as ex:
+            if ex.code != 429 or attempt == 12:
+                raise
+            time.sleep(60)
 
 
 @unittest.skipUnless(URL, "set PG_DEMO_URL to run against the deployed demo")

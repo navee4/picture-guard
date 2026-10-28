@@ -17,6 +17,7 @@ MODELS = "/models"
 GGUF = f"{MODELS}/meta-models__Muse-Glimmer-30B-GGUF/Muse-Glimmer-30B-KQuant-17GB-Q4_K_M.gguf"
 MMPROJ = f"{MODELS}/meta-models__Muse-Glimmer-30B-GGUF/mmproj-Muse-Glimmer-30B-Q4_K_M.gguf"
 LLAMA = "/opt/llama.cpp/build/bin/llama-server"
+SAMPLING = {"temperature": 0.0, "seed": 1234}  # day 9 (PG-15): no randomness, so the same picture gives the same answer (the server default was temperature 1.0)
 VALUE_TYPES = ["name", "address", "postcode", "sort_code", "account_number", "ni_number", "card_number", "iban",
                "id_number", "dob", "email", "phone"]
 PROMPT = (
@@ -139,7 +140,7 @@ class Engine:
         try:
             w, h = Image.open(io.BytesIO(png)).size
             b64 = base64.b64encode(png).decode()
-            body = {"model": "glimmer", "max_tokens": 6000, "messages": [{"role": "user", "content": [
+            body = {"model": "glimmer", "max_tokens": 6000, **SAMPLING, "messages": [{"role": "user", "content": [
                 {"type": "image_url", "image_url": {"url": f"data:image/png;base64,{b64}"}},
                 {"type": "text", "text": PROMPT.format(types=", ".join(VALUE_TYPES))}]}]}
             r = self.requests.post("http://127.0.0.1:8080/v1/chat/completions", json=body, timeout=600).json()
@@ -159,7 +160,7 @@ class Engine:
             w, h = Image.open(io.BytesIO(png)).size
             b64 = base64.b64encode(png).decode()
             prompt = BOXES_PROMPT.format(w=w, h=h, texts=json.dumps(list(texts), ensure_ascii=False))
-            body = {"model": "glimmer", "max_tokens": 6000, "messages": [{"role": "user", "content": [
+            body = {"model": "glimmer", "max_tokens": 6000, **SAMPLING, "messages": [{"role": "user", "content": [
                 {"type": "image_url", "image_url": {"url": f"data:image/png;base64,{b64}"}}, {"type": "text", "text": prompt}]}]}
             r = self.requests.post("http://127.0.0.1:8080/v1/chat/completions", json=body, timeout=600).json()
             items, err = parse_boxes(r["choices"][0]["message"].get("content"))

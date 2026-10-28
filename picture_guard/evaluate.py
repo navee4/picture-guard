@@ -15,7 +15,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 
-from picture_guard import __version__, readback
+from picture_guard import __version__, imaging, readback
 
 ROOT = Path(__file__).resolve().parent.parent
 SETS = {"testset": ROOT / "testset", "faces": ROOT / "faces", "faces_hard": ROOT / "faces_hard"}
@@ -107,20 +107,39 @@ def _measure(entry, safe_path: Path, report: dict, do_ocr: bool, orig_path: Path
     return rec
 
 
+def _final_gate(set_name: str, out_dir: Path) -> str | None:
+    """The sealed hold-out may run only once per set, on a clean tree whose HEAD carries the tag `freeze-1`. Returns a refusal text or None."""
+    import subprocess
+    git = lambda *a: subprocess.run(["git", *a], cwd=ROOT, capture_output=True, text=True).stdout.strip()
+    if git("rev-parse", "freeze-1^{commit}") != git("rev-parse", "HEAD"):
+        return "the hold-out runs only on the commit tagged freeze-1"
+    if git("status", "--porcelain"):
+        return "the working tree is not clean"
+    if (out_dir / f"ran-{set_name}.json").exists():
+        return f"the hold-out of {set_name} has already been run once"
+    return None
+
+
 def run_eval(set_name: str, split: str, limit: int = 0, results_dir: str | None = None, ablation: bool = False, check_glimmer: bool = False,
-             fallback: str = "zoom", replay: bool = False, cleanups: tuple | None = None, margin: tuple | None = None, smart: dict | None = None) -> int:
-    if split != "dev":
-        print(f"pg: error: split {split!r} refused. Only 'dev' may be run until day 9; the hold-out stays sealed.", file=sys.stderr)
+             fallback: str = "zoom", replay: bool = False, cleanups: tuple | None = None, margin: tuple | None = None, smart: dict | None = None,
+             final: bool = False) -> int:
+    if split != "dev" and not (final and split == "holdout" and not replay and not limit):
+        print(f"pg: error: split {split!r} refused. Only 'dev' may be run; the hold-out stays sealed (it needs --final, no replay, no limit, and the commit tagged freeze-1).", file=sys.stderr)
         return 2
+    if final:
+        refusal = _final_gate(set_name, Path(results_dir) if results_dir else ROOT / "results" / "final")
+        if refusal:
+            print(f"pg: error: {refusal}", file=sys.stderr)
+            return 2
     from contextlib import nullcontext
     from picture_guard.pipeline import protect
     base = SETS[set_name]
     key = json.loads((base / "key.json").read_text())
-    entries = [e for e in key["images"] if e["split"] == "dev"]  # picture files of other splits are never opened
+    entries = [e for e in key["images"] if e["split"] == split]  # picture files of other splits are never opened
     if limit:
         entries = entries[:limit]
     do_ocr = readback.available()
-    out_dir = Path(results_dir) if results_dir else ROOT / "results" / ("pg7" if (fallback != "none" or replay) else "pg6")
+    out_dir = Path(results_dir) if results_dir else ROOT / "results" / ("final" if final else "pg7" if (fallback != "none" or replay) else "pg6")
     out_dir.mkdir(parents=True, exist_ok=True)
     suffix = ("-ablation" if ablation else "") + ("-checkglimmer" if check_glimmer else "") + (f"-fb-{fallback}" if fallback != "none" else "") + (("-clean-" + "+".join(cleanups) if cleanups else "-clean-none") if cleanups is not None else "") + ("-margin-" + "-".join(str(x) for x in margin) if margin is not None else "") + ("-smart-" + "".join(c for c in json.dumps(smart, sort_keys=True) if c.isalnum() or c in ".-_") if smart is not None else "") + ("-replay" if replay and fallback == "none" else "")
     recs, failures = [], []
@@ -153,6 +172,7 @@ def run_eval(set_name: str, split: str, limit: int = 0, results_dir: str | None 
                 with open(dbg / f"{set_name}{suffix}.jsonl", "a") as f:
                     f.write(json.dumps({"file": e["file"], "response": getattr(guard, "last", None)}) + "\n")
             m = _measure(e, safe, report, do_ocr, base / "images" / e["file"])
+            m["safe_sha256"] = imaging.sha256_file(safe)  # lets two runs be compared byte for byte
             m["wall_seconds"] = round(wall, 3)
             recs.append(m)
             safe.unlink(), rep.unlink()
@@ -171,6 +191,8 @@ def run_eval(set_name: str, split: str, limit: int = 0, results_dir: str | None 
                                         for r in recs for v in r["values"] if v["left_readable"] or v.get("left_readable_strict")],
            "pictures": recs}
     (out_dir / f"eval-{set_name}-{split}{suffix}.json").write_text(json.dumps(raw, indent=1))
+    if final:
+        (out_dir / f"ran-{set_name}.json").write_text(json.dumps({"set": set_name, "unix_time": raw["unix_time"], "commit": __import__("subprocess").run(["git", "rev-parse", "HEAD"], cwd=ROOT, capture_output=True, text=True).stdout.strip(), "pictures_scored": len(recs)}))
     table = render_table(set_name, split, raw)
     (out_dir / f"eval-{set_name}-{split}{suffix}.md").write_text(table)
     print(table)

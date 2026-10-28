@@ -265,6 +265,11 @@ class BadInput(Base):
         self.assertEqual(r.returncode, 2)
         self.assertIn("hold-out stays sealed", r.stderr)
 
+    def test_holdout_final_needs_the_freeze_tag_on_head(self):
+        r = self.cli("eval", "--set", "faces", "--split", "holdout", "--final", "--results-dir", str(Path(self.tmp.name) / "final") if hasattr(self, "tmp") else "/tmp/pg-final-test")
+        self.assertEqual(r.returncode, 2)
+        self.assertRegex(r.stderr, "freeze-1|clean|already")
+
 
 def _png_header_only(w, h):
     """A PNG signature + IHDR claiming w x h, nothing else: size is read from the header before any decode."""

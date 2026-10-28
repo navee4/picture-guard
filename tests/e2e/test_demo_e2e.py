@@ -9,6 +9,7 @@ import base64
 import hashlib
 import json
 import os
+import time
 import unittest
 from pathlib import Path
 
@@ -41,7 +42,18 @@ class DemoE2E(unittest.TestCase):
             page.on("request", lambda r: requests.append(r) if "/api/" in r.url else None)
             page.goto(URL + "/")
             self.assertIn("Hackathon demo", page.inner_text("#banner"))
-            page.click(f"button[data-sample='{SAMPLE}']")
+            limited = []
+            page.on("response", lambda r: limited.append(r) if r.status == 429 and "/api/protect" in r.url else None)
+            for attempt in range(13):  # the demo allows 8 pictures per visitor per 10 minutes: on HTTP 429 wait for the window, then click again
+                limited.clear()
+                page.click(f"button[data-sample='{SAMPLE}']")
+                try:
+                    page.wait_for_function("!document.getElementById('resultCard').hidden", timeout=20_000)
+                    break
+                except Exception:  # noqa: BLE001
+                    if not limited or attempt == 12:
+                        break  # not the rate limit: the next wait reports the real failure
+                    time.sleep(60)
             page.wait_for_selector("#resultCard:not([hidden])", timeout=300_000)
             page.wait_for_function("document.getElementById('hSafe').textContent.length === 64", timeout=300_000)
             self.assertTrue(page.eval_on_selector("#safe", "i => i.complete && i.naturalWidth > 0"), "a safe copy came back")

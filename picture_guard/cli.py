@@ -27,6 +27,7 @@ def main(argv=None) -> int:
     e.add_argument("--cleanups", default=None, help="reader clean-ups to add, comma list of inv,loc,big3,invloc or 'none' (default: the built-in default)")
     e.add_argument("--margin", default=None, help="box margin as FRAC,PX or HFRAC,HPX,VFRAC,VPX (fractions of the text height, minimums in pixels); default is the built-in one")
     e.add_argument("--smart", default=None, help='smart margin as JSON, e.g. {"ink": {"gap_frac": 0.5}, "widen": true} (day 9)')
+    e.add_argument("--final", action="store_true", help="the sealed final test: split holdout, live, once per set, only on the commit tagged freeze-1")
     e.add_argument("--limit", type=int, default=0, help="first N pictures only (testing the harness)")
     e.add_argument("--results-dir", default=None, help="where the raw JSON and table go (default results/pg6)")
     a = ap.parse_args(argv)
@@ -47,7 +48,7 @@ def main(argv=None) -> int:
                   f"{len(fs['reasons'])} reasons) and {a.report}")
             return 0
         from picture_guard.evaluate import run_eval
-        return run_eval(a.set_name, a.split, a.limit, a.results_dir, a.ablation, a.check_glimmer, a.fallback, a.replay, None if a.cleanups is None else tuple(c for c in a.cleanups.split(',') if c and c != 'none'), None if a.margin is None else tuple(float(x) if i % 2 == 0 else int(x) for i, x in enumerate(a.margin.split(','))), None if a.smart is None else __import__('json').loads(a.smart))
+        return run_eval(a.set_name, a.split, a.limit, a.results_dir, a.ablation, a.check_glimmer, a.fallback, a.replay, None if a.cleanups is None else tuple(c for c in a.cleanups.split(',') if c and c != 'none'), None if a.margin is None else tuple(float(x) if i % 2 == 0 else int(x) for i, x in enumerate(a.margin.split(','))), None if a.smart is None else __import__('json').loads(a.smart), a.final)
     except NotAPictureError as ex:
         print(f"pg: error: {ex}", file=sys.stderr)
         return 2
