@@ -215,7 +215,10 @@ class Run(unittest.TestCase):
 
 class Web(unittest.TestCase):
     def setUp(self):
-        from fastapi.testclient import TestClient
+        try:
+            from fastapi.testclient import TestClient
+        except ImportError:
+            self.skipTest("needs: uv pip install -e '.[demo-test]'")
         from picture_guard.demo.web import create_app
         self.demo = Demo(good_guard, SAMPLES)
         self.c = TestClient(create_app(self.demo))

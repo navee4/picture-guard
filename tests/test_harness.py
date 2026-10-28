@@ -10,6 +10,8 @@ ROOT = Path(__file__).resolve().parent.parent
 
 class Measure(unittest.TestCase):
     def test_untouched_picture_scores_as_unprotected(self):
+        if not (ROOT / "testset" / "images" / "payslip_000.jpg").exists():
+            self.skipTest("needs the generated test pictures: cd testset && python generate.py --out images")
         key = json.loads((ROOT / "testset" / "key.json").read_text())
         e = next(x for x in key["images"] if x["split"] == "dev" and x["type"] == "payslip")
         fake_report = {"fail_safe": {"whole_black": False}, "total_seconds": 0, "stages": [], "input": {"in_scope": True}, "remote_calls": [],
