@@ -56,6 +56,8 @@ class RealSpark(unittest.TestCase):
                         if r.url.endswith("/api/ask"):
                             asks.append(json.loads(t))
                 page.on("response", on_resp)
+                page.add_init_script("""window.__asks=[];const _f=window.fetch;window.fetch=async(...a)=>{const r=await _f(...a);
+                  if(/api\\/ask/.test(String(a[0]))) r.clone().text().then(t=>window.__asks.push(t)); return r;};""")
                 page.goto(URL + "/")
                 page.wait_for_function("document.getElementById('sparkNote').textContent.length > 0", timeout=60_000)
                 note = page.inner_text("#sparkNote")
@@ -77,9 +79,10 @@ class RealSpark(unittest.TestCase):
                 page.fill("#q", question)
                 t0 = time.monotonic()
                 page.click("#askBtn")
-                page.wait_for_function("document.getElementById('hSent').textContent.length === 64 || document.getElementById('answer').textContent.length > 0", timeout=180_000)
-                page.wait_for_function("document.getElementById('answer').textContent.trim().length > 0", timeout=180_000)
+                page.wait_for_function("(()=>{const t=document.getElementById('answer').textContent.trim(); return t.length>0 && t!=='Asking…';})()", timeout=180_000)
                 wall = round(time.monotonic() - t0, 2)
+                page.wait_for_function("window.__asks.length > 0", timeout=30_000)
+                asks = [json.loads(t) for t in page.evaluate("window.__asks")]
                 self.assertEqual(len(asks), 1, "exactly one Muse Spark call per sample")
                 a = asks[0]
                 self.assertTrue(a["connected"], "connected")
