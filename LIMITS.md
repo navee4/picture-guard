@@ -26,6 +26,7 @@ The headline numbers are from the sealed **hold-out** (50 made-up text pictures,
 
 - **The original picture goes to our own GPU** (Modal) so that Muse Glimmer and SAM can look at it. It is processed in memory and not stored or logged. **It never goes to Meta's API.** Only the safe copy can be sent to Muse Spark, and the page shows the SHA-256 of the bytes sent next to the safe copy's.
 - Use made-up pictures in the demo.
+- **What goes to Meta:** only the safe copy and your question go to Meta's Model API. On free credits, Meta may use what is sent for product improvement (Meta's billing page, 28 Oct 2026).
 - The Meta Model API's retention of images is **not stated** in Meta's developer docs (the legal terms were not read). The code uses a Standard-mode model only, never a "Contributor" one.
 
 ## What a leak check can and cannot prove

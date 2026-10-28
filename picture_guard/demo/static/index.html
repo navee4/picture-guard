@@ -99,7 +99,7 @@ async function init(){
     const b=document.createElement('button'); b.textContent='Sample: '+(names[n.replace(/_\d+\..*/,'')]||n);
     b.dataset.sample=n; b.onclick=()=>run({sample:n}); $('samples').appendChild(b);
   }
-  $('sparkNote').textContent=info.spark_connected?('Answers come from '+info.spark_model+' (Meta Model API, Standard mode).'):'Muse Spark not connected yet. The answer below is a stand-in; nothing is sent to Meta.';
+  $('sparkNote').textContent=info.spark_connected?('Answers come from '+info.spark_model+' (Meta Model API, Standard mode). Only the safe copy and your question go to Meta\'s Model API. On free credits, Meta may use what is sent for product improvement.'):'Muse Spark not connected yet. The answer below is a stand-in; nothing is sent to Meta.';
   fetch('api/wake',{method:'POST'}).catch(()=>{});
 }
 $('file').onchange=e=>{const f=e.target.files[0]; if(f) run({file:f}); e.target.value='';};

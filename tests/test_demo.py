@@ -77,6 +77,13 @@ class Spark(unittest.TestCase):
         self.assertEqual([spark.sha256(i) for i in spark.images_in_body(body)], [spark.sha256(safe)])
         self.assertNotIn("KEY-FOR-TEST", json.dumps(r))  # the key is never in what we return or log
 
+    def test_log_records_seconds_and_token_counts_only(self):
+        safe = b"safe-bytes"
+        resp = {"usage": {"input_tokens": 12, "output_tokens": 3, "note": "text is dropped"}, "output": [{"type": "message", "content": [{"type": "output_text", "text": "ok"}]}]}
+        r = spark.ask("what?", safe, spark.sha256(safe), spark.sha256(b"orig"), "K", post=lambda *a: (200, json.dumps(resp).encode()))
+        self.assertEqual(r["log"]["usage"], {"input_tokens": 12, "output_tokens": 3})
+        self.assertIn("seconds", r["log"])
+
     def test_http_error_gives_a_short_message(self):
         safe = b"s"
         r = spark.ask("q", safe, spark.sha256(safe), spark.sha256(b"o"), "K", post=lambda *a: (401, json.dumps({"error": {"code": "invalid_api_key"}}).encode()))

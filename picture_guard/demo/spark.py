@@ -102,11 +102,13 @@ def ask(question: str, safe_png: bytes, safe_sha: str, original_sha: str, api_ke
         return {"answer": ("Muse Spark is not connected yet, so this is a stand-in answer. Your question and the safe copy "
                            f"({len(safe_png):,} bytes, SHA-256 starting {safe_sha[:12]}) would have gone to the Meta Model API, and nothing else."),
                 "error": None, "connected": False, "log": log}
+    t0 = time.monotonic()
     try:
         status, raw = post(URL, {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}, payload, TIMEOUT_S)
     except Exception as ex:  # noqa: BLE001
         return {"answer": None, "error": f"could not reach Muse Spark: {type(ex).__name__}", "connected": True, "log": {**log, "sent": True}}
     log["sent"] = True
+    log["seconds"] = round(time.monotonic() - t0, 2)
     log["http_status"] = status
     if status != 200:
         code = None
@@ -116,7 +118,11 @@ def ask(question: str, safe_png: bytes, safe_sha: str, original_sha: str, api_ke
             pass
         return {"answer": None, "error": f"Muse Spark answered HTTP {status}" + (f" ({code})" if isinstance(code, str) and len(code) < 60 else ""), "connected": True, "log": log}
     try:
-        text = answer_text(json.loads(raw))
+        resp = json.loads(raw)
+        text = answer_text(resp)
+        usage = resp.get("usage")
+        if isinstance(usage, dict):  # token counts only (numbers), never text
+            log["usage"] = {k: v for k, v in usage.items() if isinstance(v, int) and not isinstance(v, bool)}
     except Exception:  # noqa: BLE001
         text = None
     if text is None:

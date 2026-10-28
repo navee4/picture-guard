@@ -20,7 +20,7 @@ It finds names, addresses, account numbers, ID numbers and faces in a picture. I
 4. **Faces.** **SAM 3.1** (on our own GPU) finds faces; Glimmer's face count is a second check.
 5. **Black out.** Solid black boxes, written to a new PNG with no metadata.
 6. **Check the safe copy.** The cleaned picture is read again; any private value still readable means "not sure".
-7. **Ask.** **Muse Spark** (Meta Model API) answers questions about the **safe copy only**. The step is built and unit-tested; the hosted demo switches it on with the Meta Model API key.
+7. **Ask.** **Muse Spark** answers questions about the **safe copy only**. The answer step calls the model `muse-spark-1.3` (Standard mode) through the Meta Model API (`api.meta.ai`). The code refuses to send anything but the safe copy and your question. On Meta's free credits, Meta may use what is sent for product improvement.
 
 The original picture goes only to our own GPU (Modal), never to Meta's API.
 
