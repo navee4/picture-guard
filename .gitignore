@@ -28,3 +28,4 @@ results/pg11/debug/
 results/pg12/*/debug/
 results/pg15/*/debug/
 results/pg15/*/log-*.txt
+results/final/debug/
