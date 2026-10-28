@@ -8,7 +8,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 TEXT = {".md", ".py", ".txt", ".json", ".svg", ".html", ".toml", ".sh", ".cfg", ".yml", ".yaml"}
 SKIP_PARTS = ("testset/key.json", "faces/key.json", "faces_hard/key.json")  # the keys hold the planted (made-up) values by design
-FORBIDDEN = [re.compile(p, re.I) for p in (r"private-project", r"private-repo", r"/home/", r"Documents", r"other-machine")]
+# the words are assembled from pieces so that this file does not itself contain them (and a text rewrite of the history cannot mangle the list)
+FORBIDDEN = [re.compile(p, re.I) for p in ("my" + "yaad", "my" + "memory", "/" + "Users/", "Documents/" + "Claude", "windows" + " vm")]
 
 
 def tracked_text_files():
