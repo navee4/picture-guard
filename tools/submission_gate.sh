@@ -14,7 +14,7 @@ check() { # check "name" command...
 check "unit tests (all)" $PY -m unittest discover -s tests -t .
 check "freeze test (pipeline files equal tag freeze-1)" $PY -m unittest tests.test_freeze
 check "docs test (no private names or paths in tracked text)" $PY -m unittest tests.test_docs
-check "secret scan" sh -c 'out=$(sh tools/secret_scan.sh); echo "$out"; echo "$out" | tail -n 1 | grep -qx 0'
+check "secret scan (no unexplained finding, no token-shaped string)" sh -c 'out=$(sh tools/secret_scan.sh) || exit 1; echo "$out"; [ "$(echo "$out" | grep -c "not plain hash lines: 0")" = 2 ] && echo "$out" | tail -n 1 | grep -qx 0'
 
 WANT='navee4 <31568421+navee4@users.noreply.github.com>'
 people=$(git log --all --format='%an <%ae>%n%cn <%ce>' | sort -u)

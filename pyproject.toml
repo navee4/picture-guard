@@ -8,6 +8,7 @@ dependencies = ["pillow", "numpy"]
 [project.optional-dependencies]
 remote = ["modal"]
 demo = ["fastapi", "python-multipart", "uvicorn"]
+dev = ["detect-secrets"]
 demo-test = ["fastapi", "python-multipart", "uvicorn", "httpx", "playwright"]
 
 [project.scripts]

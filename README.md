@@ -93,7 +93,7 @@ The hold-out result files are `results/final/eval-testset-holdout-fb-zoom.json`,
 ## Run it
 
     uv venv --python 3.12                               # makes .venv (Python 3.12 or newer; or: python3 -m venv .venv)
-    uv pip install --python .venv/bin/python -e '.[demo-test]' faker   # installs the `pg` command, the demo's test tools, and the test-picture generator's one extra package
+    uv pip install --python .venv/bin/python -e '.[demo-test,dev]' faker   # the `pg` command, the demo's test tools, the secret scanner, and the test-picture generator's one extra package
     brew install tesseract                              # the reader (a separate program)
     (cd testset && ../.venv/bin/python generate.py --out images)       # makes the 200 made-up test pictures (same seed: byte-identical to ours)
     .venv/bin/pg protect in.png --out safe.png --report report.json    # needs the Modal app (see below)

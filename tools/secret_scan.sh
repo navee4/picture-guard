@@ -1,6 +1,6 @@
 #!/bin/sh
 # Secret scan: detect-secrets over the working tree and over `git log -p` (the whole history).
-# Hex "High Entropy" hits that are SHA-256 hashes of made-up pictures are expected; the script prints any hit that is not a plain hash line.
+# Hex "High Entropy" hits that are SHA-256 hashes of made-up pictures (or the git commit hash in results/final/ran-*.json) are expected; the script prints any hit that is not a plain hash line.
 set -e
 cd "$(dirname "$0")/.."
 TMP="$(mktemp -d)"; trap 'rm -rf "$TMP"' EXIT
@@ -10,7 +10,7 @@ git log -p --all > "$TMP/history.txt"
 .venv/bin/python - "$TMP" <<'PY'
 import collections, json, re, sys
 tmp = sys.argv[1]
-plain = re.compile(r'(?:"[^"]*":\s*)?"[0-9a-f]{32,64}",?|.*"[a-z_0-9]*sha256[a-z_0-9]*":\s*"[0-9a-f]{32,64}",?')
+plain = re.compile(r'(?:"[^"]*":\s*)?"[0-9a-f]{32,64}",?|.*"[a-z_0-9]*sha256[a-z_0-9]*":\s*"[0-9a-f]{32,64}",?|\+?\{"set": "[a-z_]+", "unix_time": \d+, "commit": "[0-9a-f]{40}", "pictures_scored": \d+\}')
 def check(name, path, text_of):
     d = json.load(open(path)); types = collections.Counter(); odd = []
     for f, hits in d["results"].items():
