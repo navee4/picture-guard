@@ -31,6 +31,7 @@ class ReplayGuard:
         self.cold_start_seconds = None
         self.info = None
         self.live_calls = 0
+        self.offline = False  # True: a call with no saved answer is an error, never a Modal call (the same-result guard uses it)
 
     def __enter__(self):
         return self
@@ -56,6 +57,8 @@ class ReplayGuard:
                                "container_seconds": r.get("container_seconds"), "glimmer_seconds": (r.get("glimmer") or {}).get("seconds"),
                                "sam_seconds": (r.get("sam") or {}).get("seconds")})
             return r
+        if self.offline:
+            raise RemoteError("no saved answer for this picture (offline replay)")
         live = self._live()
         n = len(live.calls)
         out = live.analyse(png)

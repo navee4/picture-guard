@@ -29,7 +29,7 @@ if os.environ.get("PG_HAVE_SPARK_SECRET") == "1":  # set by tools/deploy_demo.py
     secrets.append(modal.Secret.from_name("meta-model-api"))
 
 
-@app.cls(image=web_image, cpu=2, memory=2048, secrets=secrets, timeout=300, scaledown_window=120, max_containers=1)
+@app.cls(image=web_image, cpu=8, memory=4096, secrets=secrets, timeout=300, scaledown_window=120, max_containers=1)
 @modal.concurrent(max_inputs=6)
 class Web:
     @modal.enter()

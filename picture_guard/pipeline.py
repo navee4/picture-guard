@@ -122,6 +122,8 @@ def protect(in_path, out_path, report_path, plan: Plan | None = None, ablation: 
 
     if not loaded.in_scope:
         reasons.append(f"intake: {loaded.scope_why}")
+    elif guard is not None and not ablation:
+        decide.start_prefetch(ctx)  # the model call does not need Tesseract's words: start it now, read the words while the GPU works
     for st in plan.detect:
         if reasons and not ablation:  # an earlier stage already forced the fail-safe: do not spend time on the rest
             stages.append(_skipped(st.name, reasons[0]))
@@ -167,6 +169,7 @@ def protect(in_path, out_path, report_path, plan: Plan | None = None, ablation: 
         chunks = imaging.png_chunks(outs)
 
     stages.append(_call(plan.send, ctx))
+    decide.finish_prefetch(ctx)  # never leave a model call running into the next picture
     report = {
         "tool": "picture_guard", "version": __version__,
         "mode": "ablation: NOT A PRODUCT RESULT (unbuilt stages switched off)" if ablation else "product",

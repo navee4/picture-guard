@@ -36,6 +36,50 @@ def _rule_findings(ctx):
     return findings, unexplained
 
 
+def _png_bytes(ctx) -> bytes:
+    import io
+    buf = io.BytesIO()
+    ctx.loaded.image.save(buf, format="PNG")
+    return buf.getvalue()
+
+
+def start_prefetch(ctx) -> None:
+    """Day 9 (PG-14, speed only): ask the models about the picture in a thread while Tesseract reads. Same bytes, same call, same answer;
+    `run` below waits for it. Nothing about which values are covered changes."""
+    import threading
+    box: dict = {}
+
+    def target():
+        try:
+            box["resp"] = ctx.guard.analyse(_png_bytes(ctx))
+        except BaseException as ex:  # noqa: BLE001  (re-raised in `run`, where RemoteError becomes "not sure")
+            box["error"] = ex
+
+    th = threading.Thread(target=target, daemon=True)
+    box["thread"] = th
+    ctx.data["prefetch"] = box
+    th.start()
+
+
+def finish_prefetch(ctx, timeout_s: float = 300.0) -> None:
+    box = ctx.data.get("prefetch")
+    if box:
+        box["thread"].join(timeout_s)
+
+
+def _analyse(ctx):
+    box = ctx.data.get("prefetch")
+    if not box:
+        return ctx.guard.analyse(_png_bytes(ctx))
+    box["thread"].join(300.0)
+    if box["thread"].is_alive():
+        raise RemoteError("the model call did not answer within 300 s")
+    if "error" in box:
+        err = box["error"]
+        raise err if isinstance(err, RemoteError) else RemoteError(f"{type(err).__name__}: {str(err)[:200]}")
+    return box["resp"]
+
+
 def run(ctx) -> StageResult:
     findings, unexplained = _rule_findings(ctx)
     by_type: dict = {}
@@ -48,11 +92,8 @@ def run(ctx) -> StageResult:
         return StageResult(OK, answer, f"ABLATION: rules only, no model; word list would {'refuse' if unexplained else 'accept'} this picture")
     if ctx.guard is None:
         return StageResult(NOT_SURE, {**answer, "failsafe_rule": 3}, "no models available (no Modal session): cannot judge names and addresses")
-    import io
-    buf = io.BytesIO()
-    ctx.loaded.image.save(buf, format="PNG")
     try:
-        resp = ctx.guard.analyse(buf.getvalue())
+        resp = _analyse(ctx)
     except RemoteError as ex:
         return StageResult(NOT_SURE, {**answer, "failsafe_rule": 3}, f"the Modal call failed: {str(ex)[:160]}")
     g = resp.get("glimmer") if isinstance(resp, dict) else None

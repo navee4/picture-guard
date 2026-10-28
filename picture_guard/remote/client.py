@@ -9,7 +9,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 LEDGER = ROOT / "results" / "pg6" / "spend.jsonl"
-SPEND_CAP_USD = 15.0
+import os
+SPEND_CAP_USD = float(os.environ.get("PG_SPEND_CAP_USD", 15.0))  # the ledger holds every window's spend; a window sets its own total, e.g. PG_SPEND_CAP_USD=24.5
 # Modal list prices used in earlier runs (USD per second): L40S GPU, per CPU core, per GiB of memory. This container: 4 cores, 32 GiB.
 RATE_PER_SECOND = 0.000542 + 4 * 0.00003942 + 32 * 0.00000222
 

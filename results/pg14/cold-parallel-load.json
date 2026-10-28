@@ -1,0 +1,1 @@
+{"label": "parallel-load", "cold_start_s": 31.1, "info": {"glimmer_load_seconds": 15.6, "sam_load_seconds": 15.5, "load_seconds": 15.6, "gpu": "NVIDIA L40S", "peak_mib": 21420}, "first_call_s": 7.4, "second_call_s": 6.9, "glimmer_s": 6.68, "sam_s": 0.5, "container_s": 6.68, "total_s": 48.9}

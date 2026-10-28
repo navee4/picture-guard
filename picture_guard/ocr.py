@@ -30,6 +30,12 @@ def available() -> bool:
     return shutil.which("tesseract") is not None
 
 
+def _env():
+    """With several reads at once, each Tesseract uses one thread (its own OpenMP threads would fight the other reads)."""
+    import os
+    return {**os.environ, "OMP_THREAD_LIMIT": "1"} if _workers() > 1 else None
+
+
 def read_words(image: Image.Image, psm: int, timeout_s: float = 60.0, whitelist: str | None = None) -> list[Word]:
     exe = shutil.which("tesseract")
     if exe is None:
@@ -38,7 +44,7 @@ def read_words(image: Image.Image, psm: int, timeout_s: float = 60.0, whitelist:
         f = Path(d) / "in.png"
         image.save(f, format="PNG")
         cmd = [exe, str(f), "stdout", "--psm", str(psm)] + (["-c", f"tessedit_char_whitelist={whitelist}"] if whitelist else []) + ["tsv"]
-        r = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout_s)
+        r = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout_s, env=_env())
     if r.returncode != 0:
         raise RuntimeError(f"tesseract exit {r.returncode}: {r.stderr[:200]}")
     return parse_tsv(r.stdout)
@@ -67,36 +73,72 @@ def group_lines(words: list[Word]) -> list[list[Word]]:
 SCALES = (1, 2)  # the second read is on a picture enlarged 2x, which reads small or faint text a plain read misses
 
 
+def _workers() -> int:
+    """How many Tesseract reads run at once. PG_OCR_WORKERS overrides it (1 = the old one-after-the-other behaviour)."""
+    import os
+    env = os.environ.get("PG_OCR_WORKERS")
+    return max(1, int(env)) if env else max(1, min(8, os.cpu_count() or 1))
+
+
 def read_passes(image: Image.Image, timeout_s: float = 60.0, cleanups: tuple = ()) -> dict:
-    """{"1x-psm6", "1x-psm11", "2x-psm6", "2x-psm11", "2xc-psm6", "2xc-psm11"} -> words. Boxes of the 2x reads are scaled back to the picture."""
-    out = {}
-    for sc in SCALES:
-        img = image if sc == 1 else image.resize((image.width * sc, image.height * sc), Image.LANCZOS)
-        for psm in PSMS:
-            words = read_words(img, psm, timeout_s)
-            if sc != 1:
-                for w in words:
-                    w.box = tuple(int(round(v / sc)) for v in w.box)
-            out[f"{sc}x-psm{psm}"] = words
-    # a third read: grey, contrast stretched, 2x, sharpened. On 150 dev pictures it located 45 more AI-listed values than the other reads.
-    boosted = ImageOps.autocontrast(image.convert("L"), cutoff=1).resize((image.width * 2, image.height * 2), Image.LANCZOS)
-    boosted = boosted.filter(ImageFilter.UnsharpMask(2, 150, 3)).convert("RGB")
-    for psm in PSMS:
-        words = read_words(boosted, psm, timeout_s)
-        for w in words:
-            w.box = tuple(int(round(v / 2)) for v in w.box)
-        out[f"2xc-psm{psm}"] = words
-    for name in cleanups:  # extra reads on cleaned-up copies of the picture; each ADDS passes, so what was found before is still found
-        cleaned = CLEANUP_FNS[name](image)
+    """{"1x-psm6", "1x-psm11", "2x-psm6", "2x-psm11", "2xc-psm6", "2xc-psm11", then "<cleanup>-psm6/11"} -> words. Boxes of the 2x reads are scaled back to the picture.
+
+    The reads are independent Tesseract processes, so they run at the same time (day 9, PG-14: speed only; the result and its key order are
+    the same as running them one after the other)."""
+    from concurrent.futures import ThreadPoolExecutor
+
+    def prep_scaled(sc):
+        return image if sc == 1 else image.resize((image.width * sc, image.height * sc), Image.LANCZOS)
+
+    def prep_boosted():
+        # a third read: grey, contrast stretched, 2x, sharpened. On 150 dev pictures it located 45 more AI-listed values than the other reads.
+        boosted = ImageOps.autocontrast(image.convert("L"), cutoff=1).resize((image.width * 2, image.height * 2), Image.LANCZOS)
+        return boosted.filter(ImageFilter.UnsharpMask(2, 150, 3)).convert("RGB")
+
+    def prep_cleanup(name):
+        cleaned = CLEANUP_FNS[name](image)  # an extra read on a cleaned-up copy; each ADDS passes, so what was found before is still found
         if cleaned is None:  # nothing to clean (e.g. no dark areas)
-            continue
+            return None
         scale = 3 if name == "big3" else 2
-        big = cleaned.resize((cleaned.width * scale, cleaned.height * scale), Image.LANCZOS)
-        for psm in PSMS:
-            words = read_words(big, psm, timeout_s, DIGIT_CHARS if name.startswith("dig") else None)
-            for w in words:
-                w.box = tuple(int(round(v / scale)) for v in w.box)
-            out[f"{name}-psm{psm}"] = words
+        return cleaned.resize((cleaned.width * scale, cleaned.height * scale), Image.LANCZOS)
+
+    # (key prefix, prepare, scale back by, whitelist), in the order the result is built
+    plan = [(f"{sc}x", (lambda sc=sc: prep_scaled(sc)), sc, None) for sc in SCALES]
+    plan.append(("2xc", prep_boosted, 2, None))
+    for name in cleanups:
+        plan.append((name, (lambda name=name: prep_cleanup(name)), 3 if name == "big3" else 2, DIGIT_CHARS if name.startswith("dig") else None))
+    n = _workers()
+    out: dict = {}
+    if n == 1:
+        for prefix, prep, scale, wl in plan:
+            img = prep()
+            if img is None:
+                continue
+            for psm in PSMS:
+                words = read_words(img, psm, timeout_s, wl)
+                if scale != 1:
+                    for w in words:
+                        w.box = tuple(int(round(v / scale)) for v in w.box)
+                out[f"{prefix}-psm{psm}"] = words
+        return out
+    with ThreadPoolExecutor(n) as pool:
+        preps = [pool.submit(prep) for _, prep, _, _ in plan]
+        reads = []
+        for (prefix, _, scale, wl), pf in zip(plan, preps):
+            reads.append((prefix, scale, [(psm, None) for psm in PSMS], pf, wl))
+        jobs = []
+        for prefix, scale, psms, pf, wl in reads:
+            # each read waits for its own prepared picture, then runs in the pool
+            jobs.append((prefix, scale, [(psm, pool.submit(lambda pf=pf, psm=psm, wl=wl: (lambda im: None if im is None else read_words(im, psm, timeout_s, wl))(pf.result()))) for psm, _ in psms]))
+        for prefix, scale, futs in jobs:
+            for psm, fut in futs:
+                words = fut.result()
+                if words is None:
+                    continue
+                if scale != 1:
+                    for w in words:
+                        w.box = tuple(int(round(v / scale)) for v in w.box)
+                out[f"{prefix}-psm{psm}"] = words
     return out
 
 

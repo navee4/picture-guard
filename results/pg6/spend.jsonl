@@ -17,3 +17,11 @@
 {"run": "eval-faces_hard-dev-fb-zoom-clean-inv+loc", "seconds": 532.1, "usd": 0.4101, "note": "session wall time (upper bound: includes image build and cold start)"}
 {"run": "eval-faces_hard-dev-fb-zoom-clean-inv+loc+big3", "seconds": 677.4, "usd": 0.5221, "note": "session wall time (upper bound: includes image build and cold start)"}
 {"run": "eval-faces_hard-dev-fb-zoom-clean-loc+dig+pol+digpol", "seconds": 655.0, "usd": 0.5048, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "same-result", "seconds": 67.3, "usd": 0.0519, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "same-result", "seconds": 61.6, "usd": 0.0475, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "same-result", "seconds": 55.3, "usd": 0.0427, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "same-result", "seconds": 70.5, "usd": 0.0544, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "pg14-before", "seconds": 60.2, "usd": 0.0464, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "pg14-before", "seconds": 59.3, "usd": 0.0457, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "pg14-parallel-load", "seconds": 120.0, "usd": 0.0925, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "pg14-parallel-load", "seconds": 53.4, "usd": 0.0412, "note": "session wall time (upper bound: includes image build and cold start)"}

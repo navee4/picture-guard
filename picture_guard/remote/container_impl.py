@@ -99,17 +99,7 @@ class Engine:
         self.proc = subprocess.Popen(cmd, stdout=self.log, stderr=subprocess.STDOUT)
         import requests
         self.requests = requests
-        ready = False
-        while time.time() - t0 < 900 and self.proc.poll() is None:
-            try:
-                if requests.get("http://127.0.0.1:8080/health", timeout=2).status_code == 200:
-                    ready = True
-                    break
-            except Exception:  # noqa: BLE001
-                time.sleep(2)
-        if not ready:
-            raise RuntimeError("llama-server did not start: " + open("/tmp/llama.log").read()[-1500:])
-        self.glimmer_load_seconds = round(time.time() - t0, 1)
+        # Day 9 (PG-14, speed only): load SAM while llama-server loads Glimmer (same models, same settings; they used to load one after the other)
         t1 = time.time()
         from sam3.model_builder import build_sam3_predictor
         self.sam = build_sam3_predictor(version="sam3.1", use_fa3=False, async_loading_frames=False)
@@ -117,6 +107,17 @@ class Engine:
         orig = self.sam.model.init_state
         self.sam.model.init_state = lambda *a, **k: orig(*a, **{x: y for x, y in k.items() if x in ok})
         self.sam_load_seconds = round(time.time() - t1, 1)
+        ready = False
+        while time.time() - t0 < 900 and self.proc.poll() is None:
+            try:
+                if requests.get("http://127.0.0.1:8080/health", timeout=2).status_code == 200:
+                    ready = True
+                    break
+            except Exception:  # noqa: BLE001
+                time.sleep(1)
+        if not ready:
+            raise RuntimeError("llama-server did not start: " + open("/tmp/llama.log").read()[-1500:])
+        self.glimmer_load_seconds = round(time.time() - t0, 1)  # since the start of loading (SAM loaded meanwhile)
         self.load_seconds = round(time.time() - t0, 1)
 
     def _poll(self):
