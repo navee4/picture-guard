@@ -1,0 +1,9772 @@
+{
+ "tool_version": "0.1.0-day1",
+ "set": "testset",
+ "split": "holdout",
+ "pictures_asked": 50,
+ "pictures_scored": 50,
+ "mode": "product",
+ "check_glimmer": false,
+ "fallback": "zoom",
+ "cleanups": "default",
+ "margin": "default",
+ "smart": null,
+ "replay_of_day3_answers": false,
+ "live_modal_calls": null,
+ "failures": [],
+ "tesseract_installed": true,
+ "black_max_channel": 16,
+ "modal": {
+  "cold_start_seconds": 52.9,
+  "container": {
+   "glimmer_load_seconds": 37.3,
+   "sam_load_seconds": 35.9,
+   "load_seconds": 37.3,
+   "gpu": "NVIDIA L40S",
+   "peak_mib": 22140
+  }
+ },
+ "key_sha256": {
+  "payslip_000.jpg": "5f9494fe02e89bd22376851003c1b240089f6fc91801181e83498895b1c53034",
+  "payslip_001.png": "1da29548391d109cc12e94f21961a15a9b2f5e63b1803f2a3975c5e437255b04",
+  "payslip_002.png": "0a82e9f7b3aca36604712ee11d1fc0f7d65bd46d0886d5812c7b187c5040554c",
+  "payslip_003.jpg": "dae56731343019a41a413579237c693dcb5870f0fb8468fde6b838589d088328",
+  "payslip_004.png": "1fd72fe662f0f85cff03128e8797bef838166b060a2d52822e5733c40fd300ee",
+  "payslip_005.jpg": "8068391a8a7f159452a11650508f61b8cd790b44743d73b5b246e436af391857",
+  "payslip_006.png": "3e9cad42cfc914a8012bb5da225f0c1074b409a7c4e40e72931ce1e75f80e8fc",
+  "payslip_007.png": "b48205dc0a71fcd4372b82ddfe57001271a3f5d183d8248877e6799e83405f11",
+  "payslip_008.jpg": "a46653b56a9c58e00d4f99c1614d0369fb489ca03d3c778065b3c764f043d9a2",
+  "payslip_009.png": "d6bd52035514829010161f37af7ebb094f5a5789079387f89db315ae6cfc02fc",
+  "payslip_010.jpg": "c3d2125d4fb7b8211c42ac2b6705c47fa6d1107481d9e5237e878c078a75f204",
+  "payslip_011.png": "307612546841a38049d138c327819b2bcce3f7f022061a135e846e58f85216de",
+  "payslip_012.png": "4967575ee95fb2e169628f985d75ebd505dea2efa9f8acfa01b8ec662ad9e853",
+  "payslip_013.jpg": "a31232d1927df34fbe779f2e9911c362fb156ca9e9f036c68e400014f4510a3c",
+  "payslip_014.jpg": "dddb4d55ca885045f27134d5062e7c4b58bc4408082b6ea92e373926d50acd14",
+  "payslip_015.png": "29398194e05daae044e304cde325c927f0b34fa3d078279a5ddde663163da656",
+  "payslip_016.jpg": "2e8937f730a083ec1e80fbbaa5954e041ad052c72ac951eb3b9b2a0a580454f3",
+  "payslip_017.jpg": "7a1dbfc51145003b9ad393eaf43ae7fcfb5f96f700ef3513936116a5c2a3bbb0",
+  "payslip_018.png": "2a7afe2bae4d6068e94343bed1e8734ad77fef65d34f9727374c3ff0700c3c97",
+  "payslip_019.jpg": "eeed3b27a6f4675b4a3b20df2331bd3a44ad14a1130d4fddf3539381e0fdfd61",
+  "payslip_020.jpg": "4868878a42a05351e4ab2ea435f6b00026130c574955ef214f5e303dbc4eb45d",
+  "payslip_021.jpg": "ec49ec77a10c5d966d63e9f8f07ba4674405e44fb6f3f2462dc8c2cc96e27140",
+  "payslip_022.png": "f842b240c298ab6ffe2341bfaad5c8ff9df85e0c8428e10c1aa8d52ef9392058",
+  "payslip_023.jpg": "66360150367df7556396552f148c25fd343dbbd056e75616c92e0144b66c6413",
+  "payslip_024.png": "286ecbc22f57f293a3e3eeeb1e89ae0120f62715543554d20c90f5820e253e1e",
+  "payslip_025.jpg": "ec50484b8bf1bdbddfd90ea71a31cfd827a811009a69ea093fab9e167e8a4100",
+  "payslip_026.jpg": "bd4dac71f043699859cca3342ad556aa3fe91b9d9294869a549776970b4304c2",
+  "payslip_027.png": "b519305ca9a8a0e818e38fdb35da40eab3df837e522563959013bb8198fcb3f9",
+  "payslip_028.jpg": "197d503171a3e3097f28e90a6c92693df547d1edff3c6cf23c59a44079eaed03",
+  "payslip_029.png": "8f0533c8e7f2cbb60511d03c9e2e3bccf565edc8bc0934fe37c2c7538cc44d8e",
+  "payslip_030.png": "75e958d8a081f699979740056c9febd6caf1519910df3bf57b5bc81ee4a54a34",
+  "payslip_031.png": "5820531490a2a318e5d2f0a18a6d473870a4c247a4b32b6a1f3112e206c982df",
+  "payslip_032.jpg": "5e71e4ffc6839c9621a497064bc085dfb3d42db5738c15f0874a6488c3ece7a1",
+  "payslip_033.png": "89524cb9a9fd3e2607f5dd109cc84c428c7c2cd732bf840519446c527478f4b4",
+  "payslip_034.png": "50d13cf21e167919ad5a15816017e9c22f209740a8c164e8bafedc0ffa211fdf",
+  "payslip_035.png": "f763c953a0f88c1c1d806f7d13a0a96cb824600e4e9040a68d6be6b7855c17de",
+  "payslip_036.jpg": "f416381c912f3ea15f824f6603db72ebd2e925231dc34bbc416be1ec1b19af46",
+  "payslip_037.png": "c96da78d082ed30e4443562eacbbeafd5d7a2b2dd784b3530a4832f473ec7d9e",
+  "payslip_038.png": "dc49de080a65907f1a70424b9af64ed76e2f314efc05ae26af079821cb982ae6",
+  "payslip_039.png": "5de6e587edebfadf283fb4ad32136db4ad7626a634e3dfa5733be690c3e338ed",
+  "payslip_040.jpg": "10a6a7a94297c59781381b55037a4cf180df6e6091ba02e3cc889195576a4276",
+  "payslip_041.png": "11be8758c8f01818d31fd3ba873b890c1914ee7386a4409129b239be8afbf1f1",
+  "payslip_042.png": "800759e48fc3018372341e691d0288723edc2cb5e2906d9a564d597c699bc0f5",
+  "payslip_043.png": "d3c8d23a2593c63c2d22982c5e234a2e86bc3716e9eb5f6bae220ee5386617fa",
+  "payslip_044.png": "a928770df45afd77ded46e86f36788e4a02cd414f961fc289871ff1e592bf4a6",
+  "payslip_045.png": "1670fba1315e68a1c9e0d161a11dbd563cab4f29f25d10752e544d0cdcdd17e9",
+  "payslip_046.png": "1e4045d77e9a75f9339778d42fb67fce0e2195d147191fecb7107671491be2ce",
+  "payslip_047.png": "062cbbaff0e78408caa300758771128c8da35ad27f5d2bf39fafaeb1541c5b9e",
+  "payslip_048.jpg": "c5a763ea3a7feb391579b665b4b9646b58acfc8b48a5ddae4ab2f5590ffcad31",
+  "payslip_049.jpg": "543ba8282204ac46e823fb4efb0c228738670d4c3639909077c228c5eb71abaf",
+  "letter_000.png": "9d43b61ee7a8302e4cad05f33e45b212191433f7156ff9b9d31e4532a7b32d6d",
+  "letter_001.png": "00b2f746e826701576be167818ccc9335c0a32880075a747d28574e3244327eb",
+  "letter_002.png": "f9fec665e15555e36dd4b6257f5706ac49d776f18d143785d9c84731e57357b7",
+  "letter_003.png": "61e0c2220f3e3120614a81349d9244bc6ac8b2c19067b582941e9731c3d1d4b5",
+  "letter_004.png": "ff3195464bf6f6621a540e981defce8589c6cbf82ef03f626098a59d4d8838ca",
+  "letter_005.png": "590622b755fb06e6e39dea5ecdd3d952653ad1c5cc717190ef50b9554f38d1c0",
+  "letter_006.jpg": "01637345ae7fe28977f47de8cce1dfd1aca1c958461a98b9ccdfe63446f2692c",
+  "letter_007.png": "b5fdb6247305309ed46bd3417416deaa131d231aea3e9701496592218120dce1",
+  "letter_008.png": "056fbecf88d10b24f2cf215537aa4616ed894ca096ffc3f0d5628d37c621d64b",
+  "letter_009.png": "13ce06a059e417e2e0c000d47eb3959efb934f8be2f6ea8c79a900fcd417669f",
+  "letter_010.jpg": "daef0df926542006305103e4a92787da4e0c2321f49bbb5243c8f4017150cea5",
+  "letter_011.png": "771c73712bb6c2aab56aae7cf5f621f40b6983bb7d007129d1e85ddd0fd9c8eb",
+  "letter_012.jpg": "102d186f0990ee653761e021a21462d28b757c233bc88cece44715d678a1f237",
+  "letter_013.png": "eab8d87fe10fddb811468013a96ab0935c538036a1383d4d47bf69be43ff55c2",
+  "letter_014.jpg": "2435067013779727e41238caa14c1bdf8408109bcdf830cec8fc1b1d47266ad1",
+  "letter_015.jpg": "316554f2de391859412714f9a2b12cd7f352cf43b5acba41506b60367d52f37e",
+  "letter_016.jpg": "446800616faf301a7d5afbf859c9c3882dcd615309d7dca383a41977574d89c2",
+  "letter_017.jpg": "09c1754443b31197574c83bc883b14f3a14aa9495493d471644e9df2acea71d5",
+  "letter_018.jpg": "c2f9e0347dae1c90dd60d56526dadabdf03707b3dca5fc617c87320cca5a1299",
+  "letter_019.jpg": "7c4b24dccfe1d6c238de6766a2f365eed201002ad27bbcc38d0b2dd51d6635a8",
+  "letter_020.png": "7c84ea7aec4af43c8621546a5951a3eb64fc530734f0be20ab9a03a0cb361e8b",
+  "letter_021.jpg": "9ae1e6508336a26e34ede345864bb493fa5f7456f6de36c103488ce3dba38305",
+  "letter_022.jpg": "5651069260d52982733a0adb0a368a8baa86111b92e0ad3fb96ebb6f374fa937",
+  "letter_023.jpg": "83a77c10c788f9e942e753561cc2760ab5497bdd5d68ef856f7d0f0267383239",
+  "letter_024.jpg": "354aecc7ae6e3a6e0d3db80af7b88e97f1c528fd2e4f8ae140fae236259f7b54",
+  "letter_025.png": "7e4fb323a348df15744d781114e74a1ab01130f2e3c2864155c19cb4e61e6764",
+  "letter_026.png": "264e2105d6b08fe4daa1a0b67d44d15531d5c13f1fe3d3b10655ed83597b9e24",
+  "letter_027.png": "6cfa5593ff13c0469d0124c87400a9390839cf141a80eb0268120f7032e7afd9",
+  "letter_028.jpg": "e356864f40747b6a5109a13a47c6662254bb11ebceea10f9c95835ec7c003187",
+  "letter_029.png": "d411acf5402721d58106f475b834019a59762618a56e2ed42d0888503816831d",
+  "letter_030.png": "c5b9da669993eed7941227715c101c8e84d22d8d4bd18cde662c33f1e12c831a",
+  "letter_031.png": "833c5c656274723178565fb537d268b1c1fed33154724fef80a986d42a15b449",
+  "letter_032.jpg": "8ee4a50f52aaf86009e2ffac3da9b093ad0797b8353f7e320ee7c495b2660942",
+  "letter_033.png": "689c6771fd10788c35066dea3ff0613528080e5a6ca7a9c4b0b1e4c074e515bf",
+  "letter_034.png": "a5d4f6fc31d1fc003c5c678ee1a2c366fe1b975d0f9e41de34a28fc18ebd600d",
+  "letter_035.jpg": "ec40482e295e4a96abe2765fa17da46c89b3caa1bf22cd6f5e9c40e03f12e438",
+  "letter_036.jpg": "60005a2587c6981ed961856b75678e9665fffc80f808005f7132b3b01974bda6",
+  "letter_037.jpg": "9d3e840530bf2b6dcea8d6ebd77663e2671b644f0677b15c55d877cc2d9a94df",
+  "letter_038.png": "351b28c1c1686d07b87ff6ac061affb12f6c68cd920778f094fbf8871af4fd8f",
+  "letter_039.png": "f6fc387e5e60e40642025b67a158c142567c8e2673a02ef460a6ce6c8e1ad963",
+  "letter_040.jpg": "fa0915276c00083d885061db74c4c55b6c5d1e44c9971591de9c62c2a46aac81",
+  "letter_041.jpg": "b8de66c739da97bddef8f7fb74a154b299b0f03574370fb0e3e9e19e83ea5f83",
+  "letter_042.jpg": "d4e86e2abc976bcc22b7d5ba944e9c2d7cb0cb106f2c52bcbcaed019d42211f7",
+  "letter_043.jpg": "dd9bb9fb7491a05c6bd581f45e4d04dc8426846fd0223860e6f4bc2d9f656471",
+  "letter_044.png": "daaf883dd9bdb62893a89e4318366daeefa969a0a4b361cf95542fc4be576c51",
+  "letter_045.png": "a79b810a0f8009e2a986dd64468b245f33255603829ace34622c27cbf30c80db",
+  "letter_046.jpg": "688b372b78fada47bd5cdd64821f1ea482d34aeec80a564fa3dd2c1f0c95c584",
+  "letter_047.jpg": "0ae290a479c0f2df537e3da838ab51b2114622c7e4d0dc95d36b668ae9a67904",
+  "letter_048.jpg": "61f24627f7acb59e148ebf66d6a905b7e16076ef20d2df6d3d6ecf3224684b44",
+  "letter_049.png": "6cd40bb8e2bdf410cf905ed6b86e060b5d33dd60278fdbb1cb98cf4e26c3a576",
+  "id_card_000.jpg": "0ab4d4cf3e30f7fc9c3da20a9a0115963c63ede8d7b923c9951ba5b810e6a086",
+  "id_card_001.png": "47316fcf9eeee96e526db7dbc9ff18dacf2641379709abd16335734a0dda72b5",
+  "id_card_002.jpg": "cc81d0e8adbb49e506a57b8bb1dfd300dc65f77f19bc90fdcf12ae7c78b6c6f2",
+  "id_card_003.jpg": "771a97d5f9bee59a3d99e67a897f9ecb5fd14d4b9363bd725de89be2da80a3f9",
+  "id_card_004.jpg": "67011ef578a992653c558c9fe17ff4f6c526ec2a2a89b3e238eb1a9a019f586a",
+  "id_card_005.jpg": "ec523dcc0e0a2fd059a8fbd9f0dd2e7ad88f1f7645a1021a4a8e2d2bc1186770",
+  "id_card_006.png": "5a1291a5638b4f34e2a018cf113885117ff413b507e455359f4381b108c2562f",
+  "id_card_007.jpg": "9cdd3db8ae2034259c92f2b6dcae3e1fd3cccf1e1e8d5e1408ea4da5819c0630",
+  "id_card_008.png": "5cbcceff8e736d2195b8be301bdd037f609d09c4c427715bd8223484f43222a9",
+  "id_card_009.jpg": "ac6f8f1a282a1cd6df3dd6d1c8b6c804fbf0abc8ebbfd48accb909fc5dd50c8c",
+  "id_card_010.png": "d7d62fd5d8386e4eb65eaed51e88a664d3b7d07c99a3066b4ef7d05463013fcb",
+  "id_card_011.png": "1a8a84774a196d333ed44e572da0d1be535267c70980745380def025b5cce8fc",
+  "id_card_012.png": "2942f889f4a0749e0a83b26955890731cd02c46de850b9ebe14797b3c2960e6a",
+  "id_card_013.jpg": "4938ef34bdda12fb387be54870715dade1bccb5e63bf4843e7e413300f39b78b",
+  "id_card_014.png": "7f7d2013dc8466025d7794d374d8f418611b0cf500c201c7b92c61ed467a457a",
+  "id_card_015.png": "517b388b4bec4660ca5f34a20037fe494a209bc891ddd1964b3d4173acacfac5",
+  "id_card_016.jpg": "2bd87fe9ba363fc4c80e1cb47ce88a8c30a0bcb871b38ad16487e4f6284e0dd0",
+  "id_card_017.png": "aafd27ff6eaacbf621cced24298efc68f89247432493ca0af7e4c52a8964ec6c",
+  "id_card_018.png": "f9b8373ae3ad19e24d3b58c4cdb2dcd943aa7487ef23cc64fc512a57e603507d",
+  "id_card_019.png": "b31f97476a0bdb3edf56a41e14031b9354f7ecde66f9039d06649afbbf9a5af8",
+  "id_card_020.png": "fc1a05cbc9eb8aae972a598acb858187360c903531e483a377aacac0d74fc524",
+  "id_card_021.png": "1edb7c684f428ff6d8569e68e3423ce4f22d78ebca00ed13359ef160e1d74828",
+  "id_card_022.jpg": "24b1f23b27657d79835e1722ac49e73f9fb16b709017097714f01cf92c4dfb94",
+  "id_card_023.png": "75fa95d71f4c0814c63ce9edb73b299319b95859ad28bbcb55b16fa826e9fbd7",
+  "id_card_024.png": "155d7b8d0252a8963c64c4776f770aa1a99fd5aff6ab804480a334bfb337628a",
+  "id_card_025.png": "25b78af5f654586b6e588b2405679fb58eb00374e0edafb1576e4df6b75287e9",
+  "id_card_026.png": "f4df9ce4306bfc8b9b6ec28b0e0ae45f8c638df41625dcb88f96645ee8c40d76",
+  "id_card_027.png": "9d057a8a2c02f03c2ed375e7dc71f4f9e19fea81188d1e45d71bcb630dad7077",
+  "id_card_028.jpg": "a6028d346b26941f24a051d7af5bbd0ffd20777e81e4ef5d947e3d9aae89946a",
+  "id_card_029.jpg": "f209fa56db049cf8d33aff5f8c192ff39e38d93fedd24eb8095b3b05c2b8d13e",
+  "id_card_030.jpg": "8d2f83142fac58beb5f569eeed60367ce0dfca22122e98544e97b3deb0080923",
+  "id_card_031.png": "6a9988d0abb2d038fd747293f30cfaafabdbf02aeede31ffeae4d634c63d1336",
+  "id_card_032.jpg": "8805392e24e2ceee2b4a06c1503ac87459dec156f72c0c26f574d83f88221ab6",
+  "id_card_033.png": "67231461c1b722f801b51baff233bb049dd119863edcd5b3df185f20e1862a43",
+  "id_card_034.jpg": "344f19206d2433a17fa82bc224aeba9b0d9d5899b1a2202845c7925feb23f663",
+  "id_card_035.png": "aff41acdcfed9b7ffd516d8f377b884c01d56aee015cc947e2707831518e0aad",
+  "id_card_036.png": "b335e7e1a5f2c12fad0bb582a7057c45a42ef444249b400b109be679db0a7292",
+  "id_card_037.jpg": "4fa31624af71422781557dbc48cbbb774042351b58cb9d10f7c4a90c092629eb",
+  "id_card_038.jpg": "e35f589778c6404c89edb3b90e96d0f895865db32baa08f3dfe5db89f57e464b",
+  "id_card_039.jpg": "2cf2a35167fde5282935ff29fe80bbe728749a2996bd9ed370f1856902545cb5",
+  "id_card_040.jpg": "574f091b43ad4b426deb02684240d8d9090f5ed3f5fe320ddb6afee799c5489d",
+  "id_card_041.jpg": "8ec4abc9427dd4b38b8e1b234b1f0a552ba689b9b903209fafcd49f8f6117d30",
+  "id_card_042.jpg": "13088b22777b02b21017cf5dff1ffefe86f453c47bb577fc6ea4bc27cdecdc3b",
+  "id_card_043.png": "f39a42dd5314ab7b8ca3d023c9472eaac76b6aeaff286a318e10b413601b6b26",
+  "id_card_044.jpg": "71e416c1903c9e432e2a51e01e93d6ad0d116132d9b14ba84a66bd20337777ae",
+  "id_card_045.jpg": "cb144146af48f2eeb8e32aefe1847282f7e27f44a3075c31e389b639507e351f",
+  "id_card_046.jpg": "9e04b6e6863a9bbb06fb53140bd79367b7ef1ad663c5fe8a18c17f3e53856838",
+  "id_card_047.png": "e2014bb21ff35bcfd594afdfd8b5a17b13e2b9d123b58c3980b6e9e31b1197f9",
+  "id_card_048.png": "5028ac6ca99b5422b9cb74bf484f73fafd9890f96c7b4804082c6b927ad82ac2",
+  "id_card_049.jpg": "b9e5c0c3963fa29a6c591ae2eaed08ace7ad88e2ebf0876994e09ebe3001d056",
+  "chat_000.png": "e5f8ee538c61a1336341fa2a0de8ebd4167571d5fbc910f2554c120b3296dae4",
+  "chat_001.png": "c417e1f72d7f1f360d5385698e146f1fdfd7a8da1e59761ea4c270bcfbc229e1",
+  "chat_002.png": "3b8b52c51ff0a2d9ada61747d5c19c1258b8e5195152cb6a27513396702027f1",
+  "chat_003.jpg": "5b907a9ea2d7df8c77ee1275af2eb73a5a9d559471b4d57fde9eb4af7a38f7cd",
+  "chat_004.png": "681870a58044140c982290f83ee02b30d174e22eb251703a4d65a5e52c99362a",
+  "chat_005.png": "e846b33012f8d062b474daeaec3b5d4e446e5ca9e22547c9681c56596cf63345",
+  "chat_006.jpg": "90f83e0cfdd3b71e6f7ea3434a6c46f9fada4beef4ee48d0c32f8b834a2abd1b",
+  "chat_007.png": "2f354f93912f2af657f8cc01a970201da913ede2f35cb6d34a1ff4acec370c39",
+  "chat_008.png": "6c4350eb36db779bdc70d8dce318e158b721d964afcf6b0b908cf0f3399b210e",
+  "chat_009.png": "0c5fb94f8e209fd9e5b60d7ab152a3c27536ea80b1fb7d680f8d8ae34efc6905",
+  "chat_010.jpg": "1a96cae954ce76e387e74c4396e3f3e6221cb1c353ff288ff229377b6a112933",
+  "chat_011.png": "3895ae1eddd00baeaa598a22f101b5dabeee159866f1d8148036babf67484c56",
+  "chat_012.jpg": "84928e1c1cc40b77f0aed1eaaa5729a253b004533802e9b4749a215e12be9c43",
+  "chat_013.jpg": "4681fbbf5d543a209e75eaac99077b499991e8b0d205b1c03260274cf51b29b6",
+  "chat_014.png": "72fff14edbd7dd03061ea34fdc719e0b967dd09cc33c0803b902e72841bf808b",
+  "chat_015.png": "bcb18b580c492e1317a6342c2e9cc97986f544df390627d949db552180f367de",
+  "chat_016.jpg": "828ddadaf590bab253c3b1e451b53653fab3eba91e4f4d970ce3bfd61460a115",
+  "chat_017.jpg": "ebb0db5b75fcedf297f1b021682841866f420a27af724971b8a7aa6895f74913",
+  "chat_018.png": "cd2871c2b2fb8cdbd4532daa4bbdfc3875a611f6c7ad145eeccc15021528d507",
+  "chat_019.jpg": "8062d2f8e67fa65f29305dd523bc6ece7483f3863ae27f6219574d307bda6d8a",
+  "chat_020.jpg": "5a4fe1ad51c131d20602e5d4fb3113be1f81f74c6e96eba5530b0f03bcdd05d7",
+  "chat_021.png": "19fba5504960ab5ffd96458c4622b14566e1f8e86c64888a14e772abcbd98c33",
+  "chat_022.jpg": "399bc2e2c4cf79d0013a37564bdc5e79b9b1d9b3bf5a212cafbed6b017aa6154",
+  "chat_023.jpg": "09cd8b14795f1365efa6bb39cf7e796e5f02c57c773f4e367835912b4f31e401",
+  "chat_024.png": "f1e0dd296b2e24bd913c045a6c19ecc4b717b661ad8885ee80335dc7ed409216",
+  "chat_025.jpg": "88c1aa87d043db57609ab3fe6d73d9eeef00962339cd50f3cc77363913094e4f",
+  "chat_026.png": "d8cf13b83bf2f25bd9ee913f50d73560ed41f2cab052fb6f979a4e363c7e2b7f",
+  "chat_027.jpg": "e9e9f61db7ce16f02d91044d7e2af4effdd92254aa63fffa3d3590efceb4d709",
+  "chat_028.png": "d84c8658d0e61a8cb9a6b123d150f5f9435adfb5543064c047ca5b9f06e53008",
+  "chat_029.jpg": "943e46d32ecc1e42962631ab109041b9fe2db5af04ed93a6a0252015740b56cc",
+  "chat_030.png": "ad6cf3a13a647b9ad5bf68ba9b95355305e2b0b4c68f45cd56624402caf6ff79",
+  "chat_031.jpg": "18db36196291888ca68dfdd43e215e89ebe4b55d3549ea35fa7ef95f8c0dbae4",
+  "chat_032.jpg": "11d4b032b6c40025b68ba28b663e9e3270285e0960fe77a33c08df0991748248",
+  "chat_033.png": "614640a167bde8969a53612013d8e8bbe7863802bd5b6cd385bf61955dec1c66",
+  "chat_034.jpg": "470c511fa1a5bb7efa1493af020c87b12f56824a6280590fc827848b68531757",
+  "chat_035.png": "e7a84b174752077457da582187be7952498e5ad500ccbb4f41392dd161827f01",
+  "chat_036.jpg": "97bf3e0f7e019fe17722af63c7c685e6fc746d38ce460ddea2b1304dec13b473",
+  "chat_037.png": "94232e738a6d2f168e21876081ffc9cd987bf5e1d1b3c679f13fbff60d527680",
+  "chat_038.jpg": "8dad81b30907fe81a601d7431e420dfa3ad359779ce17173fd560dce6db8032e",
+  "chat_039.jpg": "969bc4b1d84cea1cbea1dea1877042f1899838ce1a6c1ae78cca711342466f9a",
+  "chat_040.jpg": "012dec7d5c00569a2b2e3e693796e0577514c95977b09df1e73f61ef3e382072",
+  "chat_041.png": "2fc6804e6417a7c4e9afb62d781d030fd55a341f1261625485243871ac326a91",
+  "chat_042.png": "5350b26bf336cdc4cad0f8481fe88a02621ce7da132de94c5ce08a2a011cac71",
+  "chat_043.png": "31e231ee17c77dd834f28cc83e3bb1cde9c2e8ccd551282203e1de5972d4a78d",
+  "chat_044.png": "ad178b2ae0510aaf741de0bfdb997d07740cd0e7e650253e02f3632837226fd3",
+  "chat_045.jpg": "7d6ea454616e24a962cecaa1042ce476dd7bc18f8d233ef5d32478320becbcd3",
+  "chat_046.jpg": "1fb5a59760ebfec2ea0ddef8b5861c5884b4b002bed4745c4d31b3a8c711be01",
+  "chat_047.png": "570eedfb111da98d6c3de13565f9f947a373b020127d9d459ce29bb486102223",
+  "chat_048.png": "8586e68e2514fbe363cb33a611d2e9026f4b71f29117f8122438c777ba58da74",
+  "chat_049.png": "b0578766747ffd25772ec9f111930d933985982511840dcff6734b7579719a20"
+ },
+ "unix_time": 1793195051,
+ "command": ".venv/bin/pg eval --set testset --split holdout --fallback zoom",
+ "summary": {
+  "all": {
+   "pictures": 50,
+   "planted_values": 379,
+   "planted_faces": 12,
+   "plain_spans": 1003,
+   "value_boxes_black_share_mean": 0.9995,
+   "value_boxes_black_share_min": 0.8962264150943396,
+   "face_boxes_black_share_mean": 0.8212,
+   "face_boxes_black_share_min": 0.7974027334136252,
+   "plain_text_boxes_nonblack_share_mean": 0.6057,
+   "whole_black_pixels": 13,
+   "whole_black_report": 13,
+   "report_and_pixels_disagree": 0,
+   "size_wrong": 0,
+   "metadata_chunks_found": 0,
+   "pipeline_seconds_mean": 20.3341,
+   "mac_seconds_mean": 1.8492,
+   "remote_seconds_mean": 18.485,
+   "wall_seconds_mean": 20.3348,
+   "word_list_would_have_refused": 50,
+   "word_list_judged": 50,
+   "readback": {
+    "values_left": 0,
+    "plain_readable": 352
+   },
+   "kept": {
+    "pictures": 37,
+    "planted_values": 281,
+    "planted_faces": 12,
+    "plain_spans": 709,
+    "values_left_readable": 0,
+    "value_boxes_90_black": 280,
+    "value_boxes": 281,
+    "face_boxes_90_black": 0,
+    "face_boxes": 12,
+    "face_black_mean": 0.8212,
+    "plain_readable": 352,
+    "values_left_readable_strict": 0,
+    "values_under_50_pixels": 0,
+    "values_50_90_pixels": 1,
+    "plain_readable_on_original": 579
+   }
+  },
+  "chat": {
+   "pictures": 13,
+   "planted_values": 69,
+   "planted_faces": 0,
+   "plain_spans": 266,
+   "value_boxes_black_share_mean": 0.9985,
+   "value_boxes_black_share_min": 0.8962264150943396,
+   "face_boxes_black_share_mean": null,
+   "face_boxes_black_share_min": null,
+   "plain_text_boxes_nonblack_share_mean": 0.5607,
+   "whole_black_pixels": 5,
+   "whole_black_report": 5,
+   "report_and_pixels_disagree": 0,
+   "size_wrong": 0,
+   "metadata_chunks_found": 0,
+   "pipeline_seconds_mean": 19.7295,
+   "mac_seconds_mean": 1.371,
+   "remote_seconds_mean": 18.3585,
+   "wall_seconds_mean": 19.7302,
+   "word_list_would_have_refused": 13,
+   "word_list_judged": 13,
+   "readback": {
+    "values_left": 0,
+    "plain_readable": 46
+   },
+   "kept": {
+    "pictures": 8,
+    "planted_values": 43,
+    "planted_faces": 0,
+    "plain_spans": 164,
+    "values_left_readable": 0,
+    "value_boxes_90_black": 42,
+    "value_boxes": 43,
+    "face_boxes_90_black": 0,
+    "face_boxes": 0,
+    "face_black_mean": null,
+    "plain_readable": 46,
+    "values_left_readable_strict": 0,
+    "values_under_50_pixels": 0,
+    "values_50_90_pixels": 1,
+    "plain_readable_on_original": 102
+   }
+  },
+  "id_card": {
+   "pictures": 12,
+   "planted_values": 84,
+   "planted_faces": 12,
+   "plain_spans": 144,
+   "value_boxes_black_share_mean": 0.9992,
+   "value_boxes_black_share_min": 0.9313858695652174,
+   "face_boxes_black_share_mean": 0.8212,
+   "face_boxes_black_share_min": 0.7974027334136252,
+   "plain_text_boxes_nonblack_share_mean": 0.5927,
+   "whole_black_pixels": 0,
+   "whole_black_report": 0,
+   "report_and_pixels_disagree": 0,
+   "size_wrong": 0,
+   "metadata_chunks_found": 0,
+   "pipeline_seconds_mean": 17.3384,
+   "mac_seconds_mean": 0.7909,
+   "remote_seconds_mean": 16.5475,
+   "wall_seconds_mean": 17.3388,
+   "word_list_would_have_refused": 12,
+   "word_list_judged": 12,
+   "readback": {
+    "values_left": 0,
+    "plain_readable": 35
+   },
+   "kept": {
+    "pictures": 12,
+    "planted_values": 84,
+    "planted_faces": 12,
+    "plain_spans": 144,
+    "values_left_readable": 0,
+    "value_boxes_90_black": 84,
+    "value_boxes": 84,
+    "face_boxes_90_black": 0,
+    "face_boxes": 12,
+    "face_black_mean": 0.8212,
+    "plain_readable": 35,
+    "values_left_readable_strict": 0,
+    "values_under_50_pixels": 0,
+    "values_50_90_pixels": 0,
+    "plain_readable_on_original": 99
+   }
+  },
+  "letter": {
+   "pictures": 13,
+   "planted_values": 130,
+   "planted_faces": 0,
+   "plain_spans": 221,
+   "value_boxes_black_share_mean": 1.0,
+   "value_boxes_black_share_min": 1.0,
+   "face_boxes_black_share_mean": null,
+   "face_boxes_black_share_min": null,
+   "plain_text_boxes_nonblack_share_mean": 0.6036,
+   "whole_black_pixels": 4,
+   "whole_black_report": 4,
+   "report_and_pixels_disagree": 0,
+   "size_wrong": 0,
+   "metadata_chunks_found": 0,
+   "pipeline_seconds_mean": 24.4922,
+   "mac_seconds_mean": 2.9631,
+   "remote_seconds_mean": 21.5292,
+   "wall_seconds_mean": 24.493,
+   "word_list_would_have_refused": 13,
+   "word_list_judged": 13,
+   "readback": {
+    "values_left": 0,
+    "plain_readable": 88
+   },
+   "kept": {
+    "pictures": 9,
+    "planted_values": 90,
+    "planted_faces": 0,
+    "plain_spans": 153,
+    "values_left_readable": 0,
+    "value_boxes_90_black": 90,
+    "value_boxes": 90,
+    "face_boxes_90_black": 0,
+    "face_boxes": 0,
+    "face_black_mean": null,
+    "plain_readable": 88,
+    "values_left_readable_strict": 0,
+    "values_under_50_pixels": 0,
+    "values_50_90_pixels": 0,
+    "plain_readable_on_original": 133
+   }
+  },
+  "payslip": {
+   "pictures": 12,
+   "planted_values": 96,
+   "planted_faces": 0,
+   "plain_spans": 372,
+   "value_boxes_black_share_mean": 1.0,
+   "value_boxes_black_share_min": 1.0,
+   "face_boxes_black_share_mean": null,
+   "face_boxes_black_share_min": null,
+   "plain_text_boxes_nonblack_share_mean": 0.6442,
+   "whole_black_pixels": 4,
+   "whole_black_report": 4,
+   "report_and_pixels_disagree": 0,
+   "size_wrong": 0,
+   "metadata_chunks_found": 0,
+   "pipeline_seconds_mean": 19.4803,
+   "mac_seconds_mean": 2.2187,
+   "remote_seconds_mean": 17.2617,
+   "wall_seconds_mean": 19.4811,
+   "word_list_would_have_refused": 12,
+   "word_list_judged": 12,
+   "readback": {
+    "values_left": 0,
+    "plain_readable": 183
+   },
+   "kept": {
+    "pictures": 8,
+    "planted_values": 64,
+    "planted_faces": 0,
+    "plain_spans": 248,
+    "values_left_readable": 0,
+    "value_boxes_90_black": 64,
+    "value_boxes": 64,
+    "face_boxes_90_black": 0,
+    "face_boxes": 0,
+    "face_black_mean": null,
+    "plain_readable": 183,
+    "values_left_readable_strict": 0,
+    "values_under_50_pixels": 0,
+    "values_50_90_pixels": 0,
+    "plain_readable_on_original": 245
+   }
+  }
+ },
+ "by_value_type": {
+  "account_number": {
+   "n": 24,
+   "black_ge90": 24,
+   "black_sum": 24.0,
+   "left_readable": 0,
+   "read_on_original": 18,
+   "ocr_ran": 24,
+   "n_kept": 16,
+   "left_readable_kept": 0,
+   "black_mean": 1.0
+  },
+  "address": {
+   "n": 80,
+   "black_ge90": 80,
+   "black_sum": 79.93138586956522,
+   "left_readable": 0,
+   "read_on_original": 67,
+   "ocr_ran": 80,
+   "n_kept": 62,
+   "left_readable_kept": 0,
+   "black_mean": 0.9991
+  },
+  "card_number": {
+   "n": 16,
+   "black_ge90": 16,
+   "black_sum": 16.0,
+   "left_readable": 0,
+   "read_on_original": 10,
+   "ocr_ran": 16,
+   "n_kept": 10,
+   "left_readable_kept": 0,
+   "black_mean": 1.0
+  },
+  "dob": {
+   "n": 28,
+   "black_ge90": 28,
+   "black_sum": 28.0,
+   "left_readable": 0,
+   "read_on_original": 23,
+   "ocr_ran": 28,
+   "n_kept": 22,
+   "left_readable_kept": 0,
+   "black_mean": 1.0
+  },
+  "email": {
+   "n": 14,
+   "black_ge90": 13,
+   "black_sum": 13.89622641509434,
+   "left_readable": 0,
+   "read_on_original": 7,
+   "ocr_ran": 14,
+   "n_kept": 8,
+   "left_readable_kept": 0,
+   "black_mean": 0.9926
+  },
+  "iban": {
+   "n": 12,
+   "black_ge90": 12,
+   "black_sum": 12.0,
+   "left_readable": 0,
+   "read_on_original": 7,
+   "ocr_ran": 12,
+   "n_kept": 9,
+   "left_readable_kept": 0,
+   "black_mean": 1.0
+  },
+  "id_number": {
+   "n": 20,
+   "black_ge90": 20,
+   "black_sum": 20.0,
+   "left_readable": 0,
+   "read_on_original": 15,
+   "ocr_ran": 20,
+   "n_kept": 18,
+   "left_readable_kept": 0,
+   "black_mean": 1.0
+  },
+  "name": {
+   "n": 94,
+   "black_ge90": 94,
+   "black_sum": 94.0,
+   "left_readable": 0,
+   "read_on_original": 81,
+   "ocr_ran": 94,
+   "n_kept": 70,
+   "left_readable_kept": 0,
+   "black_mean": 1.0
+  },
+  "ni_number": {
+   "n": 14,
+   "black_ge90": 14,
+   "black_sum": 14.0,
+   "left_readable": 0,
+   "read_on_original": 11,
+   "ocr_ran": 14,
+   "n_kept": 9,
+   "left_readable_kept": 0,
+   "black_mean": 1.0
+  },
+  "phone": {
+   "n": 16,
+   "black_ge90": 16,
+   "black_sum": 16.0,
+   "left_readable": 0,
+   "read_on_original": 12,
+   "ocr_ran": 16,
+   "n_kept": 12,
+   "left_readable_kept": 0,
+   "black_mean": 1.0
+  },
+  "postcode": {
+   "n": 37,
+   "black_ge90": 37,
+   "black_sum": 37.0,
+   "left_readable": 0,
+   "read_on_original": 23,
+   "ocr_ran": 37,
+   "n_kept": 29,
+   "left_readable_kept": 0,
+   "black_mean": 1.0
+  },
+  "sort_code": {
+   "n": 24,
+   "black_ge90": 24,
+   "black_sum": 24.0,
+   "left_readable": 0,
+   "read_on_original": 18,
+   "ocr_ran": 24,
+   "n_kept": 16,
+   "left_readable_kept": 0,
+   "black_mean": 1.0
+  }
+ },
+ "first_failure_stage": {
+  "decide": 11,
+  "None": 37,
+  "check_safe": 2
+ },
+ "whole_black_reasons": {
+  "rule 1: a private value has no word box (decide)": 11,
+  "rule 2: the safe copy still shows a private value (check_safe)": 2
+ },
+ "leak_list_still_readable": [],
+ "pictures": [
+  {
+   "file": "payslip_038.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "whole_black_pixels": true,
+   "whole_black_report": true,
+   "reason": "rule 1: a private value has no word box (decide)",
+   "pipeline_seconds": 27.738,
+   "remote_seconds": 27.5,
+   "mac_seconds": 0.238,
+   "glimmer_seconds": 11.43,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 0,
+   "first_failure": "decide",
+   "fallback": {
+    "mode": "zoom",
+    "tried": 1,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": "norm1000",
+    "frame_hits": {
+     "px": 0,
+     "norm1000": 1,
+     "norm1": 0
+    }
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_original": {
+    "values_read": 7,
+    "plain_readable": 30
+   },
+   "safe_sha256": "2626741d42ef4822014b46373af28817e15f6790694ccbee6448514c49f81463",
+   "wall_seconds": 27.739
+  },
+  {
+   "file": "payslip_039.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 12.964,
+   "remote_seconds": 12.41,
+   "mac_seconds": 0.554,
+   "glimmer_seconds": 12.27,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 13,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_original": {
+    "values_read": 7,
+    "plain_readable": 31
+   },
+   "safe_sha256": "725be81773394f9533710db915001e559b411b7a8bbe7e89f5c1ab1d7f826b00",
+   "wall_seconds": 12.965
+  },
+  {
+   "file": "payslip_040.jpg",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9993963782696177,
+    1.0,
+    0.9984512132163139,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9995519713261649,
+    1.0,
+    0.9991181657848325,
+    1.0,
+    0.996011964107677,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9993390614672836,
+    0.998472116119175,
+    0.999450247388675,
+    0.998472116119175,
+    1.0,
+    1.0,
+    0.9991941982272361,
+    1.0,
+    0.9994192799070848,
+    0.999563128003495,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 10.579,
+   "remote_seconds": 9.86,
+   "mac_seconds": 0.719,
+   "glimmer_seconds": 9.6,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 13,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 31
+   },
+   "safe_sha256": "f0804af3fc2d6219090b8211cdbfd88f087d76ad25de04a2a57d7c26cfdce29a",
+   "wall_seconds": 10.579
+  },
+  {
+   "file": "payslip_041.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 12.208,
+   "remote_seconds": 11.8,
+   "mac_seconds": 0.408,
+   "glimmer_seconds": 11.66,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 13,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 31
+   },
+   "safe_sha256": "a22db2cf62537213885432cfd41987cfd62d260ce9e5ed7545d1b3f10763e447",
+   "wall_seconds": 12.208
+  },
+  {
+   "file": "payslip_042.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 11.735,
+   "remote_seconds": 11.1,
+   "mac_seconds": 0.635,
+   "glimmer_seconds": 10.96,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 13,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 21
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 30
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 30
+   },
+   "safe_sha256": "a9d8ac3aeccc107f3d2b8a4ac4b7d4870b3ca51aca8997d113b93e1f68734d11",
+   "wall_seconds": 11.735
+  },
+  {
+   "file": "payslip_043.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9303482587064676,
+    1.0,
+    0.9102222222222223,
+    0.9230769230769231,
+    0.0,
+    0.0,
+    0.4285714285714286,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.029573299535276765,
+    1.0,
+    0.3222477064220184,
+    1.0,
+    0.9585849870578085,
+    0.9537704918032787,
+    0.9447058823529412,
+    0.962962962962963,
+    0.9698717948717949,
+    0.9633333333333334,
+    0.9567164179104477,
+    0.9587962962962963,
+    0.95,
+    0.9639344262295082,
+    0.9576923076923077,
+    0.9516358463726885,
+    0.9532051282051281,
+    0.9420289855072463,
+    0.9446969696969697,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 20.445,
+   "remote_seconds": 11.97,
+   "mac_seconds": 8.475,
+   "glimmer_seconds": 11.44,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 15,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 26
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 26
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 31
+   },
+   "safe_sha256": "063619a71a6415a1cc0a523a80b8395155e25ea9ac37c6f1270bbec5e38bd5bf",
+   "wall_seconds": 20.446
+  },
+  {
+   "file": "payslip_044.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9740544361965359,
+    1.0,
+    0.9663515016685206,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9973262032085561,
+    1.0,
+    0.9948051948051948,
+    1.0,
+    0.9803921568627451,
+    0.974120082815735,
+    0.966044142614601,
+    0.9959893048128342,
+    0.9981851179673321,
+    0.994331983805668,
+    0.9981532779316713,
+    0.9940789473684211,
+    0.9944598337950139,
+    0.9921296296296296,
+    0.997229916897507,
+    0.9913875598086125,
+    0.9981532779316713,
+    0.9749216300940439,
+    0.9701298701298702,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 14.106,
+   "remote_seconds": 13.45,
+   "mac_seconds": 0.656,
+   "glimmer_seconds": 13.28,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 14,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 30
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 31
+   },
+   "readback_original": {
+    "values_read": 7,
+    "plain_readable": 30
+   },
+   "safe_sha256": "cdbd8d88b1627cfa609c18ecdc62b6bdd23c59c0de4305628fefe5e70ade67f3",
+   "wall_seconds": 14.107
+  },
+  {
+   "file": "payslip_045.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 12.818,
+   "remote_seconds": 12.27,
+   "mac_seconds": 0.548,
+   "glimmer_seconds": 12.11,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 13,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 15
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 30
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 30
+   },
+   "safe_sha256": "2141b7bd6d543c4d92632f507afdb5ec25f6e9688ca01727a4638cbe79b7a287",
+   "wall_seconds": 12.819
+  },
+  {
+   "file": "payslip_046.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9654985058408041,
+    1.0,
+    0.9398170438131921,
+    0.76,
+    0.0,
+    0.09523809523809523,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9408866995073891,
+    1.0,
+    0.9609022556390977,
+    1.0,
+    0.9678571428571429,
+    0.9442307692307692,
+    0.9473684210526316,
+    0.963855421686747,
+    0.9661654135338346,
+    0.9686558167570826,
+    0.955522609340252,
+    0.9652981427174976,
+    0.9624060150375939,
+    0.9666666666666667,
+    0.9547813194959229,
+    0.9711267605633803,
+    0.9699248120300752,
+    0.9470238095238095,
+    0.9258312020460358,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 12.843,
+   "remote_seconds": 11.97,
+   "mac_seconds": 0.873,
+   "glimmer_seconds": 11.57,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 14,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 29
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 29
+   },
+   "readback_original": {
+    "values_read": 8,
+    "plain_readable": 31
+   },
+   "safe_sha256": "88f46da9337373b9db8df6598f0ebc376f3eb58f72e0a8023889615bbd9fbc02",
+   "wall_seconds": 12.844
+  },
+  {
+   "file": "payslip_047.png",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "whole_black_pixels": true,
+   "whole_black_report": true,
+   "reason": "rule 1: a private value has no word box (decide)",
+   "pipeline_seconds": 31.002,
+   "remote_seconds": 30.75,
+   "mac_seconds": 0.252,
+   "glimmer_seconds": 13.87,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 0,
+   "first_failure": "decide",
+   "fallback": {
+    "mode": "zoom",
+    "tried": 1,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": "norm1000",
+    "frame_hits": {
+     "px": 0,
+     "norm1000": 1,
+     "norm1": 0
+    }
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_original": {
+    "values_read": 7,
+    "plain_readable": 31
+   },
+   "safe_sha256": "2626741d42ef4822014b46373af28817e15f6790694ccbee6448514c49f81463",
+   "wall_seconds": 31.003
+  },
+  {
+   "file": "payslip_048.jpg",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "whole_black_pixels": true,
+   "whole_black_report": true,
+   "reason": "rule 1: a private value has no word box (decide)",
+   "pipeline_seconds": 28.14,
+   "remote_seconds": 27.47,
+   "mac_seconds": 0.67,
+   "glimmer_seconds": 13.36,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 0,
+   "first_failure": "decide",
+   "fallback": {
+    "mode": "zoom",
+    "tried": 3,
+    "by_zoom": 2,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": {
+     "px": 0,
+     "norm1000": 0,
+     "norm1": 0
+    }
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_original": {
+    "values_read": 0,
+    "plain_readable": 9
+   },
+   "safe_sha256": "2626741d42ef4822014b46373af28817e15f6790694ccbee6448514c49f81463",
+   "wall_seconds": 28.141
+  },
+  {
+   "file": "payslip_049.jpg",
+   "type": "payslip",
+   "n_values": 8,
+   "n_faces": 0,
+   "n_plain_spans": 31,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "whole_black_pixels": true,
+   "whole_black_report": true,
+   "reason": "rule 1: a private value has no word box (decide)",
+   "pipeline_seconds": 39.186,
+   "remote_seconds": 26.59,
+   "mac_seconds": 12.596,
+   "glimmer_seconds": 12.03,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 0,
+   "first_failure": "decide",
+   "fallback": {
+    "mode": "zoom",
+    "tried": 8,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": {
+     "px": 0,
+     "norm1000": 0,
+     "norm1": 0
+    }
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_original": {
+    "values_read": 0,
+    "plain_readable": 1
+   },
+   "safe_sha256": "2626741d42ef4822014b46373af28817e15f6790694ccbee6448514c49f81463",
+   "wall_seconds": 39.187
+  },
+  {
+   "file": "letter_037.jpg",
+   "type": "letter",
+   "n_values": 10,
+   "n_faces": 0,
+   "n_plain_spans": 17,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    0.9769607843137255,
+    1.0,
+    0.6264775413711584,
+    0.0,
+    0.9721695129664769,
+    0.987987012987013,
+    0.9874955970412117,
+    0.9866727941176471,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9813953488372094,
+    0.5413600891861761,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 19.823,
+   "remote_seconds": 19.2,
+   "mac_seconds": 0.623,
+   "glimmer_seconds": 18.97,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 15,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "card_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "email",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "iban",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 14
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 14
+   },
+   "readback_original": {
+    "values_read": 10,
+    "plain_readable": 16
+   },
+   "safe_sha256": "04741d70a3dd87808c6c9ee7ffdf338dd31f4a1065eba9d1cd5297f76976f422",
+   "wall_seconds": 19.824
+  },
+  {
+   "file": "letter_038.png",
+   "type": "letter",
+   "n_values": 10,
+   "n_faces": 0,
+   "n_plain_spans": 17,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    0.9932088285229203,
+    1.0,
+    0.5494186046511628,
+    0.0,
+    0.9395604395604396,
+    0.995684539864063,
+    0.995568400770713,
+    0.9966094358678401,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9928135106000718,
+    0.6950276243093922,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 16.333,
+   "remote_seconds": 15.73,
+   "mac_seconds": 0.603,
+   "glimmer_seconds": 15.59,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 15,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "card_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "email",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "phone",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 13
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 14
+   },
+   "readback_original": {
+    "values_read": 10,
+    "plain_readable": 16
+   },
+   "safe_sha256": "4cfba8b6a05e26c13ecf65c229e1fd089166b1e5fd2c2eb6cc96efbb9203c855",
+   "wall_seconds": 16.333
+  },
+  {
+   "file": "letter_039.png",
+   "type": "letter",
+   "n_values": 10,
+   "n_faces": 0,
+   "n_plain_spans": 17,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "whole_black_pixels": true,
+   "whole_black_report": true,
+   "reason": "rule 1: a private value has no word box (decide)",
+   "pipeline_seconds": 30.208,
+   "remote_seconds": 28.05,
+   "mac_seconds": 2.158,
+   "glimmer_seconds": 11.94,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 0,
+   "first_failure": "decide",
+   "fallback": {
+    "mode": "zoom",
+    "tried": 3,
+    "by_zoom": 2,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": {
+     "px": 0,
+     "norm1000": 0,
+     "norm1": 0
+    }
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "phone",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "email",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_original": {
+    "values_read": 0,
+    "plain_readable": 1
+   },
+   "safe_sha256": "2626741d42ef4822014b46373af28817e15f6790694ccbee6448514c49f81463",
+   "wall_seconds": 30.209
+  },
+  {
+   "file": "letter_040.jpg",
+   "type": "letter",
+   "n_values": 10,
+   "n_faces": 0,
+   "n_plain_spans": 17,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.5217391304347826,
+    0.0,
+    0.8388013998250219,
+    1.0,
+    1.0,
+    0.9750445632798574,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.6222311719693918,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 16.802,
+   "remote_seconds": 16.18,
+   "mac_seconds": 0.622,
+   "glimmer_seconds": 16.03,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 15,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "card_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "email",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 6
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 12
+   },
+   "readback_original": {
+    "values_read": 9,
+    "plain_readable": 16
+   },
+   "safe_sha256": "7a862cf0da685c22ccebac9f44c23a4ac40bc12493f783ee6b1ee977b43a2bc0",
+   "wall_seconds": 16.802
+  },
+  {
+   "file": "letter_041.jpg",
+   "type": "letter",
+   "n_values": 10,
+   "n_faces": 0,
+   "n_plain_spans": 17,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "whole_black_pixels": true,
+   "whole_black_report": true,
+   "reason": "rule 2: the safe copy still shows a private value (check_safe)",
+   "pipeline_seconds": 38.783,
+   "remote_seconds": 32.58,
+   "mac_seconds": 6.203,
+   "glimmer_seconds": 19.39,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 0,
+   "first_failure": "check_safe",
+   "fallback": {
+    "mode": "zoom",
+    "tried": 4,
+    "by_zoom": 4,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": {
+     "px": 0,
+     "norm1000": 0,
+     "norm1": 0
+    }
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "card_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "iban",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "phone",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_original": {
+    "values_read": 0,
+    "plain_readable": 1
+   },
+   "safe_sha256": "2626741d42ef4822014b46373af28817e15f6790694ccbee6448514c49f81463",
+   "wall_seconds": 38.784
+  },
+  {
+   "file": "letter_042.jpg",
+   "type": "letter",
+   "n_values": 10,
+   "n_faces": 0,
+   "n_plain_spans": 17,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "whole_black_pixels": true,
+   "whole_black_report": true,
+   "reason": "rule 1: a private value has no word box (decide)",
+   "pipeline_seconds": 36.064,
+   "remote_seconds": 35.55,
+   "mac_seconds": 0.514,
+   "glimmer_seconds": 17.1,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 0,
+   "first_failure": "decide",
+   "fallback": {
+    "mode": "zoom",
+    "tried": 3,
+    "by_zoom": 2,
+    "by_line": 0,
+    "frame": "px",
+    "frame_hits": {
+     "px": 2,
+     "norm1000": 0,
+     "norm1": 0
+    }
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "card_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "email",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "iban",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_original": {
+    "values_read": 0,
+    "plain_readable": 1
+   },
+   "safe_sha256": "2626741d42ef4822014b46373af28817e15f6790694ccbee6448514c49f81463",
+   "wall_seconds": 36.065
+  },
+  {
+   "file": "letter_043.jpg",
+   "type": "letter",
+   "n_values": 10,
+   "n_faces": 0,
+   "n_plain_spans": 17,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.6666666666666667,
+    0.0,
+    0.8754448398576512,
+    1.0,
+    1.0,
+    0.9630731397747104,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.4051724137931034,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 21.923,
+   "remote_seconds": 17.19,
+   "mac_seconds": 4.733,
+   "glimmer_seconds": 16.82,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 14,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "phone",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "iban",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "email",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 1
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 4
+   },
+   "readback_original": {
+    "values_read": 6,
+    "plain_readable": 9
+   },
+   "safe_sha256": "4a9b741a34b7783ee87a6ef335fb248a42fa9952f4fb43ef2afb5991e6335c50",
+   "wall_seconds": 21.924
+  },
+  {
+   "file": "letter_044.png",
+   "type": "letter",
+   "n_values": 10,
+   "n_faces": 0,
+   "n_plain_spans": 17,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    0.9929347826086956,
+    1.0,
+    0.31439393939393945,
+    0.0,
+    0.5092946269416858,
+    0.9830623561809196,
+    0.9844532279314888,
+    0.6715116279069768,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9927140255009107,
+    0.47928994082840237,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 19.71,
+   "remote_seconds": 18.81,
+   "mac_seconds": 0.9,
+   "glimmer_seconds": 18.56,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 17,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "email",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "phone",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "card_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 11
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 12
+   },
+   "readback_original": {
+    "values_read": 9,
+    "plain_readable": 16
+   },
+   "safe_sha256": "1ea4022265efa61dcb60c4f88d3b2a2243f1665a7c1591901a79de20a58590de",
+   "wall_seconds": 19.711
+  },
+  {
+   "file": "letter_045.png",
+   "type": "letter",
+   "n_values": 10,
+   "n_faces": 0,
+   "n_plain_spans": 17,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    0.9951871657754011,
+    1.0,
+    0.5700280112044818,
+    0.0,
+    0.8234620886981402,
+    0.995960795960796,
+    0.9975881261595547,
+    0.9867992766726944,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9963474025974026,
+    0.6013584117032393,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 17.756,
+   "remote_seconds": 17.19,
+   "mac_seconds": 0.566,
+   "glimmer_seconds": 17.04,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 15,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "card_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "phone",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 13
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 13
+   },
+   "readback_original": {
+    "values_read": 10,
+    "plain_readable": 16
+   },
+   "safe_sha256": "fc45f3a02c50e49a5912077ba28cf1af6bb918193d16a44d7be2a6d00e12ace8",
+   "wall_seconds": 17.757
+  },
+  {
+   "file": "letter_046.jpg",
+   "type": "letter",
+   "n_values": 10,
+   "n_faces": 0,
+   "n_plain_spans": 17,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "whole_black_pixels": true,
+   "whole_black_report": true,
+   "reason": "rule 2: the safe copy still shows a private value (check_safe)",
+   "pipeline_seconds": 20.832,
+   "remote_seconds": 19.97,
+   "mac_seconds": 0.862,
+   "glimmer_seconds": 19.75,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 0,
+   "first_failure": "check_safe",
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "card_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "phone",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_original": {
+    "values_read": 9,
+    "plain_readable": 16
+   },
+   "safe_sha256": "2626741d42ef4822014b46373af28817e15f6790694ccbee6448514c49f81463",
+   "wall_seconds": 20.833
+  },
+  {
+   "file": "letter_047.jpg",
+   "type": "letter",
+   "n_values": 10,
+   "n_faces": 0,
+   "n_plain_spans": 17,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    0.9851421188630491,
+    1.0,
+    0.5866666666666667,
+    0.0,
+    0.9719645433931148,
+    0.98656330749354,
+    0.9835305033634888,
+    0.9886104783599089,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9863636363636363,
+    0.8396917148362235,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 19.497,
+   "remote_seconds": 18.88,
+   "mac_seconds": 0.617,
+   "glimmer_seconds": 18.74,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 16,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "phone",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "card_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "iban",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 14
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 14
+   },
+   "readback_original": {
+    "values_read": 9,
+    "plain_readable": 16
+   },
+   "safe_sha256": "76db66c0d9323e8f5b1dde15a7e201396d199a75595c4b88c9d666c62e13df84",
+   "wall_seconds": 19.497
+  },
+  {
+   "file": "letter_048.jpg",
+   "type": "letter",
+   "n_values": 10,
+   "n_faces": 0,
+   "n_plain_spans": 17,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.9997150997150998,
+    1.0,
+    0.7788461538461539,
+    0.5285714285714286,
+    0.7189542483660131,
+    0.0,
+    0.9290780141843972,
+    0.9960612028480533,
+    0.9983890455094644,
+    0.8690485467154991,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9986111111111111,
+    0.5064935064935066,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 20.931,
+   "remote_seconds": 20.13,
+   "mac_seconds": 0.802,
+   "glimmer_seconds": 19.88,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 17,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "iban",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "phone",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "email",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "card_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 3
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 11
+   },
+   "readback_original": {
+    "values_read": 9,
+    "plain_readable": 12
+   },
+   "safe_sha256": "eee741e0908fe40a5f30284abf4cc2d1a10d37abc3dc160804a1b2e026cc5ea7",
+   "wall_seconds": 20.932
+  },
+  {
+   "file": "letter_049.png",
+   "type": "letter",
+   "n_values": 10,
+   "n_faces": 0,
+   "n_plain_spans": 17,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    0.9443223443223443,
+    0.44067796610169496,
+    0.5587301587301587,
+    0.0,
+    0.9753623188405797,
+    0.9887065637065637,
+    0.9896103896103896,
+    0.9911637931034483,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.99125,
+    0.871875,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 39.737,
+   "remote_seconds": 20.42,
+   "mac_seconds": 19.317,
+   "glimmer_seconds": 20.18,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 15,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "phone",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "iban",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "card_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 13
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 14
+   },
+   "readback_original": {
+    "values_read": 9,
+    "plain_readable": 16
+   },
+   "safe_sha256": "a2c6ac613ffcc45df82c73fd22152f58d1f22c9d965652c5445c63cfea126c43",
+   "wall_seconds": 39.738
+  },
+  {
+   "file": "id_card_038.jpg",
+   "type": "id_card",
+   "n_values": 7,
+   "n_faces": 1,
+   "n_plain_spans": 12,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [
+    0.8254716981132075
+   ],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    0.3571428571428571,
+    0.14887218045112782,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.9722222222222222,
+    1.0,
+    0.9757468204673173,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 17.778,
+   "remote_seconds": 17.42,
+   "mac_seconds": 0.358,
+   "glimmer_seconds": 17.26,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 11,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "id_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 1
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 6
+   },
+   "readback_original": {
+    "values_read": 7,
+    "plain_readable": 9
+   },
+   "safe_sha256": "ca66f90c2c010c9c91966b11e40bdb30e4e20886a57350bb794253450fca7e4d",
+   "wall_seconds": 17.779
+  },
+  {
+   "file": "id_card_039.jpg",
+   "type": "id_card",
+   "n_values": 7,
+   "n_faces": 1,
+   "n_plain_spans": 12,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [
+    0.8165137614678899
+   ],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    0.6111111111111112,
+    0.5051020408163265,
+    0.4367497691597415,
+    0.42105263157894735,
+    0.21052631578947367,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 16.186,
+   "remote_seconds": 15.9,
+   "mac_seconds": 0.286,
+   "glimmer_seconds": 15.76,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 10,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "id_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 4
+   },
+   "readback_original": {
+    "values_read": 7,
+    "plain_readable": 4
+   },
+   "safe_sha256": "24a2c578ff90b6f5d7dbad0e2699afa8ccd9cd4e2d1f89a27e1d3930dbda8f9f",
+   "wall_seconds": 16.186
+  },
+  {
+   "file": "id_card_040.jpg",
+   "type": "id_card",
+   "n_values": 7,
+   "n_faces": 1,
+   "n_plain_spans": 12,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [
+    0.8181818181818182
+   ],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    0.5,
+    0.26086956521739135,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 14.724,
+   "remote_seconds": 14.36,
+   "mac_seconds": 0.364,
+   "glimmer_seconds": 14.16,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 11,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "id_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 5
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 5
+   },
+   "readback_original": {
+    "values_read": 6,
+    "plain_readable": 4
+   },
+   "safe_sha256": "bfeff282eb62beea1425de9934d24209f0dec903899e8192408f42856b935e05",
+   "wall_seconds": 14.724
+  },
+  {
+   "file": "id_card_041.jpg",
+   "type": "id_card",
+   "n_values": 7,
+   "n_faces": 1,
+   "n_plain_spans": 12,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [
+    0.7974027334136252
+   ],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    0.40909090909090906,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    1.0,
+    0.5,
+    0.7413793103448276,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 14.531,
+   "remote_seconds": 14.02,
+   "mac_seconds": 0.511,
+   "glimmer_seconds": 13.82,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 10,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "id_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 1
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 3
+   },
+   "readback_original": {
+    "values_read": 6,
+    "plain_readable": 4
+   },
+   "safe_sha256": "c98e40cef46dfaf7e922142eaabc791fb489aec463328a2ba689dc50e90051ad",
+   "wall_seconds": 14.532
+  },
+  {
+   "file": "id_card_042.jpg",
+   "type": "id_card",
+   "n_values": 7,
+   "n_faces": 1,
+   "n_plain_spans": 12,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [
+    0.8227272727272728
+   ],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    0.2222222222222222,
+    0.09820282413350445,
+    0.0014619883040936088,
+    0.0,
+    0.0,
+    1.0,
+    0.9426415094339623,
+    1.0,
+    0.9414285714285714,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 14.81,
+   "remote_seconds": 14.42,
+   "mac_seconds": 0.39,
+   "glimmer_seconds": 14.25,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 11,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "id_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 4
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 7
+   },
+   "readback_original": {
+    "values_read": 7,
+    "plain_readable": 11
+   },
+   "safe_sha256": "cf15ef69aaba18506ab0846e86ed7982e65877d3be875d1600160660198e12de",
+   "wall_seconds": 14.811
+  },
+  {
+   "file": "id_card_043.png",
+   "type": "id_card",
+   "n_values": 7,
+   "n_faces": 1,
+   "n_plain_spans": 12,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [
+    0.8240740740740741
+   ],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    0.25,
+    0.1392405063291139,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.9529688418577308,
+    1.0,
+    0.9109121909633419,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 15.552,
+   "remote_seconds": 15.17,
+   "mac_seconds": 0.382,
+   "glimmer_seconds": 15.01,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 11,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "id_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 6
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 7
+   },
+   "readback_original": {
+    "values_read": 7,
+    "plain_readable": 11
+   },
+   "safe_sha256": "083bb164e97f6bf5612f3cba1512581084d40a849e2aeecd7c06b2c562c03074",
+   "wall_seconds": 15.552
+  },
+  {
+   "file": "id_card_044.jpg",
+   "type": "id_card",
+   "n_values": 7,
+   "n_faces": 1,
+   "n_plain_spans": 12,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9313858695652174,
+    1.0
+   ],
+   "face_box_black_share": [
+    0.8337728551336147
+   ],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    0.125,
+    0.13402829486224865,
+    0.042986425339366474,
+    0.0,
+    0.0,
+    1.0,
+    0.9489177489177489,
+    1.0,
+    0.9607954545454546,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 36.664,
+   "remote_seconds": 32.21,
+   "mac_seconds": 4.454,
+   "glimmer_seconds": 16.47,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 10,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 1,
+    "by_zoom": 1,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": {
+     "px": 0,
+     "norm1000": 0,
+     "norm1": 0
+    }
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "id_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 0.9313858695652174,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      0.65,
+      0.93,
+      0.93
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 4
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 7
+   },
+   "readback_original": {
+    "values_read": 7,
+    "plain_readable": 9
+   },
+   "safe_sha256": "0fa24fb8ddcd2c5a64724ba67c135851009b241fea4b989de65279c5bbf091b4",
+   "wall_seconds": 36.665
+  },
+  {
+   "file": "id_card_045.jpg",
+   "type": "id_card",
+   "n_values": 7,
+   "n_faces": 1,
+   "n_plain_spans": 12,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [
+    0.8232558139534883
+   ],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    0.375,
+    0.05882352941176472,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.9471916971916972,
+    1.0,
+    0.922266139657444,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 15.553,
+   "remote_seconds": 15.17,
+   "mac_seconds": 0.383,
+   "glimmer_seconds": 15.0,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 11,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "id_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 3
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 7
+   },
+   "readback_original": {
+    "values_read": 7,
+    "plain_readable": 11
+   },
+   "safe_sha256": "40c99af206ac82cfacc7532705976ce772fb8fdaa583f7ac24930a95509be723",
+   "wall_seconds": 15.553
+  },
+  {
+   "file": "id_card_046.jpg",
+   "type": "id_card",
+   "n_values": 7,
+   "n_faces": 1,
+   "n_plain_spans": 12,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [
+    0.8254716981132075
+   ],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    0.3846153846153846,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9996246246246246,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 15.937,
+   "remote_seconds": 15.61,
+   "mac_seconds": 0.327,
+   "glimmer_seconds": 15.39,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 11,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "id_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 3
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 7
+   },
+   "readback_original": {
+    "values_read": 7,
+    "plain_readable": 11
+   },
+   "safe_sha256": "86b31afe5a38453ca1a61f6f60ce329e042a3adc70987103483c3313733635fa",
+   "wall_seconds": 15.937
+  },
+  {
+   "file": "id_card_047.png",
+   "type": "id_card",
+   "n_values": 7,
+   "n_faces": 1,
+   "n_plain_spans": 12,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [
+    0.8254716981132075
+   ],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    0.3571428571428571,
+    0.16766917293233086,
+    0.0,
+    0.0,
+    0.1333333333333333,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 16.272,
+   "remote_seconds": 15.11,
+   "mac_seconds": 1.162,
+   "glimmer_seconds": 14.89,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 12,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "id_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 1
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 3
+   },
+   "readback_original": {
+    "values_read": 7,
+    "plain_readable": 10
+   },
+   "safe_sha256": "f2f2ccf15535a79f49a305956b2af8a3c86c751a200805d8e806b4fe74840105",
+   "wall_seconds": 16.272
+  },
+  {
+   "file": "id_card_048.png",
+   "type": "id_card",
+   "n_values": 7,
+   "n_faces": 1,
+   "n_plain_spans": 12,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [
+    0.8144796380090498
+   ],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 14.953,
+   "remote_seconds": 14.61,
+   "mac_seconds": 0.343,
+   "glimmer_seconds": 14.46,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 11,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "id_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 4
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 6
+   },
+   "readback_original": {
+    "values_read": 6,
+    "plain_readable": 4
+   },
+   "safe_sha256": "fd08a9d93e517ea151210204f3d768d86f337fdb0587aebd504ce27d4d60febc",
+   "wall_seconds": 14.953
+  },
+  {
+   "file": "id_card_049.jpg",
+   "type": "id_card",
+   "n_values": 7,
+   "n_faces": 1,
+   "n_plain_spans": 12,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [
+    0.8281094836146972
+   ],
+   "plain_box_nonblack_share": [
+    1.0,
+    1.0,
+    0.3571428571428571,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.9678260869565217,
+    1.0,
+    0.9615263323872596,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 15.101,
+   "remote_seconds": 14.57,
+   "mac_seconds": 0.531,
+   "glimmer_seconds": 14.35,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 11,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "id_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "postcode",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 3
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 7
+   },
+   "readback_original": {
+    "values_read": 7,
+    "plain_readable": 11
+   },
+   "safe_sha256": "8fb002907ecc12546048c8fe9c5df8d81ecc6ec161087b1494787333ba7f0d2f",
+   "wall_seconds": 15.102
+  },
+  {
+   "file": "chat_037.png",
+   "type": "chat",
+   "n_values": 5,
+   "n_faces": 0,
+   "n_plain_spans": 20,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.368421052631579,
+    0.896551724137931,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9435483870967742,
+    1.0,
+    0.8142857142857143,
+    0.75,
+    1.0,
+    1.0,
+    0.9183673469387755,
+    1.0,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 9.825,
+   "remote_seconds": 9.26,
+   "mac_seconds": 0.565,
+   "glimmer_seconds": 9.04,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 6,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "phone",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "id_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 13
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 14
+   },
+   "readback_original": {
+    "values_read": 3,
+    "plain_readable": 15
+   },
+   "safe_sha256": "90a57a82eaacf4f467d126f5203f59f67b68c730b55ff905eab3dda8b2d6d489",
+   "wall_seconds": 9.826
+  },
+  {
+   "file": "chat_038.jpg",
+   "type": "chat",
+   "n_values": 5,
+   "n_faces": 0,
+   "n_plain_spans": 20,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.2857142857142857,
+    0.9054054054054054,
+    1.0,
+    0.9991408934707904,
+    1.0,
+    0.8904109589041096,
+    1.0,
+    0.999702380952381,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.8333333333333334,
+    1.0,
+    1.0,
+    1.0,
+    0.8727272727272728,
+    1.0,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 18.311,
+   "remote_seconds": 17.9,
+   "mac_seconds": 0.411,
+   "glimmer_seconds": 17.75,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 9,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "iban",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "id_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "card_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 7
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 13
+   },
+   "readback_original": {
+    "values_read": 5,
+    "plain_readable": 15
+   },
+   "safe_sha256": "4b5fb4405239c7ecc76e213bbc950a0c094a7c0edc0c775b053a14d7baaa4b49",
+   "wall_seconds": 18.312
+  },
+  {
+   "file": "chat_039.jpg",
+   "type": "chat",
+   "n_values": 6,
+   "n_faces": 0,
+   "n_plain_spans": 21,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.7333333333333334,
+    1.0,
+    1.0,
+    0.86328125,
+    1.0,
+    0.92,
+    1.0,
+    0.9865530303030303,
+    1.0,
+    1.0,
+    1.0,
+    0.8676948051948052,
+    1.0,
+    1.0,
+    1.0,
+    0.9865853658536585,
+    1.0,
+    0.8840579710144928,
+    0.0,
+    1.0,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 14.377,
+   "remote_seconds": 13.8,
+   "mac_seconds": 0.577,
+   "glimmer_seconds": 13.58,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 11,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "id_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "phone",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "iban",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 5
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 14
+   },
+   "readback_original": {
+    "values_read": 5,
+    "plain_readable": 15
+   },
+   "safe_sha256": "a61010c352f5e14912e8c5404228c8f41fcba01a2093063b9e624f95763913aa",
+   "wall_seconds": 14.378
+  },
+  {
+   "file": "chat_040.jpg",
+   "type": "chat",
+   "n_values": 5,
+   "n_faces": 0,
+   "n_plain_spans": 20,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.6111111111111112,
+    1.0,
+    1.0,
+    0.9898058252427184,
+    1.0,
+    1.0,
+    1.0,
+    0.9168032786885246,
+    1.0,
+    0.8352941176470589,
+    0.9220430107526881,
+    0.9884892086330935,
+    1.0,
+    0.7796610169491526,
+    1.0,
+    0.8701298701298701,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 13.584,
+   "remote_seconds": 12.33,
+   "mac_seconds": 1.254,
+   "glimmer_seconds": 12.11,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 11,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "email",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "iban",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 3
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 14
+   },
+   "readback_original": {
+    "values_read": 5,
+    "plain_readable": 15
+   },
+   "safe_sha256": "f866290be855b05a25aaaa5b604deed16ca523c9bd63ec26b1aa56bc4526af73",
+   "wall_seconds": 13.585
+  },
+  {
+   "file": "chat_041.png",
+   "type": "chat",
+   "n_values": 5,
+   "n_faces": 0,
+   "n_plain_spans": 21,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "whole_black_pixels": true,
+   "whole_black_report": true,
+   "reason": "rule 1: a private value has no word box (decide)",
+   "pipeline_seconds": 32.916,
+   "remote_seconds": 32.44,
+   "mac_seconds": 0.476,
+   "glimmer_seconds": 9.42,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 0,
+   "first_failure": "decide",
+   "fallback": {
+    "mode": "zoom",
+    "tried": 3,
+    "by_zoom": 2,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": {
+     "px": 1,
+     "norm1000": 1,
+     "norm1": 0
+    }
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "id_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "email",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_original": {
+    "values_read": 3,
+    "plain_readable": 8
+   },
+   "safe_sha256": "9991495af1055bf561f5c68e3aec2d5d2339e97378803145dd772ddf83ebae23",
+   "wall_seconds": 32.916
+  },
+  {
+   "file": "chat_042.png",
+   "type": "chat",
+   "n_values": 5,
+   "n_faces": 0,
+   "n_plain_spans": 20,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "whole_black_pixels": true,
+   "whole_black_report": true,
+   "reason": "rule 1: a private value has no word box (decide)",
+   "pipeline_seconds": 21.003,
+   "remote_seconds": 20.06,
+   "mac_seconds": 0.943,
+   "glimmer_seconds": 8.17,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 0,
+   "first_failure": "decide",
+   "fallback": {
+    "mode": "zoom",
+    "tried": 3,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": {
+     "px": 1,
+     "norm1000": 1,
+     "norm1": 0
+    }
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "card_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "email",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "iban",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_original": {
+    "values_read": 2,
+    "plain_readable": 3
+   },
+   "safe_sha256": "9991495af1055bf561f5c68e3aec2d5d2339e97378803145dd772ddf83ebae23",
+   "wall_seconds": 21.004
+  },
+  {
+   "file": "chat_043.png",
+   "type": "chat",
+   "n_values": 6,
+   "n_faces": 0,
+   "n_plain_spans": 22,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.5882352941176471,
+    1.0,
+    1.0,
+    0.9919354838709677,
+    1.0,
+    0.44680851063829785,
+    0.0,
+    1.0,
+    0.999599251936949,
+    1.0,
+    0.9807692307692307,
+    1.0,
+    0.999508116084604,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9780141843971631,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 10.031,
+   "remote_seconds": 9.38,
+   "mac_seconds": 0.651,
+   "glimmer_seconds": 9.19,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 9,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "phone",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "id_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 6
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 12
+   },
+   "readback_original": {
+    "values_read": 4,
+    "plain_readable": 9
+   },
+   "safe_sha256": "e2142e629201da1d6501f6c487293c2bfef423cc18fea68d0924349c4ae93860",
+   "wall_seconds": 10.031
+  },
+  {
+   "file": "chat_044.png",
+   "type": "chat",
+   "n_values": 5,
+   "n_faces": 0,
+   "n_plain_spans": 20,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.2222222222222222,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.8205128205128205,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.9042553191489362,
+    1.0,
+    1.0,
+    1.0,
+    0.7547169811320755,
+    1.0,
+    0.7761194029850746,
+    1.0,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 13.736,
+   "remote_seconds": 13.34,
+   "mac_seconds": 0.396,
+   "glimmer_seconds": 13.16,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 8,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "id_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "phone",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 5
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 12
+   },
+   "readback_original": {
+    "values_read": 3,
+    "plain_readable": 8
+   },
+   "safe_sha256": "7bdc33071bb63bee4aa33d0e105aea032eb7ec73c106db079b5815a9b80bc02b",
+   "wall_seconds": 13.736
+  },
+  {
+   "file": "chat_045.jpg",
+   "type": "chat",
+   "n_values": 5,
+   "n_faces": 0,
+   "n_plain_spans": 20,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "whole_black_pixels": true,
+   "whole_black_report": true,
+   "reason": "rule 1: a private value has no word box (decide)",
+   "pipeline_seconds": 31.291,
+   "remote_seconds": 31.24,
+   "mac_seconds": 0.051,
+   "glimmer_seconds": 16.68,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 0,
+   "first_failure": "decide",
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "ni_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "email",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_original": {
+    "values_read": 3,
+    "plain_readable": 12
+   },
+   "safe_sha256": "9991495af1055bf561f5c68e3aec2d5d2339e97378803145dd772ddf83ebae23",
+   "wall_seconds": 31.293
+  },
+  {
+   "file": "chat_046.jpg",
+   "type": "chat",
+   "n_values": 6,
+   "n_faces": 0,
+   "n_plain_spans": 21,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.4,
+    0.7962962962962963,
+    1.0,
+    0.9913135593220339,
+    1.0,
+    1.0,
+    1.0,
+    0.9025974025974026,
+    1.0,
+    1.0,
+    1.0,
+    0.9972946859903382,
+    1.0,
+    0.8783783783783784,
+    0.0,
+    1.0,
+    0.9963191990577149,
+    1.0,
+    0.873015873015873,
+    1.0,
+    1.0
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 11.392,
+   "remote_seconds": 10.99,
+   "mac_seconds": 0.402,
+   "glimmer_seconds": 10.84,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 11,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "card_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "phone",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 4
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 12
+   },
+   "readback_original": {
+    "values_read": 5,
+    "plain_readable": 17
+   },
+   "safe_sha256": "a857aa275bb0735acb9b80717ee3a37e92e60f30741c89ac51e49fd031516257",
+   "wall_seconds": 11.392
+  },
+  {
+   "file": "chat_047.png",
+   "type": "chat",
+   "n_values": 6,
+   "n_faces": 0,
+   "n_plain_spans": 21,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "whole_black_pixels": true,
+   "whole_black_report": true,
+   "reason": "rule 1: a private value has no word box (decide)",
+   "pipeline_seconds": 29.188,
+   "remote_seconds": 28.65,
+   "mac_seconds": 0.538,
+   "glimmer_seconds": 12.53,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 0,
+   "first_failure": "decide",
+   "fallback": {
+    "mode": "zoom",
+    "tried": 3,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": {
+     "px": 1,
+     "norm1000": 1,
+     "norm1": 0
+    }
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "phone",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "dob",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "sort_code",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "account_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "card_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_original": {
+    "values_read": 1,
+    "plain_readable": 1
+   },
+   "safe_sha256": "9991495af1055bf561f5c68e3aec2d5d2339e97378803145dd772ddf83ebae23",
+   "wall_seconds": 29.189
+  },
+  {
+   "file": "chat_048.png",
+   "type": "chat",
+   "n_values": 5,
+   "n_faces": 0,
+   "n_plain_spans": 20,
+   "value_box_black_share": [
+    1.0,
+    0.8962264150943396,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.0,
+    0.9347826086956522,
+    0.8098039215686275,
+    0.9993446920052425,
+    0.8307291666666666,
+    1.0,
+    0.8103448275862069,
+    0.7,
+    0.832183908045977,
+    0.8914459400781589,
+    0.8413793103448276,
+    0.5358680057388809,
+    0.8222222222222222,
+    1.0,
+    0.8064516129032258,
+    1.0,
+    0.8411910669975187,
+    0.9204545454545454,
+    0.797979797979798,
+    0.8477157360406091
+   ],
+   "whole_black_pixels": false,
+   "whole_black_report": false,
+   "reason": null,
+   "pipeline_seconds": 24.921,
+   "remote_seconds": 13.5,
+   "mac_seconds": 11.421,
+   "glimmer_seconds": 13.26,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 9,
+   "first_failure": null,
+   "fallback": {
+    "mode": "zoom",
+    "tried": 0,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": null,
+    "frame_hits": null
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "email",
+     "black_share": 0.8962264150943396,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      0.48,
+      0.9,
+      0.9
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "address",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "iban",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "id_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 3
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 8
+   },
+   "readback_original": {
+    "values_read": 2,
+    "plain_readable": 8
+   },
+   "safe_sha256": "9d01841dec896fbc89b8e8ae77a5ce32690d37a1f16509475a8d01aaf1824dbd",
+   "wall_seconds": 24.922
+  },
+  {
+   "file": "chat_049.png",
+   "type": "chat",
+   "n_values": 5,
+   "n_faces": 0,
+   "n_plain_spans": 20,
+   "value_box_black_share": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "face_box_black_share": [],
+   "plain_box_nonblack_share": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "whole_black_pixels": true,
+   "whole_black_report": true,
+   "reason": "rule 1: a private value has no word box (decide)",
+   "pipeline_seconds": 25.908,
+   "remote_seconds": 25.77,
+   "mac_seconds": 0.138,
+   "glimmer_seconds": 10.83,
+   "size_ok": true,
+   "png_chunks": [
+    "IHDR",
+    "IDAT",
+    "IEND"
+   ],
+   "boxes_filled": 0,
+   "first_failure": "decide",
+   "fallback": {
+    "mode": "zoom",
+    "tried": 1,
+    "by_zoom": 0,
+    "by_line": 0,
+    "frame": "norm1000",
+    "frame_hits": {
+     "px": 0,
+     "norm1000": 2,
+     "norm1": 0
+    }
+   },
+   "word_list_would_refuse": true,
+   "values": [
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "id_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "email",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "card_number",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": false,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    },
+    {
+     "type": "name",
+     "black_share": 1.0,
+     "left_readable": false,
+     "read_on_original": true,
+     "black_edges": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "left_readable_strict": false
+    }
+   ],
+   "readback": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_strict": {
+    "values_left": [],
+    "plain_readable": 0
+   },
+   "readback_original": {
+    "values_read": 4,
+    "plain_readable": 4
+   },
+   "safe_sha256": "9991495af1055bf561f5c68e3aec2d5d2339e97378803145dd772ddf83ebae23",
+   "wall_seconds": 25.909
+  }
+ ]
+}

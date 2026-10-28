@@ -36,17 +36,28 @@ Any "not sure" gives a whole black picture. The five fail-safe rules:
 
 **The proof.** The page and the code check, before anything is sent, that the SHA-256 of the image in the request equals the SHA-256 of the safe copy and never the original's (unit tests refuse the original, a second image, an image URL and a file id). Three leak checks run on every test result: a plain Tesseract read of the safe copy, a stricter read (plain, dark areas inverted, local contrast), and a pixel check of every planted box.
 
-## Results (dev set, 28 Oct 2026)
+## Results (sealed hold-out, 28 Oct 2026, tag `freeze-1`)
 
-Made-up test pictures only. Measured on the **dev** split (150 text pictures, 55 + 60 face pictures); the final numbers will come from a sealed **hold-out** set, run once at the end. Details: `LIMITS.md`.
+Made-up test pictures only. The hold-out (50 text pictures, 20 + 20 face pictures) was run **once, live**, on the frozen pipeline (git tag `freeze-1`, settings in `FREEZE.md`). Nothing was changed after seeing it. Details and caveats: `LIMITS.md`.
 
-| Dev set | Pictures | Whole picture black | Planted values left readable (kept pictures) | Faces covered ≥90% (kept pictures) |
+| Hold-out, text pictures | Pictures | Whole picture black | Values left readable / planted, in kept pictures (plain Tesseract, strict read, pixels under 50%) | Planted values under 90% covered | Ordinary text still readable (kept) | Seconds per picture |
+|---|---|---|---|---|---|---|
+| Chats | 13 | 5 (38%) | 0 / 43 | 1 (at about 90%) | 46 of 164 (28%) | 19.7 |
+| ID-style cards | 12 | 0 | 0 / 84 | 0 | 35 of 144 (24%) | 17.3 |
+| Letters | 13 | 4 (31%) | 0 / 90 | 0 | 88 of 153 (58%) | 24.5 |
+| Payslips | 12 | 4 (33%) | 0 / 64 | 0 | 183 of 248 (74%) | 19.5 |
+| **All text** | **50** | **13 (26%)** | **0 / 281** | **1 of 281** | **352 of 709 (50%)** | **20.3** |
+
+| Hold-out, face pictures | Pictures | Whole picture black | Faces covered 90% or more (kept pictures) | Seconds per picture |
 |---|---|---|---|---|
-| Text pictures (payslips, letters, ID-style cards, chats) | 150 | 41 (27%): chats 16 of 37, letters 12 of 37, payslips 7 of 38, ID cards 6 of 38 | 0 by plain Tesseract, 0 by the strict read, 0 under 50% covered by pixels, 1 under 90% (of 837) | drawn placeholder faces not detected (a test-picture limit) |
-| Faces on cards and chats (AI-made faces) | 55 | 1 (2%) | no values planted | 117 of 117 |
-| Harder faces (side views, hats, masks, groups) | 60 | 6 (10%) | no values planted | 112 of 112 |
+| Faces on cards and chats (AI-made faces) | 20 | 0 | 45 of 45 | 8.7 |
+| Harder faces (side views, hats, masks, groups) | 20 | 1 (5%) | 33 of 34 (one accessory picture, covered 78%) | 5.3 |
 
-Reading the table: a black picture is the safe failure, not a leak. "Kept" means the picture was not blacked out whole. About 55% of the ordinary (not private) text stays readable in kept text pictures.
+The drawn placeholder faces on the text pictures' ID cards are not detected (0 of 12 here; a test-picture limit, the same as on the dev set). The 13 black text pictures: 11 because a private value had no word box, 2 because the safe copy still showed a value. The 1 black harder-face picture: the read stage found almost nothing.
+
+Reading the tables: a black picture is the safe failure, not a leak. "Kept" means the picture was not blacked out whole. No leak was found by any of the three checks on the hold-out.
+
+Development set (the pictures the settings were tuned on, 28 Oct 2026, at the frozen settings): text 150 pictures, 40 black (27%), 0 leaks by all three checks, 1 of 850 planted values under 90%; faces 55 pictures, 1 black, 117 of 117 faces covered; harder faces 60 pictures, 6 black, 112 of 112 covered. Two live runs gave byte-identical safe copies on all 265.
 
 ## Run it
 
