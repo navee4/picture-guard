@@ -23,7 +23,9 @@ if [ "$people" = "$WANT" ]; then ok "every commit's author and committer is $WAN
 # words are built from pieces so this file does not contain them
 A=my; B=yaad; C=mem; D=ory; G=gil; H=ani; N=nav; E=eed; U=/Us; V=ers/; X=Documents/; Y=Cla; Z=ude; W=windows; M=" vm"
 pat="$A$B|$A$C$D|$U$V|$X$Y$Z|$W$M|$G$H|$N$E"
-hits=$(git grep -I -l -i -E "$pat" $(git rev-list --all) 2>/dev/null | sed 's/^[0-9a-f]*://' | sort -u)
+# the one allowed exception: the demo address the owner chose, whose workspace name is part of the URL (28 Oct 2026)
+DEMO="$G$H--picture-guard-demo-web-serve.us-east.modal.run"
+hits=$(git grep -I -n -i -E "$pat" $(git rev-list --all) 2>/dev/null | grep -v -F -e "$DEMO" | sed 's/^[0-9a-f]*://' | cut -d: -f1 | sort -u)
 if [ -z "$hits" ]; then ok "no private path, name or forbidden word in any file of any commit"; else bad "private words in: $hits"; fi
 # "...test" is a made-up mail.test address cut short in a saved model answer
 emails=$(git grep -I -h -o -i -E "[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]+" $(git rev-list --all) 2>/dev/null | sed 's/^[0-9a-f]*://' | grep -v -i -E "@(example\.(com|org|net)|mail\.test|\.\.\.test|users\.noreply\.github\.com)$" | sort -u)

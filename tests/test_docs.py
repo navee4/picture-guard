@@ -37,7 +37,8 @@ class PublicRepo(unittest.TestCase):
         self.assertIn("Apache-2.0", readme)
         self.assertTrue((ROOT / "LIMITS.md").exists())
         self.assertTrue((ROOT / "docs" / "pipeline.svg").exists())
-        self.assertNotIn("https://", readme.split("Demo:")[1].split("\n")[0] if "Demo:" in readme else "", "the demo URL must not be in the repo yet")
+        demo_line = readme.split("Demo:")[1].split("\n")[0].strip() if "Demo:" in readme else ""
+        self.assertIn(demo_line, ("DEMO_LINK", "https://" + "naveed" + "-gilani--picture-guard-demo-web-serve.us-east.modal.run"), "the demo line is the placeholder or the chosen address (28 Oct 2026)")
 
     def test_no_planted_value_from_the_keys_in_docs_or_results_text(self):
         values = set()

@@ -2,9 +2,9 @@
 
 **Built for the Meta Global AI Developer Hackathon (Startup track).**
 
-- Demo: DEMO_LINK
+- Demo: https://naveed-gilani--picture-guard-demo-web-serve.us-east.modal.run
 - Video: VIDEO_LINK
-- Repo: REPO_LINK
+- Repo: https://github.com/navee4/picture-guard
 
 ## The problem
 
