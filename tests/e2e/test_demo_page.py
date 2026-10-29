@@ -162,6 +162,67 @@ class Page(unittest.TestCase):
         self.assertEqual(int(page.locator("#wipe").get_attribute("aria-valuenow")), 50, "with reduced motion the line is at the middle at once")
         self.assertLessEqual(page.evaluate("document.documentElement.scrollWidth"), 360, "no sideways scroll after a result")
 
+    def test_first_view_has_the_payslip_on_the_table_and_the_button_at_both_widths(self):
+        for w, h in ((1440, 900), (390, 844)):
+            page = self.new_page(width=w, height=h)
+            page.wait_for_function("document.getElementById('orig').complete && document.getElementById('orig').naturalWidth>0", timeout=30_000)
+            self.assertFalse(page.is_hidden("#orig"), f"an image lies on the table at {w} px")
+            self.assertIn("payslip", page.get_attribute("#orig", "src"))
+            btn = page.locator("#cleanBtn")
+            self.assertEqual(btn.inner_text(), "Clean this picture")
+            bb = btn.bounding_box()
+            self.assertTrue(bb and bb["y"] >= 0 and bb["y"] + bb["height"] <= h, f"the button is inside the first screen at {w} px")
+            ob = page.locator("#orig").bounding_box()
+            self.assertTrue(ob["y"] < h - 60, f"the picture starts inside the first screen at {w} px")
+            self.assertEqual(page.evaluate("document.querySelectorAll('.stamp').length"), 0, "the page does not run by itself")
+
+    def test_bars_are_solid_black_at_every_frame_and_chips_use_plain_names(self):
+        page = self.new_page()
+        page.evaluate("""window.__bad=[];window.__seen=0;window.__sampler=setInterval(()=>{document.querySelectorAll('.stamp').forEach(e=>{window.__seen++;
+          const c=getComputedStyle(e); if(c.opacity!=='1'||c.backgroundColor!=='rgb(0, 0, 0)') window.__bad.push([c.opacity,c.backgroundColor]);});},8)""")
+        page.click("#cleanBtn")
+        page.wait_for_function("document.querySelectorAll('.stamp').length>0", timeout=300_000, polling=20)
+        rect = page.evaluate("(()=>{const r=document.querySelector('.stamp').getBoundingClientRect();return {x:r.x+r.width/2,y:r.y+r.height/2}})()")
+        page.wait_for_timeout(60)
+        png = page.screenshot(clip={"x": max(0, rect["x"] - 1), "y": max(0, rect["y"] - 1), "width": 2, "height": 2})
+        from PIL import Image
+        px = Image.open(io.BytesIO(png)).convert("RGB").getpixel((1, 1))
+        self.assertEqual(px, (0, 0, 0), "a pixel at a bar's centre, mid-stamp, is pure black")
+        page.wait_for_function("document.getElementById('wipe').style.display==='block'", timeout=60_000)
+        page.evaluate("clearInterval(window.__sampler)")
+        self.assertGreater(page.evaluate("window.__seen"), 0)
+        self.assertEqual(page.evaluate("window.__bad"), [], "every bar had opacity 1 and background rgb(0, 0, 0) at every sampled frame")
+        raw = {"name", "address", "postcode", "dob", "ni_number", "sort_code", "account_number", "card_number", "iban", "email", "phone", "id_number", "face", "other"}
+        chips = [c.strip() for c in page.eval_on_selector_all(".chip", "els => els.map(e => e.textContent)")]
+        self.assertTrue(chips)
+        for c in chips:
+            label = c.rsplit("×", 1)[0].strip()
+            self.assertNotIn(label, raw, f"chip shows a raw type code: {c}")
+            self.assertNotIn("_", label)
+            self.assertTrue(label[0].isupper(), f"sentence case: {c}")
+
+    def test_mobile_run_brings_the_table_into_view(self):
+        page = self.new_page(width=390, height=844, has_touch=True)
+        page.evaluate("window.scrollTo(0,0)")
+        page.click("#cleanBtn")
+        page.wait_for_timeout(1500)
+        top = page.evaluate("document.querySelector('.paper').getBoundingClientRect().top")
+        self.assertTrue(0 <= top < 844, f"the table's top is inside the viewport after the click (top={top})")
+        page.wait_for_function("document.getElementById('wipe').style.display==='block'", timeout=300_000)
+
+    def test_a_hash_mismatch_is_said_in_plain_words(self):
+        page = self.new_page()
+        run_sample(page, "chat_005.png", self.limited)
+        page.wait_for_function("document.getElementById('hSafe').textContent.length === 64", timeout=300_000)
+        bad = {"answer": "x", "error": None, "connected": True, "request_log": [{"host": "api.meta.ai", "image_bytes": 1, "image_sha256": "0" * 64, "sent": False}],
+               "safe_sha256": "1" * 64, "original_sha256": "2" * 64, "proof": {"sent_equals_safe_copy": False, "sent_equals_original": False}}
+        page.route("**/api/ask", lambda route: route.fulfill(status=200, content_type="application/json", body=json.dumps(bad)))
+        page.fill("#q", "hello")
+        page.click("#askBtn")
+        page.wait_for_function("document.getElementById('hSent').textContent.length === 64", timeout=30_000)
+        self.assertEqual(page.inner_text("#hCheck"), "The hashes do not match. Nothing was sent.")
+        self.assertNotIn("MISMATCH", page.content())
+
     def test_the_page_contacts_only_its_own_host(self):
         page = self.new_page()
         own = urlparse(URL).netloc

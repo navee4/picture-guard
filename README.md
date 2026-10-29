@@ -116,6 +116,18 @@ A web page over the same pipeline as `pg protect`: pick a made-up sample or uplo
     .venv/bin/python -m unittest discover -s tests -t .     # 140+ tests; the model calls are faked, Tesseract is real
     sh tools/secret_scan.sh                                 # looks for keys and tokens before every commit
 
+## Use it in your own app
+
+Picture guard is a command and a Python function today. It is not a hosted service.
+
+- **Command line:** `pg protect in.png --out safe.png --report report.json` writes the safe copy (a PNG with no metadata) and a report. Send `safe.png` to your AI, never `in.png`.
+- **Python:** `from picture_guard.pipeline import protect` then `report = protect(in_path, out_path, report_path)`. It writes the safe copy and the report file and returns the report as a dictionary. Your code reads `report["fail_safe"]["whole_black"]` to see whether the whole picture went black.
+- **What the report holds:** the input's file name, size and SHA-256; one entry per stage with its status and seconds; counts of what was found by type (for example "account number: 2"), never the private text itself; whether the whole picture went black and the reason in plain words; the SHA-256 of the safe copy; the number of boxes filled; the time taken.
+- **Where it runs:** Tesseract runs on your machine. The two Meta models (Muse Glimmer and SAM 3.1) run on **your own Modal account**: the first run starts the app there, so you need a Modal account and the model access described in `LICENCES.md`. The original picture goes to your Modal containers and nowhere else.
+- **The demo's web endpoints** (`/api/protect`, `/api/ask`) are for the demo page only. They are rate-limited (see "The live demo") and are not a service for other apps.
+
+**What does not exist yet:** no hosted API, no API key for Picture guard, no SDK or package on PyPI, no multi-user setup. To use it in another system today, call the command or the function from your own code on a machine that has Tesseract and a Modal account.
+
 ## What was built during the hackathon
 
 The hackathon started on 26 Oct 2026. Everything in `picture_guard/`, `tests/`, `tools/` and `docs/` was written from 27 Oct. The made-up test pictures and model spike (`testset/`, `spike/`, `faces/`, `faces_hard/`) were made before it; see `BUILT-BEFORE-HACKATHON.md` and the git tag `pre-hackathon`.

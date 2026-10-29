@@ -246,5 +246,22 @@ class Web(unittest.TestCase):
         self.assertTrue(a["proof"]["sent_equals_safe_copy"])
 
 
+class TypeNames(unittest.TestCase):
+    def test_every_type_the_pipeline_can_report_has_a_plain_name_in_the_page(self):
+        import ast
+        from picture_guard import rules
+        src = (ROOT / "picture_guard" / "remote" / "container_impl.py").read_text()
+        value_types = next(ast.literal_eval(n.value) for n in ast.walk(ast.parse(src)) if isinstance(n, ast.Assign) and getattr(n.targets[0], "id", "") == "VALUE_TYPES")
+        html = (ROOT / "picture_guard" / "demo" / "static" / "index.html").read_text()
+        block = html.split("const TYPE_NAMES={", 1)[1].split("};", 1)[0]
+        mapped = dict(kv.split(":", 1) for kv in block.split(","))
+        for ty in set(value_types) | set(rules.TYPES) | {"face", "other"}:
+            self.assertIn(ty, mapped, f"no plain name for type {ty}")
+            label = mapped[ty].strip("'")
+            self.assertNotEqual(label, ty)
+            self.assertNotIn("_", label)
+            self.assertTrue(label[0].isupper())
+
+
 if __name__ == "__main__":
     unittest.main()
