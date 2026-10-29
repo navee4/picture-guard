@@ -10,6 +10,7 @@ from fastapi.responses import HTMLResponse, JSONResponse, Response, StreamingRes
 from picture_guard.demo.core import Demo, Limited, Rejected
 
 STATIC = Path(__file__).resolve().parent / "static"
+FONTS = ("bricolage-grotesque-latin-wght-normal.woff2", "jetbrains-mono-latin-400-normal.woff2")
 
 
 def visitor_of(request: Request) -> str:
@@ -23,6 +24,12 @@ def create_app(demo: Demo, wake=None) -> FastAPI:
     @app.get("/", response_class=HTMLResponse)
     def page():
         return HTMLResponse((STATIC / "index.html").read_text(), headers={"Cache-Control": "no-store"})
+
+    @app.get("/static/fonts/{name}")
+    def font(name: str):
+        if name not in FONTS:  # a name from the list only: no path tricks
+            return JSONResponse({"error": "no such file"}, status_code=404)
+        return Response((STATIC / "fonts" / name).read_bytes(), media_type="font/woff2", headers={"Cache-Control": "public, max-age=86400"})
 
     @app.get("/api/info")
     def info():

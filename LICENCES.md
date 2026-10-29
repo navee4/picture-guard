@@ -18,6 +18,7 @@ Apache-2.0 (see `LICENSE`); it covers our code only, not the dependencies and mo
 | Pillow | 13.0.0 | MIT-CMU (HPND style) | read: package metadata |
 | NumPy | 2.5.4 | BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0 | read: package metadata |
 | Python | 3.12 | PSF licence | from memory |
+| Bricolage Grotesque (variable, Latin subset, from the `@fontsource-variable/bricolage-grotesque` package) and JetBrains Mono 400 (Latin subset, `@fontsource/jetbrains-mono`); both self-hosted in `picture_guard/demo/static/fonts/` and served by the demo itself, so the page makes no request to a font host | SIL Open Font License 1.1 (Copyright 2022 The Bricolage Grotesque Project Authors; Copyright 2020 The JetBrains Mono Project Authors) | read: the `LICENSE` files of the two packages, 29 Oct 2026 |
 
 ## Models the entry will call (not built in yet)
 
