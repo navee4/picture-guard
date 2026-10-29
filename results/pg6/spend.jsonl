@@ -35,3 +35,4 @@
 {"run": "eval-faces-dev-fb-zoom", "seconds": 240.6, "usd": 0.1855, "note": "session wall time (upper bound: includes image build and cold start)"}
 {"run": "eval-testset-dev-fb-zoom", "seconds": 1224.1, "usd": 0.9435, "note": "session wall time (upper bound: includes image build and cold start)"}
 {"run": "pg18-deployed-tests-and-screenshots", "seconds": 0, "usd": 0.5, "note": "estimate (inferred, not metered): about 25 pictures through the deployed demo on the L40S, incl. cold starts"}
+{"run": "pg19-deployed-tests-and-screenshots", "seconds": 0, "usd": 0.4, "note": "estimate (inferred, not metered): about 20 pictures through the deployed demo, incl. cold starts"}
