@@ -68,7 +68,10 @@ class RealSpark(unittest.TestCase):
                     page.click(f"button[data-sample='{sample}']")
                     try:
                         page.wait_for_function("!document.getElementById('resultCard').hidden", timeout=20_000)
-                        break
+                        page.wait_for_timeout(500)
+                        if not limited or attempt == 12:  # the page also opens the result card to show a rate-limit message
+                            break
+                        time.sleep(60)
                     except Exception:  # noqa: BLE001
                         if not limited or attempt == 12:
                             break

@@ -30,7 +30,10 @@ def run_sample(page, name, limited):
         page.click(f"button[data-sample='{name}']")
         try:
             page.wait_for_function("!document.getElementById('resultCard').hidden", timeout=20_000)
-            return
+            page.wait_for_timeout(500)
+            if not limited or attempt == 12:  # the page also opens the result card to show a rate-limit message
+                return
+            time.sleep(60)
         except Exception:  # noqa: BLE001
             if not limited or attempt == 12:
                 return
