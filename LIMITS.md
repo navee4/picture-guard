@@ -20,12 +20,13 @@ The headline numbers are from the sealed **hold-out** (50 made-up text pictures,
 
 ## Speed
 
-- Cold start: the first picture after a quiet spell took about **60 seconds** on the hosted demo (the GPU loads two models). A warm picture took about **20 to 30 seconds** (reading about 4 to 10 s on a small CPU, the AI step about 10 to 15 s, the re-read of the safe copy 3 to 5 s). Measured on the deployed demo and in replays; not a load test.
+- **First picture after a quiet spell: about 48 seconds** on the hosted demo (the GPU container starts and loads two models; the page says the wake-up alone takes about 40 seconds). **After that, 7 to 24 seconds** per picture. Measured on the deployed demo in the speed-up work (PG-14, 28 Oct 2026: one cold and several warm pictures per sample; the cold wake-up on our own test app was 31.1 s in one run, and the cold payslip's AI step on the demo took 39.5 s). A later deployed run on 29 Oct showed the same range (the AI step took 11.0 s on one payslip run and 33.5 s on another; one run each, so not a benchmark). Not a load test.
 
 ## Privacy in the hosted demo
 
 - **The original picture goes to our own GPU** (Modal) so that Muse Glimmer and SAM can look at it. It is processed in memory and not stored or logged. **It never goes to Meta's API.** Only the safe copy can be sent to Muse Spark, and the page shows the SHA-256 of the bytes sent next to the safe copy's.
 - Use made-up pictures in the demo.
+- **Known gap (29 Oct 2026):** if the hash check ever failed, the server stops before sending anything to Meta, but the demo page shows a general error, not the plain sentence "The hashes do not match. Nothing was sent." Nothing is sent in either case. This has not happened in any test.
 - **What goes to Meta:** only the safe copy and your question go to Meta's Model API. On free credits, Meta may use what is sent for product improvement (Meta's billing page, 28 Oct 2026).
 - The Meta Model API's retention of images is **not stated** in Meta's developer docs (the legal terms were not read). The code uses a Standard-mode model only, never a "Contributor" one.
 
