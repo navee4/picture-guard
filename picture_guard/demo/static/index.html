@@ -175,16 +175,17 @@ function resetTable(){ clearTimeout(stampTimer); $('bars').innerHTML=''; $('safe
 async function init(){
   info=await (await fetch('api/info')).json();
   $('banner').textContent=info.banner; stageList();
-  const names={payslip:'Payslip',letter:'Letter',id_card:'ID card',chat:'Chat',phone_photo:'Phone photo'};
-  for(const n of info.samples){
+  const names={payslip:'Payslip',letter:'Letter',id_card:'ID card',chat:'Chat',phone_photo_payslip:'Phone photo: payslip',phone_photo_letter:'Phone photo: letter',phone_photo_staff_badge:'Phone photo: staff badge'};
+  const phoneOrder=['phone_photo_payslip','phone_photo_letter','phone_photo_staff_badge']; const order=n=>{const i=phoneOrder.findIndex(p=>n.startsWith(p)); return i<0?9:i;}; const list=info.samples.slice().sort((a,b)=>order(a)-order(b)||(a<b?-1:1));
+  for(const n of list){
     const b=document.createElement('button'); b.className='tray'; b.dataset.sample=n;
     const im=document.createElement('img'); im.src='api/sample/'+n; im.alt=''; im.loading='lazy';
     const sp=document.createElement('span'); sp.textContent=names[n.replace(/_\d+\..*/,'')]||n;
     b.append(im,sp); b.onclick=()=>run({sample:n}); $('samples').insertBefore(b,$('samples').querySelector('.upl'));
   }
   $('sparkNote').textContent=info.spark_connected?('Answers come from '+info.spark_model+' (Meta Model API, Standard mode). Only the safe copy and your question go to Meta\'s Model API. On free credits, Meta may use what is sent for product improvement.'):'Muse Spark not connected yet. The answer below is a stand-in; nothing is sent to Meta.';
-  const first=info.samples.find(n=>n.startsWith('payslip'))||info.samples[0];
-  if(first){ pending={sample:first}; setOrig('api/sample/'+first); showStage(); $('cleanBtn').hidden=false; $('note').textContent='The payslip is on the table. Clean it, pick another picture, or upload your own. Made-up pictures only, please.'; }
+  const first=list.find(n=>n.startsWith('phone_photo_payslip'))||list.find(n=>n.startsWith('payslip'))||list[0];
+  if(first){ pending={sample:first}; setOrig('api/sample/'+first); showStage(); $('cleanBtn').hidden=false; $('note').textContent=(first.startsWith('phone_photo')?'A phone photo of a printed payslip is on the table. ':'The payslip is on the table. ')+'Clean it, pick another picture, or upload your own. Made-up pictures only, please.'; }
   fetch('api/wake',{method:'POST'}).catch(()=>{});
 }
 function pick(f){

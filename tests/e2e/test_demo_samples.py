@@ -42,6 +42,9 @@ class Samples(unittest.TestCase):
         sources = json.loads((ROOT / "demo_samples" / "SOURCES.json").read_text())
         report = {}
         for name, src in sources.items():
+            if isinstance(src, dict):  # a phone photo: the key's boxes do not match the photo, so read the planted texts back instead
+                self.phone_photo(name, src, report)
+                continue
             key = json.loads((ROOT / src / "key.json").read_text())
             entry = next(e for e in key["images"] if e["file"] == name)
             done = post_sample(name)
@@ -55,6 +58,25 @@ class Samples(unittest.TestCase):
             report[name] = {"whole_black": done["whole_black"], "planted": len(shares), "min_black_share": round(min(shares), 3) if shares else None}
             self.assertTrue(all(x >= 0.9 for x in shares), f"{name}: {sorted(shares)[:3]}")
         print(json.dumps(report))
+
+    def phone_photo(self, name, src, report):
+        """Not whole black, and no planted text of the source picture readable by the plain or the strict read-back (needs Tesseract)."""
+        from picture_guard import readback
+        key = json.loads((ROOT / src["dir"] / "key.json").read_text())
+        entry = next(e for e in key["images"] if e["file"] == src["source"])
+        planted = [s["text"] for s in entry["spans"] if s["kind"] == "personal"]
+        done = post_sample(name)
+        self.assertEqual(done["event"], "done", name)
+        self.assertFalse(done["whole_black"], f"{name} went whole black")
+        if not readback.available():
+            report[name] = {"whole_black": False, "read_back": "not run (no tesseract)"}
+            return
+        out = Path(os.environ.get("TMPDIR", "/tmp")) / f"pg-{name}.png"
+        out.write_bytes(base64.b64decode(done["safe_png_base64"]))
+        plain, strict = readback.norm(readback.ocr_text(str(out))), readback.norm(readback.ocr_text_strict(str(out)))
+        left = [v for v in planted if readback.found(v, plain) or readback.found(v, strict)]
+        report[name] = {"whole_black": False, "planted": len(planted), "readable": len(left)}
+        self.assertEqual(left, [], f"{name}: planted values still readable")
 
 
 if __name__ == "__main__":

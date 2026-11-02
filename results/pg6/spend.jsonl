@@ -39,3 +39,4 @@
 {"run": "protect", "seconds": 50.2, "usd": 0.0387, "note": "session wall time (upper bound: includes image build and cold start)"}
 {"run": "protect", "seconds": 62.3, "usd": 0.048, "note": "session wall time (upper bound: includes image build and cold start)"}
 {"run": "protect", "seconds": 41.1, "usd": 0.0317, "note": "session wall time (upper bound: includes image build and cold start)"}
+{"run": "protect", "seconds": 73.0, "usd": 0.0562, "note": "session wall time (upper bound: includes image build and cold start)"}

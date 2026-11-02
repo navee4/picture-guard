@@ -1,1 +1,16 @@
-{"payslip_000.jpg": "testset", "letter_000.png": "testset", "chat_005.png": "testset", "id_card_001.png": "faces"}
+{
+ "payslip_000.jpg": "testset",
+ "letter_000.png": "testset",
+ "chat_005.png": "testset",
+ "id_card_001.png": "faces",
+ "phone_photo_payslip_000.jpg": {
+  "dir": "testset",
+  "source": "payslip_000.jpg",
+  "note": "phone photo of printed payslip_000; checked against payslip_000's key"
+ },
+ "phone_photo_letter_000.jpg": {
+  "dir": "testset",
+  "source": "letter_000.png",
+  "note": "phone photo of printed letter_000; checked against letter_000's key"
+ }
+}

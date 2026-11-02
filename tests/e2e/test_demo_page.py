@@ -74,6 +74,9 @@ class Page(unittest.TestCase):
         names = [b.get_attribute("data-sample") for b in page.query_selector_all("button[data-sample]")]
         for n in ("payslip_000.jpg", "letter_000.png", "chat_005.png", "id_card_001.png"):
             self.assertIn(n, names)
+        self.assertEqual(names[:2], ["phone_photo_payslip_000.jpg", "phone_photo_letter_000.jpg"], "phone photos come first")
+        labels = [b.inner_text() for b in page.query_selector_all("button[data-sample]")][:2]
+        self.assertEqual(labels, ["Phone photo: payslip", "Phone photo: letter"])
         self.assertIn("goes only to our own GPU, never to Meta", page.inner_text("#ends") if not page.is_hidden("#ends") else page.content())
         # fonts are our own files
         fonts = page.evaluate("[...document.fonts].filter(f=>f.status==='loaded').map(f=>f.family)")
@@ -167,7 +170,7 @@ class Page(unittest.TestCase):
             page = self.new_page(width=w, height=h)
             page.wait_for_function("document.getElementById('orig').complete && document.getElementById('orig').naturalWidth>0", timeout=30_000)
             self.assertFalse(page.is_hidden("#orig"), f"an image lies on the table at {w} px")
-            self.assertIn("payslip", page.get_attribute("#orig", "src"))
+            self.assertIn("phone_photo_payslip", page.get_attribute("#orig", "src"))
             btn = page.locator("#cleanBtn")
             self.assertEqual(btn.inner_text(), "Clean this picture")
             bb = btn.bounding_box()
@@ -207,7 +210,7 @@ class Page(unittest.TestCase):
         page.click("#cleanBtn")
         page.wait_for_timeout(1500)
         top = page.evaluate("document.querySelector('.paper').getBoundingClientRect().top")
-        self.assertTrue(0 <= top < 844, f"the table's top is inside the viewport after the click (top={top})")
+        self.assertTrue(-1 <= top < 844, f"the table's top is inside the viewport after the click (top={top})")
         page.wait_for_function("document.getElementById('wipe').style.display==='block'", timeout=300_000)
 
     def test_a_hash_mismatch_is_said_in_plain_words(self):

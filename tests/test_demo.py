@@ -121,13 +121,22 @@ class Limits(unittest.TestCase):
         self.assertTrue(rl.allow("a"))
 
     def test_samples_are_dev_pictures_only(self):
+        """Program-made samples are dev pictures of their key. A phone photo is a photo of a printed dev picture; it is listed with a
+        dict (dir, source, note) and its source must be a dev picture of that key."""
         sources = json.loads((SAMPLES / "SOURCES.json").read_text())
         names = self.demo.sample_names()
         self.assertEqual(sorted(names), sorted(sources))
-        self.assertEqual(len(names), 4)
+        self.assertEqual(len(names), 6)
         for n in names:
-            key = json.loads((ROOT / sources[n] / "key.json").read_text())
-            self.assertEqual({e["file"]: e["split"] for e in key["images"]}[n], "dev", n)
+            src = sources[n]
+            if isinstance(src, dict):
+                self.assertTrue(n.startswith("phone_photo_"), n)
+                self.assertIn("phone photo of printed", src["note"])
+                self.assertIn("checked against", src["note"])
+                key, file = json.loads((ROOT / src["dir"] / "key.json").read_text()), src["source"]
+            else:
+                key, file = json.loads((ROOT / src / "key.json").read_text()), n
+            self.assertEqual({e["file"]: e["split"] for e in key["images"]}[file], "dev", n)
 
     def test_page_does_not_say_the_original_stays_on_the_page(self):
         html = (ROOT / "picture_guard" / "demo" / "static" / "index.html").read_text()
@@ -225,7 +234,7 @@ class Web(unittest.TestCase):
 
     def test_page_info_and_sample(self):
         self.assertIn("Picture guard", self.c.get("/").text)
-        self.assertEqual(len(self.c.get("/api/info").json()["samples"]), 4)
+        self.assertEqual(len(self.c.get("/api/info").json()["samples"]), 6)
         self.assertEqual(self.c.get("/api/sample/chat_005.png").status_code, 200)
         self.assertEqual(self.c.get("/api/sample/..%2FREADME.md").status_code, 404)
 
