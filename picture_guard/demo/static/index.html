@@ -72,8 +72,9 @@ ol.stages .t{font-variant-numeric:tabular-nums}
 /* ask */
 .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 input[type=text]{font:inherit;flex:1;min-width:220px;min-height:44px;padding:8px 12px;border:1.5px solid var(--ink);border-radius:6px;background:var(--paper);color:var(--ink)}
-#answer{white-space:pre-wrap;margin:12px 0 0;padding:0 0 0 14px;border-left:4px solid var(--ink);min-height:0}
+#answer{margin:12px 0 0;padding:0 0 0 14px;border-left:4px solid var(--ink);min-height:0}
 #answer:empty{display:none}
+#answer div{margin:0 0 6px}#answer ul{margin:0 0 6px;padding-left:22px}#answer li{margin:0 0 3px}
 /* receipt */
 .receipt{background:var(--paper);max-width:600px;padding:26px 24px 22px;position:relative;box-shadow:0 18px 40px -22px rgba(27,36,48,.45);
   -webkit-mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/14px 100%;mask:conic-gradient(from -45deg at bottom,#0000,#000 1deg 89deg,#0000 90deg) 50%/14px 100%}
@@ -221,6 +222,18 @@ async function run(arg){
   }catch(e){ $('verdict').innerHTML='<span class="bad">Something went wrong: '+esc(String(e))+'</span>'; $('resultCard').hidden=false; }
   finally{ setBusy(false); $('coldNote').hidden=true; document.querySelectorAll('.scan').forEach(e=>e.remove()); }
 }
+// Muse Spark's answer as plain text with two rules: **bold**, and "* " / "- " at the start of a line as a bullet. The text is escaped first;
+// no other HTML, no links, no images. Any asterisk left over is dropped so none shows.
+function fmt(text){
+  const inline=t=>esc(t).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/\*/g,'');
+  let out='',open=false;
+  for(const line of String(text).split('\n')){
+    const m=line.match(/^\s*[*-]\s+(.*)$/);
+    if(m){ if(!open){ out+='<ul>'; open=true; } out+='<li>'+inline(m[1])+'</li>'; }
+    else { if(open){ out+='</ul>'; open=false; } if(line.trim()) out+='<div>'+inline(line)+'</div>'; }
+  }
+  return out+(open?'</ul>':'');
+}
 function esc(s){return s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));}
 function handle(ev){
   if(ev.event==='stage') mark(ev.name,ev.status,ev.seconds);
@@ -293,7 +306,7 @@ $('askBtn').onclick=async()=>{
   try{
     const r=await fetch('api/ask',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({session,question:q})});
     const j=await r.json(); if(!r.ok){ $('answer').innerHTML='<span class="bad">'+esc(j.error)+'</span>'; return; }
-    $('answer').textContent=j.answer||('Error: '+j.error);
+    $('answer').innerHTML=fmt(j.answer||('Error: '+j.error));
     const l=j.request_log[j.request_log.length-1];
     $('hSent').textContent=l.image_sha256;
     $('hCheck').innerHTML=j.proof.sent_equals_safe_copy&&!j.proof.sent_equals_original?'<span class="ok">Sent hash = safe copy hash, and ≠ original hash</span>':'<span class="bad">The hashes do not match. Nothing was sent.</span>';

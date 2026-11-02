@@ -27,3 +27,4 @@ results/pg12/*/debug/
 results/pg15/*/debug/
 results/pg15/*/log-*.txt
 results/final/debug/
+.DS_Store

@@ -226,6 +226,27 @@ class Page(unittest.TestCase):
         self.assertEqual(page.inner_text("#hCheck"), "The hashes do not match. Nothing was sent.")
         self.assertNotIn("MISMATCH", page.content())
 
+    def test_answer_shows_bold_and_bullets_without_asterisks_and_never_runs_markup(self):
+        page = self.new_page()
+        run_sample(page, "chat_005.png", self.limited)
+        page.wait_for_function("document.getElementById('hSafe').textContent.length === 64", timeout=300_000)
+        text = "On this payslip:\n\n* **Net pay:** **£2,163.71**\n- **Pay period:** 13 Aug 2026 & more\n\nDone <script>window.__pwned=1</script> <img src=x onerror=\"window.__pwned=1\">"
+        ok = {"answer": text, "error": None, "connected": True, "request_log": [{"host": "api.meta.ai", "image_bytes": 1, "image_sha256": "0" * 64, "sent": True}],
+              "safe_sha256": "0" * 64, "original_sha256": "2" * 64, "proof": {"sent_equals_safe_copy": True, "sent_equals_original": False}}
+        page.route("**/api/ask", lambda route: route.fulfill(status=200, content_type="application/json; charset=utf-8", body=json.dumps(ok)))
+        page.fill("#q", "hello")
+        page.click("#askBtn")
+        page.wait_for_function("document.getElementById('hSent').textContent.length === 64", timeout=30_000)
+        shown = page.inner_text("#answer")
+        self.assertNotIn("*", shown)
+        self.assertIn("£2,163.71", shown)
+        self.assertIn("13 Aug 2026 & more", shown)
+        self.assertIn("<script>window.__pwned=1</script>", shown, "markup shows as text")
+        self.assertEqual(page.locator("#answer li").count(), 2, "two bullets")
+        self.assertEqual(page.locator("#answer b").count(), 3, "three bold runs")
+        self.assertEqual(page.locator("#answer script, #answer img").count(), 0)
+        self.assertIsNone(page.evaluate("window.__pwned"))
+
     def test_the_page_contacts_only_its_own_host(self):
         page = self.new_page()
         own = urlparse(URL).netloc
