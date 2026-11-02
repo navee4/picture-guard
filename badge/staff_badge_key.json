@@ -1,0 +1,79 @@
+{
+ "note": "made-up values; box = pixel box in staff_badge.png; portrait faces/portraits/p011.png (AI-made, SDXL)",
+ "images": [
+  {
+   "file": "staff_badge.png",
+   "type": "staff_badge",
+   "width": 2022,
+   "height": 1276,
+   "spans": [
+    {
+     "text": "Katie Edwards",
+     "kind": "personal",
+     "pii_type": "name",
+     "box": [
+      684,
+      327,
+      1420,
+      458
+     ]
+    },
+    {
+     "text": "SCS-04817",
+     "kind": "personal",
+     "pii_type": "other",
+     "box": [
+      956,
+      647,
+      1256,
+      716
+     ]
+    },
+    {
+     "text": "12 Jan 1976",
+     "kind": "personal",
+     "pii_type": "dob",
+     "box": [
+      956,
+      724,
+      1277,
+      793
+     ]
+    },
+    {
+     "text": "07700 900431",
+     "kind": "personal",
+     "pii_type": "phone",
+     "box": [
+      956,
+      801,
+      1325,
+      870
+     ]
+    },
+    {
+     "text": "katie.edwards@example.net",
+     "kind": "personal",
+     "pii_type": "email",
+     "box": [
+      956,
+      878,
+      1703,
+      947
+     ]
+    }
+   ],
+   "faces": [
+    {
+     "box": [
+      215,
+      485,
+      395,
+      753
+     ],
+     "source": "YuNet box of faces/portraits/p011.png (portraits_meta.json) mapped onto the badge photo"
+    }
+   ]
+  }
+ ]
+}
