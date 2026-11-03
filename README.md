@@ -3,7 +3,7 @@
 **Built for the Meta Global AI Developer Hackathon (Startup track).**
 
 - Demo: https://naveed-gilani--picture-guard-demo-web-serve.us-east.modal.run
-- Video: VIDEO_LINK
+- Video: https://youtu.be/dgQ7p24VwT8 (3 min; voice-over: AI voice by ElevenLabs, elevenlabs.io, reading a script by navee4)
 - Repo: https://github.com/navee4/picture-guard
 
 ## The problem
